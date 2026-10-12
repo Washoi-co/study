@@ -132,6 +132,17 @@ button{background:none;border:0;cursor:pointer}
 .rrow .v{flex:none;font-size:12px;font-weight:700}
 .rrow .v.y{color:var(--ok)} .rrow .v.n{color:var(--ng)}
 
+.log{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+.log summary{cursor:pointer;font-weight:700;font-size:14px;display:flex;justify-content:space-between;gap:10px}
+.log summary .en{color:var(--red)}
+.nums{display:flex;gap:10px;margin:12px 0 10px}
+.nums div{flex:1;background:var(--surface2);border-radius:10px;padding:10px;text-align:center;font-size:11.5px;color:var(--muted)}
+.nums b{display:block;font-family:var(--en);font-size:26px;font-weight:900;color:var(--fg);line-height:1.1}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.cal span{aspect-ratio:1;border-radius:6px;background:rgba(255,255,255,.06);font-size:10px;display:grid;place-items:center;color:var(--muted);font-family:var(--en)}
+.cal span.on{background:var(--red);color:#fff}
+.cal span.today{outline:1.5px solid var(--fg)}
+.streak{font-size:13.5px;font-weight:700;color:var(--red);margin:6px 0 0}
 .foot{margin-top:24px;font-size:11px;color:#64646C;line-height:1.7}
 </style>
 </head>
@@ -210,6 +221,7 @@ button{background:none;border:0;cursor:pointer}
         <div id="v-result" class="result" hidden>
           <p class="big en" id="rbig"></p>
           <p class="resultja" id="rmsg"></p>
+          <p class="streak" id="rstreak"></p>
           <div class="recap" id="recap"></div>
           <div class="acts">
             <button id="btn-again">もう一回</button>
@@ -219,6 +231,16 @@ button{background:none;border:0;cursor:pointer}
 
       </div>
     </div>
+
+    <details class="log" id="log">
+      <summary>あなたの記録<span class="en" id="log-sum"></span></summary>
+      <div class="nums">
+        <div><b id="log-streak">0</b>日 連続</div>
+        <div><b id="log-days">0</b>日 練習した</div>
+        <div><b id="log-chs">0</b>章 クリア</div>
+      </div>
+      <div class="cal" id="log-cal" aria-label="最近4週間"></div>
+    </details>
 
     <p class="foot">音声は端末の読み上げ機能を使っています。端末や設定によっては鳴りません。録音を送るとき、マイクの許可を求められます。</p>
   </main>
@@ -232,7 +254,7 @@ const store={get(k,d){try{const v=localStorage.getItem("ap_"+k);return v===null?
              set(k,v){try{localStorage.setItem("ap_"+k,JSON.stringify(v));}catch(e){}}};
 function speak(t){try{if(!("speechSynthesis" in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/\(.*?\)/g,""));u.lang="en-US";u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
 
-let DATA=null, LV="b", CH=0, MODE="quiz";
+let DATA=null, LV="b", CH=0, MODE="quiz", TODO=[];
 let queue=[], qi=0, score=0, log=[], taps=0, timer=null, left=0;
 const LIMIT={b:20,i:30};
 const level=()=>DATA.levels.find(l=>l.id===LV);
@@ -268,8 +290,15 @@ $("lock").addEventListener("submit",async e=>{
 function start(){
   $("lock").hidden=true;$("app").hidden=false;
   LV=store.get("lv","b");MODE=store.get("mode","quiz");CH=store.get("ch_"+LV,0);
+  // LINE のリマインドから ?lv=b&ch=5,7&m=pic で、その章を直接開く（複数なら順番に）
+  const q=new URLSearchParams(location.search);
+  if(DATA.levels.some(l=>l.id===q.get("lv"))){LV=q.get("lv");store.set("lv",LV);}
+  TODO=(q.get("ch")||"").split(",").map(n=>level().chapters.findIndex(c=>String(c.n)===n.trim())).filter(i=>i>=0);
+  if(TODO.length){CH=TODO[0];store.set("ch_"+LV,CH);}
+  if(q.get("m")==="quiz"||q.get("m")==="pic"){MODE=q.get("m");store.set("mode",MODE);}
+  if(q.toString())history.replaceState(null,"",location.pathname);
   $("levels").innerHTML=DATA.levels.map(l=>'<button data-lv="'+l.id+'">'+esc(l.name)+'</button>').join("");
-  paintWho();renderNav();startRound();
+  paintWho();renderNav();paintLog();startRound();
 }
 function paintWho(){$("who").textContent=store.get("name","")+" さん";}
 $("who").addEventListener("click",()=>{
@@ -386,9 +415,34 @@ $("btn-next").addEventListener("click",()=>{
   if(qi>=queue.length-1){showResult();return;}
   qi++;askQuestion();
 });
+/* ---- 記録：章を1つやり終えた日を数える（この端末だけ） ---- */
+const ymd=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const dayAgo=n=>{const d=new Date();d.setDate(d.getDate()-n);return ymd(d);};
+function streak(days){
+  let n=days.includes(dayAgo(0))?0:1,k=0;  // 今日まだでも、昨日やっていれば続いている
+  while(days.includes(dayAgo(n+k)))k++;
+  return k;
+}
+function paintLog(){
+  const days=store.get("days",[]),st=streak(days);
+  $("log-streak").textContent=st;$("log-days").textContent=days.length;
+  $("log-chs").textContent=DATA.levels.reduce((a,l)=>a+store.get("done_"+l.id,[]).length,0);
+  $("log-sum").textContent=st?"🔥 "+st+"日":"";
+  let html="";
+  for(let n=27;n>=0;n--){const d=dayAgo(n);html+='<span class="'+(days.includes(d)?"on":"")+(n===0?" today":"")+'" title="'+d+'">'+(+d.slice(8))+'</span>';}
+  $("log-cal").innerHTML=html;
+  return st;
+}
+function markToday(){
+  const days=store.get("days",[]);
+  if(!days.includes(dayAgo(0))){days.push(dayAgo(0));store.set("days",days);}
+  const st=paintLog();
+  $("rstreak").textContent=st>=2?"🔥 "+st+"日 続いてる！":"今日の練習、記録しました。";
+}
 function showResult(){
+  markToday();
   const done=store.get("done_"+LV,[]);
-  if(!done.includes(chapter().n)){done.push(chapter().n);store.set("done_"+LV,done);renderNav();}
+  if(!done.includes(chapter().n)){done.push(chapter().n);store.set("done_"+LV,done);renderNav();paintLog();}
   if(MODE==="quiz"){
     $("rbig").innerHTML=score+"<em> / "+queue.length+"</em>";
     $("rmsg").textContent=score===queue.length?"全問正解。次は「絵だけ見て言う」で。":"もう一回やって、全部正解にしましょう。";
@@ -399,11 +453,13 @@ function showResult(){
   $("recap").innerHTML=log.map((l,k)=>
     '<div class="rrow"><span class="m">'+(l.i+1)+'</span><span class="s">'+esc(chapter().items[l.i].s)+'</span>'+
     (MODE==="quiz"?'<span class="v '+(l.right?"y":"n")+'">'+(l.right?"○":"×")+'</span>':"")+'</div>').join("");
-  $("btn-nextch").hidden=CH===level().chapters.length-1;
+  const nt=TODO[TODO.indexOf(CH)+1];
+  $("btn-nextch").textContent=nt!==undefined?"次の復習へ（Ch "+level().chapters[nt].n+"）":"次の章へ";
+  $("btn-nextch").hidden=nt===undefined&&CH===level().chapters.length-1;
   view("result");
 }
 $("btn-again").addEventListener("click",startRound);
-$("btn-nextch").addEventListener("click",()=>go(CH+1));
+$("btn-nextch").addEventListener("click",()=>{const nt=TODO[TODO.indexOf(CH)+1];go(nt!==undefined?nt:CH+1);});
 
 /* ---- 録音して先生に送る（Google ドライブに保存、スプレッドシートに1行） ---- */
 let rec=null, chunks=[], blob=null, stream=null;
