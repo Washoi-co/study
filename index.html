@@ -143,6 +143,9 @@ button{background:none;border:0;cursor:pointer}
 .cal span.on{background:var(--red);color:#fff}
 .cal span.today{outline:1.5px solid var(--fg)}
 .streak{font-size:13.5px;font-weight:700;color:var(--red);margin:6px 0 0}
+.toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:calc(100% - 32px);max-width:420px;background:var(--surface2);border:1px solid var(--line-strong);border-radius:12px;padding:11px 14px;font-size:13px;text-align:center;z-index:10}
+.toast.ok{color:var(--ok)} .toast.ng{color:var(--ng)}
+.toast button{margin-left:8px;border:1px solid currentColor;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700}
 .foot{margin-top:24px;font-size:11px;color:#64646C;line-height:1.7}
 </style>
 </head>
@@ -244,6 +247,7 @@ button{background:none;border:0;cursor:pointer}
 
     <p class="foot">音声は端末の読み上げ機能を使っています。端末や設定によっては鳴りません。録音を送るとき、マイクの許可を求められます。</p>
   </main>
+  <p class="toast" id="toast" role="status" hidden></p>
 </div>
 
 <script>
@@ -496,22 +500,33 @@ $("rec-btn").addEventListener("click",async()=>{
   $("rec-msg").textContent="録音中… 言い終わったら「止める」";$("rec-msg").className="recmsg";
 });
 $("rec-redo").addEventListener("click",resetRec);
+// 送信は後ろで続ける（Apps Script は受け取りに数秒かかるので、生徒は待たずに次へ進める）
+let sending=0;
+addEventListener("beforeunload",e=>{if(sending){e.preventDefault();e.returnValue="";}});  // 送信中に閉じると録音が消える
+function toast(html,cls){$("toast").innerHTML=html;$("toast").className="toast "+(cls||"");$("toast").hidden=false;}
+async function upload(p){
+  sending++;
+  try{
+    const res=await fetch(DATA.send.url,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(p.body)});
+    const j=await res.json();
+    if(!j.ok)throw new Error(j.error||"error");
+    sending--;
+    if(!sending){toast("✓ "+esc(p.label)+" の録音を先生に届けました","ok");setTimeout(()=>{if(!sending)$("toast").hidden=true;},3000);}
+  }catch(e){
+    sending--;
+    toast(esc(p.label)+" の録音を送れませんでした。<button id=\"retry\">もう一度送る</button>","ng");
+    $("retry").onclick=()=>{toast("送っています…");upload(p);};
+  }
+}
 $("rec-send").addEventListener("click",async()=>{
   if(!blob)return;
   const it=chapter().items[queue[qi]];
-  $("rec-send").disabled=true;$("rec-msg").textContent="送信中…（5秒ほどかかります。そのまま待ってください）";$("rec-msg").className="recmsg";
-  try{
-    const data=await new Promise((ok,ng)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(",")[1]);r.onerror=ng;r.readAsDataURL(blob);});
-    const res=await fetch(DATA.send.url,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},
-      body:JSON.stringify({source:"site",key:DATA.send.key,sid:store.get("sid",""),sec:recSec,name:store.get("name",""),level:level().name,ch:chapter().n,q:queue[qi]+1,
-        mode:MODE==="quiz"?"選んで言う":"絵だけ",t:it.t,s:it.s,mime:blob.type,data})});
-    const j=await res.json();
-    if(!j.ok)throw new Error(j.error||"error");
-    $("rec-msg").textContent="先生に送りました";$("rec-msg").className="recmsg ok";
-  }catch(e){
-    $("rec-send").disabled=false;
-    $("rec-msg").textContent="送れませんでした。電波を確認して、もう一度押してください。";$("rec-msg").className="recmsg ng";
-  }
+  $("rec-send").disabled=true;
+  const data=await new Promise((ok,ng)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(",")[1]);r.onerror=ng;r.readAsDataURL(blob);});
+  upload({label:"Ch "+chapter().n+"-"+(queue[qi]+1),
+    body:{source:"site",key:DATA.send.key,sid:store.get("sid",""),sec:recSec,name:store.get("name",""),level:level().name,ch:chapter().n,q:queue[qi]+1,
+      mode:MODE==="quiz"?"選んで言う":"絵だけ",t:it.t,s:it.s,mime:blob.type,data}});
+  $("rec-msg").textContent="送っています。次へ進んで大丈夫です";$("rec-msg").className="recmsg ok";
 });
 </script>
 </body>
