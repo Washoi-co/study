@@ -1,12 +1,16 @@
 """教材データを暗号化して data.enc を作る。
 
-  python3 build.py 合言葉
+  python3 build.py
 
 元データ（公開しない）は ../study-src/ に置く:
   beginner.txt       Beginner PDF を pdftotext -layout したもの
   intermediate.json  Intermediate の文字起こし [{ch,title,ja,items:[[T,S,T訳,S訳],...]}]
   send.json          録音の送り先 {"url": Apps Script の URL, "key": 合い鍵}（任意）
-合言葉を変えたら、もう一度これを実行して data.enc を push する。
+  students.json      生徒ごとのログイン [{"id": "STU005", "name": "T.Y", "pass": "パスワード"}, ...]
+生徒を足した・パスワードを変えた時は、もう一度これを実行して data.enc を push する。
+
+しくみ: 教材は1つの鍵（データ鍵）で暗号化し、そのデータ鍵を生徒ごとのパスワードで
+それぞれ包んで keys[会員番号] に入れる。生徒を消せば、その生徒はもう開けない。
 """
 import base64, hashlib, json, os, re, sys
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
@@ -46,20 +50,26 @@ def intermediate():
 
 
 def main():
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 1:
         sys.exit(__doc__)
+    students = json.load(open(os.path.join(SRC, "students.json"), encoding="utf-8"))
     send_path = os.path.join(SRC, "send.json")
     data = {
         "send": json.load(open(send_path)) if os.path.exists(send_path) else None,
         "levels": [{"id": "b", "name": "Beginner", "chapters": beginner()},
                    {"id": "i", "name": "Intermediate", "chapters": intermediate()}],
     }
-    salt, iv = os.urandom(16), os.urandom(12)
-    key = hashlib.pbkdf2_hmac("sha256", sys.argv[1].encode(), salt, 200_000, 32)
-    ct = AESGCM(key).encrypt(iv, json.dumps(data, ensure_ascii=False).encode(), None)
     b64 = lambda b: base64.b64encode(b).decode()
-    json.dump({"s": b64(salt), "i": b64(iv), "c": b64(ct)}, open(os.path.join(os.path.dirname(__file__), "data.enc"), "w"))
-    print("data.enc:", sum(len(l["chapters"]) for l in data["levels"]), "chapters, send:", bool(data["send"]))
+    dkey, iv = os.urandom(32), os.urandom(12)
+    ct = AESGCM(dkey).encrypt(iv, json.dumps(data, ensure_ascii=False).encode(), None)
+    keys = {}
+    for st in students:
+        salt, siv = os.urandom(16), os.urandom(12)
+        kek = hashlib.pbkdf2_hmac("sha256", st["pass"].encode(), salt, 200_000, 32)
+        inner = json.dumps({"k": b64(dkey), "name": st["name"]}, ensure_ascii=False).encode()
+        keys[st["id"].upper()] = {"s": b64(salt), "i": b64(siv), "c": b64(AESGCM(kek).encrypt(siv, inner, None))}
+    json.dump({"i": b64(iv), "c": b64(ct), "keys": keys}, open(os.path.join(os.path.dirname(__file__), "data.enc"), "w"))
+    print("data.enc:", sum(len(l["chapters"]) for l in data["levels"]), "chapters, students:", len(keys), ", send:", bool(data["send"]))
 
 
 main()

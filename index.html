@@ -154,9 +154,9 @@ button{background:none;border:0;cursor:pointer}
 
   <form class="lock" id="lock">
     <h1>A<b>-</b>PUSH Training</h1>
-    <p>生徒用の練習ページです。先生から聞いた合言葉を入れてください。</p>
-    <label>合言葉<input id="pass" type="password" autocomplete="current-password" required></label>
-    <label>お名前（録音を先生に送るときに使います）<input id="name" autocomplete="name" required></label>
+    <p>生徒用の練習ページです。先生から届いた会員番号とパスワードを入れてください。</p>
+    <label>会員番号（例: STU005）<input id="sid" autocomplete="username" autocapitalize="characters" spellcheck="false" required></label>
+    <label>パスワード<input id="pass" type="password" autocomplete="current-password" required></label>
     <p class="err" id="lock-err" role="alert"></p>
     <button class="big-btn" type="submit" id="lock-go">はじめる</button>
   </form>
@@ -164,7 +164,7 @@ button{background:none;border:0;cursor:pointer}
   <main id="app" hidden>
     <div class="bar">
       <div class="pills en" id="levels" role="group" aria-label="レベル"></div>
-      <button class="who" id="who" title="名前を変える"></button>
+      <button class="who" id="who" title="ログアウト"></button>
     </div>
     <div class="chrow">
       <button id="prev" aria-label="前の章">‹</button>
@@ -264,30 +264,37 @@ const LIMIT={b:20,i:30};
 const level=()=>DATA.levels.find(l=>l.id===LV);
 const chapter=()=>level().chapters[CH];
 
-/* ---- 合言葉で復号 ---- */
+/* ---- 会員番号とパスワードで復号（生徒ごとに包んだデータ鍵を開けて、教材を開ける） ---- */
 const b64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
-async function unlock(pass){
+const dec=async(key,box)=>new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM",iv:b64(box.i)},key,b64(box.c)));
+async function unlock(sid,pass){
   const enc=await (await fetch("data.enc",{cache:"no-cache"})).json();
+  const box=enc.keys[sid];if(!box)throw new Error("no such id");
   const base=await crypto.subtle.importKey("raw",new TextEncoder().encode(pass),"PBKDF2",false,["deriveKey"]);
-  const key=await crypto.subtle.deriveKey({name:"PBKDF2",salt:b64(enc.s),iterations:200000,hash:"SHA-256"},base,{name:"AES-GCM",length:256},false,["decrypt"]);
-  const plain=await crypto.subtle.decrypt({name:"AES-GCM",iv:b64(enc.i)},key,b64(enc.c));
-  return JSON.parse(new TextDecoder().decode(plain));
+  const kek=await crypto.subtle.deriveKey({name:"PBKDF2",salt:b64(box.s),iterations:200000,hash:"SHA-256"},base,{name:"AES-GCM",length:256},false,["decrypt"]);
+  const me=JSON.parse(await dec(kek,box));
+  const dkey=await crypto.subtle.importKey("raw",b64(me.k),"AES-GCM",false,["decrypt"]);
+  store.set("name",me.name);
+  return JSON.parse(await dec(dkey,enc));
 }
+const normSid=s=>{const n=s.replace(/[^0-9０-９]/g,"").replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0));return n?"STU"+n.padStart(3,"0"):s.trim().toUpperCase();};  // stu5・STU 005・５ → STU005
 $("lock").addEventListener("submit",async e=>{
   e.preventDefault();
   $("lock-go").disabled=true;$("lock-err").textContent="";
+  const sid=normSid($("sid").value),pass=$("pass").value.trim();
   try{
-    DATA=await unlock($("pass").value.trim());
-    store.set("pass",$("pass").value.trim());store.set("name",$("name").value.trim());
+    DATA=await unlock(sid,pass);
+    store.set("sid",sid);store.set("pass",pass);
     start();
-  }catch(err){$("lock-err").textContent="合言葉が違います。";}
+  }catch(err){$("lock-err").textContent="会員番号かパスワードが違います。";}
   $("lock-go").disabled=false;
 });
 (async()=>{
-  $("name").value=store.get("name","");
-  const p=store.get("pass",null);
-  if(p){try{DATA=await unlock(p);start();return;}catch(e){}}
-  $("pass").focus();
+  const u=new URLSearchParams(location.search).get("sid");
+  $("sid").value=u||store.get("sid","");
+  const p=store.get("pass",null),sid=store.get("sid","");
+  if(p&&sid&&(!u||u===sid)){try{DATA=await unlock(sid,p);start();return;}catch(e){}}
+  ($("sid").value?$("pass"):$("sid")).focus();
 })();
 
 /* ---- 画面の組み立て ---- */
@@ -296,7 +303,6 @@ function start(){
   LV=store.get("lv","b");MODE=store.get("mode","quiz");CH=store.get("ch_"+LV,0);
   // LINE のリマインドから ?lv=b&ch=5,7&m=pic で、その章を直接開く（複数なら順番に）
   const q=new URLSearchParams(location.search);
-  if(/^STU\d+$/.test(q.get("sid")||""))store.set("sid",q.get("sid"));  // 録音をその生徒の記録につなぐ
   if(DATA.levels.some(l=>l.id===q.get("lv"))){LV=q.get("lv");store.set("lv",LV);}
   TODO=(q.get("ch")||"").split(",").map(n=>level().chapters.findIndex(c=>String(c.n)===n.trim())).filter(i=>i>=0);
   if(TODO.length){CH=TODO[0];store.set("ch_"+LV,CH);}
@@ -307,8 +313,7 @@ function start(){
 }
 function paintWho(){$("who").textContent=store.get("name","")+" さん";}
 $("who").addEventListener("click",()=>{
-  const n=prompt("お名前",store.get("name",""));
-  if(n&&n.trim()){store.set("name",n.trim());paintWho();}
+  if(confirm("ログアウトしますか？（次に開くとき、会員番号とパスワードがもう一度必要です）")){store.set("pass",null);location.reload();}
 });
 function renderNav(){
   document.querySelectorAll("[data-lv]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lv===LV)));
