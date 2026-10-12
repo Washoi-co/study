@@ -292,6 +292,7 @@ function start(){
   LV=store.get("lv","b");MODE=store.get("mode","quiz");CH=store.get("ch_"+LV,0);
   // LINE のリマインドから ?lv=b&ch=5,7&m=pic で、その章を直接開く（複数なら順番に）
   const q=new URLSearchParams(location.search);
+  if(/^STU\d+$/.test(q.get("sid")||""))store.set("sid",q.get("sid"));  // 録音をその生徒の記録につなぐ
   if(DATA.levels.some(l=>l.id===q.get("lv"))){LV=q.get("lv");store.set("lv",LV);}
   TODO=(q.get("ch")||"").split(",").map(n=>level().chapters.findIndex(c=>String(c.n)===n.trim())).filter(i=>i>=0);
   if(TODO.length){CH=TODO[0];store.set("ch_"+LV,CH);}
@@ -462,7 +463,7 @@ $("btn-again").addEventListener("click",startRound);
 $("btn-nextch").addEventListener("click",()=>{const nt=TODO[TODO.indexOf(CH)+1];go(nt!==undefined?nt:CH+1);});
 
 /* ---- 録音して先生に送る（Google ドライブに保存、スプレッドシートに1行） ---- */
-let rec=null, chunks=[], blob=null, stream=null;
+let rec=null, chunks=[], blob=null, stream=null, recAt=0, recSec=0;
 const MIME=["audio/mp4","audio/webm;codecs=opus","audio/webm"].find(m=>window.MediaRecorder&&MediaRecorder.isTypeSupported(m))||"";
 function resetRec(){
   blob=null;$("rec-done").hidden=true;$("rec-btn").hidden=false;
@@ -484,12 +485,13 @@ $("rec-btn").addEventListener("click",async()=>{
   rec=new MediaRecorder(stream,MIME?{mimeType:MIME}:undefined);
   rec.ondataavailable=e=>e.data.size&&chunks.push(e.data);
   rec.onstop=()=>{
+    recSec=Math.round((Date.now()-recAt)/1000);
     blob=new Blob(chunks,{type:rec.mimeType||MIME||"audio/webm"});
     $("rec-audio").src=URL.createObjectURL(blob);
     $("rec-btn").hidden=true;$("rec-done").hidden=false;
     $("rec-msg").textContent="";
   };
-  rec.start();
+  rec.start();recAt=Date.now();
   $("rec-btn").textContent="止める";$("rec-btn").classList.add("on");
   $("rec-msg").textContent="録音中… 言い終わったら「止める」";$("rec-msg").className="recmsg";
 });
@@ -501,7 +503,7 @@ $("rec-send").addEventListener("click",async()=>{
   try{
     const data=await new Promise((ok,ng)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(",")[1]);r.onerror=ng;r.readAsDataURL(blob);});
     const res=await fetch(DATA.send.url,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},
-      body:JSON.stringify({key:DATA.send.key,name:store.get("name",""),level:level().name,ch:chapter().n,q:queue[qi]+1,
+      body:JSON.stringify({source:"site",key:DATA.send.key,sid:store.get("sid",""),sec:recSec,name:store.get("name",""),level:level().name,ch:chapter().n,q:queue[qi]+1,
         mode:MODE==="quiz"?"選んで言う":"絵だけ",t:it.t,s:it.s,mime:blob.type,data})});
     const j=await res.json();
     if(!j.ok)throw new Error(j.error||"error");
