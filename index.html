@@ -499,7 +499,7 @@ $("rec-redo").addEventListener("click",resetRec);
 $("rec-send").addEventListener("click",async()=>{
   if(!blob)return;
   const it=chapter().items[queue[qi]];
-  $("rec-send").disabled=true;$("rec-msg").textContent="送信中…";$("rec-msg").className="recmsg";
+  $("rec-send").disabled=true;$("rec-msg").textContent="送信中…（5秒ほどかかります。そのまま待ってください）";$("rec-msg").className="recmsg";
   try{
     const data=await new Promise((ok,ng)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(",")[1]);r.onerror=ng;r.readAsDataURL(blob);});
     const res=await fetch(DATA.send.url,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},
