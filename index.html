@@ -172,7 +172,7 @@ button{background:none;border:0;cursor:pointer}
       <div class="pills en" id="levels" role="group" aria-label="レベル"></div>
       <button class="who" id="who" title="ログアウト"></button>
     </div>
-    <nav class="nav"><a href="words/">📚 単語</a><a href="shadowing/">🎧 シャドーイング</a></nav>
+    <nav class="nav"><a href="plan/">📅 計画</a><a href="words/">📚 単語</a><a href="shadowing/">🎧 シャドーイング</a></nav>
     <div class="chrow">
       <button id="prev" aria-label="前の章">‹</button>
       <select id="chsel" aria-label="章"></select>
@@ -272,6 +272,7 @@ button{background:none;border:0;cursor:pointer}
   <p class="toast" id="toast" role="status" hidden></p>
 </div>
 
+<script src="/activity.js"></script>
 <script>
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -499,7 +500,7 @@ function wordGrade(right){
     if(c.box<=5)c.due=dayAhead(WINT[c.box]);
     S.updatedAt=Date.now();try{localStorage.setItem(wkey(),JSON.stringify(S));}catch(e){}
   }
-  if(right)score++;
+  if(right)score++;apMark("mix");
   log.push({w:$("w-en").textContent+"（"+$("w-ja").textContent+"）",right});
   if(qi>=queue.length-1){showResult();return;}
   qi++;askQuestion();
@@ -533,7 +534,7 @@ function markToday(){
   $("rstreak").textContent=st>=2?"🔥 "+st+"日 続いてる！":"今日の練習、記録しました。";
 }
 function showResult(){
-  markToday();
+  markToday();apMark("chunk");
   const done=store.get("done_"+LV,[]);
   if(!done.includes(chapter().n)){done.push(chapter().n);store.set("done_"+LV,done);renderNav();paintLog();}
   if(MODE!=="pic"){

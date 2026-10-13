@@ -198,6 +198,8 @@ h1 small{display:inline-block;margin-left:.4em;font-size:11px;font-weight:700;co
 .cta-b.fill:hover{background:var(--red-deep)}
 .sync,.cta{display:none!important}  /* 生徒用：ニックネーム登録と体験の案内は使わない */
 .course{display:block;width:100%;max-width:420px;margin:8px 0 0;appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236B6B72'/%3E%3C/svg%3E") no-repeat right 12px center;border:1px solid var(--line-strong);border-radius:10px;padding:10px 30px 10px 12px;font:inherit;font-size:14px;font-weight:700;color:var(--fg)}
+.crow{display:flex;gap:8px;align-items:center;margin-top:8px}.crow .course{margin:0;flex:1}
+.lvchk{flex:none;font-size:12.5px;font-weight:700;color:var(--red);border:1px solid var(--red);border-radius:999px;padding:7px 12px;text-decoration:none}
 .foot{font-size:10.5px;color:var(--muted);line-height:1.7;margin-top:22px}
 </style>
 </head>
@@ -206,12 +208,13 @@ h1 small{display:inline-block;margin-left:.4em;font-size:11px;font-weight:700;co
 
   <div class="bar">
     <a class="back" href="/">← チャンクトレーニング</a>
+    <a class="back" href="/plan/">📅 計画</a>
     <a class="back" href="/shadowing/">🎧 シャドーイング</a>
     <button class="gear" id="btn-set">⚙ 設定</button>
   </div>
   <p class="eyebrow">A-PUSH VOCABULARY</p>
   <h1><span id="title"></span><button class="howbtn" id="btn-howto">A-PUSH式 単語の覚え方</button></h1>
-  <select class="course" id="course" aria-label="コースを選ぶ"></select>
+  <div class="crow"><select class="course" id="course" aria-label="コースを選ぶ"></select><a class="lvchk" href="check.html">レベルチェック</a></div>
 
   <!-- ホーム -->
   <section id="v-home">
@@ -385,7 +388,7 @@ h1 small{display:inline-block;margin-left:.4em;font-size:11px;font-weight:700;co
   <section id="v-set" hidden>
     <div class="card set">
       <label>1回に覚える単語の数
-        <select id="s-per"><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option></select>
+        <select id="s-per"><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option><option>40</option><option>50</option></select>
       </label>
       <label>朝（新しい単語）<input type="time" id="s-am"></label>
       <label>昼（テスト・復習）<input type="time" id="s-noon"></label>
@@ -406,6 +409,7 @@ h1 small{display:inline-block;margin-left:.4em;font-size:11px;font-weight:700;co
   </p>
 </div>
 
+<script src="/activity.js"></script>
 <script src="courses/index.js"></script>
 <script>
 // 生徒用：ログインしていなければトップ（会員番号とパスワード）へ
@@ -415,7 +419,8 @@ try{ if(!JSON.parse(localStorage.getItem("ap_pass"))) location.replace("/"); }ca
   var c=new URLSearchParams(location.search).get("c"), last=null;
   try{ last=localStorage.getItem("apush-words-course"); }catch(e){}
   var ok=function(id){ return APW_COURSES.some(function(x){ return x.id===id; }); };
-  if(!ok(c)) c = ok(last) ? last : "gen1";
+  if(!ok(c) && !ok(last)){ location.replace("check.html"); return; }  // 初めてなら、まずレベルチェック
+  if(!ok(c)) c = last;
   try{ localStorage.setItem("apush-words-course", c); }catch(e){}
   document.write('<script src="courses/'+c+'.js"><\/script>');
 })();
@@ -591,8 +596,8 @@ $("l-next").addEventListener("click",function(){
     var t=addDays(today(),1);
     d.batch.forEach(function(wi){ W[wi][1].forEach(function(_,si){ var id=cid(wi,si); if(!S.cards[id]) S.cards[id]={box:1, due:t}; }); });
     S.next=Math.max(S.next, d.batch[d.batch.length-1]+1);
-    d.am=true;
-  } else { d.pm=true; }
+    d.am=true; apMark("words", d.batch.length);
+  } else { d.pm=true; apMark("wordsPm"); }
   save(); renderHome();
 });
 
@@ -645,6 +650,7 @@ function answerTest(btn,right,correct){
 $("t-say").addEventListener("click",function(){ speak(W[parse(T.q[T.i]).wi][0]); });
 $("t-next").addEventListener("click",function(){
   if(T.i<T.q.length-1){ T.i++; askTest(); return; }
+  apMark("wordsTest");
   $("r-score").textContent=T.right; $("r-total").textContent=T.q.length;
   $("r-msg").textContent = T.miss.length ? "間違えた単語は、明日また出てきます。" : "全問正解！ 次は、もっと先の日に出てきます。";
   $("r-recap").innerHTML=T.miss.map(function(id){ var p=parse(id), w=W[p.wi], s=w[1][p.si];

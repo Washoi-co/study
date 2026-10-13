@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>単語のレベルチェック｜A-PUSH</title>
+<script>/* 生徒用：ログインしていなければトップへ */try{if(!JSON.parse(localStorage.getItem("ap_pass")))location.replace("/");}catch(e){location.replace("/");}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+<style>
+/* 単語のレベルチェック。種類（General/TOEIC/IELTS/TOEFL）を選び、やさしいレベルから6問ずつ。
+   5問以上わかれば次のレベルへ。わからなかったレベルを、おすすめのコースにする。 */
+:root{
+  --ink:#FFFFFF; --surface:#F6F6F4; --surface2:#ECECE9;
+  --line:rgba(11,11,12,.10); --line-strong:rgba(11,11,12,.22);
+  --fg:#0B0B0C; --muted:#6B6B72;
+  --red:#E8321F; --red-deep:#C42612; --ok:#14935A; --ng:#D9301E;
+  --en:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --jp:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+[hidden]{display:none!important}
+body{background:var(--ink);color:var(--fg);font-family:var(--jp);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;padding:0 16px 44px}
+.wrap{max-width:560px;margin:0 auto}
+.en{font-family:var(--en)}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px;border-radius:6px}
+.top{display:flex;gap:14px;padding-top:14px;font-size:13px}
+.top a{color:var(--muted);text-decoration:none}.top a:hover{color:var(--fg)}
+.eyebrow{font-family:var(--en);font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--red);margin:18px 0 2px}
+h1{font-size:22px;font-weight:900;margin:0 0 4px}
+.sub{font-size:13px;color:var(--muted);margin:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 16px;margin-top:16px}
+.tracks{display:grid;gap:8px}
+.tracks button{display:grid;grid-template-columns:1fr auto;align-items:center;background:#fff;border:1px solid var(--line-strong);border-radius:12px;padding:13px 14px;text-align:left}
+.tracks button:hover{border-color:var(--red)}
+.tracks b{font-size:15px}
+.tracks small{display:block;font-size:12px;color:var(--muted)}
+.tracks span.go{font-size:12.5px;font-weight:700;color:var(--red)}
+.meta{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+.meta .en{font-variant-numeric:tabular-nums}
+.word{font-family:var(--en);font-size:clamp(30px,8vw,40px);font-weight:900;letter-spacing:-.02em;text-align:center;margin:18px 0 4px;line-height:1.15;overflow-wrap:anywhere}
+.say{display:block;margin:0 auto 16px;border:1px solid var(--line-strong);border-radius:999px;padding:4px 12px;font-size:12px;font-weight:700;color:var(--muted)}
+.choices{display:grid;gap:8px}
+.choices button{background:#fff;border:1px solid var(--line-strong);border-radius:11px;padding:12px 14px;text-align:left;font-weight:700}
+.choices button:hover{border-color:var(--red)}
+.choices button.idk{background:none;border-style:dashed;color:var(--muted);font-weight:500;text-align:center}
+.big{font-size:clamp(22px,6vw,28px);font-weight:900;text-align:center;margin:6px 0 4px;line-height:1.35}
+.center{text-align:center}
+.lv{margin-top:14px;border-top:1px solid var(--line)}
+.lv div{display:flex;justify-content:space-between;padding:8px 2px;border-bottom:1px solid var(--line);font-size:13.5px}
+.lv .y{color:var(--ok);font-weight:700}.lv .n{color:var(--ng);font-weight:700}.lv .s{color:var(--muted)}
+.btn{display:block;width:100%;margin-top:14px;border-radius:10px;padding:13px;background:var(--red);color:#fff;font-weight:700;font-size:14.5px;text-align:center;text-decoration:none}
+.btn:hover{background:var(--red-deep)}
+.btn.ghost{background:#fff;border:1px solid var(--line-strong);color:var(--fg)}
+.foot{font-size:11px;color:var(--muted);line-height:1.7;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="/">← チャンクトレーニング</a><a href="/plan/">📅 計画</a><a href="./" id="to-words" hidden>📚 単語</a></div>
+  <p class="eyebrow">LEVEL CHECK</p>
+  <h1>単語のレベルチェック</h1>
+  <p class="sub">3〜5分。やさしいレベルから順に出ます。知らない単語は「わからない」を押してください（当てずっぽうより、正しいレベルが出ます）。</p>
+
+  <section class="card" id="v-pick">
+    <p class="sub" style="margin-bottom:10px">どの目的で単語を覚えますか？</p>
+    <div class="tracks" id="tracks"></div>
+  </section>
+
+  <section class="card" id="v-q" hidden>
+    <div class="meta"><span id="q-level"></span><span class="en" id="q-count"></span></div>
+    <p class="word" id="q-word"></p>
+    <button class="say" id="q-say">🔊 発音を聞く</button>
+    <div class="choices" id="q-choices"></div>
+  </section>
+
+  <section class="card" id="v-res" hidden>
+    <p class="center sub">あなたにおすすめのコース</p>
+    <p class="big" id="r-course"></p>
+    <p class="center sub" id="r-msg"></p>
+    <div class="lv" id="r-levels"></div>
+    <a class="btn" id="r-start" href="#">このコースで始める</a>
+    <button class="btn ghost" id="r-again">ほかの目的でもチェックする</button>
+  </section>
+
+  <p class="foot">※ 目安のチェックです。始めてみて、やさしすぎる・難しすぎると感じたら、単語ページの上のメニューでいつでもコースを変えられます。</p>
+</div>
+
+<script src="courses/index.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+function speak(t){try{if(!("speechSynthesis" in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
+const PER=6, PASS=5;  // 1レベル6問、5問以上で次へ
+const TRACKS=[
+  {g:"General",d:"中学〜高校の基本。日常会話の土台"},
+  {g:"TOEIC",d:"仕事・ビジネスの英語"},
+  {g:"IELTS",d:"留学・移住。アカデミックな英語"},
+  {g:"TOEFL iBT",d:"アメリカなどへの留学"},
+];
+try{if(localStorage.getItem("apush-words-course"))$("to-words").hidden=false;}catch(e){}
+
+$("tracks").innerHTML=TRACKS.map((t,i)=>{
+  const lv=APW_COURSES.filter(c=>c.g===t.g);
+  return '<button data-i="'+i+'"><span><b>'+t.g+'</b><small>'+t.d+'（'+lv[0].t+'〜'+lv[lv.length-1].t+'）</small></span><span class="go">チェック →</span></button>';
+}).join("");
+$("tracks").onclick=e=>{const b=e.target.closest("[data-i]");if(b)start(TRACKS[+b.dataset.i].g);};
+
+// コースのファイルは1つずつ読み込む（どれも window.APW_COURSE に入るので）
+const loaded={};
+function load(id){
+  if(loaded[id])return Promise.resolve(loaded[id]);
+  return new Promise((ok,ng)=>{const s=document.createElement("script");s.src="courses/"+id+".js";
+    s.onload=()=>{loaded[id]=window.APW_COURSE;ok(loaded[id]);};s.onerror=ng;document.head.appendChild(s);});
+}
+
+let R=null;  // {g, levels, li, qs, qi, right, scores}
+async function start(g){
+  R={g,levels:APW_COURSES.filter(c=>c.g===g),li:0,scores:[]};
+  await level();
+}
+async function level(){
+  const lv=R.levels[R.li],C=await load(lv.id),W=C.words;
+  R.qs=shuffle(W.map((_,i)=>i)).slice(0,PER).map(wi=>{
+    const right=W[wi][1][0][0];
+    const others=shuffle(W.filter((_,i)=>i!==wi).map(w=>w[1][0][0]).filter(m=>m!==right)).slice(0,3);
+    return {en:W[wi][0],right,opts:shuffle([right,...others])};
+  });
+  R.qi=0;R.right=0;
+  ["v-pick","v-res"].forEach(v=>$(v).hidden=true);$("v-q").hidden=false;
+  ask();
+}
+function ask(){
+  const q=R.qs[R.qi],lv=R.levels[R.li];
+  $("q-level").textContent=R.g+" "+lv.t+"（"+(R.li+1)+" / "+R.levels.length+" レベル）";
+  $("q-count").textContent=(R.qi+1)+" / "+PER;
+  $("q-word").textContent=q.en;speak(q.en);
+  $("q-choices").innerHTML=q.opts.map(o=>'<button>'+o.replace(/[&<>]/g,"")+'</button>').join("")+'<button class="idk" data-idk="1">わからない</button>';
+  window.scrollTo(0,0);
+}
+$("q-say").onclick=()=>speak(R.qs[R.qi].en);
+$("q-choices").onclick=e=>{
+  const b=e.target.closest("button");if(!b)return;
+  if(!b.dataset.idk&&b.textContent===R.qs[R.qi].right.replace(/[&<>]/g,""))R.right++;
+  if(R.qi<PER-1){R.qi++;ask();return;}
+  R.scores.push(R.right);
+  // 5問以上わかったら次のレベル。わからなかったレベルがおすすめ
+  if(R.right>=PASS&&R.li<R.levels.length-1){R.li++;level();return;}
+  result();
+};
+function result(){
+  const passedAll=R.right>=PASS, rec=R.levels[R.li];
+  $("r-course").textContent=rec.g+" "+rec.t;
+  $("r-msg").textContent=passedAll?"いちばん上のレベルまで、ほとんどわかりました。このコースで仕上げましょう。"
+    :R.li===0?"まずはこのレベルから。知らない単語を、絵と声で毎日覚えていきましょう。"
+    :"ひとつ下のレベルはほとんどわかりました。このレベルから始めると、ちょうどいい難しさです。";
+  $("r-levels").innerHTML=R.levels.map((l,i)=>{
+    const s=R.scores[i];
+    return '<div><span>'+l.g+" "+l.t+'</span>'+(s==null?'<span class="s">—</span>':'<span class="'+(s>=PASS?"y":"n")+'">'+s+" / "+PER+'</span>')+'</div>';
+  }).join("");
+  $("r-start").href="./?c="+rec.id;
+  try{localStorage.setItem("ap_levelcheck",JSON.stringify({g:R.g,id:rec.id,scores:R.scores,date:new Date().toLocaleDateString("sv")}));}catch(e){}
+  $("v-q").hidden=true;$("v-res").hidden=false;window.scrollTo(0,0);
+}
+$("r-again").onclick=()=>{$("v-res").hidden=true;$("v-pick").hidden=false;};
+</script>
+</body>
+</html>

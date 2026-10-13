@@ -8,6 +8,7 @@
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>シャドーイング｜A-PUSH</title>
+<script src="/activity.js"></script>
 <script>/* 生徒用：ログインしていなければトップへ */try{if(!JSON.parse(localStorage.getItem("ap_pass")))location.replace("/");}catch(e){location.replace("/");}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,7 +100,7 @@ h2{font-size:15px;font-weight:900;margin:0 0 6px}
 </head>
 <body>
 <div class="wrap">
-  <div class="top"><a class="back" href="/">← チャンクトレーニング</a><a class="back" href="/words/">📚 単語</a></div>
+  <div class="top"><a class="back" href="/">← チャンクトレーニング</a><a class="back" href="/plan/">📅 計画</a><a class="back" href="/words/">📚 単語</a></div>
 
   <!-- 一覧 -->
   <section id="home">
@@ -236,6 +237,8 @@ function quiz() {
   }).join("")}${res[i] != null ? `<div class="ex">${res[i] === q.answer ? "⭕ 正解。" : "✕ "}${esc(q.explain)}</div>` : ""}</div>`).join("");
   if (res.filter(x => x != null).length === L.quiz.length) {
     const ok = L.quiz.filter((q, i) => res[i] === q.answer).length;
+    const td = new Date().toDateString();  // 同じ動画でも、日が変われば「今日の1本」に数える（画面を描き直しても1日1回）
+    if (prog(L.id).doneOn !== td) { apMark("shadow"); setProg(L.id, "doneOn", td); }
     setProg(L.id, "done", 1);
     const all = DB.lessons, k = all.indexOf(L), nxt = all[k + 1];
     h += `<div class="card" style="background:#fff"><h2>おつかれさまでした</h2><p class="tip">クイズ ${ok} / ${L.quiz.length} 問正解</p>${compare(prog(L.id))}
