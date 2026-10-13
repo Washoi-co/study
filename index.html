@@ -132,6 +132,12 @@ button{background:none;border:0;cursor:pointer}
 .rrow .v{flex:none;font-size:12px;font-weight:700}
 .rrow .v.y{color:var(--ok)} .rrow .v.n{color:var(--ng)}
 
+.nav{display:flex;gap:8px;margin-top:10px}
+.nav a{flex:1;text-align:center;border:1px solid var(--line-strong);border-radius:10px;padding:9px 6px;font-size:13px;font-weight:700;color:var(--fg);text-decoration:none}
+.nav a:hover{border-color:var(--red);color:var(--red)}
+.wpics{font-size:clamp(48px,14vw,68px);line-height:1;text-align:center;margin:10px 0 2px;min-height:10px}
+.wja{font-size:clamp(19px,5vw,24px);font-weight:900;text-align:center;margin:8px 0 0;line-height:1.4}
+.wtag{font-size:11.5px;color:var(--muted);text-align:center;margin:0}
 .log{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
 .log summary{cursor:pointer;font-weight:700;font-size:14px;display:flex;justify-content:space-between;gap:10px}
 .log summary .en{color:var(--red)}
@@ -166,6 +172,7 @@ button{background:none;border:0;cursor:pointer}
       <div class="pills en" id="levels" role="group" aria-label="レベル"></div>
       <button class="who" id="who" title="ログアウト"></button>
     </div>
+    <nav class="nav"><a href="words/">📚 単語</a><a href="shadowing/">🎧 シャドーイング</a></nav>
     <div class="chrow">
       <button id="prev" aria-label="前の章">‹</button>
       <select id="chsel" aria-label="章"></select>
@@ -174,6 +181,7 @@ button{background:none;border:0;cursor:pointer}
     <div class="pills modes" id="modes" role="group" aria-label="練習のしかた">
       <button data-m="quiz">選んで言う</button>
       <button data-m="pic">絵だけ見て言う</button>
+      <button data-m="mix">単語ミックス</button>
     </div>
 
     <div class="card">
@@ -219,6 +227,20 @@ button{background:none;border:0;cursor:pointer}
             <p class="recmsg" id="rec-msg" role="status"></p>
           </div>
           <div class="acts"><button class="primary" id="btn-next" disabled>次へ</button></div>
+        </div>
+
+        <div id="v-word" class="repeat" hidden>
+          <p class="wtag" id="w-tag"></p>
+          <div class="wpics" id="w-pics"></div>
+          <p class="wja" id="w-ja"></p>
+          <div id="w-front">
+            <p class="saylabel">この意味の英単語を、声に出して言ってから押してください。</p>
+            <button class="big-btn" id="w-reveal">答えを見る</button>
+          </div>
+          <div id="w-back" hidden>
+            <p class="answer en" id="w-en"></p>
+            <div class="acts"><button id="w-ng">言えなかった</button><button class="primary" id="w-ok">言えた</button></div>
+          </div>
         </div>
 
         <div id="v-result" class="result" hidden>
@@ -306,10 +328,10 @@ function start(){
   if(DATA.levels.some(l=>l.id===q.get("lv"))){LV=q.get("lv");store.set("lv",LV);}
   TODO=(q.get("ch")||"").split(",").map(n=>level().chapters.findIndex(c=>String(c.n)===n.trim())).filter(i=>i>=0);
   if(TODO.length){CH=TODO[0];store.set("ch_"+LV,CH);}
-  if(q.get("m")==="quiz"||q.get("m")==="pic"){MODE=q.get("m");store.set("mode",MODE);}
+  if(["quiz","pic","mix"].includes(q.get("m"))){MODE=q.get("m");store.set("mode",MODE);}
   if(q.toString())history.replaceState(null,"",location.pathname);
   $("levels").innerHTML=DATA.levels.map(l=>'<button data-lv="'+l.id+'">'+esc(l.name)+'</button>').join("");
-  paintWho();renderNav();paintLog();startRound();
+  paintWho();renderNav();paintLog();loadWords().then(startRound);
 }
 function paintWho(){$("who").textContent=store.get("name","")+" さん";}
 $("who").addEventListener("click",()=>{
@@ -341,12 +363,13 @@ $("chsel").addEventListener("change",()=>go(+$("chsel").value));
 $("prev").addEventListener("click",()=>go(CH-1));
 $("next").addEventListener("click",()=>go(CH+1));
 
-function view(k){["quiz","repeat","result"].forEach(n=>$("v-"+n).hidden=(n!==k));}
+function view(k){["quiz","repeat","word","result"].forEach(n=>$("v-"+n).hidden=(n!==k));}
 
 /* ---- 1章＝6問 ---- */
 function startRound(){
   const items=chapter().items;
-  queue=MODE==="quiz"?shuffle(items.map((_,i)=>i)):items.map((_,i)=>i);
+  queue=MODE!=="pic"?shuffle(items.map((_,i)=>i)):items.map((_,i)=>i);
+  if(MODE==="mix")queue=mixWords(queue);
   qi=0;score=0;log=[];
   askQuestion();
 }
@@ -354,13 +377,14 @@ function paintPips(){
   $("pips").innerHTML=queue.map((_,i)=>{const l=log[i];return '<span class="pip'+(l?(MODE==="pic"?" d":l.right?" y":" n"):"")+'"></span>';}).join("");
 }
 function askQuestion(){
+  if(typeof queue[qi]==="string"){askWord();return;}
   const it=chapter().items[queue[qi]];
   paintPips();
   $("pic").src=it.pic;$("pic").alt="Ch "+chapter().n+" の絵";
   $("tq").textContent=it.t;
   $("tj").textContent=it.tj||"";$("tj").hidden=!it.tj;
-  $("quiz-only").hidden=MODE!=="quiz";$("pic-only").hidden=MODE!=="pic";
-  if(MODE==="quiz"){
+  $("quiz-only").hidden=MODE==="pic";$("pic-only").hidden=MODE!=="pic";
+  if(MODE!=="pic"){
     const others=shuffle(chapter().items.map((_,i)=>i).filter(i=>i!==queue[qi])).slice(0,2);
     $("choices").innerHTML=shuffle([queue[qi],...others]).map((o,n)=>
       '<button class="ch" data-o="'+o+'"><span class="k en">'+(n+1)+'</span><span>'+esc(chapter().items[o].s)+'</span></button>').join("");
@@ -425,9 +449,68 @@ $("btn-next").addEventListener("click",()=>{
   if(qi>=queue.length-1){showResult();return;}
   qi++;askQuestion();
 });
+/* ---- 単語ミックス：単語トレーニングで覚えた単語を、章の問題の間に混ぜる ----
+   単語の記録（箱と次に出す日）は単語トレーニングと同じ所に書くので、ここで言えた・言えなかったも反映される */
+const WINT={1:1,2:3,3:7,4:14,5:30}, WMAX=4;
+let WC=null;  // 今選んでいる単語コース {id, title, words}
+const wkey=()=>"apush-words-"+WC.id+"-v1";
+const wload=()=>{try{return JSON.parse(localStorage.getItem(wkey()))||null;}catch(e){return null;}};
+function loadWords(){
+  return new Promise(done=>{
+    let id=null;try{id=localStorage.getItem("apush-words-course");}catch(e){}
+    if(!id||!/^[a-z0-9]+$/.test(id))return done();
+    const sc=document.createElement("script");sc.src="words/courses/"+id+".js";
+    sc.onload=()=>{if(window.APW_COURSE&&window.APW_COURSE.id===id)WC=window.APW_COURSE;done();};
+    sc.onerror=()=>done();
+    document.head.appendChild(sc);
+  });
+}
+function mixWords(q){
+  const S=WC&&wload();
+  if(!S||!S.cards||!Object.keys(S.cards).length){
+    toast("まだ単語を覚えていません。「📚 単語」で覚えた単語が、ここに混ざります。");setTimeout(()=>$("toast").hidden=true,5000);
+    return q;
+  }
+  // 覚えている途中の単語（箱1〜5）から、期限が近いもの・箱が低いものを先に
+  const ids=Object.keys(S.cards).filter(k=>S.cards[k].box<=5&&WC.words[+k.split(":")[0]])
+    .sort((a,b)=>(S.cards[a].due<S.cards[b].due?-1:S.cards[a].due>S.cards[b].due?1:0)||S.cards[a].box-S.cards[b].box);
+  const out=q.slice();
+  shuffle(ids.slice(0,10)).slice(0,WMAX).forEach((k,n)=>out.splice(2+n*3,0,"w:"+k));  // 章の問題2つごとに単語を1つ
+  return out;
+}
+function askWord(){
+  clearInterval(timer);$("tbar").style.width="100%";$("tbar").classList.remove("low");
+  const [wi,si]=queue[qi].slice(2).split(":").map(Number),w=WC.words[wi],sense=w[1][si]||w[1][0];
+  paintPips();
+  $("qleft").textContent=(qi+1)+" / "+queue.length;
+  $("w-tag").textContent="📚 単語 · "+WC.title;
+  $("w-pics").textContent=sense[1]||"";
+  $("w-ja").textContent=sense[0];
+  $("w-en").textContent=w[0];
+  $("w-front").hidden=false;$("w-back").hidden=true;
+  view("word");
+}
+$("w-reveal").addEventListener("click",()=>{$("w-front").hidden=true;$("w-back").hidden=false;speak($("w-en").textContent);});
+function wordGrade(right){
+  const id=queue[qi].slice(2),S=wload();
+  if(S&&S.cards[id]){  // 単語トレーニングと同じ決まり：言えたら次の箱、言えなかったら箱1（箱5なら箱3）
+    const c=S.cards[id];
+    if(right)c.box=c.box>=5?6:c.box+1;else c.box=c.box===5?3:1;
+    if(c.box<=5)c.due=dayAhead(WINT[c.box]);
+    S.updatedAt=Date.now();try{localStorage.setItem(wkey(),JSON.stringify(S));}catch(e){}
+  }
+  if(right)score++;
+  log.push({w:$("w-en").textContent+"（"+$("w-ja").textContent+"）",right});
+  if(qi>=queue.length-1){showResult();return;}
+  qi++;askQuestion();
+}
+$("w-ok").addEventListener("click",()=>wordGrade(true));
+$("w-ng").addEventListener("click",()=>wordGrade(false));
+
 /* ---- 記録：章を1つやり終えた日を数える（この端末だけ） ---- */
 const ymd=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
 const dayAgo=n=>{const d=new Date();d.setDate(d.getDate()-n);return ymd(d);};
+const dayAhead=n=>dayAgo(-n);
 function streak(days){
   let n=days.includes(dayAgo(0))?0:1,k=0;  // 今日まだでも、昨日やっていれば続いている
   while(days.includes(dayAgo(n+k)))k++;
@@ -453,16 +536,16 @@ function showResult(){
   markToday();
   const done=store.get("done_"+LV,[]);
   if(!done.includes(chapter().n)){done.push(chapter().n);store.set("done_"+LV,done);renderNav();paintLog();}
-  if(MODE==="quiz"){
+  if(MODE!=="pic"){
     $("rbig").innerHTML=score+"<em> / "+queue.length+"</em>";
-    $("rmsg").textContent=score===queue.length?"全問正解。次は「絵だけ見て言う」で。":"もう一回やって、全部正解にしましょう。";
+    $("rmsg").textContent=score===queue.length?(MODE==="mix"?"全問正解。章の文も単語も言えました。":"全問正解。次は「絵だけ見て言う」で。"):"もう一回やって、全部正解にしましょう。";
   }else{
     $("rbig").innerHTML="6<em> / 6</em>";
     $("rmsg").textContent="絵だけで言えたら、この章は合格です。";
   }
   $("recap").innerHTML=log.map((l,k)=>
-    '<div class="rrow"><span class="m">'+(l.i+1)+'</span><span class="s">'+esc(chapter().items[l.i].s)+'</span>'+
-    (MODE==="quiz"?'<span class="v '+(l.right?"y":"n")+'">'+(l.right?"○":"×")+'</span>':"")+'</div>').join("");
+    '<div class="rrow"><span class="m">'+(l.w?"単":l.i+1)+'</span><span class="s">'+esc(l.w||chapter().items[l.i].s)+'</span>'+
+    (MODE!=="pic"?'<span class="v '+(l.right?"y":"n")+'">'+(l.right?"○":"×")+'</span>':"")+'</div>').join("");
   const nt=TODO[TODO.indexOf(CH)+1];
   $("btn-nextch").textContent=nt!==undefined?"次の復習へ（Ch "+level().chapters[nt].n+"）":"次の章へ";
   $("btn-nextch").hidden=nt===undefined&&CH===level().chapters.length-1;
@@ -530,7 +613,7 @@ $("rec-send").addEventListener("click",async()=>{
   const data=await new Promise((ok,ng)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(",")[1]);r.onerror=ng;r.readAsDataURL(blob);});
   upload({label:"Ch "+chapter().n+"-"+(queue[qi]+1),
     body:{source:"site",key:DATA.send.key,sid:store.get("sid",""),sec:recSec,name:store.get("name",""),level:level().name,ch:chapter().n,q:queue[qi]+1,
-      mode:MODE==="quiz"?"選んで言う":"絵だけ",t:it.t,s:it.s,mime:blob.type,data}});
+      mode:{quiz:"選んで言う",pic:"絵だけ",mix:"単語ミックス"}[MODE],t:it.t,s:it.s,mime:blob.type,data}});
   $("rec-msg").textContent="送っています。次へ進んで大丈夫です";$("rec-msg").className="recmsg ok";
 });
 </script>
