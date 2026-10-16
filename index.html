@@ -298,6 +298,7 @@ async function unlock(sid,pass){
   const me=JSON.parse(await dec(kek,box));
   const dkey=await crypto.subtle.importKey("raw",b64(me.k),"AES-GCM",false,["decrypt"]);
   store.set("name",me.name);
+  (window.aps=window.aps||[]).push(["profile",{name:sid+" "+me.name,fixed:true}]);   /* 管理アプリ（kanri）に出る名前＝会員番号 */
   return JSON.parse(await dec(dkey,enc));
 }
 const normSid=s=>{const n=s.replace(/[^0-9０-９]/g,"").replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0));return n?"STU"+n.padStart(3,"0"):s.trim().toUpperCase();};  // stu5・STU 005・５ → STU005
@@ -618,5 +619,6 @@ $("rec-send").addEventListener("click",async()=>{
   $("rec-msg").textContent="送っています。次へ進んで大丈夫です";$("rec-msg").className="recmsg ok";
 });
 </script>
+<script src="/install.js" defer></script>  <!-- ホーム画面に追加の案内・LINEから来た人・記録の引き継ぎ（2026-10-16） -->
 </body>
 </html>
