@@ -112,6 +112,10 @@ img.pic.small{max-height:18vh}
   </form>
 
   <div id="app" hidden>
+    <div class="toggle-row" id="biz-row" hidden>
+      <div><b>ビジネス英語</b><span id="biz-note"></span></div>
+      <button class="switch" id="biz" role="switch" aria-checked="false" aria-label="ビジネス英語"><i></i></button>
+    </div>
     <div class="seg" id="levels" role="group" aria-label="レベル"></div>
     <div class="chrow">
       <button id="prev" aria-label="前の章">‹</button>
@@ -242,7 +246,11 @@ function speak(t){try{if(!("speechSynthesis" in window))return;speechSynthesis.c
 
 let DATA=null, LV="b", CH=0, MODE="quiz", TODO=[];
 let queue=[], qi=0, score=0, log=[], taps=0, timer=null, left=0;
-const LIMIT={b:20,i:30};
+const LIMIT={b:20,i:30,z:30};
+let BIZ=false;   /* ビジネス英語ON：話すはビジネスの章、単語はビジネスのコースだけ（開ける生徒だけ） */
+const LEVELS=()=>DATA.levels.filter(l=>(l.id==="z")===BIZ);
+/* 絵の無い章（ビジネス）は、絵文字を絵の代わりに */
+const picOf=it=>it.pic||"data:image/svg+xml,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120"><text x="80" y="62" font-size="72" text-anchor="middle" dominant-baseline="middle">'+(it.e||"💼")+'</text></svg>');
 const level=()=>DATA.levels.find(l=>l.id===LV);
 const chapter=()=>level().chapters[CH];
 
@@ -258,7 +266,13 @@ async function unlock(sid,pass){
   const dkey=await crypto.subtle.importKey("raw",b64(me.k),"AES-GCM",false,["decrypt"]);
   store.set("name",me.name);
   (window.aps=window.aps||[]).push(["profile",{sid:sid,name:me.name,fixed:true}]);   /* 会員番号＝生徒ID（管理アプリの名簿のID） */
-  return JSON.parse(await dec(dkey,enc));
+  const data=JSON.parse(await dec(dkey,enc));
+  if(me.kb&&enc.b){   /* ビジネスの章：この生徒にだけ鍵がある */
+    const bk=await crypto.subtle.importKey("raw",b64(me.kb),"AES-GCM",false,["decrypt"]);
+    data.levels.push(JSON.parse(await dec(bk,enc.b)));
+  }
+  store.set("bizok",!!me.kb);
+  return data;
 }
 const normSid=s=>{const n=s.replace(/[^0-9０-９]/g,"").replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0));return n?"STU"+n.padStart(3,"0"):s.trim().toUpperCase();};  // stu5・STU 005・５ → STU005
 $("lock").addEventListener("submit",async e=>{
@@ -283,17 +297,27 @@ $("lock").addEventListener("submit",async e=>{
 /* ---- 画面の組み立て ---- */
 function start(){
   $("lock").hidden=true;$("app").hidden=false;
-  LV=store.get("lv","b");MODE=store.get("mode","quiz");CH=store.get("ch_"+LV,0);
+  const hasBiz=DATA.levels.some(l=>l.id==="z");
+  BIZ=hasBiz&&store.get("biz",false);$("biz-row").hidden=!hasBiz;paintBiz();
+  LV=store.get("lv","b");if(!LEVELS().some(l=>l.id===LV))LV=LEVELS()[0].id;
+  MODE=store.get("mode","quiz");CH=store.get("ch_"+LV,0);
   // LINE のリマインドから ?lv=b&ch=5,7&m=pic で、その章を直接開く（複数なら順番に）
   const q=new URLSearchParams(location.search);
-  if(DATA.levels.some(l=>l.id===q.get("lv"))){LV=q.get("lv");store.set("lv",LV);}
+  if(LEVELS().some(l=>l.id===q.get("lv"))){LV=q.get("lv");store.set("lv",LV);}
   TODO=(q.get("ch")||"").split(",").map(n=>level().chapters.findIndex(c=>String(c.n)===n.trim())).filter(i=>i>=0);
   if(TODO.length){CH=TODO[0];store.set("ch_"+LV,CH);}
   if(["quiz","pic","mix"].includes(q.get("m"))){MODE=q.get("m");store.set("mode",MODE);}
   if(q.toString())history.replaceState(null,"",location.pathname);
-  $("levels").innerHTML=DATA.levels.map(l=>'<button data-lv="'+l.id+'">'+esc(l.name)+'</button>').join("");
+  paintLevels();
   paintWho();renderNav();paintLog();loadWords().then(startRound);
 }
+function paintLevels(){$("levels").innerHTML=LEVELS().map(l=>'<button data-lv="'+l.id+'">'+esc(l.name)+'</button>').join("");}
+function paintBiz(){$("biz").setAttribute("aria-checked",String(BIZ));$("biz-note").textContent=BIZ?"ON：話すも単語も、全部ビジネスの内容":"OFF：いつもの教材";}
+$("biz").addEventListener("click",()=>{
+  BIZ=!BIZ;store.set("biz",BIZ);paintBiz();paintLevels();
+  LV=LEVELS()[0].id;CH=store.get("ch_"+LV,0);
+  WC=null;renderNav();loadWords().then(startRound);
+});
 function paintWho(){$("who").textContent=store.get("name","")+" さん";}
 $("who").addEventListener("click",()=>{
   if(confirm("ログアウトしますか？（次に開くとき、会員番号とパスワードがもう一度必要です）")){store.set("pass",null);location.reload();}
@@ -357,7 +381,7 @@ function askQuestion(){
   if(typeof queue[qi]==="string"){askWord();return;}
   const it=chapter().items[queue[qi]];
   paintPips();
-  $("pic").src=it.pic;$("pic").alt="Ch "+chapter().n+" の絵";
+  $("pic").src=picOf(it);$("pic").alt="Ch "+chapter().n+" の絵";
   $("tq").textContent=it.t;
   $("tj").textContent=it.tj||"";$("tj").hidden=!it.tj;
   $("quiz-only").hidden=MODE==="pic";$("pic-only").hidden=MODE!=="pic";
@@ -403,7 +427,7 @@ function openRepeat(right,timedOut){
   $("verdict").hidden=right===null;
   $("verdict").textContent=right?"正解":(timedOut?"時間切れ　答えはこちら":"おしい　答えはこちら");
   $("verdict").className="verdict "+(right?"y":"n");
-  $("rpic").src=it.pic;
+  $("rpic").src=picOf(it);
   $("rq").textContent="T: "+it.t;
   $("answer").textContent=it.s;
   $("answerja").textContent=it.sj||"";$("answerja").hidden=!it.sj;
@@ -435,6 +459,7 @@ const wload=()=>{try{return JSON.parse(localStorage.getItem(wkey()))||null;}catc
 function loadWords(){
   return new Promise(done=>{
     let id=null;try{id=localStorage.getItem("apush-words-course");}catch(e){}
+    if(BIZ&&!/^biz/.test(id||""))id="biz1";   /* ビジネス英語ON：単語ミックスもビジネスの単語 */
     if(!id||!/^[a-z0-9]+$/.test(id))return done();
     const sc=document.createElement("script");sc.src="words/courses/"+id+".js";
     sc.onload=()=>{if(window.APW_COURSE&&window.APW_COURSE.id===id)WC=window.APW_COURSE;done();};

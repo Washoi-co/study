@@ -337,6 +337,12 @@
 <script src="/activity.js"></script>
 <script src="courses/index.js"></script>
 <script>
+// ビジネスのコースは開ける生徒だけ。ビジネス英語ON（話すのスイッチ）なら、ビジネスのコースだけ
+(function(){
+  var ok=false,on=false;try{ok=JSON.parse(localStorage.getItem("ap_bizok"));on=JSON.parse(localStorage.getItem("ap_biz"));}catch(e){}
+  APW_COURSES=APW_COURSES.filter(function(x){ return x.g!=="Business"||ok; });
+  if(ok&&on)APW_COURSES=APW_COURSES.filter(function(x){ return x.g==="Business"; });
+})();
 // 生徒用：ログインしていなければトップ（会員番号とパスワード）へ
 try{ if(!JSON.parse(localStorage.getItem("ap_pass"))) location.replace("/"); }catch(e){ location.replace("/"); }
 // コースは ?c=gen1 か、前に選んだもの。ファイルはここで読み込む
@@ -344,7 +350,8 @@ try{ if(!JSON.parse(localStorage.getItem("ap_pass"))) location.replace("/"); }ca
   var c=new URLSearchParams(location.search).get("c"), last=null;
   try{ last=localStorage.getItem("apush-words-course"); }catch(e){}
   var ok=function(id){ return APW_COURSES.some(function(x){ return x.id===id; }); };
-  if(!ok(c) && !ok(last)){ location.replace("check.html"); return; }  // 初めてなら、まずレベルチェック
+  if(!ok(c) && !ok(last) && APW_COURSES[0].g==="Business") c=APW_COURSES[0].id;   // ビジネス英語ON：Business レベル1から
+  else if(!ok(c) && !ok(last)){ location.replace("check.html"); return; }  // 初めてなら、まずレベルチェック
   if(!ok(c)) c = last;
   try{ localStorage.setItem("apush-words-course", c); }catch(e){}
   document.write('<script src="courses/'+c+'.js"><\/script>');

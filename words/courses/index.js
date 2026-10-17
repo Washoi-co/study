@@ -19,5 +19,10 @@ window.APW_COURSES = [
   {g:"TOEFL iBT", id:"toefl80", t:"80点"},
   {g:"TOEFL iBT", id:"toefl90", t:"90点"},
   {g:"TOEFL iBT", id:"toefl100", t:"100点"},
-  {g:"TOEFL iBT", id:"toefl110", t:"110点"}
+  {g:"TOEFL iBT", id:"toefl110", t:"110点"},
+  // 2026-10-18：ビジネス（開ける生徒だけ。words/index.html で絞る）
+  {g:"Business", id:"biz1", t:"レベル1"},
+  {g:"Business", id:"biz2", t:"レベル2"},
+  {g:"Business", id:"biz3", t:"レベル3"},
+  {g:"Business", id:"biz4", t:"レベル4"}
 ];
