@@ -113,11 +113,12 @@
 .crow{display:flex;gap:8px;align-items:center}
 .course{flex:1;min-width:0;appearance:none;-webkit-appearance:none;background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23667391'/%3E%3C/svg%3E") no-repeat right 12px center;border:0;border-radius:12px;padding:10px 30px 10px 12px;font-size:15px;font-weight:700;color:var(--ink)}
 .crow .pill{flex:none;text-decoration:none}
+.navr .pill{white-space:nowrap;padding-left:11px;padding-right:11px}   /* 上のボタン4つを1行に */
 </style>
 </head>
 <body data-tab="wd">
 <main class="screen">
-  <div class="nav"><span class="navl"><span class="mini">単語</span></span><span class="navr"><button class="pill press" id="btn-set">設定</button><button class="pill press" id="btn-howto">やり方</button></span></div>
+  <div class="nav"><span class="navl"><span class="mini">単語</span></span><span class="navr"><button class="pill press" id="btn-list">一覧</button><button class="pill press" id="btn-set">設定</button><button class="pill press" id="btn-howto">やり方</button></span></div>
   <h1 class="large">単語</h1>
   <p class="sub" id="title"></p>
 
@@ -511,6 +512,8 @@ function setMode(m){
 }
 $("w-mode-card").addEventListener("click",function(){ setMode("card"); });
 $("w-mode-list").addEventListener("click",function(){ setMode("list"); });
+/* 上の「一覧」：学習中・テスト中でも、いつでも単語の一覧へ */
+$("btn-list").addEventListener("click",function(){ view("home"); renderHome(); setMode("list"); $("w-listwrap").scrollIntoView({block:"start"}); });
 /* 一覧：日本語か英語でさがす。覚えた状態は、その単語の意味（カード）から */
 function esc(s){ return String(s).replace(/[&<>"]/g,function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
 function renderList(){
