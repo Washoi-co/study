@@ -4,194 +4,128 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#0B0B0C">
+<meta name="theme-color" content="#F2F4F8">
+<meta name="color-scheme" content="light">
 <title>A-PUSH トレーニング</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="/ui.css">
 <style>
-/* 生徒用。合言葉で data.enc を復号して、Beginner / Intermediate の全章を training.apush.jp と同じ形で練習する。 */
-:root{
-  --ink:#0B0B0C; --surface:#151517; --surface2:#1E1E22;
-  --line:rgba(255,255,255,.11); --line-strong:rgba(255,255,255,.24);
-  --fg:#F4F4F5; --muted:#8E8E96;
-  --red:#FF2D16; --red-deep:#D41B06; --ok:#49D68B; --ng:#FF6B5A;
-  --en:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --jp:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,sans-serif;
-  color-scheme:dark;
-  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
-}
-*{box-sizing:border-box}
-html,body{margin:0}
-[hidden]{display:none!important}
-body{background:var(--ink);color:var(--fg);font-family:var(--jp);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;padding:0 16px 44px}
-.wrap{max-width:600px;margin:0 auto}
+/* 生徒用。会員番号＋パスワードで data.enc を復号して、Beginner / Intermediate の全章を練習する。
+   見た目は /ui.css（doboku と同じ）。ここは doboku に無い分だけ */
 .en{font-family:var(--en)}
-button,input,select{font:inherit;color:inherit}
-button{background:none;border:0;cursor:pointer}
-:focus-visible{outline:2px solid var(--red);outline-offset:2px;border-radius:6px}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+#app{display:flex;flex-direction:column;gap:12px}
+#who:empty{display:none}
+#who{max-width:46vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
-/* ---- 合言葉 ---- */
-.lock{min-height:80vh;display:grid;align-content:center;gap:12px;max-width:340px;margin:0 auto}
-.lock h1{font-family:var(--en);font-size:26px;font-weight:900;letter-spacing:-.03em;margin:0}
-.lock h1 b{color:var(--red)}
-.lock p{margin:0 0 6px;font-size:13px;color:var(--muted)}
-.lock label{font-size:12px;color:var(--muted);display:grid;gap:4px}
-.lock input{background:var(--surface);border:1px solid var(--line-strong);border-radius:10px;padding:12px 13px;font-size:16px}
-.lock input:focus{border-color:var(--red);outline:none}
-.err{color:var(--ng);font-size:12.5px;min-height:1.2em;margin:0}
+/* ログイン（doboku の「はじめに」シートと同じ形） */
+.lock{display:flex;flex-direction:column;gap:12px;background:var(--card);border-radius:20px;padding:20px 18px}
+.lock .g-h{margin:0}
+.lock p{margin:0;font-size:14px;color:var(--mute);line-height:1.6}
+.lock label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600}
+.lock input{width:100%;border:0;background:var(--bg);border-radius:12px;padding:13px 14px}
+.lock input#sid{font-family:var(--en);font-weight:700;letter-spacing:.06em}
+.err{color:var(--ng);font-size:13px;min-height:1.2em;margin:0}
+.lock .primary,#pic-only .primary,#w-front .primary{flex:none}
 
-/* ---- 上のバー ---- */
-.bar{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-top:14px}
-.pills{display:flex;gap:6px}
-.pills button{padding:5px 12px;border:1px solid var(--line-strong);border-radius:999px;font-size:12px;font-weight:700;color:var(--muted)}
-.pills button[aria-pressed="true"]{background:var(--fg);border-color:var(--fg);color:var(--ink)}
-.pills.en button{font-family:var(--en)}
-.who{font-size:12px;color:var(--muted);padding:4px 2px;max-width:40%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.who:hover{color:var(--fg)}
-.chrow{display:flex;gap:6px;margin-top:10px}
-.chrow select{flex:1;min-width:0;appearance:none;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238E8E96'/%3E%3C/svg%3E") no-repeat right 12px center;border:1px solid var(--line-strong);border-radius:10px;padding:10px 30px 10px 12px;font-size:13.5px;font-weight:700}
-.chrow button{flex:none;width:42px;border:1px solid var(--line-strong);border-radius:10px;font-size:15px;color:var(--muted)}
-.chrow button:hover:not(:disabled){border-color:var(--red);color:var(--red)}
+/* 章を選ぶ */
+.chrow{display:flex;gap:8px;align-items:center}
+.chrow select{flex:1;min-width:0;appearance:none;-webkit-appearance:none;background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7'%3E%3Cpath d='M0 0l6 7 6-7z' fill='%231D4ED8'/%3E%3C/svg%3E") no-repeat right 14px center;
+  border:0;border-radius:12px;padding:11px 34px 11px 13px;font-size:15px;font-weight:700;text-overflow:ellipsis}
+.chrow button{flex:none;width:40px;height:40px;border-radius:50%;background:var(--soft);color:var(--brand);font-size:20px;font-weight:700}
 .chrow button:disabled{opacity:.3;cursor:default}
-.modes{margin:10px 0 11px}
 
-/* ---- カード ---- */
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.timerbar{height:4px;background:rgba(255,255,255,.07)}
-.timerbar i{display:block;height:100%;background:var(--red);width:100%;transition:width .25s linear}
-.timerbar i.low{background:var(--ng)}
-.cardin{padding:14px 16px 20px}
-.qmeta{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:11.5px;color:var(--muted)}
-.qmeta .en{font-variant-numeric:tabular-nums}
-.pips{display:flex;gap:5px}
-.pip{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.16)}
-.pip.y{background:var(--ok)} .pip.n{background:var(--ng)} .pip.d{background:var(--fg)}
-.pic{display:block;max-width:100%;max-height:34vh;margin:12px auto 14px;border-radius:10px;background:#fff}
-.pic.small{max-height:18vh;margin:10px auto 4px}
+/* 問題 */
+.pip.d{background:var(--ink)}
+img.pic{display:block;max-width:100%;max-height:34vh;margin:0 auto;padding:0;border-radius:14px;background:#fff;box-shadow:0 0 0 1px var(--line) inset}
+img.pic.small{max-height:18vh}
 .tq{display:flex;gap:9px;align-items:flex-start}
-.tq .who-t{flex:none;font-family:var(--en);font-size:11px;font-weight:900;color:var(--muted);border:1.5px solid var(--line-strong);border-radius:50%;width:22px;height:22px;display:grid;place-items:center;margin-top:3px}
-.tq p{margin:0;flex:1;font-family:var(--en);font-size:clamp(17px,4.6vw,21px);font-weight:700;letter-spacing:-.02em;line-height:1.3}
-.tq .say{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--line-strong);display:grid;place-items:center;font-size:14px;color:var(--muted)}
-.tq .say:hover{border-color:var(--red);color:var(--red)}
-.tj{font-size:12px;color:var(--muted);margin:5px 0 0 31px}
-.ask{font-size:12px;color:var(--muted);margin:16px 0 8px}
-.choices{display:grid;gap:8px}
-.ch{border:1px solid var(--line-strong);border-radius:10px;padding:12px 14px;text-align:left;font-family:var(--en);font-size:15px;font-weight:700;letter-spacing:-.01em;line-height:1.35;display:flex;align-items:baseline;gap:11px}
-.ch:hover:not(:disabled){border-color:var(--red);color:var(--red)}
-.ch:disabled{cursor:default}
-.ch .k{font-size:11px;color:var(--muted);flex:none;width:12px}
-.ch.correct{border-color:var(--ok);background:rgba(73,214,139,.12);color:var(--ok)}
-.ch.wrong{border-color:var(--ng);background:rgba(255,107,90,.10);color:var(--ng)}
-.ch.dim{opacity:.4}
-.big-btn{display:block;width:100%;margin-top:16px;border-radius:10px;padding:13px;background:var(--red);color:#fff;font-weight:700;font-size:14.5px}
-.big-btn:hover{background:var(--red-deep)}
+.tq .who-t{flex:none;font-family:var(--en);font-size:11px;font-weight:900;color:var(--brand);background:var(--soft);border-radius:50%;width:24px;height:24px;display:grid;place-items:center;margin-top:2px}
+.tq p{margin:0;flex:1;font-family:var(--en);font-size:clamp(17px,4.6vw,21px);font-weight:700;letter-spacing:-.015em;line-height:1.35}
+.tsay{flex:none;width:36px;height:36px;border-radius:50%;background:var(--soft);color:var(--brand);font-size:13px;display:grid;place-items:center}
+.tj{font-size:13px;color:var(--mute);margin:-6px 0 0 33px}
+#quiz-only,#pic-only{display:flex;flex-direction:column;gap:9px}
+.rq{margin:0;font-family:var(--en);font-size:14px;color:var(--mute);text-align:center}
+.wpics{font-size:clamp(48px,14vw,68px);line-height:1;text-align:center;min-height:10px}
 
-/* ---- 復唱・録音 ---- */
-.repeat{text-align:center}
-.verdict{font-size:13px;font-weight:700;margin:0}
-.verdict.y{color:var(--ok)} .verdict.n{color:var(--ng)}
-.rq{font-family:var(--en);font-size:13.5px;color:var(--muted);margin:6px 0 0}
-.answer{font-family:var(--en);font-size:clamp(20px,5.2vw,27px);font-weight:900;letter-spacing:-.03em;line-height:1.25;margin:10px 0 0;text-wrap:balance}
-.answerja{font-size:13px;color:var(--muted);margin:8px 0 0}
-.saylabel{font-size:12.5px;color:var(--muted);margin:18px 0 10px}
-.dots{display:flex;gap:12px;justify-content:center}
-.dot{width:54px;height:54px;border-radius:50%;border:2px solid var(--line-strong);display:grid;place-items:center;font-family:var(--en);font-size:16px;font-weight:900;color:var(--muted)}
-.dot:hover{border-color:var(--red)}
-.dot.on{background:var(--red);border-color:var(--red);color:#fff}
-.rec{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
-.recbtn{border:1px solid var(--line-strong);border-radius:999px;padding:9px 18px;font-size:13.5px;font-weight:700;display:inline-flex;align-items:center;gap:8px}
-.recbtn::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--red)}
-.recbtn:hover{border-color:var(--red)}
-.recbtn.on{background:var(--red);border-color:var(--red);color:#fff}
+/* 録音 */
+.rec{display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:12px;border-top:.5px solid var(--line2)}
+#rec-done{width:100%;display:flex;flex-direction:column;gap:8px}
+.recbtn{display:inline-flex;align-items:center;gap:8px;background:var(--soft);color:var(--brand);border-radius:99px;padding:11px 20px;font-size:15px;font-weight:700;transition:transform .1s ease-out}
+.recbtn:active{transform:scale(.97)}
+.recbtn::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--ng)}
+.recbtn.on{background:var(--ng);color:#fff}
 .recbtn.on::before{background:#fff;border-radius:2px;animation:blink 1s infinite}
 @keyframes blink{50%{opacity:.3}}
-.rec audio{width:100%;max-width:340px;height:40px;margin:2px auto 0;display:block}
-.recmsg{font-size:12px;color:var(--muted);margin:8px 0 0;min-height:1.2em}
+.rec audio{width:100%;max-width:360px;height:40px;margin:0 auto;display:block}
+.recmsg{font-size:12.5px;color:var(--mute);margin:0;min-height:1.2em;text-align:center}
 .recmsg.ok{color:var(--ok)} .recmsg.ng{color:var(--ng)}
 
-.acts{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
-.acts button{border:1px solid var(--line-strong);border-radius:9px;padding:10px 17px;font-size:13.5px;font-weight:700}
-.acts button:hover{border-color:var(--red);color:var(--red)}
-.acts .primary{background:var(--red);border-color:var(--red);color:#fff}
-.acts .primary:hover{background:var(--red-deep);border-color:var(--red-deep);color:#fff}
-.acts button:disabled{opacity:.35;cursor:default}
-.acts button:disabled:hover{border-color:var(--line-strong);color:inherit}
-.acts .primary:disabled:hover{background:var(--red);border-color:var(--red);color:#fff}
+.streak{margin:0;text-align:center;font-size:14px;font-weight:700;color:var(--brand)}
 
-/* ---- 結果 ---- */
-.result{text-align:center}
-.big{font-family:var(--en);font-size:52px;font-weight:900;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums;margin:0}
-.big em{font-style:normal;font-size:22px;color:var(--muted)}
-.resultja{font-size:13.5px;margin:9px 0 0}
-.recap{margin-top:16px;text-align:left;border-top:1px solid var(--line)}
-.rrow{display:flex;gap:10px;align-items:baseline;padding:9px 2px;border-bottom:1px solid var(--line);font-size:13px}
-.rrow .m{flex:none;font-family:var(--en);font-size:11px;color:var(--muted);width:14px}
-.rrow .s{font-family:var(--en);font-weight:700;min-width:0;overflow-wrap:anywhere;flex:1}
-.rrow .v{flex:none;font-size:12px;font-weight:700}
-.rrow .v.y{color:var(--ok)} .rrow .v.n{color:var(--ng)}
+/* あなたの記録 */
+.log{background:var(--card);border-radius:var(--r);padding:12px 14px}
+.log summary{cursor:pointer;font-weight:700;font-size:16px;display:flex;justify-content:space-between;gap:10px;list-style:none}
+.log summary::-webkit-details-marker{display:none}
+.log summary::after{content:"›";color:var(--mute);transition:transform .2s}
+.log[open] summary::after{transform:rotate(90deg)}
+.log summary .en{margin-left:auto;color:var(--brand)}
+.log .tiles{margin:12px 0 10px}
+.log .tiles div{background:var(--bg)}
+.log .cal span{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;font-family:var(--en);font-size:12px;font-weight:500;color:var(--mute);font-variant-numeric:tabular-nums}
+.log .cal span.on{background:var(--brand);color:var(--on);font-weight:700}
+.log .cal span.today{box-shadow:0 0 0 2px var(--ink) inset;color:var(--ink);font-weight:700}
+.log .cal span.on.today{color:var(--on)}
 
-.nav{display:flex;gap:8px;margin-top:10px}
-.nav a{flex:1;text-align:center;border:1px solid var(--line-strong);border-radius:10px;padding:9px 6px;font-size:13px;font-weight:700;color:var(--fg);text-decoration:none}
-.nav a:hover{border-color:var(--red);color:var(--red)}
-.wpics{font-size:clamp(48px,14vw,68px);line-height:1;text-align:center;margin:10px 0 2px;min-height:10px}
-.wja{font-size:clamp(19px,5vw,24px);font-weight:900;text-align:center;margin:8px 0 0;line-height:1.4}
-.wtag{font-size:11.5px;color:var(--muted);text-align:center;margin:0}
-.log{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
-.log summary{cursor:pointer;font-weight:700;font-size:14px;display:flex;justify-content:space-between;gap:10px}
-.log summary .en{color:var(--red)}
-.nums{display:flex;gap:10px;margin:12px 0 10px}
-.nums div{flex:1;background:var(--surface2);border-radius:10px;padding:10px;text-align:center;font-size:11.5px;color:var(--muted)}
-.nums b{display:block;font-family:var(--en);font-size:26px;font-weight:900;color:var(--fg);line-height:1.1}
-.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
-.cal span{aspect-ratio:1;border-radius:6px;background:rgba(255,255,255,.06);font-size:10px;display:grid;place-items:center;color:var(--muted);font-family:var(--en)}
-.cal span.on{background:var(--red);color:#fff}
-.cal span.today{outline:1.5px solid var(--fg)}
-.streak{font-size:13.5px;font-weight:700;color:var(--red);margin:6px 0 0}
-.toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:calc(100% - 32px);max-width:420px;background:var(--surface2);border:1px solid var(--line-strong);border-radius:12px;padding:11px 14px;font-size:13px;text-align:center;z-index:10}
+/* やり方（下から出る白いシート） */
+.how{border:0;padding:0 20px calc(18px + env(safe-area-inset-bottom,0px));margin:auto auto 0;width:100%;max-width:560px;max-height:calc(100dvh - env(safe-area-inset-top,0px) - 24px);overflow:auto;
+  background:var(--card);color:var(--ink);border-radius:24px 24px 0 0;box-shadow:0 -8px 40px rgba(0,0,0,.18)}
+.how::backdrop{background:var(--scrim)}
+.how .sh-top{cursor:default;touch-action:auto}
+.how .sh-body{padding-bottom:6px}
+
+.toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:calc(100% - 32px);max-width:420px;margin:0;background:var(--card);border-radius:14px;padding:12px 14px;font-size:14px;text-align:center;z-index:20;box-shadow:0 8px 30px rgba(15,30,61,.18)}
 .toast.ok{color:var(--ok)} .toast.ng{color:var(--ng)}
-.toast button{margin-left:8px;border:1px solid currentColor;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700}
-.foot{margin-top:24px;font-size:11px;color:#64646C;line-height:1.7}
+.toast button{margin-left:8px;background:var(--soft);color:var(--brand);border-radius:99px;padding:4px 12px;font-size:13px;font-weight:700}
 </style>
 </head>
-<body>
-<div class="wrap">
+<body data-tab="sp">
+<main class="screen">
+  <div class="nav"><span class="navl"><span class="mini">話す</span></span><div class="navr"><button class="pill" id="who" title="ログアウト"></button><button class="pill" id="btn-how" aria-haspopup="dialog">やり方</button></div></div>
+  <h1 class="large">話す</h1>
+  <p class="sub">A-PUSHメソッド・選んで、声に出して3回</p>
 
   <form class="lock" id="lock">
-    <h1>A<b>-</b>PUSH Training</h1>
+    <h2 class="g-h">A-PUSH Training</h2>
     <p>生徒用の練習ページです。先生から届いた会員番号とパスワードを入れてください。</p>
     <label>会員番号（例: STU005）<input id="sid" autocomplete="username" autocapitalize="characters" spellcheck="false" required></label>
     <label>パスワード<input id="pass" type="password" autocomplete="current-password" required></label>
     <p class="err" id="lock-err" role="alert"></p>
-    <button class="big-btn" type="submit" id="lock-go">はじめる</button>
+    <button class="primary" type="submit" id="lock-go">はじめる</button>
   </form>
 
-  <main id="app" hidden>
-    <div class="bar">
-      <div class="pills en" id="levels" role="group" aria-label="レベル"></div>
-      <button class="who" id="who" title="ログアウト"></button>
-    </div>
-    <nav class="nav"><a href="plan/">📅 計画</a><a href="words/">📚 単語</a><a href="shadowing/">🎧 シャドーイング</a></nav>
+  <div id="app" hidden>
+    <div class="seg" id="levels" role="group" aria-label="レベル"></div>
     <div class="chrow">
       <button id="prev" aria-label="前の章">‹</button>
       <select id="chsel" aria-label="章"></select>
       <button id="next" aria-label="次の章">›</button>
     </div>
-    <div class="pills modes" id="modes" role="group" aria-label="練習のしかた">
+    <div class="seg" id="modes" role="group" aria-label="練習のしかた">
       <button data-m="quiz">選んで言う</button>
       <button data-m="pic">絵だけ見て言う</button>
       <button data-m="mix">単語ミックス</button>
     </div>
 
     <div class="card">
-      <div class="timerbar"><i id="tbar"></i></div>
-      <div class="cardin">
+      <div class="bar"><i id="tbar"></i></div>
+      <div class="cin">
 
-        <div id="v-quiz">
-          <div class="qmeta"><span class="pips" id="pips"></span><span class="en" id="qleft"></span></div>
+        <div id="v-quiz" class="cin" style="padding:0">
+          <div class="meta"><span class="pips" id="pips"></span><span id="qleft"></span></div>
           <img class="pic" id="pic" alt="">
-          <div class="tq"><span class="who-t">T</span><p id="tq"></p><button class="say" id="say-t" aria-label="質問を聞く">▶</button></div>
+          <div class="tq"><span class="who-t">T</span><p id="tq"></p><button class="tsay" id="say-t" aria-label="質問を聞く">▶</button></div>
           <p class="tj" id="tj"></p>
           <div id="quiz-only">
             <p class="ask">答えはどれ？</p>
@@ -199,28 +133,28 @@ button{background:none;border:0;cursor:pointer}
           </div>
           <div id="pic-only">
             <p class="ask">絵を見て、声に出して答えてから押してください。</p>
-            <button class="big-btn" id="reveal">答えを見る</button>
+            <button class="primary" id="reveal">答えを見る</button>
           </div>
         </div>
 
-        <div id="v-repeat" class="repeat" hidden>
+        <div id="v-repeat" class="cin" style="padding:0" hidden>
           <p class="verdict" id="verdict"></p>
           <img class="pic small" id="rpic" alt="">
-          <p class="rq en" id="rq"></p>
-          <p class="answer en" id="answer"></p>
-          <p class="answerja" id="answerja"></p>
-          <p class="saylabel">声に出して3回。タップすると音が鳴ります。</p>
+          <p class="rq" id="rq"></p>
+          <p class="answer" id="answer"></p>
+          <p class="say" id="answerja"></p>
+          <p class="say">声に出して3回。タップすると音が鳴ります。</p>
           <div class="dots" id="dots">
-            <button class="dot" data-d="0">1</button>
-            <button class="dot" data-d="1">2</button>
-            <button class="dot" data-d="2">3</button>
+            <button class="dot" data-d="0" aria-label="1回目">1</button>
+            <button class="dot" data-d="1" aria-label="2回目">2</button>
+            <button class="dot" data-d="2" aria-label="3回目">3</button>
           </div>
           <div class="rec" id="rec">
             <button class="recbtn" id="rec-btn">録音する</button>
             <div id="rec-done" hidden>
               <audio id="rec-audio" controls></audio>
               <div class="acts">
-                <button id="rec-redo">録り直す</button>
+                <button class="ghost" id="rec-redo">録り直す</button>
                 <button class="primary" id="rec-send">先生に送る</button>
               </div>
             </div>
@@ -229,27 +163,27 @@ button{background:none;border:0;cursor:pointer}
           <div class="acts"><button class="primary" id="btn-next" disabled>次へ</button></div>
         </div>
 
-        <div id="v-word" class="repeat" hidden>
-          <p class="wtag" id="w-tag"></p>
+        <div id="v-word" class="cin" style="padding:0" hidden>
+          <span class="wcat" id="w-tag"></span>
           <div class="wpics" id="w-pics"></div>
           <p class="wja" id="w-ja"></p>
-          <div id="w-front">
-            <p class="saylabel">この意味の英単語を、声に出して言ってから押してください。</p>
-            <button class="big-btn" id="w-reveal">答えを見る</button>
+          <div id="w-front" class="cin" style="padding:0">
+            <p class="say">この意味の英単語を、声に出して言ってから押してください。</p>
+            <button class="primary" id="w-reveal">答えを見る</button>
           </div>
-          <div id="w-back" hidden>
-            <p class="answer en" id="w-en"></p>
-            <div class="acts"><button id="w-ng">言えなかった</button><button class="primary" id="w-ok">言えた</button></div>
+          <div id="w-back" class="cin" style="padding:0" hidden>
+            <p class="wen" id="w-en"></p>
+            <div class="acts"><button class="ghost" id="w-ng">言えなかった</button><button class="primary" id="w-ok">言えた</button></div>
           </div>
         </div>
 
-        <div id="v-result" class="result" hidden>
-          <p class="big en" id="rbig"></p>
-          <p class="resultja" id="rmsg"></p>
+        <div id="v-result" class="cin" style="padding:0" hidden>
+          <p class="big" id="rbig"></p>
+          <p class="rmsg" id="rmsg"></p>
           <p class="streak" id="rstreak"></p>
           <div class="recap" id="recap"></div>
           <div class="acts">
-            <button id="btn-again">もう一回</button>
+            <button class="ghost" id="btn-again">もう一回</button>
             <button class="primary" id="btn-nextch">次の章へ</button>
           </div>
         </div>
@@ -259,7 +193,7 @@ button{background:none;border:0;cursor:pointer}
 
     <details class="log" id="log">
       <summary>あなたの記録<span class="en" id="log-sum"></span></summary>
-      <div class="nums">
+      <div class="tiles">
         <div><b id="log-streak">0</b>日 連続</div>
         <div><b id="log-days">0</b>日 練習した</div>
         <div><b id="log-chs">0</b>章 クリア</div>
@@ -267,10 +201,29 @@ button{background:none;border:0;cursor:pointer}
       <div class="cal" id="log-cal" aria-label="最近4週間"></div>
     </details>
 
-    <p class="foot">音声は端末の読み上げ機能を使っています。端末や設定によっては鳴りません。録音を送るとき、マイクの許可を求められます。</p>
-  </main>
-  <p class="toast" id="toast" role="status" hidden></p>
-</div>
+    <footer class="foot">
+      <span>音声は端末の読み上げ機能を使っています。端末や設定によっては鳴りません。録音を送るとき、マイクの許可を求められます。</span>
+      <span class="by">TRAINING BY A-PUSH</span>
+    </footer>
+  </div>
+</main>
+
+<dialog class="how" id="how" aria-labelledby="how-t">
+  <div class="sh-top"><div class="grab"></div><div class="sh-head"><span class="sh-title" id="how-t">やり方</span><button class="sh-x" id="how-x" aria-label="閉じる">×</button></div></div>
+  <div class="sh-body">
+    <div class="imgs"><img src="/howto/02.webp" alt="話せる英語は、声に出した回数で決まる。" width="1600" height="900" loading="lazy"><img src="/howto/13.webp" alt="英語を、九九にする。" width="1600" height="900" loading="lazy"><img src="/howto/12.webp" alt="考える前に、口から出す。" width="1600" height="900" loading="lazy"><img src="/howto/07.webp" alt="絵を見て、選んで、声に出す。" width="1600" height="900" loading="lazy"></div><p class="imgs-n">← 横にスワイプ →</p>
+    <h2 class="g-h">選んで、声に出して3回</h2>
+    <ol class="g-steps">
+      <li>絵と先生の質問（T）を見て、答えを3つから選ぶ</li>
+      <li>正しい文を、声に出して3回。①②③を押すと音が鳴ります</li>
+      <li>録音して「先生に送る」。先生が聞いて返事をします</li>
+      <li>全部正解したら「絵だけ見て言う」で、選ばずに言う</li>
+    </ol>
+    <p class="g-tip">「単語ミックス」は、単語で覚えた単語が章の問題の間に混ざります</p>
+    <div class="acts"><button class="primary" id="how-ok">わかった</button></div>
+  </div>
+</dialog>
+<p class="toast" id="toast" role="status" hidden></p>
 
 <script src="/activity.js"></script>
 <script>
@@ -298,7 +251,7 @@ async function unlock(sid,pass){
   const me=JSON.parse(await dec(kek,box));
   const dkey=await crypto.subtle.importKey("raw",b64(me.k),"AES-GCM",false,["decrypt"]);
   store.set("name",me.name);
-  (window.aps=window.aps||[]).push(["profile",{name:sid+" "+me.name,fixed:true}]);   /* 管理アプリ（kanri）に出る名前＝会員番号 */
+  (window.aps=window.aps||[]).push(["profile",{sid:sid,name:me.name,fixed:true}]);   /* 会員番号＝生徒ID（管理アプリの名簿のID） */
   return JSON.parse(await dec(dkey,enc));
 }
 const normSid=s=>{const n=s.replace(/[^0-9０-９]/g,"").replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0));return n?"STU"+n.padStart(3,"0"):s.trim().toUpperCase();};  // stu5・STU 005・５ → STU005
@@ -351,6 +304,7 @@ function renderNav(){
   $("chsel").innerHTML=html+"</optgroup>";
   $("chsel").value=CH;
   $("prev").disabled=CH===0;$("next").disabled=CH===level().chapters.length-1;
+  segSlide("levels");segSlide("modes");
 }
 function go(ch){CH=ch;store.set("ch_"+LV,CH);renderNav();startRound();}
 $("levels").addEventListener("click",e=>{
@@ -365,6 +319,21 @@ $("chsel").addEventListener("change",()=>go(+$("chsel").value));
 $("prev").addEventListener("click",()=>go(CH-1));
 $("next").addEventListener("click",()=>go(CH+1));
 
+/* 切り替え（セグメント）の白い板を、押した所へすべらせる（doboku の engine.js と同じ） */
+function segSlide(id){
+  const el=$(id);if(!el)return;
+  let i=el.querySelector(".sl");
+  if(!i){i=document.createElement("i");i.className="sl";el.insertBefore(i,el.firstChild);}
+  const btns=[...el.querySelectorAll("button")];if(!btns.length)return;
+  const n=btns.findIndex(b=>b.getAttribute("aria-pressed")==="true");
+  i.hidden=n<0;if(n<0)return;
+  i.style.width="calc((100% - 4px) / "+btns.length+")";
+  i.style.transform="translateX("+n*100+"%)";
+}
+/* やり方（下から出るシート） */
+$("btn-how").addEventListener("click",()=>$("how").showModal());
+["how-x","how-ok"].forEach(id=>$(id).addEventListener("click",()=>$("how").close()));
+$("how").addEventListener("click",e=>{if(e.target===$("how"))$("how").close();}); // 背景タップで閉じる
 function view(k){["quiz","repeat","word","result"].forEach(n=>$("v-"+n).hidden=(n!==k));}
 
 /* ---- 1章＝6問 ---- */
@@ -619,6 +588,7 @@ $("rec-send").addEventListener("click",async()=>{
   $("rec-msg").textContent="送っています。次へ進んで大丈夫です";$("rec-msg").className="recmsg ok";
 });
 </script>
+<script src="/ui.js" defer></script>
 <script src="/install.js" defer></script>  <!-- ホーム画面に追加の案内・LINEから来た人・記録の引き継ぎ（2026-10-16） -->
 </body>
 </html>
