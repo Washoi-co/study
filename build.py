@@ -6,7 +6,8 @@
   beginner.txt       Beginner PDF を pdftotext -layout したもの
   intermediate.json  Intermediate の文字起こし [{ch,title,ja,items:[[T,S,T訳,S訳],...]}]
   send.json          録音の送り先 {"url": Apps Script の URL, "key": 合い鍵}（任意）
-  students.json      生徒ごとのログイン [{"id": "STU005", "name": "T.Y", "pass": "パスワード", "biz": true}, ...]
+  students.json      生徒ごとのログイン [{"id": "STU005", "name": "T.Y", "pass": "パスワード", "biz": true, "words": ["土木"]}, ...]
+                     words：この生徒だけに見せる単語のグループ（words/courses/index.js の g）
   business.json      ビジネスの章（任意）[{ch,title,ja,items:[[T,S,T訳,S訳,絵文字],...]}]。"biz": true の生徒だけが開ける
 生徒を足した・パスワードを変えた時は、もう一度これを実行して data.enc を push する。
 
@@ -88,6 +89,7 @@ def main():
         me = {"k": b64(dkey), "name": st["name"]}
         if biz and st.get("biz"):
             me["kb"] = b64(bkey)
+        me["wg"] = st.get("words", []) + (["Business"] if st.get("biz") else [])   # この生徒だけが見られる単語のグループ
         inner = json.dumps(me, ensure_ascii=False).encode()
         keys[st["id"].upper()] = {"s": b64(salt), "i": b64(siv), "c": b64(AESGCM(kek).encrypt(siv, inner, None))}
     json.dump({**out, "keys": keys}, open(os.path.join(os.path.dirname(__file__), "data.enc"), "w"))

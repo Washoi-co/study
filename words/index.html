@@ -343,10 +343,11 @@
 <script src="/activity.js"></script>
 <script src="courses/index.js"></script>
 <script>
-// ビジネスのコースは開ける生徒だけ。ビジネス英語ON（話すのスイッチ）なら、ビジネスのコースだけ
+// ビジネス・土木のコースは開ける生徒だけ。ビジネス英語ON（話すのスイッチ）なら、ビジネスのコースだけ
 (function(){
-  var ok=false,on=false;try{ok=JSON.parse(localStorage.getItem("ap_bizok"));on=JSON.parse(localStorage.getItem("ap_biz"));}catch(e){}
-  APW_COURSES=APW_COURSES.filter(function(x){ return x.g!=="Business"||ok; });
+  var ok=false,on=false,wg=[];try{ok=JSON.parse(localStorage.getItem("ap_bizok"));on=JSON.parse(localStorage.getItem("ap_biz"));wg=JSON.parse(localStorage.getItem("ap_wg"))||[];}catch(e){}
+  var LIMITED=["Business","土木"];   // 開ける生徒だけのグループ
+  APW_COURSES=APW_COURSES.filter(function(x){ return LIMITED.indexOf(x.g)<0||wg.indexOf(x.g)>=0||(x.g==="Business"&&ok); });
   if(ok&&on)APW_COURSES=APW_COURSES.filter(function(x){ return x.g==="Business"; });
 })();
 // 生徒用：ログインしていなければトップ（会員番号とパスワード）へ

@@ -272,6 +272,7 @@ async function unlock(sid,pass){
     data.levels.push(JSON.parse(await dec(bk,enc.b)));
   }
   store.set("bizok",!!me.kb);
+  store.set("wg",me.wg||[]);   /* この生徒だけの単語のグループ（Business・土木など） */
   return data;
 }
 const normSid=s=>{const n=s.replace(/[^0-9０-９]/g,"").replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0));return n?"STU"+n.padStart(3,"0"):s.trim().toUpperCase();};  // stu5・STU 005・５ → STU005

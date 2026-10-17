@@ -20,9 +20,20 @@ window.APW_COURSES = [
   {g:"TOEFL iBT", id:"toefl90", t:"90点"},
   {g:"TOEFL iBT", id:"toefl100", t:"100点"},
   {g:"TOEFL iBT", id:"toefl110", t:"110点"},
-  // 2026-10-18：ビジネス（開ける生徒だけ。words/index.html で絞る）
+  // 2026-10-18：ビジネス・土木は、開ける生徒だけ（students.json の words。words/index.html で絞る）
   {g:"Business", id:"biz1", t:"レベル1"},
   {g:"Business", id:"biz2", t:"レベル2"},
   {g:"Business", id:"biz3", t:"レベル3"},
-  {g:"Business", id:"biz4", t:"レベル4"}
+  {g:"Business", id:"biz4", t:"レベル4"},
+  // 2026-10-18：土木（開ける生徒だけ）
+  {g:"土木", id:"civ1", t:"道具・機械"},
+  {g:"土木", id:"civ2", t:"材料・資材"},
+  {g:"土木", id:"civ3", t:"測量・図面・設計"},
+  {g:"土木", id:"civ4", t:"安全・衛生"},
+  {g:"土木", id:"civ5", t:"基礎・土工・地盤"},
+  {g:"土木", id:"civ6", t:"道路・橋・トンネル"},
+  {g:"土木", id:"civ7", t:"水・配管・防災"},
+  {g:"土木", id:"civ8", t:"建築・仕上げ"},
+  {g:"土木", id:"civ9", t:"電気・設備"},
+  {g:"土木", id:"civ10", t:"現場の動作・管理"}
 ];
