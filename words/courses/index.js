@@ -25,6 +25,12 @@ window.APW_COURSES = [
   {g:"Business", id:"biz2", t:"レベル2"},
   {g:"Business", id:"biz3", t:"レベル3"},
   {g:"Business", id:"biz4", t:"レベル4"},
+  {g:"Business", id:"biz5", t:"マーケティング・営業"},
+  {g:"Business", id:"biz6", t:"IT・デジタル"},
+  {g:"Business", id:"biz7", t:"製造・物流・品質"},
+  {g:"Business", id:"biz8", t:"金融・会計・法務"},
+  {g:"Business", id:"biz9", t:"人事・組織・働き方"},
+  {g:"Business", id:"biz10", t:"インド・海外ビジネス"},
   // 2026-10-18：土木（開ける生徒だけ）
   {g:"土木", id:"civ1", t:"道具・機械"},
   {g:"土木", id:"civ2", t:"材料・資材"},
