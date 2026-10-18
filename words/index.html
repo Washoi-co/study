@@ -123,6 +123,11 @@
 
   <!-- ホーム -->
   <section id="v-home">
+    <div class="inst" id="w-adlib" hidden>
+      <span class="inst-ic" aria-hidden="true">🗣</span>
+      <p><b>次は、今日の単語でアドリブ5問</b><br><span id="w-adlib-n"></span></p>
+      <button class="primary" id="w-adlib-go">アドリブへ</button>
+    </div>
     <div class="decks" id="w-decks" role="group" aria-label="単語帳を選ぶ"></div>
     <div class="crow"><select class="course" id="course" aria-label="ほかのコースを選ぶ"></select><a class="pill press" href="check.html">レベルチェック</a></div>
     <div class="daily">
@@ -485,6 +490,9 @@ function renderHome(){
     return '<button class="row task'+(x.done?' done':'')+(i===nextIdx?' next':'')+'" data-t="'+x.id+'"'+(x.on?'':' disabled')+'>'
       +'<span class="ic" aria-hidden="true">'+x.ic+'</span><span><b>'+x.t+'</b><small>'+x.s+'</small></span><span class="chev">'+x.st+(x.on?' ›':'')+'</span></button>'; }).join("");
   $("msg").hidden=!msg; $("msg").textContent=msg;
+  // 朝の単語を終えたら、今日の単語でアドリブ5問（話すのページ /?adlib=1）。5問やるまで出す
+  var an=0; try{ an=((JSON.parse(localStorage.getItem("ap_activity"))||{})[today()]||{}).adlib||0; }catch(e){}
+  $("w-adlib").hidden=!d.am || an>=5; $("w-adlib-n").textContent="今日 "+an+" / 5 問";
   // doboku の形：単語帳・1日の新しい単語・今日の数
   renderDecks(tn);
   $("w-daily").innerHTML=PER_OPTS.map(function(n){ return '<button data-per="'+n+'" aria-pressed="'+(n===per)+'">'+n+'</button>'; }).join("");
@@ -495,6 +503,7 @@ function renderHome(){
   var st=S.settings; $("times").textContent="目安の時間：朝 "+st.am+"／昼 "+st.noon+"／夜 "+st.pm+"（設定で変更できます）";
   view("home");
 }
+$("w-adlib-go").addEventListener("click",function(){ location.href="/?adlib=1"; });
 $("tasks").addEventListener("click",function(e){
   var b=e.target.closest("[data-t]"); if(!b||b.disabled) return;
   if(b.dataset.t==="am") startLearn("am");

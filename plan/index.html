@@ -64,7 +64,7 @@ a.row{text-decoration:none;color:var(--ink)}
     <div class="legend">
       <span style="--c:var(--brand)">1日のゴール達成</span>
       <span style="--c:var(--soft2)">少しやった</span>
-      <span style="--c:var(--ok)">チャンク・単語・シャドーイング</span>
+      <span style="--c:var(--ok)">単語・アドリブ・チャンク・シャドーイング</span>
     </div>
   </div>
   <div class="tiles">
@@ -138,13 +138,16 @@ function activity(){
 const DEF={words:20,chunk:1,shadow:1,monthText:"",monthWords:600,m3Text:"",m3Words:1800,m3Start:TODAY};
 let G=Object.assign({},DEF,get("ap_goals",{}));
 const TASKS=[
-  {k:"chunk",ic:"🧩",t:"チャンクトレーニング",u:"章",href:"/"},
   {k:"words",ic:"📚",t:"新しい単語",u:"語",href:"/words/"},
+  {k:"adlib",ic:"🗣",t:"アドリブ（今日の単語で5問）",u:"問",href:"/?adlib=1"},
+  {k:"chunk",ic:"🧩",t:"チャンクトレーニング",u:"章",href:"/"},
   {k:"shadow",ic:"🎧",t:"シャドーイング",u:"本",href:"/shadowing/"},
 ];
+// アドリブは毎日5問の決まった課題（ゴールで変えない）。始めた日より前の日には数えない
+const ADLIB_FROM="2026-10-19";
 // 1日のゴールは、変えた日から先にだけ使う（前の日は、その日のゴールで判定）。hist=[{from, words, chunk, shadow}]
 const daily=d=>{const h=(G.hist||[]).filter(x=>x.from<=d);return h.length?h[h.length-1]:(G.hist&&G.hist[0])||G;};
-const goalOf=(k,d)=>+daily(d||TODAY)[k]||0;
+const goalOf=(k,d)=>k==="adlib"?((d||TODAY)>=ADLIB_FROM?5:0):+daily(d||TODAY)[k]||0;
 // その日に、1日のゴールのうちいくつできたか
 function dayState(a,d){
   const x=a[d]||{},on=TASKS.filter(t=>goalOf(t.k,d)>0);

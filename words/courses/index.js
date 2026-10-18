@@ -8,6 +8,7 @@ window.APW_COURSES = [
   {g:"TOEIC", id:"toeic700", t:"700点"},
   {g:"TOEIC", id:"toeic800", t:"800点"},
   {g:"TOEIC", id:"toeic900", t:"900点"},
+  {g:"IELTS", id:"ielts55", t:"5.5"},
   {g:"IELTS", id:"ielts60", t:"6.0"},
   {g:"IELTS", id:"ielts65", t:"6.5"},
   {g:"IELTS", id:"ielts70", t:"7.0"},
@@ -21,6 +22,7 @@ window.APW_COURSES = [
   {g:"TOEFL iBT", id:"toefl100", t:"100点"},
   {g:"TOEFL iBT", id:"toefl110", t:"110点"},
   // 2026-10-18：ビジネス・土木は、開ける生徒だけ（students.json の words。words/index.html で絞る）
+  {g:"Business", id:"biz0", t:"基本200"},
   {g:"Business", id:"biz1", t:"レベル1"},
   {g:"Business", id:"biz2", t:"レベル2"},
   {g:"Business", id:"biz3", t:"レベル3"},
@@ -42,5 +44,6 @@ window.APW_COURSES = [
   {g:"土木", id:"civ7", t:"水・配管・防災"},
   {g:"土木", id:"civ8", t:"建築・仕上げ"},
   {g:"土木", id:"civ9", t:"電気・設備"},
-  {g:"土木", id:"civ10", t:"現場の動作・管理"}
+  {g:"土木", id:"civ10", t:"現場の動作・管理"},
+  {g:"英検®", id:"eikenp2", t:"準2級"}
 ];

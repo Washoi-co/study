@@ -149,10 +149,6 @@ img.pic.small{max-height:18vh}
       <button data-m="pic">絵だけ見て言う</button>
       <button data-m="mix">単語ミックス</button>
     </div>
-    <div class="toggle-row">
-      <div><b>今日の単語を混ぜる</b><span id="adlib-note"></span></div>
-      <button class="switch" id="adlib" role="switch" aria-checked="false" aria-label="今日の単語を混ぜる"><i></i></button>
-    </div>
 
     <div class="card">
       <div class="bar"><i id="tbar"></i></div>
@@ -185,6 +181,10 @@ img.pic.small{max-height:18vh}
             <button class="dot" data-d="1" aria-label="2回目">2</button>
             <button class="dot" data-d="2" aria-label="3回目">3</button>
           </div>
+          <div class="rec" id="rec-req" hidden>
+            <p class="recmsg ng" id="rec-req-msg"><b>この問題は録音して先生に送ってください（必須）</b></p>
+            <button class="ghost" id="rec-skip">録音できない</button>
+          </div>
           <div class="rec" id="rec">
             <button class="recbtn" id="rec-btn">録音する</button>
             <div id="rec-done" hidden>
@@ -214,7 +214,7 @@ img.pic.small{max-height:18vh}
         </div>
 
         <div id="v-adlib" class="cin" style="padding:0" hidden>
-          <span class="wcat">アドリブ</span>
+          <span class="wcat" id="a-tag">アドリブ</span>
           <p class="answer" id="a-frame"></p>
           <p class="say" id="a-ex"></p>
           <div class="wpics" id="a-pics"></div>
@@ -294,10 +294,11 @@ img.pic.small{max-height:18vh}
     <ol class="g-steps">
       <li>絵と先生の質問（T）を見て、答えを3つから選ぶ</li>
       <li>正しい文を、声に出して3回。①②③を押すと音が鳴ります</li>
-      <li>録音して「先生に送る」。先生が聞いて返事をします</li>
-      <li>全部正解したら「絵だけ見て言う」で、選ばずに言う</li>
+      <li>章の最後の問題は、録音して「先生に送る」（必須）。ほかの問題の録音は自由です</li>
+      <li>続けてアドリブ3問：単語を使って、章の型で自分の文を言う。AIが添削した文を3回</li>
+      <li>ここまでで、その章はクリア（✓）。全部正解したら「絵だけ見て言う」で、選ばずに言う</li>
     </ol>
-    <p class="g-tip">「単語ミックス」は、単語で覚えた単語が章の問題の間に混ざります</p>
+    <p class="g-tip">毎日：単語で今日の単語を覚えたら、今日の単語でアドリブ5問（単語の画面・今日の画面から）。「単語ミックス」は、単語で覚えた単語が章の問題の間に混ざります（練習用。章のクリアにはなりません）</p>
     <div class="acts"><button class="primary" id="how-ok">わかった</button></div>
   </div>
 </dialog>
@@ -315,6 +316,9 @@ function speak(t){try{if(!("speechSynthesis" in window))return;speechSynthesis.c
 
 let DATA=null, LV="b", CH=0, MODE="quiz", TODO=[];
 let queue=[], qi=0, score=0, log=[], taps=0, timer=null, left=0;
+/* RUN：ch＝章の練習（最後に録音1問（必須）＋アドリブ3問で、章クリア）／day＝今日の単語でアドリブ5問（?adlib=1）／rev＝添削した文の復習
+   ACARDS：アドリブのカード {word,meaning,pics}（queue の "a:番号"）。CHA：章のアドリブに入った。REQ・recOk：この問題は録音が必須・送った（または録音できない） */
+let RUN="ch", ACARDS=[], CHA=false, REQ=false, recOk=false, recWhy="";
 const LIMIT={b:20,i:30,z:30};
 let BIZ=false,TRACK=null;   /* 専門ON（ビジネス英語・土木英語）：話すは専門の章、単語は専門のコースだけ（その専門の生徒だけ） */
 const LEVELS=()=>DATA.levels.filter(l=>(l.id==="z")===BIZ);
@@ -381,9 +385,10 @@ function start(){
   if(TODO.length){CH=TODO[0];store.set("ch_"+LV,CH);}
   if(["quiz","pic","mix"].includes(q.get("m"))){MODE=q.get("m");store.set("mode",MODE);}
   const rv=q.get("review")==="adlib";   // 今日＆計画の「A-PUSHの復習（添削した文）」から
+  const ad=q.get("adlib")==="1";        // 単語の画面・今日＆計画の「今日の単語でアドリブ5問」から
   if(q.toString())history.replaceState(null,"",location.pathname);
   paintLevels();
-  paintWho();renderNav();paintLog();paintRev();loadWords().then(()=>{startRound();if(rv)openReview();});
+  paintWho();renderNav();paintLog();paintRev();loadWords().then(()=>{ad?startDay():startRound();if(rv)openReview();});
 }
 function paintLevels(){$("levels").innerHTML=LEVELS().map(l=>'<button data-lv="'+l.id+'">'+esc(l.name)+'</button>').join("");}
 function paintBiz(){$("biz").setAttribute("aria-checked",String(BIZ));$("biz-note").textContent=BIZ?"ON：話すも単語も、全部"+(TRACK?TRACK.label.replace("英語",""):"専門")+"の内容":"OFF：いつもの教材";}
@@ -445,7 +450,7 @@ function startRound(){
   const items=chapter().items;
   queue=MODE!=="pic"?shuffle(items.map((_,i)=>i)):items.map((_,i)=>i);
   if(MODE==="mix")queue=mixWords(queue);
-  else if(ADLIB)queue=adlibWords(queue);
+  RUN="ch";CHA=false;ACARDS=[];
   qi=0;score=0;log=[];adl=[];FIX=null;micStop();
   askQuestion();
 }
@@ -508,8 +513,12 @@ function openRepeat(right,timedOut){
   $("answerja").textContent=it.sj||"";$("answerja").hidden=!it.sj;
   taps=0;document.querySelectorAll(".dot").forEach(d=>d.classList.remove("on"));
   $("btn-next").disabled=true;
-  $("btn-next").textContent=qi===queue.length-1?"結果を見る":"次へ";
+  const last=qi===queue.length-1;
+  $("btn-next").textContent=last?(MODE==="mix"?"結果を見る":"アドリブへ（3問）"):"次へ";
   resetRec();
+  // 章の最後の問題は、録音して先生に送るまで先へ進めない（送り先が無い時は必須にしない）
+  REQ=last&&MODE!=="mix"&&!!(DATA.send&&DATA.send.url);recOk=!REQ;recWhy=window.MediaRecorder?"":"no-recorder";
+  $("rec-req").hidden=!REQ;canNext();
   view("repeat");
   speak(it.s);
 }
@@ -518,11 +527,12 @@ $("dots").addEventListener("click",e=>{
   const n=+d.dataset.d;if(n>taps)return;
   d.classList.add("on");taps=Math.max(taps,n+1);
   speak(chapter().items[queue[qi]].s);
-  if(taps>=3)$("btn-next").disabled=false;
+  canNext();
 });
+const canNext=()=>{$("btn-next").disabled=taps<3||!recOk;$("rec-skip").hidden=recOk;};
 $("btn-next").addEventListener("click",()=>{
   stopRec(true);
-  if(qi>=queue.length-1){showResult();return;}
+  if(qi>=queue.length-1){if(MODE==="mix"){showResult();return;}chapterAdlib();}
   qi++;askQuestion();
 });
 /* ---- 単語ミックス：単語トレーニングで覚えた単語を、章の問題の間に混ぜる ----
@@ -584,11 +594,8 @@ function wordGrade(right){
 $("w-ok").addEventListener("click",()=>wordGrade(true));
 $("w-ng").addEventListener("click",()=>wordGrade(false));
 
-/* ---- 今日の単語を混ぜる（アドリブ）：単語の記録は読むだけ。箱も期限も変えない ---- */
-let ADLIB=store.get("adlib",false),adlibNoted=false;
-function paintAdlib(){$("adlib").setAttribute("aria-checked",String(ADLIB));$("adlib-note").textContent=ADLIB?"ON：今日の単語でアドリブ":"OFF：決まった文だけ";}
-paintAdlib();
-$("adlib").addEventListener("click",()=>{ADLIB=!ADLIB;store.set("adlib",ADLIB);paintAdlib();if(DATA)startRound();});
+/* ---- アドリブ（単語の記録は読むだけ。箱も期限も変えない） ----
+   今日の単語でアドリブ5問（?adlib=1）と、章の最後のアドリブ3問（今日の単語。無ければ章の文の単語） */
 // 今日の新しい単語 → 今日の復習（期限が来たもの）→ 無ければ、最後に覚えた日の単語
 function todayWords(){
   const S=WC&&wload();if(!S||!S.cards)return [];
@@ -597,15 +604,30 @@ function todayWords(){
   add((days[t]&&days[t].batch)||[]);
   add(Object.keys(S.cards).filter(k=>S.cards[k].box<=5&&S.cards[k].due<=t).map(k=>k.split(":")[0]));
   if(!out.length){const d=Object.keys(days).filter(d=>d<=t&&days[d].batch&&days[d].batch.length).sort().pop();if(d)add(days[d].batch);}
-  return out;
+  return out.map(wi=>{const w=WC.words[wi];return {word:w[0],meaning:w[1].map(x=>x[0]).join("・"),pics:w[1].map(x=>x[1]).filter(Boolean).join(" ")};});
 }
-function adlibWords(q){
+// 章の文の単語：答えの文ごとに、いちばん長い中身の語（4文字以上を先に）。ponytail: 長さで選ぶだけ。品詞まで見たくなったら、章データに単語を足す
+const STOP=new Set("this that these those with what when where which there their they them from will would could should about very like just been does did into some than then here also because have your were they're it's i'm don't can't".split(" "));
+function chWords(){
+  const out=[];
+  chapter().items.forEach(it=>{
+    const w=(it.s.replace(/\(.*?\)/g,"").toLowerCase().match(/[a-z][a-z'-]+/g)||[]).sort((a,b)=>(STOP.has(a)||a.length<4)-(STOP.has(b)||b.length<4)||b.length-a.length)[0];   // 中身の語が無い文でも、1語は選ぶ
+    if(w&&!out.some(c=>c.word===w))out.push({word:w,meaning:"",pics:it.e||""});
+  });
+  return shuffle(out);
+}
+function addAdlib(list,n){for(let k=0;k<n;k++)queue.push("a:"+(ACARDS.push(list[k%list.length])-1));}
+function startDay(){
   const ws=todayWords();
-  if(!ws.length){
-    if(!adlibNoted){adlibNoted=true;toast("単語の画面で今日の単語を始めると、ここに出ます");setTimeout(()=>$("toast").hidden=true,5000);}
-    return q;
-  }
-  return Array.from({length:5},(_,n)=>"a:"+ws[n%ws.length]);   // アドリブ5枚（単語が少なければ、くり返す）
+  if(!ws.length){toast("単語の画面で今日の単語を覚えると、今日の単語でアドリブ5問ができます");setTimeout(()=>$("toast").hidden=true,5000);startRound();return;}
+  RUN="day";CHA=false;ACARDS=[];queue=[];qi=0;score=0;log=[];adl=[];FIX=null;micStop();
+  addAdlib(shuffle(ws),5);   // 単語が5つより少なければ、くり返す
+  askQuestion();
+  $("v-adlib").closest(".card").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function chapterAdlib(){
+  const ws=todayWords();
+  CHA=true;addAdlib(ws.length?shuffle(ws):chWords(),3);
 }
 // 章の文法から型を作る（章の題で決める。合わなければ、その章の答えの文を例に）
 const FRAMES=[
@@ -663,20 +685,21 @@ const FRAMES=[
 let adl=[],cur=null;
 function askAdlib(){
   clearInterval(timer);$("tbar").style.width="100%";$("tbar").classList.remove("low");
-  const w=WC.words[+queue[qi].slice(2)],f=(FRAMES.find(x=>x[0].test(chapter().title))||[])[1];
+  const c=ACARDS[+queue[qi].slice(2)],f=(FRAMES.find(x=>x[0].test(chapter().title))||[])[1];
   const its=chapter().items,prev=its[queue.slice(0,qi).filter(x=>typeof x==="number").pop()]||its[qi%its.length];
   paintPips();
   $("qleft").textContent=(qi+1)+" / "+queue.length;
   $("a-frame").innerHTML=f?esc(f).replace("＿＿",'<span class="bl">＿＿</span>'):"";$("a-frame").hidden=!f;
   $("a-ex").textContent=f?"":"型の例："+prev.s;   // 型が決まらない章は、直前の答えの文を例に
-  $("a-pics").textContent=w[1].map(x=>x[1]).filter(Boolean).join(" ");
-  $("a-en").textContent=w[0];
-  $("a-ja").textContent=w[1].map(x=>x[0]).join("・");
-  cur={word:w[0],meaning:w[1].map(x=>x[0]).join("・"),pattern:f||prev.s};   // 型が無い章は、例の文を型として送る
+  $("a-tag").textContent=RUN==="day"?"アドリブ · 今日の単語":"アドリブ · Ch "+chapter().n;
+  $("a-pics").textContent=c.pics;
+  $("a-en").textContent=c.word;
+  $("a-ja").textContent=c.meaning||"この章の文の単語";
+  cur={word:c.word,meaning:c.meaning,pattern:f||prev.s};   // 型が無い章は、例の文を型として送る
   micStop();$("a-in").value="";$("a-live").textContent="";
   if(!SR||micOff)adType(true,false);else{$("a-mic").hidden=false;$("a-type").hidden=true;}
   view("adlib");
-  speak(w[0]);
+  speak(c.word);
 }
 $("a-say").addEventListener("click",()=>speak($("a-en").textContent));
 
@@ -717,6 +740,7 @@ $("a-next").addEventListener("click",()=>{
   const it=Object.assign({},cur,{you:$("a-in").value.trim()});
   adl[qi]=it;review(it);
   log.push({a:it.word});
+  if(RUN==="day")apMark("adlib");   // 今日＆計画の「アドリブ 今日 n / 5」
   if(qi>=queue.length-1){FIX={list:adl.filter(Boolean),i:0,review:false};paintFix();view("fix");return;}
   qi++;askQuestion();
 });
@@ -798,7 +822,7 @@ function openReview(){
   const L=revList();
   if(!L.length){paintRev();toast("今日の復習（添削した文）は、ありません");setTimeout(()=>$("toast").hidden=true,4000);return;}
   micStop();clearInterval(timer);$("tbar").style.width="100%";$("tbar").classList.remove("low");
-  FIX={list:L,i:0,review:true};paintFix();view("fix");
+  RUN="rev";FIX={list:L,i:0,review:true};paintFix();view("fix");
   $("v-fix").closest(".card").scrollIntoView({behavior:"smooth",block:"start"});
 }
 $("rev-go").addEventListener("click",openReview);
@@ -839,34 +863,35 @@ function markToday(){
   $("rstreak").textContent=st>=2?"🔥 "+st+"日 続いてる！":"今日の練習、記録しました。";
 }
 function showResult(){
-  markToday();apMark("chunk");
-  const done=store.get("done_"+LV,[]);
-  if(!done.includes(chapter().n)){done.push(chapter().n);store.set("done_"+LV,done);renderNav();paintLog();}
-  if(MODE!=="pic"){
-    const n=queue.filter(x=>String(x)[0]!=="a").length;  // アドリブは点数に入れない
-    const na=queue.length-n;
-    $("rbig").innerHTML=n?score+"<em> / "+n+"</em>":na+"<em> 文 アドリブ</em>";
-    $("rmsg").textContent=!n?"アドリブ "+na+"文、おつかれさまでした。単語を変えて、もう1回。":score===n?(MODE==="mix"?"全問正解。章の文も単語も言えました。":"全問正解。次は「絵だけ見て言う」で。"):"もう一回やって、全部正解にしましょう。";
+  const day=RUN==="day",chl=log.filter(l=>!l.a),n=chl.length,ads=adl.filter(Boolean);
+  markToday();
+  if(!day){
+    apMark("chunk");
+    // 章クリア＝章の問題＋録音（必須）＋アドリブ3問。ここへは、アドリブの添削まで終えた時だけ来る（単語ミックスは練習だけ）
+    const done=store.get("done_"+LV,[]);
+    if(CHA&&recOk&&!done.includes(chapter().n)){done.push(chapter().n);store.set("done_"+LV,done);renderNav();paintLog();}
+  }
+  if(day){
+    $("rbig").innerHTML=ads.length+"<em> 文 アドリブ</em>";
+    $("rmsg").textContent="今日の単語でアドリブ"+ads.length+"文、おつかれさまでした。";
+  }else if(MODE!=="pic"){
+    $("rbig").innerHTML=score+"<em> / "+n+"</em>";
+    $("rmsg").textContent=(score===n?(MODE==="mix"?"全問正解。章の文も単語も言えました。":"全問正解。次は「絵だけ見て言う」で。"):"もう一回やって、全部正解にしましょう。")+(CHA?"録音とアドリブ3問まで終わって、この章はクリアです。":"");
   }else{
-    $("rbig").innerHTML="6<em> / 6</em>";
-    $("rmsg").textContent="絵だけで言えたら、この章は合格です。";
+    $("rbig").innerHTML=n+"<em> / "+n+"</em>";
+    $("rmsg").textContent="絵だけで言えたら、この章は合格です。"+(CHA?"録音とアドリブ3問まで終わりました。":"");
   }
-  $("recap").innerHTML=log.map((l,k)=>l.a?'<div class="rrow"><span class="m">ア</span><span class="s">アドリブ：'+esc(l.a)+'</span><span class="v y">✓</span></div>':
-    '<div class="rrow"><span class="m">'+(l.w?"単":l.i+1)+'</span><span class="s">'+esc(l.w||chapter().items[l.i].s)+'</span>'+
-    (MODE!=="pic"?'<span class="v '+(l.right?"y":"n")+'">'+(l.right?"○":"×")+'</span>':"")+'</div>').join("");
-  if(adl.length){   // アドリブ（添削つき）の回
-    $("rbig").innerHTML=adl.length+"<em> 文 アドリブ</em>";
-    $("rmsg").textContent="アドリブ"+adl.length+"文、添削した文を3回ずつ言えました。";
-    $("recap").innerHTML=adl.map(it=>'<div class="rrow"><span class="m">ア</span><span class="s">'+esc(it.r?it.r.corrected:(it.you||"（添削なし）"))+'</span><span class="v '+(it.r?"y":"n")+'">'+(it.r?"✓":"–")+'</span></div>').join("");
-  }
+  $("recap").innerHTML=chl.map(l=>'<div class="rrow"><span class="m">'+(l.w?"単":l.i+1)+'</span><span class="s">'+esc(l.w||chapter().items[l.i].s)+'</span>'+
+    (MODE!=="pic"?'<span class="v '+(l.right?"y":"n")+'">'+(l.right?"○":"×")+'</span>':"")+'</div>').join("")+
+    ads.map(it=>'<div class="rrow"><span class="m">ア</span><span class="s">'+esc(it.r?it.r.corrected:(it.you||"（添削なし）"))+'</span><span class="v '+(it.r?"y":"n")+'">'+(it.r?"✓":"–")+'</span></div>').join("");
   const nt=TODO[TODO.indexOf(CH)+1],nr=toRev();
-  $("btn-again").textContent="もう一回";
-  $("btn-nextch").textContent=nt!==undefined?"次の復習へ（Ch "+level().chapters[nt].n+"）":nr?"次の復習へ（添削した文 "+nr+"文）":"次の章へ";
-  $("btn-nextch").hidden=nt===undefined&&!nr&&CH===level().chapters.length-1;
+  $("btn-again").textContent=day?"もう5問":"もう一回";
+  $("btn-nextch").textContent=day?"章の練習へ（Ch "+chapter().n+"）":nt!==undefined?"次の復習へ（Ch "+level().chapters[nt].n+"）":nr?"次の復習へ（添削した文 "+nr+"文）":"次の章へ";
+  $("btn-nextch").hidden=!day&&nt===undefined&&!nr&&CH===level().chapters.length-1;
   view("result");
 }
-$("btn-again").addEventListener("click",startRound);
-$("btn-nextch").addEventListener("click",()=>{const nt=TODO[TODO.indexOf(CH)+1];if(nt===undefined&&toRev())openReview();else go(nt!==undefined?nt:CH+1);});
+$("btn-again").addEventListener("click",()=>RUN==="day"?startDay():startRound());
+$("btn-nextch").addEventListener("click",()=>{if(RUN==="day"){startRound();return;}const nt=TODO[TODO.indexOf(CH)+1];if(nt===undefined&&toRev())openReview();else go(nt!==undefined?nt:CH+1);});
 // LINE の復習（?ch=）の最後の章のあとは、今日の添削した文の復習へ
 const toRev=()=>TODO.length&&TODO.indexOf(CH)===TODO.length-1?revList().length:0;
 
@@ -888,7 +913,7 @@ function stopRec(discard){
 $("rec-btn").addEventListener("click",async()=>{
   if(rec&&rec.state==="recording"){stopRec(false);return;}
   try{stream=await navigator.mediaDevices.getUserMedia({audio:true});}
-  catch(e){$("rec-msg").textContent="マイクが使えません。ブラウザの設定でマイクを許可してください。";$("rec-msg").className="recmsg ng";return;}
+  catch(e){recWhy="mic-denied";$("rec-msg").textContent="マイクが使えません。ブラウザの設定でマイクを許可してください。"+(REQ?"どうしても使えない時は「録音できない」を押してください。":"");$("rec-msg").className="recmsg ng";return;}
   chunks=[];
   rec=new MediaRecorder(stream,MIME?{mimeType:MIME}:undefined);
   rec.ondataavailable=e=>e.data.size&&chunks.push(e.data);
@@ -931,6 +956,14 @@ $("rec-send").addEventListener("click",async()=>{
     body:{source:"site",key:DATA.send.key,sid:store.get("sid",""),sec:recSec,name:store.get("name",""),level:level().name,ch:chapter().n,q:queue[qi]+1,
       mode:{quiz:"選んで言う",pic:"絵だけ",mix:"単語ミックス"}[MODE],t:it.t,s:it.s,mime:blob.type,data}});
   $("rec-msg").textContent="送っています。次へ進んで大丈夫です";$("rec-msg").className="recmsg ok";
+  recOk=true;canNext();
+});
+// 録音できない時だけ（マイクが無い・許可できない）：理由を残して先へ。ponytail: この端末の ap_recskip にだけ残す。先生に知らせたくなったら、送り先に1行足す
+$("rec-skip").addEventListener("click",()=>{
+  if(recOk||!confirm("録音できない時だけ使ってください。この問題を「録音できなかった」として先へ進みますか？"))return;
+  const L=store.get("recskip",[]);L.push({d:dayAgo(0),lv:LV,ch:chapter().n,q:queue[qi]+1,why:recWhy||"student"});store.set("recskip",L);
+  recOk=true;canNext();
+  $("rec-msg").textContent="録音できなかったと記録しました。次は録音して送りましょう";$("rec-msg").className="recmsg";
 });
 </script>
 <script src="/ui.js" defer></script>
