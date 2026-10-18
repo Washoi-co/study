@@ -5,9 +5,13 @@ window.APW_COURSES = [
   {g:"General", id:"gen2", t:"中学2年レベル"},
   {g:"General", id:"gen3", t:"中学3年レベル"},
   {g:"General", id:"gen4", t:"高校基礎レベル"},
+  // 2026-10-19：会話でよく使うフレーズ・スラング
+  {g:"Native", id:"native", t:"よく使うフレーズ"},
+  {g:"Native", id:"slang", t:"スラング"},
   {g:"TOEIC", id:"toeic700", t:"700点"},
   {g:"TOEIC", id:"toeic800", t:"800点"},
   {g:"TOEIC", id:"toeic900", t:"900点"},
+  {g:"TOEIC", id:"toeic950", t:"950点"},
   {g:"IELTS", id:"ielts55", t:"5.5"},
   {g:"IELTS", id:"ielts60", t:"6.0"},
   {g:"IELTS", id:"ielts65", t:"6.5"},
@@ -45,5 +49,8 @@ window.APW_COURSES = [
   {g:"土木", id:"civ8", t:"建築・仕上げ"},
   {g:"土木", id:"civ9", t:"電気・設備"},
   {g:"土木", id:"civ10", t:"現場の動作・管理"},
-  {g:"英検®", id:"eikenp2", t:"準2級"}
+  {g:"英検®", id:"eikenp2", t:"準2級"},
+  {g:"英検®", id:"eiken2", t:"2級"},
+  {g:"英検®", id:"eikenp1", t:"準1級"},
+  {g:"英検®", id:"eiken1", t:"1級"}
 ];
