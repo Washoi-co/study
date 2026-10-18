@@ -559,9 +559,7 @@ function adlibWords(q){
     if(!adlibNoted){adlibNoted=true;toast("単語の画面で今日の単語を始めると、ここに出ます");setTimeout(()=>$("toast").hidden=true,5000);}
     return q;
   }
-  const out=q.slice();
-  ws.slice(0,2).forEach((wi,n)=>{const at=n?5:2;if(out.length>=at)out.splice(at,0,"a:"+wi);});  // 2問目・4問目のあと
-  return out;
+  return q.map((_,n)=>"a:"+ws[n%ws.length]);   // 章の問題をぜんぶアドリブに（単語が少なければ、くり返す）
 }
 // 章の文法から型を作る（章の題で決める。合わなければ、その章の答えの文を例に）
 const FRAMES=[
@@ -619,7 +617,7 @@ let ataps=0;
 function askAdlib(){
   clearInterval(timer);$("tbar").style.width="100%";$("tbar").classList.remove("low");
   const w=WC.words[+queue[qi].slice(2)],f=(FRAMES.find(x=>x[0].test(chapter().title))||[])[1];
-  const prev=chapter().items[queue.slice(0,qi).filter(x=>typeof x==="number").pop()]||chapter().items[0];
+  const its=chapter().items,prev=its[queue.slice(0,qi).filter(x=>typeof x==="number").pop()]||its[qi%its.length];
   paintPips();
   $("qleft").textContent=(qi+1)+" / "+queue.length;
   $("a-frame").innerHTML=f?esc(f).replace("＿＿",'<span class="bl">＿＿</span>'):"";$("a-frame").hidden=!f;
@@ -676,8 +674,9 @@ function showResult(){
   if(!done.includes(chapter().n)){done.push(chapter().n);store.set("done_"+LV,done);renderNav();paintLog();}
   if(MODE!=="pic"){
     const n=queue.filter(x=>String(x)[0]!=="a").length;  // アドリブは点数に入れない
-    $("rbig").innerHTML=score+"<em> / "+n+"</em>";
-    $("rmsg").textContent=score===n?(MODE==="mix"?"全問正解。章の文も単語も言えました。":"全問正解。次は「絵だけ見て言う」で。"):"もう一回やって、全部正解にしましょう。";
+    const na=queue.length-n;
+    $("rbig").innerHTML=n?score+"<em> / "+n+"</em>":na+"<em> 文 アドリブ</em>";
+    $("rmsg").textContent=!n?"アドリブ "+na+"文、おつかれさまでした。単語を変えて、もう1回。":score===n?(MODE==="mix"?"全問正解。章の文も単語も言えました。":"全問正解。次は「絵だけ見て言う」で。"):"もう一回やって、全部正解にしましょう。";
   }else{
     $("rbig").innerHTML="6<em> / 6</em>";
     $("rmsg").textContent="絵だけで言えたら、この章は合格です。";
