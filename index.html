@@ -148,6 +148,10 @@ img.pic.small{max-height:18vh}
       <button data-m="pic">絵だけ見て言う</button>
       <button data-m="mix">単語ミックス</button>
     </div>
+    <div class="toggle-row">
+      <div><b>今日の単語を混ぜる</b><span id="adlib-note"></span></div>
+      <button class="switch" id="adlib" role="switch" aria-checked="false" aria-label="今日の単語を混ぜる"><i></i></button>
+    </div>
 
     <div class="card">
       <div class="bar"><i id="tbar"></i></div>
@@ -387,7 +391,7 @@ function start(){
   const ad=q.get("adlib")==="1";        // 単語の画面・今日＆計画の「今日の単語でアドリブ5問」から
   if(q.toString())history.replaceState(null,"",location.pathname);
   paintLevels();
-  paintWho();renderNav();paintLog();paintRev();loadWords().then(()=>{ad?startDay():startRound();if(rv)openReview();});
+  paintWho();renderNav();paintLog();paintRev();paintAdlib();loadWords().then(()=>{ad||ADLIB?startDay():startRound();if(rv)openReview();});
 }
 function paintLevels(){$("levels").innerHTML=LEVELS().map(l=>'<button data-lv="'+l.id+'">'+esc(l.name)+'</button>').join("");}
 function paintBiz(){$("biz").setAttribute("aria-checked",String(BIZ));$("biz-note").textContent=BIZ?"ON：話すも単語も、全部"+(TRACK?TRACK.label.replace("英語",""):"専門")+"の内容":"OFF：いつもの教材";}
@@ -620,6 +624,10 @@ function chWords(){
   return shuffle(out);
 }
 function addAdlib(list,n){for(let k=0;k<n;k++)queue.push("a:"+(ACARDS.push(list[k%list.length])-1));}
+/* 今日の単語を混ぜる：ONなら、話すは今日の単語でアドリブ5問（単語がまだ無ければ、いつもの章の練習） */
+let ADLIB=store.get("adlib",false);
+function paintAdlib(){$("adlib").setAttribute("aria-checked",String(ADLIB));$("adlib-note").textContent=ADLIB?"ON：今日の単語でアドリブ":"OFF：決まった文だけ";}
+$("adlib").addEventListener("click",()=>{ADLIB=!ADLIB;store.set("adlib",ADLIB);paintAdlib();if(DATA)ADLIB?startDay():startRound();});
 function startDay(){
   const ws=todayWords();
   if(!ws.length){toast("単語の画面で今日の単語を覚えると、今日の単語でアドリブ5問ができます");setTimeout(()=>$("toast").hidden=true,5000);startRound();return;}
