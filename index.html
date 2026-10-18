@@ -97,6 +97,20 @@ img.pic.small{max-height:18vh}
 .toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:calc(100% - 32px);max-width:420px;margin:0;background:var(--card);border-radius:14px;padding:12px 14px;font-size:14px;text-align:center;z-index:20;box-shadow:0 8px 30px rgba(15,30,61,.18)}
 .toast.ok{color:var(--ok)} .toast.ng{color:var(--ng)}
 .toast button{margin-left:8px;background:var(--soft);color:var(--brand);border-radius:99px;padding:4px 12px;font-size:13px;font-weight:700}
+/* アドリブを声で → AI 添削 → 復唱 → 間隔をあけた復習 */
+.mic{align-self:center;display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:var(--on);border-radius:99px;padding:16px 36px;font-size:19px;font-weight:800;transition:transform .1s ease-out}
+.mic:active{transform:scale(.97)}
+.mic.on{background:var(--ng)} .mic[hidden]{display:none}
+#a-type{display:flex;flex-direction:column;gap:9px}
+#a-type[hidden],#f-err[hidden],#f-ok[hidden]{display:none}
+#a-in{width:100%;border:0;background:var(--bg);border-radius:12px;padding:13px 14px;font-family:var(--en);font-size:17px}
+#a-live{font-family:var(--en);font-size:16px;color:var(--ink);min-height:1.3em}
+.say.priv{font-size:11.5px}
+.you{margin:0;font-family:var(--en);font-size:16px;text-align:center;color:var(--mute);line-height:1.4}
+.okb{align-self:center;font-size:12px;font-weight:700;background:var(--ok);color:#fff;border-radius:99px;padding:2px 10px}
+#f-err,#f-ok{display:flex;flex-direction:column;gap:10px}
+#f-err .err{text-align:center}
+#rev-card p{grid-column:2/-1}
 </style>
 </head>
 <body data-tab="sp">
@@ -115,6 +129,11 @@ img.pic.small{max-height:18vh}
   </form>
 
   <div id="app" hidden>
+    <div class="inst" id="rev-card" hidden>
+      <span class="inst-ic" aria-hidden="true">🔁</span>
+      <p><b>今日の復習：添削した文 <span id="rev-n" class="en"></span>文</b></p>
+      <button class="primary" id="rev-go">復習する</button>
+    </div>
     <div class="toggle-row" id="biz-row" hidden>
       <div><b id="biz-label">専門</b><span id="biz-note"></span></div>
       <button class="switch" id="biz" role="switch" aria-checked="false" aria-label="専門"><i></i></button>
@@ -201,13 +220,39 @@ img.pic.small{max-height:18vh}
           <div class="wpics" id="a-pics"></div>
           <div class="adw"><p class="wen" id="a-en"></p><button class="tsay" id="a-say" aria-label="単語を聞く">🔊</button></div>
           <p class="say" id="a-ja"></p>
-          <p class="say">この単語を使って、この型で自分の文を作り、声に出して3回</p>
-          <div class="dots" id="a-dots">
-            <button class="dot" data-a="0" aria-label="1回目">1</button>
-            <button class="dot" data-a="1" aria-label="2回目">2</button>
-            <button class="dot" data-a="2" aria-label="3回目">3</button>
+          <p class="say">この単語を使って、この型で自分の文を作り、声に出して言ってみよう</p>
+          <button class="mic" id="a-mic">🎤 話す</button>
+          <p class="say" id="a-live" aria-live="polite"></p>
+          <div id="a-type" hidden>
+            <p class="say" id="a-nomic" hidden>声が使えない時は、打って入力してください</p>
+            <input id="a-in" lang="en" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send" aria-label="あなたの英文" placeholder="ここに英文（直せます）">
+            <div class="acts"><button class="ghost" id="a-again">もう一度話す</button><button class="primary" id="a-next">送って次へ</button></div>
           </div>
-          <div class="acts"><button class="primary" id="a-next" disabled>次へ</button></div>
+          <p class="say priv">添削のため、英文だけを送ります（名前・会員番号・声は送りません）</p>
+        </div>
+
+        <div id="v-fix" class="cin" style="padding:0" hidden>
+          <div class="meta"><span class="wcat" id="f-tag">添削</span><span id="f-n"></span></div>
+          <p class="say" id="f-you-h">① あなたの文</p>
+          <p class="you" id="f-you"></p>
+          <p class="say" id="f-fix-h">② 添削</p>
+          <p class="say" id="f-wait" role="status">添削しています…</p>
+          <div id="f-err" hidden>
+            <p class="err" id="f-msg" role="alert"></p>
+            <div class="acts"><button class="ghost" id="f-skip">とばす</button><button class="primary" id="f-retry">もう一度</button></div>
+          </div>
+          <div id="f-ok" hidden>
+            <span class="okb" id="f-badge">そのままでOK</span>
+            <div class="adw"><p class="answer" id="f-en"></p><button class="tsay" id="f-say" aria-label="聞く">▶</button></div>
+            <p class="say" id="f-note"></p>
+            <p class="say">声に出して3回。タップすると音が鳴ります。</p>
+            <div class="dots" id="f-dots">
+              <button class="dot" data-f="0" aria-label="1回目">1</button>
+              <button class="dot" data-f="1" aria-label="2回目">2</button>
+              <button class="dot" data-f="2" aria-label="3回目">3</button>
+            </div>
+          </div>
+          <div class="acts"><button class="primary" id="f-next" disabled>次へ</button></div>
         </div>
 
         <div id="v-result" class="cin" style="padding:0" hidden>
@@ -335,9 +380,10 @@ function start(){
   TODO=(q.get("ch")||"").split(",").map(n=>level().chapters.findIndex(c=>String(c.n)===n.trim())).filter(i=>i>=0);
   if(TODO.length){CH=TODO[0];store.set("ch_"+LV,CH);}
   if(["quiz","pic","mix"].includes(q.get("m"))){MODE=q.get("m");store.set("mode",MODE);}
+  const rv=q.get("review")==="adlib";   // 今日＆計画の「A-PUSHの復習（添削した文）」から
   if(q.toString())history.replaceState(null,"",location.pathname);
   paintLevels();
-  paintWho();renderNav();paintLog();loadWords().then(startRound);
+  paintWho();renderNav();paintLog();paintRev();loadWords().then(()=>{startRound();if(rv)openReview();});
 }
 function paintLevels(){$("levels").innerHTML=LEVELS().map(l=>'<button data-lv="'+l.id+'">'+esc(l.name)+'</button>').join("");}
 function paintBiz(){$("biz").setAttribute("aria-checked",String(BIZ));$("biz-note").textContent=BIZ?"ON：話すも単語も、全部"+(TRACK?TRACK.label.replace("英語",""):"専門")+"の内容":"OFF：いつもの教材";}
@@ -392,7 +438,7 @@ function segSlide(id){
 $("btn-how").addEventListener("click",()=>$("how").showModal());
 ["how-x","how-ok"].forEach(id=>$(id).addEventListener("click",()=>$("how").close()));
 $("how").addEventListener("click",e=>{if(e.target===$("how"))$("how").close();}); // 背景タップで閉じる
-function view(k){["quiz","repeat","word","adlib","result"].forEach(n=>$("v-"+n).hidden=(n!==k));}
+function view(k){["quiz","repeat","word","adlib","fix","result"].forEach(n=>$("v-"+n).hidden=(n!==k));}
 
 /* ---- 1章＝6問 ---- */
 function startRound(){
@@ -400,7 +446,7 @@ function startRound(){
   queue=MODE!=="pic"?shuffle(items.map((_,i)=>i)):items.map((_,i)=>i);
   if(MODE==="mix")queue=mixWords(queue);
   else if(ADLIB)queue=adlibWords(queue);
-  qi=0;score=0;log=[];
+  qi=0;score=0;log=[];adl=[];FIX=null;micStop();
   askQuestion();
 }
 function paintPips(){
@@ -559,7 +605,7 @@ function adlibWords(q){
     if(!adlibNoted){adlibNoted=true;toast("単語の画面で今日の単語を始めると、ここに出ます");setTimeout(()=>$("toast").hidden=true,5000);}
     return q;
   }
-  return q.map((_,n)=>"a:"+ws[n%ws.length]);   // 章の問題をぜんぶアドリブに（単語が少なければ、くり返す）
+  return Array.from({length:5},(_,n)=>"a:"+ws[n%ws.length]);   // アドリブ5枚（単語が少なければ、くり返す）
 }
 // 章の文法から型を作る（章の題で決める。合わなければ、その章の答えの文を例に）
 const FRAMES=[
@@ -613,7 +659,8 @@ const FRAMES=[
   [/negotiation/i,"We could ＿＿."],
   [/wrap|handover/i,"The ＿＿ is done."],
 ];
-let ataps=0;
+/* アドリブ1枚：🎤で言う（文字は直せる）→「送って次へ」で添削を後ろで頼んで、待たずに次へ */
+let adl=[],cur=null;
 function askAdlib(){
   clearInterval(timer);$("tbar").style.width="100%";$("tbar").classList.remove("low");
   const w=WC.words[+queue[qi].slice(2)],f=(FRAMES.find(x=>x[0].test(chapter().title))||[])[1];
@@ -625,23 +672,144 @@ function askAdlib(){
   $("a-pics").textContent=w[1].map(x=>x[1]).filter(Boolean).join(" ");
   $("a-en").textContent=w[0];
   $("a-ja").textContent=w[1].map(x=>x[0]).join("・");
-  ataps=0;$("a-dots").querySelectorAll(".dot").forEach(d=>d.classList.remove("on"));
-  $("a-next").disabled=true;$("a-next").textContent=qi===queue.length-1?"結果を見る":"次へ";
+  cur={word:w[0],meaning:w[1].map(x=>x[0]).join("・"),pattern:f||prev.s};   // 型が無い章は、例の文を型として送る
+  micStop();$("a-in").value="";$("a-live").textContent="";
+  if(!SR||micOff)adType(true,false);else{$("a-mic").hidden=false;$("a-type").hidden=true;}
   view("adlib");
   speak(w[0]);
 }
 $("a-say").addEventListener("click",()=>speak($("a-en").textContent));
-$("a-dots").addEventListener("click",e=>{
-  const d=e.target.closest("[data-a]");if(!d)return;
-  const n=+d.dataset.a;if(n>ataps)return;
-  d.classList.add("on");ataps=Math.max(ataps,n+1);
-  if(ataps>=3)$("a-next").disabled=false;
-});
+
+// 声の文字起こし（端末のブラウザの機能）。使えない・止められた時は、打って入力
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+let sr=null,micOff=false;
+function micStop(){
+  if(sr){sr.onresult=sr.onerror=sr.onend=null;try{sr.abort();}catch(e){}sr=null;}
+  $("a-mic").classList.remove("on");$("a-mic").textContent="🎤 話す";
+}
+function adType(note,again){
+  $("a-mic").hidden=true;$("a-type").hidden=false;
+  $("a-nomic").hidden=!note;$("a-again").hidden=!again;
+}
+function micStart(){
+  micStop();
+  try{speechSynthesis.cancel();}catch(e){}
+  let txt="",fail="";
+  const r=sr=new SR();
+  r.lang="en-US";r.interimResults=true;r.continuous=false;
+  r.onresult=e=>{txt=Array.from(e.results,x=>x[0].transcript).join(" ").replace(/\s+/g," ");$("a-live").textContent=txt;};
+  r.onerror=e=>{fail=e.error||"error";};
+  r.onend=()=>{
+    sr=null;micStop();$("a-live").textContent="";
+    if(/not-allowed|service-not-allowed|audio-capture/.test(fail))micOff=true;   // マイクが使えない → このあとは打って入力
+    $("a-in").value=txt.trim();
+    adType(!!fail&&fail!=="no-speech",!micOff);
+  };
+  try{r.start();}catch(e){sr=null;micOff=true;adType(true,false);return;}
+  $("a-mic").hidden=false;$("a-type").hidden=true;
+  $("a-mic").classList.add("on");$("a-mic").textContent="● 聞いています（押すと止める）";
+}
+$("a-mic").addEventListener("click",()=>{if(sr)sr.stop();else micStart();});
+$("a-again").addEventListener("click",micStart);
+$("a-in").addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.isComposing){e.preventDefault();$("a-next").click();}});
 $("a-next").addEventListener("click",()=>{
-  log.push({a:$("a-en").textContent});
-  if(qi>=queue.length-1){showResult();return;}
+  micStop();
+  const it=Object.assign({},cur,{you:$("a-in").value.trim()});
+  adl[qi]=it;review(it);
+  log.push({a:it.word});
+  if(qi>=queue.length-1){FIX={list:adl.filter(Boolean),i:0,review:false};paintFix();view("fix");return;}
   qi++;askQuestion();
 });
+
+/* 添削（Cloud Functions の review）。送るのは英文・型・単語・意味の4つだけ */
+const REVIEW_URL="https://asia-northeast1-apush-training.cloudfunctions.net/review";
+function review(it){
+  it.r=null;it.err=null;
+  const sig=window.AbortSignal&&AbortSignal.timeout?AbortSignal.timeout(40000):undefined;
+  it.p=fetch(REVIEW_URL,{method:"POST",headers:{"Content-Type":"application/json"},signal:sig,
+      body:JSON.stringify({data:{sentence:it.you,pattern:it.pattern,word:it.word,meaning:it.meaning}})})
+    .then(async res=>{
+      const j=await res.json().catch(()=>({}));
+      const r=j.result;
+      if(!res.ok||!r||!String(r.corrected||"").trim()){const e=new Error();e.ja=j.error&&j.error.message;throw e;}
+      it.r={ok:!!r.ok,corrected:String(r.corrected).trim(),note:String(r.note||"")};
+      saveRev(it);
+    })
+    .catch(e=>{it.err=(e&&e.ja)||"添削できませんでした。電波の良い所で「もう一度」を押してください。";})
+    .then(()=>{if(FIX&&!FIX.review&&FIX.list[FIX.i]===it)paintFix();});
+  return it.p;
+}
+
+/* 添削を1文ずつ見て3回（review:true の時は、今日の復習） */
+let FIX=null;
+const fixEn=it=>FIX.review?it.en:(it.r&&it.r.corrected);
+function paintFix(){
+  const it=FIX.list[FIX.i],rv=FIX.review,en=fixEn(it),last=FIX.i===FIX.list.length-1;
+  $("f-tag").textContent=rv?"🔁 今日の復習":"添削";
+  $("f-n").textContent=(FIX.i+1)+" / "+FIX.list.length;
+  $("f-you-h").hidden=$("f-you").hidden=$("f-fix-h").hidden=rv;
+  $("f-you").textContent=it.you||"（何も言っていません）";
+  $("f-wait").hidden=!!(en||it.err);
+  $("f-err").hidden=!!en||!it.err;$("f-msg").textContent=it.err||"";
+  $("f-ok").hidden=!en;
+  $("f-en").textContent=en||"";
+  $("f-badge").hidden=rv||!(it.r&&it.r.ok);
+  $("f-note").textContent=(rv?it.note:it.r&&it.r.note)||"";$("f-note").hidden=!$("f-note").textContent;
+  FIX.taps=0;$("f-dots").querySelectorAll(".dot").forEach(d=>d.classList.remove("on"));
+  $("f-next").disabled=true;$("f-next").textContent=last?(rv?"おわり":"結果を見る"):"次へ";
+  if(en)speak(en);
+}
+$("f-say").addEventListener("click",()=>speak($("f-en").textContent));
+$("f-dots").addEventListener("click",e=>{
+  const d=e.target.closest("[data-f]");if(!d||!FIX)return;
+  const n=+d.dataset.f;if(n>FIX.taps)return;
+  d.classList.add("on");FIX.taps=Math.max(FIX.taps,n+1);
+  speak($("f-en").textContent);
+  if(FIX.taps>=3)$("f-next").disabled=false;
+});
+$("f-retry").addEventListener("click",()=>{const it=FIX.list[FIX.i];review(it);paintFix();});
+function fixNext(){
+  if(FIX.review)revDone(FIX.list[FIX.i].id);
+  if(++FIX.i<FIX.list.length){paintFix();return;}
+  if(FIX.review)endReview();else showResult();
+}
+$("f-skip").addEventListener("click",fixNext);
+$("f-next").addEventListener("click",fixNext);
+
+/* ---- 添削した文の復習（ap_adrev）。アドリブの日から +1・+4・+11日。遅れてやった日の当日には、もう出さない ---- */
+const RV=[1,4,11];
+const addDays=(s,n)=>{const [y,m,d]=s.split("-").map(Number);const t=new Date(y,m-1,d);t.setDate(t.getDate()+n);return ymd(t);};
+const revDue=x=>{const a=addDays(x.made,RV[x.step]),b=x.last?addDays(x.last,1):"";return a>b?a:b;};
+const revList=()=>store.get("adrev",[]).filter(x=>x&&x.en&&RV[x.step]!==undefined&&revDue(x)<=dayAgo(0));
+function saveRev(it){
+  const L=store.get("adrev",[]);
+  L.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,6),en:it.r.corrected,you:it.you,note:it.r.note,word:it.word,made:dayAgo(0),step:0});
+  store.set("adrev",L);
+}
+function revDone(id){
+  const L=store.get("adrev",[]),x=L.find(y=>y.id===id);if(!x)return;
+  x.step++;x.last=dayAgo(0);
+  store.set("adrev",x.step>=RV.length?L.filter(y=>y!==x):L);
+}
+function paintRev(){const n=revList().length;$("rev-card").hidden=!n;$("rev-n").textContent=n;return n;}
+function openReview(){
+  const L=revList();
+  if(!L.length){paintRev();toast("今日の復習（添削した文）は、ありません");setTimeout(()=>$("toast").hidden=true,4000);return;}
+  micStop();clearInterval(timer);$("tbar").style.width="100%";$("tbar").classList.remove("low");
+  FIX={list:L,i:0,review:true};paintFix();view("fix");
+  $("v-fix").closest(".card").scrollIntoView({behavior:"smooth",block:"start"});
+}
+$("rev-go").addEventListener("click",openReview);
+function endReview(){
+  apMark("chunk");paintRev();
+  $("rbig").innerHTML=FIX.list.length+"<em> 文 復習</em>";
+  $("rmsg").textContent="今日の復習おわり。";
+  $("rstreak").textContent="";
+  $("recap").innerHTML=FIX.list.map(x=>'<div class="rrow"><span class="m">🔁</span><span class="s">'+esc(x.en)+'</span><span class="v y">✓</span></div>').join("");
+  $("btn-again").textContent="練習にもどる";$("btn-nextch").hidden=true;
+  FIX=null;
+  view("result");
+}
 
 /* ---- 記録：章を1つやり終えた日を数える（この端末だけ） ---- */
 const ymd=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
@@ -684,13 +852,21 @@ function showResult(){
   $("recap").innerHTML=log.map((l,k)=>l.a?'<div class="rrow"><span class="m">ア</span><span class="s">アドリブ：'+esc(l.a)+'</span><span class="v y">✓</span></div>':
     '<div class="rrow"><span class="m">'+(l.w?"単":l.i+1)+'</span><span class="s">'+esc(l.w||chapter().items[l.i].s)+'</span>'+
     (MODE!=="pic"?'<span class="v '+(l.right?"y":"n")+'">'+(l.right?"○":"×")+'</span>':"")+'</div>').join("");
-  const nt=TODO[TODO.indexOf(CH)+1];
-  $("btn-nextch").textContent=nt!==undefined?"次の復習へ（Ch "+level().chapters[nt].n+"）":"次の章へ";
-  $("btn-nextch").hidden=nt===undefined&&CH===level().chapters.length-1;
+  if(adl.length){   // アドリブ（添削つき）の回
+    $("rbig").innerHTML=adl.length+"<em> 文 アドリブ</em>";
+    $("rmsg").textContent="アドリブ"+adl.length+"文、添削した文を3回ずつ言えました。";
+    $("recap").innerHTML=adl.map(it=>'<div class="rrow"><span class="m">ア</span><span class="s">'+esc(it.r?it.r.corrected:(it.you||"（添削なし）"))+'</span><span class="v '+(it.r?"y":"n")+'">'+(it.r?"✓":"–")+'</span></div>').join("");
+  }
+  const nt=TODO[TODO.indexOf(CH)+1],nr=toRev();
+  $("btn-again").textContent="もう一回";
+  $("btn-nextch").textContent=nt!==undefined?"次の復習へ（Ch "+level().chapters[nt].n+"）":nr?"次の復習へ（添削した文 "+nr+"文）":"次の章へ";
+  $("btn-nextch").hidden=nt===undefined&&!nr&&CH===level().chapters.length-1;
   view("result");
 }
 $("btn-again").addEventListener("click",startRound);
-$("btn-nextch").addEventListener("click",()=>{const nt=TODO[TODO.indexOf(CH)+1];go(nt!==undefined?nt:CH+1);});
+$("btn-nextch").addEventListener("click",()=>{const nt=TODO[TODO.indexOf(CH)+1];if(nt===undefined&&toRev())openReview();else go(nt!==undefined?nt:CH+1);});
+// LINE の復習（?ch=）の最後の章のあとは、今日の添削した文の復習へ
+const toRev=()=>TODO.length&&TODO.indexOf(CH)===TODO.length-1?revList().length:0;
 
 /* ---- 録音して先生に送る（Google ドライブに保存、スプレッドシートに1行） ---- */
 let rec=null, chunks=[], blob=null, stream=null, recAt=0, recSec=0;
