@@ -91,6 +91,9 @@ img.pic.small{max-height:18vh}
 .how .sh-top{cursor:default;touch-action:auto}
 .how .sh-body{padding-bottom:6px}
 
+/* アドリブ（今日の単語を、章の型で） */
+.adw{display:flex;justify-content:center;align-items:center;gap:10px}
+.answer .bl{color:var(--brand)}
 .toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:calc(100% - 32px);max-width:420px;margin:0;background:var(--card);border-radius:14px;padding:12px 14px;font-size:14px;text-align:center;z-index:20;box-shadow:0 8px 30px rgba(15,30,61,.18)}
 .toast.ok{color:var(--ok)} .toast.ng{color:var(--ng)}
 .toast button{margin-left:8px;background:var(--soft);color:var(--brand);border-radius:99px;padding:4px 12px;font-size:13px;font-weight:700}
@@ -126,6 +129,10 @@ img.pic.small{max-height:18vh}
       <button data-m="quiz">選んで言う</button>
       <button data-m="pic">絵だけ見て言う</button>
       <button data-m="mix">単語ミックス</button>
+    </div>
+    <div class="toggle-row">
+      <div><b>今日の単語を混ぜる</b><span id="adlib-note"></span></div>
+      <button class="switch" id="adlib" role="switch" aria-checked="false" aria-label="今日の単語を混ぜる"><i></i></button>
     </div>
 
     <div class="card">
@@ -185,6 +192,22 @@ img.pic.small{max-height:18vh}
             <p class="wen" id="w-en"></p>
             <div class="acts"><button class="ghost" id="w-ng">言えなかった</button><button class="primary" id="w-ok">言えた</button></div>
           </div>
+        </div>
+
+        <div id="v-adlib" class="cin" style="padding:0" hidden>
+          <span class="wcat">アドリブ</span>
+          <p class="answer" id="a-frame"></p>
+          <p class="say" id="a-ex"></p>
+          <div class="wpics" id="a-pics"></div>
+          <div class="adw"><p class="wen" id="a-en"></p><button class="tsay" id="a-say" aria-label="単語を聞く">🔊</button></div>
+          <p class="say" id="a-ja"></p>
+          <p class="say">この単語を使って、この型で自分の文を作り、声に出して3回</p>
+          <div class="dots" id="a-dots">
+            <button class="dot" data-a="0" aria-label="1回目">1</button>
+            <button class="dot" data-a="1" aria-label="2回目">2</button>
+            <button class="dot" data-a="2" aria-label="3回目">3</button>
+          </div>
+          <div class="acts"><button class="primary" id="a-next" disabled>次へ</button></div>
         </div>
 
         <div id="v-result" class="cin" style="padding:0" hidden>
@@ -369,21 +392,22 @@ function segSlide(id){
 $("btn-how").addEventListener("click",()=>$("how").showModal());
 ["how-x","how-ok"].forEach(id=>$(id).addEventListener("click",()=>$("how").close()));
 $("how").addEventListener("click",e=>{if(e.target===$("how"))$("how").close();}); // 背景タップで閉じる
-function view(k){["quiz","repeat","word","result"].forEach(n=>$("v-"+n).hidden=(n!==k));}
+function view(k){["quiz","repeat","word","adlib","result"].forEach(n=>$("v-"+n).hidden=(n!==k));}
 
 /* ---- 1章＝6問 ---- */
 function startRound(){
   const items=chapter().items;
   queue=MODE!=="pic"?shuffle(items.map((_,i)=>i)):items.map((_,i)=>i);
   if(MODE==="mix")queue=mixWords(queue);
+  else if(ADLIB)queue=adlibWords(queue);
   qi=0;score=0;log=[];
   askQuestion();
 }
 function paintPips(){
-  $("pips").innerHTML=queue.map((_,i)=>{const l=log[i];return '<span class="pip'+(l?(MODE==="pic"?" d":l.right?" y":" n"):"")+'"></span>';}).join("");
+  $("pips").innerHTML=queue.map((_,i)=>{const l=log[i];return '<span class="pip'+(l?(MODE==="pic"||l.a?" d":l.right?" y":" n"):"")+'"></span>';}).join("");
 }
 function askQuestion(){
-  if(typeof queue[qi]==="string"){askWord();return;}
+  if(typeof queue[qi]==="string"){(queue[qi][0]==="a"?askAdlib:askWord)();return;}
   const it=chapter().items[queue[qi]];
   paintPips();
   $("pic").src=picOf(it);$("pic").alt="Ch "+chapter().n+" の絵";
@@ -514,6 +538,113 @@ function wordGrade(right){
 $("w-ok").addEventListener("click",()=>wordGrade(true));
 $("w-ng").addEventListener("click",()=>wordGrade(false));
 
+/* ---- 今日の単語を混ぜる（アドリブ）：単語の記録は読むだけ。箱も期限も変えない ---- */
+let ADLIB=store.get("adlib",false),adlibNoted=false;
+function paintAdlib(){$("adlib").setAttribute("aria-checked",String(ADLIB));$("adlib-note").textContent=ADLIB?"ON：今日の単語でアドリブ":"OFF：決まった文だけ";}
+paintAdlib();
+$("adlib").addEventListener("click",()=>{ADLIB=!ADLIB;store.set("adlib",ADLIB);paintAdlib();if(DATA)startRound();});
+// 今日の新しい単語 → 今日の復習（期限が来たもの）→ 無ければ、最後に覚えた日の単語
+function todayWords(){
+  const S=WC&&wload();if(!S||!S.cards)return [];
+  const t=dayAgo(0),days=S.days||{},out=[];
+  const add=l=>shuffle(l).forEach(wi=>{wi=+wi;if(WC.words[wi]&&!out.includes(wi))out.push(wi);});
+  add((days[t]&&days[t].batch)||[]);
+  add(Object.keys(S.cards).filter(k=>S.cards[k].box<=5&&S.cards[k].due<=t).map(k=>k.split(":")[0]));
+  if(!out.length){const d=Object.keys(days).filter(d=>d<=t&&days[d].batch&&days[d].batch.length).sort().pop();if(d)add(days[d].batch);}
+  return out;
+}
+function adlibWords(q){
+  const ws=todayWords();
+  if(!ws.length){
+    if(!adlibNoted){adlibNoted=true;toast("単語の画面で今日の単語を始めると、ここに出ます");setTimeout(()=>$("toast").hidden=true,5000);}
+    return q;
+  }
+  const out=q.slice();
+  ws.slice(0,2).forEach((wi,n)=>{const at=n?5:2;if(out.length>=at)out.splice(at,0,"a:"+wi);});  // 2問目・4問目のあと
+  return out;
+}
+// 章の文法から型を作る（章の題で決める。合わなければ、その章の答えの文を例に）
+const FRAMES=[
+  [/present perfect continuous/i,"I've been ＿＿ for a long time."],
+  [/present perfect/i,"I have ＿＿."],
+  [/past progressive|past continuous/i,"I was ＿＿ when you called."],
+  [/where\? \(past\)/i,"Where did you ＿＿?"],
+  [/simple past|past simple/i,"Yesterday, I ＿＿."],
+  [/present progressive|present continuous/i,"I'm ＿＿ right now."],
+  [/he \/ she \/ it/i,"She ＿＿ every day."],
+  [/simple present|present simple/i,"I ＿＿ every day."],
+  [/frequency/i,"I usually ＿＿."],
+  [/second conditional/i,"If I had ＿＿, I would be happy."],
+  [/first conditional|if \/ whether/i,"If it rains, I will ＿＿."],
+  [/\bwill\b|going to|future/i,"I'm going to ＿＿."],
+  [/must not|don't have to/i,"You don't have to ＿＿."],
+  [/must|have to|need to/i,"I have to ＿＿."],
+  [/should/i,"You should ＿＿."],
+  [/\bcan\b/i,"I can ＿＿."],
+  [/comparative/i,"This ＿＿ is better than that one."],
+  [/superlative/i,"This ＿＿ is the best."],
+  [/passive/i,"The ＿＿ was made by hand."],
+  [/reported speech/i,"She said that ＿＿."],
+  [/indirect question/i,"Could you tell me where ＿＿ is?"],
+  [/deduction/i,"It must be ＿＿."],
+  [/relative/i,"This is the ＿＿ that I like."],
+  [/gerund/i,"I enjoy ＿＿."],
+  [/infinitive/i,"I want to ＿＿."],
+  [/because/i,"I ＿＿ because I like it."],
+  [/although/i,"I like ＿＿, although it is hard."],
+  [/when \/ while/i,"When I ＿＿, I feel happy."],
+  [/before \/ after/i,"Before I ＿＿, I eat breakfast."],
+  [/as soon as/i,"I will ＿＿ as soon as I can."],
+  [/in case|even if/i,"I'll bring ＿＿ in case it rains."],
+  [/conjunction/i,"I like ＿＿, but I'm busy."],
+  [/what is this/i,"This is a ＿＿."],
+  [/colou?r/i,"My ＿＿ is blue."],
+  [/how many|quantity/i,"I have three ＿＿."],
+  [/who is this|whose/i,"This is my ＿＿."],
+  [/occupation/i,"I'm a ＿＿."],
+  [/adjective/i,"The ＿＿ is big."],
+  [/why/i,"Why do you like ＿＿?"],
+  [/how\b/i,"How do you ＿＿?"],
+  [/where/i,"Where is the ＿＿?"],
+  [/what \/ who/i,"What is ＿＿?"],
+  [/imperative/i,"Please ＿＿."],
+  [/phone/i,"Could you ＿＿, please?"],
+  [/agree/i,"I agree with ＿＿."],
+  [/presentation/i,"This graph shows ＿＿."],
+  [/propos|suggest/i,"I suggest we ＿＿."],
+  [/negotiation/i,"We could ＿＿."],
+  [/wrap|handover/i,"The ＿＿ is done."],
+];
+let ataps=0;
+function askAdlib(){
+  clearInterval(timer);$("tbar").style.width="100%";$("tbar").classList.remove("low");
+  const w=WC.words[+queue[qi].slice(2)],f=(FRAMES.find(x=>x[0].test(chapter().title))||[])[1];
+  const prev=chapter().items[queue.slice(0,qi).filter(x=>typeof x==="number").pop()]||chapter().items[0];
+  paintPips();
+  $("qleft").textContent=(qi+1)+" / "+queue.length;
+  $("a-frame").innerHTML=f?esc(f).replace("＿＿",'<span class="bl">＿＿</span>'):"";$("a-frame").hidden=!f;
+  $("a-ex").textContent=f?"":"型の例："+prev.s;   // 型が決まらない章は、直前の答えの文を例に
+  $("a-pics").textContent=w[1].map(x=>x[1]).filter(Boolean).join(" ");
+  $("a-en").textContent=w[0];
+  $("a-ja").textContent=w[1].map(x=>x[0]).join("・");
+  ataps=0;$("a-dots").querySelectorAll(".dot").forEach(d=>d.classList.remove("on"));
+  $("a-next").disabled=true;$("a-next").textContent=qi===queue.length-1?"結果を見る":"次へ";
+  view("adlib");
+  speak(w[0]);
+}
+$("a-say").addEventListener("click",()=>speak($("a-en").textContent));
+$("a-dots").addEventListener("click",e=>{
+  const d=e.target.closest("[data-a]");if(!d)return;
+  const n=+d.dataset.a;if(n>ataps)return;
+  d.classList.add("on");ataps=Math.max(ataps,n+1);
+  if(ataps>=3)$("a-next").disabled=false;
+});
+$("a-next").addEventListener("click",()=>{
+  log.push({a:$("a-en").textContent});
+  if(qi>=queue.length-1){showResult();return;}
+  qi++;askQuestion();
+});
+
 /* ---- 記録：章を1つやり終えた日を数える（この端末だけ） ---- */
 const ymd=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
 const dayAgo=n=>{const d=new Date();d.setDate(d.getDate()-n);return ymd(d);};
@@ -544,13 +675,14 @@ function showResult(){
   const done=store.get("done_"+LV,[]);
   if(!done.includes(chapter().n)){done.push(chapter().n);store.set("done_"+LV,done);renderNav();paintLog();}
   if(MODE!=="pic"){
-    $("rbig").innerHTML=score+"<em> / "+queue.length+"</em>";
-    $("rmsg").textContent=score===queue.length?(MODE==="mix"?"全問正解。章の文も単語も言えました。":"全問正解。次は「絵だけ見て言う」で。"):"もう一回やって、全部正解にしましょう。";
+    const n=queue.filter(x=>String(x)[0]!=="a").length;  // アドリブは点数に入れない
+    $("rbig").innerHTML=score+"<em> / "+n+"</em>";
+    $("rmsg").textContent=score===n?(MODE==="mix"?"全問正解。章の文も単語も言えました。":"全問正解。次は「絵だけ見て言う」で。"):"もう一回やって、全部正解にしましょう。";
   }else{
     $("rbig").innerHTML="6<em> / 6</em>";
     $("rmsg").textContent="絵だけで言えたら、この章は合格です。";
   }
-  $("recap").innerHTML=log.map((l,k)=>
+  $("recap").innerHTML=log.map((l,k)=>l.a?'<div class="rrow"><span class="m">ア</span><span class="s">アドリブ：'+esc(l.a)+'</span><span class="v y">✓</span></div>':
     '<div class="rrow"><span class="m">'+(l.w?"単":l.i+1)+'</span><span class="s">'+esc(l.w||chapter().items[l.i].s)+'</span>'+
     (MODE!=="pic"?'<span class="v '+(l.right?"y":"n")+'">'+(l.right?"○":"×")+'</span>':"")+'</div>').join("");
   const nt=TODO[TODO.indexOf(CH)+1];
