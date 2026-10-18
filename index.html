@@ -113,8 +113,8 @@ img.pic.small{max-height:18vh}
 
   <div id="app" hidden>
     <div class="toggle-row" id="biz-row" hidden>
-      <div><b>ビジネス英語</b><span id="biz-note"></span></div>
-      <button class="switch" id="biz" role="switch" aria-checked="false" aria-label="ビジネス英語"><i></i></button>
+      <div><b id="biz-label">専門</b><span id="biz-note"></span></div>
+      <button class="switch" id="biz" role="switch" aria-checked="false" aria-label="専門"><i></i></button>
     </div>
     <div class="seg" id="levels" role="group" aria-label="レベル"></div>
     <div class="chrow">
@@ -236,6 +236,7 @@ img.pic.small{max-height:18vh}
 <p class="toast" id="toast" role="status" hidden></p>
 
 <script src="/activity.js"></script>
+<script src="words/courses/index.js"></script>
 <script>
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -247,7 +248,7 @@ function speak(t){try{if(!("speechSynthesis" in window))return;speechSynthesis.c
 let DATA=null, LV="b", CH=0, MODE="quiz", TODO=[];
 let queue=[], qi=0, score=0, log=[], taps=0, timer=null, left=0;
 const LIMIT={b:20,i:30,z:30};
-let BIZ=false;   /* ビジネス英語ON：話すはビジネスの章、単語はビジネスのコースだけ（開ける生徒だけ） */
+let BIZ=false,TRACK=null;   /* 専門ON（ビジネス英語・土木英語）：話すは専門の章、単語は専門のコースだけ（その専門の生徒だけ） */
 const LEVELS=()=>DATA.levels.filter(l=>(l.id==="z")===BIZ);
 /* 絵の無い章（ビジネス）は、絵文字を絵の代わりに */
 const picOf=it=>it.pic||"data:image/svg+xml,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120"><text x="80" y="62" font-size="72" text-anchor="middle" dominant-baseline="middle">'+(it.e||"💼")+'</text></svg>');
@@ -267,12 +268,13 @@ async function unlock(sid,pass){
   store.set("name",me.name);
   (window.aps=window.aps||[]).push(["profile",{sid:sid,name:me.name,fixed:true}]);   /* 会員番号＝生徒ID（管理アプリの名簿のID） */
   const data=JSON.parse(await dec(dkey,enc));
-  if(me.kb&&enc.b){   /* ビジネスの章：この生徒にだけ鍵がある */
+  TRACK=me.track||null;
+  const tb=TRACK&&me.kb&&enc.t&&enc.t[TRACK.id];
+  if(tb){   /* 専門の章：その専門の生徒にだけ鍵がある */
     const bk=await crypto.subtle.importKey("raw",b64(me.kb),"AES-GCM",false,["decrypt"]);
-    data.levels.push(JSON.parse(await dec(bk,enc.b)));
+    data.levels.push(JSON.parse(await dec(bk,tb)));
   }
-  store.set("bizok",!!me.kb);
-  store.set("wg",me.wg||[]);   /* この生徒だけの単語のグループ（Business・土木など） */
+  store.set("track",TRACK);   /* 単語のページが読む（専門のコースの出し方） */
   return data;
 }
 const normSid=s=>{const n=s.replace(/[^0-9０-９]/g,"").replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0));return n?"STU"+n.padStart(3,"0"):s.trim().toUpperCase();};  // stu5・STU 005・５ → STU005
@@ -298,8 +300,10 @@ $("lock").addEventListener("submit",async e=>{
 /* ---- 画面の組み立て ---- */
 function start(){
   $("lock").hidden=true;$("app").hidden=false;
-  const hasBiz=DATA.levels.some(l=>l.id==="z");
-  BIZ=hasBiz&&store.get("biz",false);$("biz-row").hidden=!hasBiz;paintBiz();
+  const hasBiz=!!TRACK&&DATA.levels.some(l=>l.id==="z");
+  BIZ=hasBiz&&store.get("biz",false);$("biz-row").hidden=!hasBiz;
+  if(hasBiz){$("biz-label").textContent=TRACK.label;$("biz").setAttribute("aria-label",TRACK.label);}
+  paintBiz();
   LV=store.get("lv","b");if(!LEVELS().some(l=>l.id===LV))LV=LEVELS()[0].id;
   MODE=store.get("mode","quiz");CH=store.get("ch_"+LV,0);
   // LINE のリマインドから ?lv=b&ch=5,7&m=pic で、その章を直接開く（複数なら順番に）
@@ -313,7 +317,7 @@ function start(){
   paintWho();renderNav();paintLog();loadWords().then(startRound);
 }
 function paintLevels(){$("levels").innerHTML=LEVELS().map(l=>'<button data-lv="'+l.id+'">'+esc(l.name)+'</button>').join("");}
-function paintBiz(){$("biz").setAttribute("aria-checked",String(BIZ));$("biz-note").textContent=BIZ?"ON：話すも単語も、全部ビジネスの内容":"OFF：いつもの教材";}
+function paintBiz(){$("biz").setAttribute("aria-checked",String(BIZ));$("biz-note").textContent=BIZ?"ON：話すも単語も、全部"+(TRACK?TRACK.label.replace("英語",""):"専門")+"の内容":"OFF：いつもの教材";}
 $("biz").addEventListener("click",()=>{
   BIZ=!BIZ;store.set("biz",BIZ);paintBiz();paintLevels();
   LV=LEVELS()[0].id;CH=store.get("ch_"+LV,0);
@@ -460,7 +464,7 @@ const wload=()=>{try{return JSON.parse(localStorage.getItem(wkey()))||null;}catc
 function loadWords(){
   return new Promise(done=>{
     let id=null;try{id=localStorage.getItem("apush-words-course");}catch(e){}
-    if(BIZ&&!/^biz/.test(id||""))id="biz1";   /* ビジネス英語ON：単語ミックスもビジネスの単語 */
+    if(BIZ&&TRACK){const g=(window.APW_COURSES||[]).filter(x=>x.g===TRACK.words);if(g.length&&!g.some(x=>x.id===id))id=g[0].id;}   /* 専門ON：単語ミックスも専門の単語 */
     if(!id||!/^[a-z0-9]+$/.test(id))return done();
     const sc=document.createElement("script");sc.src="words/courses/"+id+".js";
     sc.onload=()=>{if(window.APW_COURSE&&window.APW_COURSE.id===id)WC=window.APW_COURSE;done();};

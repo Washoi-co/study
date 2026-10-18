@@ -66,6 +66,9 @@
 <script src="/activity.js"></script>
 <script src="courses/index.js"></script>
 <script>
+// Business・土木のコースは、その専門の生徒だけ（words/index.html と同じ）
+(function(){ var tr=null;try{tr=JSON.parse(localStorage.getItem("ap_track"));}catch(e){} var mine=tr&&tr.words;
+  APW_COURSES=APW_COURSES.filter(function(x){ return ["Business","土木"].indexOf(x.g)<0||x.g===mine; }); })();
 const $=id=>document.getElementById(id);
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 function speak(t){try{if(!("speechSynthesis" in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
@@ -76,6 +79,12 @@ const TRACKS=[
   {g:"IELTS",d:"留学・移住。アカデミックな英語"},
   {g:"TOEFL iBT",d:"アメリカなどへの留学"},
 ];
+/* 専門の生徒（Business・土木）には、その専門も目的に出す */
+(function(){
+  var tr=null;try{tr=JSON.parse(localStorage.getItem("ap_track"));}catch(e){}
+  var D={"Business":"仕事で使う英語。基本から経営・海外ビジネスまで","土木":"現場で使う英語。道具・材料から安全・管理まで"};
+  if(tr&&tr.words&&APW_COURSES.some(function(c){return c.g===tr.words;}))TRACKS.push({g:tr.words,d:D[tr.words]||tr.label});
+})();
 try{if(localStorage.getItem("apush-words-course"))$("to-words").hidden=false;}catch(e){}
 
 $("tracks").innerHTML=TRACKS.map((t,i)=>{

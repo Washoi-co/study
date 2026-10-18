@@ -6,9 +6,9 @@
   beginner.txt       Beginner PDF を pdftotext -layout したもの
   intermediate.json  Intermediate の文字起こし [{ch,title,ja,items:[[T,S,T訳,S訳],...]}]
   send.json          録音の送り先 {"url": Apps Script の URL, "key": 合い鍵}（任意）
-  students.json      生徒ごとのログイン [{"id": "STU005", "name": "T.Y", "pass": "パスワード", "biz": true, "words": ["土木"]}, ...]
-                     words：この生徒だけに見せる単語のグループ（words/courses/index.js の g）
-  business.json      ビジネスの章（任意）[{ch,title,ja,items:[[T,S,T訳,S訳,絵文字],...]}]。"biz": true の生徒だけが開ける
+  students.json      生徒ごとのログイン [{"id": "STU005", "name": "T.Y", "pass": "パスワード", "track": "biz"}, ...]
+                     track：その生徒の専門（下の TRACKS のキー）。ONにすると話すも単語もその専門になる。無い生徒は普通の教材だけ
+  business.json / civil.json  専門の章 [{ch,title,ja,items:[[T,S,T訳,S訳,絵文字],...]}]。その専門の生徒だけが開ける
 生徒を足した・パスワードを変えた時は、もう一度これを実行して data.enc を push する。
 
 しくみ: 教材は1つの鍵（データ鍵）で暗号化し、そのデータ鍵を生徒ごとのパスワードで
@@ -52,16 +52,24 @@ def intermediate():
     return chs
 
 
-def business():
-    path = os.path.join(SRC, "business.json")
+# 専門（生徒ごとにON/OFFするもの）。label＝スイッチの名前、words＝単語コースのグループ（words/courses/index.js の g）
+TRACKS = {
+    "biz": {"file": "business.json", "name": "Business", "label": "ビジネス英語", "words": "Business"},
+    "civ": {"file": "civil.json", "name": "土木", "label": "土木英語", "words": "土木"},
+}
+
+
+def track_level(tid):
+    t = TRACKS[tid]
+    path = os.path.join(SRC, t["file"])
     if not os.path.exists(path):
         return None
     chs = []
     for c in json.load(open(path, encoding="utf-8")):
         n = c["ch"]
         chs.append({"n": n, "u": unit(n, UNITS_Z), "title": c["title"], "ja": c["ja"],
-                    "items": [{"t": t, "s": s, "tj": tj, "sj": sj, "e": e} for t, s, tj, sj, e in c["items"]]})
-    return {"id": "z", "name": "Business", "chapters": chs}
+                    "items": [{"t": t_, "s": s, "tj": tj, "sj": sj, "e": e} for t_, s, tj, sj, e in c["items"]]})
+    return {"id": "z", "name": t["name"], "chapters": chs}
 
 
 def main():
@@ -77,24 +85,29 @@ def main():
     b64 = lambda b: base64.b64encode(b).decode()
     dkey, iv = os.urandom(32), os.urandom(12)
     ct = AESGCM(dkey).encrypt(iv, json.dumps(data, ensure_ascii=False).encode(), None)
-    # ビジネスの章は別の鍵で暗号化し、"biz": true の生徒にだけその鍵を渡す
-    biz, out = business(), {"i": b64(iv), "c": b64(ct)}
-    if biz:
-        bkey, biv = os.urandom(32), os.urandom(12)
-        out["b"] = {"i": b64(biv), "c": b64(AESGCM(bkey).encrypt(biv, json.dumps(biz, ensure_ascii=False).encode(), None))}
+    # 専門の章は専門ごとに別の鍵で暗号化し、その専門の生徒にだけ鍵を渡す（data.enc の t[専門]）
+    out, tkeys = {"i": b64(iv), "c": b64(ct), "t": {}}, {}
+    for tid in TRACKS:
+        lv = track_level(tid)
+        if not lv:
+            continue
+        tkeys[tid], tiv = os.urandom(32), os.urandom(12)
+        out["t"][tid] = {"i": b64(tiv), "c": b64(AESGCM(tkeys[tid]).encrypt(tiv, json.dumps(lv, ensure_ascii=False).encode(), None))}
     keys = {}
     for st in students:
         salt, siv = os.urandom(16), os.urandom(12)
         kek = hashlib.pbkdf2_hmac("sha256", st["pass"].encode(), salt, 200_000, 32)
         me = {"k": b64(dkey), "name": st["name"]}
-        if biz and st.get("biz"):
-            me["kb"] = b64(bkey)
-        me["wg"] = st.get("words", []) + (["Business"] if st.get("biz") else [])   # この生徒だけが見られる単語のグループ
+        tid = st.get("track")
+        if tid in TRACKS:   # 専門：スイッチの名前・単語のグループ・章の鍵
+            me["track"] = {"id": tid, "label": TRACKS[tid]["label"], "words": TRACKS[tid]["words"]}
+            if tid in tkeys:
+                me["kb"] = b64(tkeys[tid])
         inner = json.dumps(me, ensure_ascii=False).encode()
         keys[st["id"].upper()] = {"s": b64(salt), "i": b64(siv), "c": b64(AESGCM(kek).encrypt(siv, inner, None))}
     json.dump({**out, "keys": keys}, open(os.path.join(os.path.dirname(__file__), "data.enc"), "w"))
     print("data.enc:", sum(len(l["chapters"]) for l in data["levels"]), "chapters, students:", len(keys), ", send:", bool(data["send"]),
-          ", business:", f'{len(biz["chapters"])} chapters → ' + ",".join(s["id"] for s in students if s.get("biz")) if biz else "none")
+          ", tracks:", {tid: ",".join(s["id"] for s in students if s.get("track") == tid) for tid in tkeys})
 
 
 main()
