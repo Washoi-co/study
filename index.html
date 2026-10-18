@@ -228,7 +228,7 @@ img.pic.small{max-height:18vh}
             <input id="a-in" lang="en" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send" aria-label="あなたの英文" placeholder="ここに英文（直せます）">
             <div class="acts"><button class="ghost" id="a-again">もう一度話す</button><button class="primary" id="a-next">送って次へ</button></div>
           </div>
-          <p class="say priv">添削のため、英文だけを送ります（名前・会員番号・声は送りません）</p>
+          <p class="say priv">添削のため、英文を送ります。名前・声は送りません（会員番号は元に戻せない形にして、今月の利用分を数えるだけに使います）</p>
         </div>
 
         <div id="v-fix" class="cin" style="padding:0" hidden>
@@ -721,13 +721,15 @@ $("a-next").addEventListener("click",()=>{
   qi++;askQuestion();
 });
 
-/* 添削（Cloud Functions の review）。送るのは英文・型・単語・意味の4つだけ */
+/* 添削（Cloud Functions の review）。送るのは英文・型・単語・意味と、ハッシュにした会員番号だけ（月の利用額を数えるため） */
+/* 月の利用額を数えるための account：生徒IDをハッシュにしたもの（元のIDには戻せない形で送る） */
+const acctHash=s=>crypto.subtle.digest("SHA-256",new TextEncoder().encode("apush-review|"+s)).then(b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join(""));
 const REVIEW_URL="https://asia-northeast1-apush-training.cloudfunctions.net/review";
 function review(it){
   it.r=null;it.err=null;
   const sig=window.AbortSignal&&AbortSignal.timeout?AbortSignal.timeout(40000):undefined;
-  it.p=fetch(REVIEW_URL,{method:"POST",headers:{"Content-Type":"application/json"},signal:sig,
-      body:JSON.stringify({data:{sentence:it.you,pattern:it.pattern,word:it.word,meaning:it.meaning}})})
+  it.p=acctHash(store.get("sid","")).then(account=>fetch(REVIEW_URL,{method:"POST",headers:{"Content-Type":"application/json"},signal:sig,
+      body:JSON.stringify({data:{sentence:it.you,pattern:it.pattern,word:it.word,meaning:it.meaning,account}})}))
     .then(async res=>{
       const j=await res.json().catch(()=>({}));
       const r=j.result;
