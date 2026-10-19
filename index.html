@@ -744,6 +744,7 @@ $("a-mic").addEventListener("click",()=>{if(arec){clearInterval(arecTick);arec.s
 $("a-again").addEventListener("click",micStart);
 $("a-in").addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.isComposing){e.preventDefault();$("a-next").click();}});
 function adSend(blob,sec){   // 声（blob）か、打った文で添削を頼んで、次へ
+  if(!blob&&!$("a-in").value.trim()){$("a-in").focus();return;}   /* 空は送らない（無料版と同じ） */
   micStop();
   const it=Object.assign({},cur,{you:blob?"":$("a-in").value.trim(),audio:blob||null,sec:sec||0});
   adl[qi]=it;review(it);
