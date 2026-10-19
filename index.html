@@ -50,7 +50,6 @@ img.pic.small{max-height:18vh}
 .tq{display:flex;gap:9px;align-items:flex-start}
 .tq .who-t{flex:none;font-family:var(--en);font-size:11px;font-weight:900;color:var(--brand);background:var(--soft);border-radius:50%;width:24px;height:24px;display:grid;place-items:center;margin-top:2px}
 .tq p{margin:0;flex:1;font-family:var(--en);font-size:clamp(17px,4.6vw,21px);font-weight:700;letter-spacing:-.015em;line-height:1.35}
-.tsay{flex:none;width:36px;height:36px;border-radius:50%;background:var(--soft);color:var(--brand);font-size:13px;display:grid;place-items:center}
 .tj{font-size:13px;color:var(--mute);margin:-6px 0 0 33px}
 #quiz-only,#pic-only{display:flex;flex-direction:column;gap:9px}
 .rq{margin:0;font-family:var(--en);font-size:14px;color:var(--mute);text-align:center}
@@ -92,26 +91,6 @@ img.pic.small{max-height:18vh}
 .how .sh-top{cursor:default;touch-action:auto}
 .how .sh-body{padding-bottom:6px}
 
-/* アドリブ（今日の単語を、章の型で） */
-.adw{display:flex;justify-content:center;align-items:center;gap:10px}
-.answer .bl{color:var(--brand)}
-.toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:calc(100% - 32px);max-width:420px;margin:0;background:var(--card);border-radius:14px;padding:12px 14px;font-size:14px;text-align:center;z-index:20;box-shadow:0 8px 30px rgba(15,30,61,.18)}
-.toast.ok{color:var(--ok)} .toast.ng{color:var(--ng)}
-.toast button{margin-left:8px;background:var(--soft);color:var(--brand);border-radius:99px;padding:4px 12px;font-size:13px;font-weight:700}
-/* アドリブを声で → AI 添削 → 復唱 → 間隔をあけた復習 */
-.mic{align-self:center;display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:var(--on);border-radius:99px;padding:16px 36px;font-size:19px;font-weight:800;transition:transform .1s ease-out}
-.mic:active{transform:scale(.97)}
-.mic.on{background:var(--ng)} .mic[hidden]{display:none}
-#a-type{display:flex;flex-direction:column;gap:9px}
-#a-type[hidden],#f-err[hidden],#f-ok[hidden]{display:none}
-#a-in{width:100%;border:0;background:var(--bg);border-radius:12px;padding:13px 14px;font-family:var(--en);font-size:17px}
-#a-live{font-family:var(--en);font-size:16px;color:var(--ink);min-height:1.3em}
-.say.priv{font-size:11.5px}
-.you{margin:0;font-family:var(--en);font-size:16px;text-align:center;color:var(--mute);line-height:1.4}
-.okb{align-self:center;font-size:12px;font-weight:700;background:var(--ok);color:#fff;border-radius:99px;padding:2px 10px}
-#f-err,#f-ok{display:flex;flex-direction:column;gap:10px}
-#f-err .err{text-align:center}
-#rev-card p{grid-column:2/-1}
 </style>
 </head>
 <body data-tab="sp">
@@ -217,47 +196,49 @@ img.pic.small{max-height:18vh}
           </div>
         </div>
 
-        <div id="v-adlib" class="cin" style="padding:0" hidden>
-          <span class="wcat" id="a-tag">アドリブ</span>
-          <p class="answer" id="a-frame"></p>
-          <p class="say" id="a-ex"></p>
-          <div class="wpics" id="a-pics"></div>
-          <div class="adw"><p class="wen" id="a-en"></p><button class="tsay" id="a-say" aria-label="単語を聞く">🔊</button></div>
-          <p class="say" id="a-ja"></p>
-          <p class="say">この単語を使って、この型で自分の文を作り、声に出して言ってみよう。🎤を押して話し、言えたらもう一度押すと次へ進みます</p>
-          <button class="mic" id="a-mic">🎤 話す</button>
-          <p class="say" id="a-live" aria-live="polite"></p>
-          <div id="a-type" hidden>
-            <p class="say" id="a-nomic" hidden>声が使えない時は、打って入力してください</p>
-            <input id="a-in" lang="en" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send" aria-label="あなたの英文" placeholder="ここに英文（直せます）">
-            <div class="acts"><button class="ghost" id="a-again">もう一度話す</button><button class="primary" id="a-next">送って次へ</button></div>
-          </div>
-          <p class="say priv">添削のため、声（または英文）を送ります。声は文字にするためだけに使い、保存しません。名前は送りません（会員番号は元に戻せない形にして、今月の利用分を数えるだけに使います）</p>
+<!-- アドリブ（🎤で言う → AI添削 → 3回）と、添削した文の復習の画面。無料版・本コース共通（build が「部品の差し込み」の印の所に入れる）。動きは /adlib.js -->
+      <div id="v-adlib" class="cin" style="padding:0" hidden>
+        <div class="meta"><span class="wcat" id="a-tag">アドリブ</span><span id="a-n"></span></div>
+        <p class="stem" id="a-frame"></p>
+        <p class="say" id="a-fja"></p>
+        <div class="pic" id="a-pic" aria-hidden="true"></div>
+        <div class="adw"><p class="wen" id="a-en"></p><button class="tsay" id="a-say" aria-label="単語を聞く">🔊</button></div>
+        <p class="say" id="a-ja"></p>
+        <p class="say">この単語を使って、この型で自分の文を作り、声に出して言ってみよう。🎤を押して話し、言えたらもう一度押すと次へ進みます</p>
+        <button class="mic" id="a-mic">🎤 話す</button>
+        <p class="say" id="a-live" aria-live="polite"></p>
+        <div id="a-type" hidden>
+          <p class="say" id="a-nomic" hidden>声が使えない時は、打って入力してください</p>
+          <input id="a-in" lang="en" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send" aria-label="あなたの英文" placeholder="ここに英文（直せます）">
+          <div class="acts"><button class="ghost" id="a-again">もう一度話す</button><button class="primary" id="a-next">送って次へ</button></div>
         </div>
+        <p class="say priv">添削のため、声（または英文）を送ります。声は文字にするためだけに使い、保存しません。名前は送りません（ログインの印は元に戻せない形にして、今月の利用分を数えるだけに使います）</p>
+      </div>
 
-        <div id="v-fix" class="cin" style="padding:0" hidden>
-          <div class="meta"><span class="wcat" id="f-tag">添削</span><span id="f-n"></span></div>
-          <p class="say" id="f-you-h">① あなたの文</p>
-          <p class="you" id="f-you"></p>
-          <p class="say" id="f-fix-h">② 添削</p>
-          <p class="say" id="f-wait" role="status">添削しています…</p>
-          <div id="f-err" hidden>
-            <p class="err" id="f-msg" role="alert"></p>
-            <div class="acts"><button class="ghost" id="f-skip">とばす</button><button class="primary" id="f-retry">もう一度</button></div>
-          </div>
-          <div id="f-ok" hidden>
-            <span class="okb" id="f-badge">そのままでOK</span>
-            <div class="adw"><p class="answer" id="f-en"></p><button class="tsay" id="f-say" aria-label="聞く">▶</button></div>
-            <p class="say" id="f-note"></p>
-            <p class="say">声に出して3回。タップすると音が鳴ります。</p>
-            <div class="dots" id="f-dots">
-              <button class="dot" data-f="0" aria-label="1回目">1</button>
-              <button class="dot" data-f="1" aria-label="2回目">2</button>
-              <button class="dot" data-f="2" aria-label="3回目">3</button>
-            </div>
-          </div>
-          <div class="acts"><button class="primary" id="f-next" disabled>次へ</button></div>
+      <div id="v-fix" class="cin" style="padding:0" hidden>
+        <div class="meta"><span class="wcat" id="f-tag">添削</span><span id="f-n"></span></div>
+        <p class="say" id="f-you-h">① あなたの文</p>
+        <p class="you" id="f-you"></p>
+        <p class="say" id="f-fix-h">② 添削</p>
+        <p class="say" id="f-wait" role="status">添削しています…</p>
+        <div id="f-err" hidden>
+          <p id="f-msg" role="alert"></p>
+          <div class="acts"><button class="ghost" id="f-skip">とばす</button><button class="primary" id="f-retry">もう一度</button></div>
         </div>
+        <div id="f-ok" hidden>
+          <span class="okb" id="f-badge">そのままでOK</span>
+          <div class="adw"><p class="answer" id="f-en"></p><button class="tsay" id="f-say" aria-label="聞く">▶</button></div>
+          <p class="say" id="f-note"></p>
+          <p class="say">声に出して3回。タップすると音が鳴ります。</p>
+          <div class="dots" id="f-dots">
+            <button class="dot" data-f="0" aria-label="1回目">1</button>
+            <button class="dot" data-f="1" aria-label="2回目">2</button>
+            <button class="dot" data-f="2" aria-label="3回目">3</button>
+          </div>
+        </div>
+        <div class="acts"><button class="primary" id="f-next" disabled>次へ</button></div>
+      </div>
+
 
         <div id="v-result" class="cin" style="padding:0" hidden>
           <p class="big" id="rbig"></p>
@@ -310,6 +291,7 @@ img.pic.small{max-height:18vh}
 
 <script src="/activity.js"></script>
 <script src="words/courses/index.js"></script>
+<script src="/adlib.js"></script>  <!-- アドリブ→🎤→AI添削→3回→復習（無料版・本コース共通） -->
 <script>
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -392,7 +374,7 @@ function start(){
   const ad=q.get("adlib")==="1";        // 単語の画面・今日＆計画の「今日の単語でアドリブ5問」から
   if(q.toString())history.replaceState(null,"",location.pathname);
   paintLevels();
-  paintWho();renderNav();paintLog();paintRev();paintAdlib();loadWords().then(()=>{ad||ADLIB?startDay():startRound();if(rv)openReview();});
+  paintWho();renderNav();paintLog();Adlib.paintRev();paintAdlib();loadWords().then(()=>{ad||ADLIB?startDay():startRound();if(rv)Adlib.openReview();});
 }
 function paintLevels(){$("levels").innerHTML=LEVELS().map(l=>'<button data-lv="'+l.id+'">'+esc(l.name)+'</button>').join("");}
 function paintBiz(){$("biz").setAttribute("aria-checked",String(BIZ));$("biz-note").textContent=BIZ?"ON：話すも単語も、全部"+(TRACK?TRACK.label.replace("英語",""):"専門")+"の内容":"OFF：いつもの教材";}
@@ -455,7 +437,7 @@ function startRound(){
   queue=MODE!=="pic"?shuffle(items.map((_,i)=>i)):items.map((_,i)=>i);
   if(MODE==="mix")queue=mixWords(queue);
   RUN="ch";CHA=false;ACARDS=[];
-  qi=0;score=0;log=[];adl=[];FIX=null;micStop();
+  qi=0;score=0;log=[];adl=[];Adlib.reset();
   askQuestion();
 }
 function paintPips(){
@@ -632,7 +614,7 @@ $("adlib").addEventListener("click",()=>{ADLIB=!ADLIB;store.set("adlib",ADLIB);p
 function startDay(){
   const ws=todayWords();
   if(!ws.length){toast("単語の画面で今日の単語を覚えると、今日の単語でアドリブ5問ができます");setTimeout(()=>$("toast").hidden=true,5000);startRound();return;}
-  RUN="day";CHA=false;ACARDS=[];queue=[];qi=0;score=0;log=[];adl=[];FIX=null;micStop();
+  RUN="day";CHA=false;ACARDS=[];queue=[];qi=0;score=0;log=[];adl=[];Adlib.reset();
   addAdlib(shuffle(ws),5);   // 単語が5つより少なければ、くり返す
   askQuestion();
   $("v-adlib").closest(".card").scrollIntoView({behavior:"smooth",block:"start"});
@@ -694,166 +676,36 @@ const FRAMES=[
   [/wrap|handover/i,"The ＿＿ is done."],
 ];
 /* アドリブ1枚：🎤で言う（文字は直せる）→「送って次へ」で添削を後ろで頼んで、待たずに次へ */
-let adl=[],cur=null;
+let adl=[];
 function askAdlib(){
   clearInterval(timer);$("tbar").style.width="100%";$("tbar").classList.remove("low");
   const c=ACARDS[+queue[qi].slice(2)],f=(FRAMES.find(x=>x[0].test(chapter().title))||[])[1];
   const its=chapter().items,prev=its[queue.slice(0,qi).filter(x=>typeof x==="number").pop()]||its[qi%its.length];
   paintPips();
   $("qleft").textContent=(qi+1)+" / "+queue.length;
-  $("a-frame").innerHTML=f?esc(f).replace("＿＿",'<span class="bl">＿＿</span>'):"";$("a-frame").hidden=!f;
-  $("a-ex").textContent=f?"":"型の例："+prev.s;   // 型が決まらない章は、直前の答えの文を例に
-  $("a-tag").textContent=RUN==="day"?"アドリブ · 今日の単語":"アドリブ · Ch "+chapter().n;
-  $("a-pics").textContent=c.pics;
-  $("a-en").textContent=c.word;
-  $("a-ja").textContent=c.meaning||"この章の文の単語";
-  cur={word:c.word,meaning:c.meaning,pattern:f||prev.s};   // 型が無い章は、例の文を型として送る
-  micStop();$("a-in").value="";$("a-live").textContent="";
-  if(!CAN_REC||micOff)adType(true,false);else{$("a-mic").hidden=false;$("a-type").hidden=true;}
-  view("adlib");
-  speak(c.word);
+  Adlib.show({tag:RUN==="day"?"アドリブ · 今日の単語":"アドリブ · Ch "+chapter().n,n:"",frame:f||"",frameJa:f?"":"型の例："+prev.s,   // 型が決まらない章は、直前の答えの文を例に
+    pic:c.pics,word:c.word,meaning:c.meaning||"この章の文の単語",pattern:f||prev.s});   // 型が無い章は、例の文を型として送る
 }
-$("a-say").addEventListener("click",()=>speak($("a-en").textContent));
-
-// 声：録音 → 添削のときにサーバーで文字にする（OpenAI）。押す→話す→もう一度押すと、送って次の問題へ（待たない）
-// 録音できない端末・マイクを止めた時は、打って入力
-const CAN_REC=!!(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&window.MediaRecorder);
-let arec=null,arecStream=null,micOff=false,arecT=0,arecTick=0;
-function micStop(){   // 録音を捨てて止める
-  if(arec){arec.ondataavailable=arec.onstop=null;try{arec.stop();}catch(e){}arec=null;}
-  clearInterval(arecTick);$("a-mic").classList.remove("on");$("a-mic").textContent="🎤 話す";$("a-live").textContent="";
-}
-function micRelease(){micStop();if(arecStream){arecStream.getTracks().forEach(t=>t.stop());arecStream=null;}}
-function adType(note,again){
-  $("a-mic").hidden=true;$("a-type").hidden=false;
-  $("a-nomic").hidden=!note;$("a-again").hidden=!again;
-}
-async function micStart(){
-  micStop();
-  try{speechSynthesis.cancel();}catch(e){}
-  try{arecStream=arecStream||await navigator.mediaDevices.getUserMedia({audio:true});}
-  catch(e){micOff=true;adType(true,false);return;}
-  const chunks=[],r=arec=new MediaRecorder(arecStream);
-  r.ondataavailable=e=>{if(e.data&&e.data.size)chunks.push(e.data);};
-  r.onstop=()=>{arec=null;adSend(new Blob(chunks,{type:r.mimeType||"audio/mp4"}),(Date.now()-arecT)/1000);};
-  r.start();arecT=Date.now();
-  $("a-mic").hidden=false;$("a-type").hidden=true;$("a-mic").classList.add("on");
-  const tick=()=>{const t=Math.floor((Date.now()-arecT)/1000);$("a-mic").textContent="● 録音中 "+t+"秒（押すと送って次へ）";if(t>=30&&arec)arec.stop();};
-  tick();arecTick=setInterval(tick,500);
-}
-$("a-mic").addEventListener("click",()=>{if(arec){clearInterval(arecTick);arec.stop();}else micStart();});
-$("a-again").addEventListener("click",micStart);
-$("a-in").addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.isComposing){e.preventDefault();$("a-next").click();}});
-function adSend(blob,sec){   // 声（blob）か、打った文で添削を頼んで、次へ
-  if(!blob&&!$("a-in").value.trim()){$("a-in").focus();return;}   /* 空は送らない（無料版と同じ） */
-  micStop();
-  const it=Object.assign({},cur,{you:blob?"":$("a-in").value.trim(),audio:blob||null,sec:sec||0});
-  adl[qi]=it;review(it);
-  log.push({a:it.word});
-  if(RUN==="day")apMark("adlib");   // 今日＆計画の「アドリブ 今日 n / 5」
-  if(qi>=queue.length-1){micRelease();FIX={list:adl.filter(Boolean),i:0,review:false};paintFix();view("fix");return;}
-  qi++;askQuestion();
-}
-$("a-next").addEventListener("click",()=>adSend(null));
-
-/* 添削（Cloud Functions の review）。送るのは英文・型・単語・意味と、ハッシュにした会員番号だけ（月の利用額を数えるため） */
-/* 月の利用額を数えるための account：生徒IDをハッシュにしたもの（元のIDには戻せない形で送る） */
-const acctHash=s=>crypto.subtle.digest("SHA-256",new TextEncoder().encode("apush-review|"+s)).then(b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join(""));
-const REVIEW_URL="https://asia-northeast1-apush-training.cloudfunctions.net/review";
-function review(it){
-  it.r=null;it.err=null;
-  const sig=window.AbortSignal&&AbortSignal.timeout?AbortSignal.timeout(80000):undefined;
-  const b64=it.audio?new Promise(ok=>{const f=new FileReader();f.onload=()=>ok(String(f.result).split(",")[1]||"");f.readAsDataURL(it.audio);}):Promise.resolve("");
-  it.p=Promise.all([acctHash(store.get("sid","")),b64]).then(([account,audio])=>fetch(REVIEW_URL,{method:"POST",headers:{"Content-Type":"application/json"},signal:sig,
-      body:JSON.stringify({data:Object.assign({sentence:it.you,pattern:it.pattern,word:it.word,meaning:it.meaning,account},audio?{audio,mime:it.audio.type,sec:it.sec}:{})})}))
-    .then(async res=>{
-      const j=await res.json().catch(()=>({}));
-      const r=j.result;
-      if(!res.ok||!r||!String(r.corrected||"").trim()){const e=new Error();e.ja=j.error&&j.error.message;throw e;}
-      it.r={ok:!!r.ok,corrected:String(r.corrected).trim(),note:String(r.note||"")};
-      if(r.heard!=null)it.you=String(r.heard);
-      saveRev(it);
-    })
-    .catch(e=>{it.err=(e&&e.ja)||"添削できませんでした。電波の良い所で「もう一度」を押してください。";})
-    .then(()=>{if(FIX&&!FIX.review&&FIX.list[FIX.i]===it)paintFix();});
-  return it.p;
-}
-
-/* 添削を1文ずつ見て3回（review:true の時は、今日の復習） */
-let FIX=null;
-const fixEn=it=>FIX.review?it.en:(it.r&&it.r.corrected);
-function paintFix(){
-  const it=FIX.list[FIX.i],rv=FIX.review,en=fixEn(it),last=FIX.i===FIX.list.length-1;
-  $("f-tag").textContent=rv?"🔁 今日の復習":"添削";
-  $("f-n").textContent=(FIX.i+1)+" / "+FIX.list.length;
-  $("f-you-h").hidden=$("f-you").hidden=$("f-fix-h").hidden=rv;
-  $("f-you").textContent=it.you||(it.audio&&!it.r&&!it.err?"（聞き取っています…）":"（何も言っていません）");
-  $("f-wait").hidden=!!(en||it.err);
-  $("f-err").hidden=!!en||!it.err;$("f-msg").textContent=it.err||"";
-  $("f-ok").hidden=!en;
-  $("f-en").textContent=en||"";
-  $("f-badge").hidden=rv||!(it.r&&it.r.ok);
-  $("f-note").textContent=(rv?it.note:it.r&&it.r.note)||"";$("f-note").hidden=!$("f-note").textContent;
-  FIX.taps=0;$("f-dots").querySelectorAll(".dot").forEach(d=>d.classList.remove("on"));
-  fixLabel();
-  if(en)speak(en);
-}
-$("f-say").addEventListener("click",()=>speak($("f-en").textContent));
-function fixLabel(){
-  const last=FIX.i===FIX.list.length-1;
-  $("f-next").disabled=!fixEn(FIX.list[FIX.i]);
-  $("f-next").textContent=FIX.taps>=3?(last?(FIX.review?"おわり":"結果を見る"):"次へ"):"言えた（"+FIX.taps+"/3）";
-}
-function fixTap(){   // 3回言う：点でも「言えた」ボタンでも数える。3回で「次へ」になる
-  if(!FIX||FIX.taps>=3||!fixEn(FIX.list[FIX.i]))return;
-  $("f-dots").querySelectorAll(".dot")[FIX.taps].classList.add("on");FIX.taps++;
-  if(FIX.taps<3)speak($("f-en").textContent);
-  fixLabel();
-}
-$("f-dots").addEventListener("click",e=>{if(e.target.closest("[data-f]"))fixTap();});
-$("f-retry").addEventListener("click",()=>{const it=FIX.list[FIX.i];review(it);paintFix();});
-function fixNext(){
-  if(FIX.review)revDone(FIX.list[FIX.i].id);
-  if(++FIX.i<FIX.list.length){paintFix();return;}
-  if(FIX.review)endReview();else showResult();
-}
-$("f-skip").addEventListener("click",fixNext);
-$("f-next").addEventListener("click",()=>{if(FIX.taps<3)fixTap();else fixNext();});
-
-/* ---- 添削した文の復習（ap_adrev）。アドリブの日から +1・+4・+11日。遅れてやった日の当日には、もう出さない ---- */
-const RV=[1,4,11];
-const addDays=(s,n)=>{const [y,m,d]=s.split("-").map(Number);const t=new Date(y,m-1,d);t.setDate(t.getDate()+n);return ymd(t);};
-const revDue=x=>{const a=addDays(x.made,RV[x.step]),b=x.last?addDays(x.last,1):"";return a>b?a:b;};
-const revList=()=>store.get("adrev",[]).filter(x=>x&&x.en&&RV[x.step]!==undefined&&revDue(x)<=dayAgo(0));
-function saveRev(it){
-  const L=store.get("adrev",[]);
-  L.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,6),en:it.r.corrected,you:it.you,note:it.r.note,word:it.word,made:dayAgo(0),step:0});
-  store.set("adrev",L);
-}
-function revDone(id){
-  const L=store.get("adrev",[]),x=L.find(y=>y.id===id);if(!x)return;
-  x.step++;x.last=dayAgo(0);
-  store.set("adrev",x.step>=RV.length?L.filter(y=>y!==x):L);
-}
-function paintRev(){const n=revList().length;$("rev-card").hidden=!n;$("rev-n").textContent=n;return n;}
-function openReview(){
-  const L=revList();
-  if(!L.length){paintRev();toast("今日の復習（添削した文）は、ありません");setTimeout(()=>$("toast").hidden=true,4000);return;}
-  micStop();clearInterval(timer);$("tbar").style.width="100%";$("tbar").classList.remove("low");
-  RUN="rev";FIX={list:L,i:0,review:true};paintFix();view("fix");
-  $("v-fix").closest(".card").scrollIntoView({behavior:"smooth",block:"start"});
-}
-$("rev-go").addEventListener("click",openReview);
-function endReview(){
-  apMark("chunk");paintRev();
-  $("rbig").innerHTML=FIX.list.length+"<em> 文 復習</em>";
-  $("rmsg").textContent="今日の復習おわり。";
-  $("rstreak").textContent="";
-  $("recap").innerHTML=FIX.list.map(x=>'<div class="rrow"><span class="m">🔁</span><span class="s">'+esc(x.en)+'</span><span class="v y">✓</span></div>').join("");
-  $("btn-again").textContent="練習にもどる";$("btn-nextch").hidden=true;
-  FIX=null;
-  view("result");
-}
+/* アドリブの流れ（🎤・添削・3回・復習は /adlib.js）。ここはこのページの分だけ */
+Adlib.setup({
+  send(it){
+    adl[qi]=it;log.push({a:it.word});
+    if(RUN==="day")apMark("adlib");   // 今日＆計画の「アドリブ 今日 n / 5」
+    if(qi>=queue.length-1){Adlib.fix(adl.filter(Boolean));return;}
+    qi++;askQuestion();
+  },
+  done:showResult,
+  reviewStart(){RUN="rev";clearInterval(timer);$("tbar").style.width="100%";$("tbar").classList.remove("low");},
+  reviewDone(L){
+    apMark("chunk");
+    $("rbig").innerHTML=L.length+"<em> 文 復習</em>";
+    $("rmsg").textContent="今日の復習おわり。";
+    $("rstreak").textContent="";
+    $("recap").innerHTML=L.map(x=>'<div class="rrow"><span class="m">🔁</span><span class="s">'+esc(x.en)+'</span><span class="v y">✓</span></div>').join("");
+    $("btn-again").textContent="練習にもどる";$("btn-nextch").hidden=true;
+    view("result");
+  }
+});
 
 /* ---- 記録：章を1つやり終えた日を数える（この端末だけ） ---- */
 const ymd=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
@@ -882,7 +734,7 @@ function markToday(){
 }
 function showResult(){
   const day=RUN==="day",chl=log.filter(l=>!l.a),n=chl.length,ads=adl.filter(Boolean);
-  markToday();
+  Adlib.paintRev();markToday();
   if(!day){
     apMark("chunk");
     // 章クリア＝章の問題＋録音（必須）＋アドリブ3問。ここへは、アドリブの添削まで終えた時だけ来る（単語ミックスは練習だけ）
@@ -909,9 +761,9 @@ function showResult(){
   view("result");
 }
 $("btn-again").addEventListener("click",()=>RUN==="day"?startDay():startRound());
-$("btn-nextch").addEventListener("click",()=>{if(RUN==="day"){startRound();return;}const nt=TODO[TODO.indexOf(CH)+1];if(nt===undefined&&toRev())openReview();else go(nt!==undefined?nt:CH+1);});
+$("btn-nextch").addEventListener("click",()=>{if(RUN==="day"){startRound();return;}const nt=TODO[TODO.indexOf(CH)+1];if(nt===undefined&&toRev())Adlib.openReview();else go(nt!==undefined?nt:CH+1);});
 // LINE の復習（?ch=）の最後の章のあとは、今日の添削した文の復習へ
-const toRev=()=>TODO.length&&TODO.indexOf(CH)===TODO.length-1?revList().length:0;
+const toRev=()=>TODO.length&&TODO.indexOf(CH)===TODO.length-1?Adlib.revList().length:0;
 
 /* ---- 録音して先生に送る（Google ドライブに保存、スプレッドシートに1行） ---- */
 let rec=null, chunks=[], blob=null, stream=null, recAt=0, recSec=0;
@@ -950,7 +802,6 @@ $("rec-redo").addEventListener("click",resetRec);
 // 送信は後ろで続ける（Apps Script は受け取りに数秒かかるので、生徒は待たずに次へ進める）
 let sending=0;
 addEventListener("beforeunload",e=>{if(sending){e.preventDefault();e.returnValue="";}});  // 送信中に閉じると録音が消える
-function toast(html,cls){$("toast").innerHTML=html;$("toast").className="toast "+(cls||"");$("toast").hidden=false;}
 async function upload(p){
   sending++;
   try{
