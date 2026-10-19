@@ -356,9 +356,9 @@
 <script src="courses/index.js"></script>
 <script>
 // Business・土木のコースは、その専門の生徒だけ。専門ON（話すのスイッチ）なら、専門のコースだけ
+var LIMITED=["Business","土木"];   // 専門の生徒だけのグループ（下のコース選びでも使う）
 (function(){
   var tr=null,on=false;try{tr=JSON.parse(localStorage.getItem("ap_track"));on=JSON.parse(localStorage.getItem("ap_biz"));}catch(e){}
-  var LIMITED=["Business","土木"];   // 専門の生徒だけのグループ
   var mine=tr&&tr.words;
   APW_COURSES=APW_COURSES.filter(function(x){ return LIMITED.indexOf(x.g)<0||x.g===mine; });
   if(mine&&on)APW_COURSES=APW_COURSES.filter(function(x){ return x.g===mine; });

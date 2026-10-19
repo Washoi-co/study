@@ -505,7 +505,7 @@ function answer(chosen){
 }
 $("reveal").addEventListener("click",()=>{log.push({i:queue[qi],right:true});openRepeat(null);});
 function openRepeat(right,timedOut){
-  const it=chapter().items[queue[qi]];
+  const it=chapter().items[queue[qi]],last=qi===queue.length-1;
   $("tbar").style.width="100%";$("tbar").classList.remove("low");
   $("verdict").hidden=right===null;
   $("verdict").textContent=right?"正解":(timedOut?"時間切れ　答えはこちら":"おしい　答えはこちら");
