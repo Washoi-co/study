@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<script>window.SITE={"id":"honka","domain":"study.apush.jp","tourKey":"study","login":true,"words":{"title":"A-PUSH 単語トレーニング","dir":"courses/","index":true,"check":true,"default":null,"syncUrl":"","courses":null},"links":{},"tours":{"/":[["#levels","レベル（教材）を選びます。"],["#biz-row","ビジネス英語のスイッチです。ONにすると、話すも単語もビジネスの内容になります。"],["#chsel","章を選びます。‹ › で前後の章へ。"],["#modes","練習のしかた：選んで言う／絵だけ見て言う／単語ミックス。"],["#tq","先生の質問です。▶でもう一度聞けます。"],["#choices","答えを選んだら、声に出して3回。録音して先生に送ることもできます。"],["#btn-how","やり方はいつでもここから。"],[".tabbar","下のタブで「今日＆計画・話す・シャドーイング・単語」を行き来します。"]],"/words/":[["#w-groups","単語帳の種類です。"],["#w-decks","レベルを選びます。"],["#tasks","テスト → トレーニングの順に「スタート」を押します。"],["#w-mode","カードと一覧を切り替えられます。"]],"/shadowing/":[["#sh-list","動画を選びます。"],["#howto","やり方はここから。"]],"/plan/":[["#ring","今日のゴールの達成の様子です。"],["#cal","練習した日に色がつきます。"],["#g-words","1日の目標をここで決めます。"],["#c-time","毎日の練習の時間を、自分のカレンダーに入れられます。"]]},"manifest":{"name":"A-PUSH 本コース","short":"A-PUSH","description":"A-PUSH 本コースの練習（話す・シャドーイング・単語・今日＆計画）。","start_url":"/?from=home","color":"#F2F4F8"}};</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="/favicon.png">
@@ -118,7 +119,7 @@
 .pts li{position:relative;padding-left:16px;font-size:12.5px;line-height:1.65}
 .pts li::before{content:"";position:absolute;left:2px;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--brand)}
 .pts .rd{color:var(--brand)}
-.wsync,.cta{display:none!important}  /* 生徒用：ニックネーム登録と体験の案内は使わない */
+.wsync,.cta{display:none!important}  /* 記録の登録を使わないサイト（本コース）では出さない */
 .crow{display:flex;gap:8px;align-items:center}
 .course{flex:1;min-width:0;appearance:none;-webkit-appearance:none;background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23667391'/%3E%3C/svg%3E") no-repeat right 12px center;border:0;border-radius:12px;padding:10px 30px 10px 12px;font-size:15px;font-weight:700;color:var(--ink)}
 .crow .pill{flex:none;text-decoration:none}
@@ -139,6 +140,7 @@
     </div>
     <div class="chips" id="w-groups" role="group" aria-label="単語帳の種類"></div>
     <div class="crow"><div class="chips" id="w-decks" role="group" aria-label="レベル" style="flex:1;min-width:0"></div><a class="pill press" href="check.html">レベルチェック</a></div>
+    
     <div class="filters">
       <span class="note">覚えた単語 <b id="p-learn">0</b> / <span id="p-total" class="en">0</span> 語</span>
       <div class="seg" id="w-mode" role="group" aria-label="見せ方">
@@ -355,13 +357,16 @@
 <script src="/activity.js"></script>
 <script src="courses/index.js"></script>
 <script>
+if(!window.APW_COURSES)window.APW_COURSES=SITE.words.courses||[];   // 無料版：単語帳の一覧はサイトの設定から。本コースは courses/index.js
 // Business・土木のコースは、その専門の生徒だけ。専門ON（話すのスイッチ）なら、専門のコースだけ
 var LIMITED=["Business","土木"];   // 専門の生徒だけのグループ（下のコース選びでも使う）
 (function(){
   var tr=null,on=false;try{tr=JSON.parse(localStorage.getItem("ap_track"));on=JSON.parse(localStorage.getItem("ap_biz"));}catch(e){}
   var mine=tr&&tr.words;
+  var all=APW_COURSES;
   APW_COURSES=APW_COURSES.filter(function(x){ return LIMITED.indexOf(x.g)<0||x.g===mine; });
   if(mine&&on)APW_COURSES=APW_COURSES.filter(function(x){ return x.g===mine; });
+  if(!APW_COURSES.length)APW_COURSES=all;   /* 専門のコースがこのサイトに無い時は、全部出す（空にして止まらない） */
 })();
 // 生徒用：ログインしていなければトップ（会員番号とパスワード）へ
 try{ if(!JSON.parse(localStorage.getItem("ap_pass"))) location.replace("/"); }catch(e){ location.replace("/"); }
@@ -371,16 +376,20 @@ try{ if(!JSON.parse(localStorage.getItem("ap_pass"))) location.replace("/"); }ca
   try{ last=localStorage.getItem("apush-words-course"); }catch(e){}
   var ok=function(id){ return APW_COURSES.some(function(x){ return x.id===id; }); };
   if(!ok(c) && !ok(last) && LIMITED.indexOf(APW_COURSES[0].g)>=0) c=APW_COURSES[0].id;   // 専門ON：専門の最初のコースから（レベルチェックは飛ばす）
-  else if(!ok(c) && !ok(last)){ location.replace("check.html"); return; }  // 初めてなら、まずレベルチェック
+  else if(!ok(c) && !ok(last)){ if(SITE.words.check){ location.replace("check.html"); return; } c=SITE.words["default"]||APW_COURSES[0].id; }  // 初めてなら、レベルチェック（無料版は決まった単語帳）
   if(!ok(c)) c = last;
   try{ localStorage.setItem("apush-words-course", c); }catch(e){}
-  document.write('<script src="courses/'+c+'.js"><\/script>');
+  document.write('<script src="'+SITE.words.dir+c+'.js"><\/script>');
 })();
 </script>
 <script>
 (function(){
 "use strict";
-var C = window.APW_COURSE, W = C.words;
+var C = window.APW_COURSE;
+// 単語帳のファイルが無い・読めない時は、決まった単語帳にもどす（1回だけ）
+if(!C||!C.words){ var fb=SITE.words["default"]||(APW_COURSES[0]||{}).id, want=null; try{ want=localStorage.getItem("apush-words-course"); }catch(e){}
+  if(fb&&want!==fb){ try{ localStorage.setItem("apush-words-course",fb); }catch(e){} location.replace("?c="+fb); } return; }
+var W = C.words;
 var KEY = "apush-words-" + C.id + "-v1";
 document.getElementById("title").textContent = C.title;
 (function(){  // 種類のタブ（TOEIC・IELTS…）。押すと、その種類で最後に使ったコースを開く
@@ -414,7 +423,7 @@ function save(){ S.updatedAt=Date.now(); try{ localStorage.setItem(KEY, JSON.str
 
 /* ---------- 忘却曲線を活用する：ニックネームの ID で、記録をスプレッドシートに保存 ---------- */
 // ✏️ Google Apps Script の「ウェブアプリの URL」を入れる（空のままだと登録できません）
-var SYNC_URL = "";  // 生徒用ではニックネームの保存は使わない
+var SYNC_URL = SITE.words.syncUrl||"";  // 無料版だけ（本コースは空＝記録の登録を使わない）
 var pushTimer=null;
 function syncPayload(){
   var mastered=0; for(var id in S.cards){ if(S.cards[id].box>5) mastered++; }
@@ -500,7 +509,7 @@ function renderHome(){
   $("msg").hidden=!msg; $("msg").textContent=msg;
   // 朝の単語を終えたら、今日の単語でアドリブ5問（話すのページ /?adlib=1）。5問やるまで出す
   var an=0; try{ an=((JSON.parse(localStorage.getItem("ap_activity"))||{})[today()]||{}).adlib||0; }catch(e){}
-  $("w-adlib").hidden=!d.am || an>=5; $("w-adlib-n").textContent="今日 "+an+" / 5 問";
+  $("w-adlib").hidden=!(d.am||finished) || an>=5; $("w-adlib-n").textContent="今日 "+Math.min(an,5)+" / 5　声で言うと、AIが添削します";
   // doboku の形：単語帳・1日の新しい単語・今日の数
   renderDecks(tn);
   if(!$("w-listwrap").hidden) renderList();

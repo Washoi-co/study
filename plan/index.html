@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<script>window.SITE={"id":"honka","domain":"study.apush.jp","tourKey":"study","login":true,"words":{"title":"A-PUSH 単語トレーニング","dir":"courses/","index":true,"check":true,"default":null,"syncUrl":"","courses":null},"links":{},"tours":{"/":[["#levels","レベル（教材）を選びます。"],["#biz-row","ビジネス英語のスイッチです。ONにすると、話すも単語もビジネスの内容になります。"],["#chsel","章を選びます。‹ › で前後の章へ。"],["#modes","練習のしかた：選んで言う／絵だけ見て言う／単語ミックス。"],["#tq","先生の質問です。▶でもう一度聞けます。"],["#choices","答えを選んだら、声に出して3回。録音して先生に送ることもできます。"],["#btn-how","やり方はいつでもここから。"],[".tabbar","下のタブで「今日＆計画・話す・シャドーイング・単語」を行き来します。"]],"/words/":[["#w-groups","単語帳の種類です。"],["#w-decks","レベルを選びます。"],["#tasks","テスト → トレーニングの順に「スタート」を押します。"],["#w-mode","カードと一覧を切り替えられます。"]],"/shadowing/":[["#sh-list","動画を選びます。"],["#howto","やり方はここから。"]],"/plan/":[["#ring","今日のゴールの達成の様子です。"],["#cal","練習した日に色がつきます。"],["#g-words","1日の目標をここで決めます。"],["#c-time","毎日の練習の時間を、自分のカレンダーに入れられます。"]]},"manifest":{"name":"A-PUSH 本コース","short":"A-PUSH","description":"A-PUSH 本コースの練習（話す・シャドーイング・単語・今日＆計画）。","start_url":"/?from=home","color":"#F2F4F8"}};</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#F2F4F8">
@@ -110,6 +111,7 @@ a.row{text-decoration:none;color:var(--ink)}
   </div>
   <p class="note">押すと、毎日くり返す予定（A-PUSH 今日のトレーニング）が追加されます。予定の中に、このサイトへのリンクと今日の課題が入ります。</p>
 
+  
   <footer class="foot">
     <span>記録とゴールは、お使いの端末のブラウザに保存されます。機種を変えたり、別のブラウザで開いたりすると、0から始まります。</span>
     <span class="by">TRAINING BY A-PUSH</span>
@@ -142,11 +144,11 @@ const TASKS=[
   {k:"chunk",ic:"🧩",t:"チャンクトレーニング",u:"章",href:"/"},
   {k:"shadow",ic:"🎧",t:"シャドーイング",u:"本",href:"/shadowing/"},
 ];
-// アドリブは毎日5問の決まった課題（ゴールで変えない）。始めた日より前の日には数えない
-const ADLIB_FROM="2026-10-19";
+// アドリブは毎日5問の決まった課題（ゴールで変えない）。この端末で始めた日より前の日には数えない
+if(!G.adFrom){G.adFrom=TODAY;put("ap_goals",G);}
 // 1日のゴールは、変えた日から先にだけ使う（前の日は、その日のゴールで判定）。hist=[{from, words, chunk, shadow}]
 const daily=d=>{const h=(G.hist||[]).filter(x=>x.from<=d);return h.length?h[h.length-1]:(G.hist&&G.hist[0])||G;};
-const goalOf=(k,d)=>k==="adlib"?((d||TODAY)>=ADLIB_FROM?5:0):+daily(d||TODAY)[k]||0;
+const goalOf=(k,d)=>k==="adlib"?((d||TODAY)>=G.adFrom?5:0):+daily(d||TODAY)[k]||0;
 // その日に、1日のゴールのうちいくつできたか
 function dayState(a,d){
   const x=a[d]||{},on=TASKS.filter(t=>goalOf(t.k,d)>0);
@@ -169,7 +171,7 @@ function paintToday(a){
   ).join("")||'<a class="row" href="#g-words"><span class="ic" aria-hidden="true">📅</span><span><b>1日のゴールを決める</b><small>この下の「計画」</small></span><span class="chev">›</span></a>';
   // 添削した文の復習（話すのページの ap_adrev）。ゴールの輪には数えない。並べるだけ
   const rv=revN();
-  if(rv)$("today").innerHTML+='<a class="row" href="/?review=adlib"><span class="ic" aria-hidden="true">🔁</span><span><b>A-PUSHの復習（添削した文）</b><small>今日 '+rv+'文</small></span><span class="chev">やる ›</span></a>';
+  if(rv)$("today").innerHTML+='<a class="row" href="/?review=adlib"><span class="ic" aria-hidden="true">🔁</span><span><b>話すの復習（添削した文）</b><small>今日 '+rv+'文</small></span><span class="chev">やる ›</span></a>';
   // 連続・今週（何かやった日）・今月の単語
   const act=d=>TASKS.some(t=>(a[d]||{})[t.k]);
   let d=act(TODAY)?TODAY:addDays(TODAY,-1),n=0;
@@ -268,6 +270,7 @@ $("save").onclick=()=>{
 function syncWordsPer(){
   if(!G.words)return;
   let id=null;try{id=localStorage.getItem("apush-words-course");}catch(e){}
+  if(!id)id=SITE.words["default"]||null;
   if(!id)return;
   const k="apush-words-"+id+"-v1",S=get(k,null)||{settings:{per:20,am:"07:30",noon:"12:30",pm:"21:00"},next:0,cards:{},days:{}};
   S.settings=Object.assign({am:"07:30",noon:"12:30",pm:"21:00"},S.settings,{per:G.words});
@@ -289,7 +292,7 @@ const TITLE="A-PUSH 今日のトレーニング",URL_="https://study.apush.jp/";
 $("c-ics").onclick=e=>{
   e.preventDefault();
   const [s,en]=startEnd(),now=new Date().toISOString().replace(/[-:]/g,"").replace(/\.\d+/,"");
-  const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//A-PUSH//study//JA","BEGIN:VEVENT",
+  const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//A-PUSH//honka//JA","BEGIN:VEVENT",
     "UID:apush-"+Date.now()+"@study.apush.jp","DTSTAMP:"+now,"DTSTART:"+s,"DTEND:"+en,"RRULE:FREQ=DAILY",
     "SUMMARY:"+TITLE,"DESCRIPTION:今日の課題："+plan()+"\\n"+URL_,"URL:"+URL_,
     "BEGIN:VALARM","TRIGGER:PT0M","ACTION:DISPLAY","DESCRIPTION:"+TITLE,"END:VALARM","END:VEVENT","END:VCALENDAR"].join("\r\n");
