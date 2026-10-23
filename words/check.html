@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/ui.css">
 <style>
 /* 単語のレベルチェック（見た目は /ui.css＝ほかのページと同じ。ここは足りない分だけ）
-   種類（General/TOEIC/IELTS/TOEFL）を選び、やさしいレベルから6問ずつ。5問以上わかれば次のレベルへ。わからなかったレベルを、おすすめのコースにする。 */
+   種類（General/TOEIC/IELTS/TOEFL/ネイティブ/スラング）を選び、やさしいレベルから6問ずつ。5問以上わかれば次のレベルへ。わからなかったレベルを、おすすめのコースにする。 */
 .en{font-family:var(--en)}
 .tracks{display:flex;flex-direction:column;gap:9px}
 .tracks .row{grid-template-columns:1fr auto}
@@ -67,9 +67,9 @@
 <script src="/activity.js"></script>
 <script src="courses/index.js"></script>
 <script>
-// Business・土木のコースは、その専門の生徒だけ（words/index.html と同じ）
+// 土木のコースは、その専門の生徒だけ。Business は本コースの全員に出す（2026-10-21 kimi・words/index.html と同じ）
 (function(){ var tr=null;try{tr=JSON.parse(localStorage.getItem("ap_track"));}catch(e){} var mine=tr&&tr.words;
-  APW_COURSES=APW_COURSES.filter(function(x){ return ["Business","土木"].indexOf(x.g)<0||x.g===mine; }); })();
+  APW_COURSES=APW_COURSES.filter(function(x){ return ["土木"].indexOf(x.g)<0||x.g===mine; }); })();
 const $=id=>document.getElementById(id);
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 function speak(t){try{if(!("speechSynthesis" in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
@@ -79,20 +79,29 @@ const TRACKS=[
   {g:"TOEIC",d:"仕事・ビジネスの英語"},
   {g:"IELTS",d:"留学・移住。アカデミックな英語"},
   {g:"TOEFL iBT",d:"アメリカなどへの留学"},
+  // 2026-10-21：ネイティブのフレーズ・スラングは、それぞれ1レベルだけ（ids で選ぶ）
+  {g:"ネイティブ",ids:["native"],d:"会話でよく使うフレーズ"},
+  {g:"スラング",ids:["slang"],d:"SNS・話し言葉の、今どきの英語"},
+  // ビジネスは本コースの全員に。チェックは基本200〜レベル4だけ（biz5〜10 は分野別でレベルではない）
+  {g:"Business",ids:["biz0","biz1","biz2","biz3","biz4"],d:"仕事で使う英語。基本から経営・海外ビジネスまで"},
 ];
-/* 専門の生徒（Business・土木）には、その専門も目的に出す */
+const levelsOf=t=>APW_COURSES.filter(c=>t.ids?t.ids.indexOf(c.id)>=0:c.g===t.g);
+const nm=l=>R.g===l.t?l.t:R.g+" "+l.t;  // 「スラング スラング」と重ねない
+/* 専門の生徒（土木）には、その専門も目的に出す */
 (function(){
   var tr=null;try{tr=JSON.parse(localStorage.getItem("ap_track"));}catch(e){}
   var D={"Business":"仕事で使う英語。基本から経営・海外ビジネスまで","土木":"現場で使う英語。道具・材料から安全・管理まで"};
-  if(tr&&tr.words&&APW_COURSES.some(function(c){return c.g===tr.words;}))TRACKS.push({g:tr.words,d:D[tr.words]||tr.label});
+  if(tr&&tr.words&&!TRACKS.some(function(t){return t.g===tr.words;})&&APW_COURSES.some(function(c){return c.g===tr.words;}))TRACKS.push({g:tr.words,d:D[tr.words]||tr.label});
 })();
 try{if(localStorage.getItem("apush-words-course"))$("to-words").hidden=false;}catch(e){}
 
 $("tracks").innerHTML=TRACKS.map((t,i)=>{
-  const lv=APW_COURSES.filter(c=>c.g===t.g);
-  return '<button class="row" data-i="'+i+'"><span><b>'+t.g+'</b><small>'+t.d+'（'+lv[0].t+'〜'+lv[lv.length-1].t+'）</small></span><span class="go">チェック ›</span></button>';
+  const lv=levelsOf(t);
+  if(!lv.length)return "";  // そのサイトに無いコースは出さない
+  const range=lv.length>1?'（'+lv[0].t+'〜'+lv[lv.length-1].t+'）':'';
+  return '<button class="row" data-i="'+i+'"><span><b>'+t.g+'</b><small>'+t.d+range+'</small></span><span class="go">チェック ›</span></button>';
 }).join("");
-$("tracks").onclick=e=>{const b=e.target.closest("[data-i]");if(b)start(TRACKS[+b.dataset.i].g);};
+$("tracks").onclick=e=>{const b=e.target.closest("[data-i]");if(b)start(TRACKS[+b.dataset.i]);};
 
 // コースのファイルは1つずつ読み込む（どれも window.APW_COURSE に入るので）
 const loaded={};
@@ -103,8 +112,8 @@ function load(id){
 }
 
 let R=null;  // {g, levels, li, qs, qi, right, scores}
-async function start(g){
-  R={g,levels:APW_COURSES.filter(c=>c.g===g),li:0,scores:[]};
+async function start(t){
+  R={g:t.g,levels:levelsOf(t),li:0,scores:[]};
   await level();
 }
 async function level(){
@@ -120,7 +129,7 @@ async function level(){
 }
 function ask(){
   const q=R.qs[R.qi],lv=R.levels[R.li];
-  $("q-level").textContent=R.g+" "+lv.t+"（"+(R.li+1)+" / "+R.levels.length+" レベル）";
+  $("q-level").textContent=nm(lv)+(R.levels.length>1?"（"+(R.li+1)+" / "+R.levels.length+" レベル）":"");
   $("q-count").textContent=(R.qi+1)+" / "+PER;
   $("q-word").textContent=q.en;speak(q.en);
   $("q-choices").innerHTML=q.opts.map((o,n)=>'<button class="ch"><span class="k">'+(n+1)+'</span><span>'+o.replace(/[&<>]/g,"")+'</span></button>').join("")+'<button class="ch idk" data-idk="1">わからない</button>';
@@ -138,13 +147,13 @@ $("q-choices").onclick=e=>{
 };
 function result(){
   const passedAll=R.right>=PASS, rec=R.levels[R.li];
-  $("r-course").textContent=rec.g+" "+rec.t;
+  $("r-course").textContent=nm(rec);
   $("r-msg").textContent=passedAll?"いちばん上のレベルまで、ほとんどわかりました。このコースで仕上げましょう。"
     :R.li===0?"まずはこのレベルから。知らない単語を、絵と声で毎日覚えていきましょう。"
     :"ひとつ下のレベルはほとんどわかりました。このレベルから始めると、ちょうどいい難しさです。";
   $("r-levels").innerHTML=R.levels.map((l,i)=>{
     const s=R.scores[i];
-    return '<div><span>'+l.g+" "+l.t+'</span>'+(s==null?'<span class="s">—</span>':'<span class="'+(s>=PASS?"y":"n")+'">'+s+" / "+PER+'</span>')+'</div>';
+    return '<div><span>'+nm(l)+'</span>'+(s==null?'<span class="s">—</span>':'<span class="'+(s>=PASS?"y":"n")+'">'+s+" / "+PER+'</span>')+'</div>';
   }).join("");
   $("r-start").href="./?c="+rec.id;
   try{localStorage.setItem("ap_levelcheck",JSON.stringify({g:R.g,id:rec.id,scores:R.scores,date:new Date().toLocaleDateString("sv")}));}catch(e){}
