@@ -29,12 +29,15 @@ function doPost(e) {
     const name = `${stamp}_${d.name}_${d.level}_Ch${d.ch}-${d.q}.${ext}`;
     const file = folder().createFile(Utilities.newBlob(Utilities.base64Decode(d.data), d.mime, name));
 
-    sheet.appendRow([new Date(), d.name, d.level, d.ch, d.q, d.mode, d.t, d.s, file.getUrl(), '']);
+    sheet.appendRow([new Date(), d.name, d.level, d.ch, d.q, d.mode, d.t, d.s].map(safe).concat([file.getUrl(), '']));
     return json({ ok: true });
   } catch (err) {
     return json({ ok: false, error: String(err) });
   }
 }
+
+/** 表に書く文：先頭が = + - @ なら ' を付けて、数式として読ませない（点検 10/29） */
+function safe(v) { if (typeof v !== "string") return v; const s = v; return /^[=+\-@\t\r]/.test(s) ? "'" + s : s; }
 
 /** スプレッドシートと同じ場所に録音フォルダを作る（なければ） */
 function folder() {
