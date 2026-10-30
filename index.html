@@ -308,6 +308,7 @@ let queue=[], qi=0, score=0, log=[], taps=0, timer=null, left=0;
    ACARDS：アドリブのカード {word,meaning,pics}（queue の "a:番号"）。CHA：章のアドリブに入った。REQ・recOk：この問題は録音が必須・送った（または録音できない） */
 let RUN="ch", ACARDS=[], CHA=false, REQ=false, recOk=false, recWhy="";
 const LIMIT={b:20,i:30,z:30};
+let ME=null;   /* この生徒だけの鍵 {sid, rk 録音, tok 管理アプリ}。パスワードで開けるたびに作り直す（localStorage に置かない） */
 let BIZ=false,TRACK=null;   /* 専門ON（ビジネス英語・土木英語）：話すは専門の章、単語は専門のコースだけ（その専門の生徒だけ） */
 const LEVELS=()=>DATA.levels.filter(l=>(l.id==="z")===BIZ);
 /* 絵の無い章（ビジネス）は、絵文字を絵の代わりに */
@@ -326,7 +327,8 @@ async function unlock(sid,pass){
   const me=JSON.parse(await dec(kek,box));
   const dkey=await crypto.subtle.importKey("raw",b64(me.k),"AES-GCM",false,["decrypt"]);
   store.set("name",me.name);
-  (window.aps=window.aps||[]).push(["profile",{sid:sid,name:me.name,fixed:true}]);   /* 会員番号＝生徒ID（管理アプリの名簿のID） */
+  ME={sid:sid,rk:me.rk||"",tok:me.tok||""};
+  (window.aps=window.aps||[]).push(["profile",{sid:sid,name:me.name,fixed:true,tok:ME.tok}]);   /* 会員番号＝生徒ID（管理アプリの名簿のID） */
   const data=JSON.parse(await dec(dkey,enc));
   TRACK=me.track||null;
   const tb=TRACK&&me.kb&&enc.t&&enc.t[TRACK.id];
@@ -824,7 +826,7 @@ $("rec-send").addEventListener("click",async()=>{
   $("rec-send").disabled=true;
   const data=await new Promise((ok,ng)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(",")[1]);r.onerror=ng;r.readAsDataURL(blob);});
   upload({label:"Ch "+chapter().n+"-"+(queue[qi]+1),
-    body:{source:"site",key:DATA.send.key,sid:store.get("sid",""),sec:recSec,name:store.get("name",""),level:level().name,ch:chapter().n,q:queue[qi]+1,
+    body:{source:"site",key:ME.rk,sid:ME.sid,sec:recSec,name:store.get("name",""),level:level().name,ch:chapter().n,q:queue[qi]+1,
       mode:{quiz:"選んで言う",pic:"絵だけ",mix:"単語ミックス"}[MODE],t:it.t,s:it.s,mime:blob.type,data}});
   $("rec-msg").textContent="送っています。次へ進んで大丈夫です";$("rec-msg").className="recmsg ok";
   recOk=true;canNext();
