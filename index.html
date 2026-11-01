@@ -374,11 +374,25 @@ function start(){
   TODO=(q.get("ch")||"").split(",").map(n=>level().chapters.findIndex(c=>String(c.n)===n.trim())).filter(i=>i>=0);
   if(TODO.length){CH=TODO[0];store.set("ch_"+LV,CH);}
   if(["quiz","pic","mix"].includes(q.get("m"))){MODE=q.get("m");store.set("mode",MODE);}
+  // 今日＆計画の「話す」から（?today=1）：先生のレッスンから 1・4・11・25 日目の章（sync.js が ap_today に入れる）。無い日はいつもの続きの章
+  const tq=q.get("today")==="1",tOk=t=>t&&t.day===dayAgo(0)&&Array.isArray(t.ch);
+  if(tq){
+    if(tOk(store.get("today",null)))todayCh(store.get("today",null));
+    else addEventListener("ap-today",()=>{const t=store.get("today",null);if(tOk(t)&&todayCh(t)){paintLevels();WC=null;renderNav();loadWords().then(startRound);}},{once:true});   // 今日はじめて開いた＝つながってから届く
+  }
   const rv=q.get("review")==="adlib";   // 今日＆計画の「A-PUSHの復習（添削した文）」から
   const ad=q.get("adlib")==="1";        // 単語の画面・今日＆計画の「今日の単語でアドリブ5問」から
   if(q.toString())history.replaceState(null,"",location.pathname);
   paintLevels();
-  paintWho();renderNav();paintLog();Adlib.paintRev();paintAdlib();loadWords().then(()=>{ad||ADLIB?startDay():startRound();if(rv)Adlib.openReview();});
+  paintWho();renderNav();paintLog();Adlib.paintRev();paintAdlib();loadWords().then(()=>{ad||(ADLIB&&!tq)?startDay():startRound();if(rv)Adlib.openReview();});
+}
+function todayCh(t){
+  if(t.lv==="z"&&TRACK&&DATA.levels.some(l=>l.id==="z")&&!BIZ){BIZ=true;store.set("biz",true);paintBiz();}   // 専門の章＝専門をONに
+  if(!LEVELS().some(l=>l.id===t.lv))return false;
+  LV=t.lv;store.set("lv",LV);
+  TODO=t.ch.map(n=>level().chapters.findIndex(c=>c.n===n)).filter(i=>i>=0);
+  if(TODO.length){CH=TODO[0];store.set("ch_"+LV,CH);}
+  return true;
 }
 function paintLevels(){$("levels").innerHTML=LEVELS().map(l=>'<button data-lv="'+l.id+'">'+esc(l.name)+'</button>').join("");}
 function paintBiz(){$("biz").setAttribute("aria-checked",String(BIZ));$("biz-note").textContent=BIZ?"ON：話すも単語も、全部"+(TRACK?TRACK.label.replace("英語",""):"専門")+"の内容":"OFF：いつもの教材";}
