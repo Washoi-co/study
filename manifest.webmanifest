@@ -1,7 +1,7 @@
 {
   "name": "A-PUSH 本コース",
   "short_name": "A-PUSH",
-  "description": "A-PUSH 本コースの練習（話す・シャドーイング・単語・今日＆計画）。",
+  "description": "A-PUSH 本コースの練習（計画・話す・単語・あなた専用）。",
   "start_url": "/?from=home",
   "scope": "/",
   "display": "standalone",
