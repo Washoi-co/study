@@ -738,6 +738,766 @@
        "ja": "ケンは放課後、友達とテレビゲームを（　）を楽しみます。"
       }
      ]
+    },
+    {
+     "id": "G1-041",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: What do you usually eat for ____, Nora?\nB: Toast and an egg. I eat it at seven before school.",
+       "choices": [
+        "music",
+        "homework",
+        "weekend",
+        "breakfast"
+       ],
+       "answer": 3,
+       "why": "朝7時、学校の前に食べる物なので breakfast（朝ごはん）。weekend（週末）、homework（宿題）、music（音楽）は食べる物ではない。",
+       "ja": "A：ノラ、ふだん（　）に何を食べるの？　B：トーストと卵よ。学校の前の7時に食べるの。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-042",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "My aunt works at a restaurant. She is a good ____, and she makes delicious pasta.",
+       "choices": [
+        "writer",
+        "nurse",
+        "cook",
+        "pilot"
+       ],
+       "answer": 2,
+       "why": "レストランで働いておいしいパスタを作る人なので cook（料理人）。nurse（看護師）、pilot（パイロット）、writer（作家）は料理を作る仕事ではない。",
+       "ja": "私のおばはレストランで働いています。彼女は上手な（　）で、おいしいパスタを作ります。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-043",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Is this ____ for me, Dad?\nB: Yes. Happy birthday, Chloe! Please open it.",
+       "choices": [
+        "weather",
+        "present",
+        "kitchen",
+        "river"
+       ],
+       "answer": 1,
+       "why": "誕生日に「開けて」と言っているので present（プレゼント）。weather（天気）、river（川）、kitchen（台所）は開けて渡す物ではない。",
+       "ja": "A：お父さん、この（　）は私に？　B：そうだよ。誕生日おめでとう、クロエ！開けてごらん。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-044",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "It's very cold today. Please ____ your coat when you go out.",
+       "choices": [
+        "read",
+        "wash",
+        "wear",
+        "sell"
+       ],
+       "answer": 2,
+       "why": "寒い日に外へ出る時なので wear（着る）。sell（売る）、read（読む）、wash（洗う）では寒さの話に合わない。",
+       "ja": "今日はとても寒いです。外に出る時はコートを（　）ください。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-045",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: How do you go to the airport?\nB: By ____. It leaves from the station every thirty minutes.",
+       "choices": [
+        "letter",
+        "door",
+        "desk",
+        "bus"
+       ],
+       "answer": 3,
+       "why": "By ～ で乗り物を表し、駅から30分ごとに出るので bus（バス）。desk（机）、door（ドア）、letter（手紙）は乗り物ではない。",
+       "ja": "A：空港へはどうやって行くの？　B：（　）でだよ。駅から30分ごとに出ているんだ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-046",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "There are seven days in a ____.",
+       "choices": [
+        "year",
+        "month",
+        "morning",
+        "week"
+       ],
+       "answer": 3,
+       "why": "7日あるのは week（週）。month（月）は約30日、year（年）は365日、morning（朝）は日の一部。",
+       "ja": "1（　）には7日あります。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-047",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: What's the ____ like in Sapporo today?\nB: It's snowing, and it's very cold.",
+       "choices": [
+        "number",
+        "weather",
+        "name",
+        "color"
+       ],
+       "answer": 1,
+       "why": "雪が降っていて寒いと答えているので weather（天気）。What's the weather like? で「天気はどう？」。",
+       "ja": "A：今日の札幌の（　）はどう？　B：雪が降っていて、とても寒いよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-048",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Ryan ____ his grandparents in Nagano every summer. They live near the mountains.",
+       "choices": [
+        "opens",
+        "sleeps",
+        "cleans",
+        "visits"
+       ],
+       "answer": 3,
+       "why": "毎夏、長野の祖父母のところへ行くので visits（訪ねる）。opens（開ける）、sleeps（眠る）、cleans（そうじする）は人に使わない。",
+       "ja": "ライアンは毎年夏に長野の祖父母を（　）。彼らは山の近くに住んでいます。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-049",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Please ____ the door when you leave. It's cold outside.",
+       "choices": [
+        "close",
+        "eat",
+        "cut",
+        "read"
+       ],
+       "answer": 0,
+       "why": "外が寒いので、出る時にドアを close（閉める）。cut（切る）、eat（食べる）、read（読む）はドアに使わない。",
+       "ja": "出る時はドアを（　）ください。外は寒いです。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-050",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: I like your shoes. What ____ are they?\nB: Twenty-three centimeters.",
+       "choices": [
+        "time",
+        "sport",
+        "size",
+        "food"
+       ],
+       "answer": 2,
+       "why": "23センチと答えているので size（サイズ）。time（時間）、sport（スポーツ）、food（食べ物）では数とセンチが合わない。",
+       "ja": "A：あなたのくつ、すてきね。何（　）なの？　B：23センチだよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-051",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Hiro wants to be a ____ player. He practices kicking the ball every day.",
+       "choices": [
+        "golf",
+        "baseball",
+        "soccer",
+        "tennis"
+       ],
+       "answer": 2,
+       "why": "ボールをける（kicking the ball）スポーツなので soccer（サッカー）。golf・tennis・baseball はボールをけらない。",
+       "ja": "ヒロは（　）の選手になりたいと思っています。彼は毎日ボールをける練習をしています。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-052",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Do you have any ____, Aya?\nB: Yes. I have a dog and two fish.",
+       "choices": [
+        "songs",
+        "pets",
+        "trains",
+        "clouds"
+       ],
+       "answer": 1,
+       "why": "犬1ぴきと魚2ひきを飼っているので pets（ペット）。songs（歌）、trains（電車）、clouds（雲）は飼えない。",
+       "ja": "A：アヤ、（　）を飼っている？　B：うん。犬が1ぴきと魚が2ひきいるよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-053",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "I use my ____ to call my friends.",
+       "choices": [
+        "phone",
+        "map",
+        "chair",
+        "cup"
+       ],
+       "answer": 0,
+       "why": "友達に電話する（call）のに使うのは phone（電話）。chair（いす）、map（地図）、cup（カップ）では電話できない。",
+       "ja": "私は友達に電話をかけるのに（　）を使います。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-054",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Where is your mother, Sophie?\nB: She's in the ____. She's cooking dinner.",
+       "choices": [
+        "bedroom",
+        "kitchen",
+        "garage",
+        "bathroom"
+       ],
+       "answer": 1,
+       "why": "夕食を料理している場所なので kitchen（台所）。bathroom（浴室）、garage（車庫）、bedroom（寝室）では料理しない。",
+       "ja": "A：ソフィー、お母さんはどこ？　B：（　）にいるよ。夕食を作っているの。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-055",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The movie ____ at seven, so let's meet at the theater at six forty-five.",
+       "choices": [
+        "sells",
+        "finds",
+        "draws",
+        "starts"
+       ],
+       "answer": 3,
+       "why": "7時に映画が starts（始まる）ので、その前の6時45分に会う。sells（売る）、draws（描く）、finds（見つける）は映画の時刻に合わない。",
+       "ja": "映画は7時に（　）ので、6時45分に映画館で会いましょう。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-056",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: It's dark in here. Can you ____ on the light?\nB: Sure.",
+       "choices": [
+        "wait",
+        "look",
+        "live",
+        "turn"
+       ],
+       "answer": 3,
+       "why": "turn on the light で「電気をつける」。look on / wait on / live on では電気をつける意味にならない。",
+       "ja": "A：ここは暗いね。電気を（　）くれる？　B：いいよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-057",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Oliver was very ____ because his team won the big game.",
+       "choices": [
+        "angry",
+        "sad",
+        "happy",
+        "sick"
+       ],
+       "answer": 2,
+       "why": "チームが大事な試合に勝ったので happy（うれしい）。sad（悲しい）、sick（病気の）、angry（怒った）は勝った時の気持ちに合わない。",
+       "ja": "オリバーのチームが大事な試合に勝ったので、彼はとても（　）でした。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-058",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: How ____ is this T-shirt?\nB: It's twelve dollars.",
+       "choices": [
+        "long",
+        "old",
+        "many",
+        "much"
+       ],
+       "answer": 3,
+       "why": "12ドルと値段を答えているので How much（いくら）。How many は数、How long は長さ、How old は年れいをたずねる。",
+       "ja": "A：このTシャツは（　）ですか。　B：12ドルです。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-059",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "My father ____ to work by car. It takes thirty minutes.",
+       "choices": [
+        "goes",
+        "sleeps",
+        "sits",
+        "eats"
+       ],
+       "answer": 0,
+       "why": "go to work で「仕事に行く」。車で30分かかるので goes。eats・sits・sleeps は to work と合わない。",
+       "ja": "私の父は車で仕事に（　）。30分かかります。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-060",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Let's go ____ in the sea this afternoon.\nB: OK. I'll bring my towel.",
+       "choices": [
+        "swimming",
+        "skating",
+        "skiing",
+        "shopping"
+       ],
+       "answer": 0,
+       "why": "海で（in the sea）、タオルを持っていくので go swimming（泳ぎに行く）。skiing・shopping・skating は海の中ではしない。",
+       "ja": "A：今日の午後、海へ（　）に行こうよ。　B：いいよ。タオルを持っていくね。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-061",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Rina got up late this morning and didn't eat breakfast. She was very ____ at lunchtime.",
+       "choices": [
+        "hungry",
+        "quiet",
+        "full",
+        "rich"
+       ],
+       "answer": 0,
+       "why": "朝ごはんを食べなかったので、昼には hungry（おなかがすいた）。full（満腹の）は逆の意味。rich（お金持ちの）、quiet（静かな）は合わない。",
+       "ja": "リナは今朝おそく起きて、朝ごはんを食べませんでした。昼食の時間には、彼女はとても（　）でした。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-062",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Do you know that girl over there?\nB: Yes. She's my ____. We are in the same class.",
+       "choices": [
+        "grandmother",
+        "classmate",
+        "son",
+        "uncle"
+       ],
+       "answer": 1,
+       "why": "同じクラスにいるので classmate（クラスメート）。grandmother（祖母）、uncle（おじ）、son（息子）は同じクラスの女の子ではない。",
+       "ja": "A：あそこにいる女の子を知ってる？　B：うん。私の（　）だよ。同じクラスなの。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-063",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "There is a ____ on the wall in our classroom. It shows the days and months of the year.",
+       "choices": [
+        "sofa",
+        "mirror",
+        "calendar",
+        "towel"
+       ],
+       "answer": 2,
+       "why": "1年の日と月がわかる物なので calendar（カレンダー）。towel（タオル）、sofa（ソファー）、mirror（鏡）は日にちを表さない。",
+       "ja": "私たちの教室のかべに（　）があります。1年の日と月がわかります。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-064",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Julia ____ to the library with her sister last Saturday.",
+       "choices": [
+        "went",
+        "goes",
+        "go",
+        "going"
+       ],
+       "answer": 0,
+       "why": "last Saturday（この前の土曜日）があるので過去形 went。go・goes は今のこと、going は be 動詞が無いと使えない。",
+       "ja": "ジュリアはこの前の土曜日、姉（妹）と図書館へ（　）。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-065",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Were you at home yesterday afternoon?\nB: No, I ____. I was at the swimming pool.",
+       "choices": [
+        "isn't",
+        "wasn't",
+        "didn't",
+        "don't"
+       ],
+       "answer": 1,
+       "why": "Were you ～? には be 動詞の過去 was で答えるので No, I wasn't.。didn't・don't は一般動詞の文、isn't は今のことで主語 I にも合わない。",
+       "ja": "A：昨日の午後、家にいた？　B：いいえ、（　）。プールにいたの。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-066",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "This box is ____ than that one. I can't carry it.",
+       "choices": [
+        "heavy",
+        "heavier",
+        "heaviest",
+        "more heavy"
+       ],
+       "answer": 1,
+       "why": "than（～より）があるので比較級 heavier。heavy は原級、heaviest は最上級、more heavy という形は使わない。",
+       "ja": "この箱はあの箱より（　）。私には運べません。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-067",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: ____ is your birthday, Ethan?\nB: It's June 3.",
+       "choices": [
+        "Where",
+        "When",
+        "How",
+        "Who"
+       ],
+       "answer": 1,
+       "why": "6月3日と日付を答えているので When（いつ）。Who は人、Where は場所、How は様子をたずねる。",
+       "ja": "A：イーサン、あなたの誕生日は（　）？　B：6月3日だよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-068",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: ____ bag is this?\nB: It's Mark's. He left it here.",
+       "choices": [
+        "Whose",
+        "Where",
+        "How",
+        "Who"
+       ],
+       "answer": 0,
+       "why": "Mark's（マークの物）と持ち主を答えているので Whose bag（だれのかばん）。Who bag・Where bag・How bag という形はない。",
+       "ja": "A：これは（　）かばん？　B：マークのだよ。ここに置いていったんだ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-069",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "My little brother can ____ his name now.",
+       "choices": [
+        "write",
+        "writes",
+        "wrote",
+        "writing"
+       ],
+       "answer": 0,
+       "why": "can のあとは動詞の原形なので write。writes・wrote・writing は can のあとに置けない。",
+       "ja": "私の弟は、今は自分の名前を（　）ことができます。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-070",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: What were you doing at eight last night?\nB: I ____ a book in my room.",
+       "choices": [
+        "reads",
+        "am reading",
+        "is reading",
+        "was reading"
+       ],
+       "answer": 3,
+       "why": "What were you doing（何をしていたか）と過去進行形でたずねているので was reading。am reading・is reading は今のこと、reads は主語 I に合わない。",
+       "ja": "A：昨日の夜8時に何をしていたの？　B：部屋で本を（　）。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-071",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "There ____ many people at the beach yesterday.",
+       "choices": [
+        "were",
+        "be",
+        "was",
+        "is"
+       ],
+       "answer": 0,
+       "why": "yesterday（昨日）で、many people（たくさんの人）は複数なので were。was は1人・1つの時、is は今のこと。",
+       "ja": "昨日、海辺にはたくさんの人が（　）。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-072",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Do you want ____ to the park with me?\nB: Sure. Let's go after lunch.",
+       "choices": [
+        "went",
+        "to go",
+        "going",
+        "go"
+       ],
+       "answer": 1,
+       "why": "want to ＋動詞の原形で「～したい」。want go・want going・want went とは言わない。",
+       "ja": "A：いっしょに公園へ（　）？　B：うん。昼ごはんのあとで行こう。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-073",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "We'll have a party ____ Friday evening.",
+       "choices": [
+        "to",
+        "in",
+        "on",
+        "at"
+       ],
+       "answer": 2,
+       "why": "曜日には on を使う（on Friday evening）。in は月・季節、at は時刻の前に使う。",
+       "ja": "私たちは金曜日の夜（　）パーティーを開きます。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-074",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: How ____ do you play tennis?\nB: Twice a week.",
+       "choices": [
+        "long",
+        "many",
+        "often",
+        "old"
+       ],
+       "answer": 2,
+       "why": "Twice a week（週に2回）と回数を答えているので How often（どれくらいよく）。How many は数、How long は長さ、How old は年れい。",
+       "ja": "A：あなたは（　）テニスをしますか。　B：週に2回です。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-075",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Don't ____ loudly in the library. Other people are studying.",
+       "choices": [
+        "talk",
+        "to talk",
+        "talks",
+        "talking"
+       ],
+       "answer": 0,
+       "why": "Don't のあとは動詞の原形なので talk。Don't ＋原形で「～してはいけない」。",
+       "ja": "図書館では大きな声で（　）はいけません。ほかの人が勉強しています。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-076",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Shall we eat lunch together, Ivy?\nB: Yes, ____.",
+       "choices": [
+        "I do",
+        "I am",
+        "it is",
+        "let's"
+       ],
+       "answer": 3,
+       "why": "Shall we ～?（いっしょに～しましょうか）には Yes, let's.（そうしましょう）と答える。",
+       "ja": "A：アイビー、いっしょにお昼を食べない？　B：ええ、（　）。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-077",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Kaito usually ____ to bed at ten, but last night he went to bed at eleven.",
+       "choices": [
+        "gone",
+        "going",
+        "go",
+        "goes"
+       ],
+       "answer": 3,
+       "why": "usually（ふだん）はいつものことなので現在形。主語 Kaito は3人称単数なので goes。",
+       "ja": "カイトはふだん10時に（　）が、昨夜は11時に寝ました。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-078",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Is this your notebook, Zoe?\nB: No, it's not ____. Maybe it's Nick's.",
+       "choices": [
+        "my",
+        "me",
+        "mine",
+        "I"
+       ],
+       "answer": 2,
+       "why": "「私の物」は mine。my は後ろに名詞が必要（my notebook）。me・I は「私の物」の意味にならない。",
+       "ja": "A：ゾーイ、これはあなたのノート？　B：いいえ、（　）じゃないわ。たぶんニックのよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-079",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Let's ____ for Mom at the bus stop. Her bus comes at five.\nB: OK.",
+       "choices": [
+        "live",
+        "wait",
+        "speak",
+        "ask"
+       ],
+       "answer": 1,
+       "why": "wait for ～ で「～を待つ」。お母さんのバスが5時に来るので、バス停で待つ。ask for は「～を求める」で合わない。",
+       "ja": "A：バス停でお母さんを（　）よう。お母さんのバスは5時に着くよ。　B：わかった。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G1-080",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: What's your ____, Owen?\nB: Taking pictures of birds. I go to the forest every weekend.",
+       "choices": [
+        "address",
+        "problem",
+        "hobby",
+        "size"
+       ],
+       "answer": 2,
+       "why": "週末ごとに鳥の写真をとりに行くと答えているので hobby（しゅみ）。address（住所）、size（サイズ）、problem（問題）は答えに合わない。",
+       "ja": "A：オーエン、あなたの（　）は何？　B：鳥の写真をとることだよ。毎週末、森に行くんだ。"
+      }
+     ],
+     "plus": true
     }
    ]
   },
@@ -1129,6 +1889,806 @@
        "ja": "A：ケンタ、10時よ。（　）　B：わかった、お母さん。おやすみなさい。"
       }
      ]
+    },
+    {
+     "id": "G2-021",
+     "passage": "A: Hi, Ethan. ( )\nB: To the post office. I have to send a letter to my grandmother.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Whose letter is this?",
+        "Who is that boy?",
+        "What time is it?",
+        "Where are you going?"
+       ],
+       "answer": 3,
+       "why": "B が To the post office.（郵便局へ）と行き先を答えているので、「どこへ行くの？」とたずねている。",
+       "ja": "A：こんにちは、イーサン。（　）　B：郵便局へ。おばあちゃんに手紙を送らないといけないんだ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-022",
+     "passage": "A: ( ) My pencil is broken.\nB: Sure. Here you are.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Do you like drawing?",
+        "Can I borrow your pencil?",
+        "Where is your desk?",
+        "When did you buy it?"
+       ],
+       "answer": 1,
+       "why": "自分のえんぴつが折れていて、B が Sure. Here you are.（どうぞ）と渡しているので、「えんぴつを借りてもいい？」と頼んでいる。",
+       "ja": "A：（　）ぼくのえんぴつ、折れちゃったんだ。　B：いいよ。はい、どうぞ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-023",
+     "passage": "A: What time do you get up on Sundays?\nB: ( ) I sleep a lot on weekends.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "With my dog.",
+        "At about nine.",
+        "Every day.",
+        "In my room."
+       ],
+       "answer": 1,
+       "why": "What time（何時）とたずねているので時刻を答える。With my dog はだれと、In my room は場所、Every day は回数の答え。",
+       "ja": "A：日曜日は何時に起きるの？　B：（　）週末はたくさん寝るんだ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-024",
+     "passage": "A: Do you play any sports, Chloe?\nB: ( ) I'm on the volleyball team at school.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "No, thanks.",
+        "Yes, I do.",
+        "No, I don't.",
+        "Yes, it is."
+       ],
+       "answer": 1,
+       "why": "バレーボール部に入っているので Yes。Do you ～? には do で答えるので Yes, I do.。Yes, it is. は Is it ～? への答え。",
+       "ja": "A：クロエ、何かスポーツをしている？　B：（　）学校のバレーボール部に入っているの。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-025",
+     "passage": "A: How many cousins do you have, Noah?\nB: ( ) They all live in Osaka.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "I'm twelve.",
+        "It's my cousin's.",
+        "I have four.",
+        "They're very kind."
+       ],
+       "answer": 2,
+       "why": "How many（いくつ・何人）とたずねているので数を答える。I'm twelve. は年れいの答え。",
+       "ja": "A：ノア、いとこは何人いるの？　B：（　）みんな大阪に住んでいるよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-026",
+     "passage": "A: This cake is delicious! ( )\nB: My sister did. She likes baking.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Who made it?",
+        "How much was it?",
+        "Where is the cake?",
+        "When is your birthday?"
+       ],
+       "answer": 0,
+       "why": "B が My sister did.（姉〈妹〉が作った）と人を答えているので、Who（だれが）作ったかをたずねている。",
+       "ja": "A：このケーキ、おいしいね！（　）　B：姉が作ったの。お菓子作りが好きなのよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-027",
+     "passage": "A: Let's play baseball in the park after school.\nB: ( ) It's going to rain this afternoon.\nA: Then let's play video games at my house.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Yes, let's go now.",
+        "See you tomorrow.",
+        "I don't think we can.",
+        "I have a new bat."
+       ],
+       "answer": 2,
+       "why": "午後は雨になると言い、A が「じゃあ家でゲームをしよう」と別の案を出しているので、「できないと思う」と断っている。",
+       "ja": "A：放課後、公園で野球をしようよ。　B：（　）今日の午後は雨が降るよ。　A：じゃあ、ぼくの家でテレビゲームをしよう。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-028",
+     "passage": "A: Excuse me. ( )\nB: Yes. It's on the third floor, next to the elevator.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "How much is this?",
+        "Is there a restroom in this store?",
+        "Do you work here?",
+        "What do you want to buy?"
+       ],
+       "answer": 1,
+       "why": "B が「3階のエレベーターの横です」と場所を答えているので、トイレがあるかどうかをたずねている。",
+       "ja": "A：すみません。（　）　B：はい。3階の、エレベーターの横です。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-029",
+     "passage": "A: Your bag looks heavy, Mrs. King. ( )\nB: Thank you. That's very kind of you.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Where did you buy it?",
+        "Can I help you?",
+        "What color is it?",
+        "Is it your bag?"
+       ],
+       "answer": 1,
+       "why": "B が「ありがとう。ご親切に」とお礼を言っているので、「お手伝いしましょうか」と申し出ている。",
+       "ja": "A：キングさん、かばんが重そうですね。（　）　B：ありがとう。ご親切にどうも。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-030",
+     "passage": "A: How often do you go swimming, Ryan?\nB: ( ) I love the pool near my house.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "With my brother.",
+        "For two hours.",
+        "Last Sunday.",
+        "Three times a week."
+       ],
+       "answer": 3,
+       "why": "How often（どれくらいよく）とたずねているので回数を答える。For two hours は長さ、With my brother はだれと、Last Sunday はいつの答え。",
+       "ja": "A：ライアン、どれくらい泳ぎに行くの？　B：（　）家の近くのプールが大好きなんだ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-031",
+     "passage": "A: ( )\nB: It's sunny and warm.\nA: Good. Let's go for a walk.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "How's the weather today?",
+        "What day is it today?",
+        "How old are you?",
+        "Where are you going?"
+       ],
+       "answer": 0,
+       "why": "B が「晴れていて暖かい」と天気を答えているので、天気をたずねている。",
+       "ja": "A：（　）　B：晴れていて暖かいよ。　A：よかった。散歩に行こう。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-032",
+     "passage": "A: There are many umbrellas here. Which one is yours?\nB: ( ) It has my name on it.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "The yellow one.",
+        "It's raining.",
+        "I bought it yesterday.",
+        "Yes, it is."
+       ],
+       "answer": 0,
+       "why": "Which one（どれ）とたずねているので、「黄色いのだよ」と1つを答える。Yes, it is. は Which の質問の答えにならない。",
+       "ja": "A：かさがたくさんあるね。どれがきみの？　B：（　）名前が書いてあるよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-033",
+     "passage": "A: I'm going to make spaghetti for dinner. ( )\nB: Yes, I'd love to.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Is it delicious?",
+        "Did you eat dinner?",
+        "Where is the kitchen?",
+        "Do you want to help me?"
+       ],
+       "answer": 3,
+       "why": "B が I'd love to.（ぜひしたい）と答えているので、「手伝いたい？」とさそっている。",
+       "ja": "A：夕食にスパゲッティを作るよ。（　）　B：うん、ぜひ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-034",
+     "passage": "A: Dad, can you take me to the library?\nB: ( ) I have to finish this work first.\nA: OK. I'll wait.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Sure, but in thirty minutes.",
+        "It's on Green Street.",
+        "Yes, I read it.",
+        "No, it's not mine."
+       ],
+       "answer": 0,
+       "why": "先にこの仕事を終えないといけない、A が「待つね」と言っているので、「いいよ、でも30分後にね」が合う。",
+       "ja": "A：お父さん、図書館に連れて行ってくれる？　B：（　）先にこの仕事を終わらせないと。　A：わかった。待ってるね。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-035",
+     "passage": "A: Hello, Maple Bakery.\nB: Hi. ( )\nA: We close at seven o'clock.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Do you sell cakes?",
+        "Where is your bakery?",
+        "How much is this bread?",
+        "What time do you close today?"
+       ],
+       "answer": 3,
+       "why": "A が「7時に閉まります」と答えているので、閉まる時刻をたずねている。",
+       "ja": "A：はい、メープルベーカリーです。　B：こんにちは。（　）　A：7時に閉まります。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-036",
+     "passage": "A: Nice to meet you. I'm Owen.\nB: ( ) I'm Aya.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "You're welcome.",
+        "See you later.",
+        "Nice to meet you, too.",
+        "Goodbye, Owen."
+       ],
+       "answer": 2,
+       "why": "Nice to meet you.（はじめまして）には Nice to meet you, too. と返す。Goodbye や See you later は別れのあいさつ。",
+       "ja": "A：はじめまして。ぼくはオーエン。　B：（　）私はアヤよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-037",
+     "passage": "A: I can't go to your party on Sunday. ( )\nB: That's OK. Maybe next time.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "It's my birthday.",
+        "I'm really sorry.",
+        "Here you are.",
+        "Thank you for coming."
+       ],
+       "answer": 1,
+       "why": "パーティーに行けないと伝え、B が That's OK.（いいよ）と答えているので、あやまっている。",
+       "ja": "A：日曜日のパーティーに行けないんだ。（　）　B：いいのよ。また今度ね。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-038",
+     "passage": "A: Did you watch the soccer game on TV last night?\nB: ( ) I went to bed early.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "No, it isn't.",
+        "Yes, it was exciting.",
+        "Yes, I do.",
+        "No, I didn't."
+       ],
+       "answer": 3,
+       "why": "早く寝たので見ていない。Did you ～? には did で答えるので No, I didn't.。",
+       "ja": "A：昨日の夜、テレビでサッカーの試合を見た？　B：（　）早く寝たんだ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-039",
+     "passage": "A: Excuse me. Which bus goes to the city hospital?\nB: ( ) It comes every ten minutes.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "It's next to the park.",
+        "I'm a nurse.",
+        "Take the Number 5 bus.",
+        "Yes, it does."
+       ],
+       "answer": 2,
+       "why": "Which bus（どのバス）とたずねているので、「5番のバスに乗って」とバスを答える。Which の質問に Yes では答えない。",
+       "ja": "A：すみません。市民病院へ行くのはどのバスですか。　B：（　）10分ごとに来ますよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-040",
+     "passage": "A: What's the matter, Sophie?\nB: ( )\nA: Oh no. You should go home and rest.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "It's my sister's.",
+        "I'm fine, thanks.",
+        "I had a good time.",
+        "I have a headache."
+       ],
+       "answer": 3,
+       "why": "A が「家に帰って休んだほうがいい」と言っているので、具合が悪いことを伝えている。What's the matter? は「どうしたの？」。",
+       "ja": "A：ソフィー、どうしたの？　B：（　）　A：まあ。家に帰って休んだほうがいいわ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-041",
+     "passage": "A: I want to buy a present for my father.\nB: ( )\nA: He likes cooking, so I'll buy a cookbook.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Where is he now?",
+        "When did you buy it?",
+        "What does he like?",
+        "How old are you?"
+       ],
+       "answer": 2,
+       "why": "A が「料理が好きだから料理の本を買う」と答えているので、お父さんの好きな物をたずねている。",
+       "ja": "A：お父さんにプレゼントを買いたいの。　B：（　）　A：料理が好きだから、料理の本を買うわ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-042",
+     "passage": "A: Would you like something to drink?\nB: ( )\nA: OK. I'll get it from the fridge.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "I'm hungry, too.",
+        "No, I'm not.",
+        "Some cold water, please.",
+        "Yes, I'm thirteen."
+       ],
+       "answer": 2,
+       "why": "何か飲み物はどうかとすすめられ、A が冷蔵庫から取ってくると言っているので、飲み物をたのんでいる。",
+       "ja": "A：何か飲み物はいかが？　B：（　）　A：わかった。冷蔵庫から持ってくるね。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-043",
+     "passage": "A: What did you do last weekend, Riku?\nB: ( ) We had a barbecue by the river.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "I'll go shopping.",
+        "It's on Saturday.",
+        "I like weekends.",
+        "I went camping with my family."
+       ],
+       "answer": 3,
+       "why": "last weekend（先週末）のことなので過去形で答える。I'll go shopping. はこれからのこと。",
+       "ja": "A：リク、先週末は何をしたの？　B：（　）川のそばでバーベキューをしたよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-044",
+     "passage": "A: I like this cap. ( )\nB: Yes. We have it in black and white, too.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Is it your cap?",
+        "Do you have other colors?",
+        "Where did you buy it?",
+        "Can I wear it to school?"
+       ],
+       "answer": 1,
+       "why": "店員が「黒と白もあります」と答えているので、ほかの色があるかたずねている。",
+       "ja": "A：この帽子、いいですね。（　）　B：はい。黒と白もございます。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-045",
+     "passage": "A: Mom, where's my blue sweater?\nB: ( ) I washed it yesterday.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "It's on your bed.",
+        "Yes, it's mine.",
+        "It was ten dollars.",
+        "It's very warm today."
+       ],
+       "answer": 0,
+       "why": "Where（どこ）とたずねているので場所を答える。ほかの選択肢は場所の答えになっていない。",
+       "ja": "A：お母さん、ぼくの青いセーターはどこ？　B：（　）昨日洗ったのよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-046",
+     "passage": "A: Can you come to my house this Saturday?\nB: ( ) What time should I come?\nA: Around two.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "No, I didn't.",
+        "It's my house.",
+        "Sure, I'd love to.",
+        "Sorry, I'm busy."
+       ],
+       "answer": 2,
+       "why": "B が「何時に行けばいい？」と続けているので、さそいを受けている。Sorry, I'm busy. だと話が合わない。",
+       "ja": "A：今週の土曜日、うちに来られる？　B：（　）何時に行けばいい？　A：2時ごろよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-047",
+     "passage": "A: Who's that man over there?\nB: ( ) He teaches us music.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "He's in the gym.",
+        "He's from my town.",
+        "That's Mr. Wood, our new teacher.",
+        "He's very tall."
+       ],
+       "answer": 2,
+       "why": "Who（だれ）とたずね、B が「音楽を教えてくれる」と言っているので、新しい先生のウッド先生だと答えている。",
+       "ja": "A：あそこにいる男の人はだれ？　B：（　）音楽を教えてくれるんだ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-048",
+     "passage": "A: How was the concert last night?\nB: ( ) The singer was great.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "It's at the city hall.",
+        "I enjoyed it very much.",
+        "With my father.",
+        "I'll go there next week."
+       ],
+       "answer": 1,
+       "why": "How was ～?（～はどうだった？）には感想を答える。「とても楽しかった」が合う。",
+       "ja": "A：昨日の夜のコンサートはどうだった？　B：（　）歌手がすばらしかったよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-049",
+     "passage": "A: Let's eat at the new café.\nB: Good idea. ( )\nA: Next to the bookstore on Main Street.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "What time is it?",
+        "Where is it?",
+        "How old is it?",
+        "Who is it?"
+       ],
+       "answer": 1,
+       "why": "A が「メイン通りの本屋のとなり」と場所を答えているので Where（どこ）。",
+       "ja": "A：新しいカフェで食べようよ。　B：いいね。（　）　A：メイン通りの本屋のとなりだよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-050",
+     "passage": "A: I have two tickets for the baseball game on Sunday. ( )\nB: Yes! Thank you for asking me.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "When did you go?",
+        "How much were they?",
+        "Do you want to come with me?",
+        "Where did you buy them?"
+       ],
+       "answer": 2,
+       "why": "B が「さそってくれてありがとう」と答えているので、「いっしょに来ない？」とさそっている。",
+       "ja": "A：日曜日の野球の試合のチケットが2枚あるんだ。（　）　B：うん！さそってくれてありがとう。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-051",
+     "passage": "A: Excuse me, Mr. Ford. ( )\nB: Yes. Please come in.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Where do you live?",
+        "How are you today?",
+        "May I come in?",
+        "What's this?"
+       ],
+       "answer": 2,
+       "why": "B が Please come in.（どうぞ入って）と答えているので、「入ってもいいですか」とたずねている。",
+       "ja": "A：失礼します、フォード先生。（　）　B：ええ。どうぞ入って。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-052",
+     "passage": "A: You speak Spanish very well, Nami.\nB: Thank you. ( )\nA: Wow, that's a long time.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "I lived in Spain for five years.",
+        "I like Spanish food.",
+        "My teacher is kind.",
+        "I'll go to Spain next year."
+       ],
+       "answer": 0,
+       "why": "A が「長い間だね」と言っているので、期間を言っている「スペインに5年住んでいた」が合う。",
+       "ja": "A：ナミ、スペイン語がとても上手だね。　B：ありがとう。（　）　A：わあ、長いね。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-053",
+     "passage": "A: Are you ready, Noah? The bus is coming.\nB: ( ) I can't find my cap.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Just a minute, please.",
+        "See you tomorrow.",
+        "It's my bus.",
+        "Yes, I'm ready."
+       ],
+       "answer": 0,
+       "why": "帽子が見つからないので、まだ準備ができていない。「ちょっと待って」が合う。Yes, I'm ready. だと話が合わない。",
+       "ja": "A：ノア、準備はできた？バスが来るよ。　B：（　）帽子が見つからないんだ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-054",
+     "passage": "A: What's your favorite food, Kaito?\nB: ( ) My grandmother often makes it for me.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Curry and rice.",
+        "Every Sunday.",
+        "At a restaurant.",
+        "Yes, I'm hungry."
+       ],
+       "answer": 0,
+       "why": "What（何）とたずねているので食べ物の名前を答える。At a restaurant は場所、Every Sunday は回数の答え。",
+       "ja": "A：カイト、好きな食べ物は何？　B：（　）おばあちゃんがよく作ってくれるんだ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-055",
+     "passage": "A: Oh no! I left my lunch at home.\nB: ( ) You can have one of my sandwiches.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Don't worry.",
+        "Let's go home.",
+        "I'm full now.",
+        "Thank you very much."
+       ],
+       "answer": 0,
+       "why": "お弁当を忘れた相手に、サンドイッチを1つあげると言っているので、「心配しないで」が合う。",
+       "ja": "A：しまった！お弁当を家に忘れちゃった。　B：（　）ぼくのサンドイッチを1つあげるよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-056",
+     "passage": "A: Is it far to the zoo from here?\nB: ( ) You can walk there in five minutes.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "No, it's very near.",
+        "No, it's closed today.",
+        "Yes, I like animals.",
+        "Yes, it's far."
+       ],
+       "answer": 0,
+       "why": "歩いて5分で行けるので「いいえ、とても近いです」。Yes, it's far. は後ろの文と合わない。",
+       "ja": "A：ここから動物園まで遠いですか。　B：（　）歩いて5分で行けますよ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-057",
+     "passage": "A: Hi, Mark. How are you?\nB: ( ) How about you?\nA: Fine, thanks.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "I'm a student.",
+        "I'm thirteen.",
+        "I'm from Canada.",
+        "I'm great, thanks."
+       ],
+       "answer": 3,
+       "why": "How are you?（元気？）には調子を答える。I'm thirteen. は年れい、I'm from Canada. は出身の答え。",
+       "ja": "A：やあ、マーク。元気？　B：（　）きみは？　A：元気だよ、ありがとう。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-058",
+     "passage": "A: What are you going to do this summer?\nB: ( ) I want to swim in the sea there.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "I went to the sea.",
+        "I like summer.",
+        "It's very hot.",
+        "I'm going to visit my aunt in Kochi."
+       ],
+       "answer": 3,
+       "why": "this summer（この夏）の予定をたずねているので、be going to の答えが合う。I went to the sea. は過去のこと。",
+       "ja": "A：この夏は何をする予定？　B：（　）そこの海で泳ぎたいんだ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-059",
+     "passage": "A: Excuse me. Can you take a picture of us?\nB: ( ) Ready? Say cheese!",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "No, it's not my camera.",
+        "I took it yesterday.",
+        "It's a nice picture.",
+        "Sure. Smile, everyone!"
+       ],
+       "answer": 3,
+       "why": "B がこのあと「チーズ！」と写真をとっているので、引き受けている。",
+       "ja": "A：すみません。私たちの写真をとってもらえますか。　B：（　）いい？はい、チーズ！"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G2-060",
+     "passage": "A: Thank you for helping me with my homework, Sean.\nB: ( ) Call me anytime.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( ) に入る文を選びなさい。",
+       "choices": [
+        "Yes, please.",
+        "You're welcome.",
+        "Here you are.",
+        "I'm sorry."
+       ],
+       "answer": 1,
+       "why": "Thank you（ありがとう）には You're welcome.（どういたしまして）と答える。",
+       "ja": "A：ショーン、宿題を手伝ってくれてありがとう。　B：（　）いつでも電話してね。"
+      }
+     ],
+     "plus": true
     }
    ]
   },
@@ -1480,6 +3040,726 @@
        "why": "正しい文：How many people are there in your family?（2番目 many＝⑤、4番目 are＝①）。How many people are there ～?＝「～には何人いますか」。"
       }
      ]
+    },
+    {
+     "id": "G3-021",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私は毎朝7時に朝ごはんを食べます。\n\n① at\n② o'clock\n③ seven\n④ eat\n⑤ breakfast\n\nI ____ ____ ____ ____ ____ every morning.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ⑤",
+        "⑤ - ③",
+        "④ - ②",
+        "② - ③"
+       ],
+       "answer": 1,
+       "why": "正しい文：I eat breakfast at seven o'clock every morning.（2番目 breakfast＝⑤、4番目 seven＝③）。「～時に」は at ＋時刻。動詞 eat のすぐあとに食べる物 breakfast を置く。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-022",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "ノラ、あなたは今どこに住んでいますか。\n\n① where\n② do\n③ live\n④ you\n⑤ now\n\n____ ____ ____ ____ ____, Nora?\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "④ - ⑤",
+        "② - ④",
+        "② - ③",
+        "⑤ - ③"
+       ],
+       "answer": 2,
+       "why": "正しい文：Where do you live now, Nora?（2番目 do＝②、4番目 live＝③）。疑問詞 where を最初に置き、do you live と続ける。now は文の最後。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-023",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私の兄は野球をするのが得意です。\n\n① baseball\n② good\n③ at\n④ is\n⑤ playing\n\nMy brother ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "② - ⑤",
+        "② - ④",
+        "④ - ③",
+        "① - ⑤"
+       ],
+       "answer": 0,
+       "why": "正しい文：My brother is good at playing baseball.（2番目 good＝②、4番目 playing＝⑤）。be good at ～ing で「～するのが得意だ」。at のあとは動詞の ing 形。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-024",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "その女の子は窓のそばに立っています。\n\n① by\n② standing\n③ window\n④ the\n⑤ is\n\nThe girl ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ④",
+        "④ - ②",
+        "② - ④",
+        "① - ③"
+       ],
+       "answer": 2,
+       "why": "正しい文：The girl is standing by the window.（2番目 standing＝②、4番目 the＝④）。「～しています」は is ＋ ing 形。by the window で「窓のそばに」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-025",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私は昨日、宿題をしませんでした。\n\n① homework\n② do\n③ didn't\n④ my\n⑤ yesterday\n\nI ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ④",
+        "② - ①",
+        "⑤ - ①",
+        "④ - ①"
+       ],
+       "answer": 1,
+       "why": "正しい文：I didn't do my homework yesterday.（2番目 do＝②、4番目 homework＝①）。過去の否定は didn't ＋動詞の原形。do my homework で「宿題をする」、yesterday は最後。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-026",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "この川で泳がないでください。\n\n① this\n② swim\n③ don't\n④ please\n⑤ in\n\n____ ____ ____ ____ ____ river.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "② - ⑤",
+        "④ - ⑤",
+        "③ - ⑤",
+        "④ - ①"
+       ],
+       "answer": 2,
+       "why": "正しい文：Please don't swim in this river.（2番目 don't＝③、4番目 in＝⑤）。Please don't ＋動詞の原形で「～しないでください」。in this river で「この川で」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-027",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "あなたは何時に寝ますか。\n\n① go\n② time\n③ to\n④ do\n⑤ you\n\nWhat ____ ____ ____ ____ ____ bed?\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "④ - ②",
+        "④ - ③",
+        "④ - ①",
+        "⑤ - ③"
+       ],
+       "answer": 2,
+       "why": "正しい文：What time do you go to bed?（2番目 do＝④、4番目 go＝①）。What time（何時に）を最初に置き、do you go to bed と続ける。go to bed で「寝る」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-028",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "彼は毎日イヌを散歩させます。\n\n① day\n② every\n③ his\n④ walks\n⑤ dog\n\nHe ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ②",
+        "① - ④",
+        "① - ②",
+        "② - ③"
+       ],
+       "answer": 0,
+       "why": "正しい文：He walks his dog every day.（2番目 his＝③、4番目 every＝②）。walk ＋動物で「～を散歩させる」。主語 He なので walks。every day は文の最後。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-029",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私のおばは大阪の病院で働いています。\n\n① at\n② a\n③ hospital\n④ in\n⑤ works\n\nMy aunt ____ ____ ____ ____ ____ Osaka.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "④ - ⑤",
+        "① - ④",
+        "① - ③",
+        "④ - ③"
+       ],
+       "answer": 2,
+       "why": "正しい文：My aunt works at a hospital in Osaka.（2番目 at＝①、4番目 hospital＝③）。work at ～で「～で働く」。in Osaka（大阪の）は hospital のあとに置く。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-030",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私は兄より早く起きます。\n\n① earlier\n② my brother\n③ up\n④ get\n⑤ than\n\nI ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "② - ⑤",
+        "⑤ - ③",
+        "③ - ④",
+        "③ - ⑤"
+       ],
+       "answer": 3,
+       "why": "正しい文：I get up earlier than my brother.（2番目 up＝③、4番目 than＝⑤）。get up（起きる）のあとに earlier than ～（～より早く）を続ける。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-031",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私は冬休みの間にスキーに行きました。\n\n① skiing\n② during\n③ winter vacation\n④ the\n⑤ went\n\nI ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "① - ④",
+        "⑤ - ③",
+        "① - ②",
+        "① - ⑤"
+       ],
+       "answer": 0,
+       "why": "正しい文：I went skiing during the winter vacation.（2番目 skiing＝①、4番目 the＝④）。go skiing で「スキーに行く」。過去なので went。during ～で「～の間に」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-032",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "机の上に本が3冊あります。\n\n① the desk\n② are\n③ three\n④ books\n⑤ on\n\nThere ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ⑤",
+        "① - ④",
+        "② - ⑤",
+        "③ - ②"
+       ],
+       "answer": 0,
+       "why": "正しい文：There are three books on the desk.（2番目 three＝③、4番目 on＝⑤）。There are ＋複数の物＋場所で「～に…がある」。数 three は books の前。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-033",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "放課後に図書館で勉強しましょう。\n\n① let's\n② library\n③ study\n④ the\n⑤ at\n\n____ ____ ____ ____ ____ after school.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ⑤",
+        "② - ①",
+        "③ - ④",
+        "② - ④"
+       ],
+       "answer": 2,
+       "why": "正しい文：Let's study at the library after school.（2番目 study＝③、4番目 the＝④）。Let's ＋動詞の原形で「～しましょう」。at the library で「図書館で」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-034",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "あなたはどんな種類の音楽が好きですか。\n\n① of\n② you\n③ music\n④ do\n⑤ kind\n\nWhat ____ ____ ____ ____ ____ like?\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "② - ④",
+        "① - ④",
+        "④ - ①",
+        "③ - ②"
+       ],
+       "answer": 1,
+       "why": "正しい文：What kind of music do you like?（2番目 of＝①、4番目 do＝④）。What kind of ～で「どんな種類の～」。そのあとに do you like と続ける。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-035",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私はギターをあまり上手にひけません。\n\n① play\n② guitar\n③ very\n④ can't\n⑤ the\n\nI ____ ____ ____ ____ ____ well.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "④ - ⑤",
+        "② - ①",
+        "① - ④",
+        "① - ②"
+       ],
+       "answer": 3,
+       "why": "正しい文：I can't play the guitar very well.（2番目 play＝①、4番目 guitar＝②）。can't ＋動詞の原形で「～できない」。not ～ very well で「あまり上手に～ない」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-036",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "彼女はその時テレビを見ていました。\n\n① that time\n② watching\n③ was\n④ TV\n⑤ at\n\nShe ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "④ - ⑤",
+        "① - ⑤",
+        "④ - ③",
+        "② - ⑤"
+       ],
+       "answer": 3,
+       "why": "正しい文：She was watching TV at that time.（2番目 watching＝②、4番目 at＝⑤）。「～していました」は was ＋ ing 形。at that time（その時）は最後。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-037",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "ドアを閉めてくれませんか。\n\n① close\n② you\n③ the\n④ can\n⑤ door\n\n____ ____ ____ ____ ____, please?\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ②",
+        "⑤ - ③",
+        "② - ③",
+        "④ - ①"
+       ],
+       "answer": 2,
+       "why": "正しい文：Can you close the door, please?（2番目 you＝②、4番目 the＝③）。Can you ～?で「～してくれますか」。can you のあとに動詞の原形 close を置く。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-038",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私は将来カナダに住みたいです。\n\n① live\n② want\n③ Canada\n④ in\n⑤ to\n\nI ____ ____ ____ ____ ____ in the future.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "② - ①",
+        "⑤ - ④",
+        "⑤ - ③",
+        "⑤ - ①"
+       ],
+       "answer": 1,
+       "why": "正しい文：I want to live in Canada in the future.（2番目 to＝⑤、4番目 in＝④）。want to ＋動詞の原形で「～したい」。live in ～で「～に住む」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-039",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私の父はふだん電車で仕事に行きます。\n\n① usually\n② by\n③ goes\n④ work\n⑤ to\n\nMy father ____ ____ ____ ____ ____ train.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ⑤",
+        "③ - ②",
+        "⑤ - ②",
+        "③ - ④"
+       ],
+       "answer": 3,
+       "why": "正しい文：My father usually goes to work by train.（2番目 goes＝③、4番目 work＝④）。usually（ふだん）は動詞 goes の前に置く。by train で「電車で」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-040",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "今日は昨日より暖かいです。\n\n① yesterday\n② warmer\n③ today\n④ is\n⑤ than\n\nIt ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ⑤",
+        "② - ⑤",
+        "⑤ - ②",
+        "④ - ⑤"
+       ],
+       "answer": 1,
+       "why": "正しい文：It is warmer today than yesterday.（2番目 warmer＝②、4番目 than＝⑤）。warmer than ～で「～より暖かい」。It is warmer today と言ってから than yesterday を続ける。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-041",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私は明日の朝、あなたに電話します。\n\n① morning\n② you\n③ tomorrow\n④ will\n⑤ call\n\nI ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "① - ③",
+        "④ - ①",
+        "⑤ - ③",
+        "② - ③"
+       ],
+       "answer": 2,
+       "why": "正しい文：I will call you tomorrow morning.（2番目 call＝⑤、4番目 tomorrow＝③）。will ＋動詞の原形で「～します」。call you（あなたに電話する）のあとに tomorrow morning。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-042",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "ライアン、あなたのかばんの中には何が入っていますか。\n\n① bag\n② is\n③ in\n④ what\n⑤ your\n\n____ ____ ____ ____ ____, Ryan?\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ①",
+        "④ - ⑤",
+        "② - ④",
+        "② - ⑤"
+       ],
+       "answer": 3,
+       "why": "正しい文：What is in your bag, Ryan?（2番目 is＝②、4番目 your＝⑤）。What（何が）を主語にして is in your bag と続ける。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-043",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "あなたのお兄さんは何歳ですか。\n\n① brother\n② your\n③ old\n④ is\n⑤ how\n\n____ ____ ____ ____ ____?\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "④ - ⑤",
+        "③ - ②",
+        "③ - ⑤",
+        "③ - ①"
+       ],
+       "answer": 1,
+       "why": "正しい文：How old is your brother?（2番目 old＝③、4番目 your＝②）。How old（何歳）を最初に置き、is your brother と続ける。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-044",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "あなたの新しいノートを私に見せてください。\n\n① your\n② notebook\n③ me\n④ show\n⑤ new\n\nPlease ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "② - ①",
+        "② - ⑤",
+        "⑤ - ③",
+        "③ - ⑤"
+       ],
+       "answer": 3,
+       "why": "正しい文：Please show me your new notebook.（2番目 me＝③、4番目 new＝⑤）。show ＋人＋物で「人に物を見せる」。new は notebook の前に置く。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-045",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私たちは夕食のあとに皿を洗いました。\n\n① dinner\n② dishes\n③ washed\n④ the\n⑤ after\n\nWe ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "② - ③",
+        "④ - ⑤",
+        "③ - ⑤",
+        "② - ⑤"
+       ],
+       "answer": 1,
+       "why": "正しい文：We washed the dishes after dinner.（2番目 the＝④、4番目 after＝⑤）。wash the dishes で「皿を洗う」。after dinner（夕食のあと）は最後。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-046",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "ここから駅までどれくらい時間がかかりますか。\n\n① take\n② long\n③ to get\n④ does\n⑤ it\n\nHow ____ ____ ____ ____ ____ to the station from here?\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "② - ①",
+        "⑤ - ③",
+        "① - ④",
+        "④ - ①"
+       ],
+       "answer": 3,
+       "why": "正しい文：How long does it take to get to the station from here?（2番目 does＝④、4番目 take＝①）。How long does it take to ～?で「～するのにどれくらいかかりますか」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-047",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私は昨日、駅でウッド先生に会いました。\n\n① at\n② the\n③ station\n④ saw\n⑤ Mr. Wood\n\nI ____ ____ ____ ____ ____ yesterday.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "⑤ - ②",
+        "⑤ - ④",
+        "③ - ①",
+        "⑤ - ①"
+       ],
+       "answer": 0,
+       "why": "正しい文：I saw Mr. Wood at the station yesterday.（2番目 Mr. Wood＝⑤、4番目 the＝②）。saw（会った・見かけた）のすぐあとに人を置き、at the station（駅で）と続ける。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-048",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私は毎週日曜日に自分の部屋をそうじします。\n\n① room\n② my\n③ clean\n④ Sunday\n⑤ every\n\nI ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "① - ④",
+        "⑤ - ②",
+        "④ - ⑤",
+        "② - ⑤"
+       ],
+       "answer": 3,
+       "why": "正しい文：I clean my room every Sunday.（2番目 my＝②、4番目 every＝⑤）。clean my room で「部屋をそうじする」。every Sunday（毎週日曜日）は最後。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-049",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "アヤ、あなたは今何をしているのですか。\n\n① now\n② doing\n③ you\n④ are\n⑤ what\n\n____ ____ ____ ____ ____, Aya?\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "① - ③",
+        "④ - ②",
+        "④ - ①",
+        "④ - ③"
+       ],
+       "answer": 1,
+       "why": "正しい文：What are you doing now, Aya?（2番目 are＝④、4番目 doing＝②）。What を最初に置き、are you doing（していますか）と進行形の疑問文を続ける。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-050",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私は水を1杯ほしいです。\n\n① want\n② glass\n③ of\n④ water\n⑤ a\n\nI ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "② - ④",
+        "④ - ③",
+        "⑤ - ③",
+        "⑤ - ④"
+       ],
+       "answer": 2,
+       "why": "正しい文：I want a glass of water.（2番目 a＝⑤、4番目 of＝③）。a glass of ～で「コップ1杯の～」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-051",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私は昨夜10時に寝ました。\n\n① ten\n② to\n③ bed\n④ at\n⑤ went\n\nI ____ ____ ____ ____ ____ last night.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "② - ④",
+        "② - ⑤",
+        "④ - ②",
+        "③ - ⑤"
+       ],
+       "answer": 0,
+       "why": "正しい文：I went to bed at ten last night.（2番目 to＝②、4番目 at＝④）。go to bed（寝る）の過去は went to bed。at ten で「10時に」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-052",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "その店は日曜日には開いていません。\n\n① is\n② open\n③ not\n④ Sundays\n⑤ on\n\nThe store ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ⑤",
+        "② - ①",
+        "③ - ④",
+        "④ - ⑤"
+       ],
+       "answer": 0,
+       "why": "正しい文：The store is not open on Sundays.（2番目 not＝③、4番目 on＝⑤）。open は「開いている」という形容詞なので is not open。曜日は on。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-053",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私の祖母は毎朝新聞を読みます。\n\n① every\n② morning\n③ newspaper\n④ the\n⑤ reads\n\nMy grandmother ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ①",
+        "④ - ①",
+        "④ - ⑤",
+        "③ - ⑤"
+       ],
+       "answer": 1,
+       "why": "正しい文：My grandmother reads the newspaper every morning.（2番目 the＝④、4番目 every＝①）。主語は My grandmother（3人称単数）なので reads。every morning は最後。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-054",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私の家族は毎年夏に海へ行きます。\n\n① to\n② sea\n③ every\n④ the\n⑤ goes\n\nMy family ____ ____ ____ ____ ____ summer.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "④ - ②",
+        "③ - ④",
+        "① - ③",
+        "① - ②"
+       ],
+       "answer": 3,
+       "why": "正しい文：My family goes to the sea every summer.（2番目 to＝①、4番目 sea＝②）。go to the sea で「海へ行く」。every summer で「毎年夏に」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-055",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私は友達に手紙を書いています。\n\n① my friend\n② a letter\n③ writing\n④ to\n⑤ am\n\nI ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ②",
+        "③ - ④",
+        "④ - ③",
+        "② - ①"
+       ],
+       "answer": 1,
+       "why": "正しい文：I am writing a letter to my friend.（2番目 writing＝③、4番目 to＝④）。am ＋ ing 形で「～しています」。write a letter to ～で「～に手紙を書く」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-056",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "お茶をもう1杯いかがですか。\n\n① another\n② cup\n③ like\n④ you\n⑤ of\n\nWould ____ ____ ____ ____ ____ tea?\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ④",
+        "③ - ①",
+        "③ - ②",
+        "⑤ - ①"
+       ],
+       "answer": 2,
+       "why": "正しい文：Would you like another cup of tea?（2番目 like＝③、4番目 cup＝②）。Would you like ～?で「～はいかがですか」。another cup of ～で「もう1杯の～」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-057",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私はその時、家にいませんでした。\n\n① was\n② then\n③ not\n④ at\n⑤ home\n\nI ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ⑤",
+        "⑤ - ③",
+        "④ - ①",
+        "③ - ②"
+       ],
+       "answer": 0,
+       "why": "正しい文：I was not at home then.（2番目 not＝③、4番目 home＝⑤）。be at home で「家にいる」。過去の否定なので was not。then（その時）は最後。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-058",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "私たちの先生はいつも私たちに親切です。\n\n① to\n② us\n③ is\n④ always\n⑤ kind\n\nOur teacher ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "③ - ①",
+        "④ - ③",
+        "② - ⑤",
+        "④ - ①"
+       ],
+       "answer": 3,
+       "why": "正しい文：Our teacher is always kind to us.（2番目 always＝④、4番目 to＝①）。always は is のあとに置く。be kind to ～で「～に親切だ」。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-059",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "この青いかばんはいくらですか。\n\n① this\n② blue\n③ much\n④ is\n⑤ bag\n\nHow ____ ____ ____ ____ ____?\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "④ - ②",
+        "③ - ①",
+        "④ - ①",
+        "④ - ⑤"
+       ],
+       "answer": 0,
+       "why": "正しい文：How much is this blue bag?（2番目 is＝④、4番目 blue＝②）。How much is ～?で「～はいくらですか」。blue は bag の前に置く。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G3-060",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "午後に雨が降り始めました。\n\n① in\n② to\n③ rain\n④ started\n⑤ the afternoon\n\nIt ____ ____ ____ ____ ____.\n\n2番目と4番目にくるものの最も適切な組合せを選びなさい",
+       "choices": [
+        "② - ①",
+        "⑤ - ①",
+        "⑤ - ③",
+        "② - ⑤"
+       ],
+       "answer": 0,
+       "why": "正しい文：It started to rain in the afternoon.（2番目 to＝②、4番目 in＝①）。start to ～で「～し始める」。in the afternoon で「午後に」。"
+      }
+     ],
+     "plus": true
     }
    ]
   },
@@ -1611,6 +3891,130 @@
        "why": "You must wear a swimming cap.（水泳帽をかぶらなければならない）とある。プールのそばで飲食はしてはいけない。"
       }
      ]
+    },
+    {
+     "id": "G4A-005",
+     "passage": "Park Clean-Up Day\n\nLet's make Riverside Park beautiful together!\n\nDate: Sunday, May 21\nTime: 9:00 a.m. to 11:00 a.m.\nMeeting place: The north gate of the park\n\nPlease bring gloves and something to drink. We will give you garbage bags. After the clean-up, there will be free sandwiches for everyone. If it rains on May 21, we will do it on May 28.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Where should people meet?",
+       "choices": [
+        "At the north gate of the park.",
+        "At the sandwich shop.",
+        "At the river.",
+        "At the south gate of the park."
+       ],
+       "answer": 0,
+       "why": "Meeting place: The north gate of the park（集合場所は公園の北門）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "If it rains on May 21, the clean-up will be",
+       "choices": [
+        "on May 20.",
+        "on May 28.",
+        "at 11:00 a.m.",
+        "at the station."
+       ],
+       "answer": 1,
+       "why": "最後の文に If it rains on May 21, we will do it on May 28.（雨なら5月28日に行う）とある。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G4A-006",
+     "passage": "Art Contest for Children\n\nDraw a picture of your favorite place in Pine Town!\n\nWho: Children from 6 to 12 years old\nHow: Bring your picture to the Pine Town Community Center by October 20.\n\nThe top three artists will get a big box of colored pencils. All the pictures will be on the walls of Pine Town Station in November. For more information, call 555-6789.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What should children draw?",
+       "choices": [
+        "Their favorite place in Pine Town.",
+        "A big box of pencils.",
+        "The community center.",
+        "Their family."
+       ],
+       "answer": 0,
+       "why": "最初に Draw a picture of your favorite place in Pine Town!（パインタウンの好きな場所の絵をかこう）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "What will happen in November?",
+       "choices": [
+        "Everyone will get colored pencils.",
+        "Children will visit the community center.",
+        "People can see the pictures at the station.",
+        "The contest will start."
+       ],
+       "answer": 2,
+       "why": "All the pictures will be on the walls of Pine Town Station in November.（11月に全部の絵が駅のかべにはられる）とある。色えんぴつがもらえるのは上位3人だけ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G4A-007",
+     "passage": "Sunny Café Is Opening!\n\nOur new café near City Park will open on Friday, June 2.\n\nOpen: 7:00 a.m. to 6:00 p.m.\nClosed: Every Tuesday\n\nOn our first day, the first 50 customers will get a free cookie. Please try our new banana milkshake. It's only $3. We also have sandwiches and salads for lunch. See you soon!",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "When is the café closed?",
+       "choices": [
+        "After 7:00 a.m.",
+        "On Tuesdays.",
+        "On June 2.",
+        "On Fridays."
+       ],
+       "answer": 1,
+       "why": "Closed: Every Tuesday（毎週火曜日は休み）とある。6月2日は開店の日。"
+      },
+      {
+       "type": "mcq",
+       "q": "On June 2, the first 50 customers will get",
+       "choices": [
+        "a sandwich for $3.",
+        "a free salad.",
+        "a free cookie.",
+        "a banana milkshake."
+       ],
+       "answer": 2,
+       "why": "On our first day, the first 50 customers will get a free cookie.（初日、先着50人にクッキー1枚が無料）とある。バナナミルクセーキは3ドル。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G4A-008",
+     "passage": "School Library News\n\nThe school library will be closed from December 18 to January 8. We are going to get new bookshelves.\n\nBefore winter vacation, you can borrow five books. (Usually, you can only borrow two.) Please bring them back by January 12.\n\nIf you have any questions, please ask Ms. Ford in the library.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why will the library be closed?",
+       "choices": [
+        "It is winter vacation.",
+        "Students will clean it.",
+        "Ms. Ford will be away.",
+        "It is getting new bookshelves."
+       ],
+       "answer": 3,
+       "why": "We are going to get new bookshelves.（新しい本だなが入る）とあるので、そのために閉まる。"
+      },
+      {
+       "type": "mcq",
+       "q": "Before winter vacation, students can borrow",
+       "choices": [
+        "eight books.",
+        "two books.",
+        "twelve books.",
+        "five books."
+       ],
+       "answer": 3,
+       "why": "you can borrow five books（5冊借りられる）とある。2冊はふだんの数。"
+      }
+     ],
+     "plus": true
     }
    ]
   },
@@ -1790,6 +4194,178 @@
        "why": "The museum will give all the students sandwiches and juice.（博物館が全員にサンドイッチとジュースをくれる）とある。"
       }
      ]
+    },
+    {
+     "id": "G4B-005",
+     "passage": "From: Ethan Ward\nTo: Ryan Cole\nDate: July 8\nSubject: Camping trip\n\nHi Ryan,\nMy family is going to go camping at Lake Pine next weekend. My father said I can bring a friend. Do you want to come with us? We will leave on Saturday morning and come back on Sunday evening. We're going to fish in the lake and cook dinner outside. You don't need a tent, but please bring a sleeping bag.\nYour friend,\nEthan\n\nFrom: Ryan Cole\nTo: Ethan Ward\nDate: July 9\nSubject: Re: Camping trip\n\nHi Ethan,\nThanks for asking me! I don't have a sleeping bag, but my cousin has two. I'll borrow one from her. I have never caught a fish before, so I want to try. Also, my mother will make some cookies for your family. What time should I come to your house on Saturday?\nSee you,\nRyan",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Where will Ethan's family go next weekend?",
+       "choices": [
+        "To the beach.",
+        "To Lake Pine.",
+        "To a fish market.",
+        "To Ryan's house."
+       ],
+       "answer": 1,
+       "why": "最初のメールに going to go camping at Lake Pine next weekend（来週末パイン湖へキャンプに行く）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does Ethan ask Ryan to bring?",
+       "choices": [
+        "Some cookies.",
+        "A tent.",
+        "A sleeping bag.",
+        "Some fish."
+       ],
+       "answer": 2,
+       "why": "You don't need a tent, but please bring a sleeping bag.（テントは要らないが寝袋を持ってきて）とある。クッキーはライアンの母が作る物。"
+      },
+      {
+       "type": "mcq",
+       "q": "Ryan will borrow a sleeping bag from",
+       "choices": [
+        "his cousin.",
+        "his mother.",
+        "a friend at school.",
+        "Ethan's father."
+       ],
+       "answer": 0,
+       "why": "ライアンの返事に my cousin has two. I'll borrow one from her.（いとこが2つ持っているので1つ借りる）とある。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G4B-006",
+     "passage": "From: Sophie Turner\nTo: Aya Mori\nDate: November 2\nSubject: A party for Julia\n\nHi Aya,\nJulia's birthday is next Friday, November 10. Let's have a surprise party for her! Her mother said we can use their living room. Julia's mother will take her shopping at three o'clock, so we can get ready then. Can you make a birthday cake? I'll buy some balloons.\nYour friend,\nSophie\n\nFrom: Aya Mori\nTo: Sophie Turner\nDate: November 3\nSubject: Re: A party for Julia\n\nHi Sophie,\nThat's a great idea! But I have a dance lesson on Friday until four. I'll make the cake on Thursday night, and I'll bring it to Julia's house after my lesson. Julia likes strawberries, so I'll put a lot of them on the cake. How about a present? I think she wants a new pencil case. Let's buy one together this weekend.\nLove,\nAya",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "When is Julia's birthday?",
+       "choices": [
+        "On November 3.",
+        "On November 12.",
+        "On November 2.",
+        "On November 10."
+       ],
+       "answer": 3,
+       "why": "最初のメールに Julia's birthday is next Friday, November 10.（ジュリアの誕生日は11月10日）とある。11月2日と3日はメールの日付。"
+      },
+      {
+       "type": "mcq",
+       "q": "What will Julia's mother do at three o'clock?",
+       "choices": [
+        "Buy some balloons.",
+        "Make a birthday cake.",
+        "Take Julia shopping.",
+        "Go to a dance lesson."
+       ],
+       "answer": 2,
+       "why": "Julia's mother will take her shopping at three o'clock（3時にジュリアを買い物に連れ出す）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does Aya want to do this weekend?",
+       "choices": [
+        "Pick strawberries.",
+        "Have a party at her house.",
+        "Buy a present with Sophie.",
+        "Take a dance lesson."
+       ],
+       "answer": 2,
+       "why": "アヤの返事の最後に she wants a new pencil case. Let's buy one together this weekend.（今週末いっしょに筆箱を買おう）とある。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G4B-007",
+     "passage": "From: Megan Price\nTo: Helen Price\nDate: February 25\nSubject: Visiting your farm\n\nDear Aunt Helen,\nMy school's spring vacation starts on March 20. Can I visit your farm for five days? Last time, I had a lot of fun with the cows. This time, I want to learn how to ride a horse. My father says he can drive me to your house on March 22. Is that OK?\nLove,\nMegan\n\nFrom: Helen Price\nTo: Megan Price\nDate: February 26\nSubject: Re: Visiting your farm\n\nDear Megan,\nOf course you can come! We have three baby goats now, and you can help me take care of them. Your uncle will teach you how to ride a horse. Please bring warm clothes and boots because it is still cold here in March. Also, please ask your father to have lunch with us on the 22nd.\nLove,\nAunt Helen",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "How long does Megan want to stay at the farm?",
+       "choices": [
+        "For three days.",
+        "For five days.",
+        "For two weeks.",
+        "For a week."
+       ],
+       "answer": 1,
+       "why": "最初のメールに Can I visit your farm for five days?（5日間行ってもいい？）とある。3はヤギの数。"
+      },
+      {
+       "type": "mcq",
+       "q": "Who will teach Megan how to ride a horse?",
+       "choices": [
+        "Her uncle.",
+        "Aunt Helen.",
+        "Her teacher.",
+        "Her father."
+       ],
+       "answer": 0,
+       "why": "ヘレンおばさんの返事に Your uncle will teach you how to ride a horse.（おじさんが乗り方を教える）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "Aunt Helen asks Megan to bring",
+       "choices": [
+        "her father's lunch.",
+        "food for the goats.",
+        "a new horse.",
+        "warm clothes and boots."
+       ],
+       "answer": 3,
+       "why": "Please bring warm clothes and boots（暖かい服とブーツを持ってきて）とある。3月はまだ寒いから。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G4B-008",
+     "passage": "From: Sean Wells\nTo: Kaito Ito\nDate: January 12\nSubject: Science fair\n\nHi Kaito,\nOur school's science fair is on February 15. Do you want to make a project with me? I have an idea. Let's make a small car that uses the power of the sun. My brother made one last year, and he can help us. We can work at my house on Wednesdays and Saturdays. What do you think?\nYour friend,\nSean\n\nFrom: Kaito Ito\nTo: Sean Wells\nDate: January 12\nSubject: Re: Science fair\n\nHi Sean,\nThat sounds really cool! I'd love to do it with you. I can come on Saturdays, but I have swimming practice on Wednesdays. Is Sunday OK? My father has a lot of tools, so I'll bring some. Also, let's go to the city library this weekend. We can find some books about cars there.\nYour friend,\nKaito",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What does Sean want to make?",
+       "choices": [
+        "A small robot.",
+        "A car that uses the sun's power.",
+        "A big poster about the sun.",
+        "A book about cars."
+       ],
+       "answer": 1,
+       "why": "最初のメールに Let's make a small car that uses the power of the sun.（太陽の力で動く小さな車を作ろう）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why can't Kaito go to Sean's house on Wednesdays?",
+       "choices": [
+        "He goes to the library.",
+        "His brother is sick.",
+        "He works with his father.",
+        "He has swimming practice."
+       ],
+       "answer": 3,
+       "why": "カイトの返事に I have swimming practice on Wednesdays.（水曜日は水泳の練習がある）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "What will Kaito and Sean do this weekend?",
+       "choices": [
+        "Go to the city library.",
+        "Visit the science fair.",
+        "Buy some tools.",
+        "Go swimming."
+       ],
+       "answer": 0,
+       "why": "let's go to the city library this weekend（今週末に市の図書館へ行こう）とある。科学フェアは2月15日。"
+      }
+     ],
+     "plus": true
     }
    ]
   },
@@ -2065,6 +4641,274 @@
        "why": "最後の段落に Next month, Olivia's family will get a puppy from a friend's farm.（来月、友達の農場から子犬をもらう）とある。"
       }
      ]
+    },
+    {
+     "id": "G4C-005",
+     "passage": "Nami's Stars\n\nNami is thirteen years old, and she lives in a small town near the mountains. She likes looking at the night sky. On clear nights, she can see many stars from her window.\n\nLast winter, Nami's grandfather gave her a telescope for her birthday. He said, \"This was mine when I was young. Please take good care of it.\" Nami was very happy. After that, every Friday night, she went out to the garden with her father and looked at the moon and the stars.\n\nIn April, Nami joined the science club at her school. Her teacher, Mr. Ito, knows a lot about stars, and he taught the students the names of many stars. In August, the club members went to a camp in the mountains. At night, they saw a lot of beautiful stars.\n\nNow, Nami wants to study space in college. Next year, she is going to visit a big science museum in Tokyo with her grandfather.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What can Nami see from her window on clear nights?",
+       "choices": [
+        "A big museum.",
+        "Her grandfather's house.",
+        "Many stars.",
+        "The mountains in the morning."
+       ],
+       "answer": 2,
+       "why": "第1段落に On clear nights, she can see many stars from her window.（晴れた夜は窓からたくさんの星が見える）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "What did Nami's grandfather give her?",
+       "choices": [
+        "A ticket to a camp.",
+        "A telescope.",
+        "A birthday cake.",
+        "A book about stars."
+       ],
+       "answer": 1,
+       "why": "第2段落に Nami's grandfather gave her a telescope for her birthday.（祖父が誕生日に望遠鏡をくれた）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "Who did Nami look at the stars with on Friday nights?",
+       "choices": [
+        "Her friends.",
+        "Her grandfather.",
+        "Mr. Ito.",
+        "Her father."
+       ],
+       "answer": 3,
+       "why": "第2段落に every Friday night, she went out to the garden with her father（毎週金曜の夜、父と庭に出た）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "In August, the science club members",
+       "choices": [
+        "visited a museum in Tokyo.",
+        "learned the names of flowers.",
+        "went to a camp in the mountains.",
+        "bought a new telescope."
+       ],
+       "answer": 2,
+       "why": "第3段落に In August, the club members went to a camp in the mountains. とある。東京の博物館へ行くのは来年。"
+      },
+      {
+       "type": "mcq",
+       "q": "What is Nami going to do next year?",
+       "choices": [
+        "Visit a science museum with her grandfather.",
+        "Join the science club.",
+        "Move to Tokyo.",
+        "Teach the names of stars."
+       ],
+       "answer": 0,
+       "why": "最後の段落に Next year, she is going to visit a big science museum in Tokyo with her grandfather. とある。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G4C-006",
+     "passage": "Hugo's Rice Balls\n\nHugo is a junior high school student from France. Last September, he came to Japan and started living with the Ueda family. Their son, Shota, is the same age as Hugo, and they go to the same school.\n\nAt first, Hugo couldn't use chopsticks, and he couldn't read Japanese. Shota helped him every day. Shota's mother made lunch boxes for both boys every morning. Hugo's favorite food in his lunch box was rice balls.\n\nOne Sunday in November, Hugo asked Shota's mother, \"Can you teach me how to make rice balls?\" She said, \"Of course!\" They made rice balls with salmon in them. Hugo's first rice balls were too big, but he practiced many times.\n\nIn December, Hugo made rice balls for the whole family. Shota said, \"These are great!\" Hugo was very happy. Next summer, Hugo will go back to France. He wants to make rice balls for his family there.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Where is Hugo from?",
+       "choices": [
+        "Japan.",
+        "Australia.",
+        "Canada.",
+        "France."
+       ],
+       "answer": 3,
+       "why": "第1段落に Hugo is a junior high school student from France.（フランスから来た中学生）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "Who helped Hugo every day at first?",
+       "choices": [
+        "Hugo's teacher.",
+        "Shota's father.",
+        "Hugo's mother.",
+        "Shota."
+       ],
+       "answer": 3,
+       "why": "第2段落に At first, … Shota helped him every day.（最初、ショウタが毎日助けた）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "What was Hugo's favorite food in his lunch box?",
+       "choices": [
+        "Sandwiches.",
+        "Rice balls.",
+        "Fried chicken.",
+        "Salmon salad."
+       ],
+       "answer": 1,
+       "why": "第2段落に Hugo's favorite food in his lunch box was rice balls. とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "When did Hugo make rice balls for the whole family?",
+       "choices": [
+        "Next summer.",
+        "In November.",
+        "In December.",
+        "In September."
+       ],
+       "answer": 2,
+       "why": "第4段落に In December, Hugo made rice balls for the whole family. とある。11月は作り方を教わった月。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does Hugo want to do in France?",
+       "choices": [
+        "Make rice balls for his family.",
+        "Open a Japanese restaurant.",
+        "Teach Japanese at a school.",
+        "Buy chopsticks for Shota."
+       ],
+       "answer": 0,
+       "why": "最後に He wants to make rice balls for his family there.（フランスの家族におにぎりを作りたい）とある。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G4C-007",
+     "passage": "Ivy's Big Race\n\nIvy is a junior high school student in Australia. Her father loves running. Every Sunday morning, he runs ten kilometers by the river near their house.\n\nLast May, Ivy's father said, \"There will be a family race in October. Do you want to run with me?\" The race was five kilometers. Ivy didn't like running, and she was not fast. But she said, \"OK, I'll try.\"\n\nAt first, Ivy could only run for ten minutes. She got tired very quickly. So, her father made a plan for her. She ran three times a week after school, and every week she ran a little longer. In August, she could run five kilometers. She didn't stop once.\n\nOn the day of the race, it was sunny and warm. Ivy and her father ran together, and they finished in thirty-five minutes. Ivy got a medal. Now, she runs with her father every Sunday. Next year, she wants to run in a ten-kilometer race.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What does Ivy's father do every Sunday morning?",
+       "choices": [
+        "He takes Ivy to school.",
+        "He swims in the river.",
+        "He watches a race on TV.",
+        "He runs by the river."
+       ],
+       "answer": 3,
+       "why": "第1段落に Every Sunday morning, he runs ten kilometers by the river（毎週日曜の朝、川のそばを10キロ走る）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "How long was the family race?",
+       "choices": [
+        "Ten kilometers.",
+        "Five kilometers.",
+        "Thirty-five kilometers.",
+        "Three kilometers."
+       ],
+       "answer": 1,
+       "why": "第2段落に The race was five kilometers.（レースは5キロ）とある。10キロは父がいつも走る長さ。"
+      },
+      {
+       "type": "mcq",
+       "q": "At first, Ivy",
+       "choices": [
+        "didn't want to make a plan.",
+        "could only run for ten minutes.",
+        "ran five kilometers every day.",
+        "ran faster than her father."
+       ],
+       "answer": 1,
+       "why": "第3段落に At first, Ivy could only run for ten minutes.（最初は10分しか走れなかった）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "What could Ivy do in August?",
+       "choices": [
+        "Run five kilometers.",
+        "Win a medal.",
+        "Run ten kilometers.",
+        "Run with her friends after school."
+       ],
+       "answer": 0,
+       "why": "第3段落に In August, she could run five kilometers.（8月には5キロ走れた）とある。メダルはレースの日。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does Ivy want to do next year?",
+       "choices": [
+        "Make a plan for her father.",
+        "Stop running on Sundays.",
+        "Run in a ten-kilometer race.",
+        "Watch a family race."
+       ],
+       "answer": 2,
+       "why": "最後の文に Next year, she wants to run in a ten-kilometer race. とある。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "G4C-008",
+     "passage": "The Class Newspaper\n\nRina is in the second year of junior high school. She likes writing stories. In April, her teacher, Ms. Sato, said, \"Let's make a class newspaper this year. Who wants to help?\" Rina and two other students raised their hands.\n\nEvery month, they wrote about school events, sports games, and clubs. Rina also asked the teachers about their hobbies and wrote about them. The students in her class enjoyed reading about the teachers.\n\nIn July, there was a problem. The copy machine in the teachers' room broke, so they couldn't make copies of the newspaper. Rina had an idea. They wrote the newspaper on a very big piece of paper and put it on the classroom wall. Many students from other classes came to read it, too.\n\nIn March, Ms. Sato read all of their newspapers again and said, \"You did a great job!\" Rina wants to write for a newspaper in the future.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What does Rina like to do?",
+       "choices": [
+        "Take pictures.",
+        "Play sports.",
+        "Read newspapers.",
+        "Write stories."
+       ],
+       "answer": 3,
+       "why": "第1段落に She likes writing stories.（物語を書くのが好き）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "What did Ms. Sato want to do this year?",
+       "choices": [
+        "Make a class newspaper.",
+        "Have a sports game.",
+        "Buy a copy machine.",
+        "Start a new club."
+       ],
+       "answer": 0,
+       "why": "第1段落に Let's make a class newspaper this year.（今年、学級新聞を作ろう）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "What did Rina ask the teachers about?",
+       "choices": [
+        "Their homework.",
+        "Their families.",
+        "Their hobbies.",
+        "Their favorite stories."
+       ],
+       "answer": 2,
+       "why": "第2段落に Rina also asked the teachers about their hobbies（先生たちにしゅみをたずねた）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why couldn't the students make copies in July?",
+       "choices": [
+        "The copy machine broke.",
+        "The teachers' room was closed.",
+        "Ms. Sato was busy.",
+        "They had no paper."
+       ],
+       "answer": 0,
+       "why": "第3段落に The copy machine in the teachers' room broke, so they couldn't make copies（コピー機がこわれたのでコピーできなかった）とある。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does Rina want to do in the future?",
+       "choices": [
+        "Work at a copy shop.",
+        "Write for a newspaper.",
+        "Become a teacher.",
+        "Paint pictures on walls."
+       ],
+       "answer": 1,
+       "why": "最後の文に Rina wants to write for a newspaper in the future.（将来、新聞の記事を書きたい）とある。"
+      }
+     ],
+     "plus": true
     }
    ]
   },
@@ -2436,6 +5280,63 @@
        "spoken": true
       }
      ]
+    },
+    {
+     "id": "L1-021",
+     "script": "M: Excuse me. Where's the bookstore?\nW: It's on the fourth floor.\nM: Is there an elevator?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Choose the best response.",
+       "choices": [
+        "Yes, it's over there.",
+        "No, I don't read books.",
+        "On the fourth floor."
+       ],
+       "answer": 0,
+       "why": "Is there an elevator?（エレベーターはありますか）には「はい、あちらです」と答える。On the fourth floor. は本屋の場所で、2回目の質問の答えではない。",
+       "spoken": true
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "L1-022",
+     "script": "W: I'm going to the post office now.\nM: Can you buy some stamps for me?\nW: Sure. How many do you need?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Choose the best response.",
+       "choices": [
+        "At the post office.",
+        "Yes, I do.",
+        "Five, please."
+       ],
+       "answer": 2,
+       "why": "How many（いくつ）と聞かれているので数を答える。At the post office は場所、Yes, I do は Do you ～? への答え。",
+       "spoken": true
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "L1-023",
+     "script": "M: Mom, I can't find my math notebook.\nW: Did you look in your bag?\nM: Yes, but it isn't there.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Choose the best response.",
+       "choices": [
+        "It's a math test.",
+        "Then look on your desk.",
+        "Yes, I like math."
+       ],
+       "answer": 1,
+       "why": "かばんの中に無いと言っているので、「じゃあ机の上を見てごらん」とほかの場所をすすめる。ほかの2つは話が合わない。",
+       "spoken": true
+      }
+     ],
+     "plus": true
     }
    ]
   },
@@ -2807,6 +5708,63 @@
        "why": "I have to visit my grandmother in the hospital.（入院している祖母に会いに行く）と言っている。"
       }
      ]
+    },
+    {
+     "id": "L2-021",
+     "script": "W: Are you going to the swimming pool today, Mark?\nM: No, I'm going to the dentist. I'll go to the pool tomorrow.\nQuestion: Where will Mark go today?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Where will Mark go today?",
+       "choices": [
+        "To the dentist.",
+        "To the swimming pool.",
+        "To school.",
+        "To the park."
+       ],
+       "answer": 0,
+       "why": "今日は I'm going to the dentist（歯医者へ行く）と言っている。プールは明日。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "L2-022",
+     "script": "M: Mom, can I have a banana?\nW: Sorry, there aren't any. But there are some oranges.\nM: OK. I'll have one.\nQuestion: What will the boy eat?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What will the boy eat?",
+       "choices": [
+        "A banana.",
+        "An apple.",
+        "A cookie.",
+        "An orange."
+       ],
+       "answer": 3,
+       "why": "バナナは無く、オレンジがあると言われて I'll have one.（1つ食べる）と答えているのでオレンジ。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "L2-023",
+     "script": "W: How many books did you read during summer vacation, Fred?\nM: Six. My favorite was about space.\nW: Wow. I only read three.\nQuestion: How many books did Fred read?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "How many books did Fred read?",
+       "choices": [
+        "Nine.",
+        "Six.",
+        "Two.",
+        "Three."
+       ],
+       "answer": 1,
+       "why": "フレッドは Six.（6冊）と答えている。3冊は女の子が読んだ数。"
+      }
+     ],
+     "plus": true
     }
    ]
   },
@@ -3178,6 +6136,63 @@
        "why": "He works at a museum there.（ニューヨークの美術館で働いている）と言っている。"
       }
      ]
+    },
+    {
+     "id": "L3-021",
+     "script": "Jake's class went to a farm last Friday. The students gave food to the cows and picked strawberries. Jake ate ten strawberries, and his friend Luke ate fifteen.\nQuestion: How many strawberries did Luke eat?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "How many strawberries did Luke eat?",
+       "choices": [
+        "Five.",
+        "Fifty.",
+        "Fifteen.",
+        "Ten."
+       ],
+       "answer": 2,
+       "why": "his friend Luke ate fifteen（友達のルークは15個食べた）と言っている。10個はジェイクが食べた数。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "L3-022",
+     "script": "Good afternoon, everyone. The museum will close in fifteen minutes. The gift shop on the first floor is open until five thirty. Please visit us again.\nQuestion: What time does the gift shop close?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What time does the gift shop close?",
+       "choices": [
+        "At six.",
+        "At five thirty.",
+        "At five.",
+        "At five fifteen."
+       ],
+       "answer": 1,
+       "why": "The gift shop … is open until five thirty（売店は5時30分まで開いている）と言っている。15分は博物館が閉まるまでの時間。"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "L3-023",
+     "script": "Ava wanted to buy a birthday present for her mother. She went to the mall with her father and bought a pink scarf. Her mother was very happy.\nQuestion: Who went to the mall with Ava?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Who went to the mall with Ava?",
+       "choices": [
+        "Her friend.",
+        "Her mother.",
+        "Her sister.",
+        "Her father."
+       ],
+       "answer": 3,
+       "why": "She went to the mall with her father（父とショッピングモールへ行った）と言っている。母はプレゼントをもらった人。"
+      }
+     ],
+     "plus": true
     }
    ]
   },
@@ -3369,6 +6384,192 @@
        "ja": "I usually ～. の形で1文。（自分のことの質問。パッセージを見ないで答える）"
       }
      ]
+    },
+    {
+     "id": "S1-007",
+     "tasks": [
+      {
+       "type": "音読",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 20,
+       "readAloud": "Rainy Days\n\nMark likes rainy days. He stays home and plays board games with his brother. Sometimes, they make hot chocolate in the kitchen.",
+       "ja": "まず20秒だまって読み、タイトルから声に出して読む。意味の切れ目（ピリオド・カンマ）で区切る。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "Please look at the passage. What does Mark play with his brother?",
+       "timeSec": 15,
+       "ja": "答えの形：He plays board games.（with his brother の文を見る）"
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Please look at the passage. What do Mark and his brother sometimes make?",
+       "timeSec": 15,
+       "ja": "答えの形：They make hot chocolate.（Mark and his brother は They で受ける）"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "What do you do on rainy days?",
+       "timeSec": 15,
+       "ja": "I ～ on rainy days. の形で1文。（自分のことの質問。パッセージを見ないで答える）"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "S1-008",
+     "tasks": [
+      {
+       "type": "音読",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 20,
+       "readAloud": "Aya's Flower Shop\n\nAya's mother has a flower shop near the station. On weekends, Aya helps her at the shop. She gives water to the flowers and talks with customers.",
+       "ja": "まず20秒だまって読み、タイトルから声に出して読む。意味の切れ目（ピリオド・カンマ）で区切る。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "Please look at the passage. Where is the flower shop?",
+       "timeSec": 15,
+       "ja": "答えの形：It's near the station.（the flower shop は It で受ける）"
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Please look at the passage. When does Aya help her mother?",
+       "timeSec": 15,
+       "ja": "答えの形：She helps her on weekends.（When には「いつ」を答える）"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "What kind of shop do you like?",
+       "timeSec": 15,
+       "ja": "I like ～ shops. の形で1文。理由を1つ足せるとよい。（自分のことの質問。パッセージを見ないで答える）"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "S1-009",
+     "tasks": [
+      {
+       "type": "音読",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 20,
+       "readAloud": "Bike Rides\n\nShun has a new bike. Every Sunday, he rides it to the lake with his friends. They eat lunch there and come home before dark.",
+       "ja": "まず20秒だまって読み、タイトルから声に出して読む。意味の切れ目（ピリオド・カンマ）で区切る。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "Please look at the passage. Where does Shun ride his bike every Sunday?",
+       "timeSec": 15,
+       "ja": "答えの形：He rides it to the lake.（Where には場所を答える）"
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Please look at the passage. When do Shun and his friends come home?",
+       "timeSec": 15,
+       "ja": "答えの形：They come home before dark."
+      },
+      {
+       "type": "No. 3",
+       "prompt": "How do you usually go to school?",
+       "timeSec": 15,
+       "ja": "I go to school by ～. / I walk to school. の形で1文。（自分のことの質問。パッセージを見ないで答える）"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "S1-010",
+     "tasks": [
+      {
+       "type": "音読",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 20,
+       "readAloud": "Snow Days\n\nIn winter, it snows a lot in Yoko's town. Yoko makes snowmen with her friends in the park. After that, she drinks warm tea at home.",
+       "ja": "まず20秒だまって読み、タイトルから声に出して読む。意味の切れ目（ピリオド・カンマ）で区切る。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "Please look at the passage. What does Yoko make with her friends?",
+       "timeSec": 15,
+       "ja": "答えの形：She makes snowmen.（Yoko は She で受ける）"
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Please look at the passage. What does Yoko drink at home?",
+       "timeSec": 15,
+       "ja": "答えの形：She drinks warm tea."
+      },
+      {
+       "type": "No. 3",
+       "prompt": "What season do you like the best?",
+       "timeSec": 15,
+       "ja": "I like ～ the best. の形で1文。理由を1つ足せるとよい。（自分のことの質問。パッセージを見ないで答える）"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "S1-011",
+     "tasks": [
+      {
+       "type": "音読",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 20,
+       "readAloud": "New Year Cards\n\nEvery December, Ted writes New Year cards. He sends them to his friends and his grandparents. He draws a picture on each card.",
+       "ja": "まず20秒だまって読み、タイトルから声に出して読む。意味の切れ目（ピリオド・カンマ）で区切る。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "Please look at the passage. Who does Ted send his cards to?",
+       "timeSec": 15,
+       "ja": "答えの形：He sends them to his friends and his grandparents."
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Please look at the passage. What does Ted draw on each card?",
+       "timeSec": 15,
+       "ja": "答えの形：He draws a picture.（He draws ～. の形）"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "What did you do last weekend?",
+       "timeSec": 15,
+       "ja": "I ～ed（過去形）. の形で1文。（自分のことの質問。パッセージを見ないで答える）"
+      }
+     ],
+     "plus": true
+    },
+    {
+     "id": "S1-012",
+     "tasks": [
+      {
+       "type": "音読",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 20,
+       "readAloud": "The Science Club\n\nHaruto is in the science club. The members grow vegetables in the school garden. In July, they made tomato soup with their teacher.",
+       "ja": "まず20秒だまって読み、タイトルから声に出して読む。意味の切れ目（ピリオド・カンマ）で区切る。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "Please look at the passage. Where do the members grow vegetables?",
+       "timeSec": 15,
+       "ja": "答えの形：They grow them in the school garden.（the members は They で受ける）"
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Please look at the passage. What did they make in July?",
+       "timeSec": 15,
+       "ja": "答えの形：They made tomato soup.（過去の質問なので made で答える）"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "What time do you usually get up?",
+       "timeSec": 15,
+       "ja": "I usually get up at ～. の形で1文。（自分のことの質問。パッセージを見ないで答える）"
+      }
+     ],
+     "plus": true
     }
    ]
   }

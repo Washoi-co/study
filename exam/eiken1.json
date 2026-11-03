@@ -670,7 +670,7 @@
      "questions": [
       {
        "type": "mcq",
-       "q": "The marketing team had to ____ a completely new campaign in just two days after the original one was cancelled at the last minute.",
+       "q": "The marketing team had to ____ a completely new campaign in just two days after the original one was canceled at the last minute.",
        "choices": [
         "throw together",
         "write off",
@@ -696,6 +696,726 @@
        ],
        "answer": 2,
        "why": "fall back on ～＝「（いざという時に）～に頼る」。食料が尽きて、残りの栄養バーに頼った。cash in on（～で利益を得る）、hold out on（～に隠し事をする）、chime in（口をはさむ）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-041",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The new manager's ____ manner quickly put the nervous staff at ease; she greeted everyone by name and laughed easily at her own small mistakes.",
+       "choices": [
+        "pompous",
+        "brusque",
+        "affable",
+        "furtive"
+       ],
+       "answer": 2,
+       "why": "affable＝「気さくな・愛想のよい」。緊張した職員を安心させ、名前で挨拶し、自分の失敗を笑う、と合う。brusque（ぶっきらぼうな）、pompous（尊大な）、furtive（こそこそした）は逆の印象。"
+      }
+     ]
+    },
+    {
+     "id": "G1-042",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Since the fish-canning factory closed, the once-busy harbor village has become almost ____, and most of its houses now stand empty for eleven months of the year.",
+       "choices": [
+        "boisterous",
+        "congested",
+        "verdant",
+        "desolate"
+       ],
+       "answer": 3,
+       "why": "desolate＝「人けのない・荒涼とした」。工場が閉まり、家が1年の大半空いている。boisterous（騒がしい）、congested（混雑した）は逆。verdant（緑豊かな）は人の少なさを表さない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-043",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Although the evidence against the theory was ____, a few researchers continued to defend it, insisting that every one of the experiments had been poorly designed.",
+       "choices": [
+        "specious",
+        "tentative",
+        "negligible",
+        "incontrovertible"
+       ],
+       "answer": 3,
+       "why": "incontrovertible＝「反論の余地のない」。Although があるので「証拠は強いのに、一部の人は擁護を続けた」という対比。specious（もっともらしいだけの）、tentative（仮の）、negligible（ごくわずかな）では対比にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-044",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The airline tried to ____ passengers' fears about its new aircraft by publishing detailed safety records and inviting journalists to tour its maintenance center.",
+       "choices": [
+        "assuage",
+        "substantiate",
+        "insinuate",
+        "provoke"
+       ],
+       "answer": 0,
+       "why": "assuage＝「（不安・苦痛を）和らげる」。安全記録の公開や見学会で不安を和らげる。provoke（引き起こす）、substantiate（裏付ける）は不安を強める方向で逆。insinuate（遠回しに言う）は fears と組まない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-045",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Facing a sharp drop in ticket sales, the orchestra was forced to ____ its touring schedule, canceling concerts in six cities and postponing a planned trip abroad.",
+       "choices": [
+        "augment",
+        "embellish",
+        "curtail",
+        "reiterate"
+       ],
+       "answer": 2,
+       "why": "curtail＝「削減する・切り詰める」。6都市の公演中止と海外公演の延期が具体例。augment（増やす）は逆。embellish（飾り立てる）、reiterate（繰り返す）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-046",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "After the company was sold, the founder's once-central role was ____ to that of an occasional adviser, and he was no longer invited to board meetings.",
+       "choices": [
+        "elevated",
+        "relegated",
+        "ratified",
+        "reinstated"
+       ],
+       "answer": 1,
+       "why": "relegate A to B＝「Aを（低い地位・役割）に追いやる」。時々の相談役になり、役員会にも呼ばれない。elevated（高められた）、reinstated（復帰させられた）は逆。ratified（批准された）は役割には使わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-047",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Fans accused the club's owners of ____ the team's early advantage; after leading the league in May, it made a series of poor signings and finished eighth.",
+       "choices": [
+        "bequeathing",
+        "consolidating",
+        "squandering",
+        "reclaiming"
+       ],
+       "answer": 2,
+       "why": "squander＝「（機会・お金を）無駄にする」。5月は首位だったのに、下手な補強で8位に終わった。consolidating（固める）は逆。bequeathing（遺贈する）、reclaiming（取り戻す）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-048",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Thanks to a long vaccination campaign, the disease has been almost entirely ____ in the region, with only two cases reported in the past decade.",
+       "choices": [
+        "proliferated",
+        "incubated",
+        "eradicated",
+        "quarantined"
+       ],
+       "answer": 2,
+       "why": "eradicate＝「根絶する」。予防接種のおかげで10年に2例だけ。proliferate（急増する）は逆。incubate（培養する）、quarantine（隔離する）は「ほぼ完全に」「10年で2例」と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-049",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The coach warned his players that arguing with referees could ____ their chances of being selected for the national squad, since the selectors valued discipline above all.",
+       "choices": [
+        "jeopardize",
+        "validate",
+        "enhance",
+        "commemorate"
+       ],
+       "answer": 0,
+       "why": "jeopardize＝「危うくする」。選考では規律を最も重んじるので、審判への抗議は不利になる。enhance（高める）は逆。validate（正当と認める）、commemorate（記念する）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-050",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "To ____ her application for the research post, Dr. Chen included letters of recommendation from three senior scientists who had supervised her work.",
+       "choices": [
+        "disavow",
+        "undermine",
+        "bolster",
+        "forsake"
+       ],
+       "answer": 2,
+       "why": "bolster＝「強化する・後押しする」。推薦状3通で応募を強くする。undermine（弱める）は逆。disavow（否認する）、forsake（見捨てる）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-051",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Before signing the lease, Ms. Walsh asked her lawyer to ____ every clause, because a friend had warned her about hidden fees in similar contracts.",
+       "choices": [
+        "obliterate",
+        "scrutinize",
+        "extol",
+        "eulogize"
+       ],
+       "answer": 1,
+       "why": "scrutinize＝「綿密に調べる」。隠れた手数料が心配で、条項を一つ残らず調べてもらう。obliterate（消し去る）、eulogize（賛辞を述べる）、extol（ほめたたえる）は契約書の確認に合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-052",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The pilot was formally ____ by the airline for leaving the cockpit without informing his co-pilot, although no passengers were put in danger by his mistake.",
+       "choices": [
+        "commended",
+        "emboldened",
+        "pacified",
+        "reprimanded"
+       ],
+       "answer": 3,
+       "why": "reprimand＝「（正式に）叱責する」。副操縦士に知らせず操縦席を離れた、というミスへの処分。commended（ほめられた）は逆。pacified（なだめられた）、emboldened（大胆にされた）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-053",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Several employees said they had been ____ into working unpaid overtime, claiming that their manager had hinted that anyone who refused would lose their annual bonus.",
+       "choices": [
+        "absolved",
+        "coerced",
+        "indulged",
+        "deterred"
+       ],
+       "answer": 1,
+       "why": "coerce A into doing＝「Aに無理やり～させる」。断るとボーナスが無くなるとほのめかされた。absolve（免除する）、indulge（甘やかす）、deter（思いとどまらせる。from を取る）は into working と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-054",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Many students choose to ____ a summer vacation and do an internship instead, believing that the work experience will give them an advantage when they apply for jobs.",
+       "choices": [
+        "forgo",
+        "procure",
+        "emulate",
+        "relish"
+       ],
+       "answer": 0,
+       "why": "forgo＝「（楽しみを）あきらめる・なしで済ませる」。休暇の代わりにインターンをする（instead）。relish（楽しむ）は逆。procure（手に入れる）、emulate（見習う）は instead とつながらない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-055",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The university ____ its decision to raise tuition fees after thousands of students and parents signed a petition and several major donors expressed concern.",
+       "choices": [
+        "reiterated",
+        "rescinded",
+        "implemented",
+        "exacerbated"
+       ],
+       "answer": 1,
+       "why": "rescind＝「（決定を）撤回する」。署名と大口寄付者の懸念を受けて取り消した。reiterate（繰り返し述べる）、implement（実行する）は流れが逆。exacerbate（悪化させる）は decision と組まない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-056",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The storyteller ____ the young audience for over an hour; not a single child moved or spoke until the final words of the tale had been spoken.",
+       "choices": [
+        "enthralled",
+        "alienated",
+        "berated",
+        "sedated"
+       ],
+       "answer": 0,
+       "why": "enthrall＝「魅了する」。1時間以上、子どもが誰も動かず話さなかった。alienate（遠ざける）、berate（叱りつける）は逆。sedate（鎮静剤で落ち着かせる）は語り手の行為に合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-057",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Smartphones have become so ____ that it is now difficult to find a café or a train carriage in which most people are not staring at a screen.",
+       "choices": [
+        "clandestine",
+        "obsolete",
+        "esoteric",
+        "ubiquitous"
+       ],
+       "answer": 3,
+       "why": "ubiquitous＝「どこにでもある」。カフェにも電車にもあふれている。obsolete（時代遅れの）、esoteric（一部の人にしか分からない）、clandestine（秘密の）は逆の意味。"
+      }
+     ]
+    },
+    {
+     "id": "G1-058",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Fashion trends on social media tend to be ____; a style that seems to be everywhere one month is often completely forgotten by the next.",
+       "choices": [
+        "ephemeral",
+        "inveterate",
+        "immutable",
+        "perennial"
+       ],
+       "answer": 0,
+       "why": "ephemeral＝「つかの間の・はかない」。翌月には忘れられる。perennial（長く続く）、inveterate（根深い）、immutable（不変の）はどれも逆。"
+      }
+     ]
+    },
+    {
+     "id": "G1-059",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The inspector gave the building only a ____ glance before approving it, and serious problems with the wiring were not discovered until several years later.",
+       "choices": [
+        "meticulous",
+        "prolonged",
+        "cursory",
+        "scathing"
+       ],
+       "answer": 2,
+       "why": "cursory＝「ざっとした・おざなりの」。ちらっと見ただけで承認し、配線の問題が見落とされた。meticulous（細心の）、prolonged（長時間の）は逆。scathing（痛烈な）は承認と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-060",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Rather than insisting on an ideal solution, the committee took a ____ approach, choosing the plan that could be completed within the existing budget and timeframe.",
+       "choices": [
+        "dogmatic",
+        "pragmatic",
+        "quixotic",
+        "whimsical"
+       ],
+       "answer": 1,
+       "why": "pragmatic＝「実際的な」。理想にこだわらず、予算と期間内でできる案を選んだ。dogmatic（独断的な）、quixotic（非現実的な理想を追う）、whimsical（気まぐれな）は逆。"
+      }
+     ]
+    },
+    {
+     "id": "G1-061",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Many skills that were once essential for office workers, such as taking notes in shorthand, have become almost ____ as new technologies have taken over those tasks.",
+       "choices": [
+        "contagious",
+        "indispensable",
+        "innate",
+        "obsolete"
+       ],
+       "answer": 3,
+       "why": "obsolete＝「すたれた・時代遅れの」。新しい技術がその仕事を引き継いだ。indispensable（不可欠な）は逆。innate（生まれつきの）、contagious（伝染性の）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-062",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "After winning the championship three years in a row, the team became ____, and its players stopped training as hard as they had in previous seasons.",
+       "choices": [
+        "diligent",
+        "complacent",
+        "destitute",
+        "indignant"
+       ],
+       "answer": 1,
+       "why": "complacent＝「現状に満足しきった・油断した」。3連覇の後、練習の手を抜いた。diligent（勤勉な）は逆。destitute（極貧の）、indignant（憤慨した）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-063",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The taxi driver was so ____ that Helen could hardly get a word in; he talked nonstop about his family, his hobbies, and the city's history for the entire journey.",
+       "choices": [
+        "reticent",
+        "sullen",
+        "garrulous",
+        "laconic"
+       ],
+       "answer": 2,
+       "why": "garrulous＝「おしゃべりな」。口をはさめないほど、ずっと話していた。reticent（口数の少ない）、laconic（言葉数の少ない）は逆。sullen（不機嫌な）も合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-064",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "In his bright orange jacket, Leo was ____ among the crowd of guests in dark suits, and several people asked whether he had come to the wrong event.",
+       "choices": [
+        "conspicuous",
+        "indistinguishable",
+        "incognito",
+        "unobtrusive"
+       ],
+       "answer": 0,
+       "why": "conspicuous＝「目立つ」。暗いスーツの中で明るいオレンジの上着、会場違いかと聞かれた。indistinguishable（見分けがつかない）、incognito（お忍びの）、unobtrusive（控えめな）は逆。"
+      }
+     ]
+    },
+    {
+     "id": "G1-065",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The young architect's ____ design, which placed a glass concert hall on top of an old grain warehouse, shocked the judges, but it eventually won the competition.",
+       "choices": [
+        "derivative",
+        "audacious",
+        "mundane",
+        "insipid"
+       ],
+       "answer": 1,
+       "why": "audacious＝「大胆な」。古い倉庫の上にガラスのホール、という型破りな案で審査員を驚かせた。derivative（独創性のない）、mundane（平凡な）、insipid（面白みのない）は逆。"
+      }
+     ]
+    },
+    {
+     "id": "G1-066",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Patients often feel ____ for several days after the operation, so the hospital advises them not to drive or return to work until their energy has fully returned.",
+       "choices": [
+        "vivacious",
+        "exuberant",
+        "lethargic",
+        "jubilant"
+       ],
+       "answer": 2,
+       "why": "lethargic＝「だるい・無気力な」。体力が戻るまで運転や仕事は控える。vivacious（快活な）、exuberant（元気いっぱいの）、jubilant（大喜びの）は逆。"
+      }
+     ]
+    },
+    {
+     "id": "G1-067",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A ____ negotiator, Ms. Ito refused to give up on the deal, even after the other company had rejected her proposals four times in a single month.",
+       "choices": [
+        "capricious",
+        "feeble",
+        "diffident",
+        "tenacious"
+       ],
+       "answer": 3,
+       "why": "tenacious＝「粘り強い」。1か月に4回断られても諦めない。capricious（気まぐれな）、feeble（弱々しい）、diffident（自信のない）は逆。"
+      }
+     ]
+    },
+    {
+     "id": "G1-068",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The success of the first electric ferries gave fresh ____ to the port authority's plan to replace its entire fleet with low-emission vessels by the end of the decade.",
+       "choices": [
+        "hindrance",
+        "impetus",
+        "deterrent",
+        "pretext"
+       ],
+       "answer": 1,
+       "why": "impetus＝「はずみ・勢い」。最初の成功が計画を後押しした。hindrance（妨げ）、deterrent（抑止するもの）は逆。pretext（口実）は give fresh ～ to the plan と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-069",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "There is a ____ of qualified nurses in many rural areas, and hospitals there often have to rely on temporary staff from distant cities.",
+       "choices": [
+        "glut",
+        "dearth",
+        "plethora",
+        "surplus"
+       ],
+       "answer": 1,
+       "why": "dearth＝「不足」。遠くの都市の臨時職員に頼るほど足りない。glut（供給過剰）、plethora（過多）、surplus（余剰）はどれも逆。"
+      }
+     ]
+    },
+    {
+     "id": "G1-070",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Having missed the last ferry and with his phone battery dead, Owen found himself in a real ____ and had to knock on doors until someone offered him a bed.",
+       "choices": [
+        "windfall",
+        "reverie",
+        "sanctuary",
+        "predicament"
+       ],
+       "answer": 3,
+       "why": "predicament＝「苦境」。最終フェリーを逃し、電話も使えない。windfall（思わぬ幸運）、reverie（空想）、sanctuary（避難所）は状況に合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-071",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Because the explorer's diaries were lost, any account of his final weeks is largely ____, based only on a few letters and the memories of his local guides.",
+       "choices": [
+        "conjecture",
+        "dogma",
+        "certainty",
+        "verification"
+       ],
+       "answer": 0,
+       "why": "conjecture＝「推測」。日記が無く、手紙数通と記憶だけが頼り。certainty（確実なこと）、verification（検証）は逆。dogma（教義）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-072",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The film received the festival's highest ____, and its director was praised for telling a moving story with almost no dialogue.",
+       "choices": [
+        "censure",
+        "stipend",
+        "accolade",
+        "ultimatum"
+       ],
+       "answer": 2,
+       "why": "accolade＝「栄誉・賞賛」。最高の賞を受け、監督がほめられた。censure（非難）は逆。stipend（給付金）、ultimatum（最後通告）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-073",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "For years, Kate suffered from ____ headaches that sometimes kept her in bed for days at a time, until a new treatment finally brought them under control.",
+       "choices": [
+        "negligible",
+        "invigorating",
+        "debilitating",
+        "therapeutic"
+       ],
+       "answer": 2,
+       "why": "debilitating＝「体をひどく弱らせる」。何日も寝込むほどの頭痛。invigorating（元気づける）、negligible（取るに足りない）は逆。therapeutic（治療の）は頭痛を説明しない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-074",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The two companies still need to ____ a few remaining differences over pricing before the merger agreement can be signed next month.",
+       "choices": [
+        "lash out",
+        "bow out",
+        "hold up",
+        "iron out"
+       ],
+       "answer": 3,
+       "why": "iron out＝「（問題・食い違いを）解消する」。契約の前に価格の食い違いをなくす。lash out（激しく非難する）、bow out（身を引く）、hold up（遅らせる）は differences を解消する意味にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-075",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Before her transfer to the Madrid office, Lucy took evening classes to ____ her Spanish, which she had hardly used since graduating from university.",
+       "choices": [
+        "brush up on",
+        "measure up to",
+        "crack down on",
+        "face up to"
+       ],
+       "answer": 0,
+       "why": "brush up on＝「（さびついた技能を）磨き直す」。大学以来ほとんど使っていないスペイン語。crack down on（取り締まる）、measure up to（期待にこたえる）、face up to（直視する）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-076",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The annual report was criticized for ____ the project's serious delays, mentioning them only briefly in a footnote on the final page.",
+       "choices": [
+        "glossing over",
+        "dwelling on",
+        "zeroing in on",
+        "living up to"
+       ],
+       "answer": 0,
+       "why": "gloss over＝「（都合の悪い点を）さらっと流す・ごまかす」。最後のページの脚注で少し触れただけ。dwell on（くどくど話す）、zero in on（的を絞る）は逆。live up to（期待にこたえる）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-077",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "When the debate over the new stadium grew heated, several local business owners ____ with their own views, arguing that it would bring more visitors to the area.",
+       "choices": [
+        "made off",
+        "tapered off",
+        "dropped out",
+        "weighed in"
+       ],
+       "answer": 3,
+       "why": "weigh in (with ～)＝「（議論に）意見を出して加わる」。地元の事業者が意見を述べた。taper off（次第に減る）、drop out（脱落する）、make off（逃げ去る）は with their own views と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-078",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "We can't ____ good weather for the outdoor festival in April, so we should rent a few large tents just in case it rains.",
+       "choices": [
+        "make up for",
+        "bank on",
+        "stand up for",
+        "look up to"
+       ],
+       "answer": 1,
+       "why": "bank on＝「～を当てにする」。天気を当てにできないので、雨に備えてテントを借りる。make up for（埋め合わせる）、look up to（尊敬する）、stand up for（擁護する）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-079",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The bank plans to ____ paper statements over the next two years, gradually encouraging all of its customers to switch to online banking instead.",
+       "choices": [
+        "pass up",
+        "chalk up",
+        "mull over",
+        "phase out"
+       ],
+       "answer": 3,
+       "why": "phase out＝「段階的に廃止する」。2年かけて少しずつオンラインに切り替える。pass up（見送る）、chalk up（記録する）、mull over（じっくり考える）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-080",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "With its debts rising quickly, the company had no choice but to ____ spending, freezing new hires and cutting its travel budget in half.",
+       "choices": [
+        "rein in",
+        "scale up",
+        "ramp up",
+        "dish out"
+       ],
+       "answer": 0,
+       "why": "rein in＝「（支出などを）抑える」。採用凍結と出張費の半減。scale up（規模を拡大する）、ramp up（増やす）は逆。dish out（配る）は合わない。"
       }
      ]
     }
@@ -835,6 +1555,178 @@
        "why": "段落全体が人間との対立と、その折り合いの付け方の話。成功は「ビーバー自身より、人間が土地を共有する気があるか」で決まる。毛皮・ダムの速さ・天敵の数は段落の話と関係ない。"
       }
      ]
+    },
+    {
+     "id": "G2-004",
+     "plus": true,
+     "passage": "The Illusion of Understanding\n\nMost adults feel reasonably confident that they understand how ordinary objects such as zippers, flush toilets, and bicycles work. In a well-known series of studies, researchers tested this confidence directly. Participants first rated their understanding of several everyday devices on a seven-point scale. They were then asked to write a detailed, step-by-step explanation of how each device functions, and afterward to rate their understanding again. The second ratings were dramatically lower than the first, and some participants admitted that they could not even explain how the device actually worked. Faced with the task of describing exactly how the parts of a zipper fit together, many participants realized that their knowledge ( 1 ).\n\nPsychologists call this phenomenon the \"illusion of explanatory depth.\" One reason it arises, they suggest, is that people tend to mistake familiarity for comprehension. Having used an object thousands of times, we feel that we know it well, even though we have never had to think about its inner workings. We also rely heavily on knowledge stored elsewhere, in manuals, online, or in the minds of experts, and we rarely notice where our own understanding ends and theirs begins. ( 2 ), the illusion is not limited to mechanical devices. When participants were asked to explain a complex economic process, such as how changes in interest rates affect house prices, their confidence fell in much the same way, and the opinions they expressed afterward tended to be less extreme.\n\nInterestingly, this effect seems to depend on the type of explanation requested. In related experiments, people who were simply asked to list the reasons for their opinions did not become more moderate; if anything, they held their views more firmly than before. Only when they tried to describe step by step how something would actually happen did they recognize the gaps in their knowledge. One possible explanation is that listing reasons allows people to repeat familiar arguments, whereas explaining a process forces them to confront details they have never considered. Some researchers therefore suggest that teachers and managers who want to encourage more thoughtful discussion should ( 3 ).",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "was far more detailed than they had expected",
+        "had been gained mainly from reading manuals",
+        "consisted of little more than a vague impression",
+        "grew steadily with each new attempt"
+       ],
+       "answer": 2,
+       "why": "詳しく説明しようとして理解度の自己評価が大きく下がった、という結果のまとめ。知識は「ぼんやりした印象にすぎなかった」。思ったより詳しかった・回を追うごとに増えた、は逆。説明書で得た、は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "Perhaps more surprisingly",
+        "As a direct result",
+        "For precisely this reason",
+        "In sharp contrast"
+       ],
+       "answer": 0,
+       "why": "前は機械の話、後ろは「機械に限らず経済の話でも同じことが起きた」という意外な広がり。因果（As a direct result / For precisely this reason）でも、対比（In sharp contrast）でもない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "encourage people to defend their opinions as firmly as possible",
+        "avoid discussing complicated subjects in groups",
+        "ask people to list as many reasons for their views as they can",
+        "ask people to explain how something works rather than why they hold a view"
+       ],
+       "answer": 3,
+       "why": "理由を挙げさせると考えがかえって固くなり、仕組みを順を追って説明させた時だけ知識の穴に気づいた。だから「なぜそう思うか」ではなく「どう働くか」を説明させるとよい。理由を挙げさせる（3つ目）は逆効果の方。"
+      }
+     ]
+    },
+    {
+     "id": "G2-005",
+     "plus": true,
+     "passage": "Shipping Ice Around the World\n\nIn the early nineteenth century, a few merchants in the northeastern United States had what seemed like an absurd idea: cutting blocks of ice from frozen lakes in winter and shipping them to hot countries thousands of kilometers away. Early attempts were costly failures. Much of the cargo melted during the voyage, and in tropical ports, few people had any idea what to do with ice. Some shipments arrived only to find that there was nowhere cool enough to store them. To build demand, traders handed out free samples and showed bar owners how to serve chilled drinks. Over time, customers who had once regarded ice as a curiosity came to ( 1 ).\n\nThe greatest technical challenge was insulation. Traders experimented with many materials before discovering that sawdust, a waste product of lumber mills that was available almost for free, kept ice frozen remarkably well when packed tightly around the blocks. Specially built icehouses with thick double walls allowed ice to be stored for months in warm climates. With these improvements, losses during long voyages fell sharply. By the middle of the century, ice cut from lakes in New England was being sold in ports across the Caribbean, South America, and even India, and the trade employed thousands of workers each winter.\n\n( 2 ), the industry that had grown so impressively began to decline. During the second half of the century, inventors developed machines that could produce ice artificially using compressed gases. At first, machine-made ice was expensive and often regarded with suspicion, but as the technology improved, ice factories could be built close to the customers they served. Natural ice, by contrast, depended on cold winters, and a mild season could leave traders with nothing to sell. Moreover, as cities grew, many of the lakes from which ice was cut became polluted. Refrigerated railway cars and household iceboxes, meanwhile, came to rely on the steadier supply that factories could offer. Although natural ice was harvested in some places until the early twentieth century, the trade eventually disappeared. Its influence, however, lasted. By teaching people around the world to expect cold drinks and fresh food, it ( 3 ).",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "fear that it might damage their health",
+        "regard it as a necessity of daily life",
+        "prefer drinks served at room temperature",
+        "use it mainly for medical purposes"
+       ],
+       "answer": 1,
+       "why": "無料の試供品や冷たい飲み物の出し方を教えて需要を作った結果、珍しい物だった氷が「生活に欠かせない物」になった。健康への不安・常温を好む・医療用は、需要が育った流れと合わない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "Thanks to these improvements",
+        "In the same way",
+        "For this reason",
+        "Within a few decades, however"
+       ],
+       "answer": 3,
+       "why": "前の段落は大成功、この文は「衰え始めた」。逆の流れなので however。Thanks to these improvements・For this reason は順接、In the same way は似た話を続ける時に使う。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "made machine-made ice unnecessary for most families",
+        "slowed the growth of cities in warm countries",
+        "helped create the demand on which modern refrigeration was built",
+        "persuaded most cities to protect their natural lakes"
+       ],
+       "answer": 2,
+       "why": "天然氷の商売は消えたが、冷たい飲み物や新鮮な食べ物を当たり前にした＝後の冷蔵産業の土台になる需要を作った。機械の氷を不要にした、は逆（機械の氷に取って代わられた）。都市の成長・湖の保護は本文に無い。"
+      }
+     ]
+    },
+    {
+     "id": "G2-006",
+     "plus": true,
+     "passage": "The Value of Dead Wood\n\nFor much of the twentieth century, foresters in many countries regarded fallen branches and dead trees as signs of poor management. Dead wood was thought to harbor insects and diseases that might spread to healthy trees, and removing it made forests look tidy and made timber easier to harvest. As a result, in carefully managed forests, dead wood was often cleared away almost as soon as it appeared, and forest workers were sometimes paid according to the amount of dead material they removed. Ecologists now argue that this practice ( 1 ).\n\nThe reason is that dead wood is far from lifeless. As a fallen trunk slowly decays, it provides food and shelter for an enormous range of organisms. Fungi and bacteria begin to break down the wood, and they are followed by beetles, ants, and other insects, which in turn attract the birds and small mammals that feed on them. Some species of beetle can survive only in wood that has reached a particular stage of decay. In some European forests, researchers estimate that around a quarter of all forest species depend on dead wood at some point in their lives. Even standing dead trees are valuable, since woodpeckers carve nest holes in them that are later used by owls and bats. ( 2 ), as decaying logs gradually release nutrients into the soil, they help to feed the next generation of trees.\n\nFollowing these findings, forest managers in several regions have changed their approach. Instead of removing every dead tree, they now leave a certain volume of dead wood on the ground, and some even create it deliberately by removing a ring of bark from a few living trees. Such efforts must be balanced against other concerns, however. Standing dead trees near hiking trails can fall without warning, and in commercial forests, wood that is left to decay is wood that cannot be sold. Moreover, simply leaving dead wood in a forest is not always enough. Because many specialized species can travel only short distances, they are unable to reach suitable logs that are scattered too far apart. For this reason, ecologists recommend that managers ( 3 ).",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "was the main reason that timber prices rose",
+        "had little effect on the health of forests",
+        "was necessary to protect rare species of birds",
+        "may have done considerable harm to forest ecosystems"
+       ],
+       "answer": 3,
+       "why": "次の段落で、枯れ木は多くの生き物の食べ物・すみかで、森の種の約4分の1が頼っている、と説明している。だから取り除くのは生態系に害だった。影響が小さい・鳥を守るのに必要、は逆。木材価格は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "On the other hand",
+        "In addition",
+        "Even so",
+        "In other words"
+       ],
+       "answer": 1,
+       "why": "前は「生き物のすみかになる」、後ろは「土に栄養を返して次の木を育てる」。枯れ木の良い点をもう1つ足しているので In addition。逆接（On the other hand / Even so）や言い換え（In other words）ではない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "keep areas of dead wood close enough together for species to move between them",
+        "remove dead trees from commercial forests as quickly as possible",
+        "plant new trees wherever dead wood has been left",
+        "allow visitors to collect dead wood for fuel"
+       ],
+       "answer": 0,
+       "why": "直前の文：多くの種は短い距離しか移動できず、離れすぎた丸太にたどり着けない。だから「行き来できる近さに枯れ木を置く」。早く取り除く・燃料に集めさせる、は逆。新しく植える、は理由と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G2-007",
+     "plus": true,
+     "passage": "The Hot Hand Debate\n\nBasketball players, coaches, and fans have long believed in the \"hot hand,\" the idea that a player who has made several shots in a row is more likely than usual to make the next one. In the 1980s, a group of psychologists set out to test this belief. They analyzed thousands of shots taken by professional players and found that the chance of success after a series of hits was no higher than after a series of misses. Their conclusion was that the hot hand ( 1 ). People, they argued, are simply poor at recognizing randomness and tend to see streaks where none really exist. The finding surprised many players, some of whom insisted that they could feel when they were on a streak.\n\nThe study became one of the best-known examples of a \"cognitive bias,\" and for three decades it was widely cited in textbooks and popular books on decision-making. Fans who continued to believe in the hot hand were often presented as examples of irrational thinking. ( 2 ), the original analysis contained a subtle mathematical error. Many years later, two economists pointed out that when one examines a limited sequence of shots and selects only those that follow a streak of hits, a hidden bias is created. Because of this bias, a player with no hot hand at all would actually be expected to perform slightly worse after a streak. Finding no difference, therefore, suggested that players really did perform better than chance after making several shots in a row.\n\nThe debate has not been completely settled. Some researchers point out that even if the hot hand exists, the effect appears to be small, and players and coaches may still overestimate it, for example by passing the ball too often to a teammate who has just made a few shots. Others argue that the size of the effect may vary greatly from one player to another. Nonetheless, the episode is often cited as a valuable lesson for scientists. It shows that a finding which seems to confirm a popular theory about human error can itself ( 3 ).",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "applied only to the most experienced players",
+        "could be developed through careful training",
+        "was nothing more than an illusion",
+        "explained why some teams won more often than others"
+       ],
+       "answer": 2,
+       "why": "連続で決めた後も成功率は高くならなかったので、ホットハンドは「錯覚にすぎない」。直後の「人はでたらめの中に連続を見てしまう」とも合う。経験者だけ・練習で身につく・チームの勝敗は結論と関係ない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "Not surprisingly",
+        "For this reason",
+        "In much the same way",
+        "As it turned out, however"
+       ],
+       "answer": 3,
+       "why": "前は「研究は有名になり、信じる人は非合理の例とされた」、後ろは「元の分析に誤りがあった」。予想に反する展開なので「ところが実は」。Not surprisingly・For this reason・In much the same way は流れが合わない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "be confirmed by asking experienced athletes",
+        "rest on a mistake that goes unnoticed for many years",
+        "explain almost every type of decision people make",
+        "be understood only by trained mathematicians"
+       ],
+       "answer": 1,
+       "why": "人の判断の誤りを示すとされた研究自体に、30年近く気づかれなかった計算の誤りがあった。選手に聞いて確かめる・あらゆる判断を説明する・数学者にしか分からない、は本文の教訓ではない。"
+      }
+     ]
     }
    ]
   },
@@ -972,6 +1864,178 @@
        "why": "第4段落：心地よい音は有害な騒音を隠すだけかもしれず、交通の迂回や静かな舗装など費用のかかる対策を避ける口実になりうる、と心配している。維持費・住民の好み・鳥の声のストレスは本文に無い。"
       }
      ]
+    },
+    {
+     "id": "G3A-004",
+     "plus": true,
+     "passage": "Darkness Under Threat\n\nFor most of history, the night sky above towns and villages was dark enough for people to see thousands of stars. Today, however, artificial light from streetlights, buildings, and advertising signs has spread so widely that a large proportion of the world's population lives under skies that never become truly dark. Astronomers were among the first to complain about this \"light pollution,\" since the glow from cities makes it difficult to observe faint objects in space. In recent decades, however, biologists have begun to argue that the problem is far more serious than an inconvenience for stargazers.\n\nMany living things have evolved to depend on the regular cycle of day and night. Moths and other night-flying insects, for example, appear to use the moon and stars to keep a steady course, and when they encounter a bright lamp, they often circle it until they are exhausted or are caught by predators. Some researchers believe that artificial light may be one of several factors behind the decline in insect numbers reported in many regions. Even a single lamp, some studies suggest, can affect insects living hundreds of meters away. The effects can spread through entire ecosystems. In one field study, scientists placed streetlights in meadows that had previously been dark and found that flowers in the lit areas were visited far less often by night-flying pollinators. Because many of the same flowers are also visited by bees during the day, the researchers had expected daytime visits to make up the difference. Instead, the lit plants produced noticeably fewer seeds.\n\nBirds are affected as well. Many species migrate at night, and bright lights on tall buildings can draw them off course, causing them to waste energy or to collide with windows. In cities, some songbirds have been observed singing in the middle of the night near streetlights, and certain species begin breeding earlier in the spring than birds in darker areas. Whether this early start is harmful is not yet clear, but scientists worry that it may cause chicks to hatch before the insects their parents feed them have become plentiful.\n\nUnlike many other forms of pollution, light pollution can be reduced almost immediately and often at little cost. Lamps can be fitted with shields so that they shine downward rather than into the sky, and they can be dimmed or switched off late at night when few people are around. The color of light also matters. Studies suggest that the bluish-white light produced by many modern LED lamps attracts more insects than warmer, amber-colored light. Several towns have already replaced their streetlights with warmer models and installed sensors that brighten lamps only when someone passes by. In some places, regulations now require new outdoor lighting to meet such standards.\n\nSuch changes are not always welcomed, however. Some residents worry that darker streets will feel less safe, even though research on the link between lighting and safety has produced mixed results. Supporters of dark-sky policies argue that the solution is not to remove lighting altogether but to use it more thoughtfully, putting light only where and when it is needed, and in the right amount.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What did scientists find in the field study involving meadows?",
+       "choices": [
+        "Bees visited the lit flowers more often during the day, which increased seed production.",
+        "Night-flying insects were drawn into the lit meadows from the surrounding dark areas.",
+        "Flowers in the lit areas began to open only during the daytime.",
+        "Visits by daytime pollinators did not make up for the loss of visits at night."
+       ],
+       "answer": 3,
+       "why": "第2段落：昼のハチの訪問で埋め合わせられると予想したが、照らされた花の種は明らかに少なかった。ハチの訪問が増えて種が増えた、は逆。虫が引き寄せられた・昼だけ咲く、は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "What concern do scientists have about songbirds that begin breeding earlier in cities?",
+       "choices": [
+        "They may sing so loudly at night that they disturb people living nearby.",
+        "Their chicks may hatch before enough food is available for them.",
+        "They may collide with windows more often than other species.",
+        "They may stop migrating and remain in cities all year round."
+       ],
+       "answer": 1,
+       "why": "第3段落：早く子育てを始めると、親がひなに与える虫が増える前にひながかえるかもしれない。窓への衝突は渡り鳥の話。夜の歌がうるさい・渡りをやめる、は心配として書かれていない。"
+      },
+      {
+       "type": "mcq",
+       "q": "What is one point the author makes about reducing light pollution?",
+       "choices": [
+        "It requires expensive new technology that most towns cannot afford.",
+        "It can be achieved only by switching off streetlights completely.",
+        "Changing the direction, timing, and color of lights can make a real difference.",
+        "Research has clearly shown that darker streets lead to more accidents."
+       ],
+       "answer": 2,
+       "why": "第4・5段落：下向きの覆い、夜遅くの減光・消灯、暖かい色の照明で、すぐに安く減らせる。高い技術が必要・全部消すしかない、は逆。暗い道と安全の研究は「結果がまちまち」で、はっきり示されてはいない。"
+      }
+     ]
+    },
+    {
+     "id": "G3A-005",
+     "plus": true,
+     "passage": "Sizing Up the Customer\n\nUntil the nineteenth century, most clothing in Europe and North America was made to measure. Wealthy people had their garments sewn by tailors and dressmakers, while poorer families made their own clothes at home or bought second-hand ones. The idea of walking into a shop and buying a ready-made coat in a standard size would have seemed strange to most people. The shift toward ready-to-wear clothing began, perhaps surprisingly, with armies. When governments needed to supply huge numbers of uniforms quickly, it became impractical to measure every soldier individually. Manufacturers therefore began producing uniforms in a limited range of sizes based on chest measurements, and when the fighting ended, they applied the same methods to clothing for ordinary men. Standard sizes also made it possible to produce clothes in large factories and sell them in distant shops, greatly lowering their price.\n\nWomen's clothing proved much more difficult to standardize. Men's jackets and shirts could be sized reasonably well using one or two measurements, such as chest and neck, but women's garments of the period were more closely fitted and varied greatly in style. In the early twentieth century, manufacturers each used their own measurements, and a dress labeled as a particular size by one company might be much larger or smaller than a dress with the same label from another. To solve this problem, large-scale surveys were carried out in which thousands of women were measured. The results, however, were less useful than had been hoped. Because the volunteers had not been selected carefully, they did not represent the population as a whole, and the systems based on the surveys fit many customers poorly.\n\nThe situation became even more confusing in later decades because of a practice known as \"vanity sizing.\" Companies discovered that customers were more likely to buy clothes labeled with a smaller size number, so they gradually made garments larger without changing the labels. Because the changes happened slowly, few customers noticed them at the time. As a result, a dress of a given size today may be considerably larger than one with the same number sold fifty years ago, and sizes may vary widely from brand to brand. Some shoppers find that they need to try on three different sizes before finding one that fits.\n\nThis inconsistency has real costs. Online retailers, in particular, receive enormous numbers of returns from customers whose purchases did not fit, and processing them is expensive as well as environmentally harmful because of the additional transportation and packaging involved. Some estimates suggest that a large share of all clothing bought online is eventually sent back. Some companies are now experimenting with software that asks customers to enter their height and weight, or to upload photographs of themselves, and then recommends a size for each item. Others have proposed abandoning single size numbers altogether and labeling garments with actual body measurements instead. Whether such approaches will catch on remains to be seen, but they reflect a growing recognition that a system inherited from nineteenth-century uniform makers no longer serves today's diverse customers well.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "According to the passage, how did armies contribute to the development of ready-made clothing?",
+       "choices": [
+        "They required soldiers to buy their own uniforms from local tailors.",
+        "They taught tailors how to take more accurate measurements.",
+        "The need to produce many uniforms quickly led to the use of standard sizes.",
+        "They encouraged women to wear clothing similar to military uniforms."
+       ],
+       "answer": 2,
+       "why": "第1段落：大量の軍服を急いで用意するため、一人ずつ測るのをやめ、胸囲で決めた少数のサイズで作った。それが一般の男性服にも使われた。自分で買わせた・測り方を教えた・女性の服、は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why were the early surveys of women's measurements less useful than expected?",
+       "choices": [
+        "The people who were measured did not accurately reflect the general population.",
+        "Manufacturers refused to share the results with one another.",
+        "Too few women agreed to take part in the surveys.",
+        "The surveys measured only one or two parts of the body."
+       ],
+       "answer": 0,
+       "why": "第2段落：参加者を注意して選ばなかったので、全体を代表していなかった。参加者は数千人なので「少なすぎた」は誤り。1〜2か所だけ測るのは男性服の話。結果を共有しなかった、は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does the author suggest about the current system of clothing sizes?",
+       "choices": [
+        "Vanity sizing has made it easier for online shoppers to choose the right size.",
+        "It is more consistent than the system used fifty years ago.",
+        "New technology has already solved most of the problems it causes.",
+        "Its inconsistency creates costs for businesses and for the environment."
+       ],
+       "answer": 3,
+       "why": "第4段落：サイズがばらばらなので返品が多く、費用がかかり、輸送や包装で環境にも悪い。見栄サイズは選びにくくした原因で逆。50年前より一貫している、も逆。新しい技術は「広まるかはまだ分からない」。"
+      }
+     ]
+    },
+    {
+     "id": "G3A-006",
+     "plus": true,
+     "passage": "The Value of Effort\n\nMany people have spent an entire afternoon assembling a bookcase from a flat-pack kit, struggling with confusing instructions and tiny screws, only to feel unusually proud of the finished product. Psychologists who have studied this experience suggest that it reflects a general tendency: people place a higher value on objects they have helped to create, even when their contribution has been small and the result is far from perfect. The same pattern has been observed with many kinds of homemade objects, from knitted scarves to simple pieces of furniture.\n\nIn a series of experiments, researchers asked participants to fold paper animals by following simple instructions. Afterward, the participants were asked how much they would be willing to pay for their own creations. They were then shown similar animals folded by skilled experts and asked how much they would pay for those. Remarkably, the participants were willing to pay nearly as much for their own clumsy creations as for the experts' work, and they expected other people to value their animals highly as well. Other people did not share this view, however; when neutral observers were asked to bid on the participants' creations, they offered very little. The effect also had limits. When participants were given instructions so difficult that they could not complete the task, or were asked to take apart what they had built, their creations no longer seemed especially valuable to them. It appeared that effort had to end in success for it to increase an object's value.\n\nResearchers have proposed several explanations for this phenomenon. One is that completing a task gives people a sense of competence, and the object serves as a reminder of their achievement. Another is that people tend to justify the time and energy they have invested; if something required a great deal of work, they reason, it must be worth having. These explanations are not mutually exclusive, and both processes may operate at the same time. Some studies suggest that the effect is strongest among people who are especially eager to feel capable.\n\nThe tendency has important practical consequences. Businesses have long understood that customers who take part in creating a product may value it more. According to a popular story, early instant cake mixes, which required only the addition of water, sold poorly until manufacturers changed the recipe so that customers had to add a fresh egg. Historians have questioned whether the story is accurate, but the principle behind it has been widely applied, from furniture that customers assemble themselves to websites that allow shoppers to design their own sneakers.\n\nThe same tendency can also cause problems. In workplaces, employees who have developed an idea may overvalue it and resist evidence that a colleague's proposal is better. Managers who want to make sound decisions may therefore need to have projects evaluated by people who were not involved in creating them. Understanding why we love what we build, in other words, can help us recognize when that love is leading us astray. It may also explain why organizations sometimes keep investing in failing projects simply because so much work has already gone into them.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What did the paper-folding experiments show?",
+       "choices": [
+        "Participants valued the experts' animals much more highly than their own.",
+        "Participants valued their own creations far more highly than other people did.",
+        "Neutral observers were willing to pay high prices for the participants' animals.",
+        "Participants' creations became more valuable to them after they took them apart."
+       ],
+       "answer": 1,
+       "why": "第2段落：自分の不格好な作品に専門家の作品とほぼ同じ値を付けたが、中立の人はほとんど払わなかった。専門家の作品をずっと高く評価、は逆。分解すると価値が下がったので4つ目も逆。"
+      },
+      {
+       "type": "mcq",
+       "q": "According to the passage, what is one condition for the effect to occur?",
+       "choices": [
+        "The person must receive help from an expert while working.",
+        "The task must take a long time to complete.",
+        "The finished product must be of high quality.",
+        "The person must succeed in completing the task."
+       ],
+       "answer": 3,
+       "why": "第2段落の最後：努力が成功で終わらないと価値は上がらない（完成できなかった・分解した時は効果が消えた）。仕上がりは「完璧には程遠くても」よいので3つ目は誤り。専門家の助け・長い時間は条件として書かれていない。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why does the author mention workplaces?",
+       "choices": [
+        "To show that employees work harder when they design their own products.",
+        "To argue that companies should let customers assemble products themselves.",
+        "To illustrate how the tendency can lead people to make poor judgments.",
+        "To suggest that managers should be more involved in developing new ideas."
+       ],
+       "answer": 2,
+       "why": "最終段落：自分の考えを高く見すぎ、同僚のより良い案を受け入れない＝判断を誤る例。関わっていない人に評価させるべき、と言っているので「管理職がもっと関わる」は逆。客に組み立てさせる話は前の段落。"
+      }
+     ]
+    },
+    {
+     "id": "G3A-007",
+     "plus": true,
+     "passage": "Navigating by Magnetism\n\nEvery year, billions of birds travel thousands of kilometers between their breeding grounds and the places where they spend the winter, often returning to exactly the same nesting site year after year. How they manage to find their way has puzzled scientists for centuries. Some small songbirds weighing less than twenty grams cross entire deserts and seas without stopping. Birds are known to use several kinds of information, including the position of the sun during the day and the pattern of the stars at night. Experiments have shown, however, that many species can also navigate under cloudy skies, when neither the sun nor the stars are visible. This observation led researchers to suspect that birds possess a sense that humans lack: the ability to detect the earth's magnetic field.\n\nEarly evidence for this magnetic sense came from experiments with caged songbirds. During the migration season, such birds become restless and tend to hop in the direction in which they would normally fly. When researchers used electric coils to alter the magnetic field around the cages, the birds changed the direction of their hopping accordingly. Later studies suggested that the birds were not simply detecting north and south, as a compass needle does. Instead, they appeared to sense the angle at which the magnetic field lines meet the earth's surface, an angle that changes with distance from the equator. This information could tell a bird roughly how far north or south it is.\n\nExactly how birds detect the magnetic field remains controversial. For many years, one popular theory held that tiny particles of a magnetic mineral in birds' beaks acted like miniature compass needles connected to the nervous system. More careful investigation, however, revealed that many of these particles were found in a type of blood cell involved in fighting infection rather than in nerve cells, and the theory lost much of its support. A second theory proposes that the sense is located in the eye. According to this view, a protein in the retina undergoes a chemical reaction when struck by light, and the outcome of that reaction is affected by the magnetic field. If this is correct, birds may literally see the magnetic field, perhaps as a pattern of light and shade laid over their normal vision. In support of this idea, some experiments have found that the magnetic sense works only when a certain amount of light is available.\n\nUnderstanding this ability is not merely of scientific interest. Researchers have discovered that weak electromagnetic noise from electronic equipment, at levels far below those considered harmful to humans, can disrupt the magnetic orientation of birds. In one study, birds kept in wooden huts in a city lost their sense of direction but regained it when the huts were covered with aluminum screens that blocked the noise. Such findings suggest that human activity may be affecting migrating birds in ways that are invisible and that, until recently, no one had expected. Some scientists have therefore called for more research into how such noise might be reduced in places where birds rest during migration.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why did researchers begin to suspect that birds can detect the earth's magnetic field?",
+       "choices": [
+        "Birds were observed flying in circles when the sun was shining brightly.",
+        "Birds that lost their way at night were found to have damaged eyes.",
+        "Caged birds refused to move when the stars were hidden.",
+        "Many birds could find their way even when the sky was covered by clouds."
+       ],
+       "answer": 3,
+       "why": "第1段落：太陽も星も見えない曇りの日でも多くの鳥が方角を知る。これが磁気を感じる感覚を疑うきっかけ。晴れた日に回る・目の傷・星が隠れると動かない、は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "What did later studies suggest about birds' magnetic sense?",
+       "choices": [
+        "It may allow birds to estimate how far they are from the equator.",
+        "It works in exactly the same way as a compass needle.",
+        "It is used only by birds that are kept in cages.",
+        "It is less reliable than the positions of the sun and stars."
+       ],
+       "answer": 0,
+       "why": "第2段落：磁力線が地面と交わる角度を感じているようで、その角度は赤道からの距離で変わる＝南北どのくらいの位置か分かる。方位磁針と同じ、は「ただ南北を知るのではない」と否定。他の2つは本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "What happened to the theory that magnetic particles in birds' beaks act as compasses?",
+       "choices": [
+        "It was confirmed when the particles were found inside nerve cells.",
+        "It lost support when many of the particles turned out to be in other kinds of cells.",
+        "It was combined with the theory that birds sense magnetism through their eyes.",
+        "It was proven by the experiments using aluminum screens."
+       ],
+       "answer": 1,
+       "why": "第3段落：粒子の多くは神経の細胞ではなく、感染と戦う血液の細胞にあったので、支持を失った。神経細胞で見つかった、は逆。目の説とは別の説として紹介。アルミの覆いは電磁ノイズの実験。"
+      }
+     ]
     }
    ]
   },
@@ -1091,6 +2155,226 @@
        "why": "最終段落：話せる人は約900人と3倍になったが、家庭で主に使うのは数十家族だけ。言語学者は新しい話者を「失敗の印ではない」と言う。弟子制度はお年寄りにも生きがいを与えた。人数は3倍で「同じ」ではない。"
       }
      ]
+    },
+    {
+     "id": "G3B-003",
+     "plus": true,
+     "passage": "The Trouble with Open Offices\n\nFor much of the twentieth century, office workers in many countries spent their days in private rooms or in small cubicles separated by partitions. From the 1990s onward, however, a growing number of companies began tearing down these walls and moving their employees into large, open spaces where desks were arranged in long rows or clusters. Supporters of the open-plan office made two main arguments. The first was financial: by removing walls and fitting more desks into the same area, companies could greatly reduce the amount of space they needed to rent. The second was cultural. Open offices, it was claimed, would encourage employees to talk to one another more often, break down barriers between departments and levels of seniority, and allow ideas to flow freely. Managers who sat among their staff rather than behind closed doors would seem more approachable, and chance encounters between people from different teams would spark new forms of collaboration.\n\nThe financial benefits were real, but the cultural claims proved harder to verify. For years, evidence about the effects of open offices came mainly from employee surveys, which consistently found that workers in open spaces complained more about noise and lack of privacy than those in private offices. Such surveys, however, measured how people felt rather than how they actually behaved. A company might reasonably accept some grumbling about noise if the new layout genuinely increased cooperation.\n\nTo address this gap, a team of researchers studied two companies that were preparing to move from traditional offices to open-plan layouts. Before and after the move, volunteers wore small electronic badges that recorded when they were speaking face to face with colleagues, and the researchers also collected data on the employees' emails and instant messages. The results were the opposite of what the designers of the open offices had predicted. After the walls came down, face-to-face interaction fell by roughly two-thirds, while the volume of electronic messages rose considerably. Rather than chatting more, employees appeared to protect themselves from constant observation by putting on headphones, keeping their eyes on their screens, and contacting nearby colleagues by email.\n\nThe researchers suggested that this behavior was a natural human response. In a space where everyone can see and hear everything, people may feel that any conversation will disturb others or be overheard, and so they avoid starting one. Privacy, in other words, may be a precondition for openness rather than its enemy. Other studies have found that the constant background noise of open offices makes it harder to concentrate on complex tasks such as writing or analysis, and some research has linked open-plan layouts to higher rates of sick leave, perhaps because illnesses spread more easily when many people share the same air.\n\nDefenders of open offices argue that these findings should not be overstated. Studies of a small number of companies, they point out, may not apply to all organizations, and the outcome may depend heavily on how a space is designed and managed. An open office with high ceilings, sound-absorbing materials, and clear rules about noise may function very differently from a crowded room with hard floors and no quiet areas. Moreover, some kinds of work genuinely benefit from being able to see and hear colleagues. In a newsroom, for example, information must be shared instantly, and overhearing a conversation can be an advantage rather than a distraction.\n\nPartly in response to these debates, many companies have adopted what is known as \"activity-based working.\" Instead of assigning each employee a permanent desk, these offices provide a variety of spaces designed for different purposes: open areas for teamwork, small enclosed rooms for phone calls or concentrated work, and comfortable lounges for informal meetings. Employees are expected to move between these spaces depending on what they are doing at any given time. In principle, this approach combines the advantages of open and private layouts. In practice, results have been mixed. Some workers enjoy the freedom to choose, but others report spending a significant amount of time each morning searching for a free desk, and many people settle in the same spot every day regardless of the task they are performing. When companies reduce the total number of desks to save money, the competition for quiet spaces can become intense.\n\nThe spread of remote work has added yet another dimension to the discussion. With many employees now working from home for part of the week, offices are increasingly used for activities that are difficult to do online, such as meetings, training, and building relationships. Some experts argue that this shift strengthens the case for open, flexible spaces designed mainly for interaction, with concentrated work done at home. Others caution that not every employee has a quiet place to work at home, and that offices should continue to provide spaces where people can focus without interruption.\n\nWhat the history of the open-plan office suggests, perhaps, is that there is no single ideal layout. The mistake made by many companies was not that they chose open spaces, but that they assumed a change in physical design would automatically produce a change in human behavior. Workplaces seem to function best when employees have some control over their surroundings and can choose between being visible and being undisturbed.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What was one reason supporters gave for introducing open-plan offices?",
+       "choices": [
+        "They would make it easier for managers to monitor employees' productivity.",
+        "They would reduce the amount of noise that employees had to deal with.",
+        "They would encourage communication between people in different positions and departments.",
+        "They would allow companies to spend more money on office equipment."
+       ],
+       "answer": 2,
+       "why": "第1段落：部署や上下の壁を取り払い、社員同士の会話や偶然の出会いから協力が生まれる、という文化面の理由。もう1つの理由は家賃の節約で、機器に使うためではない。監視・騒音を減らす、は本文に無い（騒音はむしろ増えた）。"
+      },
+      {
+       "type": "mcq",
+       "q": "What did the study using electronic badges find?",
+       "choices": [
+        "Employees communicated in person less and electronically more after the move.",
+        "Employees who wore headphones were more productive than those who did not.",
+        "Face-to-face interaction increased, but mainly between members of the same team.",
+        "Employees' complaints about noise disappeared after a few months."
+       ],
+       "answer": 0,
+       "why": "第3段落：壁を取った後、対面のやり取りは約3分の2減り、メールなどの電子のやり取りはかなり増えた。対面が増えた、は逆。ヘッドホンと生産性・苦情が消えた、は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "What point do defenders of open offices make?",
+       "choices": [
+        "Employee surveys are a more reliable source of evidence than electronic data.",
+        "Open offices reduce the spread of illness by improving air circulation.",
+        "Most kinds of work require employees to hear their colleagues' conversations.",
+        "The effects of an open office may depend on how it is designed and on the type of work done there."
+       ],
+       "answer": 3,
+       "why": "第5段落：少数の会社の研究は全部には当てはまらず、結果は空間の設計・運営で大きく変わる。また報道の現場のように見聞きできる方がよい仕事もある。「ほとんどの仕事」は言い過ぎ（本文は some kinds）。病気は広がりやすい方で逆。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which of the following statements would the author of the passage most likely agree with?",
+       "choices": [
+        "Activity-based working has solved most of the problems of open-plan offices.",
+        "Changing the layout of an office will not by itself change how people work together.",
+        "Companies should return to giving every employee a private office.",
+        "The spread of remote work has made the design of offices largely irrelevant."
+       ],
+       "answer": 1,
+       "why": "最終段落：会社の誤りは、建物の設計を変えれば人の行動も自然に変わると思い込んだこと。活動型の働き方は「結果はまちまち」。理想の配置は1つではないので、全員に個室、も言っていない。在宅勤務で設計が無意味になった、も逆。"
+      }
+     ]
+    },
+    {
+     "id": "G3B-004",
+     "plus": true,
+     "passage": "Placebos Without Deception\n\nFor centuries, doctors have known that patients sometimes feel better after receiving a treatment that contains no active ingredient. A sugar pill, an injection of salt water, or even a fake operation can, under the right conditions, reduce pain, improve sleep, or ease the symptoms of digestive disorders. This \"placebo effect\" has long been regarded as both a nuisance and a mystery. It is a nuisance because, in order to show that a new drug genuinely works, researchers must prove that it produces better results than a placebo, and a strong placebo response can make an effective medicine appear useless. It is a mystery because no one fully understands how a substance with no medical properties can produce real changes in how people feel.\n\nResearch over the past few decades has begun to clarify some of the mechanisms involved. Brain-imaging studies have shown that when people who have been given a placebo for pain expect relief, their brains release natural pain-reducing chemicals. Expectation appears to be central. Patients who are told that a treatment is likely to be effective tend to respond more strongly than those who are told that its effects are uncertain. Even the appearance of a treatment matters: in several studies, capsules were perceived as more powerful than tablets, and pills in brand-name packaging produced stronger effects than identical pills in plain packaging. The relationship between patient and practitioner also seems to play a role. In one experiment involving patients with a long-term digestive condition, those who received fake acupuncture from a warm, attentive practitioner reported greater improvement than those who received the same fake treatment from a practitioner who was polite but distant.\n\nFor a long time, it was assumed that the placebo effect depended on deception. If patients knew that their pill contained nothing but sugar, the reasoning went, their expectation of improvement would disappear, and so would the effect. This assumption created an ethical problem. Although many doctors have admitted in surveys that they occasionally prescribe treatments mainly for their psychological effect, such as vitamins for patients who do not need them, deliberately misleading patients is widely considered a violation of their right to make informed decisions about their own care. Some doctors once argued that a small amount of deception was justified if it helped patients, but this view has become far less accepted as medicine has placed greater emphasis on patients' rights.\n\nRecent studies, however, have challenged the assumption that deception is necessary. In a series of trials, patients suffering from conditions such as chronic back pain were given what researchers call \"open-label placebos.\" The patients were told clearly that the pills contained no active ingredient, but they were also told that placebos had been shown to produce improvements through processes in the body and mind, and they were encouraged to take the pills regularly. Surprisingly, many of these patients reported significant improvements compared with patients who received no pills at all. In some trials, the benefits were substantial. Several participants said that they had expected nothing to happen and were astonished by the results.\n\nHow can a pill work when the patient knows it is fake? Researchers are still debating the answer. One possibility is that the ritual of taking a pill, which people have performed countless times when they were ill and later recovered, triggers a learned response that operates partly outside conscious awareness, much as the smell of a favorite food can make the mouth water. Another is that open-label placebos encourage patients to pay attention to their symptoms in a more hopeful way, noticing small improvements that they might otherwise have overlooked. A third suggestion is that simply doing something about a problem, rather than waiting passively, may reduce the anxiety that often makes symptoms feel worse.\n\nNot everyone is convinced. Critics point out that most open-label trials have been small and that, because patients know whether they are receiving a pill, the studies cannot be \"blinded\" in the usual way. Patients who agree to take part may also be unusually open to the idea that placebos can help, which could exaggerate the results. Furthermore, most of the improvements reported have involved conditions in which symptoms are measured by asking patients how they feel, such as pain or tiredness. There is little evidence that placebos, open-label or otherwise, can shrink tumors, lower blood sugar, or cure infections. Some doctors worry that enthusiasm for placebos could lead patients to delay seeking effective treatment for serious illnesses.\n\nEven so, many researchers believe that the study of placebos holds valuable lessons for medicine as a whole. If expectations, rituals, and the quality of the relationship between doctor and patient can influence how people feel, then these factors are likely to affect the success of real treatments as well. A doctor who takes the time to listen to a patient and explain a treatment clearly may be doing more than simply being polite. From this perspective, the goal is not so much to prescribe fake pills as to make sure that every genuine treatment is delivered in a way that makes the most of the body's own capacity for healing.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why has the placebo effect been considered a nuisance?",
+       "choices": [
+        "It causes many patients to stop taking their real medicine.",
+        "It can make it difficult to show that a new drug is effective.",
+        "It makes patients expect doctors to spend more time with them.",
+        "It has greatly increased the cost of treating pain."
+       ],
+       "answer": 1,
+       "why": "第1段落：新薬が効くと示すには偽薬より良い結果を出す必要があり、偽薬の反応が強いと効く薬も効かないように見える。本物の薬をやめる・医者に時間を求める・費用の増加は書かれていない。"
+      },
+      {
+       "type": "mcq",
+       "q": "What did the experiment involving fake acupuncture suggest?",
+       "choices": [
+        "Fake acupuncture is more effective than real acupuncture for digestive problems.",
+        "Patients respond more strongly to capsules than to any other form of treatment.",
+        "Polite practitioners produced better results than those who were very friendly.",
+        "The way a practitioner treats a patient can influence how much the patient improves."
+       ],
+       "answer": 3,
+       "why": "第2段落：同じ偽の鍼でも、温かく気配りのある施術者の方が、丁寧だがよそよそしい施術者より改善が大きかった＝接し方が結果を左右する。丁寧な方が良かった、は逆。本物の鍼との比較はしていない。カプセルは別の研究。"
+      },
+      {
+       "type": "mcq",
+       "q": "What was surprising about the results of the open-label placebo trials?",
+       "choices": [
+        "Patients improved even though they had been told that their pills contained no active ingredient.",
+        "Patients who had been deceived improved less than those who received no pills.",
+        "The pills were effective only when patients did not know they were placebos.",
+        "Patients reported that their symptoms became worse after the trials ended."
+       ],
+       "answer": 0,
+       "why": "第4段落：中身が無いとはっきり告げられたのに、薬を飲まなかった人に比べて大きな改善が見られた。知らない時だけ効く、は従来の考え方で、この研究が疑問を投げかけた方。他の2つは本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "What is one criticism of open-label placebo research mentioned in the passage?",
+       "choices": [
+        "It has focused too heavily on conditions such as tumors and infections.",
+        "It requires doctors to mislead patients about their treatment.",
+        "The people who take part may be especially likely to believe that placebos work.",
+        "Its results have been much smaller than those of conventional treatments."
+       ],
+       "answer": 2,
+       "why": "第6段落：参加に同意する人は偽薬が効くという考えを受け入れやすく、結果を大きく見せている可能性がある。研究は痛みなど本人の感じ方で測る症状が中心で、腫瘍などには証拠が乏しいので1つ目は逆。だます必要は無いのが特徴。効果が従来の治療より小さいという批判は書かれていない。"
+      }
+     ]
+    },
+    {
+     "id": "G3B-005",
+     "plus": true,
+     "passage": "How Cats Came to Live with Humans\n\nOf all the animals that share our homes, the cat is perhaps the most puzzling. Dogs, horses, and cattle were domesticated by people who deliberately selected animals for useful traits, such as the ability to herd sheep, pull heavy loads, or produce large quantities of milk. Cats, by contrast, perform few tasks that people need, rarely follow commands, and in many cases still hunt and breed largely as they please. For this reason, some researchers describe cats as only \"semi-domesticated,\" and many scientists now believe that, rather than being tamed by humans, cats largely domesticated themselves.\n\nAccording to this view, the story began roughly ten thousand years ago, when people in the Near East started to farm. Early farmers stored large amounts of grain, and these stores attracted mice and rats. The rodents, in turn, attracted wildcats from the surrounding countryside. Wildcats that were less afraid of people could take advantage of this rich new food supply, and over many generations, populations living near villages became increasingly tolerant of human company. Farmers, for their part, probably had good reason to welcome animals that kept pests under control. No one needed to capture or breed the cats deliberately; the relationship developed because it benefited both sides.\n\nArchaeological evidence supports the idea that this relationship is very old. On an island in the eastern Mediterranean, archaeologists discovered a grave, thought to be around 9,500 years old, in which a person had been buried together with a young cat. Since wildcats are not native to the island, the animal or its ancestors must have been brought there by boat, suggesting that people already valued cats enough to carry them across the sea. Egyptian paintings created thousands of years later show cats sitting under chairs and wearing collars, indicating that by then they had become household companions as well as pest controllers. Some researchers caution, however, that a single grave cannot tell us whether cats were common companions at the time or whether this case was unusual.\n\nMore detailed insights have come from genetics. In one large study, researchers analyzed DNA from the remains of more than two hundred cats found at archaeological sites across Europe, Africa, and Asia, covering a period of about nine thousand years. The results suggested that domestic cats spread in two major waves. The first accompanied early farmers as agriculture expanded from the Near East into neighboring regions. The second came much later, when cats from Egypt spread rapidly around the Mediterranean and beyond. Because cats from this second wave have been found at ports and along trade routes, the researchers concluded that they were probably carried on ships, where they would have been valued for protecting food supplies and cargo from rodents.\n\nThe genetic study also revealed something surprising: for most of their history, domestic cats looked very much like their wild relatives. The blotched \"tabby\" coat pattern familiar to many cat owners today, for example, did not become common until the Middle Ages. Selective breeding for particular colors, coat lengths, and body shapes, which has produced the wide variety of modern breeds, began only within the past two hundred years or so. Compared with dogs, whose appearance and behavior have been changed dramatically by thousands of years of selective breeding, cats remain genetically close to wildcats, and the two can still breed with each other where their ranges overlap.\n\nThis closeness raises interesting questions about how domestication changes animals. Some researchers have proposed that domesticated mammals share a set of features, including smaller brains, floppy ears, shorter faces, and patches of white fur. They believe these features may be linked to changes in a group of cells that develop very early in the embryo. Domestic cats do have somewhat smaller brains than wildcats, and white patches are common, but they show these traits less strongly than many other domesticated species. Researchers who study cat behavior point out that the most important changes may be ones that cannot be seen at all. Domestic cats are far more tolerant of other cats and of humans than wildcats are, and they appear to have developed special ways of communicating with people. Some studies suggest, for instance, that adult cats meow far more often to humans than to other cats, and that individual cats may adjust their meows depending on how their owners respond.\n\nUnderstanding the history of cat domestication is not merely of academic interest. The same qualities that allowed cats to live alongside humans without being fully controlled by them have also made them a challenge for conservation. Domestic cats that roam freely kill large numbers of birds and small mammals each year, and on some islands they have contributed to the decline of native species. Some communities have responded by encouraging owners to keep their cats indoors, especially at night, although such measures remain controversial among cat lovers. At the same time, wildcat populations in parts of Europe are threatened partly because they interbreed with domestic cats and gradually lose their genetic distinctiveness. Managing these problems requires recognizing that the cat occupies an unusual position between the wild and the domestic worlds, one that it has held, largely on its own terms, for thousands of years.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why do many scientists believe that cats \"domesticated themselves\"?",
+       "choices": [
+        "Early farmers captured wildcats and trained them to hunt mice.",
+        "Cats were selected by humans for their ability to follow commands.",
+        "Wildcats were brought into villages because people wanted them as pets.",
+        "Wildcats that tolerated people benefited from living near human food stores."
+       ],
+       "answer": 3,
+       "why": "第2段落：穀物倉庫に集まるネズミを求めて、人を怖がらない山猫が村の近くで暮らすようになった。誰も捕まえたり繁殖させたりしていないので、1つ目・3つ目は逆。猫は命令にほとんど従わない（第1段落）。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does the grave discovered on the Mediterranean island suggest?",
+       "choices": [
+        "Wildcats originally lived on the island before people arrived.",
+        "Cats were first domesticated in Egypt rather than in the Near East.",
+        "People valued cats enough to bring them across the sea thousands of years ago.",
+        "Cats were mainly used to protect cargo on ships at that time."
+       ],
+       "answer": 2,
+       "why": "第3段落：山猫は島にもともといないので、船で運ばれたはず＝海を越えて運ぶほど大事にしていた。もともと島にいた、は逆。エジプトはずっと後の時代。船の積み荷を守ったのは第2の波の話。"
+      },
+      {
+       "type": "mcq",
+       "q": "According to the genetic study, how did the second wave of domestic cats spread?",
+       "choices": [
+        "They followed early farmers as agriculture expanded from the Near East.",
+        "They were probably carried on ships along trade routes.",
+        "They were selectively bred for their tabby coat patterns.",
+        "They moved inland from ports in search of wildcats to breed with."
+       ],
+       "answer": 1,
+       "why": "第4段落：第2の波の猫は港や交易路で見つかるので、船で運ばれたと考えられる。農業と一緒に広がったのは第1の波。しま模様は中世以降の話。内陸へ山猫を探しに、は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which of the following statements would the author of the passage most likely agree with?",
+       "choices": [
+        "The partly independent nature of cats creates difficulties for protecting wildlife.",
+        "Domestic cats should be removed from areas of Europe where wildcats live.",
+        "Cats have changed in appearance far more than dogs during domestication.",
+        "The behavior of domestic cats has hardly changed since they began living with humans."
+       ],
+       "answer": 0,
+       "why": "最終段落：人に完全には管理されない性質のせいで、放し飼いの猫が鳥などを殺し、山猫とも交配して保護の難題になっている。犬より大きく変わった、は逆（猫は山猫に近いまま）。行動は人や猫に寛容になるなど変わった。取り除くべき、とは言っていない。"
+      }
+     ]
+    },
+    {
+     "id": "G3B-006",
+     "plus": true,
+     "passage": "The Changing Role of Zoos\n\nFor most of their history, zoos existed mainly to entertain. In the nineteenth and early twentieth centuries, city zoos displayed as many exotic species as possible, often in small, bare cages that gave visitors a clear view of the animals but gave the animals little room to move. Animals were captured from the wild in large numbers, and many died within a few years of arriving. Over the past several decades, however, many zoos have attempted to reinvent themselves. Leading institutions now describe their main missions as conservation, education, and scientific research, and they have replaced cages with larger enclosures designed to resemble natural habitats. Critics, however, continue to question whether keeping wild animals in captivity can be justified at all.\n\nThe strongest argument in favor of modern zoos concerns endangered species. A number of animals that had disappeared from the wild, or nearly so, survived only because small populations were kept and bred in captivity. In several cases, zoos and related breeding centers have successfully returned animals to their natural habitats once the threats that had driven them toward extinction were reduced. Zoos have also become important sources of funding for conservation in the wild, using part of the money they earn from ticket sales to protect habitats, train local wildlife rangers, and support research in the countries where endangered species live. Supporters argue that without such contributions, many conservation programs would struggle to survive. Researchers based at zoos have also contributed knowledge about animal health and reproduction that is now used by scientists working in the wild.\n\nCritics respond that these success stories, while real, involve only a small proportion of the animals that zoos keep. Most species on display are not endangered, and many of those that are endangered are not part of any program to return them to the wild. Large, wide-ranging animals pose a particular problem. Elephants, polar bears, and big cats naturally travel great distances, and research has found that some individuals kept in zoos show signs of stress, such as pacing back and forth or swaying from side to side for long periods. Although enclosures have improved, critics argue that no zoo can provide enough space for an animal that might cover dozens of kilometers in a single day in the wild. For such species, they say, the case for captivity is especially weak.\n\nZoos also claim to educate the public, inspiring visitors to care about wildlife and to support conservation. Here the evidence is mixed. Some surveys have found that visitors leave with a greater understanding of biodiversity and a stronger sense that they can help protect it. Other studies, however, suggest that many visitors spend only a few seconds in front of each enclosure and pay little attention to information signs, treating a visit primarily as a pleasant day out with their families. Researchers have also noted how difficult it is to measure whether a visit to the zoo actually changes people's behavior, for example by encouraging them to donate to conservation groups or to make environmentally friendly choices, rather than simply changing what they say in a survey.\n\nIn response to such criticism, some zoos have changed which animals they keep. Several have stopped housing elephants or have sent them to large sanctuaries, focusing their resources instead on smaller species that can be cared for more effectively, such as frogs, insects, and reptiles. Many of these species are seriously threatened in the wild, and they can often be bred successfully in relatively small spaces. Such species rarely attract crowds in the way that elephants and lions do, however, so these zoos have had to find new ways of drawing visitors. Other zoos have extended their work beyond their own grounds, operating field stations and research programs in natural habitats. Some conservationists have even proposed that the zoo of the future should look less like a park for viewing animals and more like a combination of breeding center, research laboratory, and visitor center.\n\nNot everyone is satisfied with these reforms. Some animal-welfare groups argue that the existence of zoos sends the message that it is acceptable to keep wild animals for human enjoyment, regardless of how well they are treated. They believe that resources would be better spent protecting habitats directly, so that animals do not need to be kept in captivity at all. Zoo supporters respond that habitat protection and captive breeding are not alternatives but complementary strategies; for species whose habitats are disappearing rapidly, a population kept safely in captivity may provide crucial insurance while longer-term solutions are developed.\n\nThe debate is unlikely to be resolved soon, partly because the two sides often start from different values. For some, the welfare of each individual animal is the most important consideration; for others, the survival of entire species matters more. What does seem clear is that the traditional zoo, built mainly to display as many impressive animals as possible, is becoming harder to defend. Zoos that wish to justify their existence in the twenty-first century will need to show, with clear evidence, that the animals in their care benefit from being there and that their work makes a measurable difference to the survival of species in the wild.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "How have many zoos changed over the past several decades?",
+       "choices": [
+        "They have shifted their focus toward conservation, education, and research.",
+        "They have increased the number of animals captured from the wild.",
+        "They have stopped charging visitors for admission.",
+        "They have replaced natural-looking enclosures with smaller cages."
+       ],
+       "answer": 0,
+       "why": "第1段落：主な使命を保護・教育・研究とし、檻を自然に近い広い囲いに替えた。檻に戻した、は逆。野生からの捕獲が増えた・入場料をやめた、は本文に無い（入場料は保護の資金に使う）。"
+      },
+      {
+       "type": "mcq",
+       "q": "What do critics say about large, wide-ranging animals?",
+       "choices": [
+        "They adapt to life in zoos more easily than smaller species do.",
+        "Zoos cannot give them enough space, so keeping them is particularly hard to justify.",
+        "They are the species most often returned to the wild.",
+        "They show signs of stress only when their enclosures are poorly designed."
+       ],
+       "answer": 1,
+       "why": "第3段落：1日に何十キロも移動する動物に十分な広さを与えられる動物園は無く、飼う理由が特に弱い。囲いが良くなっても足りない、と言っているので4つ目は誤り。小さい種より慣れやすい、は逆。"
+      },
+      {
+       "type": "mcq",
+       "q": "What problem do researchers mention regarding the educational value of zoos?",
+       "choices": [
+        "Visitors read information signs so carefully that they do not enjoy the animals.",
+        "Most visitors already know a great deal about biodiversity before they arrive.",
+        "It is hard to tell whether visits lead to real changes in people's actions.",
+        "Surveys show that zoo visits make people less likely to support conservation."
+       ],
+       "answer": 2,
+       "why": "第4段落：訪問が寄付や環境に良い選択など実際の行動を変えたのか、アンケートの答えが変わっただけなのか、測るのが難しい。看板はほとんど読まれないので1つ目は逆。他の2つは本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which of the following statements would the author of the passage most likely agree with?",
+       "choices": [
+        "Zoos should be closed because they cannot contribute to the survival of species.",
+        "The welfare of individual animals is less important than the survival of species.",
+        "Traditional zoos that display many large animals are still the best model for the future.",
+        "Zoos need to provide clear evidence of their benefits in order to justify their existence."
+       ],
+       "answer": 3,
+       "why": "最終段落：これからの動物園は、動物のためになっていること、種の存続に目に見える違いを生んでいることを、はっきりした証拠で示す必要がある。伝統的な動物園は守りにくくなっているので3つ目は逆。閉鎖すべき・個体より種が大事、とは筆者は言っていない（価値観の違いとして紹介）。"
+      }
+     ]
     }
    ]
   },
@@ -1156,6 +2440,86 @@
      "maxWords": 110,
      "source": "In recent years, the number of international tourists has grown rapidly, driven by cheaper flights and the spread of online booking services. While tourism brings money and jobs to many communities, some popular destinations have begun to feel overwhelmed. Historic town centers are crowded with visitors, rents have risen as apartments are converted into short-term rentals, and residents complain about noise and litter. In response, a number of cities and regions have introduced special taxes that visitors must pay, often added to the cost of a hotel room or charged as a daily entrance fee.\n\nSupporters argue that such taxes are a fair way to share the costs of tourism. Large numbers of visitors place heavy demands on public services, such as waste collection, public transportation, and the maintenance of historic sites, and it seems reasonable that tourists, rather than local taxpayers alone, should help pay for them. The revenue can also be used to protect the environment or to support affordable housing for residents. Some supporters also hope that higher costs will discourage short day trips, which bring crowds but relatively little income, and encourage visitors to stay longer and spend more money at local businesses.\n\nCritics, however, doubt that such taxes are effective. In many cases, the fees are too small to change visitors' behavior, and popular destinations remain just as crowded as before. If the fees are raised high enough to make a difference, on the other hand, tourism could become a privilege available only to the wealthy. Business owners in the tourism industry also worry that visitors will choose cheaper destinations instead, leading to lost income and jobs.\n\nThere are also questions about how the money is spent. In some places, residents complain that tourist tax revenue disappears into general government budgets rather than being used to address the problems caused by tourism. Experts suggest that taxes are most likely to win public support when the authorities clearly explain how the money will be used and when they are combined with other measures, such as limits on short-term rentals or systems that require visitors to book entry to popular sites in advance.",
      "note": "段落ごとに要点を1文ずつ（話題・賛成側・反対側・今後）。例や数字は削り、本文の語句はできるだけ言い換える。自分の意見は書かない。"
+    },
+    {
+     "id": "W1-007",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below and write a summary of it in English. Use your own words as far as possible. Your summary should be between 90 and 110 words.",
+     "minWords": 90,
+     "maxWords": 110,
+     "note": "段落ごとに要点を1文ずつ（話題・賛成側・反対側・今後）。例や数字は削り、本文の語句はできるだけ言い換える。自分の意見は書かない。",
+     "source": "In recent years, a number of companies in several countries have experimented with a four-day working week. Under the most common model, employees work four days instead of five but receive the same salary, on the condition that they maintain their usual level of productivity. Some trials have lasted only a few months, while other firms have made the change permanent. The idea has attracted wide attention from business leaders, workers, and researchers.\n\nSupporters argue that a shorter week benefits both employees and employers. Workers who take part in such trials frequently report lower levels of stress and exhaustion, as well as more time for their families, hobbies, and health. Many companies say that productivity has stayed the same or even risen, because employees waste less time in unnecessary meetings and concentrate harder when they know their time is limited. In addition, firms that offer a four-day week often find it easier to attract and keep talented staff, which can reduce the considerable costs of recruiting and training new employees.\n\nCritics, however, doubt that the model can work in every industry. In offices where tasks can be completed at any time, compressing work into four days may be relatively simple. In hospitals, shops, and factories, by contrast, someone must be present every day, and giving each worker an extra day off may require hiring additional staff. Some researchers also point out that companies that volunteer for trials may already be well suited to the change, so their positive results might not apply to businesses in general. There are concerns, too, that some employees simply work longer hours on their four working days, which could increase fatigue rather than reduce it.\n\nMoreover, the effects on customers and the wider economy remain uncertain. Clients may be frustrated if companies are unavailable on certain days, and small businesses with few employees may find it especially hard to adjust. For these reasons, many experts believe that the four-day week is unlikely to replace the traditional schedule completely in the near future. Instead, it may become one of several flexible options, such as staggered hours or remote work, that employers use to meet the needs of different workers."
+    },
+    {
+     "id": "W1-008",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below and write a summary of it in English. Use your own words as far as possible. Your summary should be between 90 and 110 words.",
+     "minWords": 90,
+     "maxWords": 110,
+     "note": "段落ごとに要点を1文ずつ（話題・賛成側・反対側・今後）。例や数字は削り、本文の語句はできるだけ言い換える。自分の意見は書かない。",
+     "source": "Over the past decade, many schools around the world have introduced rules restricting the use of smartphones by students during the school day. Some require students to switch off their phones and keep them in lockers, while others collect devices at the start of the day and return them only when classes have finished. In a few countries, national governments have introduced such restrictions for all public schools, and the policy has become a subject of lively debate among parents, teachers, and researchers.\n\nSupporters of these rules believe that phones distract students and harm their learning. Even when a phone is silent, they argue, the temptation to check messages or social media can make it difficult for young people to focus on lessons. Some studies have found that test scores improved after schools banned phones, with the greatest gains among students who had been struggling academically. Supporters also claim that restricting phones encourages students to talk and play with one another during breaks, and that it reduces opportunities for online bullying during school hours.\n\nOpponents, however, argue that a complete ban is the wrong approach. Smartphones, they point out, can be valuable learning tools, allowing students to look up information, use educational apps, or record experiments. Many parents also want to be able to contact their children in an emergency or to arrange how they will get home. Moreover, critics claim that banning phones does not teach students how to use technology responsibly, a skill they will need as adults. Instead, they suggest, schools should teach students to manage their own phone use and to recognize when it is becoming harmful.\n\nThe evidence on this issue is still far from conclusive. Studies of phone bans have produced mixed results, partly because schools introduce different kinds of rules and enforce them with varying degrees of strictness. Researchers note that students may simply use their phones more at home, which could cancel out any benefits gained at school. Some experts therefore recommend a middle path, such as allowing phones in certain lessons for specific purposes while keeping them out of sight at other times. Whatever approach schools choose, it seems clear that the role of smartphones in education will remain a contentious question for years to come."
+    },
+    {
+     "id": "W1-009",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below and write a summary of it in English. Use your own words as far as possible. Your summary should be between 90 and 110 words.",
+     "minWords": 90,
+     "maxWords": 110,
+     "note": "段落ごとに要点を1文ずつ（話題・賛成側・反対側・今後）。例や数字は削り、本文の語句はできるだけ言い換える。自分の意見は書かない。",
+     "source": "As the world's population grows and more people move to cities, some entrepreneurs believe that the future of agriculture lies indoors. In so-called vertical farms, vegetables and herbs are grown in stacked layers inside warehouses or other buildings, often without soil. Instead, the plants' roots are placed in water containing nutrients, and the light they need is provided by LED lamps rather than the sun. Temperature, humidity, and even the color of the light can be controlled by computers, allowing crops to be produced throughout the year.\n\nAdvocates argue that vertical farming offers several advantages over traditional agriculture. Because the crops are grown in a closed environment, they require far less water, and there is little need for pesticides, since insects and diseases can be kept out. Vertical farms can also be built in the middle of cities, close to the people who will eat the food. This reduces the distance that produce must be transported, which can lower fuel use and allow vegetables to reach stores while they are still fresh. Furthermore, supporters point out that indoor farms are not affected by droughts, floods, or unusual weather, which may become more common in the future.\n\nSkeptics, however, question whether vertical farming can become a major source of food. The most serious problem is energy. Replacing sunlight with artificial lighting requires enormous amounts of electricity, and unless that electricity comes from renewable sources, the environmental benefits may be limited. High energy and construction costs also mean that vertical farms usually focus on leafy greens and herbs, which grow quickly and can be sold at high prices. Staple crops such as wheat, rice, and corn, which provide most of the calories that people eat, would be far too expensive to grow indoors with current technology.\n\nThese economic challenges have already affected the industry. Several vertical-farming companies that had attracted large investments have closed or reduced their operations after struggling to make a profit. Nevertheless, researchers continue to develop more efficient lighting and automated systems that may lower costs. Many experts now believe that vertical farms are unlikely to replace conventional farms but could become a useful addition to them, supplying fresh produce to cities and regions where growing conditions are poor."
+    },
+    {
+     "id": "W1-010",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below and write a summary of it in English. Use your own words as far as possible. Your summary should be between 90 and 110 words.",
+     "minWords": 90,
+     "maxWords": 110,
+     "note": "段落ごとに要点を1文ずつ（話題・賛成側・反対側・今後）。例や数字は削り、本文の語句はできるだけ言い換える。自分の意見は書かない。",
+     "source": "In many countries, the use of cash has declined rapidly over the past decade. Consumers increasingly pay for goods and services with credit cards, smartphones, and other digital methods, and some shops and restaurants no longer accept banknotes and coins at all. In a few countries, cash now accounts for only a small fraction of all payments, and some people have begun to predict that physical money may disappear entirely within a generation.\n\nSupporters of a cashless society point to a number of benefits. Digital payments are fast and convenient, allowing customers to pay with a single tap and avoiding the need to carry change. Businesses can save the time and money involved in counting, storing, and transporting cash, and they face a lower risk of theft. Governments may also benefit, because electronic transactions leave a record, making it harder for people to hide income in order to avoid paying taxes. In addition, some argue that digital payment systems make it easier to send money quickly to family members or to people in need.\n\nCritics, however, warn that the disappearance of cash could leave some groups behind. Elderly people, those with disabilities, and people on low incomes are often less comfortable with digital technology or may not have access to a bank account or a smartphone. For them, the refusal of shops to accept cash can make everyday life considerably more difficult. Critics also raise concerns about privacy. Every electronic payment can be tracked, and some people are uneasy about the amount of information that banks and technology companies collect about their spending habits.\n\nThere are also worries about the reliability of digital systems. A power cut, a technical failure, or a cyberattack could prevent people from paying for food or other essentials, whereas cash continues to work in such situations. For these reasons, several countries that had moved quickly toward digital payments have taken steps to protect access to cash, for example by requiring banks to maintain a minimum number of cash machines or by obliging certain businesses to accept banknotes. The challenge for the future may be to enjoy the convenience of digital payments without abandoning those who still depend on physical money."
+    },
+    {
+     "id": "W1-011",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below and write a summary of it in English. Use your own words as far as possible. Your summary should be between 90 and 110 words.",
+     "minWords": 90,
+     "maxWords": 110,
+     "note": "段落ごとに要点を1文ずつ（話題・賛成側・反対側・今後）。例や数字は削り、本文の語句はできるだけ言い換える。自分の意見は書かない。",
+     "source": "Several companies are now testing the use of drones, small unmanned aircraft, to deliver packages directly to customers' homes. In trial programs in a number of countries, drones have carried items such as groceries, medicines, and restaurant meals, flying over traffic and lowering their deliveries to the ground on a cord or dropping them gently into back gardens. Supporters believe that drone delivery could eventually become a common part of daily life, while others remain doubtful.\n\nThose in favor of drone delivery highlight its speed and efficiency. A drone can travel in a straight line and is not slowed down by traffic jams, so it may be able to deliver a small package in a matter of minutes. This could be particularly valuable in rural or isolated areas, where roads are poor and delivery trucks must travel long distances to reach a few customers. Drones have already been used to transport medical supplies, such as blood samples and medicines, to remote clinics. In addition, because many drones are powered by electricity, supporters argue that they could produce fewer emissions than delivery vans for certain types of trips.\n\nCritics, however, point to a range of practical problems. Most drones can carry only light packages and travel limited distances before their batteries need recharging. They may also have difficulty operating in strong winds, heavy rain, or snow. In cities, finding safe places for drones to land is not easy, especially for people who live in apartment buildings without gardens. Some residents have also complained about the buzzing noise drones make, and there are fears that a large number of aircraft flying over neighborhoods could cause accidents if they malfunction.\n\nPrivacy and regulation present further challenges. Because drones are often equipped with cameras for navigation, some people worry that they could be used to collect images of private homes. Governments, meanwhile, must decide how to manage busy skies in which delivery drones share airspace with helicopters and other aircraft. Many experts therefore expect drone delivery to grow slowly, beginning with specialized uses such as medical deliveries in remote regions, rather than replacing delivery vans in crowded cities in the near future."
+    },
+    {
+     "id": "W1-012",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below and write a summary of it in English. Use your own words as far as possible. Your summary should be between 90 and 110 words.",
+     "minWords": 90,
+     "maxWords": 110,
+     "note": "段落ごとに要点を1文ずつ（話題・賛成側・反対側・今後）。例や数字は削り、本文の語句はできるだけ言い換える。自分の意見は書かない。",
+     "source": "A growing number of employers have begun offering their staff wearable fitness trackers, small devices that record information such as the number of steps a person takes, their heart rate, and the quality of their sleep. In many cases, employees who agree to wear the devices and meet certain activity targets are rewarded with prizes, extra vacation days, or discounts on their health insurance. These programs are often presented as part of a broader effort to improve workers' well-being.\n\nSupporters argue that such programs benefit both workers and companies. Many people find that tracking their activity motivates them to exercise more, and friendly competitions between colleagues can make healthy habits more enjoyable. Over time, healthier employees may take fewer sick days and be more productive at work. For employers, especially in countries where companies pay part of their workers' medical costs, reducing illness among staff can lead to significant savings. Supporters also note that these programs can help employees notice early signs of health problems, such as poor sleep, and encourage them to seek medical advice.\n\nCritics, however, have raised serious concerns about privacy. The information collected by fitness trackers is highly personal, and some employees worry that their employers could use it to make decisions about promotions or dismissals. Even if companies promise to keep the data confidential, it may be stored by third-party technology firms whose security practices are unclear. Critics also question whether participation is truly voluntary. If employees who refuse to wear a tracker lose access to rewards or insurance discounts, they may feel pressured to share information they would prefer to keep private.\n\nIn addition, there is limited evidence that workplace fitness programs produce lasting improvements in health. Some studies have found that the people who sign up are often those who are already active, while employees who might benefit most rarely participate. Many users also stop wearing their devices after a few months. As a result, some experts suggest that companies would do better to focus on broader changes, such as reducing excessive working hours or providing healthier food in staff cafeterias, rather than relying mainly on technology to encourage individual behavior change."
+    },
+    {
+     "id": "W1-013",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below and write a summary of it in English. Use your own words as far as possible. Your summary should be between 90 and 110 words.",
+     "minWords": 90,
+     "maxWords": 110,
+     "note": "段落ごとに要点を1文ずつ（話題・賛成側・反対側・今後）。例や数字は削り、本文の語句はできるだけ言い換える。自分の意見は書かない。",
+     "source": "Over the past several years, shared electric scooters have appeared on the streets of many cities around the world. Using a smartphone app, people can locate a nearby scooter, unlock it, ride it to their destination, and leave it there for the next user. The service is usually paid for by the minute. Shared scooters have become particularly popular among young people and commuters, but their rapid spread has also caused considerable controversy.\n\nSupporters argue that electric scooters offer a convenient and environmentally friendly way to travel short distances. Many trips in cities are only a few kilometers long, and scooters can make it easier for people to reach train stations or bus stops without using a car or taxi. Because the scooters run on electricity, they produce no exhaust fumes while being ridden, and some city officials hope that they will help reduce traffic congestion and air pollution. In addition, scooters are inexpensive to use and require no special skills, making them accessible to a wide range of people.\n\nCritics, however, have raised concerns about safety. Riders travel at relatively high speeds, often without helmets, and accidents involving scooters have sent many people to hospitals. Pedestrians, especially elderly people and those with visual impairments, complain that scooters ridden on sidewalks put them at risk. Another frequent complaint concerns parking. Because users can leave scooters almost anywhere, they are often abandoned in the middle of sidewalks or in front of building entrances, creating obstacles and making streets look untidy.\n\nQuestions have also been raised about the environmental benefits. Studies suggest that many scooter trips replace walking or cycling rather than car journeys, so they may not reduce emissions as much as expected. Moreover, the scooters themselves have often worn out within a year or two, and vans are used to collect and recharge them each night. In response, a number of cities have introduced regulations, such as limiting the number of scooters, setting speed limits, and designating special parking areas, while a few have banned them altogether. Whether shared scooters become a lasting part of urban transport may depend on how well such rules balance convenience with safety and order."
+    },
+    {
+     "id": "W1-014",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below and write a summary of it in English. Use your own words as far as possible. Your summary should be between 90 and 110 words.",
+     "minWords": 90,
+     "maxWords": 110,
+     "note": "段落ごとに要点を1文ずつ（話題・賛成側・反対側・今後）。例や数字は削り、本文の語句はできるだけ言い換える。自分の意見は書かない。",
+     "source": "In some countries, many national museums have been free to enter for decades, while in others, visitors must pay an admission fee that can be quite expensive. In recent years, the question of whether major museums should charge for entry has been widely debated, as institutions face rising costs and governments consider how best to support culture.\n\nSupporters of free admission argue that museums hold collections that belong to the public and should therefore be open to everyone. When entrance fees are removed, they point out, visitor numbers often rise sharply, and the museums attract a wider range of people, including families with children and those on low incomes who might otherwise never visit. Free entry also makes it easier for people to drop in for a short time to see a single painting or exhibit, encouraging repeat visits. Supporters further argue that the benefits of cultural education for society as a whole justify the use of public money.\n\nOpponents, however, question whether free admission really achieves these goals. Some research suggests that although total visitor numbers increase, most of the additional visits are made by people who already go to museums frequently, such as well-educated city residents, rather than by new audiences. Removing fees also means that museums lose an important source of income. If government funding does not fully replace that income, museums may be forced to cut staff, reduce opening hours, or spend less on conserving their collections.\n\nThere are other ways of addressing these concerns. Some museums charge tourists but allow local residents to enter for free, while others offer free admission on certain days or evenings. Many institutions that do not charge for entry rely heavily on donations, shops, and cafés, and they charge for special exhibitions. Experts note that cost is only one of several reasons why people do not visit museums; others include a lack of interest or the feeling that museums are not intended for people like them. Ultimately, encouraging a broader public to visit may require not only lower prices but also changes to the way museums present their collections and reach out to their communities."
     }
    ]
   },
@@ -1212,6 +2576,78 @@
      "id": "W2-006",
      "type": "Opinion essay",
      "prompt": "TOPIC: Should companies be required to give their employees the option of working remotely?",
+     "minWords": 200,
+     "maxWords": 240,
+     "note": "序論で立場をはっきり言う。本論で理由を3つ、それぞれ具体例や根拠で支える。結論で立場と理由を言い換えてまとめる。"
+    },
+    {
+     "id": "W2-007",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "TOPIC: Should advertising aimed at children be more strictly regulated?",
+     "minWords": 200,
+     "maxWords": 240,
+     "note": "序論で立場をはっきり言う。本論で理由を3つ、それぞれ具体例や根拠で支える。結論で立場と理由を言い換えてまとめる。"
+    },
+    {
+     "id": "W2-008",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "TOPIC: Agree or disagree: Globalization brings more benefits than harm to developing countries.",
+     "minWords": 200,
+     "maxWords": 240,
+     "note": "序論で立場をはっきり言う。本論で理由を3つ、それぞれ具体例や根拠で支える。結論で立場と理由を言い換えてまとめる。"
+    },
+    {
+     "id": "W2-009",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "TOPIC: Is it acceptable to use genetic technology to enhance human abilities?",
+     "minWords": 200,
+     "maxWords": 240,
+     "note": "序論で立場をはっきり言う。本論で理由を3つ、それぞれ具体例や根拠で支える。結論で立場と理由を言い換えてまとめる。"
+    },
+    {
+     "id": "W2-010",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "TOPIC: Agree or disagree: Printed newspapers will disappear within the next twenty years.",
+     "minWords": 200,
+     "maxWords": 240,
+     "note": "序論で立場をはっきり言う。本論で理由を3つ、それぞれ具体例や根拠で支える。結論で立場と理由を言い換えてまとめる。"
+    },
+    {
+     "id": "W2-011",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "TOPIC: Do major international sporting events bring lasting benefits to the cities that host them?",
+     "minWords": 200,
+     "maxWords": 240,
+     "note": "序論で立場をはっきり言う。本論で理由を3つ、それぞれ具体例や根拠で支える。結論で立場と理由を言い換えてまとめる。"
+    },
+    {
+     "id": "W2-012",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "TOPIC: Is the widespread use of security cameras in public places justified?",
+     "minWords": 200,
+     "maxWords": 240,
+     "note": "序論で立場をはっきり言う。本論で理由を3つ、それぞれ具体例や根拠で支える。結論で立場と理由を言い換えてまとめる。"
+    },
+    {
+     "id": "W2-013",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "TOPIC: Should manufacturers be required to make their products easy to repair?",
+     "minWords": 200,
+     "maxWords": 240,
+     "note": "序論で立場をはっきり言う。本論で理由を3つ、それぞれ具体例や根拠で支える。結論で立場と理由を言い換えてまとめる。"
+    },
+    {
+     "id": "W2-014",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "TOPIC: Agree or disagree: Social media companies should be held responsible for the content posted on their platforms.",
      "minWords": 200,
      "maxWords": 240,
      "note": "序論で立場をはっきり言う。本論で理由を3つ、それぞれ具体例や根拠で支える。結論で立場と理由を言い換えてまとめる。"
@@ -1586,6 +3022,44 @@
        "why": "marquee＝大きなテント。2日前の予報が悪い時だけ立てる予備のテントを契約に入れる。招待客は約180人でガラスの建物には入らない。日付の変更はしていない。"
       }
      ]
+    },
+    {
+     "id": "L1-021",
+     "plus": true,
+     "script": "W: Have you decided whether to take that dog from the shelter?\nM: I really want to, but I'm worried about my schedule. Since the merger, I've had to travel to the Denver office at least twice a month.\nW: That does make it tricky. Couldn't your brother look after it while you're away?\nM: He's offered, but I'd feel bad asking him so often.\nW: Well, the shelter runs a foster program. You look after a dog for a couple of months, and they take it back if things don't work out. They even arrange care when you travel.\nM: Really? That would be a good way to find out whether I can manage before I commit.\nW: Exactly. And if it goes well, you can adopt the dog.\nM: I'll give them a call this afternoon.\nQuestion: What will the man probably do?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What will the man probably do?",
+       "choices": [
+        "Ask his brother to take care of a dog permanently.",
+        "Request fewer business trips to the Denver office.",
+        "Look after a dog for a while before deciding whether to adopt it.",
+        "Wait until his work schedule becomes less busy."
+       ],
+       "answer": 2,
+       "why": "保護施設の「一時預かり（foster）」で2か月ほど世話をして、うまくいけば同じ犬を引き取れる。男性は電話すると言った。兄に頼むのは気が引けると言っている。出張を減らす・待つ、は話に出ない。"
+      }
+     ]
+    },
+    {
+     "id": "L1-022",
+     "plus": true,
+     "script": "W: Paul, I've read the customer survey for the café. People love the food, but a lot of them say the wait is too long.\nM: I noticed that too. At lunchtime, people sometimes wait twenty minutes for a sandwich. Should we hire another cook?\nW: I've thought about it, but our budget's already stretched.\nM: Then maybe we should cut some items from the menu. Fewer choices would speed things up.\nW: Possibly, but the survey shows customers really like the variety. What if we let people order online before they arrive? Then the kitchen could get started before the lunch rush.\nM: That could work. I think the company that supplies our cash registers offers an ordering app.\nW: Great. Could you find out what it costs and set up a trial for next month?\nM: Sure.\nQuestion: What does the woman want the man to do?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What does the woman want the man to do?",
+       "choices": [
+        "Find out about introducing an online ordering system.",
+        "Hire an additional cook for the lunch period.",
+        "Remove some items from the café's menu.",
+        "Carry out another survey of the café's customers."
+       ],
+       "answer": 0,
+       "why": "来る前にネットで注文できるようにする案を出し、費用を調べて来月試すよう頼んでいる。料理人を増やす案は予算が足りないので却下。品数を減らすのは客が品ぞろえを好むので保留。"
+      }
+     ]
     }
    ]
   },
@@ -1747,6 +3221,37 @@
        "why": "When people are familiar with a product or have a clear idea of what they want＝よく知っている・欲しい物がはっきりしている時。選択肢の数・映画館・最安の囮、は話に出ない。"
       }
      ]
+    },
+    {
+     "id": "L2-006",
+     "plus": true,
+     "script": "Most animals, including humans, sleep with the entire brain at once. Some species, however, have developed a remarkable alternative. Dolphins and many seabirds can rest one half of the brain while the other half stays awake. This ability, known as unihemispheric sleep, allows dolphins to keep swimming and rising to the surface to breathe, and it may allow some birds to sleep while flying long distances over the ocean.\n\nUnihemispheric sleep also appears to help animals watch for danger. In one experiment, researchers observed ducks sleeping in a row. Ducks in the middle of the row usually slept with both eyes closed. The ducks at the ends, however, more often kept one eye open, and it was usually the eye facing away from the group, toward the direction from which a predator might approach.\n\nHumans cannot sleep in this way, but researchers have found a weaker version of the effect. When people sleep in an unfamiliar place, such as a hotel room, one side of the brain tends to stay more alert during the first night, reacting more strongly to unusual sounds. This may explain why so many people sleep poorly on their first night away from home.\nQuestion 1: What was observed in the experiment with ducks?\nQuestion 2: What does the speaker say about humans?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What was observed in the experiment with ducks?",
+       "choices": [
+        "Ducks in the middle of the row slept with one eye open.",
+        "Ducks slept less deeply when they were in large groups.",
+        "Ducks at the ends of the row tended to keep the outer eye open.",
+        "Ducks closed both eyes whenever a predator came near."
+       ],
+       "answer": 2,
+       "why": "列の端のカモは片目を開けていることが多く、それは群れと反対側（敵が来そうな方）の目だった。真ん中のカモは両目を閉じていたので1つ目は逆。群れの大きさ・敵が来た時の様子は話に出ない。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does the speaker say about humans?",
+       "choices": [
+        "They can learn to sleep with one half of the brain at a time.",
+        "They sleep more deeply in places that are unfamiliar to them.",
+        "They react less to sounds during their first night in a hotel.",
+        "Part of the brain may stay more alert when they sleep somewhere new."
+       ],
+       "answer": 3,
+       "why": "慣れない場所での最初の夜は、脳の片側がより警戒した状態のままで、変わった音に強く反応する。人は半分ずつは眠れない。深く眠る・音への反応が弱い、は逆。"
+      }
+     ]
     }
    ]
   },
@@ -1846,6 +3351,44 @@
        ],
        "answer": 1,
        "why": "発送済み＋自分で倉庫に取りに行きたい → 3を押して配送担当と話す（手数料15ドル）。2は未発送の場合。ウェブは発送済みで日付を変える場合。4は返品。"
+      }
+     ]
+    },
+    {
+     "id": "L3-006",
+     "plus": true,
+     "script": "Good morning, everyone, and welcome to Pine Ridge. Before we set off, let me explain today's options. Because of last night's rain, the lower river trail is closed, so the waterfall hike will take the longer forest route instead. It takes about three hours, and you'll need proper hiking boots. If you're not wearing boots, you can rent a pair at the visitor center, free of charge for tour members, but please do that within the next fifteen minutes, because the group leaves at nine thirty sharp. For anyone who'd prefer something easier, there's a one-hour guided walk around the lake at ten. It's flat and suitable for all ages, and no special footwear is needed. Finally, if you'd like to see the waterfall but can't manage a long hike, a shuttle bus runs to the upper viewpoint every hour from the main parking lot. Shuttle tickets are sold only on the bus, and the driver accepts cash only.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Situation: You are on a guided tour of a nature park. You want to see the waterfall, and you have enough time and energy for a long walk. You are wearing sneakers and have no cash with you.\nQuestion: What should you do?",
+       "choices": [
+        "Join the guided walk around the lake.",
+        "Rent boots at the visitor center right away.",
+        "Take the shuttle bus from the main parking lot.",
+        "Hike to the waterfall along the river trail."
+       ],
+       "answer": 1,
+       "why": "滝まで長く歩ける＋スニーカー → 15分以内に案内所で登山靴を借りて9時半の森のルートに参加。シャトルバスは現金のみで乗れない。川沿いの道は閉鎖中。湖の散歩では滝が見られない。"
+      }
+     ]
+    },
+    {
+     "id": "L3-007",
+     "plus": true,
+     "script": "Hello, this is Rita Kaplan from the Oakfield Apartments office. I'm calling all residents of Building C about the elevator replacement, which begins next Monday and will last about two weeks. During that time, the elevator in Building C will be out of service. Residents who have difficulty using the stairs can request a room in our guest suites in Building A, but there are only three, so please reserve one by this Friday. If you're expecting a large delivery, such as furniture, during the work, please contact the office no later than two days before the delivery date, so that we can arrange for the delivery to use the freight elevator in Building B. Small parcels will be held at the front desk as usual. Finally, residents who park in the Building C garage will need to use the Building A garage instead. Permits can be picked up at the office.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Situation: You live on the eighth floor of Building C and can use the stairs without difficulty. A new sofa will be delivered to your apartment next Wednesday. You do not have a car.\nQuestion: What should you do?",
+       "choices": [
+        "Reserve a guest suite in Building A by Friday.",
+        "Pick up a parking permit at the office.",
+        "Contact the office by next Monday about the delivery.",
+        "Ask the front desk to hold the sofa for you."
+       ],
+       "answer": 2,
+       "why": "ソファ＝大きな配達 → 2日前までに管理事務所へ連絡（水曜の配達なので月曜まで）。階段は使えるので来客用の部屋は不要。車が無いので駐車許可も不要。受付で預かるのは小さな荷物だけ。"
       }
      ]
     }
@@ -2064,6 +3607,150 @@
       {
        "type": "Q&A 2",
        "prompt": "Should scientists be held responsible for how their discoveries are used by others?",
+       "timeSec": 45,
+       "ja": "同じ分野の少し広い質問。立場 → 理由 → 例の順で、短く言い切る。"
+      }
+     ]
+    },
+    {
+     "id": "S1-007",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Speech",
+       "prompt": "Choose one of these topics and speak about it for two minutes.\n\n1. Is modern medicine relying too much on medication?\n2. Should junk food advertising be banned on television?\n3. Agree or disagree: Working long hours is a sign of dedication\n4. Should mental health education be compulsory in schools?\n5. Is an aging population a threat to economic growth?",
+       "timeSec": 120,
+       "ja": "1分で1つ選んで準備。序論（立場）→ 理由2〜3つ（具体例つき）→ 結論。2分を使い切る。"
+      },
+      {
+       "type": "Q&A 1",
+       "prompt": "Your speech focused on one side of the issue. What would you say to someone who strongly disagrees with you?",
+       "timeSec": 45,
+       "ja": "スピーチの内容についての質問。反対意見を認めつつ、自分の立場を理由で守る。"
+      },
+      {
+       "type": "Q&A 2",
+       "prompt": "Do you think people today take better care of their health than people did fifty years ago?",
+       "timeSec": 45,
+       "ja": "同じ分野の少し広い質問。立場 → 理由 → 例の順で、短く言い切る。"
+      }
+     ]
+    },
+    {
+     "id": "S1-008",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Speech",
+       "prompt": "Choose one of these topics and speak about it for two minutes.\n\n1. Has the internet improved the quality of journalism?\n2. Should celebrities be expected to be role models?\n3. Agree or disagree: Reality television does more harm than good\n4. Is it important for people to read books in an age of short videos?\n5. Should governments fund the arts?",
+       "timeSec": 120,
+       "ja": "1分で1つ選んで準備。序論（立場）→ 理由2〜3つ（具体例つき）→ 結論。2分を使い切る。"
+      },
+      {
+       "type": "Q&A 1",
+       "prompt": "You gave some reasons in your speech. Which reason do you think people would find the least convincing, and why?",
+       "timeSec": 45,
+       "ja": "スピーチの内容についての質問。反対意見を認めつつ、自分の立場を理由で守る。"
+      },
+      {
+       "type": "Q&A 2",
+       "prompt": "How do you think the media will change the way people get information in the future?",
+       "timeSec": 45,
+       "ja": "同じ分野の少し広い質問。立場 → 理由 → 例の順で、短く言い切る。"
+      }
+     ]
+    },
+    {
+     "id": "S1-009",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Speech",
+       "prompt": "Choose one of these topics and speak about it for two minutes.\n\n1. Is consumerism making people less happy?\n2. Should companies be responsible for recycling the products they sell?\n3. Agree or disagree: The gap between rich and poor is the biggest problem facing society today\n4. Is it better to rent a home than to buy one?\n5. Should cash be replaced completely by digital payments?",
+       "timeSec": 120,
+       "ja": "1分で1つ選んで準備。序論（立場）→ 理由2〜3つ（具体例つき）→ 結論。2分を使い切る。"
+      },
+      {
+       "type": "Q&A 1",
+       "prompt": "Can you think of any situation where the opposite of your opinion would be true?",
+       "timeSec": 45,
+       "ja": "スピーチの内容についての質問。反対意見を認めつつ、自分の立場を理由で守る。"
+      },
+      {
+       "type": "Q&A 2",
+       "prompt": "Do you think people in Japan spend their money more wisely now than in the past?",
+       "timeSec": 45,
+       "ja": "同じ分野の少し広い質問。立場 → 理由 → 例の順で、短く言い切る。"
+      }
+     ]
+    },
+    {
+     "id": "S1-010",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Speech",
+       "prompt": "Choose one of these topics and speak about it for two minutes.\n\n1. Should wealthy countries do more to help developing countries?\n2. Is learning a foreign language still necessary in the age of translation apps?\n3. Agree or disagree: International tourism does more good than harm\n4. Can international sporting events promote world peace?\n5. Should companies in Japan use English as their official language?",
+       "timeSec": 120,
+       "ja": "1分で1つ選んで準備。序論（立場）→ 理由2〜3つ（具体例つき）→ 結論。2分を使い切る。"
+      },
+      {
+       "type": "Q&A 1",
+       "prompt": "In your speech, you mentioned some benefits. What do you think is the biggest drawback of your position?",
+       "timeSec": 45,
+       "ja": "スピーチの内容についての質問。反対意見を認めつつ、自分の立場を理由で守る。"
+      },
+      {
+       "type": "Q&A 2",
+       "prompt": "What role do you think Japan should play in solving global problems?",
+       "timeSec": 45,
+       "ja": "同じ分野の少し広い質問。立場 → 理由 → 例の順で、短く言い切る。"
+      }
+     ]
+    },
+    {
+     "id": "S1-011",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Speech",
+       "prompt": "Choose one of these topics and speak about it for two minutes.\n\n1. Should cars be banned from city centers on weekends?\n2. Is it better to live in a big city or in the countryside?\n3. Agree or disagree: Public transportation should be free for everyone\n4. Should old buildings be preserved even when they are inconvenient?\n5. Are cities becoming too crowded?",
+       "timeSec": 120,
+       "ja": "1分で1つ選んで準備。序論（立場）→ 理由2〜3つ（具体例つき）→ 結論。2分を使い切る。"
+      },
+      {
+       "type": "Q&A 1",
+       "prompt": "Some people might say your idea would be too expensive. How would you respond?",
+       "timeSec": 45,
+       "ja": "スピーチの内容についての質問。反対意見を認めつつ、自分の立場を理由で守る。"
+      },
+      {
+       "type": "Q&A 2",
+       "prompt": "What do you think cities will look like fifty years from now?",
+       "timeSec": 45,
+       "ja": "同じ分野の少し広い質問。立場 → 理由 → 例の順で、短く言い切る。"
+      }
+     ]
+    },
+    {
+     "id": "S1-012",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Speech",
+       "prompt": "Choose one of these topics and speak about it for two minutes.\n\n1. Should parents limit the time their children spend online?\n2. Is it the responsibility of families to care for elderly relatives?\n3. Agree or disagree: Children today grow up too quickly\n4. Should both parents be encouraged to take long parental leave?\n5. Is it acceptable for parents to choose their children's careers?",
+       "timeSec": 120,
+       "ja": "1分で1つ選んで準備。序論（立場）→ 理由2〜3つ（具体例つき）→ 結論。2分を使い切る。"
+      },
+      {
+       "type": "Q&A 1",
+       "prompt": "Do you think your opinion would be different if you were a parent or a grandparent? Why or why not?",
+       "timeSec": 45,
+       "ja": "スピーチの内容についての質問。反対意見を認めつつ、自分の立場を理由で守る。"
+      },
+      {
+       "type": "Q&A 2",
+       "prompt": "How has the role of the family in society changed in recent decades?",
        "timeSec": 45,
        "ja": "同じ分野の少し広い質問。立場 → 理由 → 例の順で、短く言い切る。"
       }

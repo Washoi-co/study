@@ -698,6 +698,726 @@
        "why": "catch on＝「流行する、人気が出る」。1か月で100万回以上ダウンロード、が根拠。fell apart（ばらばらになった）、gave out（尽きた）、saw off（見送った）は人気を表さない。"
       }
      ]
+    },
+    {
+     "id": "G1-041",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The two neighbors had a long-running ____ over the tall fence between their gardens, which finally ended when they agreed to share the cost of a lower one.",
+       "choices": [
+        "remedy",
+        "dispute",
+        "pledge",
+        "tribute"
+       ],
+       "answer": 1,
+       "why": "dispute＝「争い、口論」。フェンスをめぐる長い対立が、費用を分け合うことで終わった。remedy（治療法）、pledge（誓約）、tribute（賛辞）は終わる対立にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-042",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Even the speaker's friendly jokes failed to ____ the tension in the room, and the audience remained silent and uneasy for the rest of his talk.",
+       "choices": [
+        "extract",
+        "harness",
+        "commemorate",
+        "defuse"
+       ],
+       "answer": 3,
+       "why": "defuse the tension＝「緊張を和らげる」。冗談でも和らがず、聞き手は落ち着かないまま。extract（抜き出す）、harness（利用する）、commemorate（記念する）は tension と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-043",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Opening a second restaurant downtown proved highly ____ for the chef, and within a year it was earning twice as much as her original location.",
+       "choices": [
+        "lucrative",
+        "hollow",
+        "timid",
+        "feeble"
+       ],
+       "answer": 0,
+       "why": "lucrative＝「もうかる」。1年で元の店の2倍を稼いだ、が根拠。hollow（中身のない）、timid（臆病な）、feeble（弱々しい）は利益の話に合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-044",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "After forty years as the head of the family business, Mr. Grant finally agreed to ____ control to his daughter and retire to the countryside.",
+       "choices": [
+        "verify",
+        "oppress",
+        "relinquish",
+        "assert"
+       ],
+       "answer": 2,
+       "why": "relinquish control to ～＝「～に支配権を譲る」。引退するので娘に経営を渡す。assert（主張する）は逆の向きで、to his daughter とも組まない。verify（確かめる）、oppress（抑圧する）も合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-045",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Many workers find data entry ____ because it involves typing the same kinds of numbers into a computer for hours without any variety.",
+       "choices": [
+        "eloquent",
+        "tedious",
+        "versatile",
+        "hearty"
+       ],
+       "answer": 1,
+       "why": "tedious＝「退屈な、うんざりする」。同じ数字を何時間も変化なく打ち込む、が理由。eloquent（雄弁な）、versatile（多才な）、hearty（心のこもった）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-046",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The company will ____ employees for any travel expenses, such as train tickets and hotel bills, as long as they submit the original receipts within a month.",
+       "choices": [
+        "console",
+        "exploit",
+        "interrogate",
+        "reimburse"
+       ],
+       "answer": 3,
+       "why": "reimburse A for B＝「AにBを払い戻す」。領収書を出せば交通費・宿泊費を返す。console（慰める）、exploit（搾取する）、interrogate（尋問する）は経費の話にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-047",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The city has taken ____ measures to reduce traffic in the downtown area, including banning private cars from several main streets on weekends.",
+       "choices": [
+        "trivial",
+        "tender",
+        "drastic",
+        "fertile"
+       ],
+       "answer": 2,
+       "why": "drastic measures＝「思い切った対策」。週末に大通りから自家用車を締め出す、が具体例。trivial（ささいな）は具体例と逆。tender（優しい）、fertile（肥えた）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-048",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "It took the researcher nearly two years to ____ a complete list of the plant species growing on the remote island.",
+       "choices": [
+        "compile",
+        "dismiss",
+        "oblige",
+        "erode"
+       ],
+       "answer": 0,
+       "why": "compile a list＝「一覧をまとめる」。2年かけて島の植物の完全な一覧を作った。dismiss（退ける）、oblige（義務を負わせる）、erode（浸食する）は a list と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-049",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Kate ____ deleted an important file while cleaning up her computer, so she had to ask a technician to help her recover it.",
+       "choices": [
+        "generously",
+        "gracefully",
+        "fiercely",
+        "inadvertently"
+       ],
+       "answer": 3,
+       "why": "inadvertently＝「うっかり、不注意で」。整理中に大事なファイルを消してしまい、復元を頼んだ。generously（気前よく）、gracefully（優雅に）、fiercely（激しく）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-050",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Because several committee members were sick, the chairperson decided to ____ the meeting until the following week.",
+       "choices": [
+        "exclaim",
+        "deduct",
+        "adjourn",
+        "venture"
+       ],
+       "answer": 2,
+       "why": "adjourn＝「（会議を）延期する、休会にする」。委員が病気なので翌週に延ばした。exclaim（叫ぶ）、deduct（差し引く）、venture（思い切ってする）は the meeting until … と組まない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-051",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Are you still thinking of buying that old house by the lake?\nB: No. The inspector found that its foundation was ____, so repairing it would cost more than the house itself.",
+       "choices": [
+        "eligible",
+        "defective",
+        "thrifty",
+        "nimble"
+       ],
+       "answer": 1,
+       "why": "defective＝「欠陥のある」。修理費が家より高くなるので買わない。eligible（資格のある）、thrifty（倹約的な）、nimble（すばしこい）は土台の説明にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-052",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Dark clouds gathered over the bay, and the fishermen hurried back to the harbor after hearing the ____ sound of thunder in the distance.",
+       "choices": [
+        "ominous",
+        "soothing",
+        "festive",
+        "humble"
+       ],
+       "answer": 0,
+       "why": "ominous＝「不吉な、嫌な予感がする」。雷の音を聞いて急いで港へ戻った。soothing（心を落ち着かせる）、festive（お祭りの）では急いで戻る理由にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-053",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The store saw a sudden ____ in demand for umbrellas when the weather service predicted a week of heavy rain.",
+       "choices": [
+        "lapse",
+        "slump",
+        "haven",
+        "surge"
+       ],
+       "answer": 3,
+       "why": "surge in demand＝「需要の急増」。大雨の予報で傘が急に売れた。slump（不振）は逆。lapse（ちょっとした誤り）、haven（避難所）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-054",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Health officials hope the new vaccine will help ____ the disease entirely, so that no new cases appear anywhere in the region.",
+       "choices": [
+        "proclaim",
+        "eradicate",
+        "mimic",
+        "flatter"
+       ],
+       "answer": 1,
+       "why": "eradicate＝「根絶する」。新しい患者がどこにも出ないように、病気を完全になくす。proclaim（宣言する）、mimic（まねる）、flatter（お世辞を言う）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-055",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The ____ reporter called the office every day for three weeks until the manager finally agreed to an interview.",
+       "choices": [
+        "bashful",
+        "idle",
+        "tenacious",
+        "mundane"
+       ],
+       "answer": 2,
+       "why": "tenacious＝「粘り強い」。3週間毎日電話して取材にこぎつけた。bashful（恥ずかしがりの）、idle（怠けた）は行動と逆。mundane（ありふれた）は人の性質に合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-056",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The student's excuse for missing the exam sounded ____ at first, but the teacher later found out that he had actually gone to a concert that day.",
+       "choices": [
+        "plausible",
+        "absurd",
+        "furious",
+        "opaque"
+       ],
+       "answer": 0,
+       "why": "plausible＝「もっともらしい」。but の後で「実はコンサートに行っていた」と分かったので、最初は本当らしく聞こえた。absurd（ばかげた）では but の逆接にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-057",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The airline was forced to ____ the number of flights to the island during the winter months because so few passengers were traveling there.",
+       "choices": [
+        "curtail",
+        "escalate",
+        "ratify",
+        "commend"
+       ],
+       "answer": 0,
+       "why": "curtail＝「削減する、切り詰める」。乗客が少ないので便を減らした。escalate（拡大させる）は逆。ratify（批准する）、commend（ほめる）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-058",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Although the old ship had been lying at the bottom of the lake for over a century, divers were surprised to find that most of it was still ____.",
+       "choices": [
+        "adrift",
+        "intact",
+        "sober",
+        "eager"
+       ],
+       "answer": 1,
+       "why": "intact＝「無傷の、元のままの」。100年以上沈んでいたのに、ほとんど壊れていなかったので驚いた。adrift（漂流して）は湖の底の船に合わない。sober（しらふの）、eager（熱心な）も合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-059",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Why did Ryan quit the soccer team?\nB: He said the coach's constant criticism had become ____, and he just didn't enjoy playing anymore.",
+       "choices": [
+        "invaluable",
+        "imminent",
+        "edible",
+        "unbearable"
+       ],
+       "answer": 3,
+       "why": "unbearable＝「耐えられない」。絶え間ない批判に耐えられず、楽しめなくなってやめた。invaluable（非常に貴重な）は逆。imminent（差し迫った）、edible（食べられる）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-060",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Before signing the contract, Ms. Hale asked her lawyer to ____ every clause carefully to make sure there were no hidden fees.",
+       "choices": [
+        "overlook",
+        "stimulate",
+        "scrutinize",
+        "auction"
+       ],
+       "answer": 2,
+       "why": "scrutinize＝「綿密に調べる」。隠れた費用が無いか、条項を一つ一つ注意して見る。overlook（見落とす）は carefully と逆。stimulate（刺激する）、auction（競売にかける）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-061",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "When the Johnsons helped their new neighbors move in, the neighbors ____ by inviting them over for a home-cooked dinner the following weekend.",
+       "choices": [
+        "dissolved",
+        "retaliated",
+        "perished",
+        "reciprocated"
+       ],
+       "answer": 3,
+       "why": "reciprocate＝「（好意に）お返しをする」。引っ越しを手伝ってもらい、夕食に招いてお返しした。retaliate（仕返しする）は悪いことへの仕返しで合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-062",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The ____ old theater, with its broken windows and leaking roof, was finally restored after a local group raised enough money to repair it.",
+       "choices": [
+        "immaculate",
+        "prosperous",
+        "dilapidated",
+        "nocturnal"
+       ],
+       "answer": 2,
+       "why": "dilapidated＝「荒れ果てた、老朽化した」。窓が割れ屋根が雨漏りしている、が根拠。immaculate（しみ一つない）は逆。prosperous（繁栄した）、nocturnal（夜行性の）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-063",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Because each presenter had only three minutes, the organizers asked them to keep their explanations ____ and to focus on just one main point.",
+       "choices": [
+        "succinct",
+        "elaborate",
+        "perpetual",
+        "rigid"
+       ],
+       "answer": 0,
+       "why": "succinct＝「簡潔な」。持ち時間3分なので短く、要点1つに。elaborate（手の込んだ）は逆。perpetual（永遠の）、rigid（堅い）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-064",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The farmer put up a tall fence around the field to ____ deer from eating the young vegetable plants.",
+       "choices": [
+        "lure",
+        "deter",
+        "nourish",
+        "uphold"
+       ],
+       "answer": 1,
+       "why": "deter A from doing＝「Aに～するのを思いとどまらせる」。高い柵でシカに野菜を食べさせない。lure（おびき寄せる）は逆。nourish（栄養を与える）、uphold（支持する）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-065",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Fresh fish is ____ in the small coastal town, so restaurants there can offer seafood dishes at much lower prices than those in the city.",
+       "choices": [
+        "absent",
+        "stern",
+        "abundant",
+        "obscure"
+       ],
+       "answer": 2,
+       "why": "abundant＝「豊富な」。魚がたくさんあるので安く出せる。absent（無い）では安くできる理由にならない。stern（厳格な）、obscure（あいまいな）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-066",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Students who ____ until the night before an exam often find that they do not have enough time to review all the material.",
+       "choices": [
+        "collaborate",
+        "procrastinate",
+        "recite",
+        "migrate"
+       ],
+       "answer": 1,
+       "why": "procrastinate＝「先延ばしにする」。前の晩まで勉強を先延ばしすると、復習の時間が足りない。collaborate（協力する）、recite（暗唱する）、migrate（移住する）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-067",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The factory follows ____ safety rules, and any worker who enters the production area without a helmet is immediately sent home.",
+       "choices": [
+        "lax",
+        "cozy",
+        "savage",
+        "stringent"
+       ],
+       "answer": 3,
+       "why": "stringent＝「厳しい」。ヘルメットが無いとすぐ帰宅させられる、が具体例。lax（緩い）は逆。cozy（居心地のよい）、savage（どう猛な）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-068",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: How was your trip to the mountains?\nB: Wonderful. The view from the top was so ____ that I forgot how tired I was from the long climb.",
+       "choices": [
+        "breathtaking",
+        "monotonous",
+        "dreary",
+        "stagnant"
+       ],
+       "answer": 0,
+       "why": "breathtaking＝「息をのむほど美しい」。Wonderful と、疲れを忘れたほど、が根拠。monotonous（単調な）、dreary（わびしい）、stagnant（よどんだ）は良い意味にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-069",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Poor lighting in the old library can ____ students' ability to read for long periods, so the school plans to install new lamps this summer.",
+       "choices": [
+        "hinder",
+        "enhance",
+        "salute",
+        "glorify"
+       ],
+       "answer": 0,
+       "why": "hinder＝「妨げる」。暗い照明が長く読む妨げになるので新しい照明を付ける。enhance（高める）では照明を替える理由にならない。salute（敬礼する）、glorify（たたえる）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-070",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Attendance at the safety training is ____ for all new staff, and anyone who misses it will not be allowed to start work until they complete it.",
+       "choices": [
+        "optional",
+        "luxurious",
+        "obligatory",
+        "cautious"
+       ],
+       "answer": 2,
+       "why": "obligatory＝「義務の、必須の」。受けないと仕事を始められない、が根拠。optional（任意の）は逆。luxurious（ぜいたくな）、cautious（用心深い）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-071",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The outdoor concert was ____ at the last minute because the lead singer had lost her voice, and fans were promised full refunds.",
+       "choices": [
+        "brought about",
+        "called off",
+        "set out",
+        "turned up"
+       ],
+       "answer": 1,
+       "why": "call off＝「中止する」。歌手の声が出ず、全額返金。brought about（引き起こした）、set out（出発した）、turned up（現れた）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-072",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "It took Owen several months to ____ the shock of losing his job, but he eventually found a new position that he enjoyed even more.",
+       "choices": [
+        "give in",
+        "run into",
+        "take over",
+        "get over"
+       ],
+       "answer": 3,
+       "why": "get over＝「（ショック・病気から）立ち直る」。数か月かかったが、もっと好きな仕事が見つかった。give in（屈する）、run into（偶然会う）、take over（引き継ぐ）は the shock と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-073",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The engineers are still ____ what caused the bridge's lights to stop working last night, and they expect to have an answer by Friday.",
+       "choices": [
+        "looking into",
+        "taking in",
+        "setting up",
+        "holding back"
+       ],
+       "answer": 0,
+       "why": "look into＝「調べる」。原因を調べていて、金曜までに答えが出る見込み。taking in（取り入れる・だます）、setting up（設置する）、holding back（抑える）は what caused … と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-074",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Marcus keeps ____ going to the dentist because he is afraid it will hurt, but his toothache is getting worse every day.",
+       "choices": [
+        "showing off",
+        "putting off",
+        "giving away",
+        "filling in"
+       ],
+       "answer": 1,
+       "why": "put off doing＝「～するのを先延ばしにする」。痛いのが怖くて歯医者に行かず、歯痛がひどくなる。showing off（見せびらかす）、giving away（手放す）、filling in（記入する）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-075",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Several new problems ____ during the test run of the software, so the launch was delayed by another two weeks.",
+       "choices": [
+        "wiped out",
+        "handed in",
+        "cropped up",
+        "laid down"
+       ],
+       "answer": 2,
+       "why": "crop up＝「（問題が）不意に起こる」。試運転で問題が出て発売が延びた。wiped out（全滅させた）、handed in（提出した）、laid down（定めた）は主語の problems と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-076",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The manager asked her team to ____ a detailed plan for the product launch by the end of the week.",
+       "choices": [
+        "break in",
+        "hang up",
+        "pour in",
+        "draw up"
+       ],
+       "answer": 3,
+       "why": "draw up a plan＝「計画を作成する」。週末までに詳しい計画を作る。break in（押し入る・慣らす）、hang up（電話を切る）、pour in（殺到する）は a plan と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-077",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "After the long hike, Ben was so tired that he ____ on the sofa as soon as he got home and slept until the next morning.",
+       "choices": [
+        "stepped up",
+        "dozed off",
+        "signed up",
+        "sorted out"
+       ],
+       "answer": 1,
+       "why": "doze off＝「うとうと眠り込む」。疲れてソファで寝てしまい、朝まで寝た。stepped up（強化した）、signed up（申し込んだ）、sorted out（解決した）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-078",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Doctors have not ____ the possibility that the patient's headaches are caused by stress, so they have suggested some relaxation exercises.",
+       "choices": [
+        "handed out",
+        "brushed up",
+        "torn off",
+        "ruled out"
+       ],
+       "answer": 3,
+       "why": "rule out＝「（可能性を）除外する」。ストレスが原因の可能性を消していないので、リラックスの運動を勧めた。handed out（配った）、brushed up（磨き直した）、torn off（引きちぎった）は the possibility と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-079",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Sales of the new phone were slow at first, but they began to ____ after a popular video blogger praised it.",
+       "choices": [
+        "let down",
+        "tear down",
+        "pick up",
+        "hand over"
+       ],
+       "answer": 2,
+       "why": "pick up＝「（売上・景気が）持ち直す」。but で「最初は不調」と逆になる。let down（がっかりさせる）、tear down（取り壊す）、hand over（手渡す）は売上の動きにならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-080",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The two friends ____ after a disagreement about money, and they did not speak to each other for nearly a year.",
+       "choices": [
+        "fell out",
+        "showed up",
+        "kept on",
+        "got along"
+       ],
+       "answer": 0,
+       "why": "fall out＝「仲たがいする」。お金のことでもめて1年近く口をきかなかった。got along（仲よくした）は逆。showed up（現れた）、kept on（続けた）は合わない。"
+      }
+     ]
     }
    ]
   },
@@ -875,6 +1595,178 @@
        ],
        "answer": 3,
        "why": "前の文は「病気に強く科学者に役立つ」、後ろは「シェフやサイダー職人も味に関心」。守る理由を2つ並べているので「さらに」。Instead（代わりに）、Otherwise（さもなければ）、Even so（それでも）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G2-005",
+     "plus": true,
+     "passage": "Fixing Things Together\n\nIn many towns, broken household items such as toasters, lamps, and bicycles are simply thrown away, often because repairing them seems more expensive than buying new ones. A growing number of volunteers, however, are trying to change this habit by running events known as repair cafés. At these monthly gatherings, residents bring in damaged goods, and skilled volunteers show them how to fix the items themselves, free of charge. Common repairs include replacing a broken switch or sewing up a torn jacket. Organizers say their goal is not only to reduce waste but also to ( 1 ).\n\nOne reason repair cafés are needed is that many modern products are difficult to open. Some are glued shut, and others can only be opened with special tools that ordinary people do not own. Manufacturers argue that such designs make products thinner, lighter, and safer. ( 2 ), critics point out that they also make it much harder for consumers to replace a single worn-out part, forcing them to buy a whole new device instead.\n\nThe cafés have also had effects that go beyond repairs. Volunteers report that many visitors stay long after their items are fixed, chatting over coffee with neighbors they had never met before. Others have formed lasting friendships. In one town, a retired electrician who started volunteering at a café said that teaching others gave him a new sense of purpose after he stopped working. For many participants, then, repair cafés have become ( 3 ).",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "persuade manufacturers to lower their prices",
+        "train volunteers to become professional repairers",
+        "sell secondhand goods to local residents",
+        "help people gain confidence in fixing things on their own"
+       ],
+       "answer": 3,
+       "why": "直前で、ボランティアが「自分で直す方法を教える」とある。ごみを減らすだけでなく、自分で直せる自信を持たせるのが目的。値下げ・プロの育成・中古品の販売は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "As a result",
+        "On the other hand",
+        "For instance",
+        "In the same way"
+       ],
+       "answer": 1,
+       "why": "前はメーカーの言い分（薄く安全になる）、後ろは批判する側の言い分（部品を替えられない）。立場が反対なので「一方で」。As a result（その結果）、For instance（例えば）、In the same way（同様に）はつながらない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "a valuable way of building connections within the community",
+        "a place where only experts are welcome",
+        "a cause of conflict between neighbors",
+        "a business that earns large profits"
+       ],
+       "answer": 0,
+       "why": "修理の後も近所の人と話し込む、元電気技師が生きがいを得た、が直前の例。修理を超えて「地域のつながりを作る場」になった。専門家だけ・対立・大きな利益は本文と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G2-006",
+     "plus": true,
+     "passage": "Pens or Keyboards?\n\nAlthough most university students now take notes on laptops, some researchers believe that writing by hand may be better for learning. In one study, two groups of students watched the same lecture. One group typed their notes, while the other wrote them with pens. Both groups were allowed to review their notes before the test. When they were tested a week later, the students who had written by hand understood the main ideas better. The researchers think this is because handwriting is slow, so students ( 1 ).\n\nTyping, by contrast, allows students to copy down a lecture almost word for word. This might seem like an advantage, since they end up with more complete notes to study from. ( 2 ), the researchers found that students who typed often recorded information without really thinking about what it meant. Their notes were longer, but they remembered less of what they had heard. A similar pattern appeared in several later studies.\n\nNot all experts agree with these conclusions, however. Some point out that laptops make it easy to organize, search, and share notes, which can be useful when reviewing for exams. Others suggest that the problem is not the device itself but the way it is used. If students using laptops are trained to summarize ideas in their own words instead of copying everything, they may ( 3 ). For now, the best advice may be for students to think carefully about how, and not just what, they write.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "can record every word the lecturer says",
+        "tend to lose interest in the lecture",
+        "must decide which information is most important",
+        "spend less time thinking about the topic"
+       ],
+       "answer": 2,
+       "why": "手書きは遅いので全部は書けない。だから何が大事かを選ぶ必要があり、理解が深まる。「すべての言葉を記録できる」はタイピングの方（第2段落）。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "In reality",
+        "Therefore",
+        "Similarly",
+        "In addition"
+       ],
+       "answer": 0,
+       "why": "前の文は「利点に思えるかもしれない」、後ろは「実は考えずに写していた」。見かけと実際の食い違いなので「実際には」。Therefore（だから）、Similarly（同様に）、In addition（さらに）は逆接にならない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "no longer need to attend lectures",
+        "be unable to share their notes",
+        "gain the same benefits as those who write by hand",
+        "write much more slowly than before"
+       ],
+       "answer": 2,
+       "why": "問題は機器でなく使い方、という流れ。自分の言葉でまとめるよう訓練すれば、手書きと同じ効果が得られるかもしれない。講義に出なくてよい・共有できない、は本文と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G2-007",
+     "plus": true,
+     "passage": "Quiet Cars, New Sounds\n\nElectric cars are much quieter than cars with gasoline engines, especially at low speeds. For drivers, this is often seen as a benefit, as it makes driving in the city more relaxing. For people walking nearby, however, the silence can be a problem. Pedestrians who rely on sound to judge traffic, such as people with poor eyesight, may not notice an approaching electric car until it is very close. For this reason, several countries now ( 1 ).\n\nDesigning these sounds has turned out to be more complicated than expected. If a sound is too quiet, pedestrians will not hear it, but if it is too loud, it could add to noise pollution and annoy people living nearby. The sound also needs to change with speed so that pedestrians can tell whether a car is slowing down. Some car makers have hired composers and sound designers to create tones that are easy to notice yet pleasant to hear. ( 2 ), one company tested dozens of different sounds with volunteers before choosing a soft humming tone for its cars.\n\nInterestingly, these sounds are also becoming a way for companies to ( 3 ). Just as people once recognized certain brands by the roar of their engines, some manufacturers hope customers will come to associate a particular tone with their cars. Critics worry that if every company chooses a different sound, streets could become confusing for pedestrians. Others, though, believe that a little variety is a small price to pay for safer roads.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "ban electric cars from busy city streets",
+        "require new electric cars to make an artificial sound at low speeds",
+        "encourage pedestrians to wear headphones",
+        "limit the number of electric cars sold each year"
+       ],
+       "answer": 1,
+       "why": "静かすぎて歩行者が気づかない、という問題への対策。次の段落が「これらの音を設計するのは難しい」と続くので、低速で人工の音を出させる決まり。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "Nonetheless",
+        "Otherwise",
+        "On the contrary",
+        "For instance"
+       ],
+       "answer": 3,
+       "why": "前の文は「作曲家を雇って心地よい音を作る」、後ろはある会社が何十もの音を試した具体例。だから「例えば」。Nonetheless（それでも）、Otherwise（さもないと）、On the contrary（それどころか）は合わない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "reduce the price of their vehicles",
+        "make their cars travel faster",
+        "avoid following safety rules",
+        "give their products a distinctive identity"
+       ],
+       "answer": 3,
+       "why": "かつてエンジン音でブランドが分かったように、特定の音を自社の車と結びつけてほしい、とある。だから「製品に独自の個性を持たせる」。値下げ・速さ・規則を避ける、は本文に無い。"
+      }
+     ]
+    },
+    {
+     "id": "G2-008",
+     "plus": true,
+     "passage": "The Pull of Unfinished Tasks\n\nMany people find that an unfinished task stays on their mind long after they have stopped working on it. A half-written report or an unanswered e-mail can keep coming back to their thoughts, even while they are trying to relax in the evening. For some, this can even make it hard to fall asleep. Psychologists have long observed that people tend to remember interrupted tasks better than completed ones. It seems that once a task is finished, the mind is able to ( 1 ).\n\nThis tendency can be stressful, but it can also be useful. Some writers deliberately stop working in the middle of a sentence at the end of each day. ( 2 ), they find it easier to start again the next morning, because they already know exactly what they want to say next. Teachers have used a similar idea by ending a lesson with an unanswered question, which encourages students to keep thinking about the topic until the following class.\n\nFor people who cannot stop thinking about work at night, however, researchers have suggested a simple solution. In one experiment, participants who wrote down a specific plan for completing their unfinished tasks were able to concentrate much better on a later activity than those who did not. They had not actually done any more work. It appears that the mind does not need a task to be finished in order to relax. Rather, it is enough to ( 3 ).",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "remember it in even greater detail",
+        "stop treating it as something that needs attention",
+        "feel anxious about starting new work",
+        "lose interest in all other activities"
+       ],
+       "answer": 1,
+       "why": "途中の仕事は覚えている、と対比して「終わると」なので、もう気にかける必要がない物として扱う。「さらに詳しく覚える」は前の文と逆。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "By doing so",
+        "Even so",
+        "In contrast",
+        "Instead"
+       ],
+       "answer": 0,
+       "why": "前の文は「わざと文の途中で止める」、後ろはその結果「翌朝始めやすい」。手段とその効果なので「そうすることで」。Even so（それでも）、In contrast（対照的に）、Instead（その代わり）は合わない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "forget about the task completely",
+        "complete several other tasks first",
+        "know when and how the task will be completed",
+        "ask someone else to finish the task"
+       ],
+       "answer": 2,
+       "why": "実験では、終わらせる具体的な計画を書いた人が集中できた。終わっていなくても「いつ・どうやって終えるか分かっていれば」十分。完全に忘れる、他人に頼む、は実験の内容と違う。"
       }
      ]
     }
@@ -1056,6 +1948,178 @@
        "why": "第4段落：目標をはっきりさせ、内容は秘密にし、お互いに教え合う（go both ways）ようにする。秘密にするので、記録して上司が確認する、は逆。"
       }
      ]
+    },
+    {
+     "id": "G3A-005",
+     "plus": true,
+     "passage": "The First Self-Service Stores\n\nBefore the twentieth century, shopping for groceries usually meant standing at a counter and asking a clerk for each item. The clerk would collect the goods from shelves behind the counter, weigh them, and wrap them, while other customers waited their turn. This system gave store owners a great deal of control over what customers bought, but it was slow and required many employees. In busy neighborhoods, shoppers sometimes spent more time waiting in line than actually shopping. Clerks also had to remember the prices of hundreds of items, and mistakes in calculating bills were common.\n\nIn the early 1900s, some store owners began experimenting with a new idea: allowing customers to walk through the store and pick up products themselves. At first, many people in the industry were doubtful. They worried that customers would be confused without a clerk's help and that goods would be damaged or put back in the wrong places. To deal with these concerns, early self-service stores were often designed with a single path that led shoppers past every shelf and ended at a checkout counter near the exit. Shoppers were also given baskets, an idea that seems obvious today but was considered new at the time.\n\nThe new system turned out to have advantages that its inventors had not fully expected. Because fewer clerks were needed, stores could lower their prices, which attracted more customers. More importantly, shoppers who could see and touch products often bought items they had not planned to buy. Store owners began placing popular products in certain locations to encourage this. Manufacturers quickly realized that the appearance of a product's package now mattered a great deal, since it had to catch the eye of shoppers without a clerk recommending it. This led to a boom in colorful packaging and brand advertising.\n\nToday, self-service is so common that it is hard to imagine shopping any other way. However, some observers note that the original trade-offs remain. While customers enjoy lower prices and greater freedom, they have also lost the personal advice that clerks once provided. Many shoppers find it hard to choose between dozens of similar products without help. Some small grocery stores have begun to attract customers by offering exactly this kind of service, hiring knowledgeable staff who can recommend ingredients and explain how to cook them. For these stores, the human touch that self-service removed has become a selling point.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "According to the passage, what was one problem with the traditional way of shopping for groceries?",
+       "choices": [
+        "It took a long time and needed a large number of workers.",
+        "Customers were allowed to take products from any shelf.",
+        "Store owners could not decide which goods to sell.",
+        "Clerks often recommended products that were too expensive."
+       ],
+       "answer": 0,
+       "why": "第1段落：店員が一つずつ取って量り包むので遅く、多くの従業員が必要だった。棚から自由に取るのはセルフサービスの方。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why did package design become more important after self-service stores appeared?",
+       "choices": [
+        "Stores required manufacturers to make their packages smaller.",
+        "Clerks refused to recommend products in plain packages.",
+        "Products needed to attract shoppers' attention without help from a clerk.",
+        "Customers preferred to buy goods that had been wrapped by hand."
+       ],
+       "answer": 2,
+       "why": "第3段落：店員が勧めてくれないので、包装そのものが客の目を引く必要があった。包装を小さく、手で包んだ物を好む、は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "What do some small grocery stores do today?",
+       "choices": [
+        "They have stopped allowing customers to choose products themselves.",
+        "They attract customers by providing the kind of personal advice that self-service removed.",
+        "They offer lower prices than large supermarkets by hiring fewer staff.",
+        "They require customers to follow a single path through the store."
+       ],
+       "answer": 1,
+       "why": "第4段落：詳しい店員を雇い、材料や料理法を勧める。セルフサービスで失われた人の助言を売りにしている。一本道の通路は初期の店の話。"
+      }
+     ]
+    },
+    {
+     "id": "G3A-006",
+     "plus": true,
+     "passage": "City Birds Change Their Tune\n\nFor birds, singing is not simply a pleasant activity. Males of many species sing to attract partners and to warn rivals to stay out of their territory. For these messages to work, however, they must be heard clearly. In cities, this has become increasingly difficult, as the constant low-pitched noise of traffic and construction can drown out birdsong. A song that cannot be heard by a female or a rival is of little use. As cities grow, more and more birds face this problem every day.\n\nResearchers studying songbirds in several large cities have found that some species have responded by changing the way they sing. Birds living near busy roads tend to sing at a higher pitch than members of the same species living in quiet forests. Because traffic noise is mostly low-pitched, higher notes are less likely to be covered up. Some urban birds have also started singing earlier in the morning, before rush hour begins, or singing more loudly than their relatives in the countryside. In quieter parts of the same city, however, birds of the same species often sing lower songs, much like their relatives in forests.\n\nThese changes may help birds communicate, but they could also have costs. In some species, females seem to prefer males that sing lower songs, possibly because low notes are a sign of a larger, healthier bird. A male that raises the pitch of his song to be heard over traffic may therefore become less attractive. Singing more loudly also requires more energy, which could leave birds with less strength for finding food. Birds that start singing very early may also lose valuable time for rest. Scientists are still trying to determine whether city birds raise as many young as those in quieter areas.\n\nThe research has encouraged some cities to look for ways to reduce noise in parks and green spaces. Planting thick rows of trees and bushes along roads, for example, can absorb some traffic sound. Road surfaces made of special materials can also reduce the noise from tires. In one city, a trial that lowered speed limits on the roads next to a large park led to a noticeable drop in noise levels, and researchers later recorded more bird species singing there. Such findings suggest that making cities quieter could benefit not only people but also the wildlife that shares their neighborhoods.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why do some birds in cities sing at a higher pitch?",
+       "choices": [
+        "Females in cities prefer males with high voices.",
+        "They are smaller than birds that live in forests.",
+        "They need to warn other birds about approaching cars.",
+        "Higher sounds are less likely to be hidden by traffic noise."
+       ],
+       "answer": 3,
+       "why": "第2段落：交通の騒音は主に低い音なので、高い音の方がかき消されにくい。メスはむしろ低い歌を好む（第3段落）。"
+      },
+      {
+       "type": "mcq",
+       "q": "What is one possible problem with the changes in city birds' songs?",
+       "choices": [
+        "Females may find males with higher songs less appealing.",
+        "Birds that sing early cannot find enough food in the morning.",
+        "The new songs can no longer be heard by other members of the species.",
+        "The birds are no longer able to defend their territory."
+       ],
+       "answer": 0,
+       "why": "第3段落：低い歌は大きく健康なしるしなので、高く歌うオスは魅力が下がるかもしれない。大きな声はエネルギーを使うとあるが、朝食べ物が見つからないとは言っていない。"
+      },
+      {
+       "type": "mcq",
+       "q": "What happened when speed limits were lowered near a park?",
+       "choices": [
+        "Drivers began using other roads that passed through the park.",
+        "Fewer trees and bushes were needed along the roads.",
+        "Residents complained that traffic jams had become worse.",
+        "The area became quieter, and more kinds of birds were heard singing."
+       ],
+       "answer": 3,
+       "why": "第4段落：騒音がはっきり下がり、後で歌う鳥の種類が増えた。木の列は別の対策の例で、減らしたわけではない。"
+      }
+     ]
+    },
+    {
+     "id": "G3A-007",
+     "plus": true,
+     "passage": "Science by the Public\n\nScientific research is usually thought of as the work of professionals in laboratories. In recent decades, however, millions of ordinary people have taken part in what is known as citizen science. Volunteers count birds in their gardens, record the dates when local flowers bloom, or use smartphone apps to photograph insects. The information they collect is then sent to researchers, who use it in their studies. Some projects involve only a few hundred people, while others have attracted hundreds of thousands of volunteers from many countries.\n\nThe biggest advantage of citizen science is scale. A small team of scientists can only be in a few places at once, but thousands of volunteers can gather observations across an entire country. One long-running project asks people to report the first day each spring that they see certain kinds of butterflies. By comparing reports from many years, researchers have been able to show that several species now appear earlier than they did a few decades ago, a change that would have been almost impossible to detect without so many observers. Professional researchers simply could not afford to employ enough people to collect such information.\n\nCritics have raised concerns about the quality of the data, however. Volunteers may misidentify species or forget to report days when they saw nothing at all, which can make results unreliable. Some volunteers may also report only unusual sightings, since common species seem less interesting to record. To address this problem, many projects now provide online training and ask volunteers to upload photographs so that experts can check difficult identifications. Researchers have also developed statistical methods that can account for common mistakes. Studies comparing volunteer data with data collected by professionals have generally found that, when such checks are in place, the two are surprisingly similar.\n\nCitizen science also benefits the volunteers themselves. Surveys of participants show that many become more interested in science and more aware of environmental issues after joining a project. Some even change their own behavior, for example by planting flowers that attract bees and butterflies. Some teachers have begun including citizen science activities in their lessons, finding that students are more motivated when they know their observations will be used by real researchers. For many participants, the knowledge that they are contributing to scientific discoveries is a reward in itself.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "According to the passage, what is the main advantage of citizen science?",
+       "choices": [
+        "It is cheaper because volunteers buy their own equipment.",
+        "Volunteers are better at identifying butterflies than scientists are.",
+        "It allows information to be collected over a much wider area.",
+        "It allows researchers to stop working in laboratories."
+       ],
+       "answer": 2,
+       "why": "第2段落：最大の利点は規模。少人数の科学者には無理な、国全体の観察が集まる。費用や、科学者より上手、は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "How have projects tried to improve the quality of volunteers' data?",
+       "choices": [
+        "By only accepting reports from professional scientists.",
+        "By training volunteers and having experts check their photographs.",
+        "By asking volunteers to report only on days when they see something.",
+        "By reducing the number of volunteers in each project."
+       ],
+       "answer": 1,
+       "why": "第3段落：オンライン研修と、写真を上げて専門家が確認する仕組み。「何も見なかった日を報告し忘れる」のが問題なので、見た日だけ報告させる、は逆。"
+      },
+      {
+       "type": "mcq",
+       "q": "What have some teachers found?",
+       "choices": [
+        "Students try harder when they know researchers will use their observations.",
+        "Students prefer studying science in laboratories to doing outdoor activities.",
+        "Citizen science projects are too difficult for most students.",
+        "Students become less interested in environmental issues after joining projects."
+       ],
+       "answer": 0,
+       "why": "第4段落：本物の研究者が観察を使うと分かると、生徒のやる気が上がる。環境への関心はむしろ高まる。"
+      }
+     ]
+    },
+    {
+     "id": "G3A-008",
+     "plus": true,
+     "passage": "Following the Footsteps\n\nIn almost any park or university campus, there are narrow strips of bare earth cutting across the grass. These informal trails, sometimes called desire paths, appear when many people choose a route that is shorter or more convenient than the paved paths provided. Over time, their footsteps wear away the grass, leaving a visible line that shows how people actually prefer to move from one place to another. Such paths can be found almost anywhere people walk regularly, from city parks to the areas around train stations.\n\nFor a long time, landscape designers and building managers viewed desire paths as a problem. They put up fences, planted bushes, or added signs asking people to stay on the paths. Some even placed large rocks along the edges of lawns. Such efforts were often unsuccessful, however. People tended to walk around the fences or simply ignored the signs, and new trails soon appeared next to the old ones. Some managers spent large amounts of money repairing lawns, only to see them worn down again within months.\n\nMore recently, some planners have begun to treat desire paths as useful information. One university, when building a new campus, decided not to lay any paths at all during the first year. Instead, it planted grass everywhere and waited to see where students and staff walked. After a year, the worn trails clearly showed the most popular routes between buildings, and the university paved them. Because the paths matched how people actually moved, few new trails appeared afterward. The university also saved money that it would otherwise have spent on repairing damaged grass, and some students enjoyed the idea that they had helped design their campus.\n\nThe idea behind this approach has spread beyond the design of parks. Some software designers, for example, study how people actually use an app rather than how they were expected to use it, and then make the most common actions easier. If many users take an unexpected route to reach a certain feature, designers may move that feature to where people look for it. Supporters say the lesson is that designs work best when they follow people's habits instead of trying to control them. Others warn, though, that the shortest route is not always the best one, especially when a path would damage a sensitive area such as a riverbank or a field of rare plants.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "How did managers traditionally respond to desire paths?",
+       "choices": [
+        "They paved the trails as soon as they appeared.",
+        "They asked students to help design new paths.",
+        "They tried to keep people off the grass, often without success.",
+        "They moved buildings closer together to shorten routes."
+       ],
+       "answer": 2,
+       "why": "第2段落：柵・植え込み・看板で道から外れさせないようにしたが、うまくいかないことが多かった。踏み跡を舗装したのは最近の大学の例。"
+      },
+      {
+       "type": "mcq",
+       "q": "What did one university do when building a new campus?",
+       "choices": [
+        "It put up fences to protect the grass during the first year.",
+        "It asked designers to plan the shortest routes between buildings.",
+        "It repaired the lawn every few months after students damaged it.",
+        "It waited to see where people walked before deciding where to put paths."
+       ],
+       "answer": 3,
+       "why": "第3段落：1年間は道を作らず、人が歩いた跡を見てから舗装した。柵で守る・数か月ごとに芝を直す、は昔のやり方。"
+      },
+      {
+       "type": "mcq",
+       "q": "What is one concern about following people's habits in design?",
+       "choices": [
+        "Software may become too difficult for people to use.",
+        "The most direct route may harm places that need protection.",
+        "People may stop using paths once they are paved.",
+        "Designers may no longer be needed in the future."
+       ],
+       "answer": 1,
+       "why": "第4段落の最後：一番近い道が最善とは限らず、川岸や珍しい植物の野原を傷めることがある。ソフトはむしろ使いやすくなる例。"
+      }
+     ]
     }
    ]
   },
@@ -1229,6 +2293,226 @@
        "why": "第5段落：気をそらしたり期待を調整したりしても、長すぎる待ちに満足はしないと警告する専門家がいる。第1段落では実際の長さより感じ方が大事、とある。"
       }
      ]
+    },
+    {
+     "id": "G3B-004",
+     "plus": true,
+     "passage": "Food in a Can\n\nToday, canned food can be found in almost every kitchen, but the technology behind it was developed to solve a very specific problem. In the late eighteenth century, armies and navies on long journeys struggled to keep food from spoiling. Salted meat and dried biscuits lasted a long time, but they provided poor nutrition, and sailors on long voyages often became ill. Governments therefore offered prizes to anyone who could find a better way to preserve food.\n\nOne early solution came from a cook who discovered that food sealed in glass jars and heated in boiling water could stay fresh for months. He did not understand why the method worked; it would be several decades before scientists showed that heat kills the tiny organisms that cause food to spoil. Glass jars, however, were heavy and broke easily, which made them unsuitable for soldiers and sailors. Before long, inventors began sealing food in containers made of iron coated with tin, which were much stronger. These containers could be carried long distances without breaking and kept food safe for years.\n\nEarly cans had problems of their own. They were made by hand, and a skilled worker could produce only a few dozen a day, so canned food was expensive and mainly used by explorers and the military. Opening the cans was also difficult. Strangely, the can opener was not invented until nearly fifty years after the first cans appeared; until then, people had to use knives, hammers, or even rocks. It was only when factories began producing cans by machine in the late nineteenth century that prices fell enough for ordinary families to buy them regularly.\n\nOnce canned food became affordable, it changed diets in important ways. Families living far from farms or the sea could now eat fruit, vegetables, and fish throughout the year. Foods that had once been luxuries, such as pineapples and certain kinds of fish, became everyday items in many homes. Some historians argue that canned food also greatly reduced the time families spent preparing meals, since ingredients that once required hours of cleaning and cooking could simply be opened and heated. At the same time, critics in the early twentieth century complained that canned products were less tasty than fresh food and that some companies used poor-quality ingredients.\n\nIn recent decades, canned food has faced competition from frozen meals and from fresh produce shipped from around the world. Yet it remains popular for several reasons. Cans do not need electricity to keep food safe, which makes them useful on camping trips and in areas without reliable refrigerators. They are also easy to recycle. Because metal can be melted down and reused many times, most cans can be turned into new products. Some nutrition researchers have even found that certain canned vegetables, such as tomatoes, keep most of their nutrients because they are processed shortly after being picked. More than two centuries after its invention, the humble can continues to play a useful role in the way people eat.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why did governments offer prizes in the late eighteenth century?",
+       "choices": [
+        "Salted meat had become too expensive for armies to buy.",
+        "They hoped to encourage farmers to grow more vegetables.",
+        "Sailors had refused to eat dried biscuits on voyages.",
+        "They wanted a better way to keep food fresh on long journeys."
+       ],
+       "answer": 3,
+       "why": "第1段落：長い航海や遠征で食べ物が傷むのが問題で、保存のよい方法を探して賞を出した。塩漬け肉が高い・水兵が食べるのを拒んだ、は本文に無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "What is one reason that glass jars were replaced by other containers?",
+       "choices": [
+        "Scientists proved that they did not kill harmful organisms.",
+        "The food inside them spoiled within a few days.",
+        "They were too heavy and fragile for soldiers and sailors to use.",
+        "They could not be heated in boiling water."
+       ],
+       "answer": 2,
+       "why": "第2段落：ガラス瓶は重く割れやすく、兵士や水兵に向かなかったので、スズで覆った鉄の容器になった。数か月もつとあるので「数日で傷む」は誤り。"
+      },
+      {
+       "type": "mcq",
+       "q": "According to the passage, canned food became common in ordinary homes when",
+       "choices": [
+        "the can opener was invented by a skilled factory worker.",
+        "machines made it possible to produce cans much more cheaply.",
+        "explorers began recommending it to their families.",
+        "the military stopped buying cans for its soldiers."
+       ],
+       "answer": 1,
+       "why": "第3段落の最後：19世紀後半に工場が機械で缶を作るようになり、値段が下がって家庭で買えるようになった。缶切りの発明者は本文に書かれていない。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which of the following statements is true?",
+       "choices": [
+        "People had to open early cans without a tool designed for the purpose.",
+        "The cook who used glass jars knew that heat killed organisms in food.",
+        "Critics in the early twentieth century praised the taste of canned products.",
+        "Canned vegetables always contain fewer nutrients than fresh ones."
+       ],
+       "answer": 0,
+       "why": "第3段落：缶切りは最初の缶から約50年後の発明で、それまではナイフや金づちで開けた。料理人は理由を知らなかった、批評家は味が劣ると言った、トマトなどは栄養が残る。"
+      }
+     ]
+    },
+    {
+     "id": "G3B-005",
+     "plus": true,
+     "passage": "Why Teenagers Sleep Late\n\nIn many countries, high school classes begin early in the morning, sometimes before eight o'clock. For years, parents and teachers have complained that teenagers seem tired and unfocused during morning lessons. It was often assumed that the problem was simply that young people stayed up too late playing games or chatting with friends online. Many people also believed that teenagers could solve the problem simply by going to bed earlier. Research on sleep, however, suggests that the explanation is more complicated.\n\nScientists have found that during adolescence, the body's internal clock shifts. The hormone that makes people feel sleepy is released later in the evening than it is in children or adults. As a result, many teenagers find it difficult to fall asleep before eleven o'clock, even if they go to bed earlier. They are not choosing to stay awake; their bodies are simply not ready to sleep. Since most teenagers need around nine hours of sleep, an early school start means that many of them regularly get far less sleep than their bodies require. Lack of sleep has been linked to poor concentration, low mood, and a greater risk of accidents among young drivers.\n\nMotivated by these findings, some school districts have experimented with later start times. In one district, high schools moved the start of classes from 7:30 to 8:30. Researchers who followed the students found that they slept, on average, about forty minutes longer each night. Attendance improved, fewer students fell asleep in class, and grades in morning subjects rose slightly. There was also a drop in the number of car accidents involving teenage drivers in the area. Students also reported feeling less stressed and more positive about school.\n\nDespite these results, changing school schedules has proved difficult. Later start times mean later finishing times, which can cause problems for students who have after-school jobs or take part in sports, since there is less daylight for practice in winter. Teachers' working hours would also have to change. Some parents who must leave for work early worry about their children being at home alone in the morning. In addition, school bus systems in many districts are organized so that the same buses carry students to elementary and high schools at different times, and changing one schedule often affects the others.\n\nSome districts have found ways to reduce these difficulties. A few have reversed the order of their school schedules so that younger children, who naturally tend to wake up earlier, begin first. Others have adjusted the times of sports practices or offered morning programs at school for students whose parents leave home early. In one district, parents, teachers, and students were invited to discuss possible schedules before any decision was made, which helped reduce opposition to the change. Experts admit that there is no single solution that works for every community. However, many argue that, given the clear link between sleep and learning, the time when schools begin should be decided with students' health in mind rather than for convenience alone.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "According to the passage, why do many teenagers have trouble falling asleep early?",
+       "choices": [
+        "They spend too much time chatting with friends before bed.",
+        "They need less sleep than children and adults do.",
+        "Their schools give them too much homework to finish.",
+        "Changes in their bodies make them feel sleepy later at night."
+       ],
+       "answer": 3,
+       "why": "第2段落：思春期には体内時計がずれ、眠くなるホルモンが遅く出る。友達とのおしゃべりのせい、は「よく思われていた」説で、研究はそれより複雑だと言っている。"
+      },
+      {
+       "type": "mcq",
+       "q": "What happened after one district moved its start time to 8:30?",
+       "choices": [
+        "Students' grades in all subjects rose dramatically.",
+        "Students went to bed about forty minutes later than before.",
+        "Students slept longer and were absent from school less often.",
+        "Students began taking part in more after-school sports."
+       ],
+       "answer": 2,
+       "why": "第3段落：睡眠が平均約40分長くなり、出席が良くなった。成績は朝の科目が少し上がっただけ。40分は「長く寝た」時間で、寝る時刻が遅くなったのではない。"
+      },
+      {
+       "type": "mcq",
+       "q": "What is one difficulty that districts face when changing start times?",
+       "choices": [
+        "High school students refuse to arrive at school later.",
+        "Bus schedules for different schools are often connected to each other.",
+        "Teachers do not want to work in the late afternoon.",
+        "Elementary schools must close earlier in winter."
+       ],
+       "answer": 1,
+       "why": "第4段落の最後：同じバスが時間をずらして小学校と高校を回るので、一つ変えると他にも響く。冬に日が短いのは部活の練習の問題。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which of the following statements is true?",
+       "choices": [
+        "Some districts have made younger children start school before older students.",
+        "Experts agree that one solution can be used in every community.",
+        "Most teenagers need less than seven hours of sleep each night.",
+        "Later start times have made it easier for students to keep part-time jobs."
+       ],
+       "answer": 0,
+       "why": "第5段落：早起きしやすい小さい子を先に始める順に入れ替えた地区がある。専門家はどこでも使える解決策は無いと認めている。10代は約9時間の睡眠が必要。"
+      }
+     ]
+    },
+    {
+     "id": "G3B-006",
+     "plus": true,
+     "passage": "Mapping the Deep\n\nIt is often said that we know more about the surface of the moon than about the floor of our own oceans. Although this may sound like an exaggeration, it contains some truth. Satellites have produced detailed maps of the moon and of nearby planets, but water blocks the signals that satellites use, so they cannot observe the seabed directly. As a result, only around a quarter of the ocean floor has been mapped in high detail. In comparison, the surfaces of the moon and Mars have been mapped almost completely.\n\nMost of what we know about the seabed comes from sonar, a technology that sends sound waves down from ships and measures how long they take to bounce back. Early ships could measure the depth at only one point at a time, but modern systems send out a wide fan of sound, mapping a strip of the seabed several kilometers wide as the ship moves forward. The longer the sound takes to return, the deeper the water. Even so, the process is extremely slow. Experts estimate that it would take a single ship hundreds of years to map the entire ocean floor in detail.\n\nWhy does this matter? Detailed maps help ships travel safely and allow engineers to plan routes for the undersea cables that carry most international internet traffic. They also help scientists understand ocean currents, which move heat around the planet and influence the weather on land. In addition, underwater mountains are often home to rich communities of sea life, and mapping them is a first step toward protecting these areas. Maps of the seabed can also help scientists predict how waves will behave as they approach the coast.\n\nIn recent years, an international project has set the goal of mapping the whole ocean floor within the next decade or so. To speed up the work, organizers are asking fishing boats, cargo ships, and even private sailing boats to carry simple measuring devices and share the data they collect. Robot vessels that can travel for weeks without a crew are also being tested. These vessels are powered by wind and sunlight, which allows them to operate at low cost. Some data also comes from older surveys that had been stored by governments and companies but never shared. Thanks to such efforts, the proportion of the seabed that has been mapped has increased considerably in only a few years.\n\nNot everyone welcomes this progress, however. Some environmental groups worry that detailed maps could make it easier for companies to locate valuable minerals on the seabed and begin mining them, which could damage fragile ecosystems before scientists fully understand them. Once such ecosystems are damaged, they may take thousands of years to recover. Supporters of the project respond that knowledge itself is not harmful, and that without good maps, it is impossible to decide which areas most need protection. Like many scientific advances, mapping the ocean floor brings both new opportunities and new responsibilities.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why can satellites not be used to map the seabed directly?",
+       "choices": [
+        "Water prevents their signals from reaching the ocean floor.",
+        "The ocean floor is too far from the surface of the earth.",
+        "Satellites are mainly used to study the moon and planets.",
+        "Sea life blocks their view of the seabed."
+       ],
+       "answer": 0,
+       "why": "第1段落：水が衛星の信号をさえぎるので、海底を直接見られない。月や惑星の地図を作ったのは事実だが、海底を見られない理由ではない。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does the passage say about modern sonar systems?",
+       "choices": [
+        "They can measure the depth at only one point at a time.",
+        "They allow one ship to map the whole ocean in a few years.",
+        "They map a wide area as a ship moves but are still very slow.",
+        "They use satellites to measure the sound waves."
+       ],
+       "answer": 2,
+       "why": "第2段落：幅数キロの帯を一度に測れるが、それでも1隻なら数百年かかるほど遅い。1点ずつは昔の船。"
+      },
+      {
+       "type": "mcq",
+       "q": "How is the international project trying to speed up the mapping of the ocean floor?",
+       "choices": [
+        "By building larger research ships with stronger sonar.",
+        "By paying companies to search for minerals.",
+        "By replacing research ships with satellites.",
+        "By asking many kinds of boats to collect and share data."
+       ],
+       "answer": 3,
+       "why": "第4段落：漁船・貨物船・個人のヨットにも簡単な機器を積んでもらい、データを共有する。乗組員のいないロボット船も試している。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which of the following statements is true?",
+       "choices": [
+        "Most of the ocean floor has now been mapped in high detail.",
+        "Some people fear that better maps could lead to harmful mining.",
+        "Undersea cables carry only a small share of internet traffic.",
+        "Supporters of the project agree that mining should begin soon."
+       ],
+       "answer": 1,
+       "why": "第5段落：環境団体は、詳しい地図で鉱物が見つけやすくなり、採掘で生態系が傷むことを心配している。詳しい地図は約4分の1だけ、ケーブルは国際通信の大部分を運ぶ。"
+      }
+     ]
+    },
+    {
+     "id": "G3B-007",
+     "plus": true,
+     "passage": "Talking in Whistles\n\nIn a few mountainous regions around the world, people have traditionally communicated across valleys not by shouting but by whistling. These whistled languages are not simple codes like the signals used by sports referees. Instead, they are versions of the local spoken language, in which the speaker turns the sounds of ordinary words into changes in the pitch and length of a whistle. A skilled whistler can send detailed messages, such as asking a neighbor to bring tools or announcing the arrival of a visitor. Listeners who know the spoken language can learn to understand whistled messages fairly quickly.\n\nWhistled languages developed for practical reasons. In steep, rugged areas, walking from one side of a valley to the other could take an hour or more, and a shout fades quickly over long distances. A loud whistle, by contrast, can be understood more than a kilometer away. In some valleys, whole conversations could be carried on between people standing on opposite slopes. For shepherds and farmers working on distant hillsides, this made whistling a highly efficient way of passing on information without having to leave their work. Whistling also requires no equipment, and it can be heard clearly even in strong wind.\n\nDuring the twentieth century, however, many whistled languages began to disappear. New roads made it easier to travel between villages, and telephones, and later mobile phones, allowed people to talk over long distances without whistling. At the same time, many young people moved to cities in search of work, and fewer children learned to whistle from their parents. Some parents even believed that whistling was old-fashioned and that their children should focus on subjects that would help them find jobs. In some communities, only a handful of elderly speakers remained.\n\nIn recent years, some of these communities have made efforts to revive their whistled languages. In one region, whistling has been added to the school curriculum, and children practice it for an hour each week. Older residents visit schools to share stories about how whistling was used in the past. Local festivals hold whistling competitions, and visitors are invited to watch demonstrations. Supporters say these efforts are about more than keeping an old skill alive; they also help young people feel proud of their community's history and identity. Some young people have even started posting videos of their whistling online, attracting interest from around the world.\n\nScientists, too, have become interested in whistled languages. Brain researchers have found that whistled speech is processed by both sides of the brain, while ordinary speech relies more heavily on one side. This suggests that the brain is more flexible in understanding language than was once believed. Some linguists also hope that studying how whistlers turn words into tones could help them understand how human languages developed in the first place. Researchers are also studying how well whistled messages travel in different landscapes and weather conditions. In this way, a tradition born on remote hillsides may contribute to answering some very modern scientific questions.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is one feature of whistled languages?",
+       "choices": [
+        "They consist of a small number of simple signals.",
+        "They were first developed by sports referees.",
+        "They can be understood only by people standing close together.",
+        "They are based on the spoken language used in the area."
+       ],
+       "answer": 3,
+       "why": "第1段落：単純な合図ではなく、その土地の話し言葉を口笛の高さと長さに置き換えたもの。1キロ以上先でも分かるので「近くの人だけ」は逆。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why did whistled languages develop in mountainous regions?",
+       "choices": [
+        "They allowed people to communicate over long distances without walking.",
+        "Shouting was not allowed in many villages.",
+        "They were easier for children to learn than spoken languages.",
+        "Farmers needed a way to keep their messages secret."
+       ],
+       "answer": 0,
+       "why": "第2段落：谷の向こうまで歩くと1時間以上かかり、叫び声は遠くで消える。口笛なら仕事を離れずに遠くへ伝えられた。"
+      },
+      {
+       "type": "mcq",
+       "q": "What is one reason whistled languages started to disappear?",
+       "choices": [
+        "Elderly speakers refused to teach young people.",
+        "Schools did not allow children to whistle.",
+        "New ways of communicating made whistling less necessary.",
+        "Visitors made fun of people who whistled."
+       ],
+       "answer": 2,
+       "why": "第3段落：道路や電話・携帯電話ができ、口笛で話す必要が減った。若者が都市へ出たことも理由。学校はむしろ今は口笛を教えている。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which of the following statements is true?",
+       "choices": [
+        "Whistling competitions are held mainly for tourists from other countries.",
+        "Research suggests that whistled speech is processed by both sides of the brain.",
+        "Children in one region study whistling for an hour every day.",
+        "Linguists have proved exactly how human languages first developed."
+       ],
+       "answer": 1,
+       "why": "第5段落：口笛の言葉は脳の両側で処理される。授業は週に1時間で毎日ではない。言語の起源は「分かるかもしれないと期待」しているだけ。"
+      }
+     ]
     }
    ]
   },
@@ -1294,6 +2578,86 @@
      "maxWords": 70,
      "source": "In many countries, universities have traditionally been places for young people who have just finished high school. Recently, however, increasing numbers of people in their fifties, sixties, and even older have been enrolling in university courses. Some study part-time while continuing to work, while others return to education after retiring. To meet this demand, a number of universities have introduced special programs and reduced fees for older students.\n\nThere are several reasons for this trend. As people live longer and healthier lives, many want to use their later years to study subjects they did not have the chance to pursue when they were young. Others hope to gain new qualifications so that they can change careers or continue working for longer. Research also suggests that learning new things can help older people keep their minds active and avoid feeling isolated. Universities, meanwhile, benefit from a new source of students at a time when the number of young people is falling.\n\nNevertheless, older students can face difficulties. Many find it hard to adjust to new technology, such as online learning systems, and some feel out of place among classmates who are decades younger than they are. The cost of tuition can also be a burden for those living on a pension. In addition, some younger students have complained that their older classmates tend to dominate discussions in class. To address these challenges, some universities now offer introductory computer courses and organize events where students of different ages can get to know one another. Experts believe that such efforts will become increasingly important as societies continue to age.",
      "note": "3段落を1〜2文ずつ：①何が起きているか ②利点・理由 ③問題点（と対策）。具体例は削ってまとめる語に言い換え、本文の文をそのまま写さない。自分の意見は入れない。"
+    },
+    {
+     "id": "W1-007",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below. Then write a summary of it in English, using your own words wherever possible. Your summary must be 60–70 words long.",
+     "minWords": 60,
+     "maxWords": 70,
+     "source": "In recent years, a growing number of companies have begun experimenting with a four-day working week. Under most of these programs, employees work four days instead of five but continue to receive the same salary. Some firms ask staff to work slightly longer hours on each of the four days, while others simply expect employees to complete the same amount of work in less time. In most cases, the extra day off is Friday or Monday.\n\nCompanies that have adopted the system report a number of advantages. Employees say that having an extra day off each week gives them more time to rest, spend with their families, and pursue hobbies, and as a result, they feel more energetic and focused when they return to work. Some firms have found that staff waste less time in unnecessary meetings because they know their working hours are limited. Furthermore, offering a shorter week has helped some companies attract skilled workers in industries where competition for staff is intense.\n\nHowever, the four-day week is not suitable for every business. In industries such as healthcare and retail, where customers need services every day, companies would have to hire additional staff to cover the extra day off, which would raise costs significantly. Some employees have also found that squeezing five days of work into four makes each day more stressful and tiring. They may also find it harder to contact clients who work five days a week. For these reasons, experts suggest that companies considering the idea should first try it on a small scale and carefully measure its effects before introducing it across the whole organization.",
+     "note": "3段落を1〜2文ずつ：①何が起きているか ②利点・理由 ③問題点（と対策）。具体例は削ってまとめる語に言い換え、本文の文をそのまま写さない。自分の意見は入れない。"
+    },
+    {
+     "id": "W1-008",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below. Then write a summary of it in English, using your own words wherever possible. Your summary must be 60–70 words long.",
+     "minWords": 60,
+     "maxWords": 70,
+     "source": "Many cities around the world have introduced bike-sharing programs in recent years. In these systems, bicycles are placed at stations or in designated parking areas throughout the city, and users can unlock one with a smartphone app, ride it to their destination, and leave it there for the next person. Some programs now also offer electric bicycles for users who need to climb hills. The fees are usually low, and some cities even allow the first thirty minutes of each ride for free.\n\nSupporters of bike-sharing point out several benefits. Because the bicycles can be picked up and dropped off at many locations, they are convenient for short trips that are too far to walk but too close to justify taking a taxi or waiting for a bus. City officials hope that if more people use bicycles instead of cars, traffic congestion and air pollution will be reduced. In addition, regular cycling provides exercise, which can improve users' health without requiring them to set aside time to go to a gym.\n\nNevertheless, bike-sharing programs have faced difficulties. In some cities, users have left bicycles on sidewalks or in front of shops, blocking the way for pedestrians and annoying residents. Many bicycles have also been damaged by rough use, and the cost of repairing them has been higher than expected, forcing some companies out of business. Moreover, in cities without enough bicycle lanes, riders must share the road with heavy traffic, which many people find frightening. Experts say that bike-sharing is most successful when cities invest in safe lanes and introduce clear parking rules at the same time.",
+     "note": "3段落を1〜2文ずつ：①何が起きているか ②利点・理由 ③問題点（と対策）。具体例は削ってまとめる語に言い換え、本文の文をそのまま写さない。自分の意見は入れない。"
+    },
+    {
+     "id": "W1-009",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below. Then write a summary of it in English, using your own words wherever possible. Your summary must be 60–70 words long.",
+     "minWords": 60,
+     "maxWords": 70,
+     "source": "In many countries, an increasing number of schools have introduced rules that prohibit students from using smartphones during the school day. In some schools, students must turn off their phones and keep them in their bags, while in others, phones are collected by teachers in the morning and returned when classes finish. Such policies have been adopted in schools for students of a wide range of ages. In some cases, the rules apply even during lunch and breaks.\n\nSchools that have introduced these bans report several positive changes. Teachers say that students are less distracted in class and that it is easier to keep their attention throughout lessons. Some also say that students' test results have improved. Without phones, students also tend to talk and play with one another more during breaks, which can help them develop social skills and form friendships. Some schools have also seen a decrease in problems such as students sharing unkind messages or photos of their classmates online during school hours.\n\nHowever, not everyone supports these rules. Some parents feel uneasy about being unable to contact their children directly during the day, especially if there is a sudden change in family plans. Critics also argue that smartphones can be valuable learning tools, allowing students to look up information, use educational apps, and record notes. They worry that banning phones completely prevents students from learning how to use technology responsibly, which is a skill they will need as adults. For this reason, some experts recommend allowing phones in class, but only for specific learning activities that are supervised by teachers.",
+     "note": "3段落を1〜2文ずつ：①何が起きているか ②利点・理由 ③問題点（と対策）。具体例は削ってまとめる語に言い換え、本文の文をそのまま写さない。自分の意見は入れない。"
+    },
+    {
+     "id": "W1-010",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below. Then write a summary of it in English, using your own words wherever possible. Your summary must be 60–70 words long.",
+     "minWords": 60,
+     "maxWords": 70,
+     "source": "Traditionally, people who wanted new clothes had little choice but to buy them. In recent years, however, a growing number of businesses have begun offering clothing rental services. For a monthly fee, customers can choose several items from a large online collection, wear them for as long as they like, and then send them back in exchange for new ones. Some services specialize in formal clothing for special occasions, while others focus on everyday clothes for work. Some even allow customers to buy items they particularly like.\n\nRental services have become popular for a number of reasons. Customers can wear a wide variety of fashionable clothes without spending large amounts of money or filling their closets with items they rarely wear. This is especially attractive to people who need to dress smartly for work but do not want to keep buying new outfits. Supporters also say that rental is better for the environment, since each item is worn by many different people instead of being thrown away after only a few uses.\n\nOn the other hand, clothing rental has some drawbacks. Each item must be cleaned and packaged after every use and then shipped back and forth, which requires energy and can reduce the environmental benefits. Some customers have complained that rented clothes did not fit them well or showed signs of wear. In addition, over a long period, the monthly fees can add up to more than the cost of simply buying a smaller number of high-quality items. As a result, some experts suggest that rental may be most useful for clothes that people need only occasionally.",
+     "note": "3段落を1〜2文ずつ：①何が起きているか ②利点・理由 ③問題点（と対策）。具体例は削ってまとめる語に言い換え、本文の文をそのまま写さない。自分の意見は入れない。"
+    },
+    {
+     "id": "W1-011",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below. Then write a summary of it in English, using your own words wherever possible. Your summary must be 60–70 words long.",
+     "minWords": 60,
+     "maxWords": 70,
+     "source": "Public libraries were once thought of mainly as quiet places for borrowing books. In recent years, however, many libraries have been expanding the range of services they offer. Some now lend items such as tools, musical instruments, and cameras, while others provide workshops where residents can use 3D printers or learn how to repair electronic devices. Many have also created spaces where community groups can hold meetings and events. Some libraries even stay open later in the evening so that working adults can use these services.\n\nSupporters argue that these changes help libraries stay relevant at a time when many people read books and find information online. By lending expensive equipment that people use only occasionally, libraries allow residents to save money and reduce the number of items they need to buy and store at home. Workshops and events also bring together people of different ages and backgrounds, which can strengthen ties within the community. In addition, such services can be particularly valuable for low-income families, who might not otherwise have access to new technology.\n\nHowever, the changes also present challenges. Lending items such as tools and cameras requires extra storage space, as well as staff who know how to check and maintain them, which can be costly for libraries with limited budgets. Some regular library users have complained that their libraries have become noisier and that money is being spent on new services instead of books. Library managers therefore face the difficult task of balancing traditional services with new ones, and many are now asking local residents for their opinions before making any major changes.",
+     "note": "3段落を1〜2文ずつ：①何が起きているか ②利点・理由 ③問題点（と対策）。具体例は削ってまとめる語に言い換え、本文の文をそのまま写さない。自分の意見は入れない。"
+    },
+    {
+     "id": "W1-012",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below. Then write a summary of it in English, using your own words wherever possible. Your summary must be 60–70 words long.",
+     "minWords": 60,
+     "maxWords": 70,
+     "source": "In some cities, small robots have started to deliver food and packages to people's homes. These battery-powered machines, which are roughly the size of a suitcase, travel along sidewalks at walking speed, using cameras and sensors to avoid obstacles. When a robot arrives at its destination, the customer receives a message and unlocks the robot's storage compartment by entering a code on their smartphone. Several companies are now testing these robots in residential areas and on university campuses.\n\nCompanies that use delivery robots say they offer several benefits. Because the robots do not need breaks, they can make deliveries at any time of day, and they can be cheaper to operate than human drivers, especially for short trips. They can also carry several orders at once. Since they run on electricity, they also produce less pollution than delivery vans and motorbikes. Moreover, in areas where there is a shortage of delivery workers, robots can help businesses keep up with the growing number of online orders that customers place every day.\n\nHowever, the robots have also caused some concerns. Some pedestrians, particularly elderly people and those who use wheelchairs, have complained that the robots block narrow sidewalks or make it difficult to pass. The robots can also have trouble with stairs, heavy snow, and crowded streets, which limits where they can be used. In addition, some people worry that the spread of delivery robots could reduce job opportunities for human delivery workers. Many experts believe that clear rules about where and when robots may operate will be necessary before they can be used more widely.",
+     "note": "3段落を1〜2文ずつ：①何が起きているか ②利点・理由 ③問題点（と対策）。具体例は削ってまとめる語に言い換え、本文の文をそのまま写さない。自分の意見は入れない。"
+    },
+    {
+     "id": "W1-013",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below. Then write a summary of it in English, using your own words wherever possible. Your summary must be 60–70 words long.",
+     "minWords": 60,
+     "maxWords": 70,
+     "source": "In recent years, plant-based meat substitutes have become increasingly common in supermarkets and restaurants. These products are made from ingredients such as soybeans, peas, and wheat, and they are designed to look and taste like beef, chicken, or pork. Whereas earlier meat substitutes were bought mainly by vegetarians, many of today's products are aimed at people who still eat meat but would like to eat less of it. Some fast-food chains have even added such products to their menus.\n\nSupporters believe that these products could bring important benefits. Raising animals for meat requires large amounts of land, water, and feed, and it produces a significant share of the gases that contribute to climate change. If more people replaced some of the meat in their diet with plant-based alternatives, these environmental impacts could be reduced considerably. Some health experts also point out that eating less red meat may lower the risk of certain diseases, such as heart disease.\n\nHowever, plant-based meat has its critics. Many products contain a large number of additives and a high amount of salt in order to copy the taste and texture of real meat, so some nutritionists question whether they are actually healthier. Prices are also often higher than those of ordinary meat, which discourages many shoppers from buying them regularly. Furthermore, sales in some countries have slowed after an initial period of rapid growth, as many consumers tried the products once and did not buy them again. Experts say that improving the taste and lowering prices will be essential if the industry is to continue growing.",
+     "note": "3段落を1〜2文ずつ：①何が起きているか ②利点・理由 ③問題点（と対策）。具体例は削ってまとめる語に言い換え、本文の文をそのまま写さない。自分の意見は入れない。"
+    },
+    {
+     "id": "W1-014",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "Read the passage below. Then write a summary of it in English, using your own words wherever possible. Your summary must be 60–70 words long.",
+     "minWords": 60,
+     "maxWords": 70,
+     "source": "In many places, a new type of store has appeared that operates without any staff. Customers enter by scanning a smartphone app or a card at the door, pick up the items they want, and pay using self-service machines or automatically through the app as they leave. Cameras and sensors keep track of which products are taken from the shelves. Some of these stores stay open twenty-four hours a day, every day of the year. Most of these stores are small and sell everyday items such as snacks and drinks.\n\nUnstaffed stores offer advantages for both businesses and customers. Because owners do not need to pay employees, they can keep stores open late at night and in small towns where hiring workers is difficult. This is especially important in areas facing serious labor shortages. Customers, for their part, can shop whenever it is convenient for them and do not have to wait in line at a checkout counter. Some shoppers also say they feel more relaxed when there is no one watching them as they choose products.\n\nHowever, such stores have drawbacks as well. Customers who are unfamiliar with smartphones, such as some elderly people, may find them hard to use. Without staff, there is no one to answer questions, help people find products, or deal with problems such as damaged goods. In addition, installing cameras and sensors is expensive, and some customers worry about how the data collected about their shopping habits will be used. For these reasons, some companies have chosen a mixed approach, keeping a small number of staff available in their stores during busy hours.",
+     "note": "3段落を1〜2文ずつ：①何が起きているか ②利点・理由 ③問題点（と対策）。具体例は削ってまとめる語に言い換え、本文の文をそのまま写さない。自分の意見は入れない。"
     }
    ]
   },
@@ -1350,6 +2714,78 @@
      "id": "W2-006",
      "type": "Opinion essay",
      "prompt": "Write an essay on the TOPIC below. Use TWO of the POINTS to back up your opinion. Organize your essay into an introduction, a main body, and a conclusion, and aim for 120–150 words.\n\nTOPIC: Will cashless payments completely replace cash in the future?\nPOINTS: Convenience / Security / Older people / Business costs",
+     "minWords": 120,
+     "maxWords": 150,
+     "note": "序論で立場（賛成か反対か）をはっきり書く。本論は POINTS から2つを選び、理由ごとに1段落（理由＋具体例・説明）。結論で立場をもう一度、言い換えて書く。"
+    },
+    {
+     "id": "W2-007",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "Write an essay on the TOPIC below. Use TWO of the POINTS to back up your opinion. Organize your essay into an introduction, a main body, and a conclusion, and aim for 120–150 words.\n\nTOPIC: Should schools put more emphasis on teaching practical life skills?\nPOINTS: Money management / Academic subjects / Job preparation / Teachers' workload",
+     "minWords": 120,
+     "maxWords": 150,
+     "note": "序論で立場（賛成か反対か）をはっきり書く。本論は POINTS から2つを選び、理由ごとに1段落（理由＋具体例・説明）。結論で立場をもう一度、言い換えて書く。"
+    },
+    {
+     "id": "W2-008",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "Write an essay on the TOPIC below. Use TWO of the POINTS to back up your opinion. Organize your essay into an introduction, a main body, and a conclusion, and aim for 120–150 words.\n\nTOPIC: Is it a good idea for companies to use AI to make hiring decisions?\nPOINTS: Fairness / Efficiency / Privacy / Human judgment",
+     "minWords": 120,
+     "maxWords": 150,
+     "note": "序論で立場（賛成か反対か）をはっきり書く。本論は POINTS から2つを選び、理由ごとに1段落（理由＋具体例・説明）。結論で立場をもう一度、言い換えて書く。"
+    },
+    {
+     "id": "W2-009",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "Write an essay on the TOPIC below. Use TWO of the POINTS to back up your opinion. Organize your essay into an introduction, a main body, and a conclusion, and aim for 120–150 words.\n\nTOPIC: Should tourists be charged extra fees to visit popular sightseeing spots?\nPOINTS: Overcrowding / Local economy / Fairness / The environment",
+     "minWords": 120,
+     "maxWords": 150,
+     "note": "序論で立場（賛成か反対か）をはっきり書く。本論は POINTS から2つを選び、理由ごとに1段落（理由＋具体例・説明）。結論で立場をもう一度、言い換えて書く。"
+    },
+    {
+     "id": "W2-010",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "Write an essay on the TOPIC below. Use TWO of the POINTS to back up your opinion. Organize your essay into an introduction, a main body, and a conclusion, and aim for 120–150 words.\n\nTOPIC: Should people reduce the amount of meat they eat?\nPOINTS: Health / The environment / Cost / Food culture",
+     "minWords": 120,
+     "maxWords": 150,
+     "note": "序論で立場（賛成か反対か）をはっきり書く。本論は POINTS から2つを選び、理由ごとに1段落（理由＋具体例・説明）。結論で立場をもう一度、言い換えて書く。"
+    },
+    {
+     "id": "W2-011",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "Write an essay on the TOPIC below. Use TWO of the POINTS to back up your opinion. Organize your essay into an introduction, a main body, and a conclusion, and aim for 120–150 words.\n\nTOPIC: Should parents strictly limit the time their children spend online?\nPOINTS: Education / Safety / Independence / Health",
+     "minWords": 120,
+     "maxWords": 150,
+     "note": "序論で立場（賛成か反対か）をはっきり書く。本論は POINTS から2つを選び、理由ごとに1段落（理由＋具体例・説明）。結論で立場をもう一度、言い換えて書く。"
+    },
+    {
+     "id": "W2-012",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "Write an essay on the TOPIC below. Use TWO of the POINTS to back up your opinion. Organize your essay into an introduction, a main body, and a conclusion, and aim for 120–150 words.\n\nTOPIC: Should the number of stores that are open 24 hours a day be reduced?\nPOINTS: Energy use / Workers' health / Convenience / Safety",
+     "minWords": 120,
+     "maxWords": 150,
+     "note": "序論で立場（賛成か反対か）をはっきり書く。本論は POINTS から2つを選び、理由ごとに1段落（理由＋具体例・説明）。結論で立場をもう一度、言い換えて書く。"
+    },
+    {
+     "id": "W2-013",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "Write an essay on the TOPIC below. Use TWO of the POINTS to back up your opinion. Organize your essay into an introduction, a main body, and a conclusion, and aim for 120–150 words.\n\nTOPIC: Do public libraries still have an important role to play in the digital age?\nPOINTS: Access to information / Community / Cost / Technology",
+     "minWords": 120,
+     "maxWords": 150,
+     "note": "序論で立場（賛成か反対か）をはっきり書く。本論は POINTS から2つを選び、理由ごとに1段落（理由＋具体例・説明）。結論で立場をもう一度、言い換えて書く。"
+    },
+    {
+     "id": "W2-014",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "Write an essay on the TOPIC below. Use TWO of the POINTS to back up your opinion. Organize your essay into an introduction, a main body, and a conclusion, and aim for 120–150 words.\n\nTOPIC: Should young people be encouraged to live and work in rural areas?\nPOINTS: Quality of life / Job opportunities / Regional economies / Infrastructure",
      "minWords": 120,
      "maxWords": 150,
      "note": "序論で立場（賛成か反対か）をはっきり書く。本論は POINTS から2つを選び、理由ごとに1段落（理由＋具体例・説明）。結論で立場をもう一度、言い換えて書く。"
@@ -1724,6 +3160,63 @@
        "why": "アプリで先に注文すれば受け取るだけ、ただし12時前に。12時を過ぎるとアプリでも時間がかかる＝混むのは12時以降。サンドイッチはおいしかった。"
       }
      ]
+    },
+    {
+     "id": "L1-021",
+     "plus": true,
+     "script": "W: Hi, Dan. Are you coming to the department dinner on Friday?\nM: I'd like to, but my daughter has a piano recital that evening. It starts at six.\nW: Oh, that's a shame. The dinner doesn't start until eight, though. Couldn't you come after the recital?\nM: Maybe. It's only about an hour long, but the restaurant is on the other side of town.\nW: Why not take the train? The station's right next to the restaurant, and it's much faster than driving on a Friday night.\nM: Good point. OK, I'll go to the recital first and then join you all a little late.\nQuestion: What will the man probably do on Friday?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What will the man probably do on Friday?",
+       "choices": [
+        "Skip the dinner to see his daughter perform.",
+        "Drive his daughter to the restaurant.",
+        "Go to the dinner after his daughter's recital.",
+        "Ask for the dinner to start at six."
+       ],
+       "answer": 2,
+       "why": "6時からの発表会は約1時間、夕食は8時から。電車で行けば間に合うので、発表会の後に少し遅れて夕食に行く。車は金曜の夜は遅いので電車を勧められた。"
+      }
+     ]
+    },
+    {
+     "id": "L1-022",
+     "plus": true,
+     "script": "M: Excuse me. I'm looking for a present for my sister. She's just started running, so I was thinking of getting her some running shoes.\nW: That's a nice idea, but shoes are hard to buy for someone else. The wrong pair can even cause injuries.\nM: I hadn't thought of that. What would you recommend?\nW: Many customers buy one of our gift cards. Then your sister can come in and have her feet measured before she chooses.\nM: That makes sense. But I'd like her to have something to open, too.\nW: In that case, how about a gift card along with some running socks?\nM: Perfect. I'll take both.\nQuestion: What does the man decide to do?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What does the man decide to do?",
+       "choices": [
+        "Bring his sister to the store to be measured.",
+        "Buy his sister socks and a gift card.",
+        "Buy his sister a pair of running shoes.",
+        "Look for a present at another store."
+       ],
+       "answer": 1,
+       "why": "靴は足に合わないとけがの元なので、ギフトカードを勧められた。開けて楽しめる物も欲しいので、ランニング用の靴下も付けて両方買う。"
+      }
+     ]
+    },
+    {
+     "id": "L1-023",
+     "plus": true,
+     "script": "W: Mr. Fowler, I've looked over the plans for your new kitchen. Before we start, there's something you should know.\nM: Is there a problem?\nW: The wall you want to remove between the kitchen and the dining room supports part of the upper floor. We can still take it out, but we'd need to put in a steel beam. That would add two weeks and a lot to the cost.\nM: Hmm. I wanted a more open space, but not at that price.\nW: Another option is to make a wide opening in the wall instead of removing it completely. That would still connect the two rooms.\nM: That sounds reasonable. Let's do that.\nQuestion: What does the man decide to do?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What does the man decide to do?",
+       "choices": [
+        "Have a wide opening made in the wall.",
+        "Remove the wall and add a steel beam.",
+        "Keep the kitchen and dining room separate.",
+        "Delay the work for two weeks."
+       ],
+       "answer": 0,
+       "why": "壁を全部取ると鉄の梁が必要で、2週間と費用が増える。費用が気になるので、壁に広い開口部を作る案にした。2部屋はつながるので「分けたまま」ではない。"
+      }
+     ]
     }
    ]
   },
@@ -1915,6 +3408,37 @@
        "why": "ほかの曜日の会議が長く混むようになったので、進み具合の報告は文書で共有するよう勧めた。"
       }
      ]
+    },
+    {
+     "id": "L2-007",
+     "plus": true,
+     "script": "Glass Frogs\n\nGlass frogs are small frogs that live in tropical rain forests. They get their name from the skin on their undersides, which is so clear that their hearts and other organs can be seen through it. From above, however, their backs are light green, which helps them blend in with the leaves where they rest during the day. Researchers recently discovered another surprising trick. When glass frogs sleep, they become almost completely transparent by moving most of their red blood cells into their liver, where the cells are hidden. When the frogs wake up and become active, the blood flows back into the rest of their bodies. Scientists are especially interested in how the frogs do this safely, since in humans, blood that collects in one place can form dangerous clots. Understanding this process may one day help doctors develop new medicines.\nQuestion 1: How do glass frogs become transparent?\nQuestion 2: Why are scientists interested in glass frogs?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "How do glass frogs become transparent?",
+       "choices": [
+        "By changing the color of their backs.",
+        "By hiding under leaves during the day.",
+        "By reducing the size of their hearts.",
+        "By storing most of their red blood cells in one organ."
+       ],
+       "answer": 3,
+       "why": "眠る時、赤血球の大部分を肝臓に集めて隠すので、ほぼ透明になる。背中の緑色は葉にまぎれるためで、透明になる仕組みではない。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why are scientists interested in glass frogs?",
+       "choices": [
+        "They can gather their blood in one place without health problems.",
+        "Their skin could be used to make new medicines.",
+        "They are disappearing from tropical rain forests.",
+        "They can survive without any red blood cells."
+       ],
+       "answer": 0,
+       "why": "人間なら血が1か所にたまると危険な血のかたまりができるが、カエルは安全にできる。その仕組みが新しい薬につながるかもしれない。皮膚から薬を作るわけではない。"
+      }
+     ]
     }
    ]
   },
@@ -2032,6 +3556,44 @@
        ],
        "answer": 1,
        "why": "タクシーは使いたくない。バスは1時間以上かかることがあり7時に間に合わないおそれ。地下鉄なら約35分で、係の人も勧めている。"
+      }
+     ]
+    },
+    {
+     "id": "L3-007",
+     "plus": true,
+     "script": "The Old Town is about three kilometers from here. Most guests walk there along the river, which takes around forty minutes, and it's a lovely route. There's also a tram that stops right outside the hotel, but please be aware that the Old Town stop is at the bottom of a hill, so you'd have to climb quite a few steps to reach the main square. If you'd rather avoid that, the number twelve bus takes a little longer, but it stops right in the square. You could also take a taxi, but cars aren't allowed in the Old Town, so it would drop you at the tram stop.\nQuestion: What should you do?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Situation: You are staying at a hotel and want to visit the Old Town this afternoon. You hurt your ankle yesterday, so you want to avoid walking or climbing stairs as much as possible. The hotel receptionist tells you the following.\nQuestion: What should you do?",
+       "choices": [
+        "Walk to the Old Town along the river.",
+        "Take the tram from outside the hotel.",
+        "Take the number twelve bus.",
+        "Ask the receptionist to call a taxi."
+       ],
+       "answer": 2,
+       "why": "足首を痛めて歩く・階段を避けたい。路面電車とタクシーは坂の下で降り、階段を上る必要がある。12番のバスなら広場のすぐ前に止まる。"
+      }
+     ]
+    },
+    {
+     "id": "L3-008",
+     "plus": true,
+     "script": "Thank you for calling Brightmoor Clothing. Most items can be returned within thirty days of purchase. To return an item at one of our stores, you'll need to show the original receipt, whether you bought it in a store or online. If you've lost your receipt and the item was ordered on our website, please print your order confirmation e-mail, place it in the package with the item, and mail it to the address shown on our website. Items bought more than thirty days ago can't be returned, but they can be exchanged for store credit at any service counter. For other questions, please press three.\nQuestion: What should you do?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Situation: You want to return a jacket that you ordered on a clothing store's website 20 days ago. You have lost the receipt, but you still have the order confirmation e-mail. You call the store's customer service line.\nQuestion: What should you do?",
+       "choices": [
+        "Take the jacket to a store with the e-mail on your phone.",
+        "Exchange the jacket for store credit at a service counter.",
+        "Press three to ask for a new copy of the receipt.",
+        "Mail the jacket with a printed copy of the e-mail."
+       ],
+       "answer": 3,
+       "why": "店に返すにはレシートが必要。レシートを無くしたネット注文は、確認メールを印刷して品物と一緒に郵送する。20日前なので30日以内で、店のクレジットへの交換は対象外。"
       }
      ]
     }
@@ -2215,6 +3777,186 @@
       {
        "type": "No. 4",
        "prompt": "These days, many people buy secondhand goods online instead of new ones. Do you think this trend will continue to grow?",
+       "timeSec": 40,
+       "ja": "1文目の話題導入を受けて答える。社会全体の視点（企業・自治体・高齢者など）から理由を2つ。"
+      }
+     ]
+    },
+    {
+     "id": "S1-007",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "No. 1",
+       "prompt": "Imagine that you planned a camping trip with your friends for months, but on the morning you were supposed to leave, it started raining heavily. If you were in this situation, what would you be thinking?",
+       "timeSec": 40,
+       "ja": "I'd be thinking, \"…\" と、その人になったつもりで心の声を言う。気持ち＋次にどうするか、の2文で。"
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Do you think people today spend enough time in nature?",
+       "timeSec": 40,
+       "ja": "Yes. / No. で立場を言い、理由を2文で。具体例が1つあると良い。"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Should companies provide free health checkups for all of their employees?",
+       "timeSec": 40,
+       "ja": "Yes. / No. の後、理由と、反対意見への一言（It is true that …, but …）を入れる。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "Many people now use smartphone apps to track their health, such as their sleep and the number of steps they take. Do you think this is a good trend?",
+       "timeSec": 40,
+       "ja": "1文目の話題導入を受けて答える。社会全体の視点（企業・自治体・高齢者など）から理由を2つ。"
+      }
+     ]
+    },
+    {
+     "id": "S1-008",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "No. 1",
+       "prompt": "Imagine that you are the manager of a small company, and one of your best employees asks if she can work only four days a week. If you were in this situation, what would you be thinking?",
+       "timeSec": 40,
+       "ja": "I'd be thinking, \"…\" と、その人になったつもりで心の声を言う。気持ち＋次にどうするか、の2文で。"
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Do you think people change jobs too often these days?",
+       "timeSec": 40,
+       "ja": "Yes. / No. で立場を言い、理由を2文で。具体例が1つあると良い。"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Should companies hire more workers from other countries?",
+       "timeSec": 40,
+       "ja": "Yes. / No. の後、理由と、反対意見への一言（It is true that …, but …）を入れる。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "Robots are being used more and more in places such as restaurants and hotels. Do you think this trend will be good for society?",
+       "timeSec": 40,
+       "ja": "1文目の話題導入を受けて答える。社会全体の視点（企業・自治体・高齢者など）から理由を2つ。"
+      }
+     ]
+    },
+    {
+     "id": "S1-009",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "No. 1",
+       "prompt": "Imagine that you have just moved into a new apartment, and your neighbor plays loud music every night until midnight. If you were in this situation, what would you be thinking?",
+       "timeSec": 40,
+       "ja": "I'd be thinking, \"…\" と、その人になったつもりで心の声を言う。気持ち＋次にどうするか、の2文で。"
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Do you think people today are less considerate of others than in the past?",
+       "timeSec": 40,
+       "ja": "Yes. / No. で立場を言い、理由を2文で。具体例が1つあると良い。"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Should there be stricter rules about noise in public places such as trains and parks?",
+       "timeSec": 40,
+       "ja": "Yes. / No. の後、理由と、反対意見への一言（It is true that …, but …）を入れる。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "The number of people who live alone is increasing in many countries. Do you think this will have a negative effect on society?",
+       "timeSec": 40,
+       "ja": "1文目の話題導入を受けて答える。社会全体の視点（企業・自治体・高齢者など）から理由を2つ。"
+      }
+     ]
+    },
+    {
+     "id": "S1-010",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "No. 1",
+       "prompt": "Imagine that you are a high school teacher, and one of your students tells you that homework is a waste of time. If you were in this situation, what would you be thinking?",
+       "timeSec": 40,
+       "ja": "I'd be thinking, \"…\" と、その人になったつもりで心の声を言う。気持ち＋次にどうするか、の2文で。"
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Do you think students today are given too much homework?",
+       "timeSec": 40,
+       "ja": "Yes. / No. で立場を言い、理由を2文で。具体例が1つあると良い。"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Should universities place more importance on interviews when choosing new students?",
+       "timeSec": 40,
+       "ja": "Yes. / No. の後、理由と、反対意見への一言（It is true that …, but …）を入れる。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "Many schools now use tablet computers instead of paper textbooks. Do you think this is a good change for students?",
+       "timeSec": 40,
+       "ja": "1文目の話題導入を受けて答える。社会全体の視点（企業・自治体・高齢者など）から理由を2つ。"
+      }
+     ]
+    },
+    {
+     "id": "S1-011",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "No. 1",
+       "prompt": "Imagine that you ordered a meal at a restaurant, and it has still not arrived after an hour, even though people who came later have already been served. If you were in this situation, what would you be thinking?",
+       "timeSec": 40,
+       "ja": "I'd be thinking, \"…\" と、その人になったつもりで心の声を言う。気持ち＋次にどうするか、の2文で。"
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Do you think people eat out more often than they should these days?",
+       "timeSec": 40,
+       "ja": "Yes. / No. で立場を言い、理由を2文で。具体例が1つあると良い。"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Should restaurants be required to show how many calories their dishes contain?",
+       "timeSec": 40,
+       "ja": "Yes. / No. の後、理由と、反対意見への一言（It is true that …, but …）を入れる。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "Food delivery services have become very popular in recent years. Do you think they are good for local restaurants?",
+       "timeSec": 40,
+       "ja": "1文目の話題導入を受けて答える。社会全体の視点（企業・自治体・高齢者など）から理由を2つ。"
+      }
+     ]
+    },
+    {
+     "id": "S1-012",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "No. 1",
+       "prompt": "Imagine that you have moved to a new city for work, and after a month, you still do not know anyone outside your office. If you were in this situation, what would you be thinking?",
+       "timeSec": 40,
+       "ja": "I'd be thinking, \"…\" と、その人になったつもりで心の声を言う。気持ち＋次にどうするか、の2文で。"
+      },
+      {
+       "type": "No. 2",
+       "prompt": "Do you think it is difficult for adults to make new friends?",
+       "timeSec": 40,
+       "ja": "Yes. / No. で立場を言い、理由を2文で。具体例が1つあると良い。"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Should local governments do more to help newcomers settle into their communities?",
+       "timeSec": 40,
+       "ja": "Yes. / No. の後、理由と、反対意見への一言（It is true that …, but …）を入れる。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "The number of people who work as freelancers instead of as company employees is increasing. Do you think this trend will continue in the future?",
        "timeSec": 40,
        "ja": "1文目の話題導入を受けて答える。社会全体の視点（企業・自治体・高齢者など）から理由を2つ。"
       }

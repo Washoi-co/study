@@ -556,6 +556,196 @@
        "answer": 0
       }
      ]
+    },
+    {
+     "id": "P2-031",
+     "plus": true,
+     "script": "How much will it cost to repair the copier?",
+     "questions": [
+      {
+       "type": "mcq",
+       "spoken": true,
+       "q": "Choose the best response.",
+       "choices": [
+        "Let's ask the technician for a quote.",
+        "About two hours, I think.",
+        "I made fifty copies."
+       ],
+       "why": "How much（費用）に「技術者に見積もりを頼もう」と答える間接応答が正解。かかる時間を答える文と、copier から copies を連想させる文はひっかけ。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P2-032",
+     "plus": true,
+     "script": "Where did you get that new desk lamp?",
+     "questions": [
+      {
+       "type": "mcq",
+       "spoken": true,
+       "q": "Choose the best response.",
+       "choices": [
+        "It's much brighter than the old one.",
+        "From the furniture store on Fourth Avenue.",
+        "Yes, I'll turn it off."
+       ],
+       "why": "Where で入手先を聞いているので、店と場所を答える文が正解。明るさの感想や Yes で始まる文は答えになっていない。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P2-033",
+     "plus": true,
+     "script": "Would you prefer to meet on Tuesday or Wednesday?",
+     "questions": [
+      {
+       "type": "mcq",
+       "spoken": true,
+       "q": "Choose the best response.",
+       "choices": [
+        "Yes, I'd prefer that.",
+        "At the downtown office.",
+        "Either day works for me."
+       ],
+       "why": "選択疑問文には Yes/No で答えない。「どちらの日でも大丈夫」が自然。場所は Where への答え。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P2-034",
+     "plus": true,
+     "script": "The client wants to move the deadline up by a week.",
+     "questions": [
+      {
+       "type": "mcq",
+       "spoken": true,
+       "q": "Choose the best response.",
+       "choices": [
+        "Then we'll need some extra help.",
+        "Yes, it's a weekly meeting.",
+        "He moved to a new apartment."
+       ],
+       "why": "締め切りが1週間早まるという発言に「それなら追加の人手が要る」と反応している。weekly や moved は音のひっかけ。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P2-035",
+     "plus": true,
+     "script": "Why is the cafeteria closed today?",
+     "questions": [
+      {
+       "type": "mcq",
+       "spoken": true,
+       "q": "Choose the best response.",
+       "choices": [
+        "It opens at seven thirty.",
+        "Some new ovens are being installed.",
+        "Yes, I'll close the door."
+       ],
+       "why": "Why に「新しいオーブンを取り付けている」と理由を答えている。開店時刻は When への答え、close を繰り返した文はひっかけ。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P2-036",
+     "plus": true,
+     "script": "Haven't you finished the customer survey report yet?",
+     "questions": [
+      {
+       "type": "mcq",
+       "spoken": true,
+       "q": "Choose the best response.",
+       "choices": [
+        "The survey had ten questions.",
+        "The customers were very happy.",
+        "I'm just adding the charts now."
+       ],
+       "why": "「まだ終わっていないの？」に「今グラフを入れているところ」と、もうすぐ終わると答えている。survey や customers を繰り返した文はひっかけ。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P2-037",
+     "plus": true,
+     "script": "Could you help me set up the chairs for the seminar?",
+     "questions": [
+      {
+       "type": "mcq",
+       "spoken": true,
+       "q": "Choose the best response.",
+       "choices": [
+        "Sure, as soon as I send this e-mail.",
+        "The seminar starts at two.",
+        "He sat next to me."
+       ],
+       "why": "依頼に「いいよ、このメールを送ったらすぐに」と応じている。開始時刻や座った場所の話は依頼への答えになっていない。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P2-038",
+     "plus": true,
+     "script": "When is the new receptionist starting?",
+     "questions": [
+      {
+       "type": "mcq",
+       "spoken": true,
+       "q": "Choose the best response.",
+       "choices": [
+        "At the front desk.",
+        "She was a great receptionist.",
+        "Probably not until next Monday."
+       ],
+       "why": "When に「たぶん来週の月曜から」と時を答えている。受付の場所は Where への答え、receptionist を繰り返した文はひっかけ。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P2-039",
+     "plus": true,
+     "script": "Do you want me to print the handouts, or will you?",
+     "questions": [
+      {
+       "type": "mcq",
+       "spoken": true,
+       "q": "Choose the best response.",
+       "choices": [
+        "Yes, the printer is new.",
+        "I've already done it.",
+        "Twenty pages each."
+       ],
+       "why": "「私が印刷する？それともあなたが？」に「もう済ませた」と答えている。print から printer を連想させる文や枚数の答えはひっかけ。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P2-040",
+     "plus": true,
+     "script": "Let's take the clients to the Italian restaurant on Cedar Street.",
+     "questions": [
+      {
+       "type": "mcq",
+       "spoken": true,
+       "q": "Choose the best response.",
+       "choices": [
+        "Good idea. I'll call to reserve a table.",
+        "I'll take the stairs.",
+        "The clients signed it yesterday."
+       ],
+       "why": "提案に賛成し、予約の電話をすると答えている。take や clients を繰り返しただけの文はひっかけ。",
+       "answer": 0
+      }
+     ]
     }
    ]
   },
@@ -987,6 +1177,92 @@
        "answer": 0
       }
      ]
+    },
+    {
+     "id": "P3-011",
+     "plus": true,
+     "script": "M: Hello, my name is Tom Garrity. I've just published a cookbook, and my publisher suggested I contact your store about a book signing.\nW: Thanks for calling, Mr. Garrity. We'd be happy to host you. Our author events are usually held on Saturday afternoons upstairs.\nM: Wonderful. Could I bring a few simple dishes for guests to try?\nW: I'm afraid we can't allow any food in the store. But you're welcome to hand out recipe cards.\nM: Good idea. Should I send you a copy of the book in advance?\nW: Yes, please. I'd like to display it near the entrance before the event.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Who most likely is the man?",
+       "choices": [
+        "A bookstore manager",
+        "A restaurant owner",
+        "An author",
+        "A graphic designer"
+       ],
+       "why": "男性は「料理本を出したばかりで、出版社にサイン会の相談を勧められた」と言っているので著者。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "What does the woman say is not allowed in the store?",
+       "choices": [
+        "Taking photographs",
+        "Bringing in food",
+        "Holding events on weekdays",
+        "Selling books from other stores"
+       ],
+       "why": "女性は「店内に食べ物は持ち込めない」と言い、代わりにレシピカードを配るのはかまわないと答えている。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "What does the woman ask the man to send?",
+       "choices": [
+        "A list of guests",
+        "Some recipe cards",
+        "A copy of his book",
+        "A signed contract"
+       ],
+       "why": "最後に「本を前もって送ってほしい。入口近くに飾りたい」と言っている。レシピカードは配ってよい物で、送る物ではない。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P3-012",
+     "plus": true,
+     "script": "W: Jacob, Ravi, thanks for coming. Are we still on track to launch the new online ordering page on the fifteenth?\nM: Mostly. The design is finished, but some customers in our test group couldn't complete their orders on their phones.\nM2: I'm working on that. It only happens with one type of browser, so it shouldn't take long to fix.\nW: Good. What about the instructions for customers?\nM: We have a draft, but it's six pages long.\nW: Most people won't read that on a phone. Could you make a short video instead?\nM2: Sure. I'll ask someone in marketing to help us record it this week.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What are the speakers mainly discussing?",
+       "choices": [
+        "A monthly sales report",
+        "A marketing event",
+        "A new phone model",
+        "A new online ordering page"
+       ],
+       "why": "冒頭で女性が「新しいオンライン注文ページ」の公開に間に合うかを確認し、その後も注文の不具合や客向けの説明の話が続く。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "What problem does one of the men mention?",
+       "choices": [
+        "Some test users could not finish their orders.",
+        "The design has not been completed.",
+        "The launch date was missed.",
+        "Some customers received the wrong items."
+       ],
+       "why": "男性が「テストの客の一部が電話で注文を完了できなかった」と言っている。デザインは終わっていると言っている。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "Why does the woman say, \"Most people won't read that on a phone\"?",
+       "choices": [
+        "To recommend a different type of phone",
+        "To point out that some instructions are too long",
+        "To suggest printing the instructions",
+        "To explain why sales have dropped"
+       ],
+       "why": "説明書が6ページあると聞いて「電話でそれは読まない」と言い、短い動画を提案しているので、長すぎると伝えている。",
+       "answer": 1
+      }
+     ]
     }
    ]
   },
@@ -1416,6 +1692,92 @@
        ],
        "why": "「テーブルのカードに質問を書いて」と頼んでいる。カードはボランティアが集める。",
        "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P4-011",
+     "plus": true,
+     "script": "Good morning, everyone. Before we start, I have some news. Next month, we're launching a program called Bright Ideas. Any employee can submit a suggestion for saving money or improving the way we work by filling out a form on the company intranet. Every three months, a committee will review the suggestions, and the three best ideas will each receive a cash prize. Last year, a similar program at our Austin office saved the company more than forty thousand dollars. If you have any questions, please contact Monique Saldana in Human Resources.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is the speaker mainly announcing?",
+       "choices": [
+        "A change to the meeting schedule",
+        "A program for employee suggestions",
+        "The opening of a new office",
+        "A new training course"
+       ],
+       "why": "「Bright Ideas という、社員が改善の提案を出せる制度を始める」と知らせている。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "How can employees take part?",
+       "choices": [
+        "By completing an online form",
+        "By attending a committee meeting",
+        "By e-mailing their manager",
+        "By giving a short presentation"
+       ],
+       "why": "「社内イントラネットのフォームに記入して提案を出す」と言っている。委員会は提案を審査する側。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "What does the speaker say about the Austin office?",
+       "choices": [
+        "It will host the committee.",
+        "It is moving next month.",
+        "It saved money with a similar program.",
+        "It has the most employees."
+       ],
+       "why": "「去年オースティンの事務所で似た制度があり、4万ドル以上節約できた」と言っている。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P4-012",
+     "plus": true,
+     "script": "Thank you for calling Maple Grove Veterinary Clinic. Our office is now closed. Our regular hours are Monday through Friday from eight A.M. to six P.M., and Saturday from nine A.M. to noon. Starting next week, we'll also be open on Thursday evenings until eight P.M. To schedule a checkup for your pet, you can now book an appointment through our new mobile app. If your pet needs urgent care tonight, please call Eastgate Animal Hospital, which is open twenty-four hours a day. To leave a message for our staff, press one now.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Where does the message most likely come from?",
+       "choices": [
+        "A pharmacy",
+        "An animal clinic",
+        "A pet supply store",
+        "A dental office"
+       ],
+       "why": "冒頭で Veterinary Clinic（動物病院）と名乗り、ペットの健康診断の話をしている。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "What change does the speaker mention?",
+       "choices": [
+        "Longer hours on one weekday",
+        "A move to a new location",
+        "Lower prices for checkups",
+        "A new veterinarian on staff"
+       ],
+       "why": "「来週から木曜は夜8時まで開く」と言っているので、平日1日の営業時間が延びる。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "According to the speaker, what can listeners do with the mobile app?",
+       "choices": [
+        "Pay their bills",
+        "Order pet food",
+        "Talk to a doctor",
+        "Make appointments"
+       ],
+       "why": "「ペットの健康診断は新しいアプリで予約できるようになった」と言っている。",
+       "answer": 3
       }
      ]
     }
@@ -2449,6 +2811,726 @@
        "answer": 2
       }
      ]
+    },
+    {
+     "id": "P5-061",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The new accounting software is ____ easier to use than the program we had before.",
+       "choices": [
+        "considerably",
+        "considerable",
+        "consider",
+        "consideration"
+       ],
+       "why": "比較級 easier を強めるのは副詞 considerably（かなり）。形容詞・動詞・名詞は比較級を修飾できない。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P5-062",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Please direct all ____ regarding the job opening to Mr. Abernathy in Human Resources.",
+       "choices": [
+        "inquire",
+        "inquiries",
+        "inquired",
+        "inquiring"
+       ],
+       "why": "all の後で direct の目的語になる名詞が必要なので inquiries（問い合わせ）。動詞の形は名詞の位置に入らない。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P5-063",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Visitors are reminded that photography is strictly ____ inside the exhibition halls.",
+       "choices": [
+        "prohibit",
+        "prohibition",
+        "prohibited",
+        "prohibitive"
+       ],
+       "why": "「撮影は禁止されている」という受け身なので過去分詞 prohibited。prohibitive は「（値段が）法外な」で意味が合わない。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P5-064",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Orland Textiles has seen ____ growth over the past decade, opening offices in four new cities.",
+       "choices": [
+        "remark",
+        "remarkably",
+        "remarked",
+        "remarkable"
+       ],
+       "why": "名詞 growth を修飾する形容詞 remarkable（目覚ましい）が入る。副詞 remarkably は名詞を修飾できない。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P5-065",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Mr. Abara was praised for his ____ to detail while organizing the annual sales conference.",
+       "choices": [
+        "attend",
+        "attention",
+        "attentive",
+        "attentively"
+       ],
+       "why": "所有格 his の後なので名詞。attention to detail（細部への気配り）は決まった言い方。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P5-066",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "All ____ for the summer marketing internship must be received by April 30.",
+       "choices": [
+        "apply",
+        "applicable",
+        "applied",
+        "applications"
+       ],
+       "why": "All の後で文の主語になる名詞が必要なので applications（応募書類）。apply は動詞、applicable は形容詞。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P5-067",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The hotel restaurant offers an ____ selection of local wines and cheeses.",
+       "choices": [
+        "extend",
+        "extension",
+        "extensive",
+        "extensively"
+       ],
+       "why": "an と名詞 selection の間には形容詞が入るので extensive（幅広い）。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P5-068",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Our customer service team aims to respond to all e-mails as ____ as possible.",
+       "choices": [
+        "promptly",
+        "prompt",
+        "prompted",
+        "promptness"
+       ],
+       "why": "as ___ as possible は動詞 respond を修飾しているので副詞 promptly（すぐに）。形容詞 prompt は動詞を修飾できない。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P5-069",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The success of the product launch is highly ____ on the timing of the advertising campaign.",
+       "choices": [
+        "dependent",
+        "depend",
+        "depending",
+        "dependently"
+       ],
+       "why": "be 動詞の後に形容詞を置く be dependent on ～（～に左右される）の形。highly は形容詞を強める副詞。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P5-070",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The training manual explains the new procedures ____ enough for first-time users to follow.",
+       "choices": [
+        "clear",
+        "clarity",
+        "clearly",
+        "clarify"
+       ],
+       "why": "動詞 explains を修飾する副詞 clearly が入る（clearly enough で「十分わかりやすく」）。形容詞 clear は動詞を修飾できない。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P5-071",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Fenwick Electronics is known for the ____ of its products, many of which last more than ten years.",
+       "choices": [
+        "reliable",
+        "rely",
+        "reliably",
+        "reliability"
+       ],
+       "why": "the と of の間なので名詞 reliability（信頼性）が入る。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P5-072",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Ms. Ferraro will review the contract ____ it is sent to the legal department.",
+       "choices": [
+        "during",
+        "before",
+        "because of",
+        "despite"
+       ],
+       "why": "後ろに主語＋動詞（it is sent）が続くので接続詞 before が必要。during・because of・despite は前置詞で、文をつなげない。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P5-073",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "____ offering free shipping, Calloway Outdoor Gear gives first-time customers a 10 percent discount.",
+       "choices": [
+        "In addition to",
+        "Moreover",
+        "Besides that",
+        "As well"
+       ],
+       "why": "後ろが動名詞 offering なので、前置詞のはたらきをする In addition to（～に加えて）。Moreover は副詞で、後ろに名詞や -ing を置けない。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P5-074",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Please save your work regularly ____ the computer system shuts down unexpectedly.",
+       "choices": [
+        "in case of",
+        "unless",
+        "in case",
+        "as though"
+       ],
+       "why": "後ろに主語＋動詞が続くので接続詞 in case（～するといけないので）。in case of の後ろには名詞を置く。unless（～でない限り）では意味が通らない。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P5-075",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The new store will be open seven days a week, ____ on public holidays.",
+       "choices": [
+        "unless",
+        "except",
+        "although",
+        "besides"
+       ],
+       "why": "「祝日を除いて毎日営業」なので except。except の後ろには on ～ のような前置詞句も置ける。unless・although は後ろに主語と動詞が必要。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P5-076",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Road repairs on Bellwood Avenue will continue ____ the summer months.",
+       "choices": [
+        "upon",
+        "among",
+        "along",
+        "throughout"
+       ],
+       "why": "「夏の間ずっと続く」なので throughout（～の間じゅう）。among は3つ以上の物の間、along は道などに沿って、upon は「～の上に・～するとすぐ」。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P5-077",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Thanks to careful planning, the marketing team finished the campaign ____ schedule.",
+       "choices": [
+        "in front of",
+        "prior",
+        "ahead of",
+        "beyond"
+       ],
+       "why": "ahead of schedule で「予定より早く」。in front of は場所の「前」、prior は prior to の形で使う。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P5-078",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Customer response to the new menu was ____ positive that the restaurant decided to keep it all year.",
+       "choices": [
+        "such",
+        "so",
+        "too",
+        "very"
+       ],
+       "why": "so ＋形容詞＋ that ～で「とても～なので…」。such は名詞を含む語句の前に置く（such a ～ that）。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P5-079",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "____ the new factory is fully operational, Delford Paper can fill orders twice as fast.",
+       "choices": [
+        "Now that",
+        "Even if",
+        "As if",
+        "So that"
+       ],
+       "why": "「新工場が本格稼働した今、注文を2倍の速さでこなせる」なので Now that（今や～なので）。Even if（たとえ～でも）、So that（～するために）は意味が合わない。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P5-080",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Applicants will be notified by e-mail ____ or not they are selected for an interview.",
+       "choices": [
+        "if",
+        "either",
+        "unless",
+        "whether"
+       ],
+       "why": "whether or not ～（～かどうかにかかわらず）の形。if の直後に or not は置けない。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P5-081",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "If the black umbrella left in the lobby is ____, please collect it from the front desk.",
+       "choices": [
+        "your",
+        "you",
+        "yours",
+        "yourself"
+       ],
+       "why": "be 動詞の後で「あなたの物」を表す所有代名詞 yours。your は後ろに名詞が必要。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P5-082",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "____ finishes the inventory count first should report the results to Mr. Dunne.",
+       "choices": [
+        "Whoever",
+        "Whomever",
+        "Whose",
+        "Anyone"
+       ],
+       "why": "finishes の主語になり、名詞節全体が文の主語になる Whoever（～する人は誰でも）。Anyone なら who が必要、Whomever は目的格。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P5-083",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The prices of our new models are lower than ____ of our main competitors.",
+       "choices": [
+        "them",
+        "these",
+        "they",
+        "those"
+       ],
+       "why": "the prices の繰り返しを避ける those（後ろに of ～が続く）。them・they は後ろに of ～を続けられない。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P5-084",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Some of the fabric samples were approved, but ____ still need further testing.",
+       "choices": [
+        "another",
+        "others",
+        "the other",
+        "other"
+       ],
+       "why": "複数形の動詞 need の主語になる代名詞は others（ほかの物）。another・the other は単数、other は単独で主語にならない。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P5-085",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The east wing of the convention center ____ at the moment, so visitors should use the north entrance.",
+       "choices": [
+        "renovates",
+        "has renovated",
+        "is renovating",
+        "is being renovated"
+       ],
+       "why": "東棟は「改装される」側で、at the moment なので現在進行形の受け身 is being renovated。能動態では目的語が無く意味も合わない。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P5-086",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Ms. Patel suggested that the meeting ____ until all of the department heads could attend.",
+       "choices": [
+        "be postponed",
+        "postpones",
+        "is postponing",
+        "postponing"
+       ],
+       "why": "suggest that ～の that 節では動詞の原形を使う。会議は「延期される」側なので be postponed。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P5-087",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "If we had received the parts on time, we ____ the order last week.",
+       "choices": [
+        "will complete",
+        "had completed",
+        "would have completed",
+        "complete"
+       ],
+       "why": "If ＋ had ＋過去分詞（過去の事実と反対の仮定）に対応するのは would have ＋過去分詞。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P5-088",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The company's headquarters, originally ____ in 1998, has recently been renovated.",
+       "choices": [
+        "building",
+        "built",
+        "was built",
+        "to build"
+       ],
+       "why": "headquarters を後ろから説明する過去分詞 built（建てられた）。was built を入れると1つの文に動詞が2つになる。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P5-089",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Ms. Adeyemi looks forward to ____ with the new design team next month.",
+       "choices": [
+        "working",
+        "work",
+        "worked",
+        "be working"
+       ],
+       "why": "look forward to の to は前置詞なので、後ろは動名詞 working。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P5-090",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The manager had the technician ____ the projector before the presentation began.",
+       "choices": [
+        "to check",
+        "check",
+        "checked",
+        "checking"
+       ],
+       "why": "have ＋人＋動詞の原形で「人に～してもらう」。物が目的語なら過去分詞（have the projector checked）になる。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P5-091",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Every one of the new delivery vans ____ equipped with a GPS tracking system.",
+       "choices": [
+        "are",
+        "have",
+        "is",
+        "were"
+       ],
+       "why": "主語の中心は Every one（単数）なので is。vans に引きずられて are にしない。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P5-092",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The museum's new audio guide is available in six languages to ____ visitors from overseas.",
+       "choices": [
+        "assign",
+        "assume",
+        "assure",
+        "assist"
+       ],
+       "why": "「海外からの来館者を手助けする」ので assist。assign（割り当てる）、assume（想定する）、assure（保証する）は意味が合わない。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P5-093",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Please ____ that all lights are turned off before leaving the office for the weekend.",
+       "choices": [
+        "ensure",
+        "allow",
+        "remind",
+        "prevent"
+       ],
+       "why": "ensure that ～で「必ず～するようにする」。remind は後ろに人が必要（remind you that）、prevent は that 節をとらない。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P5-094",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The new parking regulations will go into ____ on the first of next month.",
+       "choices": [
+        "result",
+        "impact",
+        "outcome",
+        "effect"
+       ],
+       "why": "go into effect で「（規則などが）実施される」。result・impact・outcome はこの形では使わない。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P5-095",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Customers can check the ____ of their orders online at any time.",
+       "choices": [
+        "statue",
+        "status",
+        "stature",
+        "statute"
+       ],
+       "why": "the status of an order で「注文の状況」。statue（像）、stature（身長・名声）、statute（法令）は形が似ているだけ。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P5-096",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The board of directors ____ agreed to appoint Ms. Varga as the new chief financial officer.",
+       "choices": [
+        "exclusively",
+        "approximately",
+        "unanimously",
+        "densely"
+       ],
+       "why": "取締役会が「満場一致で」賛成したので unanimously。approximately（およそ）は数の前に置く語。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P5-097",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Guests of the Alder Inn can use a ____ shuttle service between the airport and the city center.",
+       "choices": [
+        "complementary",
+        "complimentary",
+        "competent",
+        "compulsory"
+       ],
+       "why": "complimentary は「無料の」で、ホテルのサービスによく使う。complementary（補い合う）はつづりが似ているひっかけ。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P5-098",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Due to a scheduling ____, the interview with Mr. Haas has been moved to Thursday.",
+       "choices": [
+        "conflict",
+        "contrast",
+        "contest",
+        "content"
+       ],
+       "why": "scheduling conflict で「予定の重なり」。contrast（対比）、contest（競争）、content（内容）は意味が合わない。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P5-099",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The new software will ____ employees to submit their time sheets from their phones.",
+       "choices": [
+        "let",
+        "make",
+        "have",
+        "enable"
+       ],
+       "why": "動詞＋人＋ to 不定詞の形をとるのは enable（～できるようにする）。let・make・have は人の後に動詞の原形をとるので to と合わない。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P5-100",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The ____ for the photography contest is March 15, and late entries will not be accepted.",
+       "choices": [
+        "headline",
+        "guideline",
+        "deadline",
+        "timeline"
+       ],
+       "why": "「締め切りは3月15日」なので deadline。late entries（遅れた応募）とも合う。",
+       "answer": 2
+      }
+     ]
     }
    ]
   },
@@ -2890,6 +3972,446 @@
        ],
        "why": "be committed to の to は前置詞なので、後ろは動名詞 providing。",
        "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P6-009",
+     "plus": true,
+     "passage": "MEMO\nTo: All Employees\nFrom: Teresa Vance, Office Manager\nDate: January 15\nSubject: Reducing paper use\n\nOver the past year, our office used more than 200,000 sheets of paper. To reduce this amount, we will be making several changes (1) ____ February 1.\n\nFirst, all printers will be set to print on both sides of the page. (2) ____ Second, internal documents such as meeting agendas and reports should be shared electronically (3) ____ printed whenever possible.\n\nWe will also place new recycling bins next to each printer. Please make sure that only clean paper goes into these bins. Your (4) ____ in this effort is greatly appreciated.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (1).",
+       "choices": [
+        "start",
+        "starting",
+        "started",
+        "starts"
+       ],
+       "why": "starting ＋日付で「～から」。changes を後ろから説明する形で、ほかの形は動詞としても名詞の修飾としても入らない。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (2).",
+       "choices": [
+        "This setting can be changed for documents that must be printed on one side.",
+        "The new printers will be delivered next month.",
+        "Please recycle your plastic bottles in the cafeteria.",
+        "Paper costs have fallen slightly this year."
+       ],
+       "why": "直前の「両面印刷に設定する」を受け、「片面で印刷が必要な書類は設定を変えられる」と補う文が自然。新しいプリンターやペットボトルの話はつながらない。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (3).",
+       "choices": [
+        "in order to",
+        "as well as",
+        "so that",
+        "rather than"
+       ],
+       "why": "紙を減らす目的なので「印刷するのではなく電子で共有する」の rather than。as well as（～も）では目的と矛盾する。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (4).",
+       "choices": [
+        "cooperate",
+        "cooperative",
+        "cooperation",
+        "cooperatively"
+       ],
+       "why": "所有格 Your の後で文の主語になる名詞 cooperation（協力）が入る。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P6-010",
+     "plus": true,
+     "passage": "To: Martin Feld\nFrom: Member Services, Northeast Planners Association\nDate: May 2\nSubject: Membership renewal\n\nDear Mr. Feld,\n\nOur records show that your membership in the Northeast Planners Association will (1) ____ on May 31. To continue enjoying member benefits, please renew your membership before that date.\n\nAs a member, you receive our monthly journal, discounted registration for our annual conference, and access to our online job board. (2) ____, members who renew this month will receive a free copy of our new guide to sustainable city design.\n\nYou can renew online by logging in to your account on our Web site. (3) ____ If you have any questions, our member services team will be happy to help.\n\nThank you for your continued (4) ____.\n\nSincerely,\nMember Services",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (1).",
+       "choices": [
+        "expiration",
+        "expire",
+        "expired",
+        "expiring"
+       ],
+       "why": "助動詞 will の後なので動詞の原形 expire（期限が切れる）。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (2).",
+       "choices": [
+        "Consequently",
+        "On the other hand",
+        "Furthermore",
+        "For example"
+       ],
+       "why": "会員の特典を並べた後に「さらに今月更新すると無料の本がもらえる」と特典を足しているので Furthermore。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (3).",
+       "choices": [
+        "Your journal subscription has been canceled.",
+        "The conference has been moved to a new city.",
+        "New members must submit two letters of reference.",
+        "Payment can be made by credit card or bank transfer."
+       ],
+       "why": "オンラインでの更新方法の説明に続くので、支払い方法を伝える文が自然。購読の解約や新会員の条件はこの手紙の流れに合わない。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (4).",
+       "choices": [
+        "support",
+        "supports",
+        "supportive",
+        "supported"
+       ],
+       "why": "形容詞 continued の後なので名詞 support（支援）。Thank you for your continued support. は手紙の決まった結び。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P6-011",
+     "plus": true,
+     "passage": "Pine Hollow Furniture Is Moving!\n\nAfter fifteen years on Dover Street, Pine Hollow Furniture will move to a larger location at 240 Canal Road on August 10. The new store will have twice as much floor space, (1) ____ us to display our full range of sofas, tables, and outdoor furniture.\n\nOur Dover Street store will remain open until August 3. (2) ____ the move, all items in the current store will be sold at 30 percent off. (3) ____\n\nThe new store will also feature a design studio, where our staff can help you plan the layout of any room. Appointments are free and can be (4) ____ through our Web site.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (1).",
+       "choices": [
+        "allow",
+        "allowed",
+        "allows",
+        "allowing"
+       ],
+       "why": "コンマの後で前の文の内容を受けて「その結果～できる」と続ける分詞 allowing。動詞の形を入れると接続詞なしで文が2つ並んでしまう。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (2).",
+       "choices": [
+        "Before",
+        "Although",
+        "Unless",
+        "Whereas"
+       ],
+       "why": "後ろが名詞 the move だけなので前置詞 Before（～の前に）。Although・Unless・Whereas は接続詞で、後ろに主語と動詞が必要。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (3).",
+       "choices": [
+        "The new store will open in early July.",
+        "Please note that sale items cannot be returned or exchanged.",
+        "Our staff members are no longer accepting orders.",
+        "We are looking for experienced furniture designers."
+       ],
+       "why": "直前のセールの説明に「セール品は返品・交換できない」と注意を足す文が自然。7月に開店は8月10日と矛盾し、注文を受けないという文も移転のお知らせに合わない。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (4).",
+       "choices": [
+        "book",
+        "booking",
+        "booked",
+        "to book"
+       ],
+       "why": "can be の後で「予約される」という受け身なので過去分詞 booked。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P6-012",
+     "plus": true,
+     "passage": "Cycle Works Offers Repair Classes\nGLENDALE (October 4) — Cycle Works, a bicycle shop on Market Street, has begun (1) ____ evening repair classes for local riders. The two-hour classes cover basic skills such as fixing flat tires and adjusting brakes.\n\nOwner Celia Navarro said the idea came from customers. \"Over the past year, many of our customers (2) ____ us how to make simple repairs themselves,\" she said. \"We decided to offer classes so that they can save time and money.\" (3) ____\n\nClasses are held every Tuesday and Thursday and cost $25 per person. Space is limited to eight people per class, so those interested are (4) ____ to register early.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (1).",
+       "choices": [
+        "offer",
+        "offered",
+        "offering",
+        "offers"
+       ],
+       "why": "has begun の後には動名詞（または to 不定詞）が続くので offering。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (2).",
+       "choices": [
+        "ask",
+        "have asked",
+        "will ask",
+        "asking"
+       ],
+       "why": "Over the past year（この1年）は過去から今までの期間なので現在完了 have asked。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (3).",
+       "choices": [
+        "The shop also sells helmets and lights.",
+        "Ms. Navarro plans to sell the shop next year.",
+        "Bicycle sales have declined across the region.",
+        "The first classes filled up within days."
+       ],
+       "why": "教室を始めたという話に続けて「最初の回は数日で満員になった」と結果を伝え、後の「定員が少ないので早めに申し込みを」にもつながる。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (4).",
+       "choices": [
+        "encouraged",
+        "encourage",
+        "encouraging",
+        "encouragement"
+       ],
+       "why": "are ___ to register で「登録するよう勧められている」という受け身なので過去分詞 encouraged。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P6-013",
+     "plus": true,
+     "passage": "To: All Staff\nFrom: IT Department\nDate: November 12\nSubject: System upgrade this weekend\n\nPlease note that the company's e-mail and file servers will be upgraded this Saturday, November 15. The work will begin at 8 A.M. and should be (1) ____ by 2 P.M. During this time, you will not be able to access your e-mail or any shared files.\n\n(2) ____, we recommend that you download any files you may need over the weekend before you leave the office on Friday.\n\nWhen you log in on Monday, you will be asked to create a new password. (3) ____ Your new password must contain at least twelve characters.\n\nIf you experience any problems after the upgrade, please contact the help desk at extension 4410. We apologize for any (4) ____.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (1).",
+       "choices": [
+        "finish",
+        "finishes",
+        "finished",
+        "finishing"
+       ],
+       "why": "should be の後で「終えられている」という受け身なので過去分詞 finished。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (2).",
+       "choices": [
+        "Even so",
+        "Instead",
+        "In contrast",
+        "Therefore"
+       ],
+       "why": "「その間ファイルが使えない」→「だから金曜のうちにダウンロードを」と理由と結果をつなぐので Therefore。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (3).",
+       "choices": [
+        "The upgrade has been canceled.",
+        "Simple instructions will appear on your screen.",
+        "Printers on the third floor are out of order.",
+        "Your files will be moved to a new office."
+       ],
+       "why": "新しいパスワードを作るよう求められるという文の後に「画面に手順が出る」と続けるのが自然。作業の中止は本文全体と矛盾する。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (4).",
+       "choices": [
+        "inconvenience",
+        "inconvenient",
+        "inconveniently",
+        "inconvenienced"
+       ],
+       "why": "any の後なので名詞 inconvenience。We apologize for any inconvenience. は決まった言い方。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P6-014",
+     "plus": true,
+     "passage": "To: Alicia Romero\nFrom: Swiftway Car Rental\nSubject: How was your trip?\n\nDear Ms. Romero,\n\nThank you for renting with Swiftway during your recent trip to Kingsport. We hope everything went (1) ____.\n\nWe are always looking for ways to improve our service, and we would appreciate your (2) ____ on your experience. Please take a moment to complete the short online survey at the link below. (3) ____\n\nAs a thank-you, everyone who completes the survey by June 30 will receive 500 bonus points in our Swiftway Rewards program. Points can be (4) ____ for free rental days and vehicle upgrades.\n\nSincerely,\nNora Fitch\nCustomer Experience Manager",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (1).",
+       "choices": [
+        "smoothly",
+        "smooth",
+        "smoothness",
+        "smoothed"
+       ],
+       "why": "動詞 went を修飾する副詞 smoothly（順調に）。go smoothly で「順調に進む」。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (2).",
+       "choices": [
+        "permission",
+        "attendance",
+        "payment",
+        "feedback"
+       ],
+       "why": "サービス改善のためアンケートを頼んでいるので feedback（意見）。permission（許可）や payment（支払い）は合わない。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (3).",
+       "choices": [
+        "Your rental car must be returned by noon.",
+        "Unfortunately, your reservation could not be confirmed.",
+        "Your answers will be used only to improve our services.",
+        "We have opened a new branch near the airport."
+       ],
+       "why": "アンケートのお願いの直後に、回答の使い道を説明する文が自然。車の返却や予約の話は旅行が終わった客への手紙と合わない。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (4).",
+       "choices": [
+        "exchange",
+        "exchanged",
+        "exchanging",
+        "exchanges"
+       ],
+       "why": "can be の後で「交換される」という受け身なので過去分詞 exchanged。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P6-015",
+     "plus": true,
+     "passage": "Ashgrove Farmers Market Returns\n\nThe Ashgrove Farmers Market will open for the season on Saturday, May 4, in the parking lot of the Ashgrove Community Center. The market will run every Saturday from 8 A.M. to 1 P.M. (1) ____ the end of October.\n\nThis year, more than forty local farmers and food producers will (2) ____ fresh fruit, vegetables, bread, and cheese. (3) ____ A children's cooking corner will also be open from 10 A.M. to noon every week.\n\nVendors who would like to reserve a stall for the season should contact the market office by April 15. Because space is limited, stalls will be assigned in the order that (4) ____ are received.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (1).",
+       "choices": [
+        "since",
+        "between",
+        "through",
+        "beside"
+       ],
+       "why": "5月から「10月末まで」毎週開くので through（～までずっと）。since は過去からの起点、between は and とセットで使う。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (2).",
+       "choices": [
+        "sell",
+        "sale",
+        "sold",
+        "seller"
+       ],
+       "why": "助動詞 will の後なので動詞の原形 sell。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (3).",
+       "choices": [
+        "The market will be closed in May.",
+        "Parking at the community center will cost $20.",
+        "Most of the farmers have retired this year.",
+        "In addition, local musicians will perform near the main entrance each Saturday."
+       ],
+       "why": "次の文が「子どもの料理コーナーも（also）開く」なので、その前に別の催しを紹介する文が入る。5月は休みという文は開始日と矛盾する。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (4).",
+       "choices": [
+        "requested",
+        "requests",
+        "requesting",
+        "request"
+       ],
+       "why": "that 節の主語で are と合う複数形の名詞 requests（申し込み）が入る。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P6-016",
+     "plus": true,
+     "passage": "To: Ines Albrecht\nFrom: Paolo Greco, Tessaro Publishing\nDate: March 3\nSubject: Translation project\n\nDear Ms. Albrecht,\n\nThank you for agreeing to translate our new travel guide into German. I have attached the full English text, which is about 60,000 words (1) ____.\n\nAs we discussed, we would like to receive the first half of the translation by April 15 and the rest by May 30. (2) ____ Our editor, Marta Kline, will review each section and send you any questions.\n\nPlease (3) ____ your invoice after each half of the project is completed. Payment will be made within two weeks of receiving it.\n\nI am confident that your experience with travel writing will make this guide a great success. (4) ____, please do not hesitate to contact me.\n\nBest regards,\nPaolo Greco",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (1).",
+       "choices": [
+        "length",
+        "lengthy",
+        "longer",
+        "long"
+       ],
+       "why": "数量＋ long で「～の長さ」（60,000 words long）。length は名詞で、この位置に置けない。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (2).",
+       "choices": [
+        "If you need more time for either part, please let me know as early as possible.",
+        "The guide has already been translated into German.",
+        "Our office will be closed in April.",
+        "We have decided to cancel the project."
+       ],
+       "why": "締め切りを伝えた後に「どちらかで時間が必要なら早めに知らせて」と続くのが自然。すでに翻訳済み・中止という文は本文と矛盾する。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (3).",
+       "choices": [
+        "submission",
+        "submitted",
+        "submit",
+        "submitting"
+       ],
+       "why": "Please の後なので命令文の動詞の原形 submit。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "Choose the best answer for blank (4).",
+       "choices": [
+        "Despite any questions",
+        "Should you have any questions",
+        "Whether any questions",
+        "Unless you have questions"
+       ],
+       "why": "Should you have any questions ＝ If you should have any questions（もし質問があれば）の倒置。Unless では「質問が無ければ連絡を」になり意味が逆。",
+       "answer": 1
       }
      ]
     }
@@ -3501,6 +5023,618 @@
        ],
        "why": "最後に「データ講座にまだ参加できるか、できるならどう登録すればよいか」と尋ねている。",
        "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P7-013",
+     "plus": true,
+     "passage": "Tallis Kitchenware\nYour order is on its way!\n\nOrder number: TK-58210\nShipped: September 18\nEstimated delivery: September 22–23\n\nItems:\nCast-iron frying pan (1)\nSet of measuring cups (2)\n\nYour package is being sent by Harper Express Delivery. A signature will be required when it arrives. If no one is home, the driver will leave a notice, and you can pick up the package at the nearest Harper Express office starting the next business day.\n\nTo change your delivery address, please contact us before September 20.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is indicated about the package?",
+       "choices": [
+        "It was shipped on September 22.",
+        "It contains three frying pans.",
+        "It will be delivered by Tallis Kitchenware staff.",
+        "Someone must sign for it."
+       ],
+       "why": "「届いた時にサインが必要」とある。発送は9月18日、フライパンは1つ、配達は Harper Express。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "How can a customer change the delivery address?",
+       "choices": [
+        "By contacting Tallis Kitchenware before September 20",
+        "By visiting a Harper Express office",
+        "By leaving a note for the driver",
+        "By replying to the driver's notice"
+       ],
+       "why": "最後に「配達先を変えるには9月20日より前に当社へ連絡を」とある。us は通知を出した Tallis Kitchenware。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P7-014",
+     "plus": true,
+     "passage": "Marta Silva [2:14 P.M.]\nHi, Jun. Are you already at Corwin Medical for the software demonstration?\n\nJun Takeda [2:16 P.M.]\nYes, I just arrived. Their IT manager is setting up the meeting room now. But I think I left the adapter for my laptop at our office.\n\nMarta Silva [2:17 P.M.]\nThe one that connects to the projector?\n\nJun Takeda [2:17 P.M.]\nThat's the one. The demo starts at three.\n\nMarta Silva [2:19 P.M.]\nI'm leaving for lunch in a few minutes anyway. Corwin's building is on my way.\n\nJun Takeda [2:20 P.M.]\nYou're a lifesaver! It should be in the top drawer of my desk.\n\nMarta Silva [2:21 P.M.]\nGot it. See you in about twenty minutes.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why is Mr. Takeda at Corwin Medical?",
+       "choices": [
+        "To see a doctor",
+        "To repair a projector",
+        "To interview for a job",
+        "To give a product demonstration"
+       ],
+       "why": "シルバさんが「ソフトウェアの実演で Corwin Medical にいるの？」と聞き、タケダさんが「着いたところ」と答えている。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "At 2:19 P.M., what does Ms. Silva most likely mean when she writes, \"Corwin's building is on my way\"?",
+       "choices": [
+        "She will arrive at the demonstration late.",
+        "She often eats lunch near Corwin's building.",
+        "She wants Mr. Takeda to pick her up.",
+        "She can bring an item to Mr. Takeda."
+       ],
+       "why": "アダプターを忘れたと聞き「どうせ昼食に出る、Corwin の建物は通り道だ」と言い、タケダさんが机の引き出しの場所を伝えているので、届けると申し出ている。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "Where is the adapter most likely located?",
+       "choices": [
+        "In Mr. Takeda's desk",
+        "In a meeting room at Corwin Medical",
+        "In Ms. Silva's car",
+        "In the IT manager's office"
+       ],
+       "why": "タケダさんが「自分の机の一番上の引き出しにあるはず」と書いている。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P7-015",
+     "plus": true,
+     "passage": "Attention, Ridgeway Insurance Staff\n\nStarting March 3, Ridgeway Insurance will launch a carpool program for employees who live in the same area. [1] The goal is to reduce traffic around our office park and help employees save on fuel costs.\n\nEmployees who are interested can sign up through the Staff Services page on the intranet. After entering your home address and usual working hours, you will be matched with coworkers who live nearby. [2]\n\nCarpool groups of three or more people will be given reserved spaces in the parking area closest to the main entrance. [3] In addition, each driver will receive a $40 fuel card every month.\n\nFor more information, please contact Ines Varela in Staff Services. [4]",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is the purpose of the notice?",
+       "choices": [
+        "To announce the closure of a parking area",
+        "To ask employees to change their working hours",
+        "To introduce a new transportation program",
+        "To advertise a new insurance plan"
+       ],
+       "why": "冒頭で「同じ地域に住む社員の相乗り（carpool）制度を始める」と知らせている。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "What will drivers receive each month?",
+       "choices": [
+        "An extra day off",
+        "A card for buying fuel",
+        "Free lunch in the cafeteria",
+        "A discount on car insurance"
+       ],
+       "why": "「運転する人には毎月40ドルの燃料カードを渡す」とある。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?\n\"Matches are usually made within one week of signing up.\"",
+       "choices": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]"
+       ],
+       "why": "「登録から1週間ほどで組み合わせが決まる」は、「近くに住む同僚と組み合わされる」という説明の直後の[2]が自然。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P7-016",
+     "plus": true,
+     "passage": "Furniture Makers Join Together in New Showroom\nCEDAR FALLS (April 22) — Seven independent furniture makers from the Cedar Falls area will open a shared showroom on Lowell Street next month. The 600-square-meter space, called Common Grain, will display handmade tables, chairs, and cabinets from all seven workshops.\n\nUntil now, most of the makers have sold their work only online or at weekend craft fairs. \"Customers want to touch the wood and sit in the chair before they buy,\" said cabinetmaker Hal Brennick, who came up with the idea. \"But none of us could afford a store on our own.\"\n\nThe makers will share the cost of rent and take turns working at the showroom. Each workshop will have its own section, and visitors will be able to place custom orders directly with the makers.\n\nCommon Grain will open on May 15 with a celebration featuring live woodworking demonstrations. The showroom will be open Wednesday through Sunday.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is the article mainly about?",
+       "choices": [
+        "The construction of a furniture factory",
+        "The opening of a shared store",
+        "A new woodworking class",
+        "The schedule of a craft fair"
+       ],
+       "why": "7つの家具工房が共同のショールームを開くという記事。工場や教室の話ではない。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "What does Mr. Brennick suggest about customers?",
+       "choices": [
+        "They prefer to shop online.",
+        "They often order custom cabinets.",
+        "They visit craft fairs every weekend.",
+        "They want to try furniture before buying it."
+       ],
+       "why": "「お客さんは買う前に木に触れ、椅子に座ってみたい」と言っている。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "In paragraph 3, line 1, the word \"share\" is closest in meaning to",
+       "choices": [
+        "tell",
+        "own",
+        "divide",
+        "show"
+       ],
+       "why": "share the cost of rent は「家賃を分け合う」なので divide（分ける）が近い。tell（話す）の意味の share ではない。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "What is NOT mentioned about Common Grain?",
+       "choices": [
+        "It will be open every day of the week.",
+        "It will be staffed by the makers.",
+        "Visitors can order custom pieces there.",
+        "It will hold an opening event."
+       ],
+       "why": "営業は水曜から日曜なので毎日ではない。作り手が交代で店に立つこと、注文家具、開店イベントは本文にある。",
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "P7-017",
+     "plus": true,
+     "passage": "To: Farida Osman <fosman@lumenlighting.com>\nFrom: Grant Sorensen <gsorensen@homedesignexpo.org>\nDate: August 4\nSubject: Booth assignment\n\nDear Ms. Osman,\n\nThank you for registering Lumen Lighting as an exhibitor at the Home Design Expo, which will be held September 12–14 at the Danforth Convention Center. Your company has been assigned Booth 214, located in Hall B near the main stage.\n\nExhibitors may begin setting up their booths at 2 P.M. on September 11. Each booth includes a table, two chairs, and one electrical outlet. If you need additional outlets for your lighting displays, they can be ordered through the exhibitor portal for $35 each until August 25.\n\nPlease note that your remaining balance of $600 must be paid by August 15. Badges for your staff will be sent after payment is received.\n\nBest regards,\nGrant Sorensen\nExhibitor Services",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is the purpose of the e-mail?",
+       "choices": [
+        "To invite a company to give a talk",
+        "To confirm a hotel reservation",
+        "To request some product samples",
+        "To provide details about an exhibition booth"
+       ],
+       "why": "ブースの番号・場所・設営の時間・備品などを伝えるメール。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "What is suggested about Lumen Lighting?",
+       "choices": [
+        "It has exhibited at the expo before.",
+        "It will set up its booth on September 12.",
+        "It may need more electrical outlets.",
+        "It has already paid in full."
+       ],
+       "why": "照明の会社で、メールにも「照明の展示用にコンセントを追加で注文できる」とある。設営は9月11日、残金600ドルが未払い。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "When will Ms. Osman's staff receive their badges?",
+       "choices": [
+        "On September 11",
+        "After a payment is received",
+        "When they arrive at Hall B",
+        "On August 25"
+       ],
+       "why": "「入金を確認してからスタッフのバッジを送る」とある。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P7-018",
+     "plus": true,
+     "passage": "Brookfield Small Business Center\nWorkshop Registration Form\n\nName: Tariq Nolan\nBusiness: Nolan Landscaping\nE-mail: tnolan@nolanlandscaping.com\n\nWorkshop | Date | Fee | Selected\nWriting a Business Plan | June 3 | $45 |\nSocial Media Marketing | June 10 | $45 | X\nManaging Small Business Taxes | June 17 | $60 | X\nHiring Your First Employee | June 24 | $45 |\n\nTotal: $105\nPayment method: Credit card\n\nAll workshops are held from 6:30 to 8:30 P.M. in Room 3 of the Brookfield Public Library. Members of the Brookfield Chamber of Commerce receive a 20 percent discount. Registrations canceled at least five days before a workshop will receive a full refund.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is indicated about the workshops?",
+       "choices": [
+        "They take place in the evening.",
+        "They are held at the business center.",
+        "They are free for library members.",
+        "They are taught online."
+       ],
+       "why": "「どのワークショップも午後6時30分から8時30分」とある。会場は図書館の3号室。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "What is suggested about Mr. Nolan?",
+       "choices": [
+        "He has already hired an employee.",
+        "He is not a member of the Chamber of Commerce.",
+        "He paid by bank transfer.",
+        "He registered for three workshops."
+       ],
+       "why": "選んだのは45ドルと60ドルの2つで合計105ドル。会員なら20％引きになるはずなので、会員ではないと考えられる。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "How can Mr. Nolan receive a full refund?",
+       "choices": [
+        "By joining the Chamber of Commerce",
+        "By attending all four workshops",
+        "By canceling at least five days before a workshop",
+        "By paying with a credit card"
+       ],
+       "why": "「5日前までに取り消せば全額返金」とある。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P7-019",
+     "plus": true,
+     "passage": "Rachel Dunmore [9:05 A.M.]\nGood morning, team. The buyers from Kessler Outdoor are visiting on Thursday. I'd like to finalize the schedule today.\n\nSamir Qureshi [9:07 A.M.]\nI've booked the large meeting room from ten to noon. I'll present our new line of hiking backpacks then.\n\nElise Fontaine [9:08 A.M.]\nShould we take them to the factory floor afterward? They mentioned they wanted to see how the bags are tested.\n\nRachel Dunmore [9:10 A.M.]\nGood idea. Elise, can you arrange that with the production manager?\n\nElise Fontaine [9:11 A.M.]\nConsider it done.\n\nSamir Qureshi [9:13 A.M.]\nWhat about lunch? The café downstairs is closed on Thursdays.\n\nRachel Dunmore [9:15 A.M.]\nI'll reserve a table at Juniper Grill. It's only a five-minute walk.\n\nElise Fontaine [9:16 A.M.]\nThey also asked for samples to take back with them. I'll prepare a box of the new models.\n\nRachel Dunmore [9:18 A.M.]\nPerfect. I'll send everyone the final schedule this afternoon.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why are the writers planning a schedule?",
+       "choices": [
+        "Some customers are coming to visit.",
+        "A new factory is opening.",
+        "A trade show is being held.",
+        "A new employee is starting."
+       ],
+       "why": "最初に「Kessler Outdoor のバイヤーが木曜に来る」とあり、その日の予定を決めている。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "What will Mr. Qureshi do on Thursday morning?",
+       "choices": [
+        "Lead a factory tour",
+        "Test some backpacks",
+        "Prepare some samples",
+        "Present some products"
+       ],
+       "why": "クレシさんは「10時から12時に会議室で新しいハイキング用リュックを紹介する」と書いている。サンプルを用意するのはフォンテーヌさん。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "At 9:11 A.M., what does Ms. Fontaine mean when she writes, \"Consider it done\"?",
+       "choices": [
+        "She will arrange a visit to the factory floor.",
+        "She has finished testing the bags.",
+        "She thinks the meeting is over.",
+        "She has already booked a meeting room."
+       ],
+       "why": "ダンモアさんに「生産管理者と工場見学を手配して」と頼まれ、「任せて（必ずやる）」と引き受けている。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "Why will the group most likely eat at Juniper Grill?",
+       "choices": [
+        "The buyers asked to go there.",
+        "It is located next to the factory.",
+        "It offers a discount to groups.",
+        "The café in their building will be closed."
+       ],
+       "why": "クレシさんが「下のカフェは木曜休み」と言った後に、ダンモアさんが Juniper Grill を予約すると答えている。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P7-020",
+     "plus": true,
+     "passage": "Office Coffee Made Easy\n\nBrewPoint Office Services rents and maintains coffee machines for businesses of every size. For one low monthly fee, we will install a machine in your break room, deliver fresh coffee beans every two weeks, and clean the machine once a month.\n\nPlans start at $89 per month for offices with up to 20 employees. Sign a one-year agreement before December 31 and get your first month free!\n\nCall 555-0164 or visit our Web site to schedule a free tasting at your office.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is included in the monthly fee?",
+       "choices": [
+        "Snacks for the break room",
+        "Paper cups and napkins",
+        "Regular deliveries of coffee",
+        "Daily cleaning of the machine"
+       ],
+       "why": "「2週間ごとに新鮮なコーヒー豆を届ける」とある。掃除は月1回で毎日ではない。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "How can a business get a month of free service?",
+       "choices": [
+        "By having more than 20 employees",
+        "By signing a one-year agreement by a certain date",
+        "By scheduling a tasting",
+        "By recommending BrewPoint to another business"
+       ],
+       "why": "「12月31日までに1年契約を結べば最初の1か月が無料」とある。試飲は無料だが、1か月無料の条件ではない。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P7-021",
+     "plus": true,
+     "passage": "[Web page]\n\nRiverstone City Tours\n\nClassic Tour | 2 hours | Departs 10 A.M. and 2 P.M. daily | $28\nFood Lovers' Tour | 3 hours, includes tastings at four restaurants | Departs 11 A.M., Friday–Sunday | $55\nEvening Lights Tour | 90 minutes | Departs 7 P.M. daily | $32\n\nAll tours start from our ticket office at Union Square. Groups of ten or more receive 15 percent off the regular price. Private tours can also be arranged for groups of 20 or more. Tickets may be canceled for a full refund up to 48 hours before departure. Our guides are longtime residents who share stories about the city's history, architecture, and neighborhoods, and every tour runs rain or shine.\n\n[E-mail]\n\nTo: bookings@riverstonetours.com\nFrom: Hyejin Cho <hcho@maxwellpartners.com>\nDate: May 6\nSubject: Group booking\n\nHello,\n\nI am organizing an outing for employees from our regional offices who will be in town for a training week. On Saturday, May 18, we would like to take a group of twelve people on one of your tours. Our training sessions end at 1 P.M. that day, so we would prefer a tour in the afternoon. We will be having dinner together at our hotel at six, so a tour with food tastings would not be necessary. Several of our employees have never visited the city before, and they are especially interested in its history.\n\nCould you also tell me whether it is possible to pay by company invoice instead of by credit card? I would like to confirm the booking by Friday so that I can add it to the training week schedule.\n\nBest regards,\nHyejin Cho\nOffice Manager, Maxwell Partners",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is indicated about the Food Lovers' Tour?",
+       "choices": [
+        "It is offered only on certain days.",
+        "It is the shortest tour.",
+        "It includes dinner at a hotel.",
+        "It starts from a restaurant."
+       ],
+       "why": "ウェブページに Friday–Sunday とあり、金曜から日曜だけ出発する。いちばん短いのは90分の Evening Lights Tour。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "Why did Ms. Cho write the e-mail?",
+       "choices": [
+        "To cancel a reservation",
+        "To complain about a tour guide",
+        "To arrange an activity for a group",
+        "To apply for a job"
+       ],
+       "why": "研修で来る社員12人のツアーを申し込みたいというメール。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "Which tour will Ms. Cho's group most likely take?",
+       "choices": [
+        "The Classic Tour",
+        "The Food Lovers' Tour",
+        "The Evening Lights Tour",
+        "A private tour"
+       ],
+       "why": "午後のツアーで食べ物の試食は不要、6時に夕食。午後2時発の Classic Tour だけが合う。夜7時発は夕食と重なり、貸切は20人以上が条件。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "What is suggested about Ms. Cho's group?",
+       "choices": [
+        "It is large enough for a private tour.",
+        "It will meet at the company's office.",
+        "It has already paid by credit card.",
+        "It can receive a reduced price."
+       ],
+       "why": "ウェブページに「10人以上は15％引き」とあり、グループは12人なので割引を受けられる。貸切は20人以上。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "What does Ms. Cho ask about?",
+       "choices": [
+        "Restaurant recommendations",
+        "A method of payment",
+        "Parking near Union Square",
+        "Tours in other languages"
+       ],
+       "why": "メールの最後で「クレジットカードではなく会社の請求書払いにできるか」と聞いている。",
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "P7-022",
+     "plus": true,
+     "passage": "[Memo]\n\nTo: All Sales Staff\nFrom: Gwen Albright, Finance Department\nDate: July 1\nSubject: Updated travel expense policy\n\nAfter reviewing last year's travel costs, the Finance Department has updated the company's expense policy. Effective July 15, the following rules will apply to all business travel:\n\n- Hotel costs will be covered up to $180 per night. Any amount above this limit must be approved in advance by your department head.\n- Meals will be reimbursed up to $60 per day. Receipts are required for all meals over $15.\n- Employees who use their own cars will be paid $0.55 per mile.\n- Expense reports must be submitted within 14 days of returning from a trip.\n\nReports submitted after this deadline will not be processed until the following month. If you have any questions about these changes, please contact me at extension 2231.\n\n[E-mail]\n\nTo: Gwen Albright\nFrom: Jorge Pellegrini\nDate: August 2\nSubject: Expense report question\n\nHi Gwen,\n\nI returned yesterday from a four-day sales trip to Millport. The trip went well, and I signed two new clients. My hotel cost $205 per night because the conference hotel was the only one with rooms available. My manager, Dana Whitlock, approved this before I booked, and I've attached her e-mail.\n\nI also drove my own car, about 300 miles in total. I've included those miles in the report as well.\n\nOne problem: I lost the receipt from a dinner with a client on the second night. The meal cost $48. Is there anything I can do so that it can still be reimbursed? I'd like to submit the full report by the end of this week.\n\nThanks,\nJorge",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is the purpose of the memo?",
+       "choices": [
+        "To introduce a new travel agency",
+        "To remind staff about a sales conference",
+        "To announce changes to a policy",
+        "To explain a new hiring process"
+       ],
+       "why": "件名が Updated travel expense policy で、7月15日からの出張費の新しいルールを知らせている。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "Why did Mr. Pellegrini attach an e-mail from Ms. Whitlock?",
+       "choices": [
+        "To request the use of a company car",
+        "To explain why he returned late",
+        "To ask for a day off",
+        "To show that a higher hotel cost was approved"
+       ],
+       "why": "ホテルは1泊205ドルで上限180ドルを超えている。メモには「上限を超える分は事前に部長の承認が必要」とあり、その承認のメールを付けている。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "How much will Mr. Pellegrini most likely be paid for driving his car?",
+       "choices": [
+        "$55",
+        "$165",
+        "$180",
+        "$300"
+       ],
+       "why": "メモでは自家用車は1マイル0.55ドル。メールで約300マイル走ったとあるので、300×0.55＝165ドル。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "What problem does Mr. Pellegrini mention?",
+       "choices": [
+        "His hotel had no rooms available.",
+        "He does not have a receipt for a meal.",
+        "His trip was shortened.",
+        "His report was submitted late."
+       ],
+       "why": "「2日目の夜の顧客との夕食の領収書をなくした」と書いている。15ドルを超える食事には領収書が必要。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "By what date should Mr. Pellegrini submit his expense report to avoid a delay?",
+       "choices": [
+        "July 15",
+        "August 2",
+        "August 15",
+        "September 1"
+       ],
+       "why": "メールの日付は8月2日で「昨日戻った」ので帰着は8月1日。メモでは帰着から14日以内なので8月15日。過ぎると翌月の処理になる。",
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "P7-023",
+     "plus": true,
+     "passage": "[Advertisement]\n\nLumora Studio: Professional Photos for Your Team\n\nWith more than 15 years of experience photographing professionals, our team knows how to help everyone look relaxed and confident. Make a great first impression with professional headshots for your company Web site and staff ID cards. Our photographers can come to your office with all the lighting and equipment needed, or your team can visit our studio at 18 Archer Lane.\n\nOn-site sessions: $400 for up to 10 people, plus $35 for each additional person\nStudio sessions: $30 per person\n\nAll prices include basic retouching and digital copies of two photos per person. Printed copies are available for an additional fee.\n\nBook before March 31 and receive a free group photo of your team!\n\n[E-mail]\n\nTo: info@lumorastudio.com\nFrom: Priscilla Hahn <phahn@ashbylegal.com>\nDate: March 12\nSubject: Staff photos\n\nHello,\n\nOur neighbors at Grayson Accounting were very happy with the photos you took for them last year, and they recommended your studio to us. Our law firm recently redesigned its Web site, and we need new photos of our staff. There are 14 people in our office, and because many of them have busy schedules with clients, it would be difficult for them to travel to your studio. Would you be able to come to us on a Friday morning in early April?\n\nWe would also like printed copies of the photos for a display in our lobby. Please let me know how much these would cost.\n\nI would like to make the booking this week if possible.\n\nThank you,\nPriscilla Hahn\nOffice Manager, Ashby Legal",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is NOT included in the price of a session?",
+       "choices": [
+        "Printed copies",
+        "Basic retouching",
+        "Digital copies",
+        "Lighting equipment"
+       ],
+       "why": "広告に「印刷した写真は追加料金」とある。修整とデータ2枚分は料金に含まれ、出張では照明も持って行く。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "Why does Ms. Hahn want the photographers to come to her office?",
+       "choices": [
+        "Her coworkers are too busy to travel.",
+        "Her office has better lighting.",
+        "The studio is closed on Fridays.",
+        "The studio is too small for a group."
+       ],
+       "why": "「客との予定で忙しい人が多く、スタジオに行くのは難しい」と書いている。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "How much will a session most likely cost Ashby Legal, not including any printed copies?",
+       "choices": [
+        "$420",
+        "$475",
+        "$540",
+        "$560"
+       ],
+       "why": "出張撮影は10人まで400ドル、それ以上は1人35ドル。14人なので400＋35×4＝540ドル。420ドルはスタジオ撮影（30ドル×14人）の場合。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "What will Ashby Legal most likely receive?",
+       "choices": [
+        "A discount on printed copies",
+        "A free Web site design",
+        "A free group photo",
+        "A session on a Saturday"
+       ],
+       "why": "広告に「3月31日までに予約すると集合写真が無料」とあり、ハーンさんは3月12日のメールで今週中に予約したいと書いている。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "What does Ms. Hahn ask about?",
+       "choices": [
+        "The address of the studio",
+        "The number of photographers",
+        "The size of a group photo",
+        "The cost of printed photos"
+       ],
+       "why": "ロビーに飾る印刷写真の値段を教えてほしいと書いている。",
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "P7-024",
+     "plus": true,
+     "passage": "[Web page]\n\nStagecraft Event Rentals\n\nProjector (with screen) | $120 per day\nWireless microphone | $25 per day\nSpeaker set | $90 per day\nFolding tables (set of 5) | $40 per day\n\nDelivery and setup within Marston County: $50. Orders of $300 or more are delivered free of charge. All equipment must be returned or picked up by 10 A.M. the day after the event. Orders may be changed at no charge up to 48 hours before the event. We also rent lighting kits and stage platforms; please call us for a quote.\n\n[Order confirmation]\n\nOrder No. 7781\nCustomer: Oduya Consulting (Felix Oduya)\nEvent date: Friday, October 17\nItems: Projector (1), Wireless microphone (2), Speaker set (1)\nSubtotal: $260\nDelivery and setup: $50\nTotal: $310\nDelivery address: Larkin Community Hall, 9 Mercer Road\nDelivery time: Friday, October 17, 9:00 A.M.\n\n[E-mail]\n\nTo: support@stagecraftrentals.com\nFrom: Felix Oduya\nDate: October 13\nSubject: Order No. 7781\n\nHello,\n\nI'd like to make a change to my order for Friday's event. The event is a lunch for our clients, and the response to our invitations has been much stronger than we expected. We now expect about 120 guests instead of 60, so we will need one more speaker set.\n\nAlso, the hall has told us that the building will be locked from 6 P.M. on Friday until Monday morning, so your staff will not be able to pick up the equipment on Saturday. Could someone come for it at 5:30 P.M. on Friday instead? Please also let me know the new total for my order.\n\nThank you,\nFelix Oduya",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is indicated about Stagecraft Event Rentals?",
+       "choices": [
+        "It rents equipment by the week only.",
+        "It requires equipment to be returned by the next morning.",
+        "It sells used equipment.",
+        "It is located in Larkin Community Hall."
+       ],
+       "why": "ウェブページに「イベントの翌日午前10時までに返却か回収」とある。料金は1日単位。",
+       "answer": 1
+      },
+      {
+       "type": "mcq",
+       "q": "Why does Mr. Oduya want to change his order?",
+       "choices": [
+        "More people will attend the event.",
+        "The event date has changed.",
+        "A projector is not working.",
+        "The hall has its own speakers."
+       ],
+       "why": "「来場者が60人ではなく約120人になるので、スピーカーをもう1セット」と書いている。",
+       "answer": 0
+      },
+      {
+       "type": "mcq",
+       "q": "What will most likely happen to the delivery charge after the change?",
+       "choices": [
+        "It will double.",
+        "It will be added to a later order.",
+        "It will no longer apply.",
+        "It will be paid by the hall."
+       ],
+       "why": "注文は小計260ドルで配送料50ドル。スピーカー90ドルを足すと350ドルになり、ウェブページの「300ドル以上は配送無料」に当てはまる。",
+       "answer": 2
+      },
+      {
+       "type": "mcq",
+       "q": "What problem does Mr. Oduya mention?",
+       "choices": [
+        "The hall is too small for the guests.",
+        "His payment was declined.",
+        "The delivery address is incorrect.",
+        "The equipment cannot be collected on Saturday."
+       ],
+       "why": "「会場は金曜の夜6時から月曜の朝まで閉まるので、土曜に回収できない」と書いている。",
+       "answer": 3
+      },
+      {
+       "type": "mcq",
+       "q": "What is suggested about the pickup time Mr. Oduya requests?",
+       "choices": [
+        "It is at a different address.",
+        "It is earlier than Stagecraft's usual pickup time.",
+        "It requires an additional fee.",
+        "It is on Monday morning."
+       ],
+       "why": "通常の回収は「イベントの翌日午前10時まで」だが、オドゥヤさんはイベント当日の金曜午後5時30分を頼んでいる。",
+       "answer": 1
       }
      ]
     }

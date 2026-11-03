@@ -300,7 +300,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 const store={get(k,d){try{const v=localStorage.getItem("ap_"+k);return v===null?d:JSON.parse(v);}catch(e){return d;}},
              set(k,v){try{localStorage.setItem("ap_"+k,JSON.stringify(v));}catch(e){}}};
-function speak(t){try{if(!("speechSynthesis" in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/\(.*?\)/g,""));u.lang="en-US";u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
+function speak(t){if(window.apSay)return apSay(t.replace(/\(.*?\)/g,""));try{if(!("speechSynthesis" in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/\(.*?\)/g,""));u.lang="en-US";u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
 
 let DATA=null, LV="b", CH=0, MODE="quiz", TODO=[];
 let queue=[], qi=0, score=0, log=[], taps=0, timer=null, left=0;
@@ -854,6 +854,6 @@ $("rec-skip").addEventListener("click",()=>{
 });
 </script>
 <script src="/ui.js" defer></script>
-<script src="/install.js" defer></script>  <!-- ホーム画面に追加の案内・LINEから来た人・記録の引き継ぎ（2026-10-16） -->
+<script src="/say.js"></script><script src="/install.js" defer></script>  <!-- ホーム画面に追加の案内・LINEから来た人・記録の引き継ぎ（2026-10-16） -->
 </body>
 </html>

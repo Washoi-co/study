@@ -420,6 +420,108 @@
        "why": "以前は30日だったが、今は28日に変わった。"
       }
      ]
+    },
+    {
+     "id": "L1-005",
+     "plus": true,
+     "script": "M: Good morning, Westbrook Arts Centre, Tom speaking. How can I help?\nW: Hello. I picked up a leaflet about your evening pottery classes, and I'd like to find out a bit more.\nM: Of course. We've got two beginners' courses starting next month. Have you done any pottery before?\nW: A little at school, but that was a long time ago, so I think I'd count as a beginner.\nM: Then either course would suit you. One runs on Monday evenings and the other on Wednesday evenings.\nW: Mondays are difficult, because I often work late at the start of the week. So Wednesday, I think.\nM: Right. The Wednesday course was going to start on the fifth of May, but the studio's being repainted that week, so it now starts on the twelfth.\nW: The twelfth of May. And how long does it run for?\nM: Eight weeks altogether, from half past six until nine.\nW: And how big are the classes?\nM: We keep them to ten people, so the tutor has time to help everyone individually.\nW: That's fine. Who teaches the course?\nM: Joanna Mercer. She's a professional potter with her own studio in the old market.\nW: Could you spell her surname for me? I'd like to look at her work online.\nM: Sure. It's M-E-R-C-E-R.\nW: Thanks. And how much does the course cost?\nM: The full price is a hundred and twenty pounds, but for members of the arts centre it's ninety-five.\nW: I'm not a member. Is it worth joining?\nM: Well, membership is twenty pounds a year, so you'd still save five pounds on this course, and you'd also get cheaper tickets for our concerts and films.\nW: Then I'll join. So that's ninety-five for the course, plus the membership.\nM: That's right. Now, the price includes all the clay, and the firing, which is when the pots are baked in the kiln.\nW: Do I need to bring any tools?\nM: No, we have plenty of tools. Some people like to buy their own later, but there's no need at the start. The only thing you must bring is an apron, because it gets very messy.\nW: An apron. I'm sure I've got an old one somewhere. What sort of things will we make?\nM: For the first few weeks you'll make bowls by hand, and then you'll move on to the wheel. For the final project, everyone makes a set of mugs. We used to do plates, but people found them too difficult to get flat.\nW: Mugs sound good. Can we take them home straight away?\nM: Not quite. They have to be fired twice, so you collect them about two weeks after the course finishes.\nW: OK. One more thing. Is there anywhere to park?\nM: There's a small car park at the front, but that's only for disabled drivers. Most students use Station Street, just round the corner. It's free after six.\nW: Station Street. Great.\nM: Shall I reserve a place for you now? Places on the Wednesday course are going quite quickly.\nW: Yes, please. Can I pay over the phone?\nM: You can, by card, or you can pay at reception when you come for the first class. Could I have your name?\nW: It's Clare Ashworth. That's A-S-H-W-O-R-T-H.\nM: Thank you, Ms Ashworth. I'll send you a booking form by email this afternoon.\nW: Lovely. Thanks very much for your help.",
+     "questions": [
+      {
+       "type": "gap",
+       "limit": "ONE WORD AND/OR A NUMBER",
+       "q": "Course day: ____ evenings",
+       "answer": [
+        "Wednesday"
+       ],
+       "why": "月曜は仕事が遅いので水曜にした。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD AND/OR A NUMBER",
+       "q": "Start date: ____ May",
+       "answer": [
+        "12",
+        "12th",
+        "twelfth"
+       ],
+       "why": "最初は5日の予定だったが、スタジオの塗り替えで12日に変わった。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD AND/OR A NUMBER",
+       "q": "Length of course: ____ weeks",
+       "answer": [
+        "8",
+        "eight"
+       ],
+       "why": "Eight weeks altogether。6時半〜9時。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD AND/OR A NUMBER",
+       "q": "Tutor: Joanna ____",
+       "answer": [
+        "Mercer"
+       ],
+       "why": "つづり M-E-R-C-E-R を聞き取る。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD AND/OR A NUMBER",
+       "q": "Course fee for members: £____",
+       "answer": [
+        "95",
+        "ninety-five"
+       ],
+       "why": "通常は120ポンド、会員は95ポンド。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD AND/OR A NUMBER",
+       "q": "Annual membership: £____",
+       "answer": [
+        "20",
+        "twenty"
+       ],
+       "why": "membership is twenty pounds a year（それでも5ポンド得）。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD AND/OR A NUMBER",
+       "q": "Item students must bring: ____",
+       "answer": [
+        "apron"
+       ],
+       "why": "道具は貸してくれる。必ず持って行くのはエプロンだけ。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD AND/OR A NUMBER",
+       "q": "Final project: a set of ____",
+       "answer": [
+        "mugs"
+       ],
+       "why": "以前は皿だったが難しすぎたので、今はマグのセット。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD AND/OR A NUMBER",
+       "q": "Parking: in ____ Street (free after 6 p.m.)",
+       "answer": [
+        "Station"
+       ],
+       "why": "正面の駐車場は障害のある人専用。Station Street を使う。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD AND/OR A NUMBER",
+       "q": "Name: Clare ____",
+       "answer": [
+        "Ashworth"
+       ],
+       "why": "つづり A-S-H-W-O-R-T-H を1文字ずつ書き取る。"
+      }
+     ]
     }
    ]
   },
@@ -618,7 +720,7 @@
     },
     {
      "id": "L2-003",
-     "script": "Good afternoon, and welcome to Ashby Mill. My name's Richard, and I'll be your guide for the next hour. Before we go inside, let me tell you a little about the building.\n\nThere has been a mill on this part of the river for a very long time. The first one is mentioned in records from the thirteen hundreds, but nothing of that early building survives. The mill you can see in front of you was built in the late seventeen hundreds, in 1792 to be exact, and it ground flour for the surrounding villages for over a century and a half.\n\nPeople often assume that the mill closed because of the fire in 1921. There was certainly a fire, and you can still see the black marks on some of the beams upstairs. But the damage was repaired, and the mill carried on working. What finally closed it, in 1956, was competition from large modern factories, which could produce flour far more cheaply. After that the building was used as a store for a while, and then it stood empty for nearly forty years.\n\nThe restoration was carried out by a charitable trust, and it took eleven years. The hardest part was the water wheel, which had to be completely rebuilt using the original drawings. The mill reopened in 2015, and I'm pleased to say that it now grinds flour again, using exactly the same method as in the eighteenth century.\n\nNow, a few rules before we start. The mill is a working building, so when the machinery is turning, please keep your hands well away from it. Some of the moving parts are not behind barriers, because we want you to see how they work. Also, the stairs are very narrow and steep, so I must ask you to leave any large bags or rucksacks at the reception desk. You're very welcome to take photographs anywhere in the building, including with a flash, and you can bring drinks in with you, as long as they have a lid.\n\nLet me explain the layout. We'll begin on the ground floor, where the water wheel drives the machinery. From the viewing platform there, you can watch the wheel turning through a glass panel in the floor. Most visitors say it's the highlight of the visit.\n\nOn the first floor are the millstones themselves. There are two pairs, and on Wednesdays and Saturdays you can watch the miller at work, grinding the grain. On other days the stones are still, but there are guides who will explain the process.\n\nThe top floor was where the grain was stored in sacks. Today it houses a small exhibition about the lives of the people who worked here, with photographs, letters and some of the miller's tools. There's also a short film about the restoration, which lasts about ten minutes. I'd recommend sitting down to watch it at the end of the tour.\n\nOutside, in the old stable yard, you'll find the café. All the cakes are made with flour from the mill, and I can personally recommend the ginger cake.\n\nFinally, the shop, which is next to the reception. Many visitors like to buy a bag of our flour to take home. It's ground here, of course, and it's slightly more expensive than supermarket flour, but people say it makes wonderful bread. We also sell books about local history, but please note that the shop closes half an hour before the mill does, at four thirty.\n\nRight, if you'd like to follow me, we'll start with the water wheel.",
+     "script": "Good afternoon, and welcome to Ashby Mill. My name's Rachel, and I'll be your guide for the next hour. Before we go inside, let me tell you a little about the building.\n\nThere has been a mill on this part of the river for a very long time. The first one is mentioned in records from the thirteen hundreds, but nothing of that early building survives. The mill you can see in front of you was built in the late seventeen hundreds, in 1792 to be exact, and it ground flour for the surrounding villages for over a century and a half.\n\nPeople often assume that the mill closed because of the fire in 1921. There was certainly a fire, and you can still see the black marks on some of the beams upstairs. But the damage was repaired, and the mill carried on working. What finally closed it, in 1956, was competition from large modern factories, which could produce flour far more cheaply. After that the building was used as a store for a while, and then it stood empty for nearly forty years.\n\nThe restoration was carried out by a charitable trust, and it took eleven years. The hardest part was the water wheel, which had to be completely rebuilt using the original drawings. The mill reopened in 2015, and I'm pleased to say that it now grinds flour again, using exactly the same method as in the eighteenth century.\n\nNow, a few rules before we start. The mill is a working building, so when the machinery is turning, please keep your hands well away from it. Some of the moving parts are not behind barriers, because we want you to see how they work. Also, the stairs are very narrow and steep, so I must ask you to leave any large bags or rucksacks at the reception desk. You're very welcome to take photographs anywhere in the building, including with a flash, and you can bring drinks in with you, as long as they have a lid.\n\nLet me explain the layout. We'll begin on the ground floor, where the water wheel drives the machinery. From the viewing platform there, you can watch the wheel turning through a glass panel in the floor. Most visitors say it's the highlight of the visit.\n\nOn the first floor are the millstones themselves. There are two pairs, and on Wednesdays and Saturdays you can watch the miller at work, grinding the grain. On other days the stones are still, but there are guides who will explain the process.\n\nThe top floor was where the grain was stored in sacks. Today it houses a small exhibition about the lives of the people who worked here, with photographs, letters and some of the miller's tools. There's also a short film about the restoration, which lasts about ten minutes. I'd recommend sitting down to watch it at the end of the tour.\n\nOutside, in the old stable yard, you'll find the café. All the cakes are made with flour from the mill, and I can personally recommend the ginger cake.\n\nFinally, the shop, which is next to the reception. Many visitors like to buy a bag of our flour to take home. It's ground here, of course, and it's slightly more expensive than supermarket flour, but people say it makes wonderful bread. We also sell books about local history, but please note that the shop closes half an hour before the mill does, at four thirty.\n\nRight, if you'd like to follow me, we'll start with the water wheel.",
      "questions": [
       {
        "type": "mcq",
@@ -819,6 +921,113 @@
        ],
        "answer": 1,
        "why": "雨でも開催。川沿いの木のため、強風の時だけ中止。"
+      }
+     ]
+    },
+    {
+     "id": "L2-005",
+     "plus": true,
+     "script": "Good morning, everyone, and welcome to Hollin Marsh Nature Reserve. My name's Megan, and I'm one of the rangers here. Before you set off, I'd like to give you a short introduction to the reserve and explain a few things that will help you make the most of your visit.\n\nThe reserve covers about two hundred hectares of wetland, and it's hard to believe now that forty years ago most of it was farmland. When the farm closed, the land was bought by a wildlife trust, which blocked the old drainage ditches so that the fields could flood again. The reed beds you'll see came back on their own, without any planting at all. What we did have to build were the lakes, which were dug out in the nineteen nineties, and they've become the most important part of the reserve for birds.\n\nThere are three walking trails, all marked with coloured posts. The red trail is the shortest, at just under two kilometres, and it's the only one that's suitable for wheelchairs and pushchairs, because it's on a raised wooden path all the way round. The blue trail takes about an hour and goes out to the lakes, where there are benches and a picnic area. The green trail is the longest, and I'm afraid part of it is closed at the moment while we repair a bridge, so please don't try to follow it beyond the second gate.\n\nAlong the trails there are four hides, small wooden huts where you can watch birds without disturbing them. The one most people head for is the Lake Hide, but it does get very crowded at weekends. If you want a quieter spot, I'd suggest the Reed Hide. It's smaller, but at this time of year it's the best place to see the herons that nest just opposite.\n\nA few rules. Dogs aren't allowed anywhere on the reserve, I'm afraid, because many of our birds nest on the ground. Cycling is fine on the main track to the car park, but not on the trails themselves. And please take all your litter home with you; we don't have bins out on the reserve, because they attract foxes and rats.\n\nNow, a lot of visitors ask what the best time of day is for seeing wildlife. People often assume it's the middle of the day, when it's warmest, but actually that's when things are quietest. Early morning is good, but the best time here is really the evening, when large flocks of birds fly in to roost for the night.\n\nBack here at the visitor centre, you'll find the café, which serves hot lunches from Monday to Friday, and drinks and cakes every day until we close. Almost everything on the menu is made with produce from local farms. We also have binoculars for hire, which are free for members of the trust. And next door is the education room. That's used by school groups during the week, but on Saturday afternoons it's open to everyone, and you can look at some of the insects and other small creatures from the ponds under a microscope.\n\nFinally, if you've enjoyed your visit and you'd like to get involved, we're always looking for volunteers. At the moment, the job we most need help with is cutting back the willow trees, which spread very quickly into the reed beds. You don't need any experience, and we provide all the tools.\n\nRight, enjoy your visit, and do come and find me if you have any questions.",
+     "questions": [
+      {
+       "type": "multi",
+       "q": "Which TWO things does the speaker say about the history of the reserve?",
+       "choices": [
+        "The land used to be farmed.",
+        "The reed beds were planted by volunteers.",
+        "The lakes were created by digging.",
+        "The wildlife trust built new drainage ditches.",
+        "The reserve was opened forty years ago."
+       ],
+       "pick": 2,
+       "answers": [
+        0,
+        2
+       ],
+       "why": "以前は農地だった／湖は1990年代に掘って作った。葦は自然に戻り、溝はふさいだ。40年前は農地だった頃。"
+      },
+      {
+       "type": "mcq",
+       "q": "The red trail is the only trail which",
+       "choices": [
+        "is open all year round.",
+        "is suitable for wheelchairs.",
+        "goes out to the lakes."
+       ],
+       "answer": 1,
+       "why": "the only one that's suitable for wheelchairs and pushchairs（全部が木道）。湖へ行くのは青。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does the speaker say about the green trail?",
+       "choices": [
+        "Part of it cannot be used at present.",
+        "It is the best route for seeing herons.",
+        "It is marked with blue posts."
+       ],
+       "answer": 0,
+       "why": "橋の修理中で、2つ目の門より先は閉鎖中。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why does the speaker recommend the Reed Hide?",
+       "choices": [
+        "It is close to the visitor centre.",
+        "It is the largest hide on the reserve.",
+        "It is a good place to watch herons."
+       ],
+       "answer": 2,
+       "why": "小さいが、向かいに巣を作るサギを見るのに一番良い。混んでいるのは Lake Hide。"
+      },
+      {
+       "type": "multi",
+       "q": "Which TWO rules does the speaker mention?",
+       "choices": [
+        "Visitors must keep dogs on a lead.",
+        "Cycling is not allowed on the trails.",
+        "Visitors must stay on the main track.",
+        "Litter must be taken home.",
+        "Photographs may not be taken in the hides."
+       ],
+       "pick": 2,
+       "answers": [
+        1,
+        3
+       ],
+       "why": "自転車はトレイルでは禁止／ごみは持ち帰る。犬はリードでもだめ（全面禁止）。"
+      },
+      {
+       "type": "mcq",
+       "q": "According to the speaker, the best time to see wildlife is",
+       "choices": [
+        "in the middle of the day.",
+        "in the early morning.",
+        "in the evening."
+       ],
+       "answer": 2,
+       "why": "昼は一番静か。朝も良いが、一番は鳥の群れがねぐらに戻る夕方。"
+      },
+      {
+       "type": "mcq",
+       "q": "What can all visitors do on Saturday afternoons?",
+       "choices": [
+        "hire binoculars free of charge",
+        "look at pond creatures under a microscope",
+        "have a hot meal in the café"
+       ],
+       "answer": 1,
+       "why": "教育室が土曜の午後は誰でも使え、顕微鏡で池の生き物を見られる。双眼鏡が無料なのは会員だけ、温かい食事は平日の昼だけ。"
+      },
+      {
+       "type": "mcq",
+       "q": "What do volunteers most need to help with at the moment?",
+       "choices": [
+        "cutting back trees",
+        "repairing the bridge",
+        "leading school groups"
+       ],
+       "answer": 0,
+       "why": "葦原に広がるヤナギを切る作業が一番人手が要る。"
       }
      ]
     }
@@ -1336,6 +1545,135 @@
        ],
        "answer": 1,
        "why": "Use only the best ones で、それぞれに説明（caption）を付ける。"
+      }
+     ]
+    },
+    {
+     "id": "L3-005",
+     "plus": true,
+     "script": "W: Hi, Sam. Have you got time to go over our food waste project before we meet Dr Hughes?\nM: Sure, Nadia. I've finished putting the results into a table, so we can look at them now.\nW: Great. I think we should begin the presentation by explaining why we chose the canteen.\nM: Well, it wasn't because the catering manager asked us. She only found out about it after we'd started.\nW: No, it was the bins, wasn't it? We both noticed how much food was being thrown away at lunchtime, and we wanted to know how much.\nM: Exactly. So, the method. We weighed the waste every day for two weeks, always straight after the lunch service finished at two, so the figures are comparable.\nW: Yes. We'd planned to do a whole month, but the canteen closed for a week in the middle of term, so two weeks was all we could manage.\nM: And we sorted the waste into three types: food that was never served, food left in the kitchen, and food left on students' plates.\nW: Which was the biggest?\nM: Plate waste, by a long way. Nearly half of the total. I'd expected the kitchen to be the main problem, but actually the staff are very careful.\nW: What surprised me was the bread. Almost every day, whole loaves were thrown away because they'd been baked that morning and weren't sold.\nM: Hmm, but the bread wasn't the largest amount by weight. The rice was. People take a huge portion and leave half of it.\nW: That's true. OK, so what are we going to recommend? I quite liked the idea of smaller plates.\nM: I'm not sure. There's some research suggesting it works, but the canteen would have to buy hundreds of new plates. It would cost far too much, and I think the manager would say no.\nW: Fair enough. What about letting students choose their own portion size, small or large, at a lower price for small?\nM: That's my favourite. It's cheap, and when we asked students, most of them said they'd use it.\nW: Let's make that our main recommendation, then.\nM: What about posters? The manager suggested putting up posters showing how much food is wasted each week.\nW: I'm not convinced. There are posters all over the canteen already, and nobody reads them. I'd leave that out.\nM: Fine by me. And what about the bread?\nW: The manager told us they already give some of it to a local food charity. But they only collect it on Fridays.\nM: So we could suggest more frequent collections.\nW: I don't think that's really something the canteen can control. Maybe we should just mention it briefly. Anyway, problems with our study. One thing that worries me is that we only looked at lunch.\nM: Yes, and the other weakness is that our scales weren't very accurate for small amounts. But I don't think it made much difference to the overall results.\nW: Agreed. We'll mention both in the limitations section.\nM: What about the charts? I think the bar chart is clearer than the pie chart.\nW: Me too. Let's drop the pie chart. Oh, and Dr Hughes said she wants us to finish with a question for the audience, not just a summary.\nM: Right. Why don't we ask them how much food they threw away this week? That might wake them up.\nW: Perfect. And remember it's ten minutes, plus five for questions. Let's practise the whole thing on Thursday.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why did the students choose the canteen for their project?",
+       "choices": [
+        "The catering manager asked them to.",
+        "They noticed a lot of food being thrown away.",
+        "Their tutor suggested the topic."
+       ],
+       "answer": 1,
+       "why": "昼のごみ箱で多くの食べ物が捨てられているのに気づいた。マネージャーは後から知った。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why did the students collect data for only two weeks?",
+       "choices": [
+        "The canteen was closed for a week.",
+        "The work took longer than expected.",
+        "Their tutor told them two weeks was enough."
+       ],
+       "answer": 0,
+       "why": "1か月の予定だったが、学期の途中で食堂が1週間閉まった。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which type of waste was the largest?",
+       "choices": [
+        "food that was never served",
+        "food left in the kitchen",
+        "food left on plates"
+       ],
+       "answer": 2,
+       "why": "Plate waste, by a long way（半分近く）。キッチンは予想に反して少なかった。"
+      },
+      {
+       "type": "multi",
+       "q": "Which TWO foods do the students discuss?",
+       "choices": [
+        "bread",
+        "potatoes",
+        "salad",
+        "rice",
+        "fruit"
+       ],
+       "pick": 2,
+       "answers": [
+        0,
+        3
+       ],
+       "why": "毎日捨てられるパン（Nadia が驚いた）と、重さで一番多いご飯。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does Sam think about using smaller plates?",
+       "choices": [
+        "It would be too expensive for the canteen.",
+        "There is no evidence that it works.",
+        "Students would not like it."
+       ],
+       "answer": 0,
+       "why": "研究はあるが、何百枚も新しい皿を買う必要があるのでマネージャーは断るだろう。"
+      },
+      {
+       "type": "mcq",
+       "q": "What will be the students' main recommendation?",
+       "choices": [
+        "smaller plates",
+        "a choice of portion size",
+        "more frequent bread collections"
+       ],
+       "answer": 1,
+       "why": "小・大を選べて小は安い。安く、学生もほとんどが使うと答えた。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why will the students only mention bread collections briefly?",
+       "choices": [
+        "The charity already collects every day.",
+        "Students showed little interest in the idea.",
+        "The canteen cannot decide how often collections happen."
+       ],
+       "answer": 2,
+       "why": "回収の回数は食堂が決められることではない。"
+      },
+      {
+       "type": "multi",
+       "q": "Which TWO weaknesses of their study will the students mention?",
+       "choices": [
+        "They only measured waste at lunch.",
+        "Too few students answered their questions.",
+        "The weighing equipment was not very accurate.",
+        "They did not interview the kitchen staff.",
+        "Some data was lost."
+       ],
+       "pick": 2,
+       "answers": [
+        0,
+        2
+       ],
+       "why": "昼だけしか見ていない／はかりが少量では不正確。この2つを限界の部分で述べる。"
+      },
+      {
+       "type": "mcq",
+       "q": "What do the students decide about the charts?",
+       "choices": [
+        "They will use both charts.",
+        "They will only use the bar chart.",
+        "They will make a new chart."
+       ],
+       "answer": 1,
+       "why": "棒グラフの方が分かりやすいので、円グラフはやめる。"
+      },
+      {
+       "type": "mcq",
+       "q": "How will the students end the presentation?",
+       "choices": [
+        "with a question for the audience",
+        "with a short summary",
+        "with a recommendation for the manager"
+       ],
+       "answer": 0,
+       "why": "Dr Hughes は要約だけでなく、聞き手への質問で終えてほしいと言った。"
       }
      ]
     }
@@ -2169,6 +2507,433 @@
        "why": "第9段落：most are now empty。コウモリ用は several（いくつか）だけ。"
       }
      ]
+    },
+    {
+     "id": "R1-005",
+     "plus": true,
+     "passage": "Lights on the coast\n\nFor as long as people have travelled by sea, the point at which the sea meets the land has been the most dangerous part of any voyage. Rocks hidden just below the surface, sandbanks that shift with every storm and headlands that are invisible at night have wrecked countless ships. The earliest attempts to warn sailors were simple: fires were lit on hilltops or on the roofs of tall buildings near harbours. These fires burned wood, and later coal, and they had to be fed by hand throughout the night. On a windy night a fire might consume several tonnes of fuel, and in heavy rain it could go out altogether, just when it was most needed.\n\nFor centuries, progress was slow. By the eighteenth century, many towers used candles or oil lamps instead of open fires, but the light they produced was weak and spread in all directions, so that most of it was wasted on the sky and the land. Glass windows protected the flames from the wind, but they quickly became covered in soot, and keepers had to clean them several times a night. A ship's captain could often see a coal fire from further away than one of these early lamps.\n\nThe first great improvement came with the use of curved mirrors. A polished metal reflector placed behind a lamp collected the light that would otherwise have been lost and sent it out towards the sea in a single beam. Towers were soon fitted with dozens of lamps, each with its own reflector, and their range increased dramatically. The mirrors, however, were made of copper coated with silver, and they lost their shine within a few months, so they had to be polished constantly.\n\nThe most important breakthrough came in the 1820s, when a French engineer designed a new kind of lens. Instead of a single thick piece of glass, which would have been extremely heavy and would have absorbed much of the light, his lens was made up of many separate rings of glass arranged around a central lamp. Each ring bent the light slightly, and together they focused it into a powerful horizontal beam. A lens of this type could send light more than thirty kilometres, and because it lost far less light than a mirror, it needed only a single lamp. Within a few decades, lenses of this design had been installed in lighthouses around the world, and some are still in use today.\n\nA lighthouse that simply shone all night had one serious weakness: sailors could not always tell which lighthouse they were looking at. The solution was to give each one a unique pattern, known as its character. Some lights flashed once every few seconds; others flashed in groups of two or three, or showed a steady light that went dark at intervals. To produce these patterns, the lens was mounted on a platform that turned slowly, driven by a clockwork mechanism powered by a heavy weight. The weight had to be wound back to the top of the tower by hand every few hours. To reduce friction, the largest lenses floated on a bath of mercury, which allowed several tonnes of glass to be turned by the gentle push of one hand.\n\nLife for the keepers was demanding and often lonely. Many lighthouses stood on small islands or isolated rocks, and the keepers might not see their families for weeks at a time. Their duties were strictly defined: they trimmed the wicks, cleaned the lens, wound the clockwork and recorded the weather in a logbook. On stations where fog was common, they also operated a foghorn, since a light, however powerful, cannot be seen through thick fog. Supplies arrived by boat, and in bad weather a station could be cut off for a month or more.\n\nDuring the twentieth century, electricity transformed the lighthouse. Electric lamps were brighter and more reliable than oil, and they could be switched on and off automatically. Gradually, the role of the keeper disappeared. Lights were controlled first from nearby stations and later from a central office many kilometres away, and the last keepers in many countries left their towers in the 1990s. Today, a typical lighthouse is visited only occasionally by engineers who check the equipment.\n\nSome people have asked whether lighthouses are needed at all, now that almost every ship carries satellite navigation. Most maritime authorities, however, believe they still have a role. Electronic systems can fail, and small boats, such as those used by fishermen and people sailing on holiday, do not always carry the latest equipment. A light on a headland is also a simple way of confirming what a screen is showing. As a result, although some minor lights have been switched off, the majority continue to operate. Many of the keepers' cottages, meanwhile, have found a new purpose as holiday homes or small museums, attracting visitors who want to experience, at least for a few nights, the isolation that the keepers once knew.",
+     "questions": [
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "The first warning fires burned wood and, later, ____.",
+       "answer": [
+        "coal"
+       ],
+       "why": "第1段落：These fires burned wood, and later coal。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "The glass windows of early towers quickly became covered in ____.",
+       "answer": [
+        "soot"
+       ],
+       "why": "第2段落：they quickly became covered in soot。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Reflectors were made of ____ coated with silver.",
+       "answer": [
+        "copper"
+       ],
+       "why": "第3段落：made of copper coated with silver。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "The lens of the 1820s was made of many separate ____ of glass.",
+       "answer": [
+        "rings"
+       ],
+       "why": "第4段落：many separate rings of glass arranged around a central lamp。複数形の s を落とさない。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Each lighthouse had its own pattern of light, called its ____.",
+       "answer": [
+        "character"
+       ],
+       "why": "第5段落：a unique pattern, known as its character。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "To reduce friction, the largest lenses floated on ____.",
+       "answer": [
+        "mercury"
+       ],
+       "why": "第5段落：floated on a bath of mercury。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "At foggy stations, keepers also operated a ____.",
+       "answer": [
+        "foghorn"
+       ],
+       "why": "第6段落：they also operated a foghorn（霧の中では光が見えないため）。"
+      },
+      {
+       "type": "tfng",
+       "q": "Warning fires sometimes went out in heavy rain.",
+       "answer": "TRUE",
+       "why": "第1段落：in heavy rain it could go out altogether。"
+      },
+      {
+       "type": "tfng",
+       "q": "The light from early oil lamps could be seen from further away than coal fires.",
+       "answer": "FALSE",
+       "why": "第2段落：石炭の火の方が、初期のランプより遠くから見えることが多かった。"
+      },
+      {
+       "type": "tfng",
+       "q": "The lens designed in the 1820s was first tested in a French lighthouse.",
+       "answer": "NOT GIVEN",
+       "why": "第4段落：フランスの技師が設計したとあるだけで、最初にどこで試したかは書かれていない。"
+      },
+      {
+       "type": "tfng",
+       "q": "Lighthouses with the new lens needed more lamps than those with mirrors.",
+       "answer": "FALSE",
+       "why": "第4段落：mirror より光を失わないので needed only a single lamp。"
+      },
+      {
+       "type": "tfng",
+       "q": "Keepers on island stations were paid more than keepers on the mainland.",
+       "answer": "NOT GIVEN",
+       "why": "第6段落：島の生活の厳しさは書かれているが、給料の比較は無い。"
+      },
+      {
+       "type": "tfng",
+       "q": "Most lighthouses are still in operation even though ships have satellite navigation.",
+       "answer": "TRUE",
+       "why": "第8段落：although some minor lights have been switched off, the majority continue to operate。"
+      }
+     ]
+    },
+    {
+     "id": "R1-006",
+     "plus": true,
+     "passage": "The dance of the honey bee\n\nA honey bee colony can contain as many as fifty thousand individuals, but only a small proportion of them ever leave the hive to collect food. These foragers face a difficult task. The flowers that provide nectar and pollen may be several kilometres away, they bloom for only a few days or weeks, and their location changes constantly through the season. A colony that relied on each forager to find flowers by chance would quickly starve. Instead, honey bees have developed one of the most remarkable communication systems in the animal world: a dance that tells other bees where food can be found.\n\nThe dance takes place in the darkness of the hive, on the vertical surface of the wax comb. A forager that has discovered a rich source of food returns home and begins to move in a figure-of-eight pattern. In the middle section of the figure, she walks in a straight line while shaking her body rapidly from side to side, a movement known as the waggle. She then circles back, first to one side and then to the other, and repeats the straight run. Other bees crowd around her, following her movements closely and touching her with their antennae.\n\nThe information is contained in two features of the straight run. The first is its direction. Because the comb is vertical, the dancer uses gravity as a reference point: a run straight up the comb means that the food lies in the direction of the sun, while a run at an angle of, say, forty degrees to the right of vertical means that the food lies forty degrees to the right of the sun. The second feature is the length of the run. The longer the waggle lasts, the further away the food is. Roughly speaking, each second of waggling represents about a kilometre of flight, although the exact relationship varies between different populations of bees.\n\nScientists began to decode the dance in the first half of the twentieth century, and their conclusions were not immediately accepted. Some researchers argued that bees found food mainly by smell, following the scent of flowers carried on the dancer's body. The debate was settled only in the early 2000s, when experiments using radar to track individual bees showed that recruits flew directly towards the area indicated by the dance, even when the scent of the flowers had been removed. Smell, it turned out, helped bees to locate the exact flowers once they had reached the right area, but the dance told them where to go.\n\nThere is a further complication. The sun moves across the sky during the day, so a dance that pointed correctly at nine in the morning would be wrong by noon. Remarkably, bees take this into account. A forager that dances for a long period gradually changes the angle of her run to match the movement of the sun, even though she cannot see it from inside the hive. On cloudy days, bees can still navigate because they are able to detect patterns of polarised light in the sky that are invisible to humans.\n\nNot every dance is equally enthusiastic. A bee that has found a particularly rich source, with plenty of sweet nectar close to the hive, repeats her dance many more times than one that has found a poor source, so that more recruits are sent to the better location. In this way, the colony as a whole is able to direct its workforce towards the most profitable flowers without any single bee comparing the options. Researchers have compared this process to the way markets distribute resources, with no central authority making decisions.\n\nThe dance is also used for a quite different purpose. In late spring, when a colony becomes too large, the old queen leaves with around half of the workers to establish a new home. The swarm gathers on a branch while scout bees search for a suitable hollow, such as a gap in a tree. When a scout finds a promising site, she returns and dances to advertise it. Over a period of hours or days, more and more scouts visit the most popular sites, until one location attracts a clear majority. Only then does the whole swarm take off.\n\nUnderstanding the dance has practical value. Scientists have begun to record dances in hives placed in towns and in the countryside, and to translate them into maps showing where bees are finding food in each month of the year. These maps have revealed some surprises: in several studies, bees in urban areas travelled shorter distances than those on farmland, suggesting that gardens may offer a richer supply of flowers than fields of a single crop. Such findings could help land managers decide where planting wild flowers would be most beneficial.",
+     "questions": [
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "The dance is performed on the wax ____ inside the hive.",
+       "answer": [
+        "comb"
+       ],
+       "why": "第2段落：on the vertical surface of the wax comb。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "During the straight run, the bee makes a shaking movement called the ____.",
+       "answer": [
+        "waggle"
+       ],
+       "why": "第2段落：a movement known as the waggle。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "To show direction, the dancer uses ____ as a reference point.",
+       "answer": [
+        "gravity"
+       ],
+       "why": "第3段落：the dancer uses gravity as a reference point。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Each second of waggling represents roughly one ____ of flight.",
+       "answer": [
+        "kilometre",
+        "kilometer"
+       ],
+       "why": "第3段落：each second of waggling represents about a kilometre of flight。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Recruits flew to the right area even when the ____ of the flowers had been removed.",
+       "answer": [
+        "scent"
+       ],
+       "why": "第4段落：even when the scent of the flowers had been removed。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "On cloudy days, bees can detect patterns of ____ light.",
+       "answer": [
+        "polarised",
+        "polarized"
+       ],
+       "why": "第5段落：patterns of polarised light in the sky。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Scouts look for a hollow for the swarm, for example a gap in a ____.",
+       "answer": [
+        "tree"
+       ],
+       "why": "第7段落：a suitable hollow, such as a gap in a tree。"
+      },
+      {
+       "type": "tfng",
+       "q": "Most of the bees in a colony leave the hive to collect food.",
+       "answer": "FALSE",
+       "why": "第1段落：only a small proportion of them ever leave the hive。"
+      },
+      {
+       "type": "tfng",
+       "q": "Early conclusions about the meaning of the dance were accepted straight away.",
+       "answer": "FALSE",
+       "why": "第4段落：their conclusions were not immediately accepted。"
+      },
+      {
+       "type": "tfng",
+       "q": "A bee that dances for a long time adjusts the angle of her run as the sun moves.",
+       "answer": "TRUE",
+       "why": "第5段落：gradually changes the angle of her run to match the movement of the sun。"
+      },
+      {
+       "type": "tfng",
+       "q": "Bees in hot climates dance faster than bees in cool climates.",
+       "answer": "NOT GIVEN",
+       "why": "気候によるダンスの速さの違いには触れていない（第3段落は「集団によって違う」とだけ）。"
+      },
+      {
+       "type": "tfng",
+       "q": "Scout bees prefer sites that are high above the ground.",
+       "answer": "NOT GIVEN",
+       "why": "第7段落：木のすき間などの例はあるが、高さの好みは書かれていない。"
+      },
+      {
+       "type": "tfng",
+       "q": "Town gardens usually contain more kinds of flowers than public parks.",
+       "answer": "NOT GIVEN",
+       "why": "第8段落：庭と「単一作物の畑」を比べているだけで、公園との比較は無い。"
+      }
+     ]
+    },
+    {
+     "id": "R1-007",
+     "plus": true,
+     "passage": "The rise and fall of the canals\n\nBefore the age of railways, moving heavy goods overland was slow, expensive and often damaging to the goods themselves. Roads in eighteenth-century Britain were frequently little more than muddy tracks, and a horse pulling a cart could manage a load of perhaps a tonne. Coal, which was needed in ever greater quantities by the growing towns and factories, cost far more to transport than to dig out of the ground. Rivers offered an alternative, but many were too shallow, too winding or too fast to be used by boats, and they rarely passed close to where the coal was mined.\n\nThe answer was the canal: an artificial waterway built specifically for transport. On calm, still water, a single horse walking along a towpath beside the canal could pull a boat carrying around thirty tonnes, many times what it could pull on a road. The first canals of the industrial era were built in the 1760s to carry coal from mines to nearby towns, and their effect on prices was immediate. In one town, the price of coal is reported to have fallen by half within a year of the canal opening. Investors took notice, and over the following decades thousands of kilometres of canals were dug across the country, in what became known as a period of 'canal mania'.\n\nBuilding a canal was an enormous undertaking. Almost all the work was done by hand, by teams of labourers who moved earth with spades and wheelbarrows. Because water must be level, engineers tried wherever possible to follow the natural contours of the land, which is why many canals wind back and forth across hillsides. Where a change in height could not be avoided, they built locks: chambers with gates at each end, in which the water level could be raised or lowered so that boats could move from one level to another. On steep slopes, dozens of locks might be built close together in a flight, and a boat could take several hours to pass through them.\n\nWater supply was a constant concern. Every time a boat passed through a lock, a large quantity of water flowed down from the higher level, and this had to be replaced. Reservoirs were built in the hills to feed the highest sections, and in dry summers some canals had to close or limit the number of boats. Leaks were another problem. To make the bed of the canal watertight, workers lined it with a layer of clay mixed with water, which was trodden down until it formed a waterproof seal, a technique known as puddling.\n\nFor a few decades, canals were the most important freight network in the country. But their success was short-lived. From the 1830s, railways began to spread rapidly, and they offered something canals could not: speed. A train could cover in an hour a distance that took a canal boat a day. Many canal companies cut their prices in an attempt to compete, and some were bought by railway companies, which then allowed them to decline. By the early twentieth century, the remaining canal traffic consisted mainly of heavy, low-value goods such as coal and stone, for which speed mattered less than cost.\n\nThe families who worked the boats lived difficult lives. As earnings fell, many could no longer afford a house on land, and whole families lived in the tiny cabin at the back of the boat, which might measure only around three metres by two. Children often worked from an early age, leading the horse or operating the locks, and many received little formal education because they were constantly on the move.\n\nBy the middle of the twentieth century, commercial traffic had almost disappeared, and many canals became overgrown or were filled in. Their revival began in the 1950s and 1960s, when groups of volunteers began to clear rubbish, repair locks and campaign for the waterways to be reopened. Their argument was that the canals had value not for freight but for leisure. This proved correct. Today, the canals of Britain are used by tens of thousands of boats, almost all of them for holidays or as permanent homes, and the towpaths are popular with walkers, runners and cyclists.\n\nThe canals are now recognised as an important part of the country's history and environment. Many of the original bridges, tunnels and lock-keepers' cottages are protected buildings, and the water supports a wide range of wildlife, from fish and water birds to otters, which have returned to several waterways in recent years. Some engineers have even suggested that canals could be used again to carry goods, since a boat produces far less pollution per tonne than a lorry, although so far such schemes have been small in scale.",
+     "questions": [
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "On a road, a horse and cart could carry a load of only about one ____.",
+       "answer": [
+        "tonne",
+        "ton"
+       ],
+       "why": "第1段落：a horse pulling a cart could manage a load of perhaps a tonne。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "On a canal, the horse walked along a ____ beside the water.",
+       "answer": [
+        "towpath"
+       ],
+       "why": "第2段落：a single horse walking along a towpath beside the canal。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "The period of rapid canal building became known as canal ____.",
+       "answer": [
+        "mania"
+       ],
+       "why": "第2段落：a period of 'canal mania'。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Engineers tried to follow the natural ____ of the land.",
+       "answer": [
+        "contours"
+       ],
+       "why": "第3段落：follow the natural contours of the land。複数形。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "A group of locks built close together on a slope is called a ____.",
+       "answer": [
+        "flight"
+       ],
+       "why": "第3段落：dozens of locks might be built close together in a flight。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Water for the highest sections came from ____ built in the hills.",
+       "answer": [
+        "reservoirs"
+       ],
+       "why": "第4段落：Reservoirs were built in the hills to feed the highest sections。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "The bed of the canal was lined with ____ to stop leaks.",
+       "answer": [
+        "clay"
+       ],
+       "why": "第4段落：lined it with a layer of clay mixed with water（puddling）。"
+      },
+      {
+       "type": "tfng",
+       "q": "In one town, coal became much cheaper soon after a canal opened.",
+       "answer": "TRUE",
+       "why": "第2段落：the price of coal … fallen by half within a year。"
+      },
+      {
+       "type": "tfng",
+       "q": "Most of the digging of the canals was done by machines.",
+       "answer": "FALSE",
+       "why": "第3段落：Almost all the work was done by hand。"
+      },
+      {
+       "type": "tfng",
+       "q": "Some railway companies bought canals and then let them fall into decline.",
+       "answer": "TRUE",
+       "why": "第5段落：some were bought by railway companies, which then allowed them to decline。"
+      },
+      {
+       "type": "tfng",
+       "q": "Canal boats could travel faster than early trains.",
+       "answer": "FALSE",
+       "why": "第5段落：列車が1時間で進む距離に、船は1日かかった。"
+      },
+      {
+       "type": "tfng",
+       "q": "Children who lived on boats were not allowed to attend school.",
+       "answer": "NOT GIVEN",
+       "why": "第6段落：移動ばかりで教育をほとんど受けられなかったとあるが、「禁止されていた」とは書いていない。"
+      },
+      {
+       "type": "tfng",
+       "q": "Most of the volunteers who restored the canals were retired people.",
+       "answer": "NOT GIVEN",
+       "why": "第7段落：ボランティアが活動したとあるだけで、年齢には触れていない。"
+      }
+     ]
+    },
+    {
+     "id": "R1-008",
+     "plus": true,
+     "passage": "When the desert blooms\n\nDeserts are usually imagined as places where almost nothing grows: vast areas of sand and rock, baked by the sun and swept by dry winds. Yet in certain years, some deserts are transformed. After unusually heavy rain, the ground can become covered within weeks by millions of flowers, turning brown landscapes yellow, purple and white. These events, sometimes called superblooms, usually occur only about once in a decade, and they attract large numbers of visitors who travel long distances to see them. In some towns near the edge of the desert, the arrival of the flowers has become a reason for local celebrations.\n\nThe plants responsible are mostly annuals, species that complete their entire life cycle, from seed to flower to seed again, within a single season. In a desert, this strategy has a clear advantage. Rather than trying to survive the long dry periods as living plants, which would require deep roots, thick leaves or other costly adaptations, annuals spend most of their existence as seeds lying in the soil. Some of these plants are so small that they are easy to overlook even when they are in flower, while others grow to the height of a person within a few weeks. A seed needs almost no water and can remain alive for many years, waiting for the right conditions.\n\nWaiting, however, carries its own risks. If a seed germinates after a light shower, the young plant may die before it can produce seeds of its own, because the soil dries out too quickly. Many desert annuals have therefore evolved mechanisms that prevent them from germinating unless there has been enough rain. Some seeds have a coating containing chemicals that stop germination; only a heavy downpour can wash these chemicals away. Others respond to temperature as well as moisture, so that they germinate only after rain at a particular time of year, when the following weeks are likely to be cool enough for the plants to grow.\n\nEven in a good year, not every seed responds. Studies of desert soils have shown that a significant proportion of seeds remain dormant after heavy rain, while others in the same patch of ground germinate. Biologists believe that this is a form of insurance. If all the seeds germinated at once and the rains then failed, the population could be wiped out. By keeping some seeds in reserve, a species spreads its risk across many years, in much the same way that a careful investor avoids putting all of their money into a single company.\n\nThe timing of the rain is crucial. A superbloom generally requires a series of storms, rather than one, spread over the autumn and winter months, so that the soil stays moist for long enough. Temperature matters too: if the weeks after germination are very hot, the young plants dry out; if there is frost, they may be killed. Wind can also cause damage, drying the soil and sometimes burying seedlings under sand. For all these reasons, scientists find it difficult to predict a superbloom more than a few weeks in advance.\n\nA bloom has effects that go far beyond the plants themselves. Insects that feed on nectar appear in huge numbers, among them bees, butterflies and moths, many of which also spend most of their lives in a dormant state. Some moths, for instance, remain in the soil as pupae for several years and emerge only when the flowers appear. Birds and lizards feed on the insects, and small mammals collect the new seeds and store them underground, where some are forgotten and later germinate. In this way, a single wet winter can support the desert food chain for several years afterwards.\n\nThe popularity of superblooms has created problems, however. In some areas, the number of visitors has been so great that roads have become blocked and fields of flowers have been damaged by people walking through them to take photographs. Because the soil in deserts is often covered by a fragile crust formed by tiny organisms, a single footprint can leave a mark that lasts for years. Park managers have responded by creating marked paths, limiting parking and, in a few places, temporarily closing the most popular sites.\n\nChanges in the climate add a further uncertainty. Many climate models suggest that rainfall in desert regions will become more variable, with longer droughts broken by occasional intense storms. It is not yet clear what this will mean for desert annuals. Heavy rain might trigger more frequent blooms, but longer droughts could exhaust the supply of seeds in the soil. For now, scientists are collecting seeds from many desert species and storing them in seed banks, so that populations can be restored if they decline.",
+     "questions": [
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Most of the plants in a superbloom are ____, which complete their life cycle in one season.",
+       "answer": [
+        "annuals"
+       ],
+       "why": "第2段落：The plants responsible are mostly annuals。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "A seed can survive for years because it needs almost no ____.",
+       "answer": [
+        "water"
+       ],
+       "why": "第2段落：A seed needs almost no water。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "In some species, the seed ____ contains chemicals that prevent germination.",
+       "answer": [
+        "coating"
+       ],
+       "why": "第3段落：Some seeds have a coating containing chemicals that stop germination。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Some seeds react to ____ as well as to moisture.",
+       "answer": [
+        "temperature"
+       ],
+       "why": "第3段落：Others respond to temperature as well as moisture。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Biologists see the dormant seeds as a kind of ____.",
+       "answer": [
+        "insurance"
+       ],
+       "why": "第4段落：this is a form of insurance。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Small mammals store seeds ____, and some of them later grow.",
+       "answer": [
+        "underground"
+       ],
+       "why": "第6段落：store them underground, where some are forgotten and later germinate。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Desert soil is often covered by a fragile ____ formed by tiny organisms.",
+       "answer": [
+        "crust"
+       ],
+       "why": "第7段落：a fragile crust formed by tiny organisms。"
+      },
+      {
+       "type": "tfng",
+       "q": "Superblooms usually happen every two or three years.",
+       "answer": "FALSE",
+       "why": "第1段落：usually occur only about once in a decade。"
+      },
+      {
+       "type": "tfng",
+       "q": "One heavy storm is normally enough to produce a superbloom.",
+       "answer": "FALSE",
+       "why": "第5段落：requires a series of storms, rather than one。"
+      },
+      {
+       "type": "tfng",
+       "q": "Wind can bury young desert plants under sand.",
+       "answer": "TRUE",
+       "why": "第5段落：sometimes burying seedlings under sand。"
+      },
+      {
+       "type": "tfng",
+       "q": "Superblooms attract more visitors than any other natural event in desert regions.",
+       "answer": "NOT GIVEN",
+       "why": "第1段落：多くの人が来るとあるが、ほかの自然現象との比較は無い。"
+      },
+      {
+       "type": "tfng",
+       "q": "Visitors who walk through fields of flowers have to pay a fine.",
+       "answer": "NOT GIVEN",
+       "why": "第7段落：道を作る・駐車制限・閉鎖の対策はあるが、罰金には触れていない。"
+      },
+      {
+       "type": "tfng",
+       "q": "Seed banks contain more desert species than any other kind of plant.",
+       "answer": "NOT GIVEN",
+       "why": "第8段落：砂漠の種を集めて保存しているとあるだけで、ほかの植物との数の比較は無い。"
+      }
+     ]
     }
    ]
   },
@@ -2733,6 +3498,562 @@
        "why": "G：What matters most is the determination of the community itself。お金や技術が主ではない。"
       }
      ]
+    },
+    {
+     "id": "R2-005",
+     "plus": true,
+     "passage": "Learning from mistakes\n\nA\nFor much of the twentieth century, mistakes had a poor reputation in education. Many teachers believed that if students were allowed to give wrong answers, those answers would become fixed in their memories and be difficult to remove. Lessons were therefore designed to keep errors to a minimum. New material was introduced in small steps, students were given plenty of hints, and they were tested only when they were almost certain to succeed. This approach, sometimes called errorless learning, still has its place, particularly for people with certain memory difficulties. But over the past twenty years, a growing body of research has suggested that, for most learners, making mistakes may be an important part of learning rather than an obstacle to it.\n\nB\nSome of the most striking evidence comes from studies of what psychologists call pretesting. In a typical experiment, two groups of students study the same text. One group simply reads it. The other is first asked questions about the content, questions they cannot possibly answer correctly, since they have not yet seen the material. When both groups are tested later, the students who guessed, and usually guessed wrong, tend to remember more. Similar results have been found with learners of all ages, from primary school children to adults on professional courses. The most widely accepted explanation is that an attempt to answer, even an unsuccessful one, prepares the mind to notice the correct information when it appears. The learner has, in effect, created a space that the answer then fills.\n\nC\nA related finding concerns confidence. It might be expected that the mistakes people make with great confidence would be the hardest to correct, because the learner is so sure of the wrong answer. In fact, the opposite appears to be true. When people discover that an answer they were certain about is wrong, they are more likely to remember the correction than when they discover that a mere guess was wrong. Researchers believe that the surprise of being wrong captures attention and makes the moment more memorable. This has been named the hypercorrection effect.\n\nD\nNone of this means that every mistake is helpful. The benefits depend heavily on what happens next. If learners are not told the right answer, or are told it only after a long delay, the error itself may be what they remember. In one study of adults learning vocabulary in a foreign language, participants who received feedback immediately after each wrong guess performed far better than those who received it the following day. Feedback also needs to be specific: simply telling a learner that an answer is wrong, without showing why, is of limited value.\n\nE\nThere is also an emotional dimension. Many students, especially older ones, are deeply anxious about being seen to fail, and this anxiety can make them reluctant to attempt difficult questions at all. Some teachers have tried to change this by making errors a normal part of classroom discussion. One secondary school mathematics teacher, for instance, collects wrong answers from a test, removes the names, and asks the class to work out where each one went wrong. Her students report that the exercise has made them less afraid of making mistakes themselves, and several say they now find it easier to ask questions in class. Other teachers give credit for the quality of an attempt as well as for the final answer.\n\nF\nThe idea that mistakes can be valuable is not limited to schools. In industries where errors can have serious consequences, such as aviation and healthcare, organisations have increasingly encouraged staff to report their own mistakes and near misses. The aim is not to punish individuals but to identify weaknesses in systems, such as confusing labels on medicines or unclear procedures, which might cause someone else to make the same mistake in future. Such schemes work only if employees trust that an honest report will not damage their careers, and building that trust can take many years.\n\nG\nIt would be easy to draw the wrong lesson from this research. I am not suggesting that teachers should deliberately trick students into making mistakes, or that every error is a hidden opportunity. Some errors, particularly in practical subjects such as chemistry or engineering, can be dangerous, and others are simply the result of carelessness. Nevertheless, I believe the evidence is strong enough to justify a change in attitude. Students who are allowed to struggle with a problem, and who are given clear feedback when they get it wrong, are likely to understand it more deeply than those who are always guided to the right answer. Whether education systems that rely heavily on examinations will make room for this kind of struggle is another question.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains an example of a teacher making use of students' incorrect answers?",
+       "choices": [
+        "C",
+        "D",
+        "E",
+        "G"
+       ],
+       "answer": 2,
+       "why": "E：テストの間違った答えを名前を消して集め、どこが違うかをクラスで考える。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a description of an approach that tries to stop learners from making errors?",
+       "choices": [
+        "A",
+        "B",
+        "D",
+        "F"
+       ],
+       "answer": 0,
+       "why": "A：errorless learning＝間違いをできるだけ起こさせない授業の作り方。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a reference to what employees need before they will admit their errors?",
+       "choices": [
+        "B",
+        "C",
+        "E",
+        "F"
+       ],
+       "answer": 3,
+       "why": "F：正直に報告しても経歴に傷がつかないと信頼できること。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a comparison between receiving information quickly and receiving it later?",
+       "choices": [
+        "B",
+        "D",
+        "E",
+        "G"
+       ],
+       "answer": 1,
+       "why": "D：すぐにフィードバックを受けた人は、翌日に受けた人よりずっと成績が良かった。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains an explanation of why confident mistakes are often remembered once corrected?",
+       "choices": [
+        "A",
+        "B",
+        "C",
+        "F"
+       ],
+       "answer": 2,
+       "why": "C：自信があったのに違ったという驚きが注意を引き、記憶に残る（hypercorrection effect）。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "In pretesting studies, the students who ____ before reading usually remembered more.",
+       "answer": [
+        "guessed"
+       ],
+       "why": "B：the students who guessed, and usually guessed wrong, tend to remember more。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "An attempt to answer seems to prepare the ____ to notice the correct information.",
+       "answer": [
+        "mind"
+       ],
+       "why": "B：prepares the mind to notice the correct information。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Finding out that a confident answer is wrong causes ____, which makes the moment easier to remember.",
+       "answer": [
+        "surprise"
+       ],
+       "why": "C：the surprise of being wrong captures attention。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Feedback works best when it is immediate and ____.",
+       "answer": [
+        "specific"
+       ],
+       "why": "D：Feedback also needs to be specific。"
+      },
+      {
+       "type": "ynng",
+       "q": "Errorless learning is still useful for some people.",
+       "answer": "YES",
+       "why": "A：still has its place, particularly for people with certain memory difficulties。"
+      },
+      {
+       "type": "ynng",
+       "q": "Teachers should deliberately trick students into making mistakes.",
+       "answer": "NO",
+       "why": "G：I am not suggesting that teachers should deliberately trick students into making mistakes。"
+      },
+      {
+       "type": "ynng",
+       "q": "Reporting schemes in healthcare have greatly reduced the number of serious errors.",
+       "answer": "NOT GIVEN",
+       "why": "F：報告制度の目的は書かれているが、実際に事故が減ったかは書かれていない。"
+      },
+      {
+       "type": "ynng",
+       "q": "Allowing students to struggle with a problem can lead to deeper understanding.",
+       "answer": "YES",
+       "why": "G：I believe … likely to understand it more deeply。"
+      }
+     ]
+    },
+    {
+     "id": "R2-006",
+     "plus": true,
+     "passage": "Losing the dark\n\nA\nUntil little more than a century ago, night was genuinely dark for most of the world's population. Away from the light of a fire or a candle, people could see thousands of stars on a clear night, and the band of the Milky Way stretched across the sky. Today, according to estimates based on satellite images, more than eight out of ten people live under skies affected by artificial light, and for a large proportion of them the Milky Way is no longer visible at all. Astronomers were the first to raise concerns, since light from towns made it increasingly difficult to observe faint objects. But the problem, often described as light pollution, is now recognised as having consequences far beyond astronomy.\n\nB\nLight pollution takes several forms. The most familiar is skyglow, the orange or white dome that hangs over cities and can be seen from many kilometres away. It is caused by light that is directed upwards or sideways, either deliberately or through badly designed fittings, and is then scattered by particles in the atmosphere. Skyglow can affect places with no lights of their own, such as nature reserves many kilometres from the nearest town. Glare, the excessive brightness that makes it hard to see, is a second form, and is a particular hazard for drivers. A third is light trespass: light that spills into places where it is not wanted, such as through a bedroom window from a nearby street lamp.\n\nC\nFor wildlife, the effects can be severe. Many animals rely on the natural pattern of light and darkness to regulate their behaviour. Young sea turtles, for example, find their way from the beach where they hatch to the ocean by moving towards the brightest horizon, which, under natural conditions, is the sea. On beaches near brightly lit roads and buildings, many crawl inland instead and die. Migrating birds that fly at night can be drawn towards lit buildings, and insects gather in vast numbers around street lamps, where many are eaten or die of exhaustion. Because insects pollinate plants and provide food for birds and bats, these losses can affect entire ecosystems. Even plants may respond: trees close to street lamps have been observed to keep their leaves later into the autumn than trees in darker areas.\n\nD\nHumans, too, may be affected. Our bodies have an internal clock that is set largely by exposure to light, and the hormone melatonin, which helps to regulate sleep, is produced mainly in darkness. Exposure to light at night can reduce the amount of melatonin the body produces. Several large studies have found associations between high levels of outdoor light at night and poorer sleep, although researchers caution that these studies cannot prove that light is the cause, since people who live in brightly lit areas may differ from others in many ways, such as the noise they are exposed to or the hours they work.\n\nE\nThe arrival of LED street lights has complicated the picture. LEDs use far less electricity than older lamps, and many local authorities have replaced their lights to save money and reduce energy use. However, the first generation of LED street lights produced a cold, bluish-white light, which scatters more in the atmosphere than warmer colours and which has a stronger effect on the body's internal clock. In some places, the switch to LEDs was followed by complaints from residents and an increase in skyglow. More recent LED lights are available in warmer colours, and many authorities now choose these instead.\n\nF\nUnlike many environmental problems, light pollution is relatively easy to reduce. Shielded fittings that direct light only downwards can cut skyglow dramatically without making streets any darker at ground level. Lights can be dimmed late at night, when few people are about, or fitted with sensors so that they come on only when someone approaches. Several towns have experimented with switching off some street lights after midnight. Fears that this would lead to more accidents have so far not been supported by the evidence, although residents in some areas say that they feel less safe.\n\nG\nSome places have gone further, setting out to protect the night sky as a resource in its own right. A number of national parks and rural areas have been recognised as dark-sky reserves, where lighting is carefully controlled. As well as benefiting wildlife, these reserves have become an unexpected source of income: visitors travel to them specifically to see the stars, and local businesses offer guided observation evenings, often in winter, when there are few other tourists. For communities that depend on tourism, the dark has become something worth selling.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a description of different kinds of light pollution?",
+       "choices": [
+        "A",
+        "B",
+        "D",
+        "F"
+       ],
+       "answer": 1,
+       "why": "B：skyglow・glare・light trespass の3種類を説明。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a reference to an economic benefit of darkness?",
+       "choices": [
+        "A",
+        "C",
+        "E",
+        "G"
+       ],
+       "answer": 3,
+       "why": "G：暗い空の保護区が星を見る観光客を呼び、収入源になった。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains an example of animals being misled about which way to go?",
+       "choices": [
+        "C",
+        "D",
+        "E",
+        "F"
+       ],
+       "answer": 0,
+       "why": "C：ウミガメの子が明るい方へ進み、海ではなく陸へ向かってしまう。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a reason why it is difficult to prove that artificial light harms human health?",
+       "choices": [
+        "B",
+        "C",
+        "D",
+        "G"
+       ],
+       "answer": 2,
+       "why": "D：明るい地域の人は騒音や勤務時間など他の点でも違うので、光が原因とは証明できない。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a mention of the group that first expressed concern about artificial light?",
+       "choices": [
+        "A",
+        "C",
+        "D",
+        "F"
+       ],
+       "answer": 0,
+       "why": "A：Astronomers were the first to raise concerns。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Many authorities switched to LEDs to save ____ and reduce energy use.",
+       "answer": [
+        "money"
+       ],
+       "why": "E：replaced their lights to save money and reduce energy use。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "The first LED street lights gave a bluish-white light, which ____ more in the atmosphere.",
+       "answer": [
+        "scatters"
+       ],
+       "why": "E：which scatters more in the atmosphere than warmer colours。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "____ fittings, which point light downwards, can greatly reduce skyglow.",
+       "answer": [
+        "shielded"
+       ],
+       "why": "F：Shielded fittings that direct light only downwards。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Some lights have ____ so that they come on only when someone is nearby.",
+       "answer": [
+        "sensors"
+       ],
+       "why": "F：fitted with sensors so that they come on only when someone approaches。"
+      },
+      {
+       "type": "mcq",
+       "q": "According to paragraph A, how many people live under skies affected by artificial light?",
+       "choices": [
+        "about half of the population",
+        "around two-thirds of the population",
+        "fewer than a third of the population",
+        "more than eighty per cent of the population"
+       ],
+       "answer": 3,
+       "why": "A：more than eight out of ten people（8割以上）。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does the writer say about the first LED street lights?",
+       "choices": [
+        "They cost more to run than older lamps.",
+        "Their colour had some unwanted effects.",
+        "They were quickly removed from most streets.",
+        "They gave too little light for drivers."
+       ],
+       "answer": 1,
+       "why": "E：青白い光は大気で散りやすく体内時計への影響も強い。電気代は安い。"
+      },
+      {
+       "type": "mcq",
+       "q": "What has been found in towns that turned off some street lights after midnight?",
+       "choices": [
+        "Accidents increased sharply.",
+        "All residents supported the change.",
+        "There is no evidence so far of more accidents.",
+        "The energy savings were smaller than expected."
+       ],
+       "answer": 2,
+       "why": "F：事故が増えるという心配は今のところ証拠で裏付けられていない。不安を感じる住民もいる。"
+      },
+      {
+       "type": "mcq",
+       "q": "What point does the writer make about dark-sky reserves?",
+       "choices": [
+        "They can bring money to local communities.",
+        "They are found only in national parks.",
+        "They are used mainly by professional astronomers.",
+        "They attract most of their visitors in summer."
+       ],
+       "answer": 0,
+       "why": "G：an unexpected source of income。観察会は観光客の少ない冬に多い。"
+      }
+     ]
+    },
+    {
+     "id": "R2-007",
+     "plus": true,
+     "passage": "Fixing things again\n\nA\nOn the first Saturday of every month, a community hall in a small town fills with people carrying broken objects: a toaster that no longer heats, a lamp with a loose wire, a child's toy with a missing wheel, a jacket with a torn pocket. They have come to a repair café, an event at which volunteers with practical skills try to fix whatever is brought to them, free of charge, while the owners watch and, ideally, learn. Some visitors bring objects that have been in their families for generations; others arrive with something bought only months earlier. The first repair cafés appeared around fifteen years ago, and there are now thousands of them in dozens of countries. Their rapid spread says something about a growing unease with the way many products are made, used and thrown away.\n\nB\nFor most of human history, repair was simply part of life. Clothes were mended until they could be mended no more, and furniture, tools and household goods were expected to last for decades. In the second half of the twentieth century, this changed. As manufacturing became cheaper, it often became less expensive to replace an item than to have it fixed, and the network of small repair shops that once existed in most towns gradually disappeared. At the same time, products became more complex, and the skills needed to repair them became more specialised.\n\nC\nSome critics go further, arguing that manufacturers deliberately design products to fail, a practice known as planned obsolescence. The evidence for this is mixed. There are well-documented historical cases in which manufacturers agreed among themselves to limit the life of their products, but in many modern cases a short lifespan seems to be the result of pressure to reduce costs rather than a deliberate plan. What is clearer is that many products are difficult to repair. Parts are glued rather than screwed together, batteries are sealed inside cases, and spare parts or repair manuals are often unavailable to the public.\n\nD\nThe environmental case for repair is strong. A large share of the energy and materials associated with an electronic device such as a phone or laptop is used in manufacturing it, rather than in using it. Extending its life by even a year or two can therefore make a significant difference to its overall impact. Waste is another concern: discarded electronic goods are among the fastest-growing types of rubbish, and only a fraction of them are properly recycled. Many contain small quantities of valuable metals that are lost when they end up in landfill. Clothing tells a similar story: producing a single cotton shirt requires a large amount of water, yet many clothes are worn far fewer times than they could be.\n\nE\nRepair cafés themselves keep careful records. According to the data collected by one network, around six out of ten items brought in are successfully repaired, with the highest success rates for bicycles and clothing and the lowest for electronic items such as phones. Clothing repairs are often the quickest, and a skilled volunteer can replace a broken zip in less than half an hour. Volunteers report that the most common faults are surprisingly simple: a broken switch, a blocked filter or a loose connection. In many cases, owners had assumed that their item was beyond saving and had been about to throw it away.\n\nF\nThe social side of the events is often mentioned by participants. Many volunteers are retired engineers, electricians or tailors who enjoy using their skills and passing them on, and visitors frequently say that they come as much for the conversation as for the repair. For some older residents, a repair café is one of the few regular opportunities to meet people from different generations. Organisers also see the events as a way of challenging the idea that only experts can understand how things work. Some cafés now run short workshops at which people can learn basic skills, such as sewing on a button or replacing a fuse in a plug.\n\nG\nIt would be wrong, though, to exaggerate what repair cafés can achieve. They fix a few thousand items a month in a world that discards millions every day, and they depend on volunteers whose skills are not always being passed on to younger people. In my view, their greatest value lies not in the number of objects they save, but in the change in attitude they encourage. A person who has watched a kettle being opened and mended is less likely to see the next broken object as rubbish. If manufacturers can be persuaded to design products that are easier to open and repair, that change in attitude could matter a great deal.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains figures showing how often repairs are successful?",
+       "choices": [
+        "A",
+        "B",
+        "C",
+        "E"
+       ],
+       "answer": 3,
+       "why": "E：持ち込まれた物の約6割が直る。自転車と服が高く、電子機器が低い。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a discussion of whether products are designed to break?",
+       "choices": [
+        "A",
+        "B",
+        "C",
+        "F"
+       ],
+       "answer": 2,
+       "why": "C：planned obsolescence（わざと壊れるように作る）の証拠はまちまち。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains an explanation of why repair used to be more common than it is today?",
+       "choices": [
+        "A",
+        "B",
+        "D",
+        "G"
+       ],
+       "answer": 1,
+       "why": "B：製造が安くなり、直すより買い替える方が安くなって修理店が消えた。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a reference to the environmental cost of making new devices?",
+       "choices": [
+        "D",
+        "E",
+        "F",
+        "G"
+       ],
+       "answer": 0,
+       "why": "D：電子機器のエネルギーと材料の多くは製造の時に使われる。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a mention of what volunteers enjoy about taking part?",
+       "choices": [
+        "B",
+        "C",
+        "D",
+        "F"
+       ],
+       "answer": 3,
+       "why": "F：退職した技術者などが、技術を使って伝えることを楽しんでいる。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "In many products, the parts are ____ instead of being screwed together.",
+       "answer": [
+        "glued"
+       ],
+       "why": "C：Parts are glued rather than screwed together。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Batteries are often ____ inside the case.",
+       "answer": [
+        "sealed"
+       ],
+       "why": "C：batteries are sealed inside cases。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Much of the energy linked to a phone is used in ____ it.",
+       "answer": [
+        "manufacturing"
+       ],
+       "why": "D：used in manufacturing it, rather than in using it。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Discarded devices contain valuable ____ that are lost in landfill.",
+       "answer": [
+        "metals"
+       ],
+       "why": "D：small quantities of valuable metals that are lost。"
+      },
+      {
+       "type": "ynng",
+       "q": "There is clear evidence that most modern products are deliberately designed to stop working after a short time.",
+       "answer": "NO",
+       "why": "C：多くの場合、寿命が短いのは意図的な計画ではなくコスト削減の圧力の結果。"
+      },
+      {
+       "type": "ynng",
+       "q": "Repair cafés are more successful in large cities than in small towns.",
+       "answer": "NOT GIVEN",
+       "why": "都市と町の比較はどこにも無い。"
+      },
+      {
+       "type": "ynng",
+       "q": "The main value of repair cafés is the change they bring to people's attitudes.",
+       "answer": "YES",
+       "why": "G：In my view, their greatest value lies … in the change in attitude they encourage。"
+      },
+      {
+       "type": "ynng",
+       "q": "Visitors to repair cafés usually come back later with a second broken item.",
+       "answer": "NOT GIVEN",
+       "why": "同じ人がまた来るかどうかは書かれていない。"
+      }
+     ]
+    },
+    {
+     "id": "R2-008",
+     "plus": true,
+     "passage": "Can happiness be measured?\n\nA\nFor most of the twentieth century, the success of a country was judged largely by economic measures, above all the total value of the goods and services it produced each year. Rising output was taken as a sign that people's lives were improving. Over the past few decades, however, a growing number of researchers have argued that such figures give an incomplete picture. Critics pointed out, for example, that money spent on treating illness or cleaning up pollution adds to economic output, even though nobody's life is better as a result. A country can become richer while its citizens become more stressed, more lonely or less healthy. These researchers have therefore tried to measure something more direct: how people themselves feel about their lives.\n\nB\nThe most common method is remarkably simple. People are asked to rate their satisfaction with life as a whole on a scale, typically from nought to ten. Some surveys also ask more specific questions, for instance about how worthwhile people feel their daily activities are, or how anxious they felt on the previous day. Large surveys using questions of this kind are now carried out regularly in many countries, and the results are often published as league tables ranking nations from the happiest to the least happy. Such rankings attract a great deal of media attention, although the differences between countries near the middle of the tables are often too small to be meaningful.\n\nC\nCritics have raised a number of objections. One is that people in different cultures may interpret the questions differently. In some societies, it is considered boastful to describe oneself as very happy, while in others a cheerful answer is expected. Translation presents further difficulties, since words for happiness and satisfaction do not have exact equivalents in every language. Researchers have attempted to address these problems, for example by testing whether the same question produces similar answers when it is translated in different ways, but the issue has not been entirely resolved.\n\nD\nA second objection is that answers can be influenced by trivial circumstances. In one well-known type of experiment, people who were questioned on a sunny day reported higher satisfaction than those questioned when it was raining. Similarly, the order of questions matters: people who are first asked about their relationships or their health may give a different overall rating from those who are asked about their life as a whole at the start. Supporters of the surveys accept that individual answers are affected in this way, but they argue that such effects tend to cancel out when thousands of people are questioned.\n\nE\nSome researchers prefer a different approach, focusing not on how people judge their lives but on how they feel from moment to moment. In studies using this method, participants carry a phone that asks them at random times during the day what they are doing and how they feel. One advantage of this method is that it relies less on memory, since people describe how they feel at that moment rather than trying to sum up months or years. The results can be surprising. Activities that people say they value highly, such as looking after children, are not always associated with the most positive feelings at the time, while ordinary activities such as talking with friends score consistently well. Commuting, in contrast, regularly appears among the least enjoyable parts of the day.\n\nF\nWhat do the surveys reveal about the sources of wellbeing? Income matters, particularly for people who are poor, but beyond a certain level additional money appears to bring smaller and smaller gains. Health, both physical and mental, is strongly linked to life satisfaction, as is having secure work. Age plays a part too: perhaps surprisingly, older people often report higher life satisfaction than those in middle age. But the factors that stand out most consistently are social: having people to rely on in times of trouble, feeling trusted by others and spending time with friends and family. Unemployment, by contrast, has an effect on wellbeing that seems to be much larger than the loss of income alone would explain.\n\nG\nA number of countries now publish official measures of wellbeing alongside economic statistics, and some have begun to consider them when deciding how to spend public money. Supporters say this encourages decisions that improve people's lives rather than simply increase output. Sceptics worry that wellbeing figures are too easily influenced to be a reliable guide. Most researchers would probably agree that life satisfaction surveys are not a replacement for other statistics, but a useful addition to them, revealing aspects of life that economic figures alone cannot capture.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains an example of how the weather can affect people's answers?",
+       "choices": [
+        "D",
+        "E",
+        "F",
+        "G"
+       ],
+       "answer": 0,
+       "why": "D：晴れの日に聞かれた人は雨の日より満足度が高かった。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a description of a method that records people's feelings during the day?",
+       "choices": [
+        "C",
+        "E",
+        "F",
+        "G"
+       ],
+       "answer": 1,
+       "why": "E：携帯がランダムな時間に、何をしていてどう感じているかを聞く。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a reference to a problem caused by differences between languages?",
+       "choices": [
+        "A",
+        "B",
+        "C",
+        "E"
+       ],
+       "answer": 2,
+       "why": "C：幸福・満足を表す語が、どの言語にもぴったりあるわけではない。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a reference to wellbeing figures being considered in decisions about public spending?",
+       "choices": [
+        "B",
+        "D",
+        "F",
+        "G"
+       ],
+       "answer": 3,
+       "why": "G：some have begun to consider them when deciding how to spend public money。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which paragraph contains a reason why the results of country rankings may be misleading?",
+       "choices": [
+        "A",
+        "B",
+        "E",
+        "F"
+       ],
+       "answer": 1,
+       "why": "B：表の真ん中あたりの国の差は小さすぎて意味が無いことが多い。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Beyond a certain level, extra ____ seems to add little to wellbeing.",
+       "answer": [
+        "money"
+       ],
+       "why": "F：beyond a certain level additional money appears to bring smaller and smaller gains。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Physical and mental ____ are both closely linked to life satisfaction.",
+       "answer": [
+        "health"
+       ],
+       "why": "F：Health, both physical and mental, is strongly linked to life satisfaction。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Having ____ work also makes a difference.",
+       "answer": [
+        "secure"
+       ],
+       "why": "F：as is having secure work。"
+      },
+      {
+       "type": "gap",
+       "limit": "ONE WORD ONLY",
+       "q": "Losing a job affects wellbeing more than the loss of ____ alone would suggest.",
+       "answer": [
+        "income"
+       ],
+       "why": "F：much larger than the loss of income alone would explain。"
+      },
+      {
+       "type": "mcq",
+       "q": "What advantage of the method described in paragraph E does the writer mention?",
+       "choices": [
+        "It is cheaper than large national surveys.",
+        "It can be used in any language.",
+        "It depends less on people's memories.",
+        "It gives the same results as life satisfaction surveys."
+       ],
+       "answer": 2,
+       "why": "E：it relies less on memory（その瞬間の気持ちを答えるので）。"
+      },
+      {
+       "type": "mcq",
+       "q": "According to supporters of the surveys, the effects of trivial circumstances",
+       "choices": [
+        "become less important when large numbers of people are asked.",
+        "can be removed by asking questions in a fixed order.",
+        "are stronger in some cultures than in others.",
+        "make the surveys impossible to use."
+       ],
+       "answer": 0,
+       "why": "D：such effects tend to cancel out when thousands of people are questioned。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does paragraph E suggest about looking after children?",
+       "choices": [
+        "It is the activity that people enjoy most.",
+        "It is less enjoyable than commuting.",
+        "People rarely say that they value it.",
+        "It is not always linked with the best feelings at the time."
+       ],
+       "answer": 3,
+       "why": "E：大切だと言う活動でも、その時の気分が最も良いとは限らない。いちばん楽しくないのは通勤。"
+      },
+      {
+       "type": "mcq",
+       "q": "What is the main conclusion of the passage?",
+       "choices": [
+        "Economic figures are no longer useful.",
+        "Wellbeing surveys add useful information to other statistics.",
+        "Countries should stop publishing wellbeing data.",
+        "Life satisfaction cannot be measured at all."
+       ],
+       "answer": 1,
+       "why": "G：not a replacement for other statistics, but a useful addition to them。"
+      }
+     ]
     }
    ]
   },
@@ -3176,6 +4497,441 @@
        "why": "第7段落：legible, reasonably fast handwriting, not the elegant joined-up script。"
       }
      ]
+    },
+    {
+     "id": "R3-004",
+     "plus": true,
+     "passage": "Trusting the star ratings\n\nBefore choosing a restaurant, a hotel or even a plumber, many of us now consult the opinions of strangers. Online ratings, usually expressed as a number of stars out of five, have become one of the most influential sources of information in modern life. Their appeal is obvious. Rather than relying on the judgement of a single critic, whose tastes may differ from our own, we can draw on the experience of hundreds or thousands of ordinary customers. The assumption behind this is an old one: that the combined judgement of a large group is more reliable than that of any individual. I want to suggest that, in the case of online ratings, this assumption deserves more scrutiny than it usually receives.\n\nThe idea that crowds can be wise has respectable foundations. A frequently cited example concerns a competition at a country fair in which visitors were invited to guess the weight of an ox. Individual guesses varied widely, but their average was almost exactly correct, closer than the estimate of any single expert. Similar results have been obtained many times since, with people estimating everything from the number of sweets in a jar to the outcome of sporting events. The principle is that individual errors, some too high and some too low, tend to cancel one another out. The idea has since been applied in fields as different as business forecasting and medicine.\n\nCrucially, however, this works only under certain conditions. The members of the crowd must make their judgements independently, without being influenced by one another, and they must come from a wide range of backgrounds, so that their errors are not all in the same direction. Online ratings frequently fail on both counts. A customer who is about to leave a review can usually see the ratings that others have already given, and there is good evidence that this affects what they write. In one experiment on a website where users rated comments, researchers gave some comments a single positive vote at random as soon as they were posted. These comments went on to receive significantly higher ratings than others, simply because of that early signal. An initial impression, in other words, can be amplified rather than corrected.\n\nThe second condition, diversity, is also often missing. People who leave reviews are not a random sample of customers. They tend to be those who had an unusually good or an unusually bad experience, while the large majority who were merely satisfied rarely bother to write anything. As a result, ratings for many products cluster at the extremes, with many five-star and one-star reviews and relatively few in between. A typical average rating may therefore describe almost nobody's actual experience.\n\nThere is also the matter of what is being judged. A guess at the weight of an ox has a correct answer that can be checked. A rating of a restaurant does not. One diner may give a low score because the food was too spicy; another, eating the same meal, may give a high score for exactly the same reason. Averaging such judgements produces a number, but it is not clear what that number measures. Nor does it reveal how each meal was judged: whether it was compared with other restaurants nearby, or with the best meal the reviewer had ever eaten. It certainly cannot tell me whether I personally will enjoy the meal.\n\nDefenders of online ratings make several reasonable points in reply. Even an imperfect rating, they argue, is better than no information at all, especially in an unfamiliar town. Ratings have also given ordinary customers a way of holding businesses to account. A hotel that consistently ignores complaints will, sooner or later, see its rating fall, and many businesses now respond quickly to criticism in a way that would have been unthinkable a generation ago. I accept both points. My argument is not that ratings are worthless, but that we tend to treat them as more precise than they are.\n\nThe problem is made worse by the way ratings are displayed. A score of 4.3 appears more exact, and therefore more trustworthy, than a description such as 'quite good', even though the underlying information may be no more reliable. Many people treat the difference between 4.3 and 4.6 as significant, when it may reflect nothing more than a handful of enthusiastic reviews. Some websites have begun to show the full distribution of ratings, or to highlight reviews that describe specific features, and these seem to me welcome steps.\n\nWhat, then, should a sensible consumer do? The most useful habit is to read the reviews rather than simply look at the score, and to pay particular attention to the reasons people give. A complaint about slow service at lunchtime may be irrelevant to someone planning a quiet dinner. It is also worth looking at reviews that are neither very positive nor very negative, since these are often the most informative. Reviews written by people in a similar situation to our own, such as families travelling with young children, are particularly valuable. Finally, we should remember that the crowd is only one source of advice. A recommendation from a friend whose tastes we know may be worth more than a thousand anonymous stars.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is the writer's main purpose in the first paragraph?",
+       "choices": [
+        "to explain how online ratings are calculated",
+        "to introduce a belief that the writer intends to question",
+        "to compare professional critics with ordinary customers",
+        "to describe the writer's experience of choosing a restaurant"
+       ],
+       "answer": 1,
+       "why": "第1段落：「大勢の判断は個人より確か」という前提を紹介し、deserves more scrutiny と疑問を示す。"
+      },
+      {
+       "type": "mcq",
+       "q": "The writer mentions the competition at a country fair to show",
+       "choices": [
+        "why experts are often wrong.",
+        "how competitions have changed over time.",
+        "how the average of many guesses can be accurate.",
+        "that country fairs encouraged scientific thinking."
+       ],
+       "answer": 2,
+       "why": "第2段落：一人ひとりの推測はばらばらでも、平均はほぼ正確だった。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does the experiment with random positive votes demonstrate?",
+       "choices": [
+        "Early ratings can influence later ones.",
+        "Most comments receive no votes at all.",
+        "Positive votes are more common than negative ones.",
+        "Users can easily recognise false votes."
+       ],
+       "answer": 0,
+       "why": "第3段落：最初に1票足しただけで、その後の評価がずっと高くなった。"
+      },
+      {
+       "type": "mcq",
+       "q": "According to the writer, why do many ratings cluster at the extremes?",
+       "choices": [
+        "Websites remove reviews that are neither good nor bad.",
+        "Businesses ask their friends to leave reviews.",
+        "Customers find the star system confusing.",
+        "Customers who were simply satisfied rarely write reviews."
+       ],
+       "answer": 3,
+       "why": "第4段落：とても良い・とても悪い経験をした人が書き、普通に満足した大多数は書かない。"
+      },
+      {
+       "type": "ynng",
+       "q": "An average online rating usually reflects the experience of a typical customer.",
+       "answer": "NO",
+       "why": "第4段落：may therefore describe almost nobody's actual experience。"
+      },
+      {
+       "type": "ynng",
+       "q": "Online ratings have made businesses more responsive to complaints.",
+       "answer": "YES",
+       "why": "第6段落：businesses now respond quickly to criticism … I accept both points。"
+      },
+      {
+       "type": "ynng",
+       "q": "Professional critics are more reliable than online ratings.",
+       "answer": "NOT GIVEN",
+       "why": "第1段落で批評家に触れるが、どちらが確かかの意見は述べていない。"
+      },
+      {
+       "type": "ynng",
+       "q": "Showing the full range of ratings is a positive development.",
+       "answer": "YES",
+       "why": "第7段落：these seem to me welcome steps。"
+      },
+      {
+       "type": "ynng",
+       "q": "False reviews are the most serious problem with rating websites.",
+       "answer": "NOT GIVEN",
+       "why": "偽のレビューについては書かれていない。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): A crowd's judgement is reliable only when its members decide ____.",
+       "choices": [
+        "quickly",
+        "carefully",
+        "independently",
+        "anonymously"
+       ],
+       "answer": 2,
+       "why": "第3段落：must make their judgements independently。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): The crowd also needs to be ____, so that its errors do not all point the same way.",
+       "choices": [
+        "diverse",
+        "large",
+        "expert",
+        "honest"
+       ],
+       "answer": 0,
+       "why": "第3・4段落：come from a wide range of backgrounds／The second condition, diversity。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): Unlike the weight of an ox, the quality of a meal has no ____ answer.",
+       "choices": [
+        "popular",
+        "short",
+        "polite",
+        "correct"
+       ],
+       "answer": 3,
+       "why": "第5段落：has a correct answer that can be checked. A rating of a restaurant does not。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): Scores such as 4.3 can seem more ____ than they really are.",
+       "choices": [
+        "modern",
+        "precise",
+        "generous",
+        "negative"
+       ],
+       "answer": 1,
+       "why": "第6・7段落：treat them as more precise than they are／appears more exact。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): The writer advises consumers to read the ____ that reviewers give.",
+       "choices": [
+        "reasons",
+        "scores",
+        "dates",
+        "names"
+       ],
+       "answer": 0,
+       "why": "第8段落：pay particular attention to the reasons people give。点数だけ見るのではない。"
+      }
+     ]
+    },
+    {
+     "id": "R3-005",
+     "plus": true,
+     "passage": "A defence of mess\n\nFew domestic virtues are as widely admired today as tidiness. Books, television programmes and online videos promise to transform our lives by helping us to throw away what we do not need and to organise what remains, and the image of a calm, uncluttered room has become a kind of shorthand for a well-ordered mind. Into this atmosphere comes Owen Carrick's The Uses of Clutter, a lively and deliberately provocative book which argues that mess has been unfairly condemned. Carrick, who trained as an architect before turning to writing, does not claim that disorder is always good, but he insists that it is far more useful, and far more natural, than we have been led to believe.\n\nThe book begins with an account of how tidiness came to be seen as a moral quality. Carrick traces the idea to the growth of the middle classes in the nineteenth century, when a clean and orderly home became a visible sign of respectability, and he shows how the same ideals were later taken up by advertisers selling cleaning products and storage furniture. This section is well researched and often entertaining, and it succeeds in making the reader see something familiar in a new light. Carrick is particularly good on the way that magazines in the early twentieth century presented the spotless kitchen as a sign of a modern, scientific household. It does, however, rely heavily on examples from a single country, and readers elsewhere may wonder how far the argument applies to them.\n\nThe heart of the book is its discussion of creativity and work. Carrick describes a number of studies in which people working at messy desks produced more unusual ideas than those at tidy ones, while those at tidy desks were more likely to choose conventional options and behave cautiously. He also argues that a pile of papers, far from being chaotic, often reflects a kind of hidden order: the documents we need most frequently tend to rise to the top, while those we rarely use sink to the bottom. These are stimulating ideas, but Carrick presents the research with more confidence than it deserves. The studies he relies on were small, and some of their findings have not been repeated. A reader would not learn this from the book.\n\nMore convincing is his chapter on the costs of tidiness. Carrick points out that the time spent sorting, labelling and filing can easily exceed the time saved when things are needed, and that elaborate storage systems often collapse within weeks because they are too demanding to maintain. He is also sharp about what he calls 'the tidiness industry', which, he suggests, profits from making people feel guilty about the normal state of their homes. Whether or not one agrees with every detail, it is difficult to read this chapter without recognising some of one's own habits.\n\nCarrick's weakest argument concerns children. He claims that children raised in very tidy homes are less imaginative than those allowed to make a mess, but he offers little evidence beyond a handful of conversations with parents and teachers. Given how much is at stake, this is disappointing. It is entirely possible that the relationship works the other way round, with naturally imaginative children simply creating more mess, and Carrick does not consider this possibility.\n\nThe writing itself is a pleasure. Carrick has an eye for the telling detail, and his descriptions of the workrooms of writers, scientists and musicians, crowded with books, instruments and half-finished projects, are among the most enjoyable passages in the book. He is also refreshingly honest about his own life, admitting that his partner does not share his enthusiasm for disorder and that their home is the subject of continual negotiation. These moments of self-mockery prevent the book from becoming a lecture, and his chapter titles alone made me laugh out loud more than once.\n\nInevitably, there are omissions. Carrick has little to say about the people for whom clutter is a genuine problem, such as those who live in very small homes, where a lack of order can make daily life difficult, or those for whom collecting objects has become a source of distress. Nor does he consider people who share a home with several others, for whom one person's useful mess may be another's daily irritation. A single paragraph near the end acknowledges that mess can become harmful, but it feels like an afterthought. A fuller treatment would have made the book's argument more balanced without weakening it.\n\nNone of these criticisms should discourage potential readers. The Uses of Clutter is not a scientific study, and it should not be read as one. It is better understood as an invitation to question a set of assumptions that most of us have never examined. Carrick's central point, that order is a tool rather than a virtue and should be used only where it actually helps, is a sensible one, and it is made with wit and warmth. Anyone who has ever felt embarrassed by the state of their desk will finish the book feeling a little better about it, which is perhaps all that a book of this kind can reasonably hope to achieve.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What does the reviewer say about the section on the history of tidiness?",
+       "choices": [
+        "It is too short to be useful.",
+        "It contains several factual errors.",
+        "It is the most original part of the book.",
+        "Its examples come mainly from one country."
+       ],
+       "answer": 3,
+       "why": "第2段落：よく調べてあるが rely heavily on examples from a single country。"
+      },
+      {
+       "type": "mcq",
+       "q": "What criticism does the reviewer make of Carrick's discussion of messy desks?",
+       "choices": [
+        "He does not mention the weaknesses of the research.",
+        "He relies too much on his own experience.",
+        "He ignores studies that support his view.",
+        "He describes the studies in too much detail."
+       ],
+       "answer": 0,
+       "why": "第3段落：研究は小規模で再現されていない物もあるが、本からはそれが分からない。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why does the reviewer consider the argument about children weak?",
+       "choices": [
+        "Carrick spoke to too many parents.",
+        "Carrick contradicts what he says earlier.",
+        "Carrick ignores another possible explanation.",
+        "Carrick has no experience of teaching."
+       ],
+       "answer": 2,
+       "why": "第5段落：想像力のある子がもともと散らかすという逆の関係を考えていない。"
+      },
+      {
+       "type": "mcq",
+       "q": "The reviewer mentions Carrick's partner in order to show that",
+       "choices": [
+        "Carrick's home is unusually tidy.",
+        "Carrick is willing to laugh at himself.",
+        "the book was written by two people.",
+        "Carrick's ideas are widely shared."
+       ],
+       "answer": 1,
+       "why": "第6段落：パートナーは散らかしに賛成しない、と正直に書く self-mockery が講義調になるのを防いでいる。"
+      },
+      {
+       "type": "ynng",
+       "q": "Carrick argues that disorder is always better than order.",
+       "answer": "NO",
+       "why": "第1段落：does not claim that disorder is always good。"
+      },
+      {
+       "type": "ynng",
+       "q": "The chapter on the costs of tidiness is persuasive.",
+       "answer": "YES",
+       "why": "第4段落：More convincing is his chapter on the costs of tidiness。"
+      },
+      {
+       "type": "ynng",
+       "q": "The Uses of Clutter has sold more copies than most books about tidiness.",
+       "answer": "NOT GIVEN",
+       "why": "売れ行きには触れていない。"
+      },
+      {
+       "type": "ynng",
+       "q": "The book deals adequately with people for whom clutter causes real difficulties.",
+       "answer": "NO",
+       "why": "第7段落：little to say about … 最後の1段落は an afterthought。"
+      },
+      {
+       "type": "ynng",
+       "q": "Carrick's descriptions of other people's workrooms are enjoyable to read.",
+       "answer": "YES",
+       "why": "第6段落：among the most enjoyable passages in the book。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): Carrick says that in the nineteenth century a tidy home became a sign of ____.",
+       "choices": [
+        "wealth",
+        "respectability",
+        "creativity",
+        "education"
+       ],
+       "answer": 1,
+       "why": "第2段落：a visible sign of respectability。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): In some studies, people at messy desks had more ____ ideas.",
+       "choices": [
+        "practical",
+        "cautious",
+        "conventional",
+        "unusual"
+       ],
+       "answer": 3,
+       "why": "第3段落：produced more unusual ideas。conventional・cautious は片付いた机の人。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): A pile of papers may contain a hidden ____.",
+       "choices": [
+        "order",
+        "cost",
+        "danger",
+        "message"
+       ],
+       "answer": 0,
+       "why": "第3段落：often reflects a kind of hidden order。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): Complicated storage systems often fail because they are difficult to ____.",
+       "choices": [
+        "afford",
+        "build",
+        "maintain",
+        "understand"
+       ],
+       "answer": 2,
+       "why": "第4段落：too demanding to maintain。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): Carrick believes that order should be treated as a ____ rather than a virtue.",
+       "choices": [
+        "habit",
+        "luxury",
+        "duty",
+        "tool"
+       ],
+       "answer": 3,
+       "why": "第8段落：order is a tool rather than a virtue。"
+      }
+     ]
+    },
+    {
+     "id": "R3-006",
+     "plus": true,
+     "passage": "The trouble with talent\n\nWhen we watch a gifted musician, athlete or chess player, it is natural to assume that we are witnessing a special quality they were born with. We speak of 'natural talent' as though it were a fixed possession, like eye colour, which some people have and others lack. This belief has a powerful influence on how we bring up children, how we organise education and how we think about our own abilities. In recent decades, however, it has been strongly challenged by researchers who argue that what looks like talent is largely the product of practice. The truth, I shall argue, lies somewhere between these positions, but the debate has important consequences for the way we treat learners.\n\nThe case against talent rests largely on studies of experts. In a widely discussed study of violin students at a music academy, researchers found that the best performers had not started earlier or shown more promise as young children; what distinguished them was the total number of hours they had spent in a particular kind of practice. This was not simply playing for pleasure, but focused, often uncomfortable work on specific weaknesses, usually under the guidance of a teacher. The researchers concluded that this 'deliberate practice' explained most of the differences between performers, and their work inspired a wave of popular books suggesting that almost anyone could reach the highest level with enough effort.\n\nThe popular version of this argument went considerably further than the evidence. Later studies, examining a wider range of activities, found that the amount of practice explained a substantial part of the differences between performers, but far from all of it. In some fields, such as games with clear rules, its influence was large; in others, including many professions, it was surprisingly small. Factors such as the age at which people started, their working memory and, in sport, their physical characteristics also seemed to matter. Researchers have also pointed out that people who enjoy an activity are more likely to practise it, so that practice may partly be a result of early success rather than simply its cause. A person of average height, however hard they train, is unlikely to become a successful professional basketball player.\n\nNone of this means that the critics of talent were wrong to challenge it. The traditional view had serious weaknesses of its own. For one thing, it is extremely difficult to identify talent in young children. Early ability is often simply a sign of early opportunity: a child whose parents play the piano and who begins lessons at four will naturally appear more gifted at six than a child who started at five. In sport, there is a well-documented tendency for children born in the first months of the school year to be selected for teams more often than those born later, simply because they are older and, at that age, larger. Labelling such children as talented, and giving them extra coaching, then produces the very difference that the label claimed to detect.\n\nThere is a further danger. Research on motivation suggests that people who believe ability is fixed tend to respond badly to failure. If they find a task difficult, they conclude that they lack the necessary gift and give up. Those who believe that ability can be developed are more likely to treat difficulty as a normal part of learning and to persist. The strength of this effect has been questioned, and some of the more ambitious claims made for programmes that try to change students' beliefs have not been confirmed. Nevertheless, it seems to me reasonable to suppose that telling a child she is 'not a maths person' does more harm than good.\n\nWhat, then, should we conclude? It would be foolish to deny that people differ in their starting points. Some will learn a language, a musical instrument or a sport more quickly than others, and some will reach levels that most of us never could. But those differences are usually impossible to predict in advance, and in most areas of life they matter far less than the amount and quality of the effort people make. The practical lesson is that teachers and parents should be extremely cautious about deciding too early who is and who is not talented.\n\nThis has implications for schools. Many education systems divide pupils into groups according to ability at an early age, and once a child has been placed in a lower group, it can be hard to move up. Critics of early grouping argue that children placed in lower groups may come to see themselves as less able and lower their expectations accordingly. Some schools have experimented with delaying such decisions or keeping groups flexible, so that pupils can move between them as they progress. The results of these experiments are still being studied, and they may well vary between subjects.\n\nFinally, there is a personal lesson. Many adults abandon activities they would enjoy, such as drawing, singing or learning a language, because they decided long ago that they had no talent for them. Often that decision was based on a single discouraging experience in childhood. If ability is more open to development than we once believed, it may be worth reconsidering such decisions. We may never become experts, but expertise is not the only reason for learning something.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What does the writer say in the first paragraph?",
+       "choices": [
+        "The truth lies between two opposing views.",
+        "Talent is a fixed quality, like eye colour.",
+        "Practice explains all differences in ability.",
+        "Most people now agree about the nature of talent."
+       ],
+       "answer": 0,
+       "why": "第1段落：The truth, I shall argue, lies somewhere between these positions。"
+      },
+      {
+       "type": "mcq",
+       "q": "What did the study of violin students find?",
+       "choices": [
+        "The best players had started at a younger age.",
+        "Playing for pleasure was the most effective practice.",
+        "Teachers could identify gifted children early.",
+        "Focused practice explained most of the differences."
+       ],
+       "answer": 3,
+       "why": "第2段落：違いは早く始めたことではなく deliberate practice の時間。"
+      },
+      {
+       "type": "mcq",
+       "q": "What point does the writer make about later studies?",
+       "choices": [
+        "They confirmed the claims of the popular books.",
+        "They showed that practice mattered more in some fields than in others.",
+        "They found that practice had no effect in sport.",
+        "They looked only at games with clear rules."
+       ],
+       "answer": 1,
+       "why": "第3段落：ルールのはっきりしたゲームでは影響が大きく、多くの職業では小さかった。"
+      },
+      {
+       "type": "mcq",
+       "q": "The writer mentions children born early in the school year to illustrate how",
+       "choices": [
+        "older children usually practise more.",
+        "sports teams prefer taller players.",
+        "labelling children as talented can create differences.",
+        "parents influence the activities children choose."
+       ],
+       "answer": 2,
+       "why": "第4段落：年上で大きいだけの子を「才能がある」と選んで特訓すると、その差を作り出してしまう。"
+      },
+      {
+       "type": "ynng",
+       "q": "Telling a child that she has no ability in a subject is likely to be harmful.",
+       "answer": "YES",
+       "why": "第5段落：telling a child she is 'not a maths person' does more harm than good。"
+      },
+      {
+       "type": "ynng",
+       "q": "Programmes that try to change students' beliefs have been shown to work as well as was claimed.",
+       "answer": "NO",
+       "why": "第5段落：some of the more ambitious claims … have not been confirmed。"
+      },
+      {
+       "type": "ynng",
+       "q": "Children who start music lessons very early often lose interest later.",
+       "answer": "NOT GIVEN",
+       "why": "早く始めた子が後で興味を失うかどうかは書かれていない。"
+      },
+      {
+       "type": "ynng",
+       "q": "Grouping by ability is more common in primary schools than in secondary schools.",
+       "answer": "NOT GIVEN",
+       "why": "第7段落：早い時期に分けるとあるだけで、小学校と中学校の比較は無い。"
+      },
+      {
+       "type": "ynng",
+       "q": "Adults who take up drawing late in life often become more skilled than those who started as children.",
+       "answer": "NOT GIVEN",
+       "why": "第8段落：大人がやめた活動をやり直す価値には触れるが、上達の比較は無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): The deliberate practice in the violin study involved working on particular ____.",
+       "choices": [
+        "pieces",
+        "weaknesses",
+        "teachers",
+        "competitions"
+       ],
+       "answer": 1,
+       "why": "第2段落：focused, often uncomfortable work on specific weaknesses。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): Early ability in children is often the result of earlier ____.",
+       "choices": [
+        "opportunity",
+        "talent",
+        "pressure",
+        "failure"
+       ],
+       "answer": 0,
+       "why": "第4段落：Early ability is often simply a sign of early opportunity。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): People who think ability can be developed see difficulty as a ____ part of learning.",
+       "choices": [
+        "painful",
+        "rare",
+        "normal",
+        "final"
+       ],
+       "answer": 2,
+       "why": "第5段落：treat difficulty as a normal part of learning。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): Teachers and parents should not decide too ____ which children are talented.",
+       "choices": [
+        "often",
+        "early",
+        "rarely",
+        "publicly"
+       ],
+       "answer": 1,
+       "why": "第6段落：cautious about deciding too early who is and who is not talented。"
+      },
+      {
+       "type": "mcq",
+       "q": "Summary (choose from the list): Many adults give up activities because of a single ____ experience in childhood.",
+       "choices": [
+        "happy",
+        "public",
+        "formal",
+        "discouraging"
+       ],
+       "answer": 3,
+       "why": "第8段落：a single discouraging experience in childhood。"
+      }
+     ]
     }
    ]
   },
@@ -3283,6 +5039,78 @@
      "minWords": 80,
      "maxWords": 120,
      "note": "問題を1つ、解決策を1つ。具体例で支える。"
+    },
+    {
+     "id": "W2-013",
+     "plus": true,
+     "type": "Short essay (Task 2 style)",
+     "prompt": "Some parents pay their children for doing jobs around the house, such as washing up or tidying their rooms. Is this a good idea?",
+     "minWords": 80,
+     "maxWords": 120,
+     "note": "立場を1つ決めて、理由1つと具体例1つ。"
+    },
+    {
+     "id": "W2-014",
+     "plus": true,
+     "type": "Short essay (Task 2 style)",
+     "prompt": "More and more people are buying second-hand clothes instead of new ones. Why is this happening? Is it a positive trend?",
+     "minWords": 80,
+     "maxWords": 120,
+     "note": "理由を1つ説明してから、良いか悪いかを1つ。"
+    },
+    {
+     "id": "W2-015",
+     "plus": true,
+     "type": "Short essay (Task 2 style)",
+     "prompt": "Some people believe that every adult should learn basic first aid. Do you agree or disagree?",
+     "minWords": 80,
+     "maxWords": 120,
+     "note": "立場を1つ決めて、理由1つと具体例1つ。"
+    },
+    {
+     "id": "W2-016",
+     "plus": true,
+     "type": "Short essay (Task 2 style)",
+     "prompt": "Some people think it is better to grow up in the countryside than in a city. Do you agree or disagree?",
+     "minWords": 80,
+     "maxWords": 120,
+     "note": "立場を1つ決めて、理由1つと具体例1つ。"
+    },
+    {
+     "id": "W2-017",
+     "plus": true,
+     "type": "Short essay (Task 2 style)",
+     "prompt": "Some people think schools should stop giving homework. Others believe homework is necessary. Discuss both views and give your opinion.",
+     "minWords": 80,
+     "maxWords": 120,
+     "note": "両方に1文ずつ触れてから、自分の立場。"
+    },
+    {
+     "id": "W2-018",
+     "plus": true,
+     "type": "Short essay (Task 2 style)",
+     "prompt": "Online translation tools are becoming more accurate every year. Some people say that learning a foreign language will soon be unnecessary. To what extent do you agree?",
+     "minWords": 80,
+     "maxWords": 120,
+     "note": "どの程度賛成かをはっきり。理由1つと具体例1つ。"
+    },
+    {
+     "id": "W2-019",
+     "plus": true,
+     "type": "Short essay (Task 2 style)",
+     "prompt": "Many people do not get enough sleep because of their busy lives. What are the causes of this, and what can be done about it?",
+     "minWords": 80,
+     "maxWords": 120,
+     "note": "原因を1つ、解決策を1つ。具体例で支える。"
+    },
+    {
+     "id": "W2-020",
+     "plus": true,
+     "type": "Short essay (Task 2 style)",
+     "prompt": "Some people prefer to work for a large company, while others would rather work for a small one. Discuss both options and give your opinion.",
+     "minWords": 80,
+     "maxWords": 120,
+     "note": "両方に1文ずつ触れてから、自分の立場。"
     }
    ]
   },
@@ -3342,6 +5170,78 @@
      "minWords": 250,
      "maxWords": 320,
      "note": "問題の段落と解決策の段落。解決策は具体的に。"
+    },
+    {
+     "id": "W2F-007",
+     "plus": true,
+     "type": "Essay (Task 2)",
+     "prompt": "Some people believe that unpaid community work, such as helping in hospitals or cleaning parks, should be a compulsory part of the secondary school programme. To what extent do you agree or disagree?",
+     "minWords": 250,
+     "maxWords": 320,
+     "note": "どの程度賛成かを序論で示し、最後まで変えない。"
+    },
+    {
+     "id": "W2F-008",
+     "plus": true,
+     "type": "Essay (Task 2)",
+     "prompt": "In many countries, people are living longer, and the proportion of older people in the population is increasing. What problems can this cause, and what can be done to solve them?",
+     "minWords": 250,
+     "maxWords": 320,
+     "note": "問題の段落と解決策の段落。解決策は具体的に。"
+    },
+    {
+     "id": "W2F-009",
+     "plus": true,
+     "type": "Essay (Task 2)",
+     "prompt": "Some people think that the main purpose of school is to prepare young people for work. Others believe that schools should help children become good members of society. Discuss both views and give your own opinion.",
+     "minWords": 250,
+     "maxWords": 320,
+     "note": "両方の見方に1段落ずつ。最後に自分の立場をはっきり。"
+    },
+    {
+     "id": "W2F-010",
+     "plus": true,
+     "type": "Essay (Task 2)",
+     "prompt": "Many people today are choosing to eat less meat, or none at all. Why is this happening? Is it a positive or a negative development?",
+     "minWords": 250,
+     "maxWords": 320,
+     "note": "原因の段落と、良いか悪いかの段落。具体例を入れる。"
+    },
+    {
+     "id": "W2F-011",
+     "plus": true,
+     "type": "Essay (Task 2)",
+     "prompt": "Some people say that advertising encourages people to buy things they do not need. Others think that it gives consumers useful information. Discuss both views and give your opinion.",
+     "minWords": 250,
+     "maxWords": 320,
+     "note": "両方の見方に1段落ずつ。具体的な例を1つずつ。"
+    },
+    {
+     "id": "W2F-012",
+     "plus": true,
+     "type": "Essay (Task 2)",
+     "prompt": "Nowadays, many young people leave their home towns to work in large cities. What are the reasons for this, and what effects does it have on the places they leave?",
+     "minWords": 250,
+     "maxWords": 320,
+     "note": "原因の段落と影響の段落を分ける。具体例を入れる。"
+    },
+    {
+     "id": "W2F-013",
+     "plus": true,
+     "type": "Essay (Task 2)",
+     "prompt": "Some people think that foreign tourists should pay more than local people to visit famous museums and historical sites. To what extent do you agree or disagree?",
+     "minWords": 250,
+     "maxWords": 320,
+     "note": "どの程度賛成かを序論で示し、反対の見方にも1つ触れる。"
+    },
+    {
+     "id": "W2F-014",
+     "plus": true,
+     "type": "Essay (Task 2)",
+     "prompt": "Some people believe that the growing use of robots and artificial intelligence at work will bring more problems than benefits. To what extent do you agree or disagree?",
+     "minWords": 250,
+     "maxWords": 320,
+     "note": "良い面・悪い面を比べてから、どちらが大きいか結論を出す。"
     }
    ]
   },
@@ -3398,6 +5298,78 @@
      "id": "W1-006",
      "type": "Report (Task 1)",
      "prompt": "The information below shows the average price of a cup of coffee (in pounds) in cafés in three cities between 2015 and 2025.\n\nCity A: 2015 – £2.10, 2020 – £2.60, 2025 – £3.40\nCity B: 2015 – £2.80, 2020 – £2.90, 2025 – £3.00\nCity C: 2015 – £1.90, 2020 – £2.70, 2025 – £2.60\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+     "minWords": 150,
+     "maxWords": 190,
+     "note": "最初に全体の傾向（overview）を1〜2文。数字は全部ではなく、目立つ物・比較を選んで書く。自分の意見は書かない。"
+    },
+    {
+     "id": "W1-007",
+     "plus": true,
+     "type": "Report (Task 1)",
+     "prompt": "The table below shows the number of books (in thousands) borrowed from public libraries in one region, by type of book, in 2005, 2015 and 2025.\n\nFiction: 2005 – 820, 2015 – 610, 2025 – 540\nChildren's books: 2005 – 450, 2015 – 470, 2025 – 520\nNon-fiction: 2005 – 390, 2015 – 300, 2025 – 210\nE-books: 2005 – 0, 2015 – 150, 2025 – 430\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+     "minWords": 150,
+     "maxWords": 190,
+     "note": "最初に全体の傾向（overview）を1〜2文。数字は全部ではなく、目立つ物・比較を選んで書く。自分の意見は書かない。"
+    },
+    {
+     "id": "W1-008",
+     "plus": true,
+     "type": "Report (Task 1)",
+     "prompt": "The information below shows what happened to the household waste collected in one city in 2000, 2010 and 2020 (percentage of the total).\n\nRecycled: 2000 – 11%, 2010 – 32%, 2020 – 46%\nSent to landfill: 2000 – 80%, 2010 – 52%, 2020 – 24%\nBurned to produce energy: 2000 – 9%, 2010 – 16%, 2020 – 30%\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+     "minWords": 150,
+     "maxWords": 190,
+     "note": "最初に全体の傾向（overview）を1〜2文。数字は全部ではなく、目立つ物・比較を選んで書く。自分の意見は書かない。"
+    },
+    {
+     "id": "W1-009",
+     "plus": true,
+     "type": "Report (Task 1)",
+     "prompt": "The figures below show the average rainfall (in millimetres) in two cities, Northport and Sunvale, in four months of one year.\n\nNorthport: January – 95, April – 60, July – 45, October – 110\nSunvale: January – 10, April – 35, July – 160, October – 40\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+     "minWords": 150,
+     "maxWords": 190,
+     "note": "最初に全体の傾向（overview）を1〜2文。数字は全部ではなく、目立つ物・比較を選んで書く。自分の意見は書かない。"
+    },
+    {
+     "id": "W1-010",
+     "plus": true,
+     "type": "Report (Task 1)",
+     "prompt": "The table below shows the percentage of workers in one country who were employed in agriculture, manufacturing and services in 1970, 1995 and 2020.\n\nAgriculture: 1970 – 28%, 1995 – 12%, 2020 – 4%\nManufacturing: 1970 – 35%, 1995 – 30%, 2020 – 18%\nServices: 1970 – 37%, 1995 – 58%, 2020 – 78%\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+     "minWords": 150,
+     "maxWords": 190,
+     "note": "最初に全体の傾向（overview）を1〜2文。数字は全部ではなく、目立つ物・比較を選んで書く。自分の意見は書かない。"
+    },
+    {
+     "id": "W1-011",
+     "plus": true,
+     "type": "Report (Task 1)",
+     "prompt": "The information below shows the average number of minutes per day that children aged 10–14 in one country spent on four activities in 1995 and 2025.\n\nPlaying outdoors: 1995 – 95, 2025 – 40\nHomework: 1995 – 50, 2025 – 65\nUsing screens for entertainment: 1995 – 70, 2025 – 190\nReading for pleasure: 1995 – 35, 2025 – 20\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+     "minWords": 150,
+     "maxWords": 190,
+     "note": "最初に全体の傾向（overview）を1〜2文。数字は全部ではなく、目立つ物・比較を選んで書く。自分の意見は書かない。"
+    },
+    {
+     "id": "W1-012",
+     "plus": true,
+     "type": "Report (Task 1)",
+     "prompt": "The table below shows the number of international students (in thousands) at universities in one country, by region of origin, in 2010, 2016 and 2022.\n\nAsia: 2010 – 85, 2016 – 130, 2022 – 160\nEurope: 2010 – 60, 2016 – 55, 2022 – 48\nAfrica: 2010 – 12, 2016 – 20, 2022 – 34\nThe Americas: 2010 – 18, 2016 – 21, 2022 – 22\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+     "minWords": 150,
+     "maxWords": 190,
+     "note": "最初に全体の傾向（overview）を1〜2文。数字は全部ではなく、目立つ物・比較を選んで書く。自分の意見は書かない。"
+    },
+    {
+     "id": "W1-013",
+     "plus": true,
+     "type": "Report (Task 1)",
+     "prompt": "The information below shows how a typical family in one country divided its weekly spending in 1985 and 2025 (percentage of total spending).\n\nFood: 1985 – 28%, 2025 – 16%\nHousing: 1985 – 22%, 2025 – 31%\nTransport: 1985 – 14%, 2025 – 15%\nEntertainment: 1985 – 8%, 2025 – 12%\nOther: 1985 – 28%, 2025 – 26%\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+     "minWords": 150,
+     "maxWords": 190,
+     "note": "最初に全体の傾向（overview）を1〜2文。数字は全部ではなく、目立つ物・比較を選んで書く。自分の意見は書かない。"
+    },
+    {
+     "id": "W1-014",
+     "plus": true,
+     "type": "Report (Task 1)",
+     "prompt": "The table below shows the number of passengers (in millions) who travelled between two cities by train, by plane and by coach in 2015, 2019 and 2023.\n\nTrain: 2015 – 4.2, 2019 – 5.1, 2023 – 6.3\nPlane: 2015 – 3.8, 2019 – 4.4, 2023 – 2.9\nCoach: 2015 – 2.5, 2019 – 2.2, 2023 – 2.4\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
      "minWords": 150,
      "maxWords": 190,
      "note": "最初に全体の傾向（overview）を1〜2文。数字は全部ではなく、目立つ物・比較を選んで書く。自分の意見は書かない。"
@@ -3609,6 +5581,132 @@
       {
        "type": "Part 3",
        "prompt": "Do you think young people today listen to advice from older people? Why or why not?",
+       "timeSec": 60
+      }
+     ]
+    },
+    {
+     "id": "S-011",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Part 1",
+       "prompt": "Do you enjoy taking photographs? What do you usually take photos of?",
+       "timeSec": 30
+      },
+      {
+       "type": "Part 2",
+       "prompt": "Describe a journey you remember well.\nYou should say:\n- where you went\n- how you travelled\n- who you were with\nand explain why you remember this journey.",
+       "timeSec": 60
+      },
+      {
+       "type": "Part 3",
+       "prompt": "Why do some people prefer to travel by train rather than by plane? Do you think this will change in the future?",
+       "timeSec": 60
+      }
+     ]
+    },
+    {
+     "id": "S-012",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Part 1",
+       "prompt": "Do you have a pet, or would you like to have one? Why?",
+       "timeSec": 30
+      },
+      {
+       "type": "Part 2",
+       "prompt": "Describe a time when you helped someone.\nYou should say:\n- who you helped\n- what the problem was\n- what you did\nand explain how you felt afterwards.",
+       "timeSec": 60
+      },
+      {
+       "type": "Part 3",
+       "prompt": "Do you think people are less willing to help strangers than they were in the past? Why or why not?",
+       "timeSec": 60
+      }
+     ]
+    },
+    {
+     "id": "S-013",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Part 1",
+       "prompt": "Do you enjoy shopping for clothes? Where do you usually go?",
+       "timeSec": 30
+      },
+      {
+       "type": "Part 2",
+       "prompt": "Describe something you bought that you were very pleased with.\nYou should say:\n- what it was\n- where you bought it\n- why you chose it\nand explain why you were pleased with it.",
+       "timeSec": 60
+      },
+      {
+       "type": "Part 3",
+       "prompt": "Why do people sometimes buy things they do not really need? Should advertising aimed at children be limited?",
+       "timeSec": 60
+      }
+     ]
+    },
+    {
+     "id": "S-014",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Part 1",
+       "prompt": "Are you a morning person or an evening person? Why?",
+       "timeSec": 30
+      },
+      {
+       "type": "Part 2",
+       "prompt": "Describe a park or garden that you like to visit.\nYou should say:\n- where it is\n- how often you go there\n- what you do there\nand explain why you like it.",
+       "timeSec": 60
+      },
+      {
+       "type": "Part 3",
+       "prompt": "How important is it for cities to have parks and green spaces? Who should pay for them?",
+       "timeSec": 60
+      }
+     ]
+    },
+    {
+     "id": "S-015",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Part 1",
+       "prompt": "Have you ever learned to play a musical instrument? Would you like to?",
+       "timeSec": 30
+      },
+      {
+       "type": "Part 2",
+       "prompt": "Describe a time when you were late for something important.\nYou should say:\n- what the event was\n- why you were late\n- what happened as a result\nand explain how you felt about it.",
+       "timeSec": 60
+      },
+      {
+       "type": "Part 3",
+       "prompt": "Why is being on time considered more important in some cultures than in others? Is punctuality always necessary?",
+       "timeSec": 60
+      }
+     ]
+    },
+    {
+     "id": "S-016",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Part 1",
+       "prompt": "What do you usually do on your birthday?",
+       "timeSec": 30
+      },
+      {
+       "type": "Part 2",
+       "prompt": "Describe a group or team that you have been part of.\nYou should say:\n- what the group was\n- what you did together\n- how long you were a member\nand explain what you learned from it.",
+       "timeSec": 60
+      },
+      {
+       "type": "Part 3",
+       "prompt": "What are the advantages of working in a team rather than alone? Are some people better suited to working on their own?",
        "timeSec": 60
       }
      ]

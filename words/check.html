@@ -33,6 +33,7 @@
 .acts a{text-align:center;text-decoration:none}
 .foot{font-size:12px;color:var(--mute);line-height:1.7;margin:4px 2px 0}
 </style>
+<script src="/say.js"></script>
 </head>
 <body data-tab="wd">
 <main class="screen">
@@ -72,7 +73,7 @@
   APW_COURSES=APW_COURSES.filter(function(x){ return ["土木"].indexOf(x.g)<0||x.g===mine; }); })();
 const $=id=>document.getElementById(id);
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
-function speak(t){try{if(!("speechSynthesis" in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
+function speak(t){if(window.apSay)return apSay(t);try{if(!("speechSynthesis" in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
 const PER=6, PASS=5;  // 1レベル6問、5問以上で次へ
 const TRACKS=[
   {g:"General",d:"中学〜高校の基本。日常会話の土台"},

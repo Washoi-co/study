@@ -698,6 +698,726 @@
        "why": "分詞構文。アプリは「使われる」側なので過去分詞 Used（＝Because it is used）。Using だとアプリが使う意味になる。"
       }
      ]
+    },
+    {
+     "id": "G1-041",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Should I take an umbrella to the game tonight?\nB: Yes. The weather report said there was a 70 percent ____ of rain this evening.",
+       "choices": [
+        "reason",
+        "habit",
+        "matter",
+        "chance"
+       ],
+       "answer": 3,
+       "why": "a 70 percent chance of rain＝「降水確率70％」。chance of ～で「～の可能性」。reason（理由）、habit（習慣）、matter（問題）は of rain と組んで確率を表さない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-042",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The company plans to ____ the old factory into a shopping center with restaurants and a movie theater.",
+       "choices": [
+        "persuade",
+        "convert",
+        "approve",
+        "inspect"
+       ],
+       "answer": 1,
+       "why": "convert A into B＝「AをBに変える・改造する」。工場をショッピングセンターに変える。persuade（説得する）、approve（承認する）、inspect（検査する）は into B の形を取らない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-043",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Tim's ____ is to become a doctor who works in poor areas around the world. He studies biology every night to make his dream come true.",
+       "choices": [
+        "hobby",
+        "goal",
+        "mistake",
+        "rumor"
+       ],
+       "answer": 1,
+       "why": "goal＝「目標」。2文目の make his dream come true（夢をかなえる）と合う。hobby（趣味）、mistake（間違い）、rumor（うわさ）では夢の話にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-044",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Ms. Hayes always ____ her students to ask questions whenever they did not understand something. She said that there were no bad questions.",
+       "choices": [
+        "encouraged",
+        "refused",
+        "ignored",
+        "bothered"
+       ],
+       "answer": 0,
+       "why": "encourage 人 to ～＝「人に～するよう勧める・励ます」。「悪い質問は無い」と言っているので質問を勧めている。refuse は refuse 人 to ～ の形を取らない。ignored（無視した）、bothered（困らせた）は2文目と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-045",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The road along the river was ____ for three hours after a large tree fell across it during the storm.",
+       "choices": [
+        "painted",
+        "folded",
+        "blocked",
+        "printed"
+       ],
+       "answer": 2,
+       "why": "be blocked＝「ふさがれる・通れなくなる」。大きな木が倒れて道をふさいだ。painted（塗られた）、folded（折りたたまれた）、printed（印刷された）は倒木と結びつかない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-046",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Before you sign up for the course, please read the information carefully and make sure that all the ____, such as the dates and the price, are correct.",
+       "choices": [
+        "habits",
+        "shadows",
+        "riddles",
+        "details"
+       ],
+       "answer": 3,
+       "why": "details＝「細かい点・詳細」。such as the dates and the price（日付や値段など）が具体例。habits（習慣）、shadows（影）、riddles（なぞなぞ）は日付や値段の言い換えにならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-047",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Sarah's new job is very ____. She has to answer phone calls, write reports, and meet customers, often all on the same day.",
+       "choices": [
+        "peaceful",
+        "accidental",
+        "demanding",
+        "fragile"
+       ],
+       "answer": 2,
+       "why": "demanding＝「（仕事などが）大変な・きつい」。電話・報告書・客との面会を同じ日にこなす、という2文目が根拠。peaceful（穏やかな）は逆。accidental（偶然の）、fragile（壊れやすい）は仕事の説明にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-048",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The children were ____ by the magician's tricks. They could not believe that he made a rabbit appear from an empty hat.",
+       "choices": [
+        "fascinated",
+        "punished",
+        "employed",
+        "rescued"
+       ],
+       "answer": 0,
+       "why": "be fascinated by ～＝「～に魅了される」。空の帽子からウサギ、という驚きの場面。punished（罰せられた）、employed（雇われた）、rescued（救助された）は手品を見た子どもの様子に合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-049",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The city library ____ students to borrow up to ten books at a time, so many of them visit it before their summer vacation.",
+       "choices": [
+        "suggests",
+        "insists",
+        "demands",
+        "allows"
+       ],
+       "answer": 3,
+       "why": "allow 人 to ～＝「人が～するのを許す」。一度に10冊まで借りられる。suggest / insist / demand は「人 to ～」の形を取らない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-050",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The doctor told Mr. Lee that his illness was not serious and that he would make a full ____ in a few weeks.",
+       "choices": [
+        "recovery",
+        "discovery",
+        "delivery",
+        "victory"
+       ],
+       "answer": 0,
+       "why": "make a full recovery＝「完全に回復する」。病気が重くない、という流れ。discovery（発見）、delivery（配達）、victory（勝利）はつづりが似ているだけで意味が合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-051",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The hikers had to ____ the river very carefully because the water was deep and moving fast.",
+       "choices": [
+        "cross",
+        "chase",
+        "swallow",
+        "wrap"
+       ],
+       "answer": 0,
+       "why": "cross the river＝「川を渡る」。深くて流れが速いので注意して渡る。chase（追いかける）、swallow（飲み込む）、wrap（包む）は川と組まない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-052",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "This T-shirt is made of ____ cotton, so it feels soft and does not contain any plastic.",
+       "choices": [
+        "brave",
+        "rude",
+        "eager",
+        "pure"
+       ],
+       "answer": 3,
+       "why": "pure cotton＝「綿100％」。プラスチック（化学繊維）を含まない、という後半と合う。brave（勇敢な）、rude（失礼な）、eager（熱心な）は人の性質で、素材を説明しない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-053",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: Which puppy are you going to take home, Mia?\nB: I can't ____ between them. They are both so cute!",
+       "choices": [
+        "suffer",
+        "wander",
+        "bother",
+        "choose"
+       ],
+       "answer": 3,
+       "why": "choose between A and B＝「AとBのどちらかを選ぶ」。どちらもかわいくて選べない。suffer（苦しむ）、wander（歩き回る）、bother（悩ませる）は between them と組んで「選ぶ」の意味にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-054",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Our school has a strict ____ about smartphones. Students must turn them off and keep them in their lockers during classes.",
+       "choices": [
+        "climate",
+        "policy",
+        "region",
+        "rhythm"
+       ],
+       "answer": 1,
+       "why": "policy＝「方針・規則」。授業中は電源を切ってロッカーに、という2文目が規則の中身。climate（気候）、region（地域）、rhythm（リズム）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-055",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Jun's parents were very ____ of him when he passed the entrance exam for the university he had always wanted to go to.",
+       "choices": [
+        "proud",
+        "scared",
+        "sick",
+        "careful"
+       ],
+       "answer": 0,
+       "why": "be proud of ～＝「～を誇りに思う」。志望大学に合格した息子に対する気持ち。scared of（～を怖がる）、sick of（～にうんざりする）、careful of（～に気をつける）は合格の場面に合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-056",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The new train line will ____ the time it takes to travel from the airport to the city center by about 20 minutes.",
+       "choices": [
+        "widen",
+        "shorten",
+        "soften",
+        "deepen"
+       ],
+       "answer": 1,
+       "why": "shorten＝「短くする」。新路線で空港から都心までの時間が約20分短くなる。widen（広げる）、soften（柔らかくする）、deepen（深める）は時間と組まない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-057",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The weather in the mountains is ____. It can be sunny in the morning and then suddenly start snowing in the afternoon.",
+       "choices": [
+        "unpredictable",
+        "unavoidable",
+        "unemployed",
+        "unfriendly"
+       ],
+       "answer": 0,
+       "why": "unpredictable＝「予測できない」。朝は晴れでも午後に急に雪、という2文目が根拠。unavoidable（避けられない）、unemployed（失業した）、unfriendly（不親切な）は天気の説明に合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-058",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Paul ____ for being late to the meeting. He explained that his train had stopped for twenty minutes because of a signal problem.",
+       "choices": [
+        "suffered",
+        "argued",
+        "admired",
+        "apologized"
+       ],
+       "answer": 3,
+       "why": "apologize for ～＝「～のことで謝る」。遅刻の理由を説明している。suffer from（苦しむ）、argue（言い争う）、admire（感心する）は for being late と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-059",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The new shopping mall is expected to ____ more than 500 jobs for people who live in the area.",
+       "choices": [
+        "waste",
+        "borrow",
+        "hide",
+        "create"
+       ],
+       "answer": 3,
+       "why": "create jobs＝「仕事（雇用）を生み出す」。新しいモールで500人以上の働き口ができる。waste（むだにする）、borrow（借りる）、hide（隠す）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-060",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "A: This soup tastes a little ____.\nB: Oh, sorry. I think I forgot to add salt. Let me get some for you.",
+       "choices": [
+        "plain",
+        "salty",
+        "crowded",
+        "polished"
+       ],
+       "answer": 0,
+       "why": "plain＝「（味が）薄い・あっさりした」。塩を入れ忘れた、という返事が根拠。salty（塩辛い）は逆。crowded（混んだ）、polished（磨かれた）は味の説明にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-061",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Jenna's apartment is in a very ____ location. It is only a two-minute walk to the station, and there is a supermarket next door.",
+       "choices": [
+        "ancient",
+        "anxious",
+        "convenient",
+        "annual"
+       ],
+       "answer": 2,
+       "why": "convenient＝「便利な」。駅まで徒歩2分、隣にスーパー、という2文目が根拠。ancient（古代の）、anxious（不安な）、annual（年1回の）は場所の便利さを表さない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-062",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The scientist spent ten years doing experiments to ____ her idea that some plants can grow faster when they hear music.",
+       "choices": [
+        "greet",
+        "prove",
+        "hire",
+        "bake"
+       ],
+       "answer": 1,
+       "why": "prove＝「証明する」。10年実験して自分の考えを証明しようとした。greet（あいさつする）、hire（雇う）、bake（焼く）は idea と組まない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-063",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "While Ken was cleaning his grandfather's house, he ____ across some old photos of his family from the 1960s.",
+       "choices": [
+        "came",
+        "took",
+        "gave",
+        "put"
+       ],
+       "answer": 0,
+       "why": "come across ～＝「～を偶然見つける」。掃除中に古い写真を見つけた。take / give / put は across と組んでこの意味にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-064",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Because of the heavy rain, the school decided to ____ off the sports day until next Saturday.",
+       "choices": [
+        "turn",
+        "show",
+        "pass",
+        "put"
+       ],
+       "answer": 3,
+       "why": "put off＝「延期する」。until next Saturday（来週の土曜まで）と合う。turn off（消す）、show off（見せびらかす）、pass off（偽って通す）は行事と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-065",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Only five members ____ up for the club meeting because of the snowstorm, so the leader decided to have it again next week.",
+       "choices": [
+        "showed",
+        "held",
+        "broke",
+        "filled"
+       ],
+       "answer": 0,
+       "why": "show up＝「（会などに）来る・現れる」。吹雪で5人しか来なかった。hold up（遅らせる）、break up（解散する・別れる）、fill up（満たす）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-066",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Lily ____ down the job offer because the office was too far from her home. She wants to find a job closer to where she lives.",
+       "choices": [
+        "looked",
+        "sat",
+        "wrote",
+        "turned"
+       ],
+       "answer": 3,
+       "why": "turn down＝「断る」。遠すぎるので仕事の申し出を断った。look down（見下ろす）、sit down（座る）、write down（書き留める）は job offer と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-067",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Many young players ____ up to the team captain because he always practices the hardest and helps others.",
+       "choices": [
+        "set",
+        "break",
+        "look",
+        "end"
+       ],
+       "answer": 2,
+       "why": "look up to ～＝「～を尊敬する」。一番練習し人を助けるキャプテン。set up（準備する）、break up（解散する）、end up（結局～になる）は to the captain と合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-068",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Jim was sick for a week, so he worked on Saturday to ____ up for the time he had lost.",
+       "choices": [
+        "take",
+        "pick",
+        "make",
+        "turn"
+       ],
+       "answer": 2,
+       "why": "make up for ～＝「～の埋め合わせをする」。休んだ分を土曜に働いて取り戻す。take up（始める）、pick up（拾う）、turn up（現れる）は for the time と組まない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-069",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Tom could not ____ out how to use the new coffee machine, so he read the instructions again.",
+       "choices": [
+        "drop",
+        "hang",
+        "figure",
+        "pass"
+       ],
+       "answer": 2,
+       "why": "figure out＝「理解する・分かる」。使い方が分からず説明書を読み直した。drop out（脱落する）、hang out（ぶらぶらする）、pass out（気を失う）は how to ～ を目的語に取らない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-070",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The students will ____ out a survey about how much time people in their town spend on their phones each day.",
+       "choices": [
+        "wear",
+        "carry",
+        "fall",
+        "sell"
+       ],
+       "answer": 1,
+       "why": "carry out＝「実行する・行う」。carry out a survey＝「調査を行う」。wear out（すり減らす）、fall out（抜け落ちる・仲たがいする）、sell out（売り切る）は survey と組まない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-071",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "If you want to eat at that popular restaurant on a weekend, you need to make a reservation at least a week ____ advance.",
+       "choices": [
+        "on",
+        "at",
+        "in",
+        "for"
+       ],
+       "answer": 2,
+       "why": "in advance＝「前もって」。人気店なので1週間前に予約する。on / at / for は advance と組んでこの意味にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-072",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Yuta deleted an important file ____ mistake, but luckily his teacher still had a copy of it.",
+       "choices": [
+        "with",
+        "by",
+        "in",
+        "at"
+       ],
+       "answer": 1,
+       "why": "by mistake＝「間違って・うっかり」。幸い先生がコピーを持っていた、という流れ。with / in / at は mistake と組んでこの意味にならない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-073",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "While Mr. and Mrs. Brown are on vacation, their neighbor will ____ after their cat and water their plants.",
+       "choices": [
+        "run",
+        "look",
+        "go",
+        "take"
+       ],
+       "answer": 1,
+       "why": "look after ～＝「～の世話をする」。留守中に猫の世話と水やり。take after（～に似ている）、run after / go after（～を追いかける）は意味が合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-074",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "I wish I ____ how to swim. Then I could go to the beach with my friends this summer.",
+       "choices": [
+        "know",
+        "will know",
+        "knew",
+        "have known"
+       ],
+       "answer": 2,
+       "why": "I wish + 過去形＝「～ならいいのに」（今の事実と違う願い）。実際は泳げない。know / will know / have known は wish の後ろで今の願いを表せない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-075",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "The man ____ car broke down on the highway called a repair company for help.",
+       "choices": [
+        "who",
+        "which",
+        "whose",
+        "whom"
+       ],
+       "answer": 2,
+       "why": "後ろが car broke down と名詞から始まり「その人の車」なので所有格の関係代名詞 whose。who / which / whom の後ろに car は続かない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-076",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "By the time we arrived at the theater, the movie ____ already started, so we missed the first ten minutes.",
+       "choices": [
+        "has",
+        "had",
+        "is",
+        "have"
+       ],
+       "answer": 1,
+       "why": "By the time + 過去の文 → それより前に完了した事は過去完了 had started。has / have は現在完了、is は現在形で、過去の時点（arrived）より前を表せない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-077",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Ms. Kato made her son ____ his room before he went out to play with his friends.",
+       "choices": [
+        "clean",
+        "to clean",
+        "cleaning",
+        "cleaned"
+       ],
+       "answer": 0,
+       "why": "make 人 ＋動詞の原形＝「人に～させる」。to clean は make の後ろには来ない（受け身の時だけ to が付く）。"
+      }
+     ]
+    },
+    {
+     "id": "G1-078",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "It was ____ a hot day that we decided to stay inside and watch movies instead of going to the park.",
+       "choices": [
+        "so",
+        "very",
+        "too",
+        "such"
+       ],
+       "answer": 3,
+       "why": "such a ＋形容詞＋名詞 that ～＝「とても…なので～」。後ろに a hot day（名詞）があるので such。so なら so hot a day の語順になる。"
+      }
+     ]
+    },
+    {
+     "id": "G1-079",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "If it ____ tomorrow, the baseball game will be canceled, and the players will practice in the gym.",
+       "choices": [
+        "will rain",
+        "rains",
+        "rained",
+        "would rain"
+       ],
+       "answer": 1,
+       "why": "条件を表す if 節の中では、未来のことでも現在形 rains を使う。主節が will be なので仮定法の rained / would rain は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G1-080",
+     "plus": true,
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Mark is used to ____ up early because he has worked at a bakery for many years.",
+       "choices": [
+        "get",
+        "got",
+        "getting",
+        "have got"
+       ],
+       "answer": 2,
+       "why": "be used to ～ing＝「～するのに慣れている」。この to は前置詞なので後ろは動名詞 getting。used to get（以前はよく起きた）と混同しないこと。"
+      }
+     ]
     }
    ]
   },
@@ -877,6 +1597,178 @@
        "why": "直前で「数日しか休めない人が多い」、続く文で「彼らには急いで回るのが唯一の方法」とある。だから長期滞在のスロートラベルは難しい。料理・海外に行かない・食費の話ではない。"
       }
      ]
+    },
+    {
+     "id": "G2-005",
+     "plus": true,
+     "passage": "Repair Cafés\n\nWhen a toaster or a lamp stops working, many people simply throw it away and buy a new one. In some towns, however, people have another choice. Once a month, volunteers open a \"repair café\" in a community hall or a school. Visitors bring broken items, and the volunteers, many of whom are retired engineers or tailors, ( 1 ). There is no fee, but visitors are asked to put a small donation in a box if they are happy with the result.\n\nThe cafés are not only about saving money. The volunteers do not fix things while visitors wait in another room. Instead, they ask the owners to sit beside them and watch each step. In this way, ( 2 ). Many people who once thought that machines were too difficult to understand now repair simple problems at home by themselves. Some even return to the café later as volunteers and help other people with their broken things.\n\nRepair cafés also help to reduce waste. According to one group of organizers, about 60 percent of the items brought to their events can be fixed. That means fewer old machines and clothes end up in the garbage. ( 3 ), not everything can be saved. Some modern products are made so that their parts cannot be opened or replaced, and the volunteers have to tell their owners that nothing can be done. The organizers hope that companies will start making products that are easier to repair.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "sell them new products",
+        "teach a class on cooking",
+        "try to fix them for free",
+        "take the items to a factory"
+       ],
+       "answer": 2,
+       "why": "続く文で「料金は無い」「結果に満足したら寄付を」とあり、壊れた物を直す場だと分かる。新品を売る・料理教室・工場へ送る話は無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "visitors learn how to repair things themselves",
+        "the volunteers can work more quickly",
+        "visitors do not have to pay anything",
+        "the café can stay open longer"
+       ],
+       "answer": 0,
+       "why": "持ち主が横で手順を見る→直後に「今では家で自分で直す人が多い」とある。直し方を覚える、という結果。作業の速さや営業時間の話ではない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "As a result",
+        "For example",
+        "Unfortunately",
+        "In other words"
+       ],
+       "answer": 2,
+       "why": "前は「約60％は直せる」という良い話、後ろは「すべては救えない」という残念な話。だから Unfortunately（残念ながら）。As a result（その結果）や For example（例えば）ではつながらない。"
+      }
+     ]
+    },
+    {
+     "id": "G2-006",
+     "plus": true,
+     "passage": "A Robot in the Strawberry Field\n\nStrawberries are one of the most popular fruits in the world, but they are not easy to grow. The fruit is soft and can be damaged easily, so it has to be picked by hand. On many farms, it is becoming hard to find enough workers to do this job, especially during the busy spring season when the fruit must be picked every few days. Because of this, some farmers have started using robots that ( 1 ).\n\nThese robots move slowly along the rows of plants at night. A camera on each robot takes pictures of every strawberry, and a computer decides whether it is ripe by checking its color and size. If it is ready, a soft arm gently cuts the stem and places the fruit in a box. Since the robots can work while people are sleeping, ( 2 ). This means that the strawberries can be sent to stores early in the morning, when they are still fresh.\n\nThe robots are still very expensive, however. Most small farms cannot afford to buy one, and the machines sometimes miss strawberries that are hidden under leaves. ( 3 ), farmers still need some workers to check the fields after the robots have finished. Engineers are now trying to make smaller and cheaper models. They hope that these new robots will also be able to pick other soft fruits, such as tomatoes. They say that in ten years, robots may be as common on farms as tractors are today.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "can plant new seeds in winter",
+        "can pick the fruit without hurting it",
+        "can sell strawberries at markets",
+        "can grow fruit without any water"
+       ],
+       "answer": 1,
+       "why": "前の文で「柔らかく傷みやすいので手で摘む必要があり、人手が足りない」とある。だから傷つけずに摘めるロボット。種まき・販売・水無しの話ではない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "farmers have to work longer hours",
+        "the strawberries become sweeter",
+        "the fruit can be picked during the night",
+        "the robots need to rest during the day"
+       ],
+       "answer": 2,
+       "why": "人が寝ている間に働ける→直後に「朝早く新鮮なうちに店へ送れる」とある。夜のうちに摘めるということ。農家の労働時間が長くなるのは逆。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "In contrast",
+        "For this reason",
+        "Instead",
+        "At first"
+       ],
+       "answer": 1,
+       "why": "前は「葉の下に隠れたイチゴを見逃すことがある」、後ろは「だからロボットの後に人が畑を確かめる必要がある」。原因→結果なので For this reason。In contrast（対照的に）や Instead（代わりに）は合わない。"
+      }
+     ]
+    },
+    {
+     "id": "G2-007",
+     "plus": true,
+     "passage": "The Return of Board Games\n\nNot long ago, many people believed that board games would disappear. As video games and smartphones became more popular, families seemed to spend less time playing games around a table. In recent years, however, board games have ( 1 ). Sales have increased every year in many countries, and thousands of new games are created each year.\n\nOne reason is the rise of board game cafés. At these cafés, customers pay a small fee to stay for a few hours and choose from hundreds of games on the shelves. Staff members explain the rules, so customers do not have to read long instruction books. They can also recommend games that suit the size of the group. For people who live in small apartments, ( 2 ). They can try many games before deciding which one to buy, or simply enjoy playing without buying anything at all.\n\nSome people say that the popularity of board games is a reaction to modern life. Many of us spend all day looking at screens for work and school. When we play a board game, we sit face to face, talk, and laugh together. ( 3 ), board games can be good for the brain. Planning several moves ahead and remembering the rules help players to think carefully. Some schools now use board games in math and history classes for this reason, and teachers say that even quiet students join in.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "become popular again",
+        "been banned in schools",
+        "become more expensive",
+        "been sold only online"
+       ],
+       "answer": 0,
+       "why": "前は「消えると思われていた」、however の後で「売上が毎年増え新作も多い」。つまり再び人気になった。学校で禁止・値上がり・ネット販売のみの話は無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "the games are too large to play",
+        "the cafés are especially useful",
+        "the rules are difficult to learn",
+        "the fees are often very high"
+       ],
+       "answer": 1,
+       "why": "続く文で「買う前にたくさん試せる、買わずに楽しめる」とある。狭い部屋に住む人にとってカフェが特に便利。ルールは店員が説明し、料金は少額なので他は逆。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "However",
+        "As a result",
+        "For instance",
+        "In addition"
+       ],
+       "answer": 3,
+       "why": "前は「顔を合わせて話し笑える」という良い点、後ろは「脳にも良い」という別の良い点。追加なので In addition。However（しかし）は反対の内容が来る時。"
+      }
+     ]
+    },
+    {
+     "id": "G2-008",
+     "plus": true,
+     "passage": "Trees That Talk\n\nPeople often think of trees as living alone, each one standing quietly in its own place. However, scientists have discovered that trees in a forest are actually ( 1 ). Under the ground, their roots are joined by a huge network of tiny fungi. These fungi grow around the roots and spread through the soil, linking trees that may be many meters apart. Some scientists have called this network the \"wood wide web.\"\n\nThis network allows trees to share food and water. Tall trees that get plenty of sunlight make more sugar than they need. Some of this sugar travels through the fungi to small young trees growing in the shade below. Without this help, many of the young trees might not survive, because they cannot get enough light to make food by themselves. Scientists have also found that ( 2 ). When insects attack one tree, it can send chemical signals through the network, and nearby trees start producing substances that make their leaves taste bad to the insects.\n\nThe fungi also get something in return. Since they cannot make their own food, they take some of the sugar that passes through them. ( 3 ), both the trees and the fungi benefit from working together. These discoveries have changed how some people think about forests. Experts now say that when old, large trees are cut down, the young trees around them may lose an important source of support.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "( 1 )",
+       "choices": [
+        "connected to one another",
+        "growing more slowly than before",
+        "moving to new places",
+        "losing their leaves earlier"
+       ],
+       "answer": 0,
+       "why": "続く文で「根が菌の巨大なネットワークでつながり、離れた木同士を結んでいる」とある。つまり互いにつながっている。成長・移動・落葉の話ではない。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 2 )",
+       "choices": [
+        "insects prefer young trees",
+        "fungi make leaves taste better",
+        "old trees stop sharing food",
+        "trees can warn each other about danger"
+       ],
+       "answer": 3,
+       "why": "続く文で「虫に襲われた木が信号を送り、近くの木が葉をまずくする物質を作る」とある。危険を知らせ合うということ。菌が葉をおいしくするのは逆。"
+      },
+      {
+       "type": "mcq",
+       "q": "( 3 )",
+       "choices": [
+        "Instead",
+        "On the other hand",
+        "Even so",
+        "In this way"
+       ],
+       "answer": 3,
+       "why": "前で「木は菌から食べ物の助けを得て、菌は糖を受け取る」とまとめ、後ろで「両方が得をする」と結論づけている。こうして、という意味の In this way。On the other hand（一方で）は対立する内容の時。"
+      }
+     ]
     }
    ]
   },
@@ -1054,6 +1946,178 @@
        ],
        "answer": 2,
        "why": "第3段落：Chloe は折り紙の本を読んでいるが、説明が分かりにくいので Yuki に教えてほしい。英語の宿題やバスの話ではない。"
+      }
+     ]
+    },
+    {
+     "id": "G3A-005",
+     "plus": true,
+     "passage": "From: Megan Price <m.price@example.com>\nTo: Ethan Brooks <ethan.brooks@example.net>\nDate: October 2\nSubject: Our science fair project\n\nHi Ethan,\n\nI talked to Mr. Fowler after class today about our project for the science fair. He liked our idea of testing which kind of soil helps bean plants grow fastest. However, he said that we need to start soon, because beans take about three weeks to grow tall enough to measure. The fair is on November 8, so we only have about five weeks left.\n\nMy mom said that we can use the sunny window in our kitchen for the plants. I already have some small pots, but we will need three kinds of soil. There's a garden center near your house, isn't there? Could you stop by and buy one small bag of each kind this weekend? I'll pay you back for half of the cost when I see you on Monday.\n\nAlso, Mr. Fowler told me that last year's winners took a photo of their plants every day and made a short video at the end. I think that would be a great way to show how the plants changed. My sister has a camera stand that we can borrow. If you have time, could you come to my house on Tuesday after school? We can plant the seeds together and set up the camera.\n\nSee you soon,\nMegan",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What did Mr. Fowler tell Megan about the project?",
+       "choices": [
+        "They should choose a different idea.",
+        "They can use his classroom window.",
+        "They need to finish it by the end of October.",
+        "They should begin it without waiting too long."
+       ],
+       "answer": 3,
+       "why": "第1段落：豆は測れるまで約3週間かかるので早く始める必要がある、と言われた。アイデアは気に入っており、窓は Megan の家の台所。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does Megan ask Ethan to do this weekend?",
+       "choices": [
+        "Pay for all of the pots.",
+        "Grow the beans in his kitchen.",
+        "Visit a garden center with her mother.",
+        "Buy some soil at a store near his house."
+       ],
+       "answer": 3,
+       "why": "第2段落：Ethan の家の近くの園芸店で、3種類の土を1袋ずつ買ってほしいと頼んでいる。費用は半分を月曜に返す。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why does Megan want to take a photo of the plants every day?",
+       "choices": [
+        "To make a video that shows how the plants grew.",
+        "To send the pictures to last year's winners.",
+        "To check if the camera stand works.",
+        "To win a photo contest at school."
+       ],
+       "answer": 0,
+       "why": "第3段落：昨年の優勝者は毎日写真を撮り最後に短い動画を作った。植物の変化を見せる良い方法だと考えている。"
+      }
+     ]
+    },
+    {
+     "id": "G3A-006",
+     "plus": true,
+     "passage": "From: Customer Service <help@trailgear.example.com>\nTo: Olivia Turner <oturner@example.org>\nDate: June 14\nSubject: Your order #4821\n\nDear Ms. Turner,\n\nThank you for contacting Trail Gear. We are very sorry to hear that the tent you ordered arrived with a broken pole. We checked with our delivery company, and it seems that the box was dropped while it was being moved from one truck to another. We understand how disappointing this must be, especially since you told us that you are going camping with your family next weekend.\n\nWe have already sent you a new pole by express delivery. It should arrive at your home by Wednesday, so you will have plenty of time before your trip. You do not need to send back the whole tent. However, we would be grateful if you could put the broken pole in the envelope that comes with the new one and mail it back to us. The envelope already has a stamp on it.\n\nTo say sorry for the trouble, we have also added 500 points to your Trail Gear member account. You can use these points to get $5 off your next order. They can be used for anything in our online store, including our popular camping chairs. If you have any other problems, please call us at the number below.\n\nSincerely,\nMartin Shaw\nTrail Gear Customer Service",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What happened to Ms. Turner's tent?",
+       "choices": [
+        "It was sent to the wrong address.",
+        "A part of it was damaged during delivery.",
+        "It arrived one week late.",
+        "It was a different color from the one she ordered."
+       ],
+       "answer": 1,
+       "why": "第1段落：ポールが折れて届いた。配送会社でトラックの積み替え中に箱が落とされたらしい。宛先違い・遅れ・色違いではない。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does the company ask Ms. Turner to do?",
+       "choices": [
+        "Return the broken pole in an envelope.",
+        "Send the whole tent back to the store.",
+        "Buy a stamp for the envelope.",
+        "Wait until Wednesday to go camping."
+       ],
+       "answer": 0,
+       "why": "第2段落：テント全体は返さなくてよいが、折れたポールを新しいポールに付いてくる封筒に入れて送り返してほしい。切手はもう貼ってある。"
+      },
+      {
+       "type": "mcq",
+       "q": "What can Ms. Turner do with her points?",
+       "choices": [
+        "Receive a free camping chair.",
+        "Get a discount on something she buys next.",
+        "Pay for express delivery.",
+        "Join a camping trip with the company."
+       ],
+       "answer": 1,
+       "why": "第3段落：500ポイントで次の注文が5ドル引きになる。椅子は「使える商品の例」で、無料でもらえるわけではない。"
+      }
+     ]
+    },
+    {
+     "id": "G3A-007",
+     "plus": true,
+     "passage": "From: Hannah Scott <hannah.scott@example.com>\nTo: Rachel Hughes <rachel.h@example.net>\nDate: March 9\nSubject: Volunteering at the animal shelter\n\nHi Rachel,\n\nDo you remember the animal shelter on Maple Street? I started volunteering there last month, and I love it. On Saturday mornings, I help to feed the dogs, clean their cages, and take them for walks in the park next door. The staff are very kind, and they taught me a lot about how to take care of animals.\n\nThe shelter is looking for more volunteers right now. A lot of puppies were brought in this winter, and the staff don't have enough time to play with all of them. Playing with people is important for puppies, because it helps them to become friendly and calm. This makes it easier for them to find new families. You told me once that you want to be a vet someday, so I thought you might be interested.\n\nIf you want to join, you have to attend a two-hour training session first. The next one is on March 21 at 10 a.m. You'll learn how to hold the animals safely and what to do if a dog gets too excited. Volunteers must be at least 15 years old, so that's no problem for you. Let me know if you'd like to go, and I'll tell the manager.\n\nHannah",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What does Hannah do at the animal shelter?",
+       "choices": [
+        "She works as a vet on weekends.",
+        "She helps to look after the dogs.",
+        "She teaches the staff about animals.",
+        "She builds new cages for the puppies."
+       ],
+       "answer": 1,
+       "why": "第1段落：土曜の朝に犬にえさをやり、ケージを掃除し、散歩させる。つまり犬の世話を手伝っている。動物のことを教わったのは Hannah のほう。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why does the shelter need more volunteers?",
+       "choices": [
+        "Several staff members have quit their jobs.",
+        "The shelter is moving to a new building.",
+        "The dogs need to be walked more often.",
+        "There are many young dogs that need attention."
+       ],
+       "answer": 3,
+       "why": "第2段落：この冬たくさんの子犬が来て、職員だけでは全部と遊ぶ時間が無い。遊ぶことで人なつこく落ち着いた犬になる。"
+      },
+      {
+       "type": "mcq",
+       "q": "What must Rachel do before she can volunteer?",
+       "choices": [
+        "Take part in a training session.",
+        "Become 15 years old.",
+        "Bring her own dog to the shelter.",
+        "Talk to the manager on March 21."
+       ],
+       "answer": 0,
+       "why": "第3段落：まず2時間の研修に出る必要がある。15歳以上の条件はもう満たしている（no problem for you）。マネージャーに伝えるのは Hannah。"
+      }
+     ]
+    },
+    {
+     "id": "G3A-008",
+     "plus": true,
+     "passage": "From: Greenfield Community Center <classes@greenfieldcc.example.org>\nTo: Sota Mori <sota.mori@example.jp>\nDate: August 27\nSubject: Beginners' guitar class\n\nDear Mr. Mori,\n\nThank you for signing up for our beginners' guitar class. The class will meet every Wednesday from 6:30 to 8:00 p.m., starting on September 10. There will be ten lessons in total. Our teacher, Mr. Lucas Hart, has played in a jazz band for many years, and he enjoys helping people who have never touched a guitar before.\n\nOn your application form, you wrote that you do not have a guitar yet. Please don't buy one before the first lesson. The community center has six guitars that students can borrow during class. Mr. Hart will also give advice about choosing a good guitar at a reasonable price, so you can decide after you have tried a few different kinds.\n\nAt the end of the course, students will have a chance to perform at our autumn festival on November 15. You do not have to take part if you do not want to, but last year, most students said it was the best part of the course. Family and friends are welcome to come and watch. Finally, please remember to bring a notebook and a pencil to every lesson.\n\nWe look forward to seeing you.\n\nGreenfield Community Center",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is one thing we learn about Mr. Lucas Hart?",
+       "choices": [
+        "He is a beginner at playing the guitar.",
+        "He started teaching on September 10.",
+        "He has a lot of experience as a musician.",
+        "He works at a music store."
+       ],
+       "answer": 2,
+       "why": "第1段落：何年もジャズバンドで演奏してきた。経験豊富な演奏家ということ。9月10日は講座が始まる日。"
+      },
+      {
+       "type": "mcq",
+       "q": "What does the community center suggest Mr. Mori do?",
+       "choices": [
+        "Buy a guitar before the first lesson.",
+        "Borrow a guitar to take home.",
+        "Wait before he buys a guitar.",
+        "Choose the cheapest guitar in the store."
+       ],
+       "answer": 2,
+       "why": "第2段落：最初のレッスンの前に買わないで、と頼んでいる。授業中は借りられ、先生の助言を聞いて試してから決められる。借りられるのは授業中だけ。"
+      },
+      {
+       "type": "mcq",
+       "q": "What will happen on November 15?",
+       "choices": [
+        "All students must play at a festival.",
+        "The class will meet for the first time.",
+        "Students can play music in front of other people.",
+        "Mr. Hart will sell guitars to students."
+       ],
+       "answer": 2,
+       "why": "第3段落：秋祭りで発表する機会がある。参加は自由（You do not have to take part）なので「全員必ず」は誤り。"
       }
      ]
     }
@@ -1331,6 +2395,274 @@
        "why": "第5段落：竹を細く切って押し固め、平らな板にしている会社がある。鋼の代わりにはならないだろう、濡れると腐る、木は30年以上かかる、なので他は誤り。"
       }
      ]
+    },
+    {
+     "id": "G3B-005",
+     "plus": true,
+     "passage": "Clever Crows\n\nMany people think of crows as noisy birds that make a mess of garbage bags. However, scientists who study animal intelligence see them very differently. Crows have large brains for their body size, and in many tests, they have solved problems as well as young children. Some researchers even say that crows are among the smartest animals on Earth.\n\nOne skill that surprised scientists is the way some crows use tools. On a group of islands in the Pacific Ocean, crows break off small sticks and shape them into hooks. They then use these hooks to pull insects out of holes in trees. Young crows are not very good at this at first. They watch older birds carefully and practice for many months before they can make good tools of their own.\n\nCrows also have excellent memories. In one study, researchers wore masks while they caught a few crows, measured them, and then let them go. For years afterward, whenever a person wore the same mask near the area, the crows made loud warning calls and flew around the person. What surprised the researchers most was that many of the crows had never been caught themselves. They seemed to have learned about the \"dangerous\" face from other crows.\n\nIn some cities, crows have learned to use human inventions. For example, people have seen crows dropping hard nuts onto roads so that passing cars will crack them open. Some birds even wait at crosswalks and pick up the pieces only when the traffic light turns red and the cars stop.\n\nNot everyone is happy about the birds' intelligence. Because crows learn quickly, it is hard to keep them away from farms and garbage areas. Scarecrows and loud noises usually work for only a short time before the crows realize that there is no real danger. Some cities are now trying new ideas, such as nets that make it difficult for crows to reach food waste.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What do some researchers say about crows?",
+       "choices": [
+        "They are one of the most intelligent kinds of animals.",
+        "They are smarter than most adult humans.",
+        "Their brains are smaller than those of other birds.",
+        "They are the noisiest birds in the world."
+       ],
+       "answer": 0,
+       "why": "第1段落：カラスは地球上で最も賢い動物の一つだ、と言う研究者もいる。子どもと同じくらい問題を解けるとあるが、大人より賢いとは書いていない。"
+      },
+      {
+       "type": "mcq",
+       "q": "How do young crows on the islands learn to make tools?",
+       "choices": [
+        "By copying the way humans use sticks.",
+        "By watching older crows and practicing.",
+        "By being taught in tests by scientists.",
+        "By pulling insects out of holes in the ground."
+       ],
+       "answer": 1,
+       "why": "第2段落：若いカラスは最初は下手で、年上の鳥をよく見て何か月も練習する。人間をまねるとは書いていない。虫を引き出すのは木の穴から。"
+      },
+      {
+       "type": "mcq",
+       "q": "What surprised the researchers who wore masks?",
+       "choices": [
+        "The crows forgot the masks after a few days.",
+        "Crows that had not been caught also reacted to the masks.",
+        "The crows were not afraid of the researchers.",
+        "The crows tried to take the masks away."
+       ],
+       "answer": 1,
+       "why": "第3段落：捕まえられたことの無いカラスまで、同じ仮面の人に警告の声を上げた。他のカラスから学んだらしい。何年も覚えていたので「数日で忘れた」は逆。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why do some crows wait at crosswalks?",
+       "choices": [
+        "To collect pieces of nuts safely.",
+        "To find garbage that people have dropped.",
+        "To cross the road with people.",
+        "To make cars stop for them."
+       ],
+       "answer": 0,
+       "why": "第4段落：車にナッツを割らせ、信号が赤になり車が止まった時だけ破片を拾う。車を止めさせているのではなく、止まるのを待っている。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which of the following statements is true?",
+       "choices": [
+        "Scarecrows often stop working after a while.",
+        "Crows on the islands use hooks made of metal.",
+        "Most cities have stopped trying to control crows.",
+        "Nets cannot keep crows away from food waste."
+       ],
+       "answer": 0,
+       "why": "第5段落：かかしや大きな音は、危険が無いと気づかれるまでの短い間しか効かない。島のカラスのかぎは小枝、都市は網など新しい方法を試している。"
+      }
+     ]
+    },
+    {
+     "id": "G3B-006",
+     "plus": true,
+     "passage": "Farms Inside Buildings\n\nMost of the vegetables we eat are grown in large fields. However, a growing number of companies are now growing food in a completely different way. They use tall buildings, such as old factories and warehouses, and grow plants on shelves that are stacked one on top of another, sometimes ten levels high. This method is called \"vertical farming.\"\n\nIn a vertical farm, the plants never see the sun. Instead, they are grown under special LED lights that give them exactly the kind of light they need. The plants also do not grow in soil. Their roots hang in water that contains all the nutrients they need, and computers control the temperature and the amount of water. As a result, crops such as lettuce and herbs can be harvested up to ten times a year, while farmers in fields may get only two or three harvests.\n\nVertical farms have other advantages, too. Because the plants are grown indoors, there are no insects to damage them, so farmers do not need to use chemicals to protect them. Bad weather, such as heavy rain or a long period without rain, is also not a problem. In addition, many vertical farms are built in or near large cities. The vegetables can be delivered to supermarkets within a few hours of being picked, so they stay fresh and less fuel is used for transportation.\n\nHowever, vertical farming also has some serious problems. The LED lights and computers need a large amount of electricity, which makes the vegetables expensive to produce. For this reason, most vertical farms grow only light, fast-growing plants. Crops like rice, wheat, and potatoes need too much space and light, so it is still much cheaper to grow them in fields.\n\nSome experts believe that vertical farms will become more common as the cost of electricity from solar and wind power goes down. Others think that they will remain a small part of farming. Either way, they may become an important source of fresh food for people living in crowded cities.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is one feature of vertical farming?",
+       "choices": [
+        "Plants are grown only on the roofs of buildings.",
+        "Plants are grown on shelves placed on top of each other.",
+        "Farmers use old factories to make farming machines.",
+        "Vegetables are grown in fields next to tall buildings."
+       ],
+       "answer": 1,
+       "why": "第1段落：高い建物の中で、何段も重ねた棚で植物を育てる。屋上だけ・機械作り・畑の話ではない。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why can lettuce be harvested many times a year in a vertical farm?",
+       "choices": [
+        "The plants receive more sunlight than in fields.",
+        "The soil in the buildings is very rich.",
+        "Farmers work longer hours than in fields.",
+        "The conditions for growing are carefully controlled."
+       ],
+       "answer": 3,
+       "why": "第2段落：専用のLEDと栄養入りの水を使い、温度や水の量をコンピューターが管理する。その結果、年に最大10回収穫できる。日光や土は使わない。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why are vegetables from vertical farms often fresh?",
+       "choices": [
+        "They are protected by chemicals.",
+        "They are kept in the buildings for a long time.",
+        "They are picked only when the weather is good.",
+        "They are grown close to where they are sold."
+       ],
+       "answer": 3,
+       "why": "第3段落：多くは大都市の中や近くにあり、摘んで数時間でスーパーへ届く。農薬は不要と書かれているので1つ目は逆。"
+      },
+      {
+       "type": "mcq",
+       "q": "What is one problem with vertical farms?",
+       "choices": [
+        "Insects often damage the plants.",
+        "They cannot grow herbs or lettuce.",
+        "They cost a lot to run because of the energy they use.",
+        "They need more water than farms in fields."
+       ],
+       "answer": 2,
+       "why": "第4段落：LEDとコンピューターが大量の電気を使い、生産費が高い。屋内なので虫の害は無く、レタスやハーブは主な作物。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which of the following statements is true?",
+       "choices": [
+        "Vertical farms are usually built far from cities.",
+        "All experts agree that vertical farms will replace fields.",
+        "Vertical farms can only harvest crops two or three times a year.",
+        "Rice is still cheaper to grow in fields than indoors."
+       ],
+       "answer": 3,
+       "why": "第4段落：米・小麦・じゃがいもは場所と光が多く必要で、畑のほうがずっと安い。都市の近くにあり、専門家の意見は分かれ、収穫は最大年10回なので他は誤り。"
+      }
+     ]
+    },
+    {
+     "id": "G3B-007",
+     "plus": true,
+     "passage": "Why Do We Yawn?\n\nEveryone yawns. We yawn when we are tired, when we are bored, and sometimes for no clear reason at all. Babies start yawning even before they are born, and many animals, including dogs, cats, and fish, yawn as well. Although yawning is so common, scientists still do not fully understand why we do it.\n\nFor many years, people believed that we yawn because our bodies need more oxygen. According to this idea, taking a deep breath while yawning brings extra oxygen into the blood and helps us stay awake. However, when researchers tested this idea, they found that people did not yawn more when they breathed air that had less oxygen in it. They also did not yawn less when they were given extra oxygen. Most scientists now think that this explanation is wrong.\n\nA newer idea is that yawning helps to cool the brain. Like a computer, the brain works best when it is not too hot. When we yawn, we open our mouths wide and take in a large amount of air, which may cool the blood flowing to the head. Supporting this idea, one study found that people yawned more often in warm weather than in very hot weather, when the outside air is too warm to cool anything.\n\nYawning is also famous for being \"catching.\" Just seeing or hearing someone yawn, or even reading about yawning, can make people start yawning themselves. Interestingly, studies show that we are more likely to catch a yawn from family members and close friends than from strangers. Some researchers believe this shows that catching yawns is connected to our ability to understand other people's feelings.\n\nYoung children under the age of about four rarely catch yawns from others. This seems to match the age when children begin to understand that other people have their own thoughts and feelings. So the next time you yawn after seeing a friend do it, it may simply be a sign that you care about that person.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What does the passage say about yawning in the first paragraph?",
+       "choices": [
+        "Only humans yawn when they are bored.",
+        "Even animals and unborn babies do it.",
+        "Scientists have found the exact reason for it.",
+        "People yawn only when they are tired."
+       ],
+       "answer": 1,
+       "why": "第1段落：生まれる前の赤ちゃんや犬・猫・魚もあくびをする。理由はまだはっきり分かっておらず、理由が無い時もあくびをする。"
+      },
+      {
+       "type": "mcq",
+       "q": "What did researchers find when they tested the oxygen idea?",
+       "choices": [
+        "People yawned more when they had extra oxygen.",
+        "Yawning brought a lot of oxygen into the blood.",
+        "People with less oxygen fell asleep quickly.",
+        "The amount of oxygen did not change how often people yawned."
+       ],
+       "answer": 3,
+       "why": "第2段落：酸素の少ない空気でもあくびは増えず、酸素を足しても減らなかった。だから酸素説は誤りと考えられている。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why did people yawn less in very hot weather?",
+       "choices": [
+        "The air was too warm to cool down the brain.",
+        "They were too tired to open their mouths.",
+        "Their brains were already cool enough.",
+        "They drank more cold water than usual."
+       ],
+       "answer": 0,
+       "why": "第3段落：とても暑い日は外の空気が熱すぎて何も冷やせないので、あくびが少なかった。これが「脳を冷やす」説の裏付けになっている。"
+      },
+      {
+       "type": "mcq",
+       "q": "People are more likely to catch a yawn from",
+       "choices": [
+        "people they have never met.",
+        "people who are much older than them.",
+        "people who are reading a book.",
+        "people who are close to them."
+       ],
+       "answer": 3,
+       "why": "第4段落：知らない人より家族や親しい友人からうつりやすい。他人の気持ちを理解する力とつながっていると考える研究者もいる。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which of the following statements is true?",
+       "choices": [
+        "Most scientists still believe the oxygen idea.",
+        "Reading about yawning cannot make people yawn.",
+        "Very young children seldom catch yawns from other people.",
+        "Children start catching yawns before they are born."
+       ],
+       "answer": 2,
+       "why": "第5段落：4歳くらいまでの子どもはほとんど人のあくびがうつらない（rarely → seldom）。酸素説は誤りとされ、読むだけでもうつるので他は誤り。"
+      }
+     ]
+    },
+    {
+     "id": "G3B-008",
+     "plus": true,
+     "passage": "A Hotel Made of Ice\n\nIn the far north of a cold northern country, there is a small village that becomes famous every winter. When the temperature drops below minus 20 degrees, workers begin to build a hotel made completely of ice and snow. The hotel has about 30 rooms, a restaurant, and even a small concert hall. Every spring, when the weather gets warmer, the whole building melts and flows back into the nearby river.\n\nThe ice used for the hotel comes from that same river. Each March, when the river ice is thick and clear, workers cut out huge blocks, some weighing more than two tons. The blocks are kept in a large cold storage building through the summer. Then, in November, the workers take them out and start building. It takes about six weeks to finish the hotel, and around 50 people, including builders, artists, and designers, work on it.\n\nWhat makes the hotel special is that it is different every year. Each autumn, artists from around the world send in designs for the rooms. A group of judges chooses about a dozen of them, and the artists come to the village to carve their rooms by hand. One year, a room was made to look like the inside of a whale. Another room had a bed shaped like a giant flower. Because of this, many guests come back again and again to see the new designs.\n\nStaying in the hotel is an unusual experience. The temperature inside the rooms is always around minus 5 degrees. Guests sleep in thick sleeping bags on beds covered with animal skins. Most people stay for only one night in the ice rooms and spend the rest of their trip in warm cabins nearby. The hotel also offers activities such as dog sledding and ice carving lessons.\n\nThe hotel has brought many changes to the village. Before it opened, few tourists visited in winter, and many young people moved away to find work. Today, the hotel employs more than 100 local people during the busy season, and new restaurants and shops have opened.",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What happens to the hotel every spring?",
+       "choices": [
+        "It is moved to a different village.",
+        "It is closed for repairs.",
+        "It melts and becomes water again.",
+        "It is made bigger for summer visitors."
+       ],
+       "answer": 2,
+       "why": "第1段落：春に暖かくなると建物全体が溶けて近くの川に戻る。移動・修理・夏の拡張の話は無い。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why do workers cut ice from the river in March?",
+       "choices": [
+        "The river is warmest at that time.",
+        "Artists send in their designs in March.",
+        "The ice is thick and clear at that time.",
+        "The hotel must be finished by April."
+       ],
+       "answer": 2,
+       "why": "第2段落：3月は川の氷が厚く透明なので、その時に大きなブロックを切り出す。デザインが送られるのは秋、建設は11月から。"
+      },
+      {
+       "type": "mcq",
+       "q": "Why do many guests visit the hotel more than once?",
+       "choices": [
+        "The rooms are designed in a new way each year.",
+        "They can stay there for free the second time.",
+        "They want to take ice carving lessons again.",
+        "The hotel is warmer than other hotels."
+       ],
+       "answer": 0,
+       "why": "第3段落：毎年世界の芸術家のデザインで部屋が作り直されるので、新しいデザインを見に何度も来る。"
+      },
+      {
+       "type": "mcq",
+       "q": "What do most guests do during their stay?",
+       "choices": [
+        "Sleep in the ice rooms for a whole week.",
+        "Build their own rooms out of snow.",
+        "Spend one night in the ice hotel and the other nights somewhere warmer.",
+        "Stay in cabins without visiting the ice rooms."
+       ],
+       "answer": 2,
+       "why": "第4段落：ほとんどの人は氷の部屋に1泊だけし、残りは近くの暖かいコテージで過ごす。"
+      },
+      {
+       "type": "mcq",
+       "q": "Which of the following statements is true?",
+       "choices": [
+        "Only artists from the village design the rooms.",
+        "The hotel has created many jobs for people in the village.",
+        "The temperature inside the rooms is above zero.",
+        "More young people left the village after the hotel opened."
+       ],
+       "answer": 1,
+       "why": "第5段落：繁忙期に地元の100人以上を雇い、新しい店もできた。芸術家は世界中から、室温は約マイナス5度、若者が出て行ったのは開業前なので他は誤り。"
+      }
+     ]
     }
    ]
   },
@@ -1414,6 +2746,86 @@
      "maxWords": 35,
      "source": "More and more families are buying robot vacuum cleaners. These small, round machines move around the house by themselves and clean the floor while their owners are busy or away.\n\nRobot vacuum cleaners are useful in several ways. Busy people can save time and energy because they do not have to clean the floor themselves. Also, they can be started with a smartphone from outside the home.\n\nHowever, these machines also have weak points. They often get stuck on cables or small toys left on the floor. Moreover, they cannot clean stairs, so people still have to do some cleaning themselves.",
      "note": "1段落目（何の話か）・2段落目（良い点）・3段落目（問題点）を1文ずつ。具体例はまとめる語に言い換え、自分の意見は書かない。"
+    },
+    {
+     "id": "W1-009",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "以下の英文を読んで，その内容を25〜35語の英語で要約しなさい。",
+     "minWords": 25,
+     "maxWords": 35,
+     "source": "Many supermarkets now have self-checkout machines. Customers scan the items they want to buy and pay by themselves without the help of a cashier.\n\nThese machines have some advantages. Customers who buy only a few things can often finish paying quickly without waiting in a long line. Also, stores can save money because they need fewer workers at the registers.\n\nHowever, self-checkout machines also cause some problems. Some elderly customers find the machines confusing and need help from staff anyway. In addition, mistakes can happen, such as when customers forget to scan an item or scan it twice.",
+     "note": "1段落目（何の話か）・2段落目（良い点）・3段落目（問題点）を1文ずつ。具体例はまとめる語に言い換え、自分の意見は書かない。"
+    },
+    {
+     "id": "W1-010",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "以下の英文を読んで，その内容を25〜35語の英語で要約しなさい。",
+     "minWords": 25,
+     "maxWords": 35,
+     "source": "In some cities, people can rent electric scooters through a smartphone app. They can ride a scooter for a short trip and leave it at almost any place when they finish.\n\nElectric scooters are useful in several ways. People can travel short distances faster than by walking, and they do not need to look for a parking space. Moreover, scooters do not produce smoke, so they are better for the air than cars.\n\nOn the other hand, there are some concerns. Some riders leave scooters in the middle of sidewalks, which makes walking difficult. Also, riders who go too fast can cause accidents.",
+     "note": "1段落目（何の話か）・2段落目（良い点）・3段落目（問題点）を1文ずつ。具体例はまとめる語に言い換え、自分の意見は書かない。"
+    },
+    {
+     "id": "W1-011",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "以下の英文を読んで，その内容を25〜35語の英語で要約しなさい。",
+     "minWords": 25,
+     "maxWords": 35,
+     "source": "Meal-kit services are becoming popular among busy families. Each week, these companies deliver boxes that contain fresh ingredients and easy recipes, so people can cook dinner at home.\n\nThere are some good points to meal kits. People do not need to plan meals or go shopping, so they can save a lot of time. Also, because each box has the exact amount of food needed, less food is wasted.\n\nHowever, meal kits have some disadvantages. They usually cost more than buying the same ingredients at a supermarket. In addition, each item is often wrapped in plastic, which creates a lot of garbage.",
+     "note": "1段落目（何の話か）・2段落目（良い点）・3段落目（問題点）を1文ずつ。具体例はまとめる語に言い換え、自分の意見は書かない。"
+    },
+    {
+     "id": "W1-012",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "以下の英文を読んで，その内容を25〜35語の英語で要約しなさい。",
+     "minWords": 25,
+     "maxWords": 35,
+     "source": "Smartwatches are not only used to check the time. Many people now wear them to keep a record of their health, such as how many steps they take and how well they sleep.\n\nSmartwatches can be helpful. Seeing their daily records encourages many users to exercise more and go to bed earlier. Some watches can even warn users when their heart is beating in an unusual way.\n\nHowever, there are some problems with these watches. They can be quite expensive, and their batteries often need to be charged every day. Also, some users worry too much about their numbers and feel stressed.",
+     "note": "1段落目（何の話か）・2段落目（良い点）・3段落目（問題点）を1文ずつ。具体例はまとめる語に言い換え、自分の意見は書かない。"
+    },
+    {
+     "id": "W1-013",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "以下の英文を読んで，その内容を25〜35語の英語で要約しなさい。",
+     "minWords": 25,
+     "maxWords": 35,
+     "source": "More and more people in Japan pay for things without using cash. Instead, they use credit cards or smartphone apps at stores and restaurants.\n\nCashless payment has several benefits. Paying takes only a few seconds, so people do not have to count coins at the register. Also, the apps keep a record of how much people spend, so it is easy to check their spending later.\n\nOn the other hand, cashless payment has some weak points. Some people spend more than they planned because they do not see their money leave their wallets. Moreover, if a phone's battery dies, its owner may not be able to pay.",
+     "note": "1段落目（何の話か）・2段落目（良い点）・3段落目（問題点）を1文ずつ。具体例はまとめる語に言い換え、自分の意見は書かない。"
+    },
+    {
+     "id": "W1-014",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "以下の英文を読んで，その内容を25〜35語の英語で要約しなさい。",
+     "minWords": 25,
+     "maxWords": 35,
+     "source": "Today, many people buy their groceries online. They choose food on a website or an app, and a delivery person brings it to their home at a time they choose.\n\nOnline grocery shopping has some advantages. People do not have to carry heavy bags of rice or bottles of water home from the store. Also, it is easy to compare prices on a screen, which can help people save money.\n\nHowever, there are some disadvantages. Customers cannot check the freshness of fruit and vegetables before buying them. In addition, many services charge a delivery fee, especially when the order is small.",
+     "note": "1段落目（何の話か）・2段落目（良い点）・3段落目（問題点）を1文ずつ。具体例はまとめる語に言い換え、自分の意見は書かない。"
+    },
+    {
+     "id": "W1-015",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "以下の英文を読んで，その内容を25〜35語の英語で要約しなさい。",
+     "minWords": 25,
+     "maxWords": 35,
+     "source": "Some public libraries have started lending more than books. People can borrow items such as tools, camping tents, and musical instruments, just as they borrow books.\n\nThese \"libraries of things\" have some good points. People can use an item that they need only once or twice without buying it, so they can save money. Also, sharing items means that fewer new products need to be made.\n\nHowever, there are also some problems. Borrowed items are sometimes returned broken or dirty, and libraries must pay to repair or clean them. In addition, popular items, such as tents in summer, are often not available when people want them.",
+     "note": "1段落目（何の話か）・2段落目（良い点）・3段落目（問題点）を1文ずつ。具体例はまとめる語に言い換え、自分の意見は書かない。"
+    },
+    {
+     "id": "W1-016",
+     "plus": true,
+     "type": "Summary",
+     "prompt": "以下の英文を読んで，その内容を25〜35語の英語で要約しなさい。",
+     "minWords": 25,
+     "maxWords": 35,
+     "source": "Many hotels and restaurants now use robots to do simple jobs. For example, some robots carry food to tables, and others bring towels and drinks to guests' rooms.\n\nUsing robots has several advantages. Robots can work for many hours without getting tired, so businesses can solve the problem of not having enough workers. Also, some guests enjoy seeing the robots and take pictures of them.\n\nOn the other hand, robots have some limits. They cannot answer unusual questions from customers or deal with sudden problems. In addition, buying and repairing robots can cost a lot of money, especially for small businesses.",
+     "note": "1段落目（何の話か）・2段落目（良い点）・3段落目（問題点）を1文ずつ。具体例はまとめる語に言い換え、自分の意見は書かない。"
     }
    ]
   },
@@ -1486,6 +2898,78 @@
      "id": "W2-008",
      "type": "Opinion essay",
      "prompt": "あなたは，外国人の知り合いから以下の QUESTION をされました。QUESTION について，あなたの意見とその理由を2つ英文で書きなさい。語数の目安は50〜60語です。\n\nQUESTION: Do you think restaurants should offer smaller meals at lower prices?",
+     "minWords": 50,
+     "maxWords": 60,
+     "note": "最初に自分の意見（Yes / No）。理由を2つ、それぞれ1文＋短い説明で。QUESTION に答えていないと0点になることがある。"
+    },
+    {
+     "id": "W2-009",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "あなたは，外国人の知り合いから以下の QUESTION をされました。QUESTION について，あなたの意見とその理由を2つ英文で書きなさい。語数の目安は50〜60語です。\n\nQUESTION: Do you think high school students should have part-time jobs?",
+     "minWords": 50,
+     "maxWords": 60,
+     "note": "最初に自分の意見（Yes / No）。理由を2つ、それぞれ1文＋短い説明で。QUESTION に答えていないと0点になることがある。"
+    },
+    {
+     "id": "W2-010",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "あなたは，外国人の知り合いから以下の QUESTION をされました。QUESTION について，あなたの意見とその理由を2つ英文で書きなさい。語数の目安は50〜60語です。\n\nQUESTION: Do you think people will read fewer paper books in the future?",
+     "minWords": 50,
+     "maxWords": 60,
+     "note": "最初に自分の意見（Yes / No）。理由を2つ、それぞれ1文＋短い説明で。QUESTION に答えていないと0点になることがある。"
+    },
+    {
+     "id": "W2-011",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "あなたは，外国人の知り合いから以下の QUESTION をされました。QUESTION について，あなたの意見とその理由を2つ英文で書きなさい。語数の目安は50〜60語です。\n\nQUESTION: Do you think it is a good idea for children to have their own smartphones?",
+     "minWords": 50,
+     "maxWords": 60,
+     "note": "最初に自分の意見（Yes / No）。理由を2つ、それぞれ1文＋短い説明で。QUESTION に答えていないと0点になることがある。"
+    },
+    {
+     "id": "W2-012",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "あなたは，外国人の知り合いから以下の QUESTION をされました。QUESTION について，あなたの意見とその理由を2つ英文で書きなさい。語数の目安は50〜60語です。\n\nQUESTION: Do you think cities should have more parks and green spaces?",
+     "minWords": 50,
+     "maxWords": 60,
+     "note": "最初に自分の意見（Yes / No）。理由を2つ、それぞれ1文＋短い説明で。QUESTION に答えていないと0点になることがある。"
+    },
+    {
+     "id": "W2-013",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "あなたは，外国人の知り合いから以下の QUESTION をされました。QUESTION について，あなたの意見とその理由を2つ英文で書きなさい。語数の目安は50〜60語です。\n\nQUESTION: Do you think students should wear school uniforms?",
+     "minWords": 50,
+     "maxWords": 60,
+     "note": "最初に自分の意見（Yes / No）。理由を2つ、それぞれ1文＋短い説明で。QUESTION に答えていないと0点になることがある。"
+    },
+    {
+     "id": "W2-014",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "あなたは，外国人の知り合いから以下の QUESTION をされました。QUESTION について，あなたの意見とその理由を2つ英文で書きなさい。語数の目安は50〜60語です。\n\nQUESTION: Do you think it is better to live in the countryside than in a city?",
+     "minWords": 50,
+     "maxWords": 60,
+     "note": "最初に自分の意見（Yes / No）。理由を2つ、それぞれ1文＋短い説明で。QUESTION に答えていないと0点になることがある。"
+    },
+    {
+     "id": "W2-015",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "あなたは，外国人の知り合いから以下の QUESTION をされました。QUESTION について，あなたの意見とその理由を2つ英文で書きなさい。語数の目安は50〜60語です。\n\nQUESTION: Do you think more people will use electric cars in the future?",
+     "minWords": 50,
+     "maxWords": 60,
+     "note": "最初に自分の意見（Yes / No）。理由を2つ、それぞれ1文＋短い説明で。QUESTION に答えていないと0点になることがある。"
+    },
+    {
+     "id": "W2-016",
+     "plus": true,
+     "type": "Opinion essay",
+     "prompt": "あなたは，外国人の知り合いから以下の QUESTION をされました。QUESTION について，あなたの意見とその理由を2つ英文で書きなさい。語数の目安は50〜60語です。\n\nQUESTION: Do you think schools should start classes later in the morning?",
      "minWords": 50,
      "maxWords": 60,
      "note": "最初に自分の意見（Yes / No）。理由を2つ、それぞれ1文＋短い説明で。QUESTION に答えていないと0点になることがある。"
@@ -1860,6 +3344,101 @@
        "why": "隣に学校があり昼間はうるさい（next door → near）。駅に近く、部屋は明るい。"
       }
      ]
+    },
+    {
+     "id": "L1-021",
+     "plus": true,
+     "script": "W: Hi. I'd like to stay one more night. Is my room available until Sunday?\nM: I'm sorry, ma'am. We're fully booked this weekend because of a music festival.\nW: Oh, no. Do you know any other hotels nearby?\nM: There's one next to the station. I can call them and check for you.\nW: That would be great. Thank you.\nQuestion: What will the man do next?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What will the man do next?",
+       "choices": [
+        "Change the woman's room.",
+        "Buy a festival ticket for the woman.",
+        "Call another hotel for the woman.",
+        "Drive the woman to the station."
+       ],
+       "answer": 2,
+       "why": "満室なので、駅の隣のホテルに電話して空きを確かめると申し出ている。部屋の変更や駅まで送る話は無い。"
+      }
+     ]
+    },
+    {
+     "id": "L1-022",
+     "plus": true,
+     "script": "M: Nicole, the printer on our floor is broken again.\nW: Really? I need to print the handouts for my presentation at three.\nM: You can use the one on the fifth floor. It's a bit slow, though.\nW: Then I'd better go now. There are fifty pages to print.\nQuestion: What does the woman decide to do?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What does the woman decide to do?",
+       "choices": [
+        "Repair the printer on her floor.",
+        "Print her handouts on another floor right away.",
+        "Change the time of her presentation.",
+        "Give her presentation without handouts."
+       ],
+       "answer": 1,
+       "why": "自分の階のプリンターが壊れたので、遅い5階のプリンターで今すぐ印刷しに行く。修理や時間の変更の話ではない。"
+      }
+     ]
+    },
+    {
+     "id": "L1-023",
+     "plus": true,
+     "script": "W: Steve, can I borrow your camera for my school trip next week?\nM: Sure, but the battery doesn't last very long anymore.\nW: How long does it last?\nM: Only about an hour. You should buy an extra battery. The electronics store on Oak Street sells them.\nW: OK. I'll go there after school tomorrow.\nQuestion: What will the girl do tomorrow?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What will the girl do tomorrow?",
+       "choices": [
+        "Buy a battery for the camera.",
+        "Return the camera to Steve.",
+        "Go on her school trip.",
+        "Buy a new camera on Oak Street."
+       ],
+       "answer": 0,
+       "why": "バッテリーが1時間ほどしかもたないので、予備のバッテリーを買いに明日の放課後に店へ行く。カメラ自体は借りる。"
+      }
+     ]
+    },
+    {
+     "id": "L1-024",
+     "plus": true,
+     "script": "M: Hi, Emi. Did you sign up for the Thai cooking class at the community center?\nW: I tried to, but it was already full. I was really disappointed.\nM: That's too bad. I heard they're starting another one in May.\nW: Really? Then I'll call them today and ask them to save me a place.\nQuestion: Why was the woman disappointed?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why was the woman disappointed?",
+       "choices": [
+        "There were no places left in the class.",
+        "The class was canceled.",
+        "The class was too expensive.",
+        "The class will not start until May."
+       ],
+       "answer": 0,
+       "why": "申し込もうとしたら満員だった（already full）のでがっかりした。5月の別の講座の話は後で出てきた良い知らせ。"
+      }
+     ]
+    },
+    {
+     "id": "L1-025",
+     "plus": true,
+     "script": "W: Excuse me. I'd like to join this gym. How much is it?\nM: It's 60 dollars a month. But if you only come on weekdays before five, it's 40 dollars.\nW: I work until six on weekdays, so I can only come in the evenings and on weekends.\nM: I see. Then the regular plan is the best one for you.\nQuestion: Which plan will the woman probably choose?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Which plan will the woman probably choose?",
+       "choices": [
+        "The one that costs 40 dollars a month.",
+        "The one only for weekends.",
+        "The one only for weekday mornings.",
+        "The one that costs 60 dollars a month."
+       ],
+       "answer": 3,
+       "why": "平日は6時まで働くので、5時前だけの40ドルの割引プランは使えない。だから通常の月60ドルのプラン。"
+      }
+     ]
     }
    ]
   },
@@ -2231,6 +3810,63 @@
        "why": "けがを防ぐため、少しずつ距離を伸ばすように言われた。走るのは週3回。"
       }
      ]
+    },
+    {
+     "id": "L2-021",
+     "plus": true,
+     "script": "Yui works at a bank, and she often feels tired after a long day at her desk. Last spring, she saw a poster for a pottery class near her apartment and decided to try it. At first, her bowls were not round, and some of them cracked while they were drying. Her teacher told her to be patient. Now, Yui makes her own cups and plates, and she gave a set of them to her parents as a present.\nQuestion: What did Yui give her parents?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What did Yui give her parents?",
+       "choices": [
+        "A poster from her pottery class.",
+        "Some dishes that she made herself.",
+        "Some cups that she bought at a store.",
+        "A ticket for a pottery class."
+       ],
+       "answer": 1,
+       "why": "今では自分でカップや皿を作り、そのセットを両親に贈った。ポスターは教室を知ったきっかけ。"
+      }
+     ]
+    },
+    {
+     "id": "L2-022",
+     "plus": true,
+     "script": "Attention, swimmers. Thank you for using the Westside City Pool. Today, the pool will close at five o'clock instead of eight because the water will be cleaned. Tomorrow, it will open at the usual time of nine in the morning. Also, starting next month, swimming lessons for children will be held on Saturday mornings. Please ask at the front desk for more information.\nQuestion: Why will the pool close early today?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "Why will the pool close early today?",
+       "choices": [
+        "The water will be cleaned.",
+        "Swimming lessons will be held.",
+        "The front desk will be closed.",
+        "It will open late tomorrow."
+       ],
+       "answer": 0,
+       "why": "水をきれいにするため、今日は8時ではなく5時に閉まる。明日は通常どおり9時に開く。子どもの水泳教室は来月から。"
+      }
+     ]
+    },
+    {
+     "id": "L2-023",
+     "plus": true,
+     "script": "Many people believe that camels keep water in the humps on their backs. However, a camel's hump is actually full of fat. When there is not much food in the desert, camels use this fat for energy. Camels can also drink a lot of water very quickly. A thirsty camel can drink about 100 liters in only ten minutes. This helps them travel long distances in hot, dry places.\nQuestion: What is one thing we learn about camels?",
+     "questions": [
+      {
+       "type": "mcq",
+       "q": "What is one thing we learn about camels?",
+       "choices": [
+        "They keep water in their humps.",
+        "They do not need any food in the desert.",
+        "They can drink a large amount of water quickly.",
+        "They can only travel short distances."
+       ],
+       "answer": 2,
+       "why": "のどが渇いたラクダは10分で約100リットル飲める。こぶの中は水ではなく脂肪なので、2つ目は誤り。"
+      }
+     ]
     }
    ]
   },
@@ -2418,6 +4054,192 @@
       {
        "type": "No. 4",
        "prompt": "Today, many people use stairs instead of elevators to get exercise. Do you think people get enough exercise in their daily lives? Why or why not?",
+       "timeSec": 30,
+       "ja": "Yes. / No. の後に理由を2文。身近な具体例があると良い。"
+      }
+     ]
+    },
+    {
+     "id": "S1-007",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Read aloud",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 30,
+       "readAloud": "Recycling Old Phones\n\nMany people buy new smartphones every few years. Some electronics stores now collect old phones from their customers. The stores send the phones to special factories, and by doing so they help to reuse the valuable metals inside them. Such programs are expected to become more common in the future.",
+       "ja": "まず20秒で黙読してから、タイトルも含めて音読。意味の切れ目で区切り、はっきり読む。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "According to the passage, how do some electronics stores help to reuse the valuable metals inside old phones?",
+       "timeSec": 20,
+       "ja": "答えの形：By sending the phones to special factories.（by doing so / in this way の前を見る）"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Some people say that people buy new things too often these days. What do you think about that?",
+       "timeSec": 30,
+       "ja": "I agree. / I disagree. で立場を言い、理由を2文で。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "Today, many people repair their own clothes and furniture instead of throwing them away. Do you think this is a good idea? Why or why not?",
+       "timeSec": 30,
+       "ja": "Yes. / No. の後に理由を2文。身近な具体例があると良い。"
+      }
+     ]
+    },
+    {
+     "id": "S1-008",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Read aloud",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 30,
+       "readAloud": "Reading to Dogs\n\nSome children feel nervous when they read aloud in front of their classmates. Some libraries now hold events where children read books to friendly dogs. The dogs listen quietly, and in this way the children can practice reading without feeling embarrassed. Many parents say their children have started to enjoy books more.",
+       "ja": "まず20秒で黙読してから、タイトルも含めて音読。意味の切れ目で区切り、はっきり読む。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "According to the passage, how can the children practice reading without feeling embarrassed?",
+       "timeSec": 20,
+       "ja": "答えの形：By reading books to friendly dogs (that listen quietly).（by doing so / in this way の前を見る）"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Some people say that children should read more books instead of watching videos. What do you think about that?",
+       "timeSec": 30,
+       "ja": "I agree. / I disagree. で立場を言い、理由を2文で。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "Today, many families keep pets in their homes. Do you think having a pet is good for children? Why or why not?",
+       "timeSec": 30,
+       "ja": "Yes. / No. の後に理由を2文。身近な具体例があると良い。"
+      }
+     ]
+    },
+    {
+     "id": "S1-009",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Read aloud",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 30,
+       "readAloud": "Hands-On Science\n\nScience museums are popular places for families. Many science museums now have areas where visitors can touch and try the exhibits. Children build simple machines and do small experiments, and by doing so they can learn how science works. Such museums are attracting more visitors on weekends and during school vacations.",
+       "ja": "まず20秒で黙読してから、タイトルも含めて音読。意味の切れ目で区切り、はっきり読む。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "According to the passage, how can children learn how science works?",
+       "timeSec": 20,
+       "ja": "答えの形：By building simple machines and doing small experiments.（by doing so / in this way の前を見る）"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Some people say that students should go on more school trips to places like museums. What do you think about that?",
+       "timeSec": 30,
+       "ja": "I agree. / I disagree. で立場を言い、理由を2文で。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "Today, many people watch science programs and videos on the Internet. Do you think the Internet is a good way to learn? Why or why not?",
+       "timeSec": 30,
+       "ja": "Yes. / No. の後に理由を2文。身近な具体例があると良い。"
+      }
+     ]
+    },
+    {
+     "id": "S1-010",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Read aloud",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 30,
+       "readAloud": "Language Learning Apps\n\nMany people want to learn a foreign language, but it is hard to find time to go to classes. Some companies now offer smartphone apps for language learning. Users study for a few minutes every day on the train or at lunch, and in this way they can keep learning even when they are busy.",
+       "ja": "まず20秒で黙読してから、タイトルも含めて音読。意味の切れ目で区切り、はっきり読む。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "According to the passage, how can users keep learning even when they are busy?",
+       "timeSec": 20,
+       "ja": "答えの形：By studying for a few minutes every day on the train or at lunch.（by doing so / in this way の前を見る）"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Some people say that it is better to learn a foreign language from a teacher than by oneself. What do you think about that?",
+       "timeSec": 30,
+       "ja": "I agree. / I disagree. で立場を言い、理由を2文で。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "Today, many Japanese students go abroad to study. Do you think more students should study abroad? Why or why not?",
+       "timeSec": 30,
+       "ja": "Yes. / No. の後に理由を2文。身近な具体例があると良い。"
+      }
+     ]
+    },
+    {
+     "id": "S1-011",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Read aloud",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 30,
+       "readAloud": "Safer Cycling\n\nMany people ride bicycles to work or school. Some cities have built special lanes that only bicycles can use. Riders use these lanes instead of busy roads, and by doing so they can travel more safely. Such lanes are also encouraging more people to start riding bicycles in their daily lives.",
+       "ja": "まず20秒で黙読してから、タイトルも含めて音読。意味の切れ目で区切り、はっきり読む。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "According to the passage, how can riders travel more safely?",
+       "timeSec": 20,
+       "ja": "答えの形：By using special lanes (only for bicycles) instead of busy roads.（by doing so / in this way の前を見る）"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Some people say that cities should have more streets where cars are not allowed. What do you think about that?",
+       "timeSec": 30,
+       "ja": "I agree. / I disagree. で立場を言い、理由を2文で。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "Today, many people use smartphone maps when they go to new places. Do you think paper maps are still useful? Why or why not?",
+       "timeSec": 30,
+       "ja": "Yes. / No. の後に理由を2文。身近な具体例があると良い。"
+      }
+     ]
+    },
+    {
+     "id": "S1-012",
+     "plus": true,
+     "tasks": [
+      {
+       "type": "Read aloud",
+       "prompt": "Please read the passage aloud.",
+       "timeSec": 30,
+       "readAloud": "Classes for Adults\n\nMore adults are interested in learning new skills after they start working. Some universities now offer evening classes for working people. These people take classes after work, and in this way they can gain new knowledge without leaving their jobs. Such classes are expected to become more popular in the future.",
+       "ja": "まず20秒で黙読してから、タイトルも含めて音読。意味の切れ目で区切り、はっきり読む。"
+      },
+      {
+       "type": "No. 1",
+       "prompt": "According to the passage, how can working people gain new knowledge without leaving their jobs?",
+       "timeSec": 20,
+       "ja": "答えの形：By taking (evening) classes after work.（by doing so / in this way の前を見る）"
+      },
+      {
+       "type": "No. 3",
+       "prompt": "Some people say that companies should give workers more time to study new skills. What do you think about that?",
+       "timeSec": 30,
+       "ja": "I agree. / I disagree. で立場を言い、理由を2文で。"
+      },
+      {
+       "type": "No. 4",
+       "prompt": "Today, many older people continue working after the age of 65. Do you think this is a good idea? Why or why not?",
        "timeSec": 30,
        "ja": "Yes. / No. の後に理由を2文。身近な具体例があると良い。"
       }
