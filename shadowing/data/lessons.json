@@ -7572,123 +7572,131 @@
    "audio_only": null,
    "subs_en": "subs/L3-4.en.vtt",
    "subs_ja": "subs/L3-4.ja.vtt",
-   "clip_start": 83.24,
-   "clip_end": 189.2,
+   "clip_start": 70.0,
+   "clip_end": 252.26,
    "cover_height": 0.22,
    "repeat": "line",
    "synopsis": null,
    "vocab": [
     {
-     "en": "circus performers",
-     "ja": "サーカスの出演者・パフォーマー"
+     "en": "circus festival",
+     "ja": "サーカスのフェスティバル（サーカスが集まるお祭り）"
     },
     {
-     "en": "athletic",
-     "ja": "運動能力が高い、スポーツ向きの"
+     "en": "performers",
+     "ja": "出演者・パフォーマー"
+    },
+    {
+     "en": "a celebration of ~",
+     "ja": "〜を祝うイベント・お祭り"
     },
     {
      "en": "point of view",
-     "ja": "考え方、見方、視点"
-    },
-    {
-     "en": "completely disagree",
-     "ja": "まったく同意しない、全然そう思わない"
+     "ja": "考え方・見方"
     },
     {
      "en": "trapeze artists",
-     "ja": "空中ブランコの曲芸師（トラピーズ・アーティスト）"
+     "ja": "空中ブランコのアーティスト"
     },
     {
      "en": "jugglers",
-     "ja": "ジャグラー、ジャグリングをする人たち"
+     "ja": "ジャグリングをする人たち"
     },
     {
-     "en": "skilled in the art of ~",
-     "ja": "〜の技に長けている、〜の技を極めている"
+     "en": "go back and forth on this issue",
+     "ja": "この問題で言い合う・行ったり来たり議論する"
     },
     {
-     "en": "going back and forth on this issue",
-     "ja": "この問題で意見が行ったり来たりしている"
+     "en": "I agree with you on that point.",
+     "ja": "その点には同意します。"
     },
     {
-     "en": "agree with you on that point",
-     "ja": "その点についてはあなたに同意する"
+     "en": "circus performers",
+     "ja": "サーカスの出演者たち"
+    },
+    {
+     "en": "competitive",
+     "ja": "競争の・競い合う性質のある"
     }
    ],
    "quiz": [
     {
-     "q": "ピートはサーカスの出演者について、主にどのように考えていますか？",
+     "q": "ピートはサーカスの出演者について、どのように考えていますか？",
      "choices": [
-      "本物の芸術家だと思っている",
-      "運動能力の高いアスリートだと思っている",
-      "まったく才能がないと思っている",
-      "危険すぎて見たくないと思っている"
+      "本物のアーティストだと思っている",
+      "アスリートだがアーティストではないと思っている",
+      "どちらでもないと思っている",
+      "まだよく知らないと言っている"
      ],
      "answer": 1,
-     "explain": "ピートは彼らを「athletes with interesting skills and costumes」と言い、アスリートだと考えています。"
+     "explain": "ピートは、彼らは「athletes with interesting skills」と言い、アーティストではないと主張しています。"
     },
     {
-     "q": "アンナが「trapeze artists」と呼んでいる人たちは、どんなことをする人たちですか？",
+     "q": "アンナが『trapeze artists』と言うとき、何を強調していますか？",
      "choices": [
-      "ピエロの格好で歌う人たち",
-      "空中ブランコで技をする人たち",
-      "動物の世話をする人たち",
-      "楽器を演奏する人たち"
-     ],
-     "answer": 1,
-     "explain": "trapeze は空中ブランコのことで、そこで技をする人を trapeze artists と呼んでいます。"
-    },
-    {
-     "q": "ピートが「They’re just throwing things back and forth.」と言ったとき、何について話していますか？",
-     "choices": [
-      "トランポリン選手",
-      "観客",
-      "ジャグラー",
-      "ピエロ"
+      "彼らが危険な仕事をしていること",
+      "彼らが有名人であること",
+      "『artist』という呼び名がついていること",
+      "彼らの給料が高いこと"
      ],
      "answer": 2,
-     "explain": "直前に「They’re jugglers.」とあり、ジャグラーについて「物を投げ合っているだけ」と話しています。"
+     "explain": "アンナは「Trapeze … ARTISTS.」と“artist”の部分を強調し、アートだと主張しています。"
     },
     {
-     "q": "アンナが「we can agree that these young people are amazing」と言うとき、何を提案していますか？",
+     "q": "２人が『この若者たちはすごい』という点で同意したあと、ピートは何と言いますか？",
      "choices": [
-      "議論をやめて別の番組を始めること",
-      "少なくとも若い出演者たちがすごいという点では同意しようということ",
-      "サーカスはよくないと結論づけること",
-      "みんなアスリートだと認めることをやめること"
+      "それでも彼らはとてもアスリート的だと言う",
+      "やっぱりアーティストだと考えを変える",
+      "サーカスが嫌いだと言う",
+      "話題を変えようとする"
      ],
-     "answer": 1,
-     "explain": "芸術かどうかでは意見が分かれますが、「若者たちはすごい」という点なら一緒に認めようと提案しています。"
+     "answer": 0,
+     "explain": "ピートは「they are very athletic – flipping and throwing each other around」と、運動的だと強調します。"
     },
     {
-     "q": "Professor Bot は、アンナとピートがどの点で同意したと言っていますか？",
+     "q": "ケイトが言う『with most sports, you compete』の意味として最も近いものはどれですか？",
      "choices": [
-      "サーカスは危険すぎるという点",
-      "サーカスは芸術ではないという点",
-      "出演者たちは運動能力が高いという点",
-      "ジャグリングは簡単だという点"
+      "ほとんどのスポーツはつまらない",
+      "ほとんどのスポーツは危険だ",
+      "ほとんどのスポーツは勝ち負けを競う",
+      "ほとんどのスポーツはお金がかかる"
      ],
      "answer": 2,
-     "explain": "ロボットは「Anna says she agrees that the performers are athletic.」と説明し、出演者が運動能力に優れている点で一致したとまとめています。"
+     "explain": "ここでの compete は「勝ち負けを争う・競い合う」という意味です。"
+    },
+    {
+     "q": "ケイトがサーカスを『art form』だと言う理由として正しいものはどれですか？",
+     "choices": [
+      "サーカスには音楽があるから",
+      "サーカスはシンプルに演じて楽しませることが中心だから",
+      "サーカスは危険だから",
+      "サーカスには有名人が出るから"
+     ],
+     "answer": 1,
+     "explain": "ケイトは「This is simply performing and having fun.」と言い、競争ではなく表現と楽しさが中心だと説明しています。"
     }
    ],
    "ja_reviewed": false,
    "ja_unsure": [
     {
-     "line": 10,
-     "why": "「trapeze artists」を「空中ブランコ・アーティスト」とカタカナで残したが、日本語としてどこまで自然かやや迷いがあります。"
+     "line": 3,
+     "why": "celebration of circus arts を「サーカス芸を祝うお祭り」とやや意訳しており、雰囲気重視の訳にしたため。"
     },
     {
-     "line": 21,
-     "why": "「going back and forth on this issue」を比喩的に「行ったり来たりしてる」と訳したが、議論の応酬のニュアンスが十分伝わるか少し不安です。"
-    },
-    {
-     "line": 27,
-     "why": "「flipping and throwing each other around」を「宙返りしたり、お互いを放り投げたり」と意訳したが、激しさの度合いをどこまで出すか迷いました。"
+     "line": 28,
+     "why": "They're just throwing things back and forth. を「行ったり来たり放り投げている」と訳し、軽いニュアンスをどこまで出すか迷いました。"
     },
     {
      "line": 31,
-     "why": "Professor Bot のセリフを引用っぽく「『〜』」としたが、字幕教材としてこのスタイルが適切か判断が分かれそうです。"
+     "why": "We’re going back and forth on this issue. の on this issue を「この問題で」としつつ、日本語では少し説明的かどうか迷いました。"
+    },
+    {
+     "line": 36,
+     "why": "flipping and throwing each other around を、自然さを優先して２文目で補足的に訳しており、直訳度合いに迷いがあります。"
+    },
+    {
+     "line": 63,
+     "why": "It’s an art form because like, other sports are competing. の because like, を「ほかのスポーツは競争だけど、これは表現することが中心だから」と因果関係を補って意訳しています。"
     }
    ],
    "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
@@ -7696,213 +7704,399 @@
    "lines": [
     {
      "start": 0.4,
-     "end": 4.99,
-     "en": "That looks fun, Anna, but I don't think circus performers are artists.",
-     "ja": "楽しそうだね、アンナ。でもサーカスの出演者は芸術家じゃないと思うな。"
+     "end": 4.09,
+     "en": "Recently, I went to a circus festival.",
+     "ja": "最近、サーカスのフェスティバルに行ったんです。"
     },
     {
-     "start": 5.3,
-     "end": 10.09,
-     "en": "I think they're athletes with interesting skills and costumes.",
+     "start": 4.52,
+     "end": 6.73,
+     "en": "There was a huge circus tent.",
+     "ja": "そこには大きなサーカスのテントがあって、"
+    },
+    {
+     "start": 6.58,
+     "end": 9.37,
+     "en": "And many different circus performers.",
+     "ja": "いろいろな種類の出演者がいました。"
+    },
+    {
+     "start": 9.98,
+     "end": 13.05,
+     "en": "It was a celebration of circus arts!",
+     "ja": "まさにサーカス芸を祝うお祭りでした！"
+    },
+    {
+     "start": 13.64,
+     "end": 14.61,
+     "en": "That looks fun, Anna.",
+     "ja": "楽しそうだね、アンナ。"
+    },
+    {
+     "start": 14.88,
+     "end": 18.23,
+     "en": "But I don’t think circus performers are artists.",
+     "ja": "でも、サーカスの出演者はアーティストだとは思わないな。"
+    },
+    {
+     "start": 18.54,
+     "end": 23.33,
+     "en": "I think they’re athletes with interesting skills … and costumes.",
      "ja": "面白い技と衣装を持ったアスリートだと思う。"
     },
     {
-     "start": 10.48,
-     "end": 13.77,
+     "start": 23.72,
+     "end": 27.01,
      "en": "Hmm, that is a very interesting point of view, Pete.",
-     "ja": "ふうん、それはすごく興味深い考え方ね、ピート。"
+     "ja": "ふむ、それはとても興味深い考え方ね、ピート。"
     },
     {
-     "start": 14.04,
-     "end": 16.19,
+     "start": 27.28,
+     "end": 29.43,
      "en": "And I completely disagree.",
      "ja": "でも私はまったくそうは思わないわ。"
     },
     {
-     "start": 17.08,
-     "end": 20.19,
+     "start": 30.32,
+     "end": 33.43,
      "en": "Anna, Michelangelo was an artist.",
-     "ja": "アンナ、ミケランジェロは芸術家だろ。"
+     "ja": "アンナ、ミケランジェロはアーティストだった。"
     },
     {
-     "start": 20.94,
-     "end": 22.85,
+     "start": 34.18,
+     "end": 36.09,
      "en": "Rembrandt was an artist.",
-     "ja": "レンブラントも芸術家だ。"
+     "ja": "レンブラントもアーティストだった。"
     },
     {
-     "start": 22.7,
-     "end": 26.63,
+     "start": 35.94,
+     "end": 39.87,
      "en": "People who swing from ropes are not artists.",
-     "ja": "ロープにぶら下がって揺れている人たちは芸術家じゃないよ。"
+     "ja": "ロープにぶら下がって揺れている人たちは、アーティストじゃないよ。"
     },
     {
-     "start": 27.06,
-     "end": 31.43,
-     "en": "I know it's not easy to swing from a bar and catch someone by the hands.",
-     "ja": "バーにぶら下がって、人の手をつかむのが簡単じゃないのはわかってる。"
+     "start": 40.3,
+     "end": 44.67,
+     "en": "I know it’s not easy to swing from a bar and catch someone by the hands.",
+     "ja": "バーにぶら下がって揺れて、相手の手をつかむのが簡単じゃないのはわかる。"
     },
     {
-     "start": 31.44,
-     "end": 34.43,
+     "start": 44.68,
+     "end": 47.67,
      "en": "You have to be very athletic to do that.",
-     "ja": "あれをやるには、相当運動神経がよくないといけない。"
+     "ja": "あれをするには、とても運動神経がよくないといけない。"
     },
     {
-     "start": 34.46,
-     "end": 35.71,
-     "en": "That's a good point, Pete.",
-     "ja": "それはいいところに気づいたわね、ピート。"
+     "start": 47.7,
+     "end": 48.95,
+     "en": "That’s a good point, Pete.",
+     "ja": "それはいい指摘ね、ピート。"
     },
     {
-     "start": 36.26,
-     "end": 41.53,
-     "en": "They are athletic, but they are called trapeze artists.",
-     "ja": "たしかに運動能力は高いけど、「空中ブランコ・アーティスト」って呼ばれているのよ。"
+     "start": 49.5,
+     "end": 50.95,
+     "en": "They are athletic.",
+     "ja": "彼らは運動能力が高いわ。"
     },
     {
-     "start": 42.82,
-     "end": 44.17,
-     "en": "Trapeze artists.",
-     "ja": "トラピーズ・アーティストよ。"
+     "start": 51.12,
+     "end": 54.77,
+     "en": "But they are called trapeze artists.",
+     "ja": "でも彼らは「空中ブランコのアーティスト」って呼ばれているの。"
     },
     {
-     "start": 44.72,
-     "end": 46.61,
-     "en": "I hear what you're saying, Anna.",
+     "start": 56.06,
+     "end": 57.41,
+     "en": "Trapeze … ARTISTS.",
+     "ja": "空中ブランコの…アーティストよ。"
+    },
+    {
+     "start": 57.96,
+     "end": 59.85,
+     "en": "I hear what you’re saying, Anna.",
      "ja": "君の言いたいことはわかるよ、アンナ。"
     },
     {
-     "start": 46.72,
-     "end": 47.15,
+     "start": 59.96,
+     "end": 60.39,
      "en": "I do.",
-     "ja": "本当にわかってる。"
+     "ja": "本当にね。"
     },
     {
-     "start": 47.32,
-     "end": 49.85,
+     "start": 60.56,
+     "end": 63.09,
      "en": "But where is the art?",
      "ja": "でも、そのどこに芸術性があるんだい？"
     },
     {
-     "start": 50.16,
-     "end": 51.19,
+     "start": 63.4,
+     "end": 64.43,
      "en": "Look at these guys.",
      "ja": "この人たちを見てごらん。"
     },
     {
-     "start": 51.04,
-     "end": 53.05,
-     "en": "They're jugglers.",
-     "ja": "ジャグリングをする人たちだ。"
+     "start": 64.28,
+     "end": 66.29,
+     "en": "They’re jugglers.",
+     "ja": "ジャグリングの人たちだよ。"
     },
     {
-     "start": 53.5,
-     "end": 57.47,
+     "start": 66.74,
+     "end": 70.71,
      "en": "Yes, they are skilled in the art of juggling.",
-     "ja": "そうね、ジャグリングという技を極めているわ。"
+     "ja": "ええ、彼らはジャグリングという技を極めているわ。"
     },
     {
-     "start": 57.84,
-     "end": 60.69,
-     "en": "They have a special skill, but are they artists?",
-     "ja": "特別な技はあるけど、それで芸術家と言えるのかい？"
+     "start": 71.08,
+     "end": 72.53,
+     "en": "They have a special skill.",
+     "ja": "特別な技術は持っている。"
     },
     {
-     "start": 61.14,
-     "end": 61.55,
-     "en": "No.",
-     "ja": "いや。"
+     "start": 72.68,
+     "end": 73.93,
+     "en": "But are they artists?",
+     "ja": "でも、アーティストと言えるかな？"
     },
     {
-     "start": 62.18,
-     "end": 64.57,
+     "start": 73.78,
+     "end": 74.53,
+     "en": "Yes!",
+     "ja": "言えるわ！"
+    },
+    {
+     "start": 74.38,
+     "end": 74.79,
+     "en": "No!",
+     "ja": "言えないね！"
+    },
+    {
+     "start": 75.42,
+     "end": 77.81,
      "en": "They're just throwing things back and forth.",
-     "ja": "ただ物を投げ合っているだけじゃないか。"
+     "ja": "ただ物を行ったり来たり放り投げているだけだよ。"
     },
     {
-     "start": 64.68,
-     "end": 68.63,
-     "en": "Kind of like you and me, Pete, we're going back and forth on this issue.",
-     "ja": "あなたと私も同じよ、ピート。この話題で、行ったり来たりしてるでしょ。"
+     "start": 77.92,
+     "end": 79.31,
+     "en": "Kind of like you and me, Pete.",
+     "ja": "あなたと私もそんな感じね、ピート。"
     },
     {
-     "start": 70.28,
-     "end": 72.81,
-     "en": "I don't think we'll ever agree on this one.",
-     "ja": "この件では一生意見が合わない気がするな。"
+     "start": 79.52,
+     "end": 81.87,
+     "en": "We’re going back and forth on this issue.",
+     "ja": "この問題で、行ったり来たり言い合ってるでしょ。"
     },
     {
-     "start": 73.2,
-     "end": 78.09,
+     "start": 83.52,
+     "end": 86.05,
+     "en": "I don’t think we’ll ever agree on this one.",
+     "ja": "このことでは一生、意見が合わない気がするな。"
+    },
+    {
+     "start": 86.44,
+     "end": 91.33,
      "en": "No, but we can agree that these young people are amazing.",
-     "ja": "そうね。でも、この若者たちがすごいってことでは意見が合うでしょ。"
+     "ja": "そうね、でもこの若者たちがすごいってことには、意見が合うでしょ。"
     },
     {
-     "start": 77.94,
-     "end": 79.87,
+     "start": 91.18,
+     "end": 93.11,
      "en": "Okay, yeah.",
-     "ja": "ああ、それはそうだね。"
+     "ja": "そうだね、うん。"
     },
     {
-     "start": 80.18,
-     "end": 81.79,
+     "start": 93.42,
+     "end": 95.03,
      "en": "We can agree on that.",
-     "ja": "そこは同じ考えだ。"
+     "ja": "それには同意できるよ。"
     },
     {
-     "start": 82.08,
-     "end": 87.33,
-     "en": "But still, they are very athletic, flipping and throwing each other around.",
-     "ja": "でもやっぱり、とても運動能力が高いだけだよ。宙返りしたり、お互いを放り投げたりしてるんだ。"
+     "start": 95.32,
+     "end": 100.57,
+     "en": "But, still, they are very athletic – flipping and throwing each other around.",
+     "ja": "でもやっぱり、あの子たちはとてもアスリート的だよ。宙返りしたり、お互いを放り投げたりしてる。"
     },
     {
-     "start": 87.74,
-     "end": 90.11,
+     "start": 100.98,
+     "end": 103.35,
      "en": "Yes, I agree with you on that point.",
-     "ja": "ええ、その点については私も同意するわ。"
+     "ja": "ええ、その点には私も同意するわ。"
     },
     {
-     "start": 90.58,
-     "end": 91.51,
-     "en": "They did it.",
-     "ja": "やりましたね。"
+     "start": 103.82,
+     "end": 104.75,
+     "en": "They did it!",
+     "ja": "やりましたね！"
     },
     {
-     "start": 91.52,
-     "end": 92.31,
-     "en": "They agree.",
-     "ja": "二人の意見が合いました。"
+     "start": 104.76,
+     "end": 105.05,
+     "en": "They agreed!!",
+     "ja": "２人の意見が合いました！"
     },
     {
-     "start": 92.66,
-     "end": 96.35,
+     "start": 105.9,
+     "end": 109.59,
      "en": "Anna says she agrees that the performers are athletic.",
-     "ja": "アンナは、出演者たちは運動能力が高いという点には賛成だと言いました。"
+     "ja": "アンナは、出演者たちが運動能力が高いという点では同意すると言いました。"
     },
     {
-     "start": 96.92,
-     "end": 98.33,
-     "en": "That's a good point, Pete.",
-     "ja": "「それはいい指摘ね、ピート。」"
+     "start": 110.16,
+     "end": 111.57,
+     "en": "“That’s a good point, Pete.",
+     "ja": "「それはいい指摘ね、ピート。"
     },
     {
-     "start": 98.84,
-     "end": 100.31,
+     "start": 112.08,
+     "end": 113.55,
      "en": "They are athletic.",
-     "ja": "「彼らは運動能力が高いわ。」"
+     "ja": "彼らは運動能力が高いわ。」"
     },
     {
-     "start": 100.78,
-     "end": 102.51,
-     "en": "I agree with you on that point.",
-     "ja": "「その点ではあなたに賛成よ。」"
+     "start": 114.02,
+     "end": 115.75,
+     "en": "I agree with you on that point.”",
+     "ja": "「その点には私も同意するわ。」と。"
     },
     {
-     "start": 102.96,
-     "end": 105.51,
+     "start": 116.2,
+     "end": 118.75,
      "en": "Now look for other ways they agree.",
-     "ja": "さあ、ほかに二人が同じ考えになるところを探してみましょう。"
+     "ja": "さあ、このあと２人が他にどうやって同意しているか探してみましょう。"
+    },
+    {
+     "start": 119.64,
+     "end": 120.51,
+     "en": "Anna?",
+     "ja": "アンナ？"
+    },
+    {
+     "start": 121.6,
+     "end": 122.47,
+     "en": "Anna!!",
+     "ja": "アンナったら！"
+    },
+    {
+     "start": 123.8,
+     "end": 125.25,
+     "en": "Sorry! Sorry!",
+     "ja": "ごめん、ごめん！"
+    },
+    {
+     "start": 125.42,
+     "end": 127.03,
+     "en": "But he’s an artist too.",
+     "ja": "でも、彼もアーティストなの。"
+    },
+    {
+     "start": 127.62,
+     "end": 131.59,
+     "en": "He is telling a story with his sticks and his costume.",
+     "ja": "棒と衣装を使って物語を表現しているのよ。"
+    },
+    {
+     "start": 131.68,
+     "end": 132.71,
+     "en": "What story?",
+     "ja": "どんな物語だい？"
+    },
+    {
+     "start": 133.74,
+     "end": 134.59,
+     "en": "What costume?",
+     "ja": "どんな衣装だよ？"
+    },
+    {
+     "start": 135.34,
+     "end": 136.99,
+     "en": "I see your point, Pete.",
+     "ja": "あなたの言いたいことはわかるわ、ピート。"
+    },
+    {
+     "start": 137.26,
+     "end": 138.43,
+     "en": "I really do.",
+     "ja": "本当にわかるの。"
+    },
+    {
+     "start": 138.94,
+     "end": 142.33,
+     "en": "But circus performers do more than physical tricks.",
+     "ja": "でもサーカスの出演者は、ただ技を見せているだけじゃないのよ。"
+    },
+    {
+     "start": 142.78,
+     "end": 143.27,
+     "en": "Look!",
+     "ja": "見て！"
+    },
+    {
+     "start": 143.52,
+     "end": 145.41,
+     "en": "Look at these amazing performers!",
+     "ja": "このすごい出演者たちを見て！"
+    },
+    {
+     "start": 146.62,
+     "end": 149.97,
+     "en": "I will admit -- I like their costumes.",
+     "ja": "それは認めるよ──彼らの衣装は好きだな。"
+    },
+    {
+     "start": 150.42,
+     "end": 151.03,
+     "en": "You know, Pete.",
+     "ja": "ねえ、ピート。"
+    },
+    {
+     "start": 151.48,
+     "end": 154.99,
+     "en": "Let’s let the performers speak for themselves.",
+     "ja": "出演者たち自身に語ってもらいましょう。"
+    },
+    {
+     "start": 155.28,
+     "end": 161.03,
+     "en": "Kate and Piper tell stories while hanging upside down on a ring!",
+     "ja": "ケイトとパイパーは、輪に逆さにぶら下がりながら物語を伝えるのよ！"
+    },
+    {
+     "start": 161.44,
+     "end": 164.47,
+     "en": "Was it hard to interview them upside down?",
+     "ja": "逆さまのままインタビューするのは大変じゃなかった？"
+    },
+    {
+     "start": 164.8,
+     "end": 167.21,
+     "en": "I interviewed them right side up, Pete.",
+     "ja": "インタビューしたときはふつうに立ってもらったわよ、ピート。"
+    },
+    {
+     "start": 167.72,
+     "end": 173.67,
+     "en": "Kate says circus performing may be athletic but it’s not competitive.",
+     "ja": "ケイトは、サーカスの演技は運動的かもしれないけれど、競い合うものじゃないと言っているわ。"
+    },
+    {
+     "start": 173.52,
+     "end": 176.67,
+     "en": "With most sports, you compete.",
+     "ja": "多くのスポーツでは、勝ち負けを争うでしょ。"
+    },
+    {
+     "start": 176.84,
+     "end": 179.49,
+     "en": "It’s an art form because like, other sports are competing.",
+     "ja": "ほかのスポーツは競争だけど、これは表現することが中心だから、ひとつの芸術なんです。"
+    },
+    {
+     "start": 179.92,
+     "end": 181.81,
+     "en": "This is simply performing and having fun.",
+     "ja": "これはただ演じて、人を楽しませることなんですよ。"
     }
    ]
   },
@@ -8627,6 +8821,442 @@
    ]
   },
   {
+   "id": "L3-7",
+   "level": 3,
+   "title": "Tip Your Tour Guide",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/lesson-7-tip-your-tour-guide/4064769.html",
+   "video": "media/L3-7.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L3-7.en.vtt",
+   "subs_ja": "subs/L3-7.ja.vtt",
+   "clip_start": 90.52,
+   "clip_end": 255.78,
+   "cover_height": 0.22,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "riding over bridges",
+     "ja": "橋の上を進むこと（乗り物で橋を渡っている状態）"
+    },
+    {
+     "en": "along the river",
+     "ja": "川沿いに"
+    },
+    {
+     "en": "passing by",
+     "ja": "〜のそばを通り過ぎていて"
+    },
+    {
+     "en": "in flight",
+     "ja": "飛行中の"
+    },
+    {
+     "en": "drives and sails",
+     "ja": "車としても船としても動く"
+    },
+    {
+     "en": "railroad tracks",
+     "ja": "線路"
+    },
+    {
+     "en": "Fun Fact",
+     "ja": "おもしろ豆知識（ちょっとした雑学）"
+    },
+    {
+     "en": "Capitol",
+     "ja": "（米国）連邦議会議事堂"
+    },
+    {
+     "en": "lawmakers",
+     "ja": "立法者、議員たち"
+    },
+    {
+     "en": "funeral home",
+     "ja": "葬儀場、葬儀社"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "ペネロペが特に好きだと言っていたのは、どんな場面ですか？",
+     "choices": [
+      "橋の下をボートで進むとき",
+      "橋の上を通って川の上を走るとき",
+      "飛行機に乗っているとき",
+      "線路の上を走っているとき"
+     ],
+     "answer": 1,
+     "explain": "ペネロペは “I love riding over bridges.” と言い、水の上の橋を走るのが好きだと話しています。"
+    },
+    {
+     "q": "アナが「これは飛行機に一番近づいた」と言うのは、どんな状況のときですか？",
+     "choices": [
+      "空港の中で飛行機を見ているとき",
+      "飛行機の中に乗っているとき",
+      "頭の真上を飛行機が飛んでいるとき",
+      "飛行機の写真を見ているとき"
+     ],
+     "answer": 2,
+     "explain": "“An airplane is flying right over our heads!” とある通り、頭の真上を飛んでいるときです。"
+    },
+    {
+     "q": "議事堂の下にあるトンネルは、主に何のために作られたと言われていますか？",
+     "choices": [
+      "観光客のツアー用",
+      "秘密の会議をするため",
+      "議員が外に出ずに移動するため",
+      "お金を運ぶため"
+     ],
+     "answer": 2,
+     "explain": "Boy が「議員たちが悪天候の日に外を歩きたくなかったから」と説明しています。"
+    },
+    {
+     "q": "ユニオン駅に昔あったものとして、少年が紹介したのはどれですか？",
+     "choices": [
+      "銀行",
+      "葬儀場",
+      "図書館",
+      "ホテル"
+     ],
+     "answer": 1,
+     "explain": "“inside Union Station, there was a funeral home!” とあり、葬儀場だと分かります。"
+    },
+    {
+     "q": "アナがキャプテンに最後に言ったこととして正しいものはどれですか？",
+     "choices": [
+      "今日の天気は最高ですねと言った",
+      "次のツアーも予約したいと言った",
+      "楽しいツアーのお礼を言った",
+      "ペンタゴンの場所を聞いた"
+     ],
+     "answer": 2,
+     "explain": "アナは “Thanks for giving us the great tour!” とツアーのお礼を伝えています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 14,
+     "why": "“outside of an airplane as it flies over my head” のニュアンス（飛行機との位置関係）を「飛行機の外側にいる」と訳したが、日本語として少し説明的か迷いがある。"
+    },
+    {
+     "line": 19,
+     "why": "“my favorite part of the tour” を「ツアーで一番好きな場所」と場所に限定したが、「場面」や「ところ」など他の言い方もありうるため。"
+    },
+    {
+     "line": 22,
+     "why": "Professor Bot の “Did you hear these prepositions?” を「聞き取れたかな？」と訳し、「聞いたかな？」よりも学習的ニュアンスを強めており、直訳との距離がややある。"
+    },
+    {
+     "line": 31,
+     "why": "“for secret reasons” を「何か秘密の目的で」と意訳しており、「理由」ではなく「目的」にした点でニュアンスが少し変わっているかもしれない。"
+    },
+    {
+     "line": 46,
+     "why": "“I’ve never seen that boy in my life!” を「生まれてこのかた見たことないよ！」と口語的に強く訳しており、「今まで一度も見たことがない」がより無難かもしれない。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 3.15,
+     "en": "I love riding over bridges!",
+     "ja": "橋の上を走るのって大好き！"
+    },
+    {
+     "start": 3.42,
+     "end": 5.89,
+     "en": "The water looks so pretty from here!",
+     "ja": "ここから見る川がすごくきれい。"
+    },
+    {
+     "start": 9.82,
+     "end": 12.25,
+     "en": "Penelope, this is amazing!",
+     "ja": "ペネロペ、これすごいね。"
+    },
+    {
+     "start": 12.68,
+     "end": 20.43,
+     "en": "A minute ago, we were riding along the river, and now we’re riding in the river!",
+     "ja": "さっきまでは川沿いを走ってたのに、今は川の中を走ってるよ！"
+    },
+    {
+     "start": 20.28,
+     "end": 20.43,
+     "en": "Awesome.",
+     "ja": "最高。"
+    },
+    {
+     "start": 20.28,
+     "end": 23.71,
+     "en": "Hey, we’re passing by the Pentagon on our right!",
+     "ja": "ねえ、右手にペンタゴンが見えてきたよ。"
+    },
+    {
+     "start": 24.86,
+     "end": 28.81,
+     "en": "Penelope, you love riding over the water on a bridge.",
+     "ja": "ペネロペは、水の上の橋を走るのが好きなんだよね。"
+    },
+    {
+     "start": 28.94,
+     "end": 32.33,
+     "en": "But I love riding under a bridge in a boat!",
+     "ja": "でも私は、ボートで橋の下を進むのが好き！"
+    },
+    {
+     "start": 33.62,
+     "end": 34.67,
+     "en": "Anna, look!",
+     "ja": "アナ、見て！"
+    },
+    {
+     "start": 35.04,
+     "end": 37.55,
+     "en": "An airplane is flying right over our heads!",
+     "ja": "飛行機が、ちょうど私たちの頭の真上を飛んでる！"
+    },
+    {
+     "start": 37.62,
+     "end": 38.15,
+     "en": "Wow!",
+     "ja": "わあ！"
+    },
+    {
+     "start": 38.18,
+     "end": 42.61,
+     "en": "This is the closest I’ve ever been to an airplane in flight.",
+     "ja": "飛んでいる飛行機に、こんなに近づいたのは初めて。"
+    },
+    {
+     "start": 43.7,
+     "end": 47.61,
+     "en": "Well, I’ve been inside a flying airplane.",
+     "ja": "まあ、飛行機に乗ったことはあるけどね。"
+    },
+    {
+     "start": 47.58,
+     "end": 51.69,
+     "en": "But not outside of an airplane as it flies over my head!",
+     "ja": "でも、頭の上を飛んでいく飛行機の外側にいるのは初めて！"
+    },
+    {
+     "start": 52.76,
+     "end": 55.41,
+     "en": "And now we’re driving out of the water.",
+     "ja": "それに今は、水の中から車で出ていってるところだよ。"
+    },
+    {
+     "start": 55.72,
+     "end": 58.07,
+     "en": "I still can’t believe this thing drives and sails!",
+     "ja": "これが走るし船にもなるなんて、今でも信じられない。"
+    },
+    {
+     "start": 59.04,
+     "end": 59.71,
+     "en": "I know.",
+     "ja": "だよね。"
+    },
+    {
+     "start": 59.86,
+     "end": 60.99,
+     "en": "It’s amazing.",
+     "ja": "本当にすごい。"
+    },
+    {
+     "start": 62.16,
+     "end": 68.35,
+     "en": "After we ride along these railroad tracks, you’ll see my favorite part of the tour!",
+     "ja": "この線路沿いを走ったあとで、ツアーで一番好きな場所が見えるよ！"
+    },
+    {
+     "start": 69.4,
+     "end": 73.53,
+     "en": "The U.S. Treasury where they make money!",
+     "ja": "お金を作っているアメリカ財務省だよ！"
+    },
+    {
+     "start": 73.94,
+     "end": 77.19,
+     "en": "That young man is making a lot of money, too.",
+     "ja": "あの男の子も、かなり稼いでいるね。"
+    },
+    {
+     "start": 77.24,
+     "end": 79.05,
+     "en": "Did you hear these prepositions?",
+     "ja": "今の前置詞、聞き取れたかな？"
+    },
+    {
+     "start": 78.9,
+     "end": 79.81,
+     "en": "On your left, on our right, in the river, over bridges, over our heads, over my head, on a bridge.",
+     "ja": "on your left、on our right、in the river、over bridges、over our heads、over my head、on a bridge。"
+    },
+    {
+     "start": 79.66,
+     "end": 84.25,
+     "en": "As you watch more, look for 'inside' and 'outside.'",
+     "ja": "このあとを見るときは、inside と outside も探してみてね。"
+    },
+    {
+     "start": 84.78,
+     "end": 87.65,
+     "en": "Look, the U.S. Capitol is coming up!",
+     "ja": "見て、アメリカ連邦議会議事堂が近づいてきた！"
+    },
+    {
+     "start": 88.44,
+     "end": 92.15,
+     "en": "I have a great Fun Fact about the U.S. Capitol.",
+     "ja": "この議事堂について、おもしろい豆知識があるんだ。"
+    },
+    {
+     "start": 92.78,
+     "end": 93.85,
+     "en": "What is it?",
+     "ja": "どんな話？"
+    },
+    {
+     "start": 94.18,
+     "end": 96.47,
+     "en": "There are tunnels under the Capitol.",
+     "ja": "議事堂の下にはトンネルがあるんだ。"
+    },
+    {
+     "start": 96.94,
+     "end": 100.79,
+     "en": "They connect the Capitol and office buildings of lawmakers.",
+     "ja": "そのトンネルは、議事堂と議員たちのオフィスビルをつないでいるんだよ。"
+    },
+    {
+     "start": 101.3,
+     "end": 105.81,
+     "en": "I bet they built them years ago for secret reasons!",
+     "ja": "きっと昔、何か秘密の目的で作ったんだろうね！"
+    },
+    {
+     "start": 106.46,
+     "end": 107.27,
+     "en": "No.",
+     "ja": "違うよ。"
+    },
+    {
+     "start": 107.88,
+     "end": 112.39,
+     "en": "The lawmakers did not want to walk around outside in bad weather.",
+     "ja": "議員たちが、天気の悪い日に外を歩き回りたくなかったからなんだ。"
+    },
+    {
+     "start": 112.74,
+     "end": 113.09,
+     "en": "Oh.",
+     "ja": "そっか。"
+    },
+    {
+     "start": 116.12,
+     "end": 118.07,
+     "en": "We’re back at Union Station!",
+     "ja": "ユニオン駅に戻ってきた！"
+    },
+    {
+     "start": 118.84,
+     "end": 123.65,
+     "en": "Do you want to know a creepy Fun Fact about Union Station?",
+     "ja": "ユニオン駅について、ちょっとゾッとする豆知識、聞きたい？"
+    },
+    {
+     "start": 124.48,
+     "end": 126.97,
+     "en": "The creepier the better!",
+     "ja": "ゾッとするほどいいね！"
+    },
+    {
+     "start": 127.5,
+     "end": 133.43,
+     "en": "Many years ago, inside Union Station, there was a funeral home!",
+     "ja": "昔、このユニオン駅の中には、葬儀場があったんだ！"
+    },
+    {
+     "start": 133.88,
+     "end": 135.81,
+     "en": "A funeral home?!",
+     "ja": "葬儀場？！"
+    },
+    {
+     "start": 136.3,
+     "end": 138.91,
+     "en": "You mean, for dead people?!",
+     "ja": "亡くなった人のための葬儀場ってこと？！"
+    },
+    {
+     "start": 139.24,
+     "end": 142.27,
+     "en": "Do you know another kind of funeral home?",
+     "ja": "ほかにどんな葬儀場があるっていうの？"
+    },
+    {
+     "start": 143.02,
+     "end": 143.87,
+     "en": "No!",
+     "ja": "ないわ。"
+    },
+    {
+     "start": 145.98,
+     "end": 148.73,
+     "en": "Well, I’ve gotta run!",
+     "ja": "じゃあ、もう行かなきゃ！"
+    },
+    {
+     "start": 148.74,
+     "end": 150.75,
+     "en": "Thanks for giving us the great tour!",
+     "ja": "楽しいツアーをしてくれてありがとう！"
+    },
+    {
+     "start": 153.72,
+     "end": 155.79,
+     "en": "Captain, that was awesome!",
+     "ja": "キャプテン、さっきのツアー最高でした！"
+    },
+    {
+     "start": 155.94,
+     "end": 158.49,
+     "en": "And your son is a great tour guide!",
+     "ja": "それに、息子さんも素晴らしいガイドですね！"
+    },
+    {
+     "start": 158.6,
+     "end": 159.07,
+     "en": "What son?",
+     "ja": "息子？"
+    },
+    {
+     "start": 159.5,
+     "end": 160.09,
+     "en": "Him.",
+     "ja": "あの子です。"
+    },
+    {
+     "start": 161.12,
+     "end": 163.13,
+     "en": "I’ve never seen that boy in my life!",
+     "ja": "あの子なんて生まれてこのかた見たことないよ！"
+    },
+    {
+     "start": 163.66,
+     "end": 164.81,
+     "en": "See ya, ladies!",
+     "ja": "じゃあね、お嬢さん方！"
+    }
+   ]
+  },
+  {
    "id": "L3-8",
    "level": 3,
    "title": "Pets Are Family, Too!",
@@ -9345,6 +9975,344 @@
      "end": 138.87,
      "en": "Great. See you then!",
      "ja": "了解。 じゃあ、またあとで！"
+    }
+   ]
+  },
+  {
+   "id": "L3-10",
+   "level": 3,
+   "title": "The Big Snow",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-11-the-big-snow/4102755.html",
+   "video": "media/L3-10.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L3-10.en.vtt",
+   "subs_ja": "subs/L3-10.ja.vtt",
+   "clip_start": 108.3,
+   "clip_end": 288.98,
+   "cover_height": 0.22,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "supplies",
+     "ja": "（非常時などの）必要物資、備え"
+    },
+    {
+     "en": "blizzard of the century",
+     "ja": "今世紀最大級の猛吹雪"
+    },
+    {
+     "en": "the latest",
+     "ja": "最新の"
+    },
+    {
+     "en": "weather forecasting software",
+     "ja": "天気予報ソフトウェア"
+    },
+    {
+     "en": "weather survival game",
+     "ja": "天候サバイバルゲーム（悪天候を生き延びるゲーム）"
+    },
+    {
+     "en": "real time",
+     "ja": "リアルタイムで、その場ですぐに"
+    },
+    {
+     "en": "broke all kinds of records",
+     "ja": "あらゆる記録を塗り替えた"
+    },
+    {
+     "en": "straight (for 30 hours straight)",
+     "ja": "連続で、ぶっ続けで（30時間ぶっ通しで）"
+    },
+    {
+     "en": "ran out",
+     "ja": "（在庫・食べ物などが）なくなった、切れた"
+    },
+    {
+     "en": "team-building exercise",
+     "ja": "チーム作りに役立つ経験・活動"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "アンナが持ってきた最新の道具は何ですか？",
+     "choices": [
+      "新しいカメラ",
+      "最新の天気予報ソフト",
+      "高性能のマイク",
+      "非常用発電機"
+     ],
+     "answer": 1,
+     "explain": "アンナは「最新の天気予報ソフトを買ったところだった」と言い、それを持ってきたと話しています。"
+    },
+    {
+     "q": "アンナはこの猛吹雪にどんな名前をつけようとしましたか？",
+     "choices": [
+      "The Great Storm",
+      "The Big Blizzard",
+      "The Big Snow",
+      "The White Weekend"
+     ],
+     "answer": 2,
+     "explain": "アンナは「I know -- 'The Big Snow!'」と言って、この名前を提案しています。"
+    },
+    {
+     "q": "アンナたちが特に喜んでいたのは、どんなときですか？",
+     "choices": [
+      "雪がやんだとき",
+      "気温が上がったとき",
+      "記録が更新されたとき",
+      "店が再開したとき"
+     ],
+     "answer": 2,
+     "explain": "ケリーの質問に対し、アンナは「毎回記録が破られるたびにお祝いした」と話しています。"
+    },
+    {
+     "q": "土曜の夜までに何が起きて、食べ物が問題になりましたか？",
+     "choices": [
+      "電車が止まった",
+      "店やレストランが閉まった",
+      "停電になった",
+      "道路が乾いた"
+     ],
+     "answer": 1,
+     "explain": "ケリーは「土曜の夜までには店やレストランは閉まってしまった」と言い、食べ物は足りたかと聞いています。"
+    },
+    {
+     "q": "アンナとピートはどのくらいの時間、一緒に中継をしましたか？",
+     "choices": [
+      "24時間",
+      "30時間",
+      "36時間",
+      "48時間"
+     ],
+     "answer": 3,
+     "explain": "アンナは「We had reported together for 48 hours straight!」と言っており、48時間連続だと分かります。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 19,
+     "why": "原文は短く「Welcome to 'The Big Snow.'」で、ニュース中継らしさを出すために意訳しており、どこまで膨らませるか判断が分かれそう。"
+    },
+    {
+     "line": 22,
+     "why": "“That, my dear listeners, is a record!” を「記録的な数字」と訳し、「my dear listeners」を自然な呼びかけにしたが、語気の強さやニュアンスをどこまで反映するか迷った。"
+    },
+    {
+     "line": 33,
+     "why": "“That must have been a great team-building exercise” を自然さ重視で「チーム作りの経験」としつつ「エクササイズ」を直訳しなかったため、学習用途としてどの程度直訳に寄せるか迷いがある。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 6.51,
+     "en": "Why am I here on a Saturday? Why are you carrying things? Why? Why?",
+     "ja": "なんで土曜日にここにいるんだ？なんで荷物なんか運んでるの？一体どうしてなんだ？"
+    },
+    {
+     "start": 6.8,
+     "end": 14.61,
+     "en": "Pete, these are my supplies – food, a blanket; warm clothing. Where are your supplies?",
+     "ja": "ピート、これは私の準備よ。食べ物に毛布、防寒着もあるわ。あなたの準備はどこ？"
+    },
+    {
+     "start": 17.22,
+     "end": 23.69,
+     "en": "Pete, Pete, Pete. This could be the “blizzard of the century.”",
+     "ja": "ピート、ピート、ピート。これは「今世紀最大の猛吹雪」になるかもしれないのよ。"
+    },
+    {
+     "start": 25.1,
+     "end": 26.19,
+     "en": "It’ll be fine.",
+     "ja": "大丈夫だって。"
+    },
+    {
+     "start": 26.76,
+     "end": 29.03,
+     "en": "How else had you prepared?",
+     "ja": "ほかにはどう準備していたの？"
+    },
+    {
+     "start": 29.5,
+     "end": 35.97,
+     "en": "Well, I had just bought the latest weather forecasting software. So, I brought it!",
+     "ja": "ええと、ちょうど最新の天気予報ソフトを買ったところだったの。それで持ってきたのよ。"
+    },
+    {
+     "start": 36.38,
+     "end": 40.85,
+     "en": "Do you mean The Weather Genie Pro?",
+     "ja": "「ウェザー・ジーニー・プロ」のこと？"
+    },
+    {
+     "start": 41.58,
+     "end": 44.73,
+     "en": "You know it. Pete thought it was pretty great too.",
+     "ja": "そう、それよ。ピートもすごく気に入ってたの。"
+    },
+    {
+     "start": 45.14,
+     "end": 47.61,
+     "en": "Do you have any games on that thing?",
+     "ja": "そのパソコンにゲーム入ってる？"
+    },
+    {
+     "start": 48.04,
+     "end": 52.09,
+     "en": "Yes! I have the best weather survival game. Boom!",
+     "ja": "もちろん！最高の天気サバイバルゲームが入ってるわ。ドーン！"
+    },
+    {
+     "start": 53.12,
+     "end": 54.21,
+     "en": "Sounds fun.",
+     "ja": "楽しそうだね。"
+    },
+    {
+     "start": 54.84,
+     "end": 68.45,
+     "en": "It is. But right now, Pete, this computer is a work tool. It will give us the temperature, wind speed, wind direction and amount of snowfall … in real time! Boom, boom!",
+     "ja": "楽しいわよ。でも今はね、ピート、このパソコンは仕事道具なの。気温や風速、風向き、それに降雪量までリアルタイムで分かるの。ドーン、ドーン！"
+    },
+    {
+     "start": 69.28,
+     "end": 70.57,
+     "en": "I can’t wait.",
+     "ja": "待ちきれないな。"
+    },
+    {
+     "start": 70.86,
+     "end": 74.71,
+     "en": "Pete, we need a name for this blizzard.",
+     "ja": "ピート、この猛吹雪に名前をつけないと。"
+    },
+    {
+     "start": 74.92,
+     "end": 75.53,
+     "en": "No, we don’t.",
+     "ja": "いや、つけなくていいよ。"
+    },
+    {
+     "start": 75.7,
+     "end": 77.51,
+     "en": "All the great storms have names.",
+     "ja": "大きな嵐にはみんな名前がついてるの。"
+    },
+    {
+     "start": 78.06,
+     "end": 78.87,
+     "en": "No, they don’t.",
+     "ja": "いや、そんなことないって。"
+    },
+    {
+     "start": 78.98,
+     "end": 82.01,
+     "en": "I know -- “The Big Snow!”",
+     "ja": "分かった！「ザ・ビッグ・スノー」よ！"
+    },
+    {
+     "start": 83.04,
+     "end": 85.09,
+     "en": "I am not saying “The Big Snow.”",
+     "ja": "俺は『ザ・ビッグ・スノー』なんて言わないからな。"
+    },
+    {
+     "start": 85.9,
+     "end": 87.95,
+     "en": "Welcome to “The Big Snow.”",
+     "ja": "ようこそ、『ザ・ビッグ・スノー』の現場からお伝えします。"
+    },
+    {
+     "start": 89.24,
+     "end": 94.01,
+     "en": "The Big Snow broke all kinds of records, didn’t it?",
+     "ja": "このビッグ・スノーはいろんな記録を塗り替えたのよね？"
+    },
+    {
+     "start": 94.42,
+     "end": 100.17,
+     "en": "Yes it did. And every time a record was broken, we celebrated!",
+     "ja": "そうなの。そして記録が更新されるたびに、私たちはお祝いしたの！"
+    },
+    {
+     "start": 102.06,
+     "end": 112.15,
+     "en": "So far, in Washington, D.C. 29 inches of snow has fallen. That, my dear listeners, is a record!",
+     "ja": "これまでのところ、ワシントンD.C.では29インチの雪が降りました。親愛なるリスナーのみなさん、これは記録的な数字です！"
+    },
+    {
+     "start": 112.62,
+     "end": 118.47,
+     "en": "We just broke the wind speed record!",
+     "ja": "たった今、風速の記録を更新しました！"
+    },
+    {
+     "start": 121.18,
+     "end": 126.79,
+     "en": "Snow has been falling for 30 hours straight! That’s another record!",
+     "ja": "雪は30時間ぶっ続けで降り続いています！これも新記録です！"
+    },
+    {
+     "start": 137.48,
+     "end": 144.67,
+     "en": "By Saturday night, stores and restaurants had closed. Did you bring enough food?",
+     "ja": "土曜の夜までには、お店やレストランは閉まってしまったの。食べ物は十分に持って行った？"
+    },
+    {
+     "start": 146.58,
+     "end": 151.91,
+     "en": "I thought I had brought enough food. But I ran out.",
+     "ja": "足りるくらい持ってきたつもりだったんだけど、なくなっちゃったの。"
+    },
+    {
+     "start": 152.7,
+     "end": 155.07,
+     "en": "Hey, Pete, where is my bag of popcorn?",
+     "ja": "ねえピート、私のポップコーンの袋どこ？"
+    },
+    {
+     "start": 155.58,
+     "end": 157.55,
+     "en": "Maybe you ate it already.",
+     "ja": "もう自分で食べちゃったんじゃない？"
+    },
+    {
+     "start": 158.02,
+     "end": 159.67,
+     "en": "No, I didn’t.",
+     "ja": "食べてないわよ。"
+    },
+    {
+     "start": 160.26,
+     "end": 161.43,
+     "en": "I haven't seen it.",
+     "ja": "見てないけどなあ。"
+    },
+    {
+     "start": 163.7,
+     "end": 168.37,
+     "en": "We had reported together for 48 hours straight!",
+     "ja": "私たち、48時間ぶっ通しで一緒に中継したのよ！"
+    },
+    {
+     "start": 168.88,
+     "end": 175.71,
+     "en": "Wow. That must have been a great team-building exercise for you and Pete.",
+     "ja": "わあ。あなたとピートにとって、すごくいいチーム作りの経験になったんじゃない？"
+    },
+    {
+     "start": 176.26,
+     "end": 180.23,
+     "en": "Yeah. You - you could say that.",
+     "ja": "まあね…そうとも言えるかな。"
     }
    ]
   },
@@ -11687,6 +12655,336 @@
      "end": 175.75,
      "en": "Fans of the sport enjoy relaxing and watching a game or two after eating a big Thanksgiving meal.",
      "ja": "このスポーツが好きな人たちは、たっぷり食事をしたあと、くつろぎながら試合を一つか二つ観戦して楽しみます。"
+    }
+   ]
+  },
+  {
+   "id": "L4-10",
+   "level": 4,
+   "title": "'Watching the Grass Grow' Is Not Fun",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/watching-the-grass-grow-is-not-fun/8003108.html",
+   "video": "media/L4-10.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L4-10.en.vtt",
+   "subs_ja": "subs/L4-10.ja.vtt",
+   "clip_start": 6.48,
+   "clip_end": 181.58,
+   "cover_height": 0,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "renewal",
+     "ja": "新しく生まれ変わること、再生"
+    },
+    {
+     "en": "buds",
+     "ja": "つぼみ"
+    },
+    {
+     "en": "shoots",
+     "ja": "新芽、若芽"
+    },
+    {
+     "en": "noticeable",
+     "ja": "はっきり目立つ"
+    },
+    {
+     "en": "boring",
+     "ja": "退屈な"
+    },
+    {
+     "en": "tedious",
+     "ja": "長くてうんざりする、単調で退屈な"
+    },
+    {
+     "en": "on-the-go",
+     "ja": "いつも動き回っている、じっとしていない"
+    },
+    {
+     "en": "acceptance speech",
+     "ja": "当選（受諾）スピーチ"
+    },
+    {
+     "en": "non-stop",
+     "ja": "休みなしの、ぶっ通しの"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "“like watching grass grow” という表現は、どんな経験を表しますか。",
+     "choices": [
+      "とても興奮する経験",
+      "恐ろしい経験",
+      "つまらない経験",
+      "危険な経験"
+     ],
+     "answer": 2,
+     "explain": "草が伸びるのを見るだけ、というイメージから「退屈でおもしろくない経験」という意味になります。"
+    },
+    {
+     "q": "politician の例で、話者がつらいと感じたのは何ですか。",
+     "choices": [
+      "選挙運動",
+      "2時間の当選スピーチ",
+      "表彰式",
+      "スポーツ観戦"
+     ],
+     "answer": 1,
+     "explain": "政治家が選挙に勝ったあとに行った「2時間の acceptance speech」が、草を見るのと同じくらい退屈だと言っています。"
+    },
+    {
+     "q": "“They don't let grass grow under their feet.” はどんな人を指しますか。",
+     "choices": [
+      "決断が遅い人",
+      "いつも眠そうな人",
+      "いつも動き回っている人",
+      "自然が好きな人"
+     ],
+     "answer": 2,
+     "explain": "常に active・on-the-go な人のことを表すイディオムとして説明されています。"
+    },
+    {
+     "q": "“Don’t let the grass grow beneath your feet.” と言うとき、相手に何をしてほしい気持ちが強いですか。",
+     "choices": [
+      "もっと休んでほしい",
+      "その場でじっとしていてほしい",
+      "すぐに動き出してほしい",
+      "旅行に出てほしい"
+     ],
+     "answer": 2,
+     "explain": "命令形では「ぐずぐずせずに動きなさい」という意味で、例文でも “Get back to work.” と続いています。"
+    },
+    {
+     "q": "本文で “tedious” にいちばん近い説明はどれですか。",
+     "choices": [
+      "短くて分かりやすい",
+      "長くてくり返しが多く、うんざりする",
+      "とても危険でスリルがある",
+      "とても静かで落ち着く"
+     ],
+     "answer": 1,
+     "explain": "“tedious” は「時間がかかりすぎて、単調でうんざりする」という意味だと説明されています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 0,
+     "why": "番組名のニュアンスをどこまで訳に入れるか迷い、「時間です」とやや意訳しました。"
+    },
+    {
+     "line": 7,
+     "why": "“job” を「仕事」と直訳せず、状況に合う自然さを優先しましたが、学習用として直訳のほうがよいか迷いました。"
+    },
+    {
+     "line": 22,
+     "why": "“on-the-go” のニュアンスをどこまで含めるか迷い、「じっとしていない人」と説明的に訳しました。"
+    },
+    {
+     "line": 27,
+     "why": "学習目的のためあえて原文を残しましたが、日本語字幕としては意図的に訳抜きにしており、方針として迷いがあります。"
+    },
+    {
+     "line": 31,
+     "why": "ラジオ番組の締めくくり表現なので、直訳と自然さのバランスに迷いました。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 6.87,
+     "en": "And now Words and Their Stories from VOA Learning English.",
+     "ja": "さて、VOAラーニングイングリッシュ「Words and Their Stories」の時間です。"
+    },
+    {
+     "start": 12.54,
+     "end": 17.09,
+     "en": "Springtime is a time of renewal and growth.",
+     "ja": "春は、物事が新しく生まれ変わり、成長していく季節です。"
+    },
+    {
+     "start": 16.94,
+     "end": 24.65,
+     "en": "Many plants end their long winter sleep and form new buds and shoots.",
+     "ja": "多くの植物が、長い冬眠から目を覚まし、新しいつぼみや芽を出します。"
+    },
+    {
+     "start": 26.04,
+     "end": 30.33,
+     "en": "Beautiful flowers will soon be showing their bright colors.",
+     "ja": "まもなく美しい花が、あざやかな色を見せてくれます。"
+    },
+    {
+     "start": 30.62,
+     "end": 35.23,
+     "en": "And the grass will grow thicker and greener again.",
+     "ja": "そして草も、また濃く、青々と茂っていきます。"
+    },
+    {
+     "start": 36.7,
+     "end": 43.67,
+     "en": "Some flowers bloom in a very noticeable way, but that is not the case with grass.",
+     "ja": "中には、とても目立つ咲き方をする花もありますが、草はそうではありません。"
+    },
+    {
+     "start": 44.76,
+     "end": 48.69,
+     "en": "Imagine you are sitting in a grassy field.",
+     "ja": "草の生えた野原に座っているところを想像してみてください。"
+    },
+    {
+     "start": 48.54,
+     "end": 53.81,
+     "en": "And you have only one job – to watch the grass grow.",
+     "ja": "あなたの仕事は、ただ一つ──草が伸びるのを見つめることだけです。"
+    },
+    {
+     "start": 54.74,
+     "end": 57.59,
+     "en": "That does not sound very interesting.",
+     "ja": "あまりおもしろそうには聞こえませんよね。"
+    },
+    {
+     "start": 58.36,
+     "end": 61.81,
+     "en": "In fact, it sounds really boring.",
+     "ja": "むしろ、とても退屈そうです。"
+    },
+    {
+     "start": 63.08,
+     "end": 68.55,
+     "en": "That idea is what gives us the expression “like watching grass grow.”",
+     "ja": "このイメージから生まれたのが、“like watching grass grow” という表現です。"
+    },
+    {
+     "start": 68.4,
+     "end": 75.31,
+     "en": "We use this expression to describe an experience that is uninteresting.",
+     "ja": "この表現は、つまらない体験を表すときに使います。"
+    },
+    {
+     "start": 76.1,
+     "end": 80.41,
+     "en": "Another good word to describe it is tedious.",
+     "ja": "ほかに「退屈でうんざりする」という意味の tedious という言葉も合います。"
+    },
+    {
+     "start": 82.26,
+     "end": 85.71,
+     "en": "We use this expression in many situations.",
+     "ja": "この表現は、いろいろな場面で使われます。"
+    },
+    {
+     "start": 86.78,
+     "end": 89.25,
+     "en": "Let’s hear a few examples:",
+     "ja": "いくつか例を聞いてみましょう。"
+    },
+    {
+     "start": 89.1,
+     "end": 97.81,
+     "en": "After the politician won his campaign, he gave a two-hour long acceptance speech.",
+     "ja": "その政治家は選挙に勝ったあと、2時間も当選スピーチをしました。"
+    },
+    {
+     "start": 98.7,
+     "end": 103.71,
+     "en": "Two hours! It was as much fun as watching grass grow.",
+     "ja": "2時間ですよ！草が伸びるのを見ているのと同じくらい退屈でした。"
+    },
+    {
+     "start": 105.08,
+     "end": 108.51,
+     "en": "I really don’t like watching long sports games.",
+     "ja": "私は長いスポーツの試合を見るのが本当に好きではありません。"
+    },
+    {
+     "start": 109.36,
+     "end": 111.53,
+     "en": "It’s like watching grass grow.",
+     "ja": "草が伸びるのを見ているようなものです。"
+    },
+    {
+     "start": 112.18,
+     "end": 115.83,
+     "en": "Now, grass grows on the ground all the time.",
+     "ja": "さて、草はいつも地面で伸び続けています。"
+    },
+    {
+     "start": 116.06,
+     "end": 119.21,
+     "en": "And usually, we don’t give it much thought.",
+     "ja": "そしてふつう、私たちはそのことをあまり意識しません。"
+    },
+    {
+     "start": 119.96,
+     "end": 127.19,
+     "en": "If you stand in one place for a long time, the grass will continue to grow under your feet.",
+     "ja": "同じ場所に長く立ち続けていると、足もとでは草がどんどん伸びていきます。"
+    },
+    {
+     "start": 128.14,
+     "end": 138.95,
+     "en": "For people who are always active, always moving, always on-the-go, we can say they don't let grass grow under their feet.",
+     "ja": "いつも活動的で、動き回っていて、じっとしていない人たちのことを、they don't let grass grow under their feet と言うことができます。"
+    },
+    {
+     "start": 139.76,
+     "end": 142.63,
+     "en": "We can also say beneath their feet.",
+     "ja": "beneath their feet と言い換えることもできます。"
+    },
+    {
+     "start": 143.72,
+     "end": 148.13,
+     "en": "And sometimes we use this expression as a command.",
+     "ja": "また、ときにはこの表現を命令形で使うこともあります。"
+    },
+    {
+     "start": 149.24,
+     "end": 151.21,
+     "en": "Let’s hear some examples:",
+     "ja": "いくつか例を聞いてみましょう。"
+    },
+    {
+     "start": 152.26,
+     "end": 154.73,
+     "en": "Don’t let the grass grow beneath your feet.",
+     "ja": "Don’t let the grass grow beneath your feet."
+    },
+    {
+     "start": 155.12,
+     "end": 156.25,
+     "en": "Get back to work.",
+     "ja": "ぼんやりしてないで、仕事に戻りなさい。"
+    },
+    {
+     "start": 157.36,
+     "end": 160.93,
+     "en": "She certainly doesn’t let the grass grow under her feet.",
+     "ja": "彼女は本当に、のんびりしている暇なんてない人です。"
+    },
+    {
+     "start": 161.34,
+     "end": 165.05,
+     "en": "She’s been traveling non-stop for over a year.",
+     "ja": "もう1年以上、休みなく旅を続けています。"
+    },
+    {
+     "start": 166.94,
+     "end": 170.69,
+     "en": "And that’s all the time we have for this Words and Their Stories.",
+     "ja": "「Words and Their Stories」、きょうはここまでです。"
+    },
+    {
+     "start": 171.62,
+     "end": 174.65,
+     "en": "Until next time, I’m Anna Matteo.",
+     "ja": "また次回お会いしましょう。アンナ・マテオでした。"
     }
    ]
   },
