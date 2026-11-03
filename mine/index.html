@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<script>window.SITE={"id":"honka","domain":"study.apush.jp","tourKey":"study","login":true,"words":{"title":"A-PUSH 単語トレーニング","dir":"courses/","index":true,"check":true,"default":null,"syncUrl":"","courses":null},"links":{},"tours":{"/":[["#levels","レベル（教材）を選びます。"],["#biz-row","ビジネス英語のスイッチです。ONにすると、話すも単語もビジネスの内容になります。"],["#chsel","章を選びます。‹ › で前後の章へ。"],["#modes","練習のしかた：選んで言う／絵だけ見て言う／単語ミックス。"],["#tq","先生の質問です。▶でもう一度聞けます。"],["#choices","答えを選んだら、声に出して3回。録音して先生に送ることもできます。"],["#btn-how","やり方はいつでもここから。"],[".tabbar","下のタブで「計画・話す・単語・あなた専用」を行き来します。シャドーイングは「話す」の中です。"]],"/words/":[["#w-groups","単語帳の種類です。"],["#w-decks","レベルを選びます。"],["#tasks","テスト → トレーニングの順に「スタート」を押します。"],["#w-mode","カードと一覧を切り替えられます。"]],"/shadowing/":[["#sh-list","動画を選びます。"],["#howto","やり方はここから。"]],"/plan/":[["#ring","今日のゴールの達成の様子です。"],["#cal","練習した日に色がつきます。"],["#g-words","1日の目標をここで決めます。"],["#c-time","毎日の練習の時間を、自分のカレンダーに入れられます。"]]},"manifest":{"name":"A-PUSH 本コース","short":"A-PUSH","description":"A-PUSH 本コースの練習（計画・話す・単語・あなた専用）。","start_url":"/?from=home","color":"#F2F4F8"}};</script>
+<script>window.SITE={"id":"honka","domain":"study.apush.jp","tourKey":"study","login":true,"words":{"title":"A-PUSH 単語トレーニング","dir":"courses/","index":true,"check":true,"default":null,"syncUrl":"","courses":null},"links":{},"tours":{"/":[["#levels","レベル（教材）を選びます。"],["#biz-row","ビジネス英語のスイッチです。ONにすると、話すも単語もビジネスの内容になります。"],["#chsel","章を選びます。‹ › で前後の章へ。"],["#modes","練習のしかた：選んで言う／絵だけ見て言う／単語ミックス。"],["#tq","先生の質問です。▶でもう一度聞けます。"],["#choices","答えを選んだら、声に出して3回。録音して先生に送ることもできます。"],["#btn-how","やり方はいつでもここから。"],[".tabbar","下のタブで「計画・話す・単語・あなた専用」を行き来します。シャドーイングは「話す」の中です。"]],"/words/":[["#w-groups","単語帳の種類です。"],["#w-decks","レベルを選びます。"],["#tasks","テスト → トレーニングの順に「スタート」を押します。"],["#w-mode","カードと一覧を切り替えられます。"]],"/shadowing/":[["#sh-list","動画を選びます。"],["#howto","やり方はここから。"]],"/plan/":[["#ring","今日のゴールの達成の様子です。"],["#cal","練習した日に色がつきます。"],["#g-words","1日の目標をここで決めます。"],["#c-time","毎日の練習の時間を、自分のカレンダーに入れられます。"]]},"manifest":{"name":"A-PUSH 本コース","short":"A-PUSH","description":"A-PUSH 本コースの練習（計画・話す・単語・あなた専用）。","start_url":"/?from=home","color":"#F2F4F8"},"exams":[{"id":"ielts-1","title":"IELTS 模擬テスト","minutes":24,"desc":"Listening 5分・Reading 10分・Writing 5分・Speaking 3タスク。目安スコアと添削つき"}]};</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#F2F4F8">
@@ -30,9 +30,18 @@
   <p class="sub">あなたのための教材</p>
 
   <!-- ここに中身が入る（本コース＝生徒ごとの教材／無料版＝ほかのトレーニング）。2026-11-03：まだ入れ物だけ -->
-  <section class="card" id="mine-list">
-    <p class="tip">準備中です。先生があなたのための教材を用意したら、ここに出ます。</p>
-  </section>
+  <section class="card" id="mine-list"><div class="cin">
+    <p class="tip" id="mine-note">準備中です。先生があなたのための教材を用意したら、ここに出ます。</p>
+    <div class="list" id="exam-list"></div>
+  </div></section>
+<script>
+/* 模擬テスト（2026-11-03）：設定の exams を一覧に。問題は /exam/<id>.json、画面は /exam/ */
+(function(){var ex=(window.SITE&&window.SITE.exams)||[];if(!ex.length)return;
+  var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});};
+  document.getElementById("mine-note").textContent="模擬テスト（20〜25分）。終わると目安スコアと、ライティング・スピーキングの添削が出ます。";
+  document.getElementById("exam-list").innerHTML=ex.map(function(e){return '<a class="li" style="text-decoration:none;color:inherit" href="/exam/?id='+encodeURIComponent(e.id)+'"><span><b>'+esc(e.title)+'</b><br><small style="color:var(--mute)">'+esc(e.desc||"")+'</small></span><span class="e">約'+e.minutes+'分 →</span></a>';}).join("");
+})();
+</script>
 </main>
 <script src="/install.js" defer></script>
 <script src="/ui.js" defer></script>

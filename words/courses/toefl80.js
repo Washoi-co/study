@@ -188,7 +188,7 @@ window.APW_COURSE = { id: "toefl80", title: "TOEFL iBT 80点を狙う単語", wo
 ["sanctuary",[["保護区",""]]],
 ["dissertation",[["博士論文",""]]],
 ["sabbatical",[["研究休暇",""]]],
-["symposium",[["シンポジウム",""]]],
+["symposium",[["シンポジウム、討論会",""]]],
 ["fellowship",[["研究奨学金",""]]],
 ["extracurricular",[["課外の",""]]],
 ["lease",[["賃貸契約",""]]],

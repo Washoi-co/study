@@ -58,7 +58,7 @@ window.APW_COURSE = { id: "biz4", title: "Business レベル4 経営・戦略・
 ["churn rate",[["解約率・顧客離脱率",""]]],
 ["retention rate",[["定着率・継続率",""]]],
 ["OKR",[["目標と主要な成果（OKR）","🎯"]]],
-["EBITDA",[["利払い・税引き・償却前利益",""]]],
+["EBITDA",[["利払い前・税引き前・償却前利益（EBITDA）",""]]],
 ["earnings per share",[["1株当たり利益（EPS）",""]]],
 ["return on equity",[["自己資本利益率（ROE）",""]]],
 ["profit and loss statement",[["損益計算書（P/L）","📊"]]],

@@ -68,7 +68,7 @@ window.APW_COURSE = { id: "biz2", title: "Business レベル2 一歩進んだ仕
 ["manufacturer",[["製造業者・メーカー","🏭"]]],
 ["manufacturing",[["製造業・製造","🏭"]]],
 ["merchandise",[["商品","🛍️"]]],
-["commodity",[["商品・日用品","🛢️"]]],
+["commodity",[["商品・一次産品（原材料など）","🛢️"]]],
 ["consumer",[["消費者","🛒"]]],
 ["clientele",[["顧客層・常連客","👥"]]],
 ["prospect",[["見込み客","🙋"],["見通し","🔭"]]],

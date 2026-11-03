@@ -161,7 +161,7 @@ window.APW_COURSE = { id: "civ10", title: "土木 現場の動作・管理", wor
 ["inventory", [["在庫・在庫一覧", ""]]],
 ["logistics", [["物流・ロジスティクス", ""]]],
 ["site office", [["現場事務所", ""]]],
-["mobilization", [["着手準備・動員", ""]]],
+["mobilization", [["現場乗り込み・着手準備", ""]]],
 ["demobilization", [["撤収", ""]]],
 ["cleanup", [["片付け・清掃", ""]]],
 ["punch list", [["手直しリスト", ""]]],

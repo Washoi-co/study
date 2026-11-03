@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<script>window.SITE={"id":"honka","domain":"study.apush.jp","tourKey":"study","login":true,"words":{"title":"A-PUSH 単語トレーニング","dir":"courses/","index":true,"check":true,"default":null,"syncUrl":"","courses":null},"links":{},"tours":{"/":[["#levels","レベル（教材）を選びます。"],["#biz-row","ビジネス英語のスイッチです。ONにすると、話すも単語もビジネスの内容になります。"],["#chsel","章を選びます。‹ › で前後の章へ。"],["#modes","練習のしかた：選んで言う／絵だけ見て言う／単語ミックス。"],["#tq","先生の質問です。▶でもう一度聞けます。"],["#choices","答えを選んだら、声に出して3回。録音して先生に送ることもできます。"],["#btn-how","やり方はいつでもここから。"],[".tabbar","下のタブで「計画・話す・単語・あなた専用」を行き来します。シャドーイングは「話す」の中です。"]],"/words/":[["#w-groups","単語帳の種類です。"],["#w-decks","レベルを選びます。"],["#tasks","テスト → トレーニングの順に「スタート」を押します。"],["#w-mode","カードと一覧を切り替えられます。"]],"/shadowing/":[["#sh-list","動画を選びます。"],["#howto","やり方はここから。"]],"/plan/":[["#ring","今日のゴールの達成の様子です。"],["#cal","練習した日に色がつきます。"],["#g-words","1日の目標をここで決めます。"],["#c-time","毎日の練習の時間を、自分のカレンダーに入れられます。"]]},"manifest":{"name":"A-PUSH 本コース","short":"A-PUSH","description":"A-PUSH 本コースの練習（計画・話す・単語・あなた専用）。","start_url":"/?from=home","color":"#F2F4F8"}};</script>
+<script>window.SITE={"id":"honka","domain":"study.apush.jp","tourKey":"study","login":true,"words":{"title":"A-PUSH 単語トレーニング","dir":"courses/","index":true,"check":true,"default":null,"syncUrl":"","courses":null},"links":{},"tours":{"/":[["#levels","レベル（教材）を選びます。"],["#biz-row","ビジネス英語のスイッチです。ONにすると、話すも単語もビジネスの内容になります。"],["#chsel","章を選びます。‹ › で前後の章へ。"],["#modes","練習のしかた：選んで言う／絵だけ見て言う／単語ミックス。"],["#tq","先生の質問です。▶でもう一度聞けます。"],["#choices","答えを選んだら、声に出して3回。録音して先生に送ることもできます。"],["#btn-how","やり方はいつでもここから。"],[".tabbar","下のタブで「計画・話す・単語・あなた専用」を行き来します。シャドーイングは「話す」の中です。"]],"/words/":[["#w-groups","単語帳の種類です。"],["#w-decks","レベルを選びます。"],["#tasks","テスト → トレーニングの順に「スタート」を押します。"],["#w-mode","カードと一覧を切り替えられます。"]],"/shadowing/":[["#sh-list","動画を選びます。"],["#howto","やり方はここから。"]],"/plan/":[["#ring","今日のゴールの達成の様子です。"],["#cal","練習した日に色がつきます。"],["#g-words","1日の目標をここで決めます。"],["#c-time","毎日の練習の時間を、自分のカレンダーに入れられます。"]]},"manifest":{"name":"A-PUSH 本コース","short":"A-PUSH","description":"A-PUSH 本コースの練習（計画・話す・単語・あなた専用）。","start_url":"/?from=home","color":"#F2F4F8"},"exams":[{"id":"ielts-1","title":"IELTS 模擬テスト","minutes":24,"desc":"Listening 5分・Reading 10分・Writing 5分・Speaking 3タスク。目安スコアと添削つき"}]};</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="/favicon.png">
@@ -123,6 +123,9 @@
 .crow{display:flex;gap:8px;align-items:center}
 .course{flex:1;min-width:0;appearance:none;-webkit-appearance:none;background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23667391'/%3E%3C/svg%3E") no-repeat right 12px center;border:0;border-radius:12px;padding:10px 30px 10px 12px;font-size:15px;font-weight:700;color:var(--ink)}
 .crow .pill{flex:none;text-decoration:none}
+.ex{margin:6px 0 10px;padding:10px 12px;border-radius:12px;background:var(--soft);font-size:14px;line-height:1.5}
+.ex b{display:block;font-family:var(--en);font-weight:600}
+.ex span{display:block;color:var(--mute);font-size:13px}
 </style>
 </head>
 <body data-tab="wd">
@@ -208,6 +211,7 @@
       </div>
       <div id="l-back" class="cin" style="padding:0">
         <ul class="senses" id="l-senses"></ul>
+        <p class="ex" id="l-ex" hidden></p>   <!-- 例文（単語データの3つ目 ["英文","和訳"]。native・slang から。2026-11-03） -->
         <p class="say" id="l-repsnote">声に出して3回。言うたびに押してください。</p>
         <div class="dots" id="l-reps"><button class="dot" aria-label="1回目">1</button><button class="dot" aria-label="2回目">2</button><button class="dot" aria-label="3回目">3</button></div>
         <div class="acts"><button class="primary" id="l-next" disabled>次の単語へ</button></div>
@@ -581,6 +585,7 @@ function showLearn(){
   var pics=senses.map(function(s){return s[1];}).filter(Boolean);
   $("l-pics").textContent=pics.join(" ");
   $("l-senses").innerHTML=senses.map(function(s){ return '<li><i>'+(s[1]||"")+'</i><span>'+s[0]+'</span></li>'; }).join("");
+  var ex=w[2]; $("l-ex").hidden=!ex; if(ex) $("l-ex").innerHTML='<b>'+esc(ex[0])+'</b><span>'+esc(ex[1]||"")+'</span>';
   L.reps=0; paintReps();
   var night=L.mode==="pm";
   $("l-front").hidden=!night; $("l-back").hidden=night; $("l-pics").hidden=night;

@@ -3,7 +3,7 @@
    形式：["英単語", [["意味", "絵文字（抽象的な意味は空）"], ...]]  */
 window.APW_COURSE = { id: "civ6", title: "土木 道路・橋・トンネル", words: [
 ["road", [["道路", ""]]],
-["pavement", [["舗装", ""]]],
+["pavement", [["舗装（英では「歩道」の意味も）", ""]]],
 ["asphalt", [["アスファルト", ""]]],
 ["bridge", [["橋", ""]]],
 ["tunnel", [["トンネル", ""]]],
@@ -71,7 +71,7 @@ window.APW_COURSE = { id: "civ6", title: "土木 道路・橋・トンネル", w
 ["concrete bridge", [["コンクリート橋", ""]]],
 ["wooden bridge", [["木橋", ""]]],
 ["rope bridge", [["ロープ橋", ""]]],
-["bailey bridge", [["ベイリー橋（仮設橋）", ""]]],
+["Bailey bridge", [["ベイリー橋（仮設橋）", ""]]],
 ["approach road", [["取付道路", ""]]],
 ["scour", [["洗掘", ""]]],
 ["wing wall", [["ウィングウォール・翼壁", ""]]],

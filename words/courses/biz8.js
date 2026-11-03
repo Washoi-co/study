@@ -133,7 +133,7 @@ window.APW_COURSE = { id: "biz8", title: "Business 金融・会計・法務", wo
 ["broker", [["仲介業者・ブローカー", ""]]],
 ["financial advisor", [["ファイナンシャルアドバイザー", ""]]],
 ["subcontract", [["下請けに出す", ""]]],
-["service agreement", [["業務委託契約", ""]]],
+["service agreement", [["サービス契約・業務委託契約", ""]]],
 ["letter of intent", [["基本合意書", ""]]],
 ["addendum", [["補遺・追加条項", ""]]],
 ["certified copy", [["認証謄本", ""]]],

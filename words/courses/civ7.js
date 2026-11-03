@@ -197,7 +197,7 @@ window.APW_COURSE = { id: "civ7", title: "土木 水・配管・防災", words: 
 ["storm", [["嵐", ""]]],
 ["flood level", [["洪水位", ""]]],
 ["high ground", [["高台", ""]]],
-["mudflow", [["土石流", ""]]],
+["mudflow", [["泥流・土石流", ""]]],
 ["rockfall", [["落石", ""]]],
 ["warning siren", [["警報サイレン", ""]]],
 ["shaking", [["揺れ", ""]]],

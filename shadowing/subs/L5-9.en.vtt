@@ -1,0 +1,285 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.471
+We are now in a new era of computing technology.
+
+2
+00:00:04.471 --> 00:00:09.142
+We see artificial intelligence in nearly all aspects of our lives,
+
+3
+00:00:09.142 --> 00:00:11.911
+from helping doctors and diagnosing diseases,
+
+4
+00:00:11.911 --> 00:00:15.348
+to creating recipes based on what's in your pantry.
+
+5
+00:00:15.348 --> 00:00:18.752
+AI is quickly changing the way we live.
+
+6
+00:00:18.752 --> 00:00:23.723
+Artificial intelligence is also changing the way astronomers analyze data.
+
+7
+00:00:23.723 --> 00:00:27.961
+Such advances have been used to increase the discoveries made by NASA's
+
+8
+00:00:27.961 --> 00:00:31.297
+Hubble Space Telescope and in turn, Hubble's
+
+9
+00:00:31.297 --> 00:00:36.002
+data has been used to advance and test artificial intelligence systems.
+
+10
+00:00:36.002 --> 00:00:40.240
+Such systems were critical in discovering asteroids in Hubble data.
+
+11
+00:00:40.240 --> 00:00:44.377
+To date, astronomers have found over a million asteroids in the main
+
+12
+00:00:44.377 --> 00:00:48.815
+asteroid belt, an area between the orbits of Mars and Jupiter.
+
+13
+00:00:48.815 --> 00:00:54.087
+But many smaller asteroids may not have been discovered because they are so faint.
+
+14
+00:00:54.087 --> 00:00:57.757
+They are about 1/40,000,000 the brightness of the faintest
+
+15
+00:00:57.757 --> 00:01:00.560
+star a human eye can see.
+
+16
+00:01:00.560 --> 00:01:03.563
+This is where Hubble and AI come in.
+
+17
+00:01:03.563 --> 00:01:07.634
+Hubble's archive contains over 1 million observations.
+
+18
+00:01:07.634 --> 00:01:11.471
+Many of these smaller asteroids may be found in the images
+
+19
+00:01:11.471 --> 00:01:13.573
+because they are moving across the skies
+
+20
+00:01:13.573 --> 00:01:16.776
+as Hubble's view holds steady on an astronomical object.
+
+21
+00:01:16.776 --> 00:01:20.480
+They appear as curved streaks of light in Hubble's cameras,
+
+22
+00:01:20.480 --> 00:01:23.383
+essentially photobombing the image.
+
+23
+00:01:23.383 --> 00:01:26.619
+Astronomers applied machine learning algorithms,
+
+24
+00:01:26.619 --> 00:01:32.792
+a form of artificial intelligence, to hunt for these trails in over 37,000 images.
+
+25
+00:01:32.792 --> 00:01:36.062
+That exercise was conducted with the help of 11,000
+
+26
+00:01:36.062 --> 00:01:41.101
+citizen scientists, who discovered 1701 asteroids,
+
+27
+00:01:41.101 --> 00:01:46.573
+1031 of these were small bodied asteroids not formerly known to exist.
+
+28
+00:01:46.573 --> 00:01:48.475
+The results help provide insight
+
+29
+00:01:48.475 --> 00:01:52.479
+into both the origin and evolution of the asteroid belt.
+
+30
+00:01:52.479 --> 00:01:57.517
+AI can also revolutionize the way astronomers classify galaxies.
+
+31
+00:01:57.517 --> 00:02:01.254
+Traditionally, astronomers would classify them by hand
+
+32
+00:02:01.254 --> 00:02:03.790
+spirals, ellipticals, irregulars,
+
+33
+00:02:03.790 --> 00:02:07.460
+and so on, a time consuming process.
+
+34
+00:02:07.460 --> 00:02:11.331
+To test AI concepts, Hubble data has been used in studies
+
+35
+00:02:11.331 --> 00:02:15.168
+on deep learning techniques, which use artificial neural network
+
+36
+00:02:15.168 --> 00:02:21.407
+technologies to learn complex patterns and features from large data sets.
+
+37
+00:02:21.407 --> 00:02:26.012
+In this case, the Hubble Candels data set that contains over 10,000
+
+38
+00:02:26.012 --> 00:02:30.950
+classified galaxies and required dozens of astronomers time to classify,
+
+39
+00:02:30.950 --> 00:02:36.422
+was used to teach a deep learning system about galaxy structure and forms.
+
+40
+00:02:36.422 --> 00:02:39.125
+They then applied it to the Hubble Legacy field,
+
+41
+00:02:39.125 --> 00:02:43.596
+a combination of nearly 7500 separate Hubble exposures,
+
+42
+00:02:43.863 --> 00:02:46.733
+representing 16 years of observations
+
+43
+00:02:46.733 --> 00:02:51.171
+that contained over 265,000 galaxies.
+
+44
+00:02:51.171 --> 00:02:56.209
+With deep learning, AI can sort such a field at an incredible speed.
+
+45
+00:02:56.209 --> 00:02:59.179
+This ability becomes even more important when NASA's
+
+46
+00:02:59.179 --> 00:03:03.049
+Nancy Grace Roman Space Telescope images become available.
+
+47
+00:03:03.049 --> 00:03:07.987
+Each of those images has over 100 times the field of view as Hubble.
+
+48
+00:03:07.987 --> 00:03:11.191
+Similarly, Hubble data has been used to help test
+
+49
+00:03:11.191 --> 00:03:14.460
+machine learning concepts to accommodate noisy data.
+
+50
+00:03:15.528 --> 00:03:17.530
+Telescope imperfections or dust
+
+51
+00:03:17.530 --> 00:03:22.168
+clouds can create flaws in images from even the best observatories.
+
+52
+00:03:22.168 --> 00:03:23.603
+The machine learning systems
+
+53
+00:03:23.603 --> 00:03:27.774
+can identify the noise and reconstruct the image accordingly.
+
+54
+00:03:27.774 --> 00:03:32.545
+Noisy Hubble Galaxy images were used to test these concepts.
+
+55
+00:03:32.545 --> 00:03:35.548
+Future telescopes like the Roman Space Telescope,
+
+56
+00:03:35.548 --> 00:03:38.251
+will collect more data than ever before.
+
+57
+00:03:38.251 --> 00:03:44.357
+Roman itself will likely amass 20,000TB of data over its five year mission.
+
+58
+00:03:44.357 --> 00:03:49.262
+AI will be critical in processing such vast streams of information.
+
+59
+00:03:49.262 --> 00:03:54.734
+From finding exoplanets to uncovering new clues about dark matter and dark energy.
+
+60
+00:03:54.734 --> 00:03:57.203
+The next frontier of space exploration
+
+61
+00:03:57.203 --> 00:04:01.140
+will not only depend on our instruments, but also on powerful software.
+
+62
+00:04:01.140 --> 00:04:02.609
+Here on Earth.
+
+63
+00:04:02.609 --> 00:04:06.913
+And Hubble data is helping with this new revolution.
+
+64
+00:04:06.913 --> 00:04:09.649
+The fusion of Hubble's vast archive of data
+
+65
+00:04:09.649 --> 00:04:14.254
+with cutting edge AI marks a new era in space exploration.
+
+66
+00:04:14.254 --> 00:04:19.158
+The vast potential of machine learning can process unimaginable amounts of data,
+
+67
+00:04:19.158 --> 00:04:21.794
+unlocking discoveries faster than before
+
+68
+00:04:21.794 --> 00:04:25.164
+and recovering details we would otherwise have missed.
+
+69
+00:04:25.164 --> 00:04:29.569
+The future of astronomy isn't just up in the stars, it's in the code.
+
+70
+00:04:29.569 --> 00:04:47.253
+Follow Hubble on social media @NASAHubble
+
+71
+00:04:47.253 --> 00:04:54.160
+NASA Meatball

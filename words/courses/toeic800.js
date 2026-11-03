@@ -60,7 +60,7 @@ window.APW_COURSE = { id: "toeic800", title: "TOEIC 800点を狙う単語", word
 ["dividend",[["配当金","💰"]]],
 ["duplicate",[["複製・写し","📑"]]],
 ["durable",[["耐久性のある","💪"]]],
-["elaborate",[["手の込んだ",""]]],
+["elaborate",[["手の込んだ・（elaborate on で）詳しく述べる",""]]],
 ["endorse",[["推奨する・支持する","👍"]]],
 ["enhance",[["高める",""]]],
 ["enterprise",[["企業","🏢"]]],

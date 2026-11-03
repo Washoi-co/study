@@ -6385,13 +6385,5321 @@
   {
    "id": "L3-1",
    "level": 3,
+   "title": "Budget Cuts",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson1/3960391.html",
+   "video": "media/L3-1.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L3-1.en.vtt",
+   "subs_ja": "subs/L3-1.ja.vtt",
+   "clip_start": 46.98,
+   "clip_end": 186.96,
+   "cover_height": 0.22,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "budget cuts",
+     "ja": "予算削減"
+    },
+    {
+     "en": "Accounting",
+     "ja": "経理部、会計部門"
+    },
+    {
+     "en": "gossip",
+     "ja": "噂話をする、陰口をたたく"
+    },
+    {
+     "en": "rumors",
+     "ja": "噂、うわさ話"
+    },
+    {
+     "en": "lose their jobs",
+     "ja": "職を失う、クビになる"
+    },
+    {
+     "en": "reporter",
+     "ja": "記者、リポーター"
+    },
+    {
+     "en": "videographer",
+     "ja": "ビデオ撮影担当、ビデオカメラマン"
+    },
+    {
+     "en": "detective",
+     "ja": "探偵、刑事"
+    },
+    {
+     "en": "high school kids",
+     "ja": "高校生たち"
+    },
+    {
+     "en": "update your résumé",
+     "ja": "履歴書を更新する、書き直す"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "ジョナサンは、会議の内容について何だと聞いたと言っていますか？",
+     "choices": [
+      "みんなの昇給",
+      "新しいプロジェクト",
+      "予算削減",
+      "会社の移転"
+     ],
+     "answer": 2,
+     "explain": "ジョナサンは「people in the building talking about budget cuts」と言い、予算削減の話を聞いたと説明しています。"
+    },
+    {
+     "q": "アナが「それは“people”じゃない」と言った理由は何ですか？",
+     "choices": [
+      "マークは社員ではないから",
+      "マークは経理部だから",
+      "マークは嘘をつくから",
+      "マーク一人だけの話だから"
+     ],
+     "answer": 3,
+     "explain": "アナは「That's one person. That's not 'people.'」と言い、一人だけの話を「みんな」とは言えないと指摘しています。"
+    },
+    {
+     "q": "カーベーは、予算削減があるとどうなると言っていますか？",
+     "choices": [
+      "給料が上がる",
+      "人が職を失う",
+      "部署が増える",
+      "休暇が増える"
+     ],
+     "answer": 1,
+     "explain": "カーベーは「When there are budget cuts, people lose their jobs.」と話し、職を失う人が出ると心配しています。"
+    },
+    {
+     "q": "アメリアが「戻りたくない」と言っている以前の仕事はどれですか？",
+     "choices": [
+      "記者",
+      "教師",
+      "探偵",
+      "会計士"
+     ],
+     "answer": 2,
+     "explain": "アメリアは「I can't go back to being a detective.」と言い、探偵には戻りたくないと話しています。"
+    },
+    {
+     "q": "カーベーがペネロペに勧めたことは何ですか？",
+     "choices": [
+      "上司に相談する",
+      "履歴書を更新する",
+      "別会社を見学する",
+      "英語を勉強する"
+     ],
+     "answer": 1,
+     "explain": "カーベーは「Update your résumé.」と言い、自分もすでに更新したと話しています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 21,
+     "why": "“When there are budget cuts, people lose their jobs.”を「クビになったりする」と少し口語的に意訳しており、ニュアンスがどこまで崩してよいか迷いました。"
+    },
+    {
+     "line": 29,
+     "why": "“High school kids scare me!”を「高校生って、すごく怖いんだ！」としたが、日本語でどの程度オーバーに言うか調整が難しかったです。"
+    },
+    {
+     "line": 36,
+     "why": "“Update your résumé.”を字幕らしく短く「履歴書を更新しなよ」とし、丁寧さや堅さの度合いに少し迷いました。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 5.93,
+     "en": "So, Jonathan, what do you think today's meeting is about?",
+     "ja": "ねえジョナサン、今日の会議って何の話だと思う？"
+    },
+    {
+     "start": 5.78,
+     "end": 8.41,
+     "en": "The email sounded important.",
+     "ja": "メールの文面、すごく大事そうだったよね。"
+    },
+    {
+     "start": 8.26,
+     "end": 14.63,
+     "en": "Well, I have heard people in the building talking about budget cuts.",
+     "ja": "うーん、このビルのあちこちで予算削減の話をしているって聞いたよ。"
+    },
+    {
+     "start": 14.48,
+     "end": 17.57,
+     "en": "Oh! Budget cuts?",
+     "ja": "えっ、予算削減？"
+    },
+    {
+     "start": 17.42,
+     "end": 22.07,
+     "en": "Wait, who has been talking about budget cuts?",
+     "ja": "ちょっと待って、誰が予算削減の話をしてたの？"
+    },
+    {
+     "start": 21.92,
+     "end": 23.65,
+     "en": "Mark in Accounting.",
+     "ja": "経理部のマークだよ。"
+    },
+    {
+     "start": 23.5,
+     "end": 25.63,
+     "en": "Mark in Accounting?",
+     "ja": "経理部のマーク？"
+    },
+    {
+     "start": 25.48,
+     "end": 27.43,
+     "en": "That's one person.",
+     "ja": "一人だけじゃない。"
+    },
+    {
+     "start": 27.28,
+     "end": 28.65,
+     "en": "That's not \"people.\"",
+     "ja": "それは“みんな”って言えないでしょ。"
+    },
+    {
+     "start": 28.5,
+     "end": 33.79,
+     "en": "I know, but Mark knows everything that goes on at The Studio.",
+     "ja": "わかってるけど、マークはスタジオで起きてることを全部知ってるんだ。"
+    },
+    {
+     "start": 33.64,
+     "end": 35.67,
+     "en": "That is true.",
+     "ja": "それはそうね。"
+    },
+    {
+     "start": 35.52,
+     "end": 38.97,
+     "en": "But wait, look at us.",
+     "ja": "でもちょっと待って、私たちを見てよ。"
+    },
+    {
+     "start": 38.82,
+     "end": 40.51,
+     "en": "We shouldn't gossip.",
+     "ja": "噂話なんてやめよう。"
+    },
+    {
+     "start": 40.36,
+     "end": 42.63,
+     "en": "That's how rumors start.",
+     "ja": "そうやって変な噂が広まるんだから。"
+    },
+    {
+     "start": 42.48,
+     "end": 47.05,
+     "en": "We'll just go to the meeting and see what happens.",
+     "ja": "とにかく会議に行って、そこで聞けばいいよ。"
+    },
+    {
+     "start": 47.8,
+     "end": 48.51,
+     "en": "You're right.",
+     "ja": "そうだね。"
+    },
+    {
+     "start": 48.36,
+     "end": 51.17,
+     "en": "No more talk about budget cuts.",
+     "ja": "もう予算削減の話はおしまい。"
+    },
+    {
+     "start": 51.02,
+     "end": 55.05,
+     "en": "Budget cuts?",
+     "ja": "予算削減？"
+    },
+    {
+     "start": 54.9,
+     "end": 56.61,
+     "en": "Oh no!",
+     "ja": "うそ、やだ！"
+    },
+    {
+     "start": 56.46,
+     "end": 63.17,
+     "en": "I just heard Anna and Jonathan talking about budget cuts.",
+     "ja": "今、アナとジョナサンが予算削減の話をしているのを聞いちゃった。"
+    },
+    {
+     "start": 63.02,
+     "end": 66.25,
+     "en": "That must be what the meeting is about.",
+     "ja": "きっと、そのことが会議の議題なんだ。"
+    },
+    {
+     "start": 66.1,
+     "end": 70.31,
+     "en": "When there are budget cuts, people lose their jobs.",
+     "ja": "予算が削られると、人がクビになったりするんだよ。"
+    },
+    {
+     "start": 70.16,
+     "end": 71.87,
+     "en": "Not you.",
+     "ja": "君は大丈夫だよ。"
+    },
+    {
+     "start": 71.72,
+     "end": 73.87,
+     "en": "You're a good reporter.",
+     "ja": "きみは腕のいい記者なんだから。"
+    },
+    {
+     "start": 73.72,
+     "end": 75.63,
+     "en": "And it's not you.",
+     "ja": "君だって大丈夫だよ。"
+    },
+    {
+     "start": 75.48,
+     "end": 79.17,
+     "en": "You've done a great job as a videographer.",
+     "ja": "ビデオ撮影担当としてすごくいい仕事をしてきたじゃないか。"
+    },
+    {
+     "start": 80.38,
+     "end": 82.91,
+     "en": "I can't go back to being a detective.",
+     "ja": "もう探偵には戻れないわ。"
+    },
+    {
+     "start": 82.76,
+     "end": 85.49,
+     "en": "Criminals scare me!",
+     "ja": "犯人とか本当に怖いんだもの！"
+    },
+    {
+     "start": 85.34,
+     "end": 88.31,
+     "en": "And I can't go back to being a teacher!",
+     "ja": "僕だって教師には戻れないよ！"
+    },
+    {
+     "start": 88.16,
+     "end": 90.75,
+     "en": "High school kids scare me!",
+     "ja": "高校生って、すごく怖いんだ！"
+    },
+    {
+     "start": 124.12,
+     "end": 126.97,
+     "en": "Penelope, have you heard the news?",
+     "ja": "ペネロペ、ニュース聞いた？"
+    },
+    {
+     "start": 126.82,
+     "end": 130.01,
+     "en": "Today's meeting is about budget cuts.",
+     "ja": "今日の会議は予算削減の話なんだ。"
+    },
+    {
+     "start": 129.86,
+     "end": 131.29,
+     "en": "That's awful!",
+     "ja": "ひどい話ね！"
+    },
+    {
+     "start": 131.14,
+     "end": 133.55,
+     "en": "What should I do?",
+     "ja": "どうしたらいいの？"
+    },
+    {
+     "start": 133.4,
+     "end": 134.49,
+     "en": "Update your résumé.",
+     "ja": "履歴書を更新しなよ。"
+    },
+    {
+     "start": 134.76,
+     "end": 137.31,
+     "en": "I’ve already updated mine.",
+     "ja": "僕はもう書き直しておいたよ。"
+    },
+    {
+     "start": 137.9,
+     "end": 139.53,
+     "en": "I’ll see you at the meeting.",
+     "ja": "会議で会おう。"
+    }
+   ]
+  },
+  {
+   "id": "L3-2",
+   "level": 3,
+   "title": "The Interview",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-2/3960471.html",
+   "video": "media/L3-2.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L3-2.en.vtt",
+   "subs_ja": "subs/L3-2.ja.vtt",
+   "clip_start": 111.62,
+   "clip_end": 254.68,
+   "cover_height": 0.22,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "want ads",
+     "ja": "求人広告"
+    },
+    {
+     "en": "tear ... up",
+     "ja": "〜をびりびりに破る"
+    },
+    {
+     "en": "throw ... away",
+     "ja": "〜を捨てる"
+    },
+    {
+     "en": "crossword puzzle",
+     "ja": "クロスワードパズル"
+    },
+    {
+     "en": "job offer",
+     "ja": "仕事のオファー・仕事の話"
+    },
+    {
+     "en": "team up (with)",
+     "ja": "（〜と）組む、一緒にやる"
+    },
+    {
+     "en": "talk show",
+     "ja": "トークショー"
+    },
+    {
+     "en": "people person",
+     "ja": "人付き合いが得意な人"
+    },
+    {
+     "en": "personal skills",
+     "ja": "対人スキル・人付き合いの力"
+    },
+    {
+     "en": "be proud of",
+     "ja": "〜を誇りに思う"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "ピートが最初に忙しいと言っていた理由は何ですか？",
+     "choices": [
+      "引っ越しの準備をしているから",
+      "仕事を探しているから",
+      "家族の世話をしているから",
+      "本を書いているから"
+     ],
+     "answer": 1,
+     "explain": "ピートは「I’m busy looking for work.」と言い、仕事探しで忙しいと説明しています。"
+    },
+    {
+     "q": "アナがピートに『tear these want ads up and throw them away』と言った理由として近いものはどれですか？",
+     "choices": [
+      "求人広告の内容が古いから",
+      "求人広告が間違いだらけだから",
+      "ピートに別の仕事のチャンスがあるから",
+      "ピートに勉強してほしいから"
+     ],
+     "answer": 2,
+     "explain": "アナは「I have a job offer for you!」と言い、新しい仕事の話があるので求人広告は捨てていいと言っています。"
+    },
+    {
+     "q": "アナのボスがアナに求めている相手はどんな人ですか？",
+     "choices": [
+      "アナと同じタイプの人",
+      "アナより若い人",
+      "アナと違うタイプの人",
+      "ニュースの経験がある人"
+     ],
+     "answer": 2,
+     "explain": "アナは「the person must be different from me」と言い、自分と違うタイプの人でないといけないと説明しています。"
+    },
+    {
+     "q": "面接で、ピートが一番誇りに思っている仕事はどれですか？",
+     "choices": [
+      "トークショーの司会をしたこと",
+      "会社で表彰されたこと",
+      "小屋にこもって本を書いたこと",
+      "新聞で記事を書いたこと"
+     ],
+     "answer": 2,
+     "explain": "ピートは「I locked myself in a cabin and wrote a book.」と話し、それを一番誇りに思っていると言っています。"
+    },
+    {
+     "q": "ピートは自分の人付き合いについてどう感じていると言いましたか？",
+     "choices": [
+      "人と話すのが大好きだ",
+      "人と話すのは少し苦手だ",
+      "人は話しすぎだと思う",
+      "人とは話したくないと言った"
+     ],
+     "answer": 2,
+     "explain": "彼は「sometimes I think people talk too much」と言い、人はしゃべりすぎだと思う、と答えています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 25,
+     "why": "Professor Bot の解説で教材らしさを保つため、少し説明的に訳したが、シャドーイング用としてどこまで直訳寄りにするか迷いがあった。"
+    },
+    {
+     "line": 28,
+     "why": "“skills for this job” を「この仕事に必要な能力」と意訳したが、「適性」など他の訳語とも迷った。"
+    },
+    {
+     "line": 33,
+     "why": "“personal skills” は直訳なら「個人的な技能」だが、会話の流れから「対人スキル」と意訳しており、学習者にどこまで自然に伝わるか少し不安。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 2.51,
+     "en": "Excuse me. Are you using this chair?",
+     "ja": "すみません、この椅子、使っていますか？"
+    },
+    {
+     "start": 3.16,
+     "end": 3.91,
+     "en": "Yes.",
+     "ja": "はい、使っています。"
+    },
+    {
+     "start": 7.76,
+     "end": 10.55,
+     "en": "Pete, hi! Thanks for meeting me.",
+     "ja": "ピート、やあ。来てくれてありがとう。"
+    },
+    {
+     "start": 11.02,
+     "end": 14.23,
+     "en": "Sure. But I don’t have lots of time, Anna.",
+     "ja": "いいよ。でも、あんまり時間がないんだ、アナ。"
+    },
+    {
+     "start": 14.58,
+     "end": 16.87,
+     "en": "I’m busy looking for work.",
+     "ja": "今、仕事探しで忙しくてさ。"
+    },
+    {
+     "start": 17.64,
+     "end": 22.33,
+     "en": "Pete, you can tear these want ads up and throw them away!",
+     "ja": "ピート、この求人広告はビリビリに破って、捨てていいよ！"
+    },
+    {
+     "start": 22.64,
+     "end": 23.83,
+     "en": "I have good news!",
+     "ja": "いい知らせがあるんだ。"
+    },
+    {
+     "start": 24.3,
+     "end": 27.03,
+     "en": "Anna, I was working on that crossword puzzle.",
+     "ja": "アナ、そのクロスワードパズルを解いてたんだけど。"
+    },
+    {
+     "start": 27.36,
+     "end": 29.09,
+     "en": "Oh. Sorry. Sorry.",
+     "ja": "あ、ごめん、ごめん。"
+    },
+    {
+     "start": 30.38,
+     "end": 32.75,
+     "en": "Pete, forget about the crossword puzzle.",
+     "ja": "ピート、クロスワードはもう忘れて。"
+    },
+    {
+     "start": 32.86,
+     "end": 35.39,
+     "en": "I have a job offer for you!",
+     "ja": "あなたに仕事の話があるの。"
+    },
+    {
+     "start": 36.32,
+     "end": 37.39,
+     "en": "I'm listening.",
+     "ja": "聞いてるよ。"
+    },
+    {
+     "start": 37.64,
+     "end": 42.41,
+     "en": "My boss wants me to team up with someone to host a talk show.",
+     "ja": "上司がね、トークショーを一緒にやる相手と組みなさいって言ってるの。"
+    },
+    {
+     "start": 42.84,
+     "end": 45.95,
+     "en": "But the person must be different from me.",
+     "ja": "でも、その人は私とタイプが違ってないといけないの。"
+    },
+    {
+     "start": 46.32,
+     "end": 47.81,
+     "en": "So, I thought of you.",
+     "ja": "それで、あなたが浮かんだの。"
+    },
+    {
+     "start": 48.28,
+     "end": 50.75,
+     "en": "Different from you? What do you mean?",
+     "ja": "君と違うって？どういう意味？"
+    },
+    {
+     "start": 51.42,
+     "end": 53.95,
+     "en": "I'm sorry, Pete, I don't have time right now.",
+     "ja": "ごめんねピート、今あんまり時間がなくて。"
+    },
+    {
+     "start": 54.28,
+     "end": 55.91,
+     "en": "Here's my boss's address.",
+     "ja": "これが私の上司の住所。"
+    },
+    {
+     "start": 56.34,
+     "end": 58.97,
+     "en": "Your interview is tomorrow morning at 10 am.",
+     "ja": "あなたの面接は明日の朝10時よ。"
+    },
+    {
+     "start": 60.46,
+     "end": 63.21,
+     "en": "But what do you mean “different”?",
+     "ja": "でも「違う」って、どういうこと？"
+    },
+    {
+     "start": 64.24,
+     "end": 65.79,
+     "en": "Just be yourself, Pete.",
+     "ja": "ピート、自分らしくしてればいいの。"
+    },
+    {
+     "start": 67.08,
+     "end": 68.35,
+     "en": "Just be yourself.",
+     "ja": "ありのままの自分でいて。"
+    },
+    {
+     "start": 69.26,
+     "end": 72.29,
+     "en": "Did you find any two-word verbs?",
+     "ja": "二語動詞は見つかりましたか？"
+    },
+    {
+     "start": 72.44,
+     "end": 74.09,
+     "en": "Here’s one example.",
+     "ja": "ひとつ例を出しましょう。"
+    },
+    {
+     "start": 74.38,
+     "end": 77.55,
+     "en": "Pete can throw the want ads away!",
+     "ja": "ピートは求人広告を捨てることができます。"
+    },
+    {
+     "start": 77.92,
+     "end": 80.99,
+     "en": "Throw away is a two-word verb.",
+     "ja": "「throw away」は二語動詞です。"
+    },
+    {
+     "start": 81.98,
+     "end": 83.95,
+     "en": "Thanks for coming in, Pete.",
+     "ja": "来てくれてありがとう、ピート。"
+    },
+    {
+     "start": 85.56,
+     "end": 87.43,
+     "en": "Thanks for the opportunity, Ms. Weaver.",
+     "ja": "この機会をありがとうございます、ウィーバーさん。"
+    },
+    {
+     "start": 87.74,
+     "end": 94.09,
+     "en": "I need to find out if you have the skills for this job.",
+     "ja": "あなたにこの仕事に必要な能力があるか、確認する必要があります。"
+    },
+    {
+     "start": 95.32,
+     "end": 99.73,
+     "en": "And I want you to be completely honest.",
+     "ja": "それから、正直に答えてほしいの。"
+    },
+    {
+     "start": 102.5,
+     "end": 103.17,
+     "en": "Okay.",
+     "ja": "わかりました。"
+    },
+    {
+     "start": 103.5,
+     "end": 106.47,
+     "en": "First, let's talk about your personal skills.",
+     "ja": "まず、あなたの対人スキルについて話しましょう。"
+    },
+    {
+     "start": 107.48,
+     "end": 111.65,
+     "en": "Pete, are you a people person?",
+     "ja": "ピート、あなたは人付き合いが得意なタイプ？"
+    },
+    {
+     "start": 112.72,
+     "end": 119.59,
+     "en": "Well, okay, sometimes I think people talk too much.",
+     "ja": "ええと、その…人って、しゃべりすぎだなって思うことがあるんです。"
+    },
+    {
+     "start": 120.18,
+     "end": 126.15,
+     "en": "Pete, what work of yours are you most proud of?",
+     "ja": "ピート、自分の仕事で、いちばん誇りに思っているのは何？"
+    },
+    {
+     "start": 126.32,
+     "end": 130.97,
+     "en": "Last year, I locked myself in a cabin and wrote a book.",
+     "ja": "去年、小屋にこもって本を書いたんです。"
+    },
+    {
+     "start": 131.76,
+     "end": 134.51,
+     "en": "I didn't speak to anybody the entire time!",
+     "ja": "その間、誰とも一言も話しませんでした。"
+    },
+    {
+     "start": 135.44,
+     "end": 137.89,
+     "en": "It was the best two months of my life.",
+     "ja": "あの二か月は、人生で一番よかったです。"
+    },
+    {
+     "start": 138.74,
+     "end": 142.61,
+     "en": "Okay. I think I’ve heard enough.",
+     "ja": "そう。もう十分聞きました。"
+    }
+   ]
+  },
+  {
+   "id": "L3-3",
+   "level": 3,
+   "title": "He Said - She Said",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-3/4027340.html",
+   "video": "media/L3-3.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L3-3.en.vtt",
+   "subs_ja": "subs/L3-3.ja.vtt",
+   "clip_start": 103.88,
+   "clip_end": 266.7,
+   "cover_height": 0.22,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "consultant",
+     "ja": "コンサルタント、助言をする専門家"
+    },
+    {
+     "en": "special coffee",
+     "ja": "特別なコーヒー（こだわりのコーヒー）"
+    },
+    {
+     "en": "arrived on time",
+     "ja": "時間どおりに到着した"
+    },
+    {
+     "en": "wasted time",
+     "ja": "時間をムダにした"
+    },
+    {
+     "en": "commute",
+     "ja": "通勤・通学（の時間・行き来）"
+    },
+    {
+     "en": "characters from books",
+     "ja": "本の登場人物たち"
+    },
+    {
+     "en": "point of view",
+     "ja": "視点、見方"
+    },
+    {
+     "en": "the same event",
+     "ja": "同じ出来事"
+    },
+    {
+     "en": "see things differently",
+     "ja": "物事を違うふうに見る"
+    },
+    {
+     "en": "named them after ~",
+     "ja": "~にちなんで名前をつけた"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "アンナとピートは、なぜ朝8時に会うことにしましたか？",
+     "choices": [
+      "一緒に朝ごはんを食べるため",
+      "一緒に仕事に行くため",
+      "ジョギングをするため",
+      "コーヒーを買うため"
+     ],
+     "answer": 1,
+     "explain": "アンナは「8 a.m. to come to work together.」と言い、一緒に出勤する予定だったと説明しています。"
+    },
+    {
+     "q": "アンナの説明では、遅刻した主な理由は何ですか？",
+     "choices": [
+      "バスが来なかったから",
+      "ピートが寝坊したから",
+      "ピートがコーヒーを待って時間をムダにしたから",
+      "アンナが電話をしなかったから"
+     ],
+     "answer": 2,
+     "explain": "アンナは「After Pete had wasted time waiting for coffee, we were late.」と話しています。"
+    },
+    {
+     "q": "ピートは、アンナが最初に自分を見つけられなかった理由をどう説明していますか？",
+     "choices": [
+      "アンナが家にいたから",
+      "アンナが木の後ろに立っていたから",
+      "アンナがバスに乗っていたから",
+      "アンナが電話していたから"
+     ],
+     "answer": 1,
+     "explain": "ピートは「She was standing behind a tree.」と言い、木の後ろにいたと説明しています。"
+    },
+    {
+     "q": "ケリーは、二人の物の見方が違うことをどう利用しようと言いましたか？",
+     "choices": [
+      "別々の番組に出てもらう",
+      "どちらか一人だけを番組に出す",
+      "番組を「He Said, She Said」と名付ける",
+      "二人に同じセリフを言わせる"
+     ],
+     "answer": 2,
+     "explain": "ケリーは番組名を「He Said, She Said」にして、違う視点を生かすアイデアを出しました。"
+    },
+    {
+     "q": "ケリーが「You two see the same event very differently.」と言ったとき、何を指していますか？",
+     "choices": [
+      "二人の性格の違い",
+      "遅刻までの出来事の説明の違い",
+      "仕事の内容の違い",
+      "コーヒーの好みの違い"
+     ],
+     "answer": 1,
+     "explain": "アンナとピートが、同じ「遅刻した朝」の出来事をまったく違うストーリーとして話していることを指しています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 18,
+     "why": "“Deep watching for past perfect.” は元のスクリプトでは “keep watching for past perfect” の誤認識と思われ、ニュアンスを「しっかり探し続けてください」と意訳した。どの程度くだけるか迷いがある。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 4.23,
+     "en": "Kelly, see Pete and I live in the same building.",
+     "ja": "ケリー、あのね、ピートと私は同じ建物に住んでいるの。"
+    },
+    {
+     "start": 4.46,
+     "end": 7.15,
+     "en": "So we decided to meet at 8 a.m.",
+     "ja": "だから、朝8時に待ち合わせすることにしたの。"
+    },
+    {
+     "start": 8.18,
+     "end": 11.03,
+     "en": "8 a.m. to come to work together.",
+     "ja": "8時に会って、一緒に出勤するつもりだったのよ。"
+    },
+    {
+     "start": 12.48,
+     "end": 17.55,
+     "en": "I had waited 15 minutes when Pete arrived.",
+     "ja": "ピートが来たとき、私は15分も待ってたの。"
+    },
+    {
+     "start": 22.72,
+     "end": 28.25,
+     "en": "After Pete had wasted time waiting for coffee, we were late.",
+     "ja": "ピートがコーヒーを待って時間をムダにしたせいで、私たちは遅刻したの。"
+    },
+    {
+     "start": 28.1,
+     "end": 31.03,
+     "en": "I left you a message.",
+     "ja": "あなたにメッセージを残したわ。"
+    },
+    {
+     "start": 31.4,
+     "end": 34.13,
+     "en": "I didn't get that message.",
+     "ja": "そのメッセージは受け取ってないわ。"
+    },
+    {
+     "start": 34.6,
+     "end": 36.25,
+     "en": "Oh, sorry.",
+     "ja": "あ、ごめんなさい。"
+    },
+    {
+     "start": 37.06,
+     "end": 37.71,
+     "en": "Pete?",
+     "ja": "ピート？"
+    },
+    {
+     "start": 38.38,
+     "end": 40.55,
+     "en": "Anna left a message.",
+     "ja": "アンナはメッセージを残しました。"
+    },
+    {
+     "start": 40.8,
+     "end": 42.99,
+     "en": "That's the right thing to do.",
+     "ja": "それは正しい対応ですね。"
+    },
+    {
+     "start": 43.18,
+     "end": 47.25,
+     "en": "Did you find some examples of the past perfect tense?",
+     "ja": "過去完了の文の例は見つかりましたか？"
+    },
+    {
+     "start": 47.62,
+     "end": 48.11,
+     "en": "I did.",
+     "ja": "見つけました。"
+    },
+    {
+     "start": 48.24,
+     "end": 49.17,
+     "en": "Anna said.",
+     "ja": "アンナはこう言いました。"
+    },
+    {
+     "start": 49.42,
+     "end": 54.25,
+     "en": "After Pete had wasted time waiting for coffee, we were late.",
+     "ja": "「ピートがコーヒーを待って時間をムダにしたせいで、私たちは遅刻したの。」"
+    },
+    {
+     "start": 54.56,
+     "end": 56.13,
+     "en": "Look at that coffee.",
+     "ja": "そのコーヒーを見てください。"
+    },
+    {
+     "start": 55.98,
+     "end": 58.13,
+     "en": "It looks more like dessert.",
+     "ja": "コーヒーというよりデザートに見えますね。"
+    },
+    {
+     "start": 58.38,
+     "end": 59.09,
+     "en": "Okay.",
+     "ja": "よし。"
+    },
+    {
+     "start": 59.4,
+     "end": 62.19,
+     "en": "Deep watching for past perfect.",
+     "ja": "過去完了をしっかり探し続けてください。"
+    },
+    {
+     "start": 65.02,
+     "end": 67.29,
+     "en": "Yeah, that's not why we're late.",
+     "ja": "いや、遅れたのはそのせいじゃないんだ。"
+    },
+    {
+     "start": 67.68,
+     "end": 69.23,
+     "en": "This is why we're late.",
+     "ja": "遅れた本当の理由はこっちさ。"
+    },
+    {
+     "start": 69.6,
+     "end": 72.85,
+     "en": "I had arrived on time at 8 a.m.",
+     "ja": "僕は8時ちょうどに時間どおり着いていた。"
+    },
+    {
+     "start": 73.16,
+     "end": 74.71,
+     "en": "but didn't see Anna.",
+     "ja": "でも、アンナが見えなかったんだ。"
+    },
+    {
+     "start": 74.9,
+     "end": 76.99,
+     "en": "She was standing behind a tree.",
+     "ja": "彼女は木の後ろに立っていたんだよ。"
+    },
+    {
+     "start": 77.06,
+     "end": 78.51,
+     "en": "I think she was hugging it.",
+     "ja": "たぶん木を抱きしめてたと思う。"
+    },
+    {
+     "start": 78.76,
+     "end": 80.65,
+     "en": "I always walk to work,",
+     "ja": "僕はいつも歩いて通勤しているんだけど、"
+    },
+    {
+     "start": 80.62,
+     "end": 84.35,
+     "en": "but she said that would take too long",
+     "ja": "彼女は「それじゃ時間がかかりすぎる」って言って、"
+    },
+    {
+     "start": 84.2,
+     "end": 86.87,
+     "en": "and that a scooter would be faster.",
+     "ja": "スクーターのほうが早いって言うんだ。"
+    },
+    {
+     "start": 87.12,
+     "end": 88.91,
+     "en": "It was awful.",
+     "ja": "ひどかったよ。"
+    },
+    {
+     "start": 89.1,
+     "end": 94.11,
+     "en": "I hated it and it added too much time to our commute.",
+     "ja": "最悪だったし、通勤時間がすごく長くなってしまった。"
+    },
+    {
+     "start": 94.28,
+     "end": 99.47,
+     "en": "Then Anna stopped by a pond to feed the birds.",
+     "ja": "そのあとアンナが池に寄って、鳥にエサをあげたんだ。"
+    },
+    {
+     "start": 99.7,
+     "end": 103.17,
+     "en": "She had named them after characters from books",
+     "ja": "その鳥たちに、本の登場人物の名前をつけていて、"
+    },
+    {
+     "start": 103.02,
+     "end": 106.41,
+     "en": "and yelled the names out loud.",
+     "ja": "その名前を大声で呼んだんだ。"
+    },
+    {
+     "start": 106.7,
+     "end": 110.59,
+     "en": "Romeo, Juliet, Sherlock.",
+     "ja": "ロミオ！ジュリエット！シャーロック！"
+    },
+    {
+     "start": 111.76,
+     "end": 116.87,
+     "en": "By the time she had fed all the birds, we were late.",
+     "ja": "全部の鳥にエサをやり終わったころには、もう遅刻していたよ。"
+    },
+    {
+     "start": 116.98,
+     "end": 118.15,
+     "en": "This is what I think.",
+     "ja": "私の考えはこうです。"
+    },
+    {
+     "start": 118.86,
+     "end": 123.41,
+     "en": "You two see the same event very differently.",
+     "ja": "あなたたち二人は、同じ出来事をまったく違って見ているのね。"
+    },
+    {
+     "start": 123.94,
+     "end": 125.87,
+     "en": "Does this happen often with you two?",
+     "ja": "こういうこと、二人にはよくあるの？"
+    },
+    {
+     "start": 126.46,
+     "end": 127.01,
+     "en": "Yes.",
+     "ja": "ある。"
+    },
+    {
+     "start": 126.98,
+     "end": 127.23,
+     "en": "No.",
+     "ja": "ないわ。"
+    },
+    {
+     "start": 128.04,
+     "end": 128.63,
+     "en": "Yes.",
+     "ja": "あるよ。"
+    },
+    {
+     "start": 129.66,
+     "end": 131.21,
+     "en": "What are you talking about?",
+     "ja": "何の話してるの？"
+    },
+    {
+     "start": 131.16,
+     "end": 131.71,
+     "en": "Okay.",
+     "ja": "なるほど。"
+    },
+    {
+     "start": 131.86,
+     "end": 132.85,
+     "en": "This is good.",
+     "ja": "これはいいわ。"
+    },
+    {
+     "start": 132.9,
+     "end": 133.73,
+     "en": "This is good.",
+     "ja": "本当にいいわ。"
+    },
+    {
+     "start": 133.94,
+     "end": 135.87,
+     "en": "It's good to see things differently.",
+     "ja": "物事を違うふうに見るのは、いいことよ。"
+    },
+    {
+     "start": 136.48,
+     "end": 138.49,
+     "en": "I have an idea.",
+     "ja": "いい考えがあるわ。"
+    },
+    {
+     "start": 138.34,
+     "end": 140.67,
+     "en": "We will call the show",
+     "ja": "番組のタイトルは——"
+    },
+    {
+     "start": 140.52,
+     "end": 143.41,
+     "en": "He Said, She Said.",
+     "ja": "『ヒー・セッド、シー・セッド』にしましょう。"
+    },
+    {
+     "start": 144.66,
+     "end": 147.93,
+     "en": "For every story, you tell a different point of view.",
+     "ja": "毎回、一つの出来事を違う立場から話すのよ。"
+    },
+    {
+     "start": 148.36,
+     "end": 150.41,
+     "en": "That is a great idea, Kelly.",
+     "ja": "それはすてきなアイデアだよ、ケリー。"
+    },
+    {
+     "start": 151.06,
+     "end": 153.67,
+     "en": "Pete, we are different.",
+     "ja": "ピート、私たちって全然ちがうでしょ。"
+    },
+    {
+     "start": 154.14,
+     "end": 156.55,
+     "en": "That's why I thought of you for this job.",
+     "ja": "だからこそ、この仕事にあなたを選んだのよ。"
+    },
+    {
+     "start": 156.82,
+     "end": 159.03,
+     "en": "I think you two understand perfectly.",
+     "ja": "あなたたち二人は、ちゃんと分かり合えてると思うわ。"
+    },
+    {
+     "start": 161.02,
+     "end": 162.37,
+     "en": "Let's get to work.",
+     "ja": "さあ、仕事を始めましょう。"
+    }
+   ]
+  },
+  {
+   "id": "L3-4",
+   "level": 3,
+   "title": "Run Away With the Circus!",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-4-run-away-with-the-circus/4034187.html",
+   "video": "media/L3-4.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L3-4.en.vtt",
+   "subs_ja": "subs/L3-4.ja.vtt",
+   "clip_start": 83.24,
+   "clip_end": 189.2,
+   "cover_height": 0.22,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "circus performers",
+     "ja": "サーカスの出演者・パフォーマー"
+    },
+    {
+     "en": "athletic",
+     "ja": "運動能力が高い、スポーツ向きの"
+    },
+    {
+     "en": "point of view",
+     "ja": "考え方、見方、視点"
+    },
+    {
+     "en": "completely disagree",
+     "ja": "まったく同意しない、全然そう思わない"
+    },
+    {
+     "en": "trapeze artists",
+     "ja": "空中ブランコの曲芸師（トラピーズ・アーティスト）"
+    },
+    {
+     "en": "jugglers",
+     "ja": "ジャグラー、ジャグリングをする人たち"
+    },
+    {
+     "en": "skilled in the art of ~",
+     "ja": "〜の技に長けている、〜の技を極めている"
+    },
+    {
+     "en": "going back and forth on this issue",
+     "ja": "この問題で意見が行ったり来たりしている"
+    },
+    {
+     "en": "agree with you on that point",
+     "ja": "その点についてはあなたに同意する"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "ピートはサーカスの出演者について、主にどのように考えていますか？",
+     "choices": [
+      "本物の芸術家だと思っている",
+      "運動能力の高いアスリートだと思っている",
+      "まったく才能がないと思っている",
+      "危険すぎて見たくないと思っている"
+     ],
+     "answer": 1,
+     "explain": "ピートは彼らを「athletes with interesting skills and costumes」と言い、アスリートだと考えています。"
+    },
+    {
+     "q": "アンナが「trapeze artists」と呼んでいる人たちは、どんなことをする人たちですか？",
+     "choices": [
+      "ピエロの格好で歌う人たち",
+      "空中ブランコで技をする人たち",
+      "動物の世話をする人たち",
+      "楽器を演奏する人たち"
+     ],
+     "answer": 1,
+     "explain": "trapeze は空中ブランコのことで、そこで技をする人を trapeze artists と呼んでいます。"
+    },
+    {
+     "q": "ピートが「They’re just throwing things back and forth.」と言ったとき、何について話していますか？",
+     "choices": [
+      "トランポリン選手",
+      "観客",
+      "ジャグラー",
+      "ピエロ"
+     ],
+     "answer": 2,
+     "explain": "直前に「They’re jugglers.」とあり、ジャグラーについて「物を投げ合っているだけ」と話しています。"
+    },
+    {
+     "q": "アンナが「we can agree that these young people are amazing」と言うとき、何を提案していますか？",
+     "choices": [
+      "議論をやめて別の番組を始めること",
+      "少なくとも若い出演者たちがすごいという点では同意しようということ",
+      "サーカスはよくないと結論づけること",
+      "みんなアスリートだと認めることをやめること"
+     ],
+     "answer": 1,
+     "explain": "芸術かどうかでは意見が分かれますが、「若者たちはすごい」という点なら一緒に認めようと提案しています。"
+    },
+    {
+     "q": "Professor Bot は、アンナとピートがどの点で同意したと言っていますか？",
+     "choices": [
+      "サーカスは危険すぎるという点",
+      "サーカスは芸術ではないという点",
+      "出演者たちは運動能力が高いという点",
+      "ジャグリングは簡単だという点"
+     ],
+     "answer": 2,
+     "explain": "ロボットは「Anna says she agrees that the performers are athletic.」と説明し、出演者が運動能力に優れている点で一致したとまとめています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 10,
+     "why": "「trapeze artists」を「空中ブランコ・アーティスト」とカタカナで残したが、日本語としてどこまで自然かやや迷いがあります。"
+    },
+    {
+     "line": 21,
+     "why": "「going back and forth on this issue」を比喩的に「行ったり来たりしてる」と訳したが、議論の応酬のニュアンスが十分伝わるか少し不安です。"
+    },
+    {
+     "line": 27,
+     "why": "「flipping and throwing each other around」を「宙返りしたり、お互いを放り投げたり」と意訳したが、激しさの度合いをどこまで出すか迷いました。"
+    },
+    {
+     "line": 31,
+     "why": "Professor Bot のセリフを引用っぽく「『〜』」としたが、字幕教材としてこのスタイルが適切か判断が分かれそうです。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 4.99,
+     "en": "That looks fun, Anna, but I don't think circus performers are artists.",
+     "ja": "楽しそうだね、アンナ。でもサーカスの出演者は芸術家じゃないと思うな。"
+    },
+    {
+     "start": 5.3,
+     "end": 10.09,
+     "en": "I think they're athletes with interesting skills and costumes.",
+     "ja": "面白い技と衣装を持ったアスリートだと思う。"
+    },
+    {
+     "start": 10.48,
+     "end": 13.77,
+     "en": "Hmm, that is a very interesting point of view, Pete.",
+     "ja": "ふうん、それはすごく興味深い考え方ね、ピート。"
+    },
+    {
+     "start": 14.04,
+     "end": 16.19,
+     "en": "And I completely disagree.",
+     "ja": "でも私はまったくそうは思わないわ。"
+    },
+    {
+     "start": 17.08,
+     "end": 20.19,
+     "en": "Anna, Michelangelo was an artist.",
+     "ja": "アンナ、ミケランジェロは芸術家だろ。"
+    },
+    {
+     "start": 20.94,
+     "end": 22.85,
+     "en": "Rembrandt was an artist.",
+     "ja": "レンブラントも芸術家だ。"
+    },
+    {
+     "start": 22.7,
+     "end": 26.63,
+     "en": "People who swing from ropes are not artists.",
+     "ja": "ロープにぶら下がって揺れている人たちは芸術家じゃないよ。"
+    },
+    {
+     "start": 27.06,
+     "end": 31.43,
+     "en": "I know it's not easy to swing from a bar and catch someone by the hands.",
+     "ja": "バーにぶら下がって、人の手をつかむのが簡単じゃないのはわかってる。"
+    },
+    {
+     "start": 31.44,
+     "end": 34.43,
+     "en": "You have to be very athletic to do that.",
+     "ja": "あれをやるには、相当運動神経がよくないといけない。"
+    },
+    {
+     "start": 34.46,
+     "end": 35.71,
+     "en": "That's a good point, Pete.",
+     "ja": "それはいいところに気づいたわね、ピート。"
+    },
+    {
+     "start": 36.26,
+     "end": 41.53,
+     "en": "They are athletic, but they are called trapeze artists.",
+     "ja": "たしかに運動能力は高いけど、「空中ブランコ・アーティスト」って呼ばれているのよ。"
+    },
+    {
+     "start": 42.82,
+     "end": 44.17,
+     "en": "Trapeze artists.",
+     "ja": "トラピーズ・アーティストよ。"
+    },
+    {
+     "start": 44.72,
+     "end": 46.61,
+     "en": "I hear what you're saying, Anna.",
+     "ja": "君の言いたいことはわかるよ、アンナ。"
+    },
+    {
+     "start": 46.72,
+     "end": 47.15,
+     "en": "I do.",
+     "ja": "本当にわかってる。"
+    },
+    {
+     "start": 47.32,
+     "end": 49.85,
+     "en": "But where is the art?",
+     "ja": "でも、そのどこに芸術性があるんだい？"
+    },
+    {
+     "start": 50.16,
+     "end": 51.19,
+     "en": "Look at these guys.",
+     "ja": "この人たちを見てごらん。"
+    },
+    {
+     "start": 51.04,
+     "end": 53.05,
+     "en": "They're jugglers.",
+     "ja": "ジャグリングをする人たちだ。"
+    },
+    {
+     "start": 53.5,
+     "end": 57.47,
+     "en": "Yes, they are skilled in the art of juggling.",
+     "ja": "そうね、ジャグリングという技を極めているわ。"
+    },
+    {
+     "start": 57.84,
+     "end": 60.69,
+     "en": "They have a special skill, but are they artists?",
+     "ja": "特別な技はあるけど、それで芸術家と言えるのかい？"
+    },
+    {
+     "start": 61.14,
+     "end": 61.55,
+     "en": "No.",
+     "ja": "いや。"
+    },
+    {
+     "start": 62.18,
+     "end": 64.57,
+     "en": "They're just throwing things back and forth.",
+     "ja": "ただ物を投げ合っているだけじゃないか。"
+    },
+    {
+     "start": 64.68,
+     "end": 68.63,
+     "en": "Kind of like you and me, Pete, we're going back and forth on this issue.",
+     "ja": "あなたと私も同じよ、ピート。この話題で、行ったり来たりしてるでしょ。"
+    },
+    {
+     "start": 70.28,
+     "end": 72.81,
+     "en": "I don't think we'll ever agree on this one.",
+     "ja": "この件では一生意見が合わない気がするな。"
+    },
+    {
+     "start": 73.2,
+     "end": 78.09,
+     "en": "No, but we can agree that these young people are amazing.",
+     "ja": "そうね。でも、この若者たちがすごいってことでは意見が合うでしょ。"
+    },
+    {
+     "start": 77.94,
+     "end": 79.87,
+     "en": "Okay, yeah.",
+     "ja": "ああ、それはそうだね。"
+    },
+    {
+     "start": 80.18,
+     "end": 81.79,
+     "en": "We can agree on that.",
+     "ja": "そこは同じ考えだ。"
+    },
+    {
+     "start": 82.08,
+     "end": 87.33,
+     "en": "But still, they are very athletic, flipping and throwing each other around.",
+     "ja": "でもやっぱり、とても運動能力が高いだけだよ。宙返りしたり、お互いを放り投げたりしてるんだ。"
+    },
+    {
+     "start": 87.74,
+     "end": 90.11,
+     "en": "Yes, I agree with you on that point.",
+     "ja": "ええ、その点については私も同意するわ。"
+    },
+    {
+     "start": 90.58,
+     "end": 91.51,
+     "en": "They did it.",
+     "ja": "やりましたね。"
+    },
+    {
+     "start": 91.52,
+     "end": 92.31,
+     "en": "They agree.",
+     "ja": "二人の意見が合いました。"
+    },
+    {
+     "start": 92.66,
+     "end": 96.35,
+     "en": "Anna says she agrees that the performers are athletic.",
+     "ja": "アンナは、出演者たちは運動能力が高いという点には賛成だと言いました。"
+    },
+    {
+     "start": 96.92,
+     "end": 98.33,
+     "en": "That's a good point, Pete.",
+     "ja": "「それはいい指摘ね、ピート。」"
+    },
+    {
+     "start": 98.84,
+     "end": 100.31,
+     "en": "They are athletic.",
+     "ja": "「彼らは運動能力が高いわ。」"
+    },
+    {
+     "start": 100.78,
+     "end": 102.51,
+     "en": "I agree with you on that point.",
+     "ja": "「その点ではあなたに賛成よ。」"
+    },
+    {
+     "start": 102.96,
+     "end": 105.51,
+     "en": "Now look for other ways they agree.",
+     "ja": "さあ、ほかに二人が同じ考えになるところを探してみましょう。"
+    }
+   ]
+  },
+  {
+   "id": "L3-5",
+   "level": 3,
+   "title": "Greatest Vacation of All Time",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-5-greatest-vacation/4035571.html",
+   "video": "media/L3-5.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L3-5.en.vtt",
+   "subs_ja": "subs/L3-5.ja.vtt",
+   "clip_start": 82.36,
+   "clip_end": 245.46,
+   "cover_height": 0.22,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "vacation",
+     "ja": "休暇、バケーション"
+    },
+    {
+     "en": "travel agency",
+     "ja": "旅行代理店"
+    },
+    {
+     "en": "getaway",
+     "ja": "小旅行・気分転換の旅"
+    },
+    {
+     "en": "pricey",
+     "ja": "値段が高い、割高な"
+    },
+    {
+     "en": "pricier",
+     "ja": "もっと高い（pricey の比較級）"
+    },
+    {
+     "en": "priciest",
+     "ja": "いちばん高い（pricey の最上級）"
+    },
+    {
+     "en": "Safari Camp Out",
+     "ja": "サファリ・キャンプアウト（サファリでのキャンプツアー名）"
+    },
+    {
+     "en": "the latest … technology",
+     "ja": "最新の…技術"
+    },
+    {
+     "en": "cozy",
+     "ja": "居心地がよい、こぢんまりして落ち着く"
+    },
+    {
+     "en": "romantic",
+     "ja": "ロマンチックな、ムードのある"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "ダンが最初にアンナに勧めた旅行プランはどれですか？",
+     "choices": [
+      "Deep Sea Adventure",
+      "Safari Camp Out",
+      "Mountain Getaway",
+      "Travel Max 2000"
+     ],
+     "answer": 2,
+     "explain": "最初に勧めたのは山のツアー「The Mountain Getaway」です。"
+    },
+    {
+     "q": "アンナがマウンテン・ゲッタウェイを断った理由は何ですか？",
+     "choices": [
+      "高いところが怖いから",
+      "寒いのが嫌いだから",
+      "お金が足りないから",
+      "時間がないから"
+     ],
+     "answer": 0,
+     "explain": "アンナは “I’m afraid of high places.” と言っています。"
+    },
+    {
+     "q": "ダンによると、ディープ・シー・アドベンチャーはマウンテン・ゲッタウェイと比べてどうですか？",
+     "choices": [
+      "安い",
+      "静か",
+      "危険",
+      "もっと高い"
+     ],
+     "answer": 3,
+     "explain": "ダンは “It is pricier than the Mountain Getaway.” と言い、より高いと言っています。"
+    },
+    {
+     "q": "サファリ・キャンプアウトで夜にすることとして、説明されているのはどれですか？",
+     "choices": [
+      "ホテルに泊まる",
+      "星空の下で寝る",
+      "船の中で寝る",
+      "電車の中で寝る"
+     ],
+     "answer": 1,
+     "explain": "“At night, you’ll sleep out under the stars.” とあります。"
+    },
+    {
+     "q": "アンナが「好きではない」とはっきり言っている移動手段の組み合わせはどれですか？",
+     "choices": [
+      "飛行機と電車",
+      "ヘリコプターと自転車ツアー",
+      "船とラクダ",
+      "電車と馬"
+     ],
+     "answer": 1,
+     "explain": "ヘリコプターは嫌いだと言い、自転車ツアーもやめてほしいと言っています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 12,
+     "why": "“Of course you are.” は皮肉っぽいニュアンスもあり、「やっぱりそうでしたか」でどこまで伝わるか少し不安。"
+    },
+    {
+     "line": 26,
+     "why": "Professor Bot のメタ発話なので、「見つけられましたか？」と学習者向けに少し意訳しており、直訳から離れている。"
+    },
+    {
+     "line": 28,
+     "why": "“then he moved to better” の “moved to” を「進みました」としており、学習用としては自然だがニュアンスが完全かやや自信なし。"
+    },
+    {
+     "line": 31,
+     "why": "“I’m happy you asked.” を素直に訳したが、会話のトーンとしてはやや大げさかもしれず、もう少し軽い表現の方がよい可能性がある。"
+    },
+    {
+     "line": 47,
+     "why": "“Biking is THE slowest AND least romantic way to travel.” を強調を残しつつ自然な日本語にするために文を少し崩しており、強調の度合いが原文と完全には一致しないかもしれない。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 5.17,
+     "en": "Welcome to the World's Best Vacation Travel Agency!",
+     "ja": "ようこそ、世界一のバケーション旅行代理店へ。"
+    },
+    {
+     "start": 5.42,
+     "end": 7.63,
+     "en": "Thank you and congratulations!",
+     "ja": "ありがとう。それから、おめでとうございます。"
+    },
+    {
+     "start": 8.54,
+     "end": 9.01,
+     "en": "For what?",
+     "ja": "何に対して？"
+    },
+    {
+     "start": 9.26,
+     "end": 11.91,
+     "en": "For being the world's best travel agency.",
+     "ja": "世界一の旅行代理店になったことです。"
+    },
+    {
+     "start": 12.2,
+     "end": 13.95,
+     "en": "Right … thanks.",
+     "ja": "ああ、そうか……ありがとう。"
+    },
+    {
+     "start": 15.2,
+     "end": 17.53,
+     "en": "Trudy, hold my calls.",
+     "ja": "トルーディー、電話は全部取次ぎなしで。"
+    },
+    {
+     "start": 18.16,
+     "end": 20.97,
+     "en": "I am going to sell our most expensive vacation.",
+     "ja": "今から一番高いツアーを売るところなんだ。"
+    },
+    {
+     "start": 20.82,
+     "end": 23.17,
+     "en": "Sure thing, Boss.",
+     "ja": "了解です、ボス。"
+    },
+    {
+     "start": 24.38,
+     "end": 27.49,
+     "en": "The Mountain Getaway is good for you.",
+     "ja": "マウンテン・ゲッタウェイがおすすめですよ。"
+    },
+    {
+     "start": 27.8,
+     "end": 29.83,
+     "en": "It’s a little pricey.",
+     "ja": "ちょっとお値段は張りますけどね。"
+    },
+    {
+     "start": 29.68,
+     "end": 34.33,
+     "en": "But think of it -- you, on top of a mountain for seven days!",
+     "ja": "でも想像してみてください――7日間ずっと、山の頂上にいるあなただけ。"
+    },
+    {
+     "start": 34.52,
+     "end": 38.21,
+     "en": "I’m afraid of high places.",
+     "ja": "高いところが怖いんです。"
+    },
+    {
+     "start": 38.62,
+     "end": 39.67,
+     "en": "Of course you are.",
+     "ja": "やっぱりそうでしたか。"
+    },
+    {
+     "start": 39.74,
+     "end": 44.21,
+     "en": "That’s why our Deep Sea Adventure is better for you!",
+     "ja": "だからこそ「ディープ・シー・アドベンチャー」のほうが、あなたには向いています！"
+    },
+    {
+     "start": 44.34,
+     "end": 47.37,
+     "en": "It is pricier than the Mountain Getaway.",
+     "ja": "マウンテン・ゲッタウェイよりもさらに高いですが、"
+    },
+    {
+     "start": 47.22,
+     "end": 51.35,
+     "en": "Just you and the animals of the sea!",
+     "ja": "海の生きものたちと、あなただけの世界です！"
+    },
+    {
+     "start": 52.96,
+     "end": 54.13,
+     "en": "Shark! Shark!",
+     "ja": "サメ！ サメ！"
+    },
+    {
+     "start": 54.28,
+     "end": 57.49,
+     "en": "No, there are no sharks in your dream vacation!",
+     "ja": "違いますよ、あなたの夢のバケーションにサメはいません！"
+    },
+    {
+     "start": 57.94,
+     "end": 61.43,
+     "en": "You need the Safari Camp Out!",
+     "ja": "あなたにぴったりなのは「サファリ・キャンプアウト」です！"
+    },
+    {
+     "start": 61.54,
+     "end": 63.47,
+     "en": "It is our priciest vacation.",
+     "ja": "当社でいちばん高いツアーですが、"
+    },
+    {
+     "start": 63.68,
+     "end": 66.91,
+     "en": "But I think it’s the best one for you.",
+     "ja": "あなたにはこれがいちばん合っていると思います。"
+    },
+    {
+     "start": 67.28,
+     "end": 73.21,
+     "en": "During the day, you’ll see elephants, giraffes and lions.",
+     "ja": "昼間はゾウやキリン、ライオンが見られて、"
+    },
+    {
+     "start": 73.06,
+     "end": 77.17,
+     "en": "At night, you’ll sleep out under the stars.",
+     "ja": "夜は星空の下で野外に泊まります。"
+    },
+    {
+     "start": 79.74,
+     "end": 83.33,
+     "en": "Look, I think this was a bad idea.",
+     "ja": "あの、やっぱり来るべきじゃなかった気がします。"
+    },
+    {
+     "start": 84.26,
+     "end": 86.23,
+     "en": "Sure, you can leave.",
+     "ja": "もちろん、帰ってもいいですよ。"
+    },
+    {
+     "start": 86.88,
+     "end": 91.13,
+     "en": "But then you won’t see the latest vacation technology.",
+     "ja": "でもそうすると、最新のバケーション技術が見られませんよ。"
+    },
+    {
+     "start": 93.82,
+     "end": 97.19,
+     "en": "Did you find all of those adjectives?",
+     "ja": "今出てきた形容詞は、全部見つけられましたか？"
+    },
+    {
+     "start": 97.24,
+     "end": 99.47,
+     "en": "Dan started with good - The Mountain Getaway;",
+     "ja": "ダンはまず「good」――マウンテン・ゲッタウェイから始めました。"
+    },
+    {
+     "start": 99.74,
+     "end": 101.89,
+     "en": "then he moved to better - The Deep Sea Adventure.",
+     "ja": "それから「better」――ディープ・シー・アドベンチャーに進みました。"
+    },
+    {
+     "start": 101.74,
+     "end": 108.71,
+     "en": "And finally, he said the Safari Campout was the best vacation for Anna!",
+     "ja": "最後に、サファリ・キャンプアウトがアンナにとって「the best」な休暇だと言いましたね。"
+    },
+    {
+     "start": 109.02,
+     "end": 114.65,
+     "en": "Exactly what is the “latest vacation technology” … exactly?",
+     "ja": "その「最新のバケーション技術」って、具体的には何なんですか？"
+    },
+    {
+     "start": 115.44,
+     "end": 116.79,
+     "en": "I’m happy you asked.",
+     "ja": "聞いてくれてうれしいです。"
+    },
+    {
+     "start": 117.48,
+     "end": 120.43,
+     "en": "Meet the Travel Max 2000!",
+     "ja": "こちらが「トラベルマックス2000」です！"
+    },
+    {
+     "start": 121.7,
+     "end": 122.55,
+     "en": "Wow.",
+     "ja": "わあ。"
+    },
+    {
+     "start": 123.46,
+     "end": 125.39,
+     "en": "So, tell me, how do you like to travel?",
+     "ja": "では、どんな旅のスタイルがお好きか教えてください。"
+    },
+    {
+     "start": 125.64,
+     "end": 131.27,
+     "en": "Well, I like travel that is cozy and romantic but still exciting.",
+     "ja": "ええと、くつろげてロマンチックで、でもワクワクもある旅が好きです。"
+    },
+    {
+     "start": 131.86,
+     "end": 133.81,
+     "en": "Great. Tell me more.",
+     "ja": "いいですね。もっと聞かせてください。"
+    },
+    {
+     "start": 134.4,
+     "end": 138.25,
+     "en": "I like traveling in a plane but not in a helicopter!",
+     "ja": "飛行機で移動するのは好きですけど、ヘリコプターは嫌です。"
+    },
+    {
+     "start": 138.84,
+     "end": 143.33,
+     "en": "Planes are a little scary but helicopters are scarier!",
+     "ja": "飛行機も少しは怖いけれど、ヘリコプターのほうがもっと怖いです。"
+    },
+    {
+     "start": 143.8,
+     "end": 146.69,
+     "en": "My favorite way of traveling is by train.",
+     "ja": "一番好きな移動手段は電車です。"
+    },
+    {
+     "start": 147.14,
+     "end": 149.27,
+     "en": "Ships can be the scariest!",
+     "ja": "船は、いちばん怖いこともあります！"
+    },
+    {
+     "start": 150.02,
+     "end": 151.85,
+     "en": "Have you seen the movie “Titanic”?",
+     "ja": "映画『タイタニック』を観ましたか？"
+    },
+    {
+     "start": 152.1,
+     "end": 153.15,
+     "en": "Oh, and no horses.",
+     "ja": "あ、馬もナシで。"
+    },
+    {
+     "start": 153.7,
+     "end": 155.31,
+     "en": "But I will ride a camel.",
+     "ja": "でも、ラクダなら乗ります。"
+    },
+    {
+     "start": 155.88,
+     "end": 157.09,
+     "en": "And no bike tours.",
+     "ja": "それから、自転車ツアーもやめてください。"
+    },
+    {
+     "start": 157.84,
+     "end": 162.65,
+     "en": "Biking is THE slowest AND least romantic way to travel.",
+     "ja": "自転車旅は、いちばんゆっくりで、いちばんロマンチックじゃない移動手段です。"
+    }
+   ]
+  },
+  {
+   "id": "L3-6",
+   "level": 3,
+   "title": "Will It Float?",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/lesson-6-will-it-float/4064553.html",
+   "video": "media/L3-6.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L3-6.en.vtt",
+   "subs_ja": "subs/L3-6.ja.vtt",
+   "clip_start": 96.98,
+   "clip_end": 261.18,
+   "cover_height": 0.22,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "was created",
+     "ja": "作られた、生み出された"
+    },
+    {
+     "en": "World War II",
+     "ja": "第2次世界大戦"
+    },
+    {
+     "en": "supplies",
+     "ja": "物資、補給品"
+    },
+    {
+     "en": "Fun Facts",
+     "ja": "おもしろい豆知識"
+    },
+    {
+     "en": "tons of",
+     "ja": "山ほどの、とてもたくさんの"
+    },
+    {
+     "en": "along this road",
+     "ja": "この道に沿って／この通りに並んで"
+    },
+    {
+     "en": "across from",
+     "ja": "〜の向かいに"
+    },
+    {
+     "en": "between A and B",
+     "ja": "AとBの間に"
+    },
+    {
+     "en": "tip your tour guide",
+     "ja": "ツアーガイドにチップを渡す"
+    },
+    {
+     "en": "dollar bills",
+     "ja": "ドル紙幣"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "このバス兼ボートは、もともと何のために作られましたか？",
+     "choices": [
+      "観光客を楽しませるため",
+      "人と物資を運ぶため",
+      "川をきれいにするため",
+      "軍の訓練用として"
+     ],
+     "answer": 1,
+     "explain": "少年のパンフレットの説明で、第2次世界大戦中に人や物資を運ぶために作られたと言っています。"
+    },
+    {
+     "q": "少年について、ペネロペはどんな想像をしましたか？",
+     "choices": [
+      "有名な俳優の息子",
+      "ツアー会社の社長の息子",
+      "船長の息子でツアーを手伝っている",
+      "ガイドの弟で一緒に旅行している"
+     ],
+     "answer": 2,
+     "explain": "ペネロペは、彼は船長の息子で、お父さんのツアーを手伝っているのかもと言います。"
+    },
+    {
+     "q": "ホワイトハウスの中にあるものとして、少年が言わなかったものはどれですか？",
+     "choices": [
+      "プール",
+      "映画館",
+      "図書館",
+      "32個のトイレ"
+     ],
+     "answer": 2,
+     "explain": "少年はプール、映画館、32個のトイレについて話しますが、図書館には触れていません。"
+    },
+    {
+     "q": "少年の家のトイレ事情について、正しいのはどれですか？",
+     "choices": [
+      "一人暮らしでトイレは一つ",
+      "家族は多いがトイレは一つだけ",
+      "家族は少ないがトイレは三つある",
+      "家族は多くトイレも二つある"
+     ],
+     "answer": 1,
+     "explain": "少年は、母・妹4人・おば2人と住んでいて、トイレが1つしかないと言っています。"
+    },
+    {
+     "q": "ペネロペが『チップをあげよう』と言った理由として最も近いものはどれですか？",
+     "choices": [
+      "少年がガイドより年上だから",
+      "少年が危ない場所を教えてくれたから",
+      "少年が面白い話をしてくれたガイドだから",
+      "少年がホワイトハウスで働いているから"
+     ],
+     "answer": 2,
+     "explain": "少年はツアーでいろいろな豆知識を教えてくれるガイドの役割をしているので、ペネロペはチップを渡そうと言います。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 15,
+     "why": "Professor Bot の説明なのでやや教科書的で、字幕としてどこまでくだけた訳にするか迷いました。"
+    },
+    {
+     "line": 19,
+     "why": "「the President」を「大統領」としつつ、日本語で不自然にならないように全体のバランスを取るのが難しかったです。"
+    },
+    {
+     "line": 24,
+     "why": "“Oh my!” は驚きや同情などニュアンスが広く、「なんてこと…」と少し抑えめに訳しましたが、感情の強さが原文と完全には一致しない可能性があります。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 10.33,
+     "en": "Hey, did you know that this bus … um, boat was created during World War II to carry people and supplies?",
+     "ja": "ねえ知ってた？ このバス…えっと、このボートは、第2次世界大戦中に人や物資を運ぶために作られたんだよ。"
+    },
+    {
+     "start": 10.18,
+     "end": 18.63,
+     "en": "Wow. You know, a tour is so much more interesting with Fun Facts, like that one.",
+     "ja": "へえ。こういうおもしろい豆知識があると、ツアーってもっと楽しくなるね。"
+    },
+    {
+     "start": 18.48,
+     "end": 22.11,
+     "en": "I agree. I love Fun Facts!",
+     "ja": "ほんとそう。私、豆知識大好き！"
+    },
+    {
+     "start": 21.96,
+     "end": 25.59,
+     "en": "Did I hear you say you love Fun Facts?",
+     "ja": "今、豆知識が好きって言ってた？"
+    },
+    {
+     "start": 25.44,
+     "end": 26.29,
+     "en": "Yeah.",
+     "ja": "うん。"
+    },
+    {
+     "start": 26.14,
+     "end": 27.09,
+     "en": "Yeah.",
+     "ja": "うん。"
+    },
+    {
+     "start": 26.94,
+     "end": 31.37,
+     "en": "Well, I have tons of Fun Facts for this tour!",
+     "ja": "じゃあ、このツアー用の豆知識を山ほど持ってるよ！"
+    },
+    {
+     "start": 31.22,
+     "end": 32.67,
+     "en": "Great!",
+     "ja": "すごい！"
+    },
+    {
+     "start": 32.52,
+     "end": 35.25,
+     "en": "Penelope, where are his parents?",
+     "ja": "ペネロペ、あの子の親はどこかな？"
+    },
+    {
+     "start": 35.1,
+     "end": 42.65,
+     "en": "Maybe - maybe he’s the Captain’s son and he helps his dad on tours!",
+     "ja": "たぶん…船長さんの息子で、お父さんのツアーを手伝ってるんじゃない？"
+    },
+    {
+     "start": 42.5,
+     "end": 52.07,
+     "en": "Oh yeah! It would be so awesome to ride around the city in a boat all day with your dad!",
+     "ja": "なるほど！一日中お父さんとボートで街を回れたら、すごく楽しいだろうね！"
+    },
+    {
+     "start": 51.92,
+     "end": 58.17,
+     "en": "This is amazing, Anna. There are so many beautiful buildings along this road!",
+     "ja": "アンナ、ほんとすごいね。この通りにはきれいな建物がたくさんある！"
+    },
+    {
+     "start": 58.02,
+     "end": 61.25,
+     "en": "Hey, the Washington Monument is on the left!",
+     "ja": "あっ、左側にワシントン記念塔があるよ！"
+    },
+    {
+     "start": 61.1,
+     "end": 70.31,
+     "en": "I have a Fun Fact too! Did you know that the Washington Monument was damaged in an earthquake?",
+     "ja": "ぼくも豆知識があるよ！ワシントン記念塔って、地震で傷ついたことがあるって知ってた？"
+    },
+    {
+     "start": 70.16,
+     "end": 72.87,
+     "en": "Whoa. Did you feel that?!",
+     "ja": "うわっ、今の感じた？"
+    },
+    {
+     "start": 72.72,
+     "end": 85.89,
+     "en": "I heard: \"around the city in a boat,\" \"along this road\" and \"on the left.\" All of these are prepositions showing place.",
+     "ja": "今「街をボートで回る」「この通りに沿って」「左側に」って言っていましたね。どれも場所を表す前置詞です。"
+    },
+    {
+     "start": 85.74,
+     "end": 89.97,
+     "en": "Let's watch for more places and prepositions!",
+     "ja": "ほかの場所と前置詞も、これから探してみましょう！"
+    },
+    {
+     "start": 89.82,
+     "end": 94.13,
+     "en": "Look, Anna, we’re across from the White House!",
+     "ja": "見て、アンナ。ホワイトハウスの向かいに来たよ！"
+    },
+    {
+     "start": 93.98,
+     "end": 111.21,
+     "en": "Penelope, the only thing between us and the President is the street … and a park … and a security gate .... and police officers … with guns.",
+     "ja": "ペネロペ、今ぼくたちと大統領の間にあるのは、この道路と…公園と…警備ゲートと…銃を持った警官たちだけだよ。"
+    },
+    {
+     "start": 111.06,
+     "end": 117.21,
+     "en": "Excuse me, do you want to know a Fun Fact about the White House?",
+     "ja": "あの、ホワイトハウスの豆知識、知りたい？"
+    },
+    {
+     "start": 117.06,
+     "end": 118.69,
+     "en": "Yes!",
+     "ja": "知りたい！"
+    },
+    {
+     "start": 118.54,
+     "end": 128.13,
+     "en": "Inside the White House there is a swimming pool, a movie theater and 32 bathrooms!",
+     "ja": "ホワイトハウスの中には、プールと映画館と、トイレが32個もあるんだ！"
+    },
+    {
+     "start": 129.06,
+     "end": 131.79,
+     "en": "Thirty-two bathrooms! That’s a lot of bathrooms!",
+     "ja": "トイレが32個！ 多すぎでしょ！"
+    },
+    {
+     "start": 131.64,
+     "end": 142.47,
+     "en": "I’d be happy with two. I live in a house with my mom, four sisters, two aunts and only one bathroom!",
+     "ja": "ぼくは2つあれば十分だよ。ママと妹4人とおばさん2人と一緒に住んでるけど、家にはトイレが1つしかないんだ。"
+    },
+    {
+     "start": 142.32,
+     "end": 146.79,
+     "en": "Oh my! You know, Anna, we should give him a tip!",
+     "ja": "なんてこと…。ねえアンナ、この子にチップをあげようよ。"
+    },
+    {
+     "start": 146.64,
+     "end": 153.45,
+     "en": "Of course! It is polite to tip your tour guide! Luckily, I have lots of dollar bills!",
+     "ja": "もちろん！ツアーガイドにはチップをあげるのがマナーだもんね。ちょうど1ドル札をたくさん持ってるよ。"
+    },
+    {
+     "start": 153.3,
+     "end": 158.69,
+     "en": "That was a great Fun Fact! Here you go!",
+     "ja": "今の豆知識、よかったね。はい、どうぞ。"
+    },
+    {
+     "start": 158.54,
+     "end": 163.75,
+     "en": "Thank you! I can tell you Fun Facts all day!",
+     "ja": "ありがとう！一日中だって豆知識を教えてあげられるよ！"
+    }
+   ]
+  },
+  {
+   "id": "L3-8",
+   "level": 3,
+   "title": "Pets Are Family, Too!",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-9-pets-are-family-too/4074883.html",
+   "video": "media/L3-8.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L3-8.en.vtt",
+   "subs_ja": "subs/L3-8.ja.vtt",
+   "clip_start": 85.18,
+   "clip_end": 258.58,
+   "cover_height": 0.22,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "spit",
+     "ja": "（口から）吐き出す、つばを飛ばす"
+    },
+    {
+     "en": "watermelon seed",
+     "ja": "スイカの種"
+    },
+    {
+     "en": "the farthest",
+     "ja": "一番遠くまで"
+    },
+    {
+     "en": "pet parade",
+     "ja": "ペットのパレード（ペットと一緒に歩いて見せるイベント）"
+    },
+    {
+     "en": "pet rock",
+     "ja": "ペットロック（ペットとしてかわいがる石・ジョークの「ペット」）"
+    },
+    {
+     "en": "for a joke",
+     "ja": "冗談で、しゃれで"
+    },
+    {
+     "en": "One-of-Kind Pet",
+     "ja": "唯一無二のペット（という名前のコンテスト）"
+    },
+    {
+     "en": "matching princess costumes",
+     "ja": "おそろいのプリンセスの衣装"
+    },
+    {
+     "en": "tricks",
+     "ja": "（犬などがする）芸"
+    },
+    {
+     "en": "responsibility",
+     "ja": "責任"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "スイカの種のコンテストは、何を競うものでしたか？",
+     "choices": [
+      "種をいくつ食べられるか",
+      "種をどれだけ遠くまで飛ばせるか",
+      "種をどれだけ早くむけるか",
+      "種でどんな絵を作れるか"
+     ],
+     "answer": 1,
+     "explain": "Anna は “to see who could spit a watermelon seed the farthest” と言っています。"
+    },
+    {
+     "q": "Ashley が一番よかったと言われたコンテストの種類はどれですか？",
+     "choices": [
+      "料理コンテスト",
+      "音楽コンテスト",
+      "ペットのコンテスト",
+      "ダンスコンテスト"
+     ],
+     "answer": 2,
+     "explain": "Anna は “the pet contests were the best” と言っています。"
+    },
+    {
+     "q": "Anna はどうやってペットのコンテストで優勝しましたか？",
+     "choices": [
+      "友だちの犬を借りた",
+      "自分のペットロックで出場した",
+      "審査員を手伝った",
+      "衣装コンテストの司会をした"
+     ],
+     "answer": 1,
+     "explain": "Anna は “the closest thing I have is my pet rock” と言い、その石で “I won!” と話しています。"
+    },
+    {
+     "q": "Dublin について正しい内容はどれですか？",
+     "choices": [
+      "いつも衣装を着ている",
+      "何の芸もできない",
+      "「ベストキャッチ」コンテストに勝てそうだと言われている",
+      "まだ子犬なので何もできない"
+     ],
+     "answer": 2,
+     "explain": "Anna は Dublin がおもちゃを取ったあと “he could have won the Best Catch contest!” と言っています。"
+    },
+    {
+     "q": "Ashley が Anna にまず勧めたことは何ですか？",
+     "choices": [
+      "すぐに犬を買うこと",
+      "犬の本を読むこと",
+      "ペットショップで働くこと",
+      "まず犬と一緒に時間を過ごしてみること"
+     ],
+     "answer": 3,
+     "explain": "Ashley は “You may want to spend time with a dog first.” と言っています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 8,
+     "why": "the closest thing I have を「一番ペットに近いって言える」と意訳しており、どこまで砕いてよいか少し迷いました。"
+    },
+    {
+     "line": 16,
+     "why": "one of these が具体的に何（リボン・コンテスト）か映像依存なので、「こういうの」にぼかして訳しています。"
+    },
+    {
+     "line": 19,
+     "why": "You should have seen this little girl. を「見せてあげたかったな」と、一般的な勧めではなく感嘆寄りに訳しました。"
+    },
+    {
+     "line": 27,
+     "why": "You killed it を犬のおもちゃ遊びとして「仕留めた」としましたが、日本語でどこまで擬人化・誇張するか判断が難しい部分です。"
+    },
+    {
+     "line": 36,
+     "why": "No. I know I want a dog! のニュアンスを、日本語で自然さを優先して少しふくらませています。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 6.25,
+     "en": "There was a contest to see who could spit a watermelon seed the farthest.",
+     "ja": "スイカの種を、誰が一番遠くまで飛ばせるかを競うコンテストがあったの。"
+    },
+    {
+     "start": 6.36,
+     "end": 10.73,
+     "en": "You should have seen all the people who wanted to spit a watermelon seed!",
+     "ja": "スイカの種を飛ばしたがっている人が、ものすごくたくさんいたんだよ。"
+    },
+    {
+     "start": 10.58,
+     "end": 13.69,
+     "en": "And, it was pretty fun to watch.",
+     "ja": "それを見ているのも、かなりおもしろかったの。"
+    },
+    {
+     "start": 14.02,
+     "end": 17.91,
+     "en": "But Ashley, the pet contests were the best.",
+     "ja": "でもね、アシュリー、ペットのコンテストが一番良かったんだ。"
+    },
+    {
+     "start": 18.82,
+     "end": 20.33,
+     "en": "There was a pet parade.",
+     "ja": "ペットのパレードもあったよ。"
+    },
+    {
+     "start": 20.78,
+     "end": 22.91,
+     "en": "Lots of people walked with their dogs.",
+     "ja": "たくさんの人が、犬と一緒に歩いてたの。"
+    },
+    {
+     "start": 23.48,
+     "end": 25.57,
+     "en": "That sounds so fun.",
+     "ja": "すごく楽しそうね。"
+    },
+    {
+     "start": 25.42,
+     "end": 32.51,
+     "en": "But Anna, tell me, how did you win a pet contest without a pet?",
+     "ja": "でもアナ、教えて。ペットがいないのに、どうやってペットのコンテストで優勝したの？"
+    },
+    {
+     "start": 33.32,
+     "end": 39.03,
+     "en": "Okay, the closest thing I have is my pet rock.",
+     "ja": "えっとね、私が一番ペットに近いって言えるのは、このペットの石なの。"
+    },
+    {
+     "start": 43.4,
+     "end": 48.65,
+     "en": "I know it’s silly, but I’ve had it since I was a little girl.",
+     "ja": "バカみたいなのはわかってるけど、小さいころからずっと持ってるんだ。"
+    },
+    {
+     "start": 50.22,
+     "end": 53.53,
+     "en": "So, for a joke, I brought it to the fair.",
+     "ja": "だから、ちょっとした冗談のつもりで、フェアに持って行ったの。"
+    },
+    {
+     "start": 54.84,
+     "end": 60.73,
+     "en": "But then I was invited to enter the “One-of-Kind Pet” contest.",
+     "ja": "そしたら、「唯一無二のペット」コンテストに出ませんかって誘われてね。"
+    },
+    {
+     "start": 60.58,
+     "end": 62.67,
+     "en": "And I won!",
+     "ja": "それで、私が優勝しちゃったの！"
+    },
+    {
+     "start": 63.98,
+     "end": 69.97,
+     "en": "Anna, only you could have won a pet contest with a pet rock.",
+     "ja": "アナ、石のペットでコンテストに勝てるなんて、あなただけよ。"
+    },
+    {
+     "start": 71.34,
+     "end": 72.95,
+     "en": "I should have brought Dublin.",
+     "ja": "ダブリンを連れて行けばよかったわ。"
+    },
+    {
+     "start": 73.46,
+     "end": 74.73,
+     "en": "He would’ve won a contest!",
+     "ja": "あの子なら、どれかのコンテストで優勝してたはず。"
+    },
+    {
+     "start": 75.04,
+     "end": 77.07,
+     "en": "It’s not very easy to win one of these.",
+     "ja": "こういうのに勝つのって、けっこう大変なんだよ。"
+    },
+    {
+     "start": 77.78,
+     "end": 78.99,
+     "en": "Does he have a costume?",
+     "ja": "ダブリンには衣装あるの？"
+    },
+    {
+     "start": 79.82,
+     "end": 81.99,
+     "en": "They had a costume contest.",
+     "ja": "衣装コンテストもあったんだ。"
+    },
+    {
+     "start": 82.38,
+     "end": 85.17,
+     "en": "You should have seen this little girl.",
+     "ja": "ある女の子がいてね、見せてあげたかったな。"
+    },
+    {
+     "start": 86.2,
+     "end": 90.79,
+     "en": "She and her dog wore matching princess costumes!",
+     "ja": "その子と犬が、おそろいのプリンセスの衣装を着てたの！"
+    },
+    {
+     "start": 91.66,
+     "end": 93.43,
+     "en": "Dublin doesn’t wear costumes.",
+     "ja": "ダブリンは衣装なんて着ないの。"
+    },
+    {
+     "start": 93.92,
+     "end": 95.89,
+     "en": "Does he know any tricks?",
+     "ja": "何か芸はできる？"
+    },
+    {
+     "start": 96.68,
+     "end": 97.73,
+     "en": "Come this way.",
+     "ja": "こっちに来て。"
+    },
+    {
+     "start": 98.92,
+     "end": 101.85,
+     "en": "Now, watch this.",
+     "ja": "じゃあ、これ見てて。"
+    },
+    {
+     "start": 112.56,
+     "end": 117.11,
+     "en": "You caught it, Dublin!",
+     "ja": "ダブリン、キャッチしたね！"
+    },
+    {
+     "start": 116.96,
+     "end": 119.29,
+     "en": "And you killed it!",
+     "ja": "仕留めたね！"
+    },
+    {
+     "start": 120.36,
+     "end": 122.21,
+     "en": "Good dog!",
+     "ja": "いい子だね！"
+    },
+    {
+     "start": 122.54,
+     "end": 126.05,
+     "en": "Ashley, he could have won the Best Catch contest!",
+     "ja": "アシュリー、この子なら「ベストキャッチ」コンテストで優勝できたよ！"
+    },
+    {
+     "start": 126.94,
+     "end": 128.27,
+     "en": "Aw, good boy!",
+     "ja": "よしよし、いい子！"
+    },
+    {
+     "start": 128.4,
+     "end": 131.45,
+     "en": "Ashley, pets are fun, aren’t they?",
+     "ja": "アシュリー、ペットって楽しいよね？"
+    },
+    {
+     "start": 131.64,
+     "end": 132.15,
+     "en": "Yes.",
+     "ja": "うん、そうね。"
+    },
+    {
+     "start": 132.0,
+     "end": 134.57,
+     "en": "And they become part of your family.",
+     "ja": "それに、家族の一員みたいになってくるのよ。"
+    },
+    {
+     "start": 135.32,
+     "end": 138.15,
+     "en": "Ashley, I think I want a dog.",
+     "ja": "アシュリー、私、犬がほしい気がしてきた。"
+    },
+    {
+     "start": 138.88,
+     "end": 139.55,
+     "en": "No.",
+     "ja": "ううん。"
+    },
+    {
+     "start": 139.4,
+     "end": 141.33,
+     "en": "I know I want a dog!",
+     "ja": "犬がほしいって、はっきりわかった！"
+    },
+    {
+     "start": 141.76,
+     "end": 143.25,
+     "en": "It’s a big responsibility.",
+     "ja": "すごく責任が大きいことよ。"
+    },
+    {
+     "start": 143.66,
+     "end": 146.67,
+     "en": "You may want to spend time with a dog first.",
+     "ja": "まずは、しばらく犬と一緒に過ごしてみたほうがいいかもね。"
+    },
+    {
+     "start": 146.96,
+     "end": 148.97,
+     "en": "That is a great idea.",
+     "ja": "それ、とてもいい考えだね。"
+    },
+    {
+     "start": 148.82,
+     "end": 152.13,
+     "en": "But where can I find a dog?",
+     "ja": "でも、どこで犬を見つければいいんだろう？"
+    },
+    {
+     "start": 157.94,
+     "end": 161.45,
+     "en": "You know, Anna, I have some shopping to do.",
+     "ja": "あのね、アナ、これから買い物に行かなきゃいけないの。"
+    },
+    {
+     "start": 162.38,
+     "end": 165.31,
+     "en": "Do you want to watch Dublin for a couple of hours?",
+     "ja": "2時間くらい、ダブリンを見ていてくれない？"
+    },
+    {
+     "start": 165.3,
+     "end": 165.67,
+     "en": "Yes!",
+     "ja": "うん、もちろん！"
+    },
+    {
+     "start": 165.52,
+     "end": 166.25,
+     "en": "I would!",
+     "ja": "ぜひやりたい！"
+    },
+    {
+     "start": 166.54,
+     "end": 169.11,
+     "en": "I will take very good care of him!",
+     "ja": "すごく大事にお世話するから！"
+    },
+    {
+     "start": 169.16,
+     "end": 170.07,
+     "en": "I know you will.",
+     "ja": "そうしてくれるって、わかってるわ。"
+    },
+    {
+     "start": 170.44,
+     "end": 171.49,
+     "en": "Here’s his leash.",
+     "ja": "これがリードね。"
+    },
+    {
+     "start": 172.24,
+     "end": 172.95,
+     "en": "Thank you.",
+     "ja": "ありがとう。"
+    }
+   ]
+  },
+  {
+   "id": "L3-9",
+   "level": 3,
+   "title": "Visit to Peru",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-10-visit-to-peru/4079037.html",
+   "video": "media/L3-9.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L3-9.en.vtt",
+   "subs_ja": "subs/L3-9.ja.vtt",
+   "clip_start": 72.6,
+   "clip_end": 211.92,
+   "cover_height": 0.22,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "event",
+     "ja": "イベント・催しもの"
+    },
+    {
+     "en": "staring at your computer",
+     "ja": "パソコンをじっと見つめて（画面にかじりついて）いること"
+    },
+    {
+     "en": "Peruvian culture",
+     "ja": "ペルーの文化"
+    },
+    {
+     "en": "Marinera Norteña",
+     "ja": "マリネラ・ノルテーニャ（ペルー北部の伝統舞踊）"
+    },
+    {
+     "en": "in person",
+     "ja": "実際に会って・生で"
+    },
+    {
+     "en": "performance",
+     "ja": "公演・演技・演奏"
+    },
+    {
+     "en": "the right guy",
+     "ja": "自分にぴったりの男性・運命の人"
+    },
+    {
+     "en": "ride into the sunset",
+     "ja": "夕日へ向かって走り去る（ロマンチックな場面の比喩）"
+    },
+    {
+     "en": "courtship tradition",
+     "ja": "求愛の伝統・恋愛のしきたり"
+    },
+    {
+     "en": "check out",
+     "ja": "見てみる・見物する"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "ブルーナが、このイベントはアンナの何の役に立つと「いいな」と言っていますか？",
+     "choices": [
+      "アンナの仕事の休憩",
+      "アンナの記事づくり",
+      "アンナのダンスの練習",
+      "アンナの旅行計画"
+     ],
+     "answer": 1,
+     "explain": "ブルーナは「I hope it helps with your story.」と言い、アンナの記事に役立つことを願っています。"
+    },
+    {
+     "q": "最初にふたりが見に行くことにしたものは何ですか？",
+     "choices": [
+      "ペルー料理",
+      "ペルーの歴史展示",
+      "ダンスと音楽のショー",
+      "アートのワークショップ"
+     ],
+     "answer": 2,
+     "explain": "ブルーナが「Dance and music are very important … so let’s watch the dancers.」と言っています。"
+    },
+    {
+     "q": "マリネラ・ノルテーニャのダンスについて、アンナはどう感じていますか？",
+     "choices": [
+      "本で読んだ方がよかったと思っている",
+      "実際に見るともっとロマンチックだと感じている",
+      "難しそうでつまらないと思っている",
+      "激しすぎて怖いと思っている"
+     ],
+     "answer": 1,
+     "explain": "アンナは「it is much more romantic in person!」と言い、生で見る方がロマンチックだと話しています。"
+    },
+    {
+     "q": "アンナがダンスレッスンをためらう主な理由は何ですか？",
+     "choices": [
+      "ダンスが苦手だから",
+      "時間がないから",
+      "まだ結婚する準備ができていないから",
+      "チケットが高いから"
+     ],
+     "answer": 2,
+     "explain": "アンナは「But I’m not ready to get married.」と言い、結婚を連想して気が引けている様子です。"
+    },
+    {
+     "q": "ブルーナが仕事に戻ると言ったあと、アンナはどうするつもりですか？",
+     "choices": [
+      "家に帰る",
+      "一人でダンスを練習する",
+      "ペルー料理を食べに行く",
+      "アートを見て回る"
+     ],
+     "answer": 3,
+     "explain": "アンナは「I’ll check out the art.」と言い、アートを見て回るつもりだと話しています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 2,
+     "why": "「staring at your computer」を字幕としてどこまで意訳するか少し迷い、「にらんでいる」と軽くラフに訳した。"
+    },
+    {
+     "line": 16,
+     "why": "「the right guy」は直訳だと不自然なので「運命の人」と意訳したが、ニュアンスがややロマンチック寄りになる可能性がある。"
+    },
+    {
+     "line": 17,
+     "why": "「ride into the sunset」は映画的な決まり文句なので、説明的にせず自然な日本語のイメージ重視で訳した。"
+    },
+    {
+     "line": 19,
+     "why": "「shows Peruvian art」は「展示している」としたが、「紹介している」など別の訳し方もあり得る。"
+    },
+    {
+     "line": 24,
+     "why": "「I’m hoping to finish in about an hour.」は進行形のニュアンスを保ちつつ自然さを優先し、「〜終わるといいんだけど」とやや願望寄りの訳にした。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 1.53,
+     "en": "Hi, Anna!",
+     "ja": "やあ、アンナ！"
+    },
+    {
+     "start": 1.66,
+     "end": 4.39,
+     "en": "Hi, Bruna! Thanks for telling me about this event.",
+     "ja": "こんにちは、ブルーナ。 このイベントを教えてくれてありがとう。"
+    },
+    {
+     "start": 4.24,
+     "end": 9.05,
+     "en": "Sure! It's much better than staring at your computer. I hope it helps with your story.",
+     "ja": "もちろん。 パソコンをにらんでいるより、ずっといいでしょ。 あなたの記事の役に立つといいな。"
+    },
+    {
+     "start": 9.16,
+     "end": 13.07,
+     "en": "I’m sure it will. So, what should we see first?",
+     "ja": "きっと役に立つよ。 それで、まず何を見ようか？"
+    },
+    {
+     "start": 13.46,
+     "end": 17.85,
+     "en": "Dance and music are very important to Peruvian culture, so let’s watch the dancers.",
+     "ja": "ダンスと音楽はペルーの文化でとても大事なの。 だからダンサーたちを見に行こう。"
+    },
+    {
+     "start": 18.14,
+     "end": 19.15,
+     "en": "Great! Let’s go!",
+     "ja": "いいね。 行こう！"
+    },
+    {
+     "start": 53.26,
+     "end": 57.93,
+     "en": "There's this very special Peruvian dance called Marinera Norteña.",
+     "ja": "マリネラ・ノルテーニャっていう、特別なペルーのダンスがあるの。"
+    },
+    {
+     "start": 57.78,
+     "end": 60.41,
+     "en": "I love the Marinera Norteña… !",
+     "ja": "マリネラ・ノルテーニャ、大好き…！"
+    },
+    {
+     "start": 60.26,
+     "end": 60.41,
+     "en": "Marinera Norteña.",
+     "ja": "マリネラ・ノルテーニャよ。"
+    },
+    {
+     "start": 60.26,
+     "end": 60.41,
+     "en": "Marinera Norten… ?",
+     "ja": "マリネラ・ノルテン…？"
+    },
+    {
+     "start": 60.26,
+     "end": 62.61,
+     "en": "No. Marinera Norteña.",
+     "ja": "違う違う、マリネラ・ノルテーニャ。"
+    },
+    {
+     "start": 64.16,
+     "end": 73.03,
+     "en": "I love the … marriage dance!",
+     "ja": "えっと… 結婚のダンスが大好き！"
+    },
+    {
+     "start": 76.46,
+     "end": 82.71,
+     "en": "Bruna, I read about this dance. But it is much more romantic in person!",
+     "ja": "ブルーナ、このダンスについては読んだけど、 実際に見るとずっとロマンチックだね。"
+    },
+    {
+     "start": 83.38,
+     "end": 87.33,
+     "en": "The dancers are giving lessons after their performance. You should try it!",
+     "ja": "このあと、ダンサーたちがレッスンをしてくれるの。 やってみたら？"
+    },
+    {
+     "start": 87.18,
+     "end": 91.87,
+     "en": "I’d love to. But I’m not ready to get married.",
+     "ja": "やってみたいなあ。 でも、まだ結婚する準備はできてないよ。"
+    },
+    {
+     "start": 92.54,
+     "end": 96.11,
+     "en": "I mean, one day I hope to meet the right guy.",
+     "ja": "というか、いつか運命の人に出会えたらいいな、とは思ってるけど。"
+    },
+    {
+     "start": 96.34,
+     "end": 102.93,
+     "en": "We’ll buy matching motorcycles and ride into the sunset -- the wind blowing through our hair!",
+     "ja": "おそろいのバイクを買って、夕日へ向かって走るの。 風が髪をなびかせてね！"
+    },
+    {
+     "start": 103.14,
+     "end": 109.11,
+     "en": "Anna, the dance just shows the courtship tradition. It doesn’t mean you will get married.",
+     "ja": "アンナ、このダンスは求愛のしきたりを表しているだけよ。 結婚するって意味じゃないから。"
+    },
+    {
+     "start": 109.84,
+     "end": 112.39,
+     "en": "Oh. Well, I’ll try anyway.",
+     "ja": "そっか。 まあ、でもやってみるよ。"
+    },
+    {
+     "start": 119.48,
+     "end": 122.73,
+     "en": "Don’t forget. This festival also shows Peruvian art!",
+     "ja": "それとね、このフェスティバルではペルーの美術も展示してるの、忘れないで。"
+    },
+    {
+     "start": 123.3,
+     "end": 125.63,
+     "en": "I hope I have time to see everything!",
+     "ja": "全部見て回れる時間があるといいな。"
+    },
+    {
+     "start": 126.34,
+     "end": 129.01,
+     "en": "Anna, I wish I could join you. But I have some work to do.",
+     "ja": "アンナ、一緒に回れたらいいんだけど、 ちょっと仕事があって。"
+    },
+    {
+     "start": 129.44,
+     "end": 133.29,
+     "en": "Of course, of course. You go back to work. I’ll check out the art.",
+     "ja": "そうだよね。 仕事に戻って。 私はアートを見てくるね。"
+    },
+    {
+     "start": 133.74,
+     "end": 137.83,
+     "en": "Okay, I’m hoping to finish in about an hour. Let’s meet then.",
+     "ja": "わかったわ。 1時間くらいで終わるといいんだけど。 その頃また会おう。"
+    },
+    {
+     "start": 137.94,
+     "end": 138.87,
+     "en": "Great. See you then!",
+     "ja": "了解。 じゃあ、またあとで！"
+    }
+   ]
+  },
+  {
+   "id": "L4-1",
+   "level": 4,
+   "title": "Wilbur and Orville Wright: The First Airplane",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/wilbur-and-orville-wright-the-first-airplane/7998765.html",
+   "video": "media/L4-1.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L4-1.en.vtt",
+   "subs_ja": "subs/L4-1.ja.vtt",
+   "clip_start": 63.46,
+   "clip_end": 227.78,
+   "cover_height": 0,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "wind conditions",
+     "ja": "風の条件・風の状態"
+    },
+    {
+     "en": "sandy land",
+     "ja": "砂地の土地"
+    },
+    {
+     "en": "gliders",
+     "ja": "グライダー（エンジンのない滑空機）"
+    },
+    {
+     "en": "solve many problems",
+     "ja": "多くの問題を解決する"
+    },
+    {
+     "en": "powered by a gasoline engine",
+     "ja": "ガソリンエンジンで動く／動力を得ている"
+    },
+    {
+     "en": "demonstration flights",
+     "ja": "デモ飛行（公開実演の飛行）"
+    },
+    {
+     "en": "agreed to begin making",
+     "ja": "製造を始めることに同意した"
+    },
+    {
+     "en": "War Department",
+     "ja": "陸軍省（当時のアメリカの軍事省庁）"
+    },
+    {
+     "en": "world heroes",
+     "ja": "世界中から称えられる英雄"
+    },
+    {
+     "en": "typhoid fever",
+     "ja": "腸チフス"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "ライト兄弟が実験場所としてノースカロライナ州を選んだ主な理由は何ですか？",
+     "choices": [
+      "人がまったくいなかったから",
+      "風の条件がよかったから",
+      "政府が土地を無料でくれたから",
+      "町からとても近かったから"
+     ],
+     "answer": 1,
+     "explain": "本文では「いちばん風の条件がよさそうなのは…砂地の一帯でした」とあり、風が理由だとわかります。"
+    },
+    {
+     "q": "1903年12月17日の飛行について正しい説明はどれですか？",
+     "choices": [
+      "ウィルバーが操縦し、1分以上飛んだ",
+      "オーヴィルが操縦し、12秒飛んだ",
+      "ウィルバーとオーヴィルが交代で操縦し、合計12秒飛んだ",
+      "オーヴィルが操縦し、36秒飛んだ"
+     ],
+     "answer": 1,
+     "explain": "「Orville flew the plane 36 meters. He was in the air for 12 seconds.」とあり、操縦者はオーヴィルで、12秒の飛行でした。"
+    },
+    {
+     "q": "ライト兄弟の最初の飛行が行われた直後の反応として正しいのはどれですか？",
+     "choices": [
+      "世界中の新聞が大きく報道した",
+      "アメリカ政府がすぐに飛行機を買った",
+      "ほとんどの新聞はその出来事を取り上げなかった",
+      "多くの会社がすぐに飛行機の製造を始めた"
+     ],
+     "answer": 2,
+     "explain": "「Few newspapers, however, noted the event.」とあり、報道した新聞はほとんどなかったと説明されています。"
+    },
+    {
+     "q": "ライト兄弟が「世界的な英雄」と呼ばれるようになったきっかけに近いのはどれですか？",
+     "choices": [
+      "ウィルバーがフランスでデモ飛行を行い、会社が飛行機の製造に同意したことと、アメリカ陸軍省が飛行機の購入を決めたこと",
+      "最初の飛行の写真がすぐに世界中に広まったこと",
+      "オーヴィルが単独で世界一周飛行をしたこと",
+      "二人が有名な本を書いたこと"
+     ],
+     "answer": 0,
+     "explain": "フランスでの成功と、アメリカ陸軍省による購入決定のあとに「suddenly became world heroes」と書かれています。"
+    },
+    {
+     "q": "兄弟のその後の人生について正しい説明はどれですか？",
+     "choices": [
+      "ウィルバーはフランスに移住し、1948年まで生きた",
+      "オーヴィルは1908年に亡くなり、ウィルバーだけが設計を続けた",
+      "ウィルバーは1912年に亡くなり、オーヴィルは1948年まで設計や発明を続けた",
+      "ふたりとも1912年に病気で亡くなった"
+     ],
+     "answer": 2,
+     "explain": "本文では、ウィルバーは1912年に腸チフスで亡くなり、オーヴィルは1948年まで設計や発明を続けたと書かれています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 13.37,
+     "en": "The best place with the best wind conditions seemed to be a piece of sandy land in North Carolina along the coast of the Atlantic Ocean.",
+     "ja": "いちばん風の条件がよさそうなのは、アメリカ東海岸のノースカロライナ州にある、砂地の一帯でした。"
+    },
+    {
+     "start": 13.22,
+     "end": 19.47,
+     "en": "It was called Kill Devil Hill, near the town of Kitty Hawk.",
+     "ja": "そこはキティホークという町の近くで、「キルデビル・ヒル」と呼ばれていました。"
+    },
+    {
+     "start": 20.38,
+     "end": 25.55,
+     "en": "The Wright brothers did many tests with gliders at Kitty Hawk.",
+     "ja": "ライト兄弟はキティホークで、たくさんのグライダー実験を行いました。"
+    },
+    {
+     "start": 26.14,
+     "end": 30.93,
+     "en": "With these tests, they learned how to solve many problems.",
+     "ja": "こうした実験を通して、多くの問題の解決方法を身につけていきました。"
+    },
+    {
+     "start": 31.98,
+     "end": 42.73,
+     "en": "By the autumn of 1903, Wilbur and Orville had designed and built an airplane powered by a gasoline engine.",
+     "ja": "1903年の秋までに、ウィルバーとオーヴィルはガソリンエンジンで動く飛行機を設計し、作り上げました。"
+    },
+    {
+     "start": 43.7,
+     "end": 47.09,
+     "en": "The plane had wings 12 meters across.",
+     "ja": "その飛行機の翼の幅はおよそ12メートルありました。"
+    },
+    {
+     "start": 48.2,
+     "end": 53.49,
+     "en": "It weighed about 340 kilograms, including the pilot.",
+     "ja": "操縦士を含めた重さは、およそ340キロでした。"
+    },
+    {
+     "start": 54.4,
+     "end": 66.83,
+     "en": "On December 17th, 1903, they made the world's first flight in a machine that was heavier than air and powered by an engine.",
+     "ja": "1903年12月17日、ふたりは、エンジンで動く「重い物体」が空を飛ぶという、人類初の飛行に成功しました。"
+    },
+    {
+     "start": 66.68,
+     "end": 70.79,
+     "en": "Orville flew the plane 36 meters.",
+     "ja": "オーヴィルが操縦し、その飛行機は36メートル進みました。"
+    },
+    {
+     "start": 71.86,
+     "end": 74.57,
+     "en": "He was in the air for 12 seconds.",
+     "ja": "空中にいた時間は12秒間でした。"
+    },
+    {
+     "start": 75.44,
+     "end": 79.37,
+     "en": "The two brothers made three more flights that day.",
+     "ja": "その日、兄弟はさらに3回の飛行を行いました。"
+    },
+    {
+     "start": 80.1,
+     "end": 84.25,
+     "en": "Four other men watched the Wright brothers' first flights.",
+     "ja": "ライト兄弟の最初の飛行を、ほかに4人の男性が見守っていました。"
+    },
+    {
+     "start": 84.96,
+     "end": 87.11,
+     "en": "One of the men took pictures.",
+     "ja": "そのうちの1人は写真を撮りました。"
+    },
+    {
+     "start": 87.98,
+     "end": 92.25,
+     "en": "Few newspapers, however, noted the event.",
+     "ja": "しかし、この出来事を取り上げた新聞はほとんどありませんでした。"
+    },
+    {
+     "start": 92.75,
+     "end": 98.55,
+     "en": "It was almost five years before the Wright brothers became famous.",
+     "ja": "ライト兄弟の名が広く知られるようになるまで、そこからほぼ5年かかりました。"
+    },
+    {
+     "start": 99.32,
+     "end": 103.23,
+     "en": "In 1908, Wilbur went to France.",
+     "ja": "1908年、ウィルバーはフランスへ渡りました。"
+    },
+    {
+     "start": 104.14,
+     "end": 108.77,
+     "en": "He gave demonstration flights at heights of 90 meters.",
+     "ja": "そこで彼は、高度90メートルまで上がるデモ飛行を行いました。"
+    },
+    {
+     "start": 109.78,
+     "end": 115.59,
+     "en": "A French company agreed to begin making the Wright brothers' flying machine.",
+     "ja": "フランスのある会社は、ライト兄弟の飛行機を製造することに同意しました。"
+    },
+    {
+     "start": 116.41,
+     "end": 123.53,
+     "en": "Orville made successful flights in the United States at the time Wilbur was in France.",
+     "ja": "ウィルバーがフランスにいるあいだ、アメリカではオーヴィルが飛行実験を成功させていました。"
+    },
+    {
+     "start": 124.36,
+     "end": 129.75,
+     "en": "The United States War Department agreed to buy a Wright brothers' plane.",
+     "ja": "アメリカ陸軍省は、ライト兄弟の飛行機を購入することを決めました。"
+    },
+    {
+     "start": 130.64,
+     "end": 134.61,
+     "en": "Wilbur and Orville suddenly became world heroes.",
+     "ja": "こうして、ウィルバーとオーヴィルは一躍世界的な英雄となりました。"
+    },
+    {
+     "start": 135.34,
+     "end": 138.29,
+     "en": "But the brothers were not seeking fame.",
+     "ja": "しかし兄弟は、名声そのものを求めていたわけではありません。"
+    },
+    {
+     "start": 138.84,
+     "end": 144.57,
+     "en": "They returned to Dayton where they continued to improve their airplanes.",
+     "ja": "ふたりはデイトンに戻り、そこで飛行機の改良を続けました。"
+    },
+    {
+     "start": 145.58,
+     "end": 148.31,
+     "en": "They taught many others how to fly.",
+     "ja": "また、多くの人に飛行機の操縦方法を教えました。"
+    },
+    {
+     "start": 149.28,
+     "end": 153.97,
+     "en": "Wilbur Wright died of typhoid fever in 1912.",
+     "ja": "ウィルバー・ライトは1912年に、腸チフスで亡くなりました。"
+    },
+    {
+     "start": 155.0,
+     "end": 163.87,
+     "en": "Orville Wright continued designing and inventing until he died many years later, in 1948.",
+     "ja": "弟のオーヴィル・ライトは、その後も設計や発明の仕事を続け、1948年にこの世を去りました。"
+    }
+   ]
+  },
+  {
+   "id": "L4-2",
+   "level": 4,
+   "title": "Rocket Scientist Robert Goddard",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/american-inventors-rocket-scientist-robert-goddard/7979682.html",
+   "video": "media/L4-2.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L4-2.en.vtt",
+   "subs_ja": "subs/L4-2.ja.vtt",
+   "clip_start": 13.0,
+   "clip_end": 191.74,
+   "cover_height": 0,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "influential",
+     "ja": "大きな影響力のある"
+    },
+    {
+     "en": "the field of rocket science",
+     "ja": "ロケット工学の分野"
+    },
+    {
+     "en": "propulsion",
+     "ja": "推進（力）"
+    },
+    {
+     "en": "carry out studies and tests",
+     "ja": "研究や実験を行う"
+    },
+    {
+     "en": "solid fuels",
+     "ja": "固体燃料"
+    },
+    {
+     "en": "liquid-fuel rocket",
+     "ja": "液体燃料ロケット"
+    },
+    {
+     "en": "Earth's atmosphere",
+     "ja": "地球の大気圏"
+    },
+    {
+     "en": "Smithsonian Institution",
+     "ja": "スミソニアン協会（米国の研究・博物館機関）"
+    },
+    {
+     "en": "publication",
+     "ja": "出版物・報告書"
+    },
+    {
+     "en": "dispute in the press",
+     "ja": "報道機関での論争"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "NASAはロバート・ゴダードをどのように表現していますか？",
+     "choices": [
+      "宇宙飛行の最初の乗組員",
+      "現代ロケット推進の父",
+      "アメリカ最初の宇宙飛行士",
+      "最初に月に着陸した科学者"
+     ],
+     "answer": 1,
+     "explain": "本文でNASAはゴダードを「現代ロケット推進の父」と呼んでいると説明されています。"
+    },
+    {
+     "q": "ゴダードが1926年に達成した重要なことは何ですか？",
+     "choices": [
+      "世界初の固体燃料ロケットの打ち上げ",
+      "世界初の液体燃料ロケットの打ち上げ",
+      "月への宇宙飛行の成功",
+      "最初の人工衛星の打ち上げ"
+     ],
+     "answer": 1,
+     "explain": "本文では、1925年にエンジンをテストし、翌年（1926年）に世界初の液体燃料ロケットの打ち上げに成功したと書かれています。"
+    },
+    {
+     "q": "ゴダードの研究でスミソニアン協会が行ったことは何ですか？",
+     "choices": [
+      "ロケットの打ち上げを代わりに行った",
+      "彼の研究所を運営した",
+      "資金と支援を与え、報告書を発表した",
+      "宇宙飛行士を訓練した"
+     ],
+     "answer": 2,
+     "explain": "スミソニアン協会は資金や支援を行い、彼の取り組みについての報告書もいくつか出版しました。"
+    },
+    {
+     "q": "「A Method of Reaching Extreme Altitudes」という報告書の主な内容はどれですか？",
+     "choices": [
+      "宇宙飛行士の健康問題",
+      "気球より高く気象観測機器を送る方法の研究",
+      "月面着陸計画の詳細",
+      "飛行機の設計理論"
+     ],
+     "answer": 1,
+     "explain": "その報告書には、気球よりも高いところまで気象観測機器を送る方法を探した研究が書かれていると説明されています。"
+    },
+    {
+     "q": "ゴダードが月に到達するロケットの可能性を示したとき、人々の反応はどうでしたか？",
+     "choices": [
+      "多くの人がすぐに計画を支援した",
+      "ほとんど関心を示さなかった",
+      "多くの人が彼をばかげていると思った",
+      "政府がすぐに計画を採用した"
+     ],
+     "answer": 2,
+     "explain": "当時それは不可能に思われ、多くの人が彼は愚かだと考えたと本文にあります。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 6,
+     "why": "soft chemical fuel を直訳の「柔らかい化学燃料」ではなく「液体状の化学燃料」と意訳したが、元のニュアンス（固体と対比される非固体）をどこまで汲むべきか少し迷いました。"
+    },
+    {
+     "line": 13,
+     "why": "“weather recording instruments” を「気象観測機器」と多少専門用語寄りにまとめたが、学習者レベルを考えるともう少し平易にするか迷いました。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 9.13,
+     "en": "One of the most influential people in the field of rocket science was American Robert Goddard.",
+     "ja": "ロケット工学の分野で最も大きな影響を与えた人物の一人が、アメリカ人のロバート・ゴダードでした。"
+    },
+    {
+     "start": 9.6,
+     "end": 19.73,
+     "en": "The American space agency NASA describes Goddard as \"the father of modern rocket propulsion.\"",
+     "ja": "アメリカの宇宙機関NASAは、ゴダードを「現代ロケット推進の父」と呼んでいます。"
+    },
+    {
+     "start": 20.76,
+     "end": 31.33,
+     "en": "Robert Goddard once said that \"the dream of yesterday is the hope of today and the reality of tomorrow.\"",
+     "ja": "ロバート・ゴダードはかつて、「昨日の夢は今日の希望であり、明日の現実になる」と語りました。"
+    },
+    {
+     "start": 31.99,
+     "end": 39.13,
+     "en": "His scientific work gave hope to many dreams about space travel.",
+     "ja": "彼の科学的な研究は、宇宙旅行に関する多くの夢に希望を与えました。"
+    },
+    {
+     "start": 39.94,
+     "end": 44.01,
+     "en": "He turned some of those dreams into reality.",
+     "ja": "そして、そのいくつかを本当に実現させたのです。"
+    },
+    {
+     "start": 44.88,
+     "end": 52.97,
+     "en": "More than one hundred years ago, Goddard carried out studies and tests of rocket engines.",
+     "ja": "今から100年以上前、ゴダードはロケットエンジンの研究と実験を行いました。"
+    },
+    {
+     "start": 53.7,
+     "end": 64.75,
+     "en": "He developed and flew many rockets that got their power from solid fuels: chemicals that formed a hard substance.",
+     "ja": "彼は、固体燃料――固い物質になる化学物質――で動く多くのロケットを開発し、打ち上げました。"
+    },
+    {
+     "start": 65.68,
+     "end": 75.01,
+     "en": "In 1925, he made and tested the first rocket engine using a soft chemical fuel.",
+     "ja": "1925年には、液体状の化学燃料を使った初めてのロケットエンジンを作り、実験しました。"
+    },
+    {
+     "start": 75.74,
+     "end": 82.83,
+     "en": "The next year, he successfully launched the world's first liquid-fuel rocket.",
+     "ja": "翌年には、世界初の液体燃料ロケットの打ち上げに成功しました。"
+    },
+    {
+     "start": 83.62,
+     "end": 97.69,
+     "en": "Many historians consider liquid-fuel rocket flight to be as important as the first airplane flight by the American brothers Orville and Wilbur Wright.",
+     "ja": "多くの歴史家は、液体燃料ロケットの飛行は、アメリカ人のライト兄弟による初飛行と同じくらい重要だと考えています。"
+    },
+    {
+     "start": 98.42,
+     "end": 107.35,
+     "en": "Goddard's work proved that machines could travel outside of Earth's atmosphere and into space.",
+     "ja": "ゴダードの業績は、機械が地球の大気圏を越えて宇宙空間まで到達できることを証明しました。"
+    },
+    {
+     "start": 108.16,
+     "end": 117.31,
+     "en": "During his early research, he received money and support from the U.S. Smithsonian Institution.",
+     "ja": "研究の初期には、アメリカのスミソニアン協会から資金と支援を受けました。"
+    },
+    {
+     "start": 118.16,
+     "end": 123.55,
+     "en": "The Smithsonian published several reports about his efforts.",
+     "ja": "スミソニアン協会は、彼の取り組みについていくつもの報告書を発表しました。"
+    },
+    {
+     "start": 124.36,
+     "end": 139.79,
+     "en": "One publication, called \"A Method of Reaching Extreme Altitudes,\" wrote about his search for ways to send weather recording instruments higher than balloons could fly.",
+     "ja": "その一つ「A Method of Reaching Extreme Altitudes（極高度に到達する方法）」という報告書には、気球よりも高い場所まで気象観測機器を送る方法を探した彼の研究がまとめられていました。"
+    },
+    {
+     "start": 140.48,
+     "end": 146.77,
+     "en": "It described how he developed the mathematical theories for rocket flight.",
+     "ja": "そこでは、彼がロケット飛行のための数学的な理論をどのように作り上げたかも説明されていました。"
+    },
+    {
+     "start": 147.44,
+     "end": 157.17,
+     "en": "In that report, Goddard also suggested the possibility of a rocket someday reaching the moon.",
+     "ja": "その報告書の中で、ゴダードは、いつかロケットが月に到達する可能性についても述べました。"
+    },
+    {
+     "start": 157.89,
+     "end": 163.73,
+     "en": "At the time, there was a big dispute in the press about this claim.",
+     "ja": "当時、この主張をめぐって新聞などで大きな論争が起きました。"
+    },
+    {
+     "start": 164.36,
+     "end": 171.79,
+     "en": "Many people thought he was foolish for suggesting something that seemed so impossible.",
+     "ja": "あまりにも実現しそうにないことだと考えられ、多くの人が彼をばかげていると思ったのです。"
+    },
+    {
+     "start": 172.72,
+     "end": 178.29,
+     "en": "Many of Goddard’s ideas are still used in rocket development.",
+     "ja": "ゴダードの考えの多くは、現在のロケット開発にも受け継がれています。"
+    }
+   ]
+  },
+  {
+   "id": "L4-3",
+   "level": 4,
+   "title": "American Inventions: The Television",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/american-inventions-the-television/7966519.html",
+   "video": "media/L4-3.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L4-3.en.vtt",
+   "subs_ja": "subs/L4-3.ja.vtt",
+   "clip_start": 69.36,
+   "clip_end": 234.02,
+   "cover_height": 0,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "sending pictures and sound through the air",
+     "ja": "映像と音を空中に送ること"
+    },
+    {
+     "en": "mechanical devices",
+     "ja": "機械式の装置"
+    },
+    {
+     "en": "electronic",
+     "ja": "電子式の、電子を使った"
+    },
+    {
+     "en": "electrons",
+     "ja": "電子"
+    },
+    {
+     "en": "receiver",
+     "ja": "受信機"
+    },
+    {
+     "en": "trap light in a container",
+     "ja": "容器の中に光をとらえる"
+    },
+    {
+     "en": "capture pictures",
+     "ja": "映像をとらえる"
+    },
+    {
+     "en": "credit (someone) with (something)",
+     "ja": "〜は…のおかげだと認める"
+    },
+    {
+     "en": "invest money in his invention",
+     "ja": "彼の発明にお金を投資する"
+    },
+    {
+     "en": "patent documents",
+     "ja": "特許証書、特許文書"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "ファイロが雑誌の記事から知ったこととして正しいのはどれですか？",
+     "choices": [
+      "テレビはすでに家庭で広く使われていたこと",
+      "世界の一流の科学者たちが映像と音を空中に送る研究をしていたこと",
+      "インターネットで映像を送る方法が完成していたこと",
+      "ラジオ放送の仕組みが紹介されていたこと"
+     ],
+     "answer": 1,
+     "explain": "記事には、世界の優れた科学者たちが映像と音を空中に送るアイデアに取り組んでいると書かれていました。"
+    },
+    {
+     "q": "ファイロが「機械式の装置ではだめだ」と考えた理由として最も近いのはどれですか？",
+     "choices": [
+      "機械は高すぎて買えないから",
+      "電子を使えばもっと速く動かせると思ったから",
+      "機械の作り方を知らなかったから",
+      "先生に電子を使うように言われたから"
+     ],
+     "answer": 1,
+     "explain": "ファイロは電子をとても速く動かせることを知っており、電子を使う必要があると考えました。"
+    },
+    {
+     "q": "「light in a bottle」と呼ばれたアイデアは、どのようなものですか？",
+     "choices": [
+      "光を部屋いっぱいに広げる装置",
+      "光を容器の中に閉じ込め、電子の流れに乗せて送る装置",
+      "光を太陽から直接集める装置",
+      "懐中電灯の新しいデザイン"
+     ],
+     "answer": 1,
+     "explain": "説明文に「容器の中に光をとらえ、その光を電子の流れに乗せて送る」とあります。"
+    },
+    {
+     "q": "ファイロが後にトールマン先生に対して述べたこととして正しいのはどれですか？",
+     "choices": [
+      "自分の発明は先生とは無関係だと言った",
+      "先生が自分の特許を申請してくれたと言った",
+      "先生が自分の想像力を導き、科学の世界への扉を開くのを助けてくれたと言った",
+      "先生が最初の受信機を作ったと言った"
+     ],
+     "answer": 2,
+     "explain": "本文には、先生が想像力を導き、科学の扉を開くのを助けたとファイロが感謝したと書かれています。"
+    },
+    {
+     "q": "1930年8月に起きた出来事として正しいものはどれですか？",
+     "choices": [
+      "最初のテレビ放送が始まった",
+      "ファイロが最初のテレビカメラを作った",
+      "ファイロが初めて投資家と会った",
+      "アメリカ政府がファイロに特許証書を与えた"
+     ],
+     "answer": 3,
+     "explain": "1930年8月、アメリカ政府は彼の発明を守るために特許文書を与えました。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 9.65,
+     "en": "One night, Philo read a magazine story about the idea of sending pictures and sound through the air.",
+     "ja": "ある夜、ファイロは「映像と音を空中に送る」という発想について書かれた雑誌の記事を読みました。"
+    },
+    {
+     "start": 9.5,
+     "end": 16.67,
+     "en": "The story said some of the world’s best scientists were working on the idea.",
+     "ja": "その記事によると、世界の一流の科学者たちがそのアイデアに取り組んでいました。"
+    },
+    {
+     "start": 17.7,
+     "end": 26.91,
+     "en": "It said these scientists were using special machines to try to make a kind of device to send pictures.",
+     "ja": "科学者たちは、映像を送るための装置を作ろうとして、特別な機械を使っているとも書かれていました。"
+    },
+    {
+     "start": 28.88,
+     "end": 33.11,
+     "en": "Fourteen-year-old Philo decided these famous scientists were wrong.",
+     "ja": "14歳のファイロは、有名な科学者たちは間違っている、と考えました。"
+    },
+    {
+     "start": 33.72,
+     "end": 38.33,
+     "en": "He decided that mechanical devices would never work.",
+     "ja": "彼は、機械式の装置ではうまくいかないと結論づけたのです。"
+    },
+    {
+     "start": 39.14,
+     "end": 43.93,
+     "en": "Philo believed such a device would have to be electronic.",
+     "ja": "ファイロは、そのような装置は電子式でなければならないと信じていました。"
+    },
+    {
+     "start": 44.84,
+     "end": 49.73,
+     "en": "Philo knew electrons could be made to move very fast.",
+     "ja": "彼は、電子をとても速く動かすことができると知っていました。"
+    },
+    {
+     "start": 50.4,
+     "end": 55.87,
+     "en": "All he would have to do was find a way to make electrons do the work.",
+     "ja": "あとは、電子にその仕事をさせる方法を見つければいいだけだ、と考えたのです。"
+    },
+    {
+     "start": 56.64,
+     "end": 60.95,
+     "en": "Soon, Philo had an idea for such a receiver.",
+     "ja": "まもなくファイロは、そのための受信機のアイデアを思いつきました。"
+    },
+    {
+     "start": 61.6,
+     "end": 68.13,
+     "en": "It would trap light in a container and send the light on a line of electrons.",
+     "ja": "それは容器の中に光をとらえ、その光を電子の流れに乗せて送るというものでした。"
+    },
+    {
+     "start": 69.4,
+     "end": 72.21,
+     "en": "Philo called it “light in a bottle.”",
+     "ja": "ファイロはそれを「瓶の中の光」と名づけました。"
+    },
+    {
+     "start": 73.26,
+     "end": 80.47,
+     "en": "Several days later, Philo told his teacher about a device that could capture pictures.",
+     "ja": "数日後、ファイロは、映像をとらえることのできる装置について先生に話しました。"
+    },
+    {
+     "start": 81.42,
+     "end": 86.07,
+     "en": "He drew a plan for it and gave it to his teacher.",
+     "ja": "彼はその設計図を描き、先生に渡しました。"
+    },
+    {
+     "start": 86.86,
+     "end": 89.71,
+     "en": "Philo’s drawing seemed very simple.",
+     "ja": "ファイロの図はとても単純に見えました。"
+    },
+    {
+     "start": 90.14,
+     "end": 96.01,
+     "en": "But it still clearly showed the information needed to build a television.",
+     "ja": "しかしそこには、テレビを作るのに必要な情報が、はっきりと示されていたのです。"
+    },
+    {
+     "start": 96.98,
+     "end": 99.91,
+     "en": "Philo’s teacher was Justin Tolman.",
+     "ja": "ファイロの先生はジャスティン・トールマンという人でした。"
+    },
+    {
+     "start": 100.78,
+     "end": 112.07,
+     "en": "Many years later, Philo would credit Mr. Tolman with guiding his imagination and helping him open the doors of science.",
+     "ja": "何年も後になって、ファイロはトールマン先生が自分の想像力を導き、科学の世界への扉を開く手助けをしてくれたと語りました。"
+    },
+    {
+     "start": 112.88,
+     "end": 122.13,
+     "en": "In September 1927, Philo turned on a device that was the first working television receiver.",
+     "ja": "1927年9月、ファイロは、世界で初めて実際に動作するテレビ受信機の電源を入れました。"
+    },
+    {
+     "start": 122.78,
+     "end": 126.77,
+     "en": "In another room was the first television camera.",
+     "ja": "別の部屋には、最初のテレビカメラが置かれていました。"
+    },
+    {
+     "start": 127.66,
+     "end": 132.63,
+     "en": "Philo had invented the special camera tube earlier that year.",
+     "ja": "その年のはじめに、ファイロはその特殊なカメラ用真空管を発明していました。"
+    },
+    {
+     "start": 133.32,
+     "end": 139.85,
+     "en": "While the image produced on the receiver was not very clear, the device worked.",
+     "ja": "受信機に映し出された画像はあまり鮮明ではありませんでしたが、装置はきちんと動きました。"
+    },
+    {
+     "start": 140.48,
+     "end": 148.97,
+     "en": "Within a few months, Philo had found several people who wanted to invest money in his invention.",
+     "ja": "数か月のうちに、ファイロは自分の発明に出資したいという人を何人も見つけました。"
+    },
+    {
+     "start": 149.8,
+     "end": 156.95,
+     "en": "In August 1930, the United States government gave Philo patent documents.",
+     "ja": "1930年8月、アメリカ政府はファイロに特許証書を与えました。"
+    },
+    {
+     "start": 157.84,
+     "end": 164.21,
+     "en": "These documents aimed to protect his invention from being copied by others.",
+     "ja": "これらの書類は、彼の発明がほかの人にまねされないよう守るためのものでした。"
+    }
+   ]
+  },
+  {
+   "id": "L4-4",
+   "level": 4,
+   "title": "Pearl S. Buck",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/pearl-s-buck-the-first-american-woman-to-win-a-nobel-prize-in-literature-/7980858.html",
+   "video": "media/L4-4.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L4-4.en.vtt",
+   "subs_ja": "subs/L4-4.ja.vtt",
+   "clip_start": 55.74,
+   "clip_end": 190.8,
+   "cover_height": 0,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "religious workers",
+     "ja": "宗教活動に従事する人たち、宗教関係の働き手"
+    },
+    {
+     "en": "subject matter",
+     "ja": "題材、テーマとなる内容"
+    },
+    {
+     "en": "philosophy",
+     "ja": "哲学"
+    },
+    {
+     "en": "graduation",
+     "ja": "卒業（学位や課程を修了すること）"
+    },
+    {
+     "en": "crops",
+     "ja": "作物"
+    },
+    {
+     "en": "the Chinese way of life",
+     "ja": "中国での暮らし方・生活様式"
+    },
+    {
+     "en": "moved back",
+     "ja": "戻って移り住んだ"
+    },
+    {
+     "en": "provided",
+     "ja": "（ここでは）〜をもたらした、〜の元になった"
+    },
+    {
+     "en": "among the poorest people",
+     "ja": "最も貧しい人々の中で"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "パール・バックの両親はどのような仕事をしていましたか？",
+     "choices": [
+      "農業をしていた",
+      "宗教活動に取り組んでいた",
+      "大学で教えていた",
+      "政府の役人だった"
+     ],
+     "answer": 1,
+     "explain": "本文では、両親は中国で「religious workers」だったと説明されています。"
+    },
+    {
+     "q": "パール・バックは1910年にアメリカへ戻って何をしましたか？",
+     "choices": [
+      "小説を書き始めた",
+      "結婚した",
+      "哲学を学んだ",
+      "子どもの本を書いた"
+     ],
+     "answer": 2,
+     "explain": "1910年にアメリカへ戻り、ランドルフ・メイコン女子大学で哲学を勉強しました。"
+    },
+    {
+     "q": "ジョン・ロシング・バックについて正しい説明はどれですか？",
+     "choices": [
+      "有名な小説家だった",
+      "宗教関係の仕事をし、農業を研究していた",
+      "政治家だった",
+      "哲学の教授だった"
+     ],
+     "answer": 1,
+     "explain": "彼は「religious worker who studied agriculture」と紹介されています。"
+    },
+    {
+     "q": "『The Good Earth』で、ワン・ルンとオーランの生活はどのように変化しますか？",
+     "choices": [
+      "働かなくなってしまう",
+      "町に引っ越して店を開く",
+      "作物がよくとれ、生活がよくなるが、その良い時期は長く続かない",
+      "すぐに大金持ちになる"
+     ],
+     "answer": 2,
+     "explain": "二人は懸命に働き、暮らしは良くなりますが、「the good times do not last」と書かれています。"
+    },
+    {
+     "q": "パール・バックの中国での生活経験は、後のどのような点に影響しましたか？",
+     "choices": [
+      "彼女の英語の教科書の内容",
+      "彼女の多くの本の題材",
+      "彼女の音楽活動",
+      "彼女の絵画作品"
+     ],
+     "answer": 1,
+     "explain": "「Their life among the poorest people provided the subject matter for many of the books she later wrote」とあり、本の題材になったと説明されています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 0,
+     "why": "「home」を「故郷」ではなく「暮らす場所」と訳したが、どの程度の情緒を込めるべきか迷った。"
+    },
+    {
+     "line": 2,
+     "why": "“religious workers”を自然さを優先して「宗教活動に取り組んでいました」と訳し、「宣教師」と言い切るか迷った。"
+    },
+    {
+     "line": 16,
+     "why": "“Their lives get much better”をどの程度強く訳すかで、「大きく良くなり」と少し意訳気味にした。"
+    },
+    {
+     "line": 18,
+     "why": "“the Chinese way of life”を「中国での暮らしぶり」とし、「生活様式」など他の表現との迷いがあった。"
+    },
+    {
+     "line": 20,
+     "why": "“bought Green Hills Farm”を固有名詞を残しつつ自然にするため、「〜を購入しました」で良いか少し迷った。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 4.45,
+     "en": "For nearly 40 years, China was her home.",
+     "ja": "およそ40年ものあいだ、中国が彼女の暮らす場所になりました。"
+    },
+    {
+     "start": 5.58,
+     "end": 9.21,
+     "en": "Pearl’s parents were Caroline and Absalom Sydenstricker.",
+     "ja": "パールの両親は、キャロラインとアブサロム・サイデンストリッカーでした。"
+    },
+    {
+     "start": 11.06,
+     "end": 13.63,
+     "en": "They were religious workers in China.",
+     "ja": "二人は中国で宗教活動に取り組んでいました。"
+    },
+    {
+     "start": 14.84,
+     "end": 17.71,
+     "en": "Pearl’s education began at home.",
+     "ja": "パールの教育は家庭から始まりました。"
+    },
+    {
+     "start": 18.6,
+     "end": 24.71,
+     "en": "Her mother taught her many of the things she would have learned in an American school.",
+     "ja": "母親は、アメリカの学校なら学んでいただろう多くのことを教えました。"
+    },
+    {
+     "start": 25.62,
+     "end": 28.95,
+     "en": "A Chinese teacher taught Pearl other subjects.",
+     "ja": "中国人の先生もいて、パールに別の教科を教えました。"
+    },
+    {
+     "start": 30.02,
+     "end": 41.99,
+     "en": "In 1910, Pearl went back to the United States to study philosophy at Randolph-Macon Woman’s College in Lynchburg, Virginia.",
+     "ja": "1910年、パールはアメリカに戻り、バージニア州リンチバーグのランドルフ・メイコン女子大学で哲学を学びました。"
+    },
+    {
+     "start": 42.98,
+     "end": 46.81,
+     "en": "After graduation, she returned to China.",
+     "ja": "卒業後、彼女は再び中国へ戻りました。"
+    },
+    {
+     "start": 47.76,
+     "end": 51.61,
+     "en": "Three years later, she met John Lossing Buck.",
+     "ja": "3年後、彼女はジョン・ロシング・バックと出会います。"
+    },
+    {
+     "start": 52.36,
+     "end": 56.43,
+     "en": "He was a religious worker who studied agriculture.",
+     "ja": "彼は、農業を研究する宗教関係の働き手でした。"
+    },
+    {
+     "start": 57.64,
+     "end": 63.29,
+     "en": "They were married and moved to a small village in the north of China.",
+     "ja": "二人は結婚し、中国北部の小さな村に引っ越しました。"
+    },
+    {
+     "start": 64.18,
+     "end": 72.85,
+     "en": "Their life among the poorest people provided the subject matter for many of the books she later wrote.",
+     "ja": "最も貧しい人々の中で暮らした経験が、のちに彼女が書く多くの本の題材になりました。"
+    },
+    {
+     "start": 73.8,
+     "end": 80.21,
+     "en": "The Good Earth is the story of a poor Chinese man named Wang Lung.",
+     "ja": "『大地（The Good Earth）』は、ワン・ルンという貧しい中国人男性の物語です。"
+    },
+    {
+     "start": 81.04,
+     "end": 82.95,
+     "en": "His wife is O-Lan.",
+     "ja": "彼の妻はオーランという女性です。"
+    },
+    {
+     "start": 83.78,
+     "end": 91.65,
+     "en": "They work very hard together and finally make enough money to buy some land for a farm.",
+     "ja": "二人は力を合わせて懸命に働き、ついに農地を買えるだけのお金を手に入れます。"
+    },
+    {
+     "start": 92.44,
+     "end": 101.11,
+     "en": "After a time, they grow enough crops to feed their family well, with some left over to sell.",
+     "ja": "やがて作物がよく実るようになり、家族が十分食べられ、さらに売る分まで取れるようになります。"
+    },
+    {
+     "start": 102.08,
+     "end": 105.67,
+     "en": "Their lives get much better, and they are happy.",
+     "ja": "暮らしは大きく良くなり、二人は幸せに過ごします。"
+    },
+    {
+     "start": 106.4,
+     "end": 109.25,
+     "en": "But the good times do not last.",
+     "ja": "しかし、そうした良い日々は長くは続きません。"
+    },
+    {
+     "start": 110.04,
+     "end": 122.31,
+     "en": "Pearl Buck wrote her first books about China at a time when most people in the world knew almost nothing about the Chinese way of life.",
+     "ja": "パール・バックが最初に中国を題材にした本を書いたころ、世界の多くの人は中国での暮らしぶりをほとんど知りませんでした。"
+    },
+    {
+     "start": 122.98,
+     "end": 129.83,
+     "en": "After almost 40 years in China, the writer moved back to the United States.",
+     "ja": "中国でおよそ40年を過ごしたあと、彼女はアメリカへ戻りました。"
+    },
+    {
+     "start": 130.48,
+     "end": 134.61,
+     "en": "She bought Green Hills Farm in eastern Pennsylvania.",
+     "ja": "そしてペンシルベニア州東部にあるグリーン・ヒルズ・ファームを購入しました。"
+    }
+   ]
+  },
+  {
+   "id": "L4-5",
+   "level": 4,
+   "title": "Yellowstone: The World's First National Park",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/yellowstone-the-world-s-first-national-park/7974034.html",
+   "video": "media/L4-5.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L4-5.en.vtt",
+   "subs_ja": "subs/L4-5.ja.vtt",
+   "clip_start": 48.3,
+   "clip_end": 228.42,
+   "cover_height": 0,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "unusual",
+     "ja": "珍しい、普通と違う"
+    },
+    {
+     "en": "supervolcano",
+     "ja": "巨大火山（通常よりはるかに大規模な噴火を起こす火山）"
+    },
+    {
+     "en": "caldera",
+     "ja": "カルデラ（火山活動でできた大きなくぼ地）"
+    },
+    {
+     "en": "liquid rock",
+     "ja": "溶けた岩石、溶岩"
+    },
+    {
+     "en": "pressure",
+     "ja": "圧力"
+    },
+    {
+     "en": "geyser",
+     "ja": "間欠泉（一定の間隔で熱湯を噴き上げる温泉）"
+    },
+    {
+     "en": "plateau",
+     "ja": "高原地帯、台地"
+    },
+    {
+     "en": "Lower Falls",
+     "ja": "ローワー滝（固有名詞）"
+    },
+    {
+     "en": "grizzly bear",
+     "ja": "グリズリーベア、ハイイログマ"
+    },
+    {
+     "en": "bison",
+     "ja": "バイソン（アメリカバッファロー）"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "イエローストーン国立公園の地下にあるものとして説明されているのはどれですか。",
+     "choices": [
+      "氷の湖",
+      "熱い溶岩の湖",
+      "巨大な地下洞窟",
+      "古い油田"
+     ],
+     "answer": 1,
+     "explain": "本文では、公園の地下約6キロに「hot liquid rock（熱い溶岩）の湖」があると説明されています。"
+    },
+    {
+     "q": "「Old Faithful」が有名な理由として正しいものはどれですか。",
+     "choices": [
+      "世界で最も高く水を噴き上げるから",
+      "一日に一度だけ噴き上がるから",
+      "約90分ごとに噴き上がるから",
+      "色が七色に変わるから"
+     ],
+     "answer": 2,
+     "explain": "Old Faithful は“erupts about every 90 minutes”とあり、規則的に噴き上がることで知られています。"
+    },
+    {
+     "q": "イエローストーンの冬の気候について正しい説明はどれですか。",
+     "choices": [
+      "標高が低いので冬でも暖かい。",
+      "標高が高いため冬はとても寒い。",
+      "1月はいつも0度前後で安定している。",
+      "冬は完全に閉鎖される。"
+     ],
+     "answer": 1,
+     "explain": "平均標高が高いため、1月の平均気温はマイナス18〜マイナス7度と、とても寒いと述べられています。"
+    },
+    {
+     "q": "1988年の夏に公園で起きた出来事として正しいものはどれですか。",
+     "choices": [
+      "大地震が起きた。",
+      "大規模な洪水があった。",
+      "森林火災が広い範囲を焼いた。",
+      "火山の大噴火があった。"
+     ],
+     "answer": 2,
+     "explain": "“forest fires burned large areas of the park”とあり、森林火災が広い範囲を焼いたとあります。"
+    },
+    {
+     "q": "イエローストーンに関する説明として正しいものはどれですか。",
+     "choices": [
+      "世界で最も多くの湖がある。",
+      "世界で最大の野生バイソンの群れがいる。",
+      "世界で最も標高が高い国立公園である。",
+      "アメリカで唯一の国立公園である。"
+     ],
+     "answer": 1,
+     "explain": "本文には“the largest group of wild bison in the world”とあり、野生バイソンの群れが世界最大だと説明されています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 3,
+     "why": "“A lake of hot liquid rock”を「溶岩の『湖』」と比喩的に訳したが、湖という表現をどの程度強調するか迷いました。"
+    },
+    {
+     "line": 15,
+     "why": "“powerful falls”を「迫力のある滝」と意訳したが、「力強い」など別の形容もあり得るため。"
+    },
+    {
+     "line": 18,
+     "why": "“the lower 48 United States”を「アメリカ本土48州」としたが、日本語でどこまで説明するか迷いました。"
+    },
+    {
+     "line": 19,
+     "why": "動物名のカタカナ表記（エルク、ヘラジカ、コヨーテなど）の選択に揺れがあり得るため。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 6.43,
+     "en": "The park is unusual because of what lies underneath it.",
+     "ja": "この公園が特別なのは、その地下にあるもののためです。"
+    },
+    {
+     "start": 6.28,
+     "end": 14.81,
+     "en": "It sits on top of an ancient supervolcano, known as the Yellowstone Caldera.",
+     "ja": "公園はイエローストーン・カルデラと呼ばれる太古の巨大火山の上にあります。"
+    },
+    {
+     "start": 15.44,
+     "end": 19.27,
+     "en": "The caldera remains an active volcano.",
+     "ja": "このカルデラは今も活動中の火山です。"
+    },
+    {
+     "start": 20.5,
+     "end": 26.33,
+     "en": "A lake of hot liquid rock is about six kilometers under the park.",
+     "ja": "公園の地下およそ6キロメートルには、熱い溶岩の「湖」があります。"
+    },
+    {
+     "start": 27.18,
+     "end": 32.17,
+     "en": "Experts say this lake is under huge amounts of pressure.",
+     "ja": "専門家によると、この溶岩の湖には非常に大きな圧力がかかっています。"
+    },
+    {
+     "start": 32.02,
+     "end": 43.23,
+     "en": "The pressure and heat cause geysers to shoot hot water out of the ground and mud to boil at Yellowstone.",
+     "ja": "その圧力と熱によって、イエローストーンでは間欠泉が地面から熱湯を吹き上げ、泥が沸き立ちます。"
+    },
+    {
+     "start": 44.12,
+     "end": 48.65,
+     "en": "The park is home to more than 300 geysers.",
+     "ja": "公園には300を超える間欠泉があります。"
+    },
+    {
+     "start": 49.28,
+     "end": 56.71,
+     "en": "There are more geysers and hot springs in Yellowstone than any other place on Earth.",
+     "ja": "イエローストーンには、地球上のどの場所よりも多くの間欠泉と温泉があります。"
+    },
+    {
+     "start": 57.56,
+     "end": 67.55,
+     "en": "“Old Faithful” is the name of the park’s most famous geyser because it erupts about every 90 minutes.",
+     "ja": "「オールド・フェイスフル」はおよそ90分ごとに噴き上がるため、公園で最も有名な間欠泉の名前になっています。"
+    },
+    {
+     "start": 68.42,
+     "end": 77.67,
+     "en": "Yellowstone is on a high plateau with an average height of 2,400 meters above sea level.",
+     "ja": "イエローストーンは標高およそ2,400メートルの高原地帯にあります。"
+    },
+    {
+     "start": 77.52,
+     "end": 92.01,
+     "en": "This makes the weather very cold in winter, with January temperatures averaging between -18 degrees and -7 degrees Celsius.",
+     "ja": "そのため冬はとても寒く、1月の平均気温はマイナス18度からマイナス7度ほどです。"
+    },
+    {
+     "start": 93.18,
+     "end": 100.53,
+     "en": "However, some areas of the park remain open to visitors throughout the year.",
+     "ja": "しかし、公園内には一年中訪れることができるエリアもあります。"
+    },
+    {
+     "start": 101.08,
+     "end": 106.47,
+     "en": "Yellowstone Canyon is about 365 meters deep.",
+     "ja": "イエローストーン渓谷の深さはおよそ365メートルあります。"
+    },
+    {
+     "start": 106.32,
+     "end": 113.77,
+     "en": "The Yellowstone River runs through it and drops 93 meters in the Lower Falls.",
+     "ja": "そこを流れるイエローストーン川は、ローワー滝で93メートル落ちます。"
+    },
+    {
+     "start": 114.5,
+     "end": 121.17,
+     "en": "Visitors can walk on a path that brings them very close to the top of the falls.",
+     "ja": "滝のすぐ上の近くまで続く遊歩道を歩くこともできます。"
+    },
+    {
+     "start": 121.92,
+     "end": 126.01,
+     "en": "There, they can see and hear the powerful falls.",
+     "ja": "そこでは、迫力のある滝を目で見て、音も間近に感じられます。"
+    },
+    {
+     "start": 126.76,
+     "end": 134.11,
+     "en": "In summer of 1988, forest fires burned large areas of the park.",
+     "ja": "1988年の夏には、山火事が公園の広い範囲を焼き尽くしました。"
+    },
+    {
+     "start": 133.96,
+     "end": 140.21,
+     "en": "Most of those areas are now covered with plants and young trees.",
+     "ja": "今では、その多くの場所が草木と若い木々に覆われています。"
+    },
+    {
+     "start": 141.18,
+     "end": 148.93,
+     "en": "Yellowstone is home to the largest group of wild animals in the lower 48 United States.",
+     "ja": "イエローストーンには、アメリカ本土48州の中で最大規模の野生動物の群れが暮らしています。"
+    },
+    {
+     "start": 149.64,
+     "end": 162.45,
+     "en": "These include bison, grizzly bear, elk, deer, moose, fox, beaver, coyote and wolves.",
+     "ja": "バイソン、グリズリーベア、エルク、シカ、ヘラジカ、キツネ、ビーバー、コヨーテ、オオカミなどがその一部です。"
+    },
+    {
+     "start": 163.3,
+     "end": 173.31,
+     "en": "In 2024, park officials estimated the bison population to be about 4,500 animals.",
+     "ja": "2024年には、公園当局はバイソンの数をおよそ4,500頭と見積もりました。"
+    },
+    {
+     "start": 174.06,
+     "end": 179.67,
+     "en": "That makes it the largest group of wild bison in the world.",
+     "ja": "これは、世界で最大の野生バイソンの群れということになります。"
+    }
+   ]
+  },
+  {
+   "id": "L4-6",
+   "level": 4,
+   "title": "What Is a Polar Vortex?",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/what-is-a-polar-vortex-weather-system-/7981167.html",
+   "video": "media/L4-6.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L4-6.en.vtt",
+   "subs_ja": "subs/L4-6.ja.vtt",
+   "clip_start": 38.78,
+   "clip_end": 215.64,
+   "cover_height": 0,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "polar vortex",
+     "ja": "ポーラーボルテックス（北極や南極を取り巻く強い寒気の渦）"
+    },
+    {
+     "en": "stratosphere",
+     "ja": "成層圏（対流圏の上にある大気の層）"
+    },
+    {
+     "en": "northerly directions",
+     "ja": "北寄りの方向／北のほう"
+    },
+    {
+     "en": "windchill readings",
+     "ja": "体感温度の値"
+    },
+    {
+     "en": "meteorologists",
+     "ja": "気象学者・気象の専門家"
+    },
+    {
+     "en": "frostbite",
+     "ja": "凍傷・ひどいしもやけ"
+    },
+    {
+     "en": "hypothermia",
+     "ja": "低体温症"
+    },
+    {
+     "en": "burst",
+     "ja": "（管などが）破裂する"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "ポーラーボルテックスが弱まったときに起こりうる現象として、正しいものはどれですか？",
+     "choices": [
+      "北極の空気が一時的に温暖になる",
+      "冷たい空気のかたまりが南へ流れ込む",
+      "台風がすぐに発生する",
+      "雨が必ず降るようになる"
+     ],
+     "answer": 1,
+     "explain": "本文では、ポーラーボルテックスが弱まると冷たい空気のかたまりが切り離されて南へ動くと説明されています。"
+    },
+    {
+     "q": "風を考慮した気温（windchill readings）について、本文で述べられている説明として最も近いものはどれですか？",
+     "choices": [
+      "実際の気温より高く感じる温度",
+      "風の強さだけを示す指標",
+      "通常の気温より低く感じる温度",
+      "海水の温度を示す数値"
+     ],
+     "answer": 2,
+     "explain": "気象学者は、風を考慮した体感温度は、空気の温度の読みよりも低いと述べています。"
+    },
+    {
+     "q": "NWSが人々に警告した内容として、正しいものはどれですか？",
+     "choices": [
+      "暑さによる脱水症状と日射病",
+      "寒さによる凍傷や低体温症",
+      "洪水による家屋の損壊",
+      "雷による停電"
+     ],
+     "answer": 1,
+     "explain": "NWSは、非常に低い気温により、肌を守らないと凍傷や低体温症の危険があると警告しました。"
+    },
+    {
+     "q": "NOAAによるポーラーボルテックスの説明として、正しいものはどれですか？",
+     "choices": [
+      "冬と夏で場所が大きく変わる現象",
+      "地球の両極を常に取り巻いている仕組み",
+      "赤道付近だけに現れる強い風",
+      "海の上だけに現れる渦巻き"
+     ],
+     "answer": 1,
+     "explain": "NOAAは、ポーラーボルテックスは地球の北極と南極のまわりをいつも取り巻いていると説明しています。"
+    },
+    {
+     "q": "ポーラーボルテックスが弱くなり、「極から押し出されたり二つに分かれたり」した結果として起こることとして正しいものはどれですか？",
+     "choices": [
+      "冷たい空気が北へ、暖かい空気が南へ動く",
+      "冷たい空気も暖かい空気も西へ動く",
+      "冷たい空気が南へ、暖かい空気が北へ動く",
+      "空気の動きはほとんど変わらない"
+     ],
+     "answer": 2,
+     "explain": "本文では、その結果として冷たい空気が南へ、暖かい空気が北へ押し出されると説明されています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 0,
+     "why": "「strong westerly winds」を「強い西風の風の流れ」とやや意訳しており、「流れ」を入れるかどうか迷いました。"
+    },
+    {
+     "line": 2,
+     "why": "「masses of cold air」を「冷たい空気のかたまり」と自然な日本語にしましたが、規模感をどこまで出すか判断が難しい表現でした。"
+    },
+    {
+     "line": 6,
+     "why": "「fell to minus 51 degrees Celsius」を字幕向けに簡潔にしつつ、深刻さをどこまで伝えるかで迷いました。"
+    },
+    {
+     "line": 8,
+     "why": "「frostbite」を「しもやけや低体温症」としましたが、日本語では医学的な『凍傷』と日常語の『しもやけ』のどちらを優先するか悩みました。"
+    },
+    {
+     "line": 15,
+     "why": "“pushed off the pole or split into two” を「極から押し出されたり、二つに分かれたり」と訳し、『極』を補っていますが、どこまで説明的にするか判断が難しい部分でした。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 15.43,
+     "en": "These cold winds move about 16 to 48 kilometers above the surface in the Arctic area in the part of the atmosphere called the stratosphere.",
+     "ja": "この冷たい風は、北極圏の上空、およそ16〜48キロメートルの高さにある「成層圏」と呼ばれる層を吹き抜けます。"
+    },
+    {
+     "start": 16.02,
+     "end": 26.61,
+     "en": "At times, the polar vortex can weaken, causing masses of cold air to break off and move south.",
+     "ja": "ときどきポーラーボルテックスが弱まり、その一部が切り離された冷たい空気のかたまりとなって南へ流れ込むことがあります。"
+    },
+    {
+     "start": 27.18,
+     "end": 34.19,
+     "en": "A polar vortex can also push warmer air in northerly directions.",
+     "ja": "またポーラーボルテックスによって、逆に暖かい空気が北のほうへ押し上げられることもあります。"
+    },
+    {
+     "start": 35.04,
+     "end": 45.73,
+     "en": "The Associated Press (AP) reports that several vortex events have affected parts of the U.S. this winter.",
+     "ja": "AP通信によると、この冬、アメリカ各地は何度かポーラーボルテックスの影響を受けました。"
+    },
+    {
+     "start": 46.58,
+     "end": 56.93,
+     "en": "Experts say weather forces in the Arctic have combined to push colder air to the U.S. and Europe.",
+     "ja": "専門家たちは、北極付近のさまざまな気象の働きが重なり合い、より冷たい空気をアメリカやヨーロッパへ押し出していると説明しています。"
+    },
+    {
+     "start": 57.68,
+     "end": 73.03,
+     "en": "Temperature readings that take into account the effects of wind, called windchill readings, fell to minus 51 degrees Celsius in parts of the U.S. Midwest.",
+     "ja": "風の影響を加味した「体感温度」と呼ばれる気温は、アメリカ中西部の一部の地域でマイナス51度まで下がりました。"
+    },
+    {
+     "start": 74.54,
+     "end": 82.31,
+     "en": "Meteorologists say windchill readings are colder than air temperature readings.",
+     "ja": "気象学者によると、この体感温度は、通常の気温よりも低く感じられる値になります。"
+    },
+    {
+     "start": 82.98,
+     "end": 101.67,
+     "en": "The U.S. National Weather Service (NWS) warned people in affected areas that such low temperatures can cause frostbite and hypothermia if skin is not protected from the cold.",
+     "ja": "アメリカ国立気象局（NWS）は、影響を受ける地域の人々に対し「肌を寒さから守らないと、しもやけや低体温症になるおそれがある」と警告しました。"
+    },
+    {
+     "start": 102.5,
+     "end": 115.43,
+     "en": "Weather officials also warned that long-term cold temperatures can cause water pipes in or around homes to freeze and burst.",
+     "ja": "気象当局はさらに、厳しい寒さが長引くと、家の中や周りの水道管が凍りつき、破裂する危険もあると注意を呼びかけています。"
+    },
+    {
+     "start": 116.02,
+     "end": 131.15,
+     "en": "The NWS noted that almost every U.S. state – except for Hawaii, California and Florida – is expected to report low windchill temperatures.",
+     "ja": "NWSは、ハワイ州・カリフォルニア州・フロリダ州を除く、ほぼすべての州で体感温度が大きく下がる見込みだと伝えました。"
+    },
+    {
+     "start": 132.06,
+     "end": 141.81,
+     "en": "The coldest temperatures were expected in the midwestern states of Kansas, Nebraska and Missouri.",
+     "ja": "なかでもカンザス州、ネブラスカ州、ミズーリ州など中西部の州では、特に厳しい冷え込みが予想されています。"
+    },
+    {
+     "start": 142.84,
+     "end": 154.07,
+     "en": "In an explanation on its website, NOAA states that the polar vortex always surrounds both of Earth’s poles.",
+     "ja": "NOAAは自らのウェブサイトで、ポーラーボルテックスは地球の北極と南極のまわりをいつも取り巻いていると説明しています。"
+    },
+    {
+     "start": 153.92,
+     "end": 159.97,
+     "en": "The systems strengthen in the winter and weaken in the summer.",
+     "ja": "この仕組みは冬に強まり、夏になると弱まります。"
+    },
+    {
+     "start": 160.82,
+     "end": 165.71,
+     "en": "Every year or so, the polar vortex becomes weaker.",
+     "ja": "およそ1年に一度のペースで、ポーラーボルテックスが弱まる時期があります。"
+    },
+    {
+     "start": 166.52,
+     "end": 173.19,
+     "en": "This can cause the system to be “pushed off the pole or split into two.”",
+     "ja": "その結果、渦全体が極から押し出されたり、二つに分かれたりすることがあります。"
+    },
+    {
+     "start": 173.9,
+     "end": 176.41,
+     "en": "This can lead to cold air at the surface being pushed southward and warm air being pushed to the north.",
+     "ja": "そうなると、地表付近の冷たい空気は南へ、暖かい空気は北へと押し出されやすくなります。"
+    }
+   ]
+  },
+  {
+   "id": "L4-7",
+   "level": 4,
+   "title": "Halloween in America",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/halloween-in-america-costumes-candy-costs-for-night-of-fun/7837907.html",
+   "video": "media/L4-7.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L4-7.en.vtt",
+   "subs_ja": "subs/L4-7.ja.vtt",
+   "clip_start": 79.04,
+   "clip_end": 254.66,
+   "cover_height": 0,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "traditions",
+     "ja": "伝統、習慣"
+    },
+    {
+     "en": "linked to",
+     "ja": "〜と結びついている、〜と関係している"
+    },
+    {
+     "en": "spirits",
+     "ja": "霊、魂"
+    },
+    {
+     "en": "feast",
+     "ja": "祝宴、ごちそうの日"
+    },
+    {
+     "en": "costumes",
+     "ja": "衣装、仮装用の服"
+    },
+    {
+     "en": "trick or treat",
+     "ja": "トリック・オア・トリート（お菓子をくれないといたずらするよ、という決まり文句）"
+    },
+    {
+     "en": "superhero",
+     "ja": "スーパーヒーロー（特別な力を持つヒーロー）"
+    },
+    {
+     "en": "parades",
+     "ja": "パレード、仮装行列"
+    },
+    {
+     "en": "inventive",
+     "ja": "工夫に富んだ、独創的な"
+    },
+    {
+     "en": "spending",
+     "ja": "支出、消費額"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "ケルト人は10月31日に何が起こると信じていましたか。",
+     "choices": [
+      "新しい年が始まる",
+      "死者の霊が家に戻ってくる",
+      "作物がすべて枯れる",
+      "悪い天気になる"
+     ],
+     "answer": 1,
+     "explain": "本文では、ケルト人は10月31日に死者の霊が自分たちの家に戻ってくると信じていたと説明されています。"
+    },
+    {
+     "q": "現代のアメリカでは、ハロウィーンは主に誰のための行事だと説明されていますか。",
+     "choices": [
+      "高齢者",
+      "ビジネス関係者",
+      "子ども",
+      "宗教指導者"
+     ],
+     "answer": 2,
+     "explain": "“In modern America, the holiday mostly belongs to children.” とあり、子ども中心の行事だと述べています。"
+    },
+    {
+     "q": "子どもたちは「trick or treat」と言ったあと、どうなると書かれていますか。",
+     "choices": [
+      "必ず家に招待される",
+      "お菓子をもらえないといたずらをするかもしれない",
+      "歌を歌わなければならない",
+      "近所の掃除をする"
+     ],
+     "answer": 1,
+     "explain": "お菓子をもらえない場合、子どもたちはいたずらをするかもしれないと説明されています。"
+    },
+    {
+     "q": "2024年、子どものコスチュームで最も人気が出ると予想されているのはどれですか。",
+     "choices": [
+      "ドラキュラ",
+      "スパイダーマン",
+      "魔女",
+      "おばけ"
+     ],
+     "answer": 1,
+     "explain": "N.R.F.は、スーパーヒーローのスパイダーマンが最も人気の子ども用コスチュームになると予想しています。"
+    },
+    {
+     "q": "大人のハロウィーンの楽しみ方として、本文で触れられていないものはどれですか。",
+     "choices": [
+      "パーティーに参加する",
+      "パレードに参加する",
+      "コスチュームコンテストに出る",
+      "教会の礼拝に参加する"
+     ],
+     "answer": 3,
+     "explain": "パーティー、パレード、コスチュームコンテストは書かれていますが、教会の礼拝についての記述はありません。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 0,
+     "why": "“traditions”を「習慣」と訳し、「信仰」との関係を説明的にしたが、宗教的な文脈でどこまで踏み込むか少し迷いました。"
+    },
+    {
+     "line": 7,
+     "why": "“creatures”を「キャラクター」と訳し、学習者にイメージしやすくしたが、本来は「生き物」であり意図的に意訳しています。"
+    },
+    {
+     "line": 10,
+     "why": "“may play a trick”を「ちょっとしたいたずら」とニュアンスを弱めて訳しており、どの程度やわらげるべきか判断が難しい部分でした。"
+    },
+    {
+     "line": 15,
+     "why": "“inventive”を「工夫されたもの」とし、“humorous”もあわせて少し説明的に言い換えており、直訳とのバランスに迷いました。"
+    },
+    {
+     "line": 16,
+     "why": "“reach a total of $3.8 billion”を「合計38億ドルに達すると見込まれています」とし、“reports”を文頭に反映していないため、情報源のニュアンスが弱まっているかもしれません。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 7.93,
+     "en": "Halloween traditions in America are linked to Celtic beliefs in ancient Britain.",
+     "ja": "アメリカのハロウィーンの習慣は、古代ブリテンのケルト人の信仰とつながっています。"
+    },
+    {
+     "start": 8.78,
+     "end": 21.13,
+     "en": "The Celts believed that spirits of the dead would return to their homes on October 31, the day of the autumn feast.",
+     "ja": "ケルト人は、10月31日、秋の祝いの日に、死者の霊が自分たちの家に戻ってくると信じていました。"
+    },
+    {
+     "start": 21.94,
+     "end": 31.09,
+     "en": "Celts would build huge fires to frighten away any evil spirits that might return.",
+     "ja": "ケルト人は、大きなたき火を焚いて、戻ってくるかもしれない悪い霊を追い払おうとしました。"
+    },
+    {
+     "start": 30.94,
+     "end": 41.19,
+     "en": "People from Scotland and Ireland brought these ideas with them when they came to America.",
+     "ja": "スコットランドやアイルランドから来た人々は、こうした考えをアメリカに持ち込みました。"
+    },
+    {
+     "start": 43.1,
+     "end": 50.77,
+     "en": "Some believed that spirits played tricks on people on the last night of October.",
+     "ja": "10月最後の夜には、霊が人々にいたずらをすると信じる人もいました。"
+    },
+    {
+     "start": 51.96,
+     "end": 58.09,
+     "en": "In modern America, the holiday mostly belongs to children.",
+     "ja": "現代のアメリカでは、この祝日は主に子どものためのものになっています。"
+    },
+    {
+     "start": 58.94,
+     "end": 65.03,
+     "en": "After dark, children wear special clothing, called costumes.",
+     "ja": "日が暮れると、子どもたちは「コスチューム」と呼ばれる特別な服を着ます。"
+    },
+    {
+     "start": 66.16,
+     "end": 74.29,
+     "en": "They often appear as frightening creatures like vampires, ghosts and witches.",
+     "ja": "吸血鬼や幽霊、魔女など、おそろしいキャラクターの姿になることがよくあります。"
+    },
+    {
+     "start": 75.6,
+     "end": 81.53,
+     "en": "The children walk around their neighborhoods, knocking on doors of homes.",
+     "ja": "子どもたちは近所を歩き回り、家々のドアをノックして回ります。"
+    },
+    {
+     "start": 82.25,
+     "end": 88.43,
+     "en": "When someone answers a door, the children yell \"trick or treat.\"",
+     "ja": "誰かがドアを開けると、子どもたちは「トリック・オア・トリート！」と大きな声で言います。"
+    },
+    {
+     "start": 89.38,
+     "end": 98.71,
+     "en": "If the people in the homes do not give them a sweet treat, the children may play a trick on them.",
+     "ja": "家の人がお菓子をくれないと、子どもたちはちょっとしたいたずらをするかもしれません。"
+    },
+    {
+     "start": 99.76,
+     "end": 107.11,
+     "en": "Some of the purchases people make for Halloween include candy and costumes.",
+     "ja": "ハロウィーンのために人々が買うものには、お菓子やコスチュームなどがあります。"
+    },
+    {
+     "start": 107.96,
+     "end": 119.51,
+     "en": "This year, the N.R.F. expects the superhero character Spider-Man to be the most popular children’s costume.",
+     "ja": "今年は、全米小売業協会によると、スーパーヒーローのスパイダーマンが子どものコスチュームで一番人気になる見込みです。"
+    },
+    {
+     "start": 120.58,
+     "end": 127.31,
+     "en": "Children are not the only Americans in costumes on Halloween, however.",
+     "ja": "しかし、ハロウィーンでコスチュームを着るのは子どもだけではありません。"
+    },
+    {
+     "start": 127.16,
+     "end": 137.05,
+     "en": "Adults also dress up in costumes and attend Halloween parties, parades and other events.",
+     "ja": "大人もコスチュームに着替えて、ハロウィーンのパーティーやパレード、さまざまなイベントに参加します。"
+    },
+    {
+     "start": 138.0,
+     "end": 150.49,
+     "en": "These celebrations often include costume competitions, with prizes for the most frightening, inventive or humorous costumes.",
+     "ja": "こうした集まりでは、もっとも怖いコスチュームや、工夫されたもの、おもしろいものに賞を出すコンテストが行われることも多いです。"
+    },
+    {
+     "start": 151.34,
+     "end": 166.13,
+     "en": "Overall, the N.R.F. reports, total spending on costumes for Halloween 2024 is expected to reach a total of $3.8 billion.",
+     "ja": "全体として、全米小売業協会の報告では、2024年のハロウィーン用コスチュームへの支出は合計38億ドルに達すると見込まれています。"
+    },
+    {
+     "start": 167.34,
+     "end": 175.17,
+     "en": "It says buyers will spend $3.5 billion on Halloween candy.",
+     "ja": "また、ハロウィーン用のお菓子には35億ドルが使われるとしています。"
+    }
+   ]
+  },
+  {
+   "id": "L4-8",
+   "level": 4,
+   "title": "What Is the Super Bowl?",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/what-is-the-super-bowl/7964993.html",
+   "video": "media/L4-8.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L4-8.en.vtt",
+   "subs_ja": "subs/L4-8.ja.vtt",
+   "clip_start": 65.48,
+   "clip_end": 246.92,
+   "cover_height": 0,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "pushed the effort to",
+     "ja": "〜しようとする動きを後押しした／主導した"
+    },
+    {
+     "en": "competed with each other",
+     "ja": "互いに競い合った"
+    },
+    {
+     "en": "established NFL players",
+     "ja": "実績のあるNFL選手たち"
+    },
+    {
+     "en": "officials",
+     "ja": "（リーグなどの）幹部・役員"
+    },
+    {
+     "en": "championship game",
+     "ja": "優勝決定戦"
+    },
+    {
+     "en": "Superdome",
+     "ja": "スーパードーム（ニューオーリンズの屋内スタジアム）"
+    },
+    {
+     "en": "tens of thousands",
+     "ja": "何万人もの"
+    },
+    {
+     "en": "tens of millions",
+     "ja": "何千万人もの"
+    },
+    {
+     "en": "had success in the Big Game",
+     "ja": "スーパーボウルで好成績を収めてきた"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "1960年にラマー・ハントが行ったこととして正しいのはどれですか？",
+     "choices": [
+      "NFLを作った",
+      "AFLを作ろうとする動きを進めた",
+      "スーパーボウルの名前を考えた",
+      "ニューヨーク・ジェッツの監督になった"
+     ],
+     "answer": 1,
+     "explain": "本文では、ラマー・ハントはアメリカン・フットボール・リーグ（AFL）設立の動きを推し進めたと説明されています。"
+    },
+    {
+     "q": "人々が新しいリーグを本格的に受け入れたきっかけとされる出来事は何ですか？",
+     "choices": [
+      "第1回スーパーボウルが満員になったこと",
+      "チーフスが初優勝したこと",
+      "ニューヨーク・ジェッツがボルチモア・コルツを破ったこと",
+      "AFCとNFCが作られたこと"
+     ],
+     "answer": 2,
+     "explain": "専門家によると、ジェッツがコルツに勝ったことで、一般の人々が新リーグを受け入れたとされています。"
+    },
+    {
+     "q": "AFCとNFCについて正しい説明はどれですか？",
+     "choices": [
+      "もともと同じリーグの別名である",
+      "1969年の試合の後、チームを分けて作られた2つのカンファレンスである",
+      "大学リーグの名称である",
+      "ヨーロッパとアジアのリーグを表している"
+     ],
+     "answer": 1,
+     "explain": "1969年の試合のあと、チームはAFCとNFCという2つのカンファレンスに分けられたと書かれています。"
+    },
+    {
+     "q": "現在のスーパーボウルについて述べている内容として正しいものはどれですか？",
+     "choices": [
+      "観客はほとんど入らない",
+      "アメリカ国内だけで見られている",
+      "アメリカを代表する大きなスポーツイベントである",
+      "毎回ロサンゼルスで行われる"
+     ],
+     "answer": 2,
+     "explain": "本文では、スーパーボウルは「major sporting event（一大スポーツイベント）」と説明されています。"
+    },
+    {
+     "q": "今度の日曜のスーパーボウルで対戦するのは、どの2チームですか？",
+     "choices": [
+      "カンザスシティ・チーフスとフィラデルフィア・イーグルス",
+      "グリーンベイ・パッカーズとニューヨーク・ジェッツ",
+      "ニューイングランド・ペイトリオッツとイーグルス",
+      "チーフスとパッカーズ"
+     ],
+     "answer": 0,
+     "explain": "AFCのチーフスとNFCのイーグルスのどちらが勝つかを、世界中の人が見ると述べられています。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 0,
+     "why": "「pushed the effort」をどの程度強く訳すか迷い、「中心となり」「動きが進みました」とやや意訳気味にしました。"
+    },
+    {
+     "line": 10,
+     "why": "That changed の変化の内容を明確にするため「一変」と強めに訳しましたが、ニュアンスが少し強すぎる可能性があります。"
+    },
+    {
+     "line": 15,
+     "why": "major sporting event を「アメリカを代表する一大スポーツイベント」と、範囲（アメリカ中心）を補って訳しています。"
+    },
+    {
+     "line": 17,
+     "why": "around the world を含めつつ「テレビなどで観戦」とメディアを補足しており、情報を足した意訳になっています。"
+    },
+    {
+     "line": 25,
+     "why": "have a chance to win を「挑む」と訳し、「チャンスがある」よりも意欲的なニュアンスを加えています。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 13.65,
+     "en": "In 1960, Texas businessman Lamar Hunt pushed the effort to create the American Football League, or AFL.",
+     "ja": "1960年、テキサスの実業家ラマー・ハントが中心となり、新しいプロリーグ「アメリカン・フットボール・リーグ（AFL）」を作ろうという動きが進みました。"
+    },
+    {
+     "start": 13.5,
+     "end": 24.15,
+     "en": "The two leagues competed with each other to sign top football players from universities around the country.",
+     "ja": "2つのリーグは、全米の大学から優秀なフットボール選手を獲得しようと、互いに競い合いました。"
+    },
+    {
+     "start": 24.84,
+     "end": 35.87,
+     "en": "In 1965, established NFL players began negotiating to play for the competing league.",
+     "ja": "1965年になると、すでにNFLで活躍していた選手たちが、ライバルリーグでプレーするために交渉を始めました。"
+    },
+    {
+     "start": 36.54,
+     "end": 42.03,
+     "en": "So, officials of the two leagues decided to work together.",
+     "ja": "そこで両リーグの幹部たちは、協力する道を選びました。"
+    },
+    {
+     "start": 42.85,
+     "end": 49.17,
+     "en": "This agreement established a championship game between the two leagues.",
+     "ja": "この合意により、2つのリーグの代表チームどうしが戦う優勝決定戦が生まれました。"
+    },
+    {
+     "start": 50.1,
+     "end": 61.59,
+     "en": "It was officially called the AFL-NFL World Championship Game but became known as the Super Bowl.",
+     "ja": "正式名称は「AFL–NFLワールドチャンピオンシップゲーム」でしたが、やがて「スーパーボウル」という名前で知られるようになりました。"
+    },
+    {
+     "start": 62.42,
+     "end": 70.31,
+     "en": "The first Super Bowl was played in 1967 in Los Angeles, California.",
+     "ja": "第1回スーパーボウルは1967年、カリフォルニア州ロサンゼルスで行われました。"
+    },
+    {
+     "start": 71.16,
+     "end": 76.29,
+     "en": "The Green Bay Packers defeated the Kansas City Chiefs.",
+     "ja": "この試合は、グリーンベイ・パッカーズがカンザスシティ・チーフスを破りました。"
+    },
+    {
+     "start": 76.74,
+     "end": 80.43,
+     "en": "It was not a very exciting game.",
+     "ja": "しかし、試合内容はそれほど盛り上がったものではありませんでした。"
+    },
+    {
+     "start": 81.32,
+     "end": 85.35,
+     "en": "Many of the seats in the sports center were empty.",
+     "ja": "会場の観客席にも、空席がたくさん目立ちました。"
+    },
+    {
+     "start": 86.54,
+     "end": 91.27,
+     "en": "That changed with the Super Bowl played two years later.",
+     "ja": "ところが、その状況は2年後のスーパーボウルで一変します。"
+    },
+    {
+     "start": 92.12,
+     "end": 102.35,
+     "en": "Experts say the public finally accepted the new league when the New York Jets defeated the Baltimore Colts.",
+     "ja": "専門家によれば、ニューヨーク・ジェッツがボルチモア・コルツを破ったことで、人々はようやく新しいリーグを本格的に受け入れたと言われています。"
+    },
+    {
+     "start": 102.98,
+     "end": 114.77,
+     "en": "After that game in 1969, officials of the two leagues decided to create a new National Football League.",
+     "ja": "1969年のその試合のあと、2つのリーグの幹部たちは、新しいナショナル・フットボール・リーグを作ることにしました。"
+    },
+    {
+     "start": 115.62,
+     "end": 130.35,
+     "en": "They divided the teams into two competing conferences, the American Conference, or AFC, and the National Conference, NFC.",
+     "ja": "そしてチームを2つのカンファレンス、アメリカン・カンファレンス（AFC）とナショナル・カンファレンス（NFC）に分けました。"
+    },
+    {
+     "start": 131.48,
+     "end": 136.39,
+     "en": "Each year, the conference champions play in the Super Bowl.",
+     "ja": "毎年、この2つのカンファレンスの優勝チームがスーパーボウルで対戦します。"
+    },
+    {
+     "start": 137.28,
+     "end": 142.19,
+     "en": "Today, the Super Bowl is a major sporting event.",
+     "ja": "現在、スーパーボウルはアメリカを代表する一大スポーツイベントになっています。"
+    },
+    {
+     "start": 143.04,
+     "end": 152.81,
+     "en": "Tens of thousands of people will be watching the game Sunday at the Superdome in New Orleans, Louisiana.",
+     "ja": "ルイジアナ州ニューオーリンズのスーパードームでは、日曜日の試合を何万人もの観客が見守る予定です。"
+    },
+    {
+     "start": 153.9,
+     "end": 160.13,
+     "en": "Tens of millions of other people around the world will be watching Super Bowl LIX.",
+     "ja": "さらに世界中で、何千万人もの人々が第59回スーパーボウルをテレビなどで観戦します。"
+    },
+    {
+     "start": 161.72,
+     "end": 175.91,
+     "en": "They will be watching to see if the AFC Kansas City Chiefs or the NFC Philadelphia Eagles become the champions of American football.",
+     "ja": "AFCのカンザスシティ・チーフスとNFCのフィラデルフィア・イーグルスのどちらがアメリカンフットボールの王者になるのか、注目が集まっています。"
+    },
+    {
+     "start": 177.1,
+     "end": 180.99,
+     "en": "Both teams have had success in the Big Game.",
+     "ja": "どちらのチームも、これまでのスーパーボウルで実績を残してきました。"
+    }
+   ]
+  },
+  {
+   "id": "L4-9",
+   "level": 4,
+   "title": "Thanksgiving: An American Tradition",
+   "source": "voa",
+   "source_url": "https://learningenglish.voanews.com/a/thanksgiving-american-tradition-2017/4117570.html",
+   "video": "media/L4-9.mp4",
+   "audio_only": null,
+   "subs_en": "subs/L4-9.en.vtt",
+   "subs_ja": "subs/L4-9.ja.vtt",
+   "clip_start": 111.78,
+   "clip_end": 287.98,
+   "cover_height": 0,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "casseroles",
+     "ja": "キャセロール料理（オーブンでゆっくり焼くグラタンのような料理）"
+    },
+    {
+     "en": "gravy",
+     "ja": "グレイビーソース（肉汁から作るソース）"
+    },
+    {
+     "en": "quintessential",
+     "ja": "典型的な、〜らしさを最もよく表す"
+    },
+    {
+     "en": "finish off",
+     "ja": "食事などを食べ終える・しめくくる"
+    },
+    {
+     "en": "travel long distances",
+     "ja": "長距離を移動する、遠くまで出かける"
+    },
+    {
+     "en": "hometowns",
+     "ja": "故郷、地元の町"
+    },
+    {
+     "en": "Friendsgiving",
+     "ja": "フレンズギビング（友人同士で行う感謝祭の食事会）"
+    },
+    {
+     "en": "potluck",
+     "ja": "ポットラック（持ち寄り形式の食事会）"
+    },
+    {
+     "en": "broadcast",
+     "ja": "放送する"
+    },
+    {
+     "en": "parade",
+     "ja": "パレード、行進"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "感謝祭の食事で、グレイビーソースはどのようにして作られますか？",
+     "choices": [
+      "野菜を長時間煮込んで作る",
+      "ターキーを焼いたときに出る脂を含んだ肉汁から作る",
+      "小麦粉と水だけを混ぜて作る",
+      "市販のソースをそのまま使う"
+     ],
+     "answer": 1,
+     "explain": "本文では、グレイビーはターキーを焼くときに出る脂を含んだ液体から作ると説明されています。"
+    },
+    {
+     "q": "感謝祭のデザートとして、記事で『典型的』とされているものはどれですか？",
+     "choices": [
+      "クッキー",
+      "ケーキ",
+      "パイ",
+      "アイスクリーム"
+     ],
+     "answer": 2,
+     "explain": "“The quintessential Thanksgiving dessert is pie.” とあり、パイが代表的なデザートだと述べられています。"
+    },
+    {
+     "q": "感謝祭のあと最も移動が多くなる日はいつですか？",
+     "choices": [
+      "感謝祭の前の金曜日",
+      "感謝祭当日（木曜日）",
+      "感謝祭のあとの土曜日",
+      "感謝祭のあとの日曜日"
+     ],
+     "answer": 3,
+     "explain": "記事では、感謝祭のあとの日曜日が一年で最も移動が多い日だと説明されています。"
+    },
+    {
+     "q": "“Friendsgiving” とはどのような行事ですか？",
+     "choices": [
+      "チャリティーのマラソン大会",
+      "友人と過ごす感謝祭の食事会",
+      "近所の人と掃除をする日",
+      "オンラインで行う感謝祭のイベント"
+     ],
+     "answer": 1,
+     "explain": "Friendsgiving は、家族ではなく友人と一緒に祝う感謝祭の食事会のことです。"
+    },
+    {
+     "q": "メイシーズ・サンクスギビング・デイ・パレードの最初の企画者は誰でしたか？",
+     "choices": [
+      "ニューヨーク市の市長",
+      "移民コミュニティの代表",
+      "メイシーズ店の従業員たち",
+      "フットボールチームの監督"
+     ],
+     "answer": 2,
+     "explain": "本文によると、ハラルド・スクエアのメイシーズ店の従業員たちが1924年に最初のパレードを企画しました。"
+    }
+   ],
+   "ja_reviewed": false,
+   "ja_unsure": [
+    {
+     "line": 7,
+     "why": "“quintessential” を「何といっても」と意訳しており、語感（最も典型的）をどこまで出せているか少し不安。"
+    },
+    {
+     "line": 12,
+     "why": "“make the return home” を「実家に帰れる」と訳し、「実家」を補っているため、解釈が入りすぎていないか若干不安。"
+    },
+    {
+     "line": 21,
+     "why": "“like the ones in Europe” を「ヨーロッパのような大きなパレード」とまとめて訳し、具体的な比較のニュアンスが弱くなっているかもしれないため。"
+    }
+   ],
+   "credit": "Video: VOA Learning English (learningenglish.voanews.com) — public domain",
+   "active": true,
+   "lines": [
+    {
+     "start": 0.4,
+     "end": 11.47,
+     "en": "Families often make other foods like mashed potatoes, sweet potatoes, cranberry sauce and vegetable casseroles.",
+     "ja": "ほかにも、マッシュポテトやスイートポテト、クランベリーソース、野菜のキャセロールなど、いろいろな料理を用意します。"
+    },
+    {
+     "start": 12.34,
+     "end": 17.21,
+     "en": "A casserole is a dish that cooks slowly in an oven.",
+     "ja": "キャセロールとは、オーブンでじっくり時間をかけて焼く料理のことです。"
+    },
+    {
+     "start": 17.96,
+     "end": 21.17,
+     "en": "And do not forget about the gravy.",
+     "ja": "そして、グレイビーソースも忘れてはいけません。"
+    },
+    {
+     "start": 21.02,
+     "end": 30.05,
+     "en": "This rich sauce is made from the fatty liquid that comes off the turkey as it cooks.",
+     "ja": "このコクのあるソースは、ターキーを焼くときに出てくる脂を含んだ肉汁から作ります。"
+    },
+    {
+     "start": 30.72,
+     "end": 37.01,
+     "en": "People cover their turkey meat, stuffing and mashed potatoes with gravy.",
+     "ja": "ターキーの肉やスタッフィング、マッシュポテトに、たっぷりグレイビーをかけて食べます。"
+    },
+    {
+     "start": 37.9,
+     "end": 44.37,
+     "en": "The meal does not end with the turkey, stuffing, and side dishes, though.",
+     "ja": "とはいえ、ターキーやスタッフィング、つけ合わせで食事が終わるわけではありません。"
+    },
+    {
+     "start": 44.22,
+     "end": 49.79,
+     "en": "For some people, the best part of the meal is dessert.",
+     "ja": "人によっては、一番の楽しみはデザートです。"
+    },
+    {
+     "start": 51.02,
+     "end": 55.21,
+     "en": "The quintessential Thanksgiving dessert is pie.",
+     "ja": "感謝祭のデザートといえば、何といってもパイです。"
+    },
+    {
+     "start": 56.06,
+     "end": 69.87,
+     "en": "Pumpkin, cherry, apple or pecan pie are all great ways to finish off a Thanksgiving meal...if you are not too full of food by that point!",
+     "ja": "パンプキンパイやチェリーパイ、アップルパイ、ピーカンパイなど、どれも感謝祭のしめくくりにぴったりです…そのころまでにお腹いっぱいになっていなければですが。"
+    },
+    {
+     "start": 70.72,
+     "end": 77.09,
+     "en": "Some Americans must travel long distances to be with their families.",
+     "ja": "家族と過ごすために、遠くまで移動しなければならないアメリカ人もいます。"
+    },
+    {
+     "start": 77.98,
+     "end": 86.61,
+     "en": "In fact, the Sunday after Thanksgiving is the busiest travel day of the entire year.",
+     "ja": "実は、感謝祭のあとの日曜日は、一年の中で移動が最も集中する日です。"
+    },
+    {
+     "start": 87.42,
+     "end": 93.15,
+     "en": "This is usually when people return home from family gatherings.",
+     "ja": "たいていこの日に、人びとは家族との集まりから自宅に戻ります。"
+    },
+    {
+     "start": 94.14,
+     "end": 99.33,
+     "en": "Not everyone can make the return home each Thanksgiving.",
+     "ja": "毎年の感謝祭に、誰もが実家に帰れるとは限りません。"
+    },
+    {
+     "start": 100.08,
+     "end": 114.75,
+     "en": "So, young people living in cities away from their hometowns sometimes celebrate “Friendsgiving” -- a Thanksgiving meal with their friends instead of their family.",
+     "ja": "そのため、地元を離れて都市で暮らす若者たちは、ときどき家族の代わりに友人と一緒に「フレンズギビング」と呼ばれる感謝祭の食事会を開きます。"
+    },
+    {
+     "start": 115.54,
+     "end": 122.09,
+     "en": "They gather at someone’s apartment or house and have a “potluck.”",
+     "ja": "誰かのアパートや家に集まり、「ポットラック」と呼ばれるスタイルで食事をします。"
+    },
+    {
+     "start": 121.94,
+     "end": 129.85,
+     "en": "This is a meal where everyone who is invited brings food to share with others.",
+     "ja": "ポットラックとは、招待された人それぞれが料理を持ち寄り、みんなで分け合って食べる食事会のことです。"
+    },
+    {
+     "start": 130.82,
+     "end": 138.33,
+     "en": "Thanksgiving is a big day for television, games and other entertainment.",
+     "ja": "感謝祭は、テレビ番組やゲームなどの娯楽も盛り上がる一日です。"
+    },
+    {
+     "start": 139.2,
+     "end": 146.65,
+     "en": "One tradition is the television broadcast of Macy’s Thanksgiving Day Parade.",
+     "ja": "なかでも伝統行事の一つが、テレビで中継される「メイシーズ・サンクスギビング・デイ・パレード」です。"
+    },
+    {
+     "start": 146.5,
+     "end": 151.17,
+     "en": "It takes place each year in New York City.",
+     "ja": "このパレードは毎年ニューヨーク市で行われます。"
+    },
+    {
+     "start": 152.18,
+     "end": 160.61,
+     "en": "Workers of the Macy’s store on Herald Square organized the first parade in 1924.",
+     "ja": "ハラルド・スクエアにあるメイシーズ百貨店の従業員たちが、1924年に最初のパレードを企画しました。"
+    },
+    {
+     "start": 161.86,
+     "end": 169.65,
+     "en": "Many of the workers were immigrants and wanted to hold a big parade like the ones in Europe.",
+     "ja": "従業員の多くは移民で、ヨーロッパのような大きなパレードを開きたいと考えていました。"
+    },
+    {
+     "start": 170.17,
+     "end": 175.75,
+     "en": "So, they dressed in costumes and borrowed some animals from the zoo.",
+     "ja": "そこで彼らは仮装をし、動物園から動物を借りて参加させました。"
+    },
+    {
+     "start": 176.58,
+     "end": 179.31,
+     "en": "They also carried small balloons that floated just overhead.",
+     "ja": "さらに、頭上すぐの高さをふわふわ浮かぶ、小さめのバルーンも手に持って行進しました。"
+    },
+    {
+     "start": 179.16,
+     "end": 175.75,
+     "en": "Many professional American football games are also played on Thanksgiving.",
+     "ja": "感謝祭には、プロのアメリカンフットボールの試合も数多く行われます。"
+    },
+    {
+     "start": 175.6,
+     "end": 175.75,
+     "en": "Fans of the sport enjoy relaxing and watching a game or two after eating a big Thanksgiving meal.",
+     "ja": "このスポーツが好きな人たちは、たっぷり食事をしたあと、くつろぎながら試合を一つか二つ観戦して楽しみます。"
+    }
+   ]
+  },
+  {
+   "id": "L5-1",
+   "level": 5,
    "title": "Northward Shift of Boreal Tree Cover",
    "source": "nasa",
    "source_url": "https://svs.gsfc.nasa.gov/14965/",
    "video": "https://training.apush.jp/shadowing/media/L3-1.mp4",
    "audio_only": null,
-   "subs_en": "subs/L3-1.en.vtt",
-   "subs_ja": "subs/L3-1.ja.vtt",
+   "subs_en": "subs/L5-1.en.vtt",
+   "subs_ja": "subs/L5-1.ja.vtt",
    "clip_start": null,
    "clip_end": null,
    "cover_height": 0,
@@ -7209,15 +12517,15 @@
    ]
   },
   {
-   "id": "L3-2",
-   "level": 3,
+   "id": "L5-2",
+   "level": 5,
    "title": "Webb Spies Rain Clouds, New Molecule on Titan",
    "source": "nasa",
    "source_url": "https://svs.gsfc.nasa.gov/14843/",
    "video": "https://training.apush.jp/shadowing/media/L3-2.mp4",
    "audio_only": null,
-   "subs_en": "subs/L3-2.en.vtt",
-   "subs_ja": "subs/L3-2.ja.vtt",
+   "subs_en": "subs/L5-2.en.vtt",
+   "subs_ja": "subs/L5-2.ja.vtt",
    "clip_start": null,
    "clip_end": null,
    "cover_height": 0,
@@ -7825,15 +13133,15 @@
    ]
   },
   {
-   "id": "L3-3",
-   "level": 3,
+   "id": "L5-3",
+   "level": 5,
    "title": "The Ransom of Red Chief",
    "source": "voa",
    "source_url": "https://learningenglish.voanews.com/a/the-ransom-of-red-chief-by-o-henry/4656557.html",
    "video": "https://training.apush.jp/shadowing/media/L3-3.mp4",
    "audio_only": "https://training.apush.jp/shadowing/media/L3-3_audio.mp4",
-   "subs_en": "subs/L3-3.en.vtt",
-   "subs_ja": "subs/L3-3.ja.vtt",
+   "subs_en": "subs/L5-3.en.vtt",
+   "subs_ja": "subs/L5-3.ja.vtt",
    "clip_start": 222.16,
    "clip_end": 571.21,
    "cover_height": 0.22,
@@ -8295,15 +13603,15 @@
    ]
   },
   {
-   "id": "L3-4",
-   "level": 3,
+   "id": "L5-4",
+   "level": 5,
    "title": "The Gift of the Magi",
    "source": "voa",
    "source_url": "https://learningenglish.voanews.com/a/the-gift-of-the-magi-by-o-henry/4656574.html",
-   "video": "media/L3-4.mp4",
-   "audio_only": "media/L3-4_audio.mp4",
-   "subs_en": "subs/L3-4.en.vtt",
-   "subs_ja": "subs/L3-4.ja.vtt",
+   "video": "media/L5-4.mp4",
+   "audio_only": "media/L5-4_audio.mp4",
+   "subs_en": "subs/L5-4.en.vtt",
+   "subs_ja": "subs/L5-4.ja.vtt",
    "clip_start": 485.78,
    "clip_end": 770.82,
    "cover_height": 0.22,
@@ -8707,15 +14015,15 @@
    ]
   },
   {
-   "id": "L3-5",
-   "level": 3,
+   "id": "L5-5",
+   "level": 5,
    "title": "The Tell-Tale Heart",
    "source": "voa",
    "source_url": "https://learningenglish.voanews.com/a/the-tell-tale-heat-edgar-allan-poe/3538402.html",
-   "video": "media/L3-5.mp4",
-   "audio_only": "media/L3-5_audio.mp4",
-   "subs_en": "subs/L3-5.en.vtt",
-   "subs_ja": "subs/L3-5.ja.vtt",
+   "video": "media/L5-5.mp4",
+   "audio_only": "media/L5-5_audio.mp4",
+   "subs_en": "subs/L5-5.en.vtt",
+   "subs_ja": "subs/L5-5.ja.vtt",
    "clip_start": 419.01,
    "clip_end": 748.55,
    "cover_height": 0.22,
@@ -9267,15 +14575,15 @@
    ]
   },
   {
-   "id": "L3-6",
-   "level": 3,
+   "id": "L5-6",
+   "level": 5,
    "title": "The Celebrated Jumping Frog of Calaveras County",
    "source": "voa",
    "source_url": "https://learningenglish.voanews.com/a/celebrated-jumping-frog-calaveras-county-mark-twain/3160704.html",
-   "video": "media/L3-6.mp4",
-   "audio_only": "media/L3-6_audio.mp4",
-   "subs_en": "subs/L3-6.en.vtt",
-   "subs_ja": "subs/L3-6.ja.vtt",
+   "video": "media/L5-6.mp4",
+   "audio_only": "media/L5-6_audio.mp4",
+   "subs_en": "subs/L5-6.en.vtt",
+   "subs_ja": "subs/L5-6.ja.vtt",
    "clip_start": 391.36,
    "clip_end": 717.7,
    "cover_height": 0.22,
@@ -9673,15 +14981,15 @@
    ]
   },
   {
-   "id": "L3-7",
-   "level": 3,
+   "id": "L5-7",
+   "level": 5,
    "title": "The Cask of Amontillado",
    "source": "voa",
    "source_url": "https://learningenglish.voanews.com/a/cask-of-amontillado-edgar-allan-poe-american-stories/3249195.html",
-   "video": "media/L3-7.mp4",
-   "audio_only": "media/L3-7_audio.mp4",
-   "subs_en": "subs/L3-7.en.vtt",
-   "subs_ja": "subs/L3-7.ja.vtt",
+   "video": "media/L5-7.mp4",
+   "audio_only": "media/L5-7_audio.mp4",
+   "subs_en": "subs/L5-7.en.vtt",
+   "subs_ja": "subs/L5-7.ja.vtt",
    "clip_start": 483.18,
    "clip_end": 789.42,
    "cover_height": 0.22,
@@ -10169,15 +15477,15 @@
    ]
   },
   {
-   "id": "L3-8",
-   "level": 3,
+   "id": "L5-8",
+   "level": 5,
    "title": "Ingredients of Life from Asteroid Bennu",
    "source": "nasa",
    "source_url": "https://svs.gsfc.nasa.gov/14774/",
-   "video": "media/L3-8.mp4",
+   "video": "media/L5-8.mp4",
    "audio_only": null,
-   "subs_en": "subs/L3-8.en.vtt",
-   "subs_ja": "subs/L3-8.ja.vtt",
+   "subs_en": "subs/L5-8.en.vtt",
+   "subs_ja": "subs/L5-8.ja.vtt",
    "clip_start": null,
    "clip_end": null,
    "cover_height": 0,
@@ -10747,15 +16055,15 @@
    ]
   },
   {
-   "id": "L3-9",
-   "level": 3,
+   "id": "L5-9",
+   "level": 5,
    "title": "Hubble's AI Revolution",
    "source": "nasa",
    "source_url": "https://svs.gsfc.nasa.gov/14860/",
-   "video": "media/L3-9.mp4",
+   "video": "media/L5-9.mp4",
    "audio_only": null,
-   "subs_en": "subs/L3-9.en.vtt",
-   "subs_ja": "subs/L3-9.ja.vtt",
+   "subs_en": "subs/L5-9.en.vtt",
+   "subs_ja": "subs/L5-9.ja.vtt",
    "clip_start": null,
    "clip_end": null,
    "cover_height": 0,
@@ -11315,15 +16623,15 @@
    ]
   },
   {
-   "id": "L3-10",
-   "level": 3,
+   "id": "L5-10",
+   "level": 5,
    "title": "Landsat 9: More Than Just a Picture",
    "source": "nasa",
    "source_url": "https://svs.gsfc.nasa.gov/14978/",
-   "video": "media/L3-10.mp4",
+   "video": "media/L5-10.mp4",
    "audio_only": null,
-   "subs_en": "subs/L3-10.en.vtt",
-   "subs_ja": "subs/L3-10.ja.vtt",
+   "subs_en": "subs/L5-10.en.vtt",
+   "subs_ja": "subs/L5-10.ja.vtt",
    "clip_start": null,
    "clip_end": null,
    "cover_height": 0,

@@ -132,7 +132,7 @@ window.APW_COURSE = { id: "toefl70", title: "TOEFL iBT 70点を狙う単語", wo
 ["condition",[["条件づける",""],["条件",""]]],
 ["recall",[["思い出す",""]]],
 ["bias",[["偏り、偏見",""]]],
-["inflation",[["インフレ",""]]],
+["inflation",[["インフレ、物価上昇",""]]],
 ["capital",[["資本",""],["首都",""]]],
 ["currency",[["通貨","💱"]]],
 ["emission",[["排出","🏭"]]],

@@ -2,11 +2,13 @@
 切り出し・圧縮・字幕の時刻合わせはローカル（ffmpeg / faster-whisper の結果）で行う。
 
 使い方（shadowing/ で）:
+  python3 tools/make.py fetch L3-1 ...  # VOAのページを保存・動画（音声だけの記事は音声＋タイトル画）を落とす・faster-whisper で単語の時刻 → sources/{id}_page.html, _src.mp4, _whisper.json
   python3 tools/make.py plan L1-1 ...   # OpenAI に区間・訳・単語・クイズを作らせる → sources/{id}_plan.json
   python3 tools/make.py build L1-1 ...  # 動画を切って圧縮・字幕を作る・data/lessons.json を更新
 引数なしなら全部。APIキーは環境変数 OPENAI_API_KEY か、ENV_FILE（既定 ~/apush/sns-pipeline/.env）から読む。
+whisper のモデルは WHISPER_MODEL（既定 small、CPU int8）。id ごとに別プロセスで同時に走らせてよい（書くのは自分の id のファイルと、最後にまとめる lessons.json だけ）。
 """
-import json, os, re, sys, html, subprocess, difflib
+import json, os, re, sys, html, subprocess, difflib, time, ssl, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -26,9 +28,9 @@ LESSONS = {
     "L2-1": dict(level=2, source="voa", title="When Do I Start?", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-19-when-do-you-start/3357760.html", dur=(120, 180)),
     "L2-2": dict(level=2, source="voa", title="Yesterday Was Amazing!", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-24-yesterday-was-amazing/3439164.html", dur=(120, 180)),
     "L2-3": dict(level=2, source="voa", title="Have You Ever ...?", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-48-have-you-ever/3753664.html", dur=(120, 180)),
-    "L3-1": dict(level=3, source="nasa", title="Northward Shift of Boreal Tree Cover", url="https://svs.gsfc.nasa.gov/14965/"),
-    "L3-2": dict(level=3, source="nasa", title="Webb Spies Rain Clouds, New Molecule on Titan", url="https://svs.gsfc.nasa.gov/14843/"),
-    "L3-3": dict(level=3, source="voa", title="The Ransom of Red Chief", url="https://learningenglish.voanews.com/a/the-ransom-of-red-chief-by-o-henry/4656557.html", dur=(270, 330), story=True, scene="子どもが誘拐犯を振り回す場面"),
+    "L5-1": dict(level=5, source="nasa", title="Northward Shift of Boreal Tree Cover", url="https://svs.gsfc.nasa.gov/14965/"),
+    "L5-2": dict(level=5, source="nasa", title="Webb Spies Rain Clouds, New Molecule on Titan", url="https://svs.gsfc.nasa.gov/14843/"),
+    "L5-3": dict(level=5, source="voa", title="The Ransom of Red Chief", url="https://learningenglish.voanews.com/a/the-ransom-of-red-chief-by-o-henry/4656557.html", dur=(270, 330), story=True, scene="子どもが誘拐犯を振り回す場面"),
     "L1-4": dict(level=1, source="voa", title="I'm Here!", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-3-i-am-here/3126527.html", dur=(60, 120)),
     "L1-5": dict(level=1, source="voa", title="What Is It?", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-4/3168920.html", dur=(60, 120)),
     "L1-6": dict(level=1, source="voa", title="Where Are You?", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-5-where-are-you/3168971.html", dur=(60, 120)),
@@ -43,13 +45,35 @@ LESSONS = {
     "L2-8": dict(level=2, source="voa", title="She's My Best Friend!", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-38-shes-my-best-friend/3591967.html", dur=(120, 180)),
     "L2-9": dict(level=2, source="voa", title="Making Healthy Choices", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-44-making-healthy-choices/3688552.html", dur=(120, 180)),
     "L2-10": dict(level=2, source="voa", title="How Can I Help?", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-47-how-can-i-help/3737352.html", dur=(120, 180)),
-    "L3-4": dict(level=3, source="voa", title="The Gift of the Magi", url="https://learningenglish.voanews.com/a/the-gift-of-the-magi-by-o-henry/4656574.html", dur=(270, 330), story=True, scene="デラが髪を売り、ジムと贈り物を交換する場面（物語の結末まで）"),
-    "L3-5": dict(level=3, source="voa", title="The Tell-Tale Heart", url="https://learningenglish.voanews.com/a/the-tell-tale-heat-edgar-allan-poe/3538402.html", dur=(270, 330), story=True, scene="語り手が老人を殺し、警官の前で心臓の音に追い詰められていく場面（物語の結末まで）"),
-    "L3-6": dict(level=3, source="voa", title="The Celebrated Jumping Frog of Calaveras County", url="https://learningenglish.voanews.com/a/celebrated-jumping-frog-calaveras-county-mark-twain/3160704.html", dur=(270, 330), story=True, scene="スマイリーのカエル（ダン・ウェブスター）と、よそ者との賭けの場面"),
-    "L3-7": dict(level=3, source="voa", title="The Cask of Amontillado", url="https://learningenglish.voanews.com/a/cask-of-amontillado-edgar-allan-poe-american-stories/3249195.html", dur=(270, 330), story=True, scene="モントレゾールがフォルトゥナートを地下墓所の奥へ連れて行き、壁に塗り込める場面（物語の結末まで）"),
-    "L3-8": dict(level=3, source="nasa", title="Ingredients of Life from Asteroid Bennu", url="https://svs.gsfc.nasa.gov/14774/"),
-    "L3-9": dict(level=3, source="nasa", title="Hubble's AI Revolution", url="https://svs.gsfc.nasa.gov/14860/", crf=30),
-    "L3-10": dict(level=3, source="nasa", title="Landsat 9: More Than Just a Picture", url="https://svs.gsfc.nasa.gov/14978/", crf=30),
+    "L5-4": dict(level=5, source="voa", title="The Gift of the Magi", url="https://learningenglish.voanews.com/a/the-gift-of-the-magi-by-o-henry/4656574.html", dur=(270, 330), story=True, scene="デラが髪を売り、ジムと贈り物を交換する場面（物語の結末まで）"),
+    "L5-5": dict(level=5, source="voa", title="The Tell-Tale Heart", url="https://learningenglish.voanews.com/a/the-tell-tale-heat-edgar-allan-poe/3538402.html", dur=(270, 330), story=True, scene="語り手が老人を殺し、警官の前で心臓の音に追い詰められていく場面（物語の結末まで）"),
+    "L5-6": dict(level=5, source="voa", title="The Celebrated Jumping Frog of Calaveras County", url="https://learningenglish.voanews.com/a/celebrated-jumping-frog-calaveras-county-mark-twain/3160704.html", dur=(270, 330), story=True, scene="スマイリーのカエル（ダン・ウェブスター）と、よそ者との賭けの場面"),
+    "L5-7": dict(level=5, source="voa", title="The Cask of Amontillado", url="https://learningenglish.voanews.com/a/cask-of-amontillado-edgar-allan-poe-american-stories/3249195.html", dur=(270, 330), story=True, scene="モントレゾールがフォルトゥナートを地下墓所の奥へ連れて行き、壁に塗り込める場面（物語の結末まで）"),
+    "L5-8": dict(level=5, source="nasa", title="Ingredients of Life from Asteroid Bennu", url="https://svs.gsfc.nasa.gov/14774/"),
+    "L5-9": dict(level=5, source="nasa", title="Hubble's AI Revolution", url="https://svs.gsfc.nasa.gov/14860/", crf=30),
+    "L5-10": dict(level=5, source="nasa", title="Landsat 9: More Than Just a Picture", url="https://svs.gsfc.nasa.gov/14978/", crf=30),
+    # レベル3：Let's Learn English Level 2（会話。Professor Bot の解説が途中に入る）
+    "L3-1": dict(level=3, source="voa", title="Budget Cuts", url="https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson1/3960391.html", dur=(120, 180)),
+    "L3-2": dict(level=3, source="voa", title="The Interview", url="https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-2/3960471.html", dur=(120, 180)),
+    "L3-3": dict(level=3, source="voa", title="He Said - She Said", url="https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-3/4027340.html", dur=(120, 180)),
+    "L3-4": dict(level=3, source="voa", title="Run Away With the Circus!", url="https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-4-run-away-with-the-circus/4034187.html", dur=(120, 180)),
+    "L3-5": dict(level=3, source="voa", title="Greatest Vacation of All Time", url="https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-5-greatest-vacation/4035571.html", dur=(120, 180)),
+    "L3-6": dict(level=3, source="voa", title="Will It Float?", url="https://learningenglish.voanews.com/a/lesson-6-will-it-float/4064553.html", dur=(120, 180)),
+    "L3-7": dict(level=3, source="voa", title="Tip Your Tour Guide", url="https://learningenglish.voanews.com/a/lesson-7-tip-your-tour-guide/4064769.html", dur=(120, 180)),
+    "L3-8": dict(level=3, source="voa", title="Pets Are Family, Too!", url="https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-9-pets-are-family-too/4074883.html", dur=(120, 180)),
+    "L3-9": dict(level=3, source="voa", title="Visit to Peru", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-10-visit-to-peru/4079037.html", dur=(120, 180)),
+    "L3-10": dict(level=3, source="voa", title="The Big Snow", url="https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-11-the-big-snow/4102755.html", dur=(120, 180)),
+    # レベル4：VOA Learning English の記事の朗読（音声＋タイトル画。本文がそのまま台本）。report=True
+    "L4-1": dict(level=4, source="voa", title="Wilbur and Orville Wright: The First Airplane", url="https://learningenglish.voanews.com/a/wilbur-and-orville-wright-the-first-airplane/7998765.html", dur=(120, 180), report=True),
+    "L4-2": dict(level=4, source="voa", title="Rocket Scientist Robert Goddard", url="https://learningenglish.voanews.com/a/american-inventors-rocket-scientist-robert-goddard/7979682.html", dur=(120, 180), report=True),
+    "L4-3": dict(level=4, source="voa", title="American Inventions: The Television", url="https://learningenglish.voanews.com/a/american-inventions-the-television/7966519.html", dur=(120, 180), report=True),
+    "L4-4": dict(level=4, source="voa", title="Pearl S. Buck", url="https://learningenglish.voanews.com/a/pearl-s-buck-the-first-american-woman-to-win-a-nobel-prize-in-literature-/7980858.html", dur=(120, 180), report=True),
+    "L4-5": dict(level=4, source="voa", title="Yellowstone: The World's First National Park", url="https://learningenglish.voanews.com/a/yellowstone-the-world-s-first-national-park/7974034.html", dur=(120, 180), report=True),
+    "L4-6": dict(level=4, source="voa", title="What Is a Polar Vortex?", url="https://learningenglish.voanews.com/a/what-is-a-polar-vortex-weather-system-/7981167.html", dur=(120, 180), report=True),
+    "L4-7": dict(level=4, source="voa", title="Halloween in America", url="https://learningenglish.voanews.com/a/halloween-in-america-costumes-candy-costs-for-night-of-fun/7837907.html", dur=(120, 180), report=True),
+    "L4-8": dict(level=4, source="voa", title="What Is the Super Bowl?", url="https://learningenglish.voanews.com/a/what-is-the-super-bowl/7964993.html", dur=(120, 180), report=True),
+    "L4-9": dict(level=4, source="voa", title="Thanksgiving: An American Tradition", url="https://learningenglish.voanews.com/a/thanksgiving-american-tradition-2017/4117570.html", dur=(120, 180), report=True),
+    "L4-10": dict(level=4, source="voa", title="'Watching the Grass Grow' Is Not Fun", url="https://learningenglish.voanews.com/a/watching-the-grass-grow-is-not-fun/8003108.html", dur=(120, 180), report=True),
 }
 
 
@@ -86,7 +110,7 @@ def ts(x):
     return int(h) * 3600 + int(m) * 60 + float(s)
 
 
-COMMON = """日本人の英語学習者向けシャドーイング教材を作ります。レベル{level}（1=英検4級程度、2=英検3級程度、3=英検2級〜準1級程度）。
+COMMON = """日本人の英語学習者向けシャドーイング教材を作ります。レベル{level}（1=英検4級程度・中1〜2、2=英検3級程度・中3、3=英検準2級程度・高1〜2、4=英検2級程度・高3、5=英検準1級程度・大学〜）。
 次のJSONも作ってください：
 - "vocab": 学習者が知らなそうな単語・フレーズ 5〜10個 [{{"en":..., "ja":...}}]（en は本文に出てくる形）
 - "quiz": 内容理解クイズ5問 [{{"q": 日本語の問い, "choices": [日本語4つ], "answer": 正解の番号0〜3, "explain": 日本語の解説1〜2文}}]
@@ -99,7 +123,7 @@ def plan(i):
     L = LESSONS[i]
     if L["source"] == "nasa":
         cues = srt_cues(SRC / f"{i}.en.srt")
-        out = ask(COMMON.format(level=3) + "\n\nNASAの解説動画の英語字幕（公式）です。番号つきの各行（文の途中で切れている行もある）に対応する和訳を、"
+        out = ask(COMMON.format(level=5) + "\n\nNASAの解説動画の英語字幕（公式）です。番号つきの各行（文の途中で切れている行もある）に対応する和訳を、"
                   '同じ番号をキーにして "ja": {"0": .., "1": ..} に入れてください。全部の番号を入れる。\n\n'
                   + json.dumps({str(n): c["en"] for n, c in enumerate(cues)}, ensure_ascii=False))
         ja = out.pop("ja")
@@ -112,8 +136,12 @@ def plan(i):
         task = (f"約{segs[-1]['e'] / 60:.0f}分の朗読から、{L.get('scene', '物語の山場')}を中心に、話の筋が分かる {lo}〜{hi}秒 の区間を選んでください。"
                 "始まりと終わりは文の切れ目。\"synopsis\": 区間の前までの日本語のあらすじ2〜3行 も作ってください。"
                 if L.get("story") else
+                f"約{segs[-1]['e'] / 60:.0f}分の記事の朗読（ニュース・特集）です。できれば冒頭から、話のまとまり（起承転結）が1つ入る連続した {lo}〜{hi}秒 の区間を選んでください。"
+                "始まりと終わりは文の切れ目。写真の説明文（(Photo: …) など）や \"Words in This Story\" 以降は本文ではない。"
+                if L.get("report") else
                 f"動画（約5分）は会話＋解説です。登場人物の会話の部分だけ（解説・ナレーターの文法説明は除く）の、連続した {lo}〜{hi}秒 の区間を選んでください。"
-                "冒頭の主人公のひとこと（カメラに向かって話す部分）は会話の流れに必要なら含めてよい。")
+                "冒頭の主人公のひとこと（カメラに向かって話す部分）は会話の流れに必要なら含めてよい。"
+                "途中に入る Professor Bot（解説ロボット）のせりふは、区間の中にあるならそのまま lines に入れる。")
         prompt = (COMMON.format(level=L["level"]) + f"\n\n{task}\n"
                   '"start_seg" と "end_seg": 区間の最初と最後の音声認識セグメントの番号（下のsegsのi）。\n'
                   '"lines": 区間内のせりふを、公式の本文（transcript）の文章どおりに1文〜短い1まとまりずつ [{"en": 本文どおり（話者名は付けない）, "ja": 和訳}]。'
@@ -130,6 +158,49 @@ def plan(i):
             print(i, "retry:", round(d))
     (SRC / f"{i}_plan.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
     print(i, "plan ok", len(out["lines"]), "lines")
+
+
+def get(url):
+    try:
+        import certifi; ctx = ssl.create_default_context(cafile=certifi.where())
+    except ImportError:
+        ctx = ssl.create_default_context()
+    return urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60, context=ctx).read().decode("utf-8", "replace")
+
+
+def fetch(i):
+    """VOAのページを保存し、動画（report は音声＋タイトル画）を sources/{id}_src.mp4 に、faster-whisper の単語時刻を _whisper.json に。あるものは飛ばす。"""
+    L = LESSONS[i]
+    assert L["source"] == "voa", f"{i}: fetch は VOA だけ（NASA は手で .en.srt と _src.mp4 を置く）"
+    page, src, wj = SRC / f"{i}_page.html", SRC / f"{i}_src.mp4", SRC / f"{i}_whisper.json"
+    if not page.exists():
+        page.write_text(get(L["url"])); time.sleep(1); print(i, "page ok")
+    if not src.exists():
+        s = html.unescape(page.read_text())
+        if L.get("report"):  # 音声だけの記事：mp3 を落として、タイトルの静止画と合わせる
+            urls = re.findall(r"https://voa-audio[\w.-]*/[^\"'&?\s]+\.mp3", s)
+            assert urls, f"{i}: ページに mp3 がない"
+            u = next((x for x in urls if x.endswith("_hq.mp3")), urls[0])
+            mp3 = SRC / f"{i}_src.mp3"
+            subprocess.run(["yt-dlp", "-q", "--no-warnings", "-o", str(mp3), u], check=True); time.sleep(1)
+            png = SRC / f"{i}_still.png"; still(L["title"], png)
+            ff("-loop", "1", "-framerate", "1", "-i", png, "-i", mp3, "-map", "0:v", "-map", "1:a", "-shortest",
+               "-c:v", "libx264", "-tune", "stillimage", "-pix_fmt", "yuv420p", "-r", "1", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", src)
+        else:  # 最初の動画プレーヤーの 720p（なければ _hq、なければ無印）
+            urls = re.findall(r"https://voa-video[\w.-]*/[^\"'&?\s]+\.mp4", s)
+            assert urls, f"{i}: ページに mp4 がない"
+            base = re.sub(r"(_\w+)?\.mp4$", "", urls[0])
+            u = next((x for x in urls if re.fullmatch(re.escape(base) + r"(_720p|_hq)\.mp4", x)), None) or next(x for x in urls if x.startswith(base))
+            subprocess.run(["yt-dlp", "-q", "--no-warnings", "-o", str(src), u], check=True); time.sleep(1)
+        print(i, "src ok", f"{src.stat().st_size / 1e6:.1f}MB")
+    if not wj.exists():
+        from faster_whisper import WhisperModel
+        model = WhisperModel(os.environ.get("WHISPER_MODEL", "small"), device="cpu", compute_type="int8")
+        import numpy as np  # av（faster-whisper の読み込み）が合わないので、ffmpeg で 16kHz mono に自分で直す
+        pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", src, "-f", "f32le", "-ac", "1", "-ar", "16000", "-"], capture_output=True, check=True).stdout
+        segs, _ = model.transcribe(np.frombuffer(pcm, np.float32), language="en", word_timestamps=True)
+        out = [{"s": g.start, "e": g.end, "t": g.text, "w": [[w.start, w.end, w.word] for w in (g.words or [])]} for g in segs]
+        wj.write_text(json.dumps(out, ensure_ascii=False)); print(i, "whisper ok", len(out), "segs", f"{out[-1]['e']:.0f}s")
 
 
 def norm(w):
@@ -191,8 +262,8 @@ def build(i):
     enc = ["-vf", f"scale=-2:{L.get('height', 720)}", "-c:v", "libx264", "-crf", str(L.get("crf", 28)), "-preset", "slow", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart"]
     lesson = dict(id=i, level=L["level"], title=L["title"], source=L["source"], source_url=L["url"],
                   video=f"media/{i}.mp4", audio_only=None, subs_en=f"subs/{i}.en.vtt", subs_ja=f"subs/{i}.ja.vtt",
-                  clip_start=None, clip_end=None, cover_height=0.22 if L["source"] == "voa" else 0,
-                  repeat="minute" if L["level"] == 3 else "line", synopsis=P.get("synopsis"),
+                  clip_start=None, clip_end=None, cover_height=0.22 if L["source"] == "voa" and not L.get("report") else 0,
+                  repeat="minute" if L["level"] == 5 else "line", synopsis=P.get("synopsis"),
                   vocab=P["vocab"], quiz=P["quiz"], ja_reviewed=False, ja_unsure=P.get("ja_unsure", []),
                   credit=VOA_CREDIT if L["source"] == "voa" else NASA_CREDIT, active=True)
     if L["source"] == "nasa":  # 切らない・焼き込まない。720pに縮めるだけ
@@ -216,10 +287,10 @@ def build(i):
             lesson["audio_only"] = f"media/{i}_audio.mp4"
     vtt(SUBS / f"{i}.en.vtt", cues, "en"); vtt(SUBS / f"{i}.ja.vtt", cues, "ja")
     lesson["lines"] = [{"start": round(c["start"], 2), "end": round(c["end"], 2), "en": c["en"], "ja": c["ja"]} for c in cues]
-    (SRC / f"{i}_lesson.json").write_text(json.dumps(lesson, ensure_ascii=False))
+    tmp = SRC / f"{i}_lesson.json.tmp"; tmp.write_text(json.dumps(lesson, ensure_ascii=False)); tmp.replace(SRC / f"{i}_lesson.json")  # 並列 build が書きかけを読まないように
     f = DATA / "lessons.json"  # 並列で走らせても、最後に終わったものが全部をまとめる
     db = json.load(open(f)) if f.exists() else {"links": LINKS, "lessons": []}
-    db["lessons"] = sorted((json.load(open(x)) for x in SRC.glob("*_lesson.json")), key=lambda l: tuple(map(int, re.findall(r"\d+", l["id"]))))  # L1-2 の後に L1-10
+    db["lessons"] = sorted((json.load(open(x)) for x in SRC.glob("L*_lesson.json")), key=lambda l: tuple(map(int, re.findall(r"\d+", l["id"]))))  # L1-2 の後に L1-10
     f.write_text(json.dumps(db, ensure_ascii=False, indent=1))
     mb = (MEDIA / f"{i}.mp4").stat().st_size / 1e6
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", MEDIA / f"{i}.mp4"], capture_output=True, text=True).stdout)
@@ -233,4 +304,4 @@ def build(i):
 if __name__ == "__main__":
     cmd, ids = sys.argv[1], sys.argv[2:] or list(LESSONS)
     for i in ids:
-        {"plan": plan, "build": build}[cmd](i)
+        {"fetch": fetch, "plan": plan, "build": build}[cmd](i)
