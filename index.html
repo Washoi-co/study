@@ -309,6 +309,8 @@ let BIZ=false,TRACK=null;   /* 専門ON（ビジネス英語・土木英語）�
 const LEVELS=()=>DATA.levels.filter(l=>(l.id==="z")===BIZ);
 /* 絵の無い章（ビジネス）は、絵文字を絵の代わりに */
 const picOf=it=>it.pic||"data:image/svg+xml,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120"><text x="80" y="62" font-size="72" text-anchor="middle" dominant-baseline="middle">'+(it.e||"💼")+'</text></svg>');
+/* 章クリアの一覧を名簿に送る（先生・管理サイトの「マスターした章」。録音の代わり。2026-11-05 kimi） */
+const sendCleared=()=>(window.aps=window.aps||[]).push(["cleared",{b:store.get("done_b",[]),i:store.get("done_i",[]),z:store.get("done_z",[])}]);
 const level=()=>DATA.levels.find(l=>l.id===LV);
 const chapter=()=>level().chapters[CH];
 
@@ -325,6 +327,7 @@ async function unlock(sid,pass){
   store.set("name",me.name);
   ME={sid:sid,tok:me.tok||""};
   (window.aps=window.aps||[]).push(["profile",{sid:sid,name:me.name,fixed:true,tok:ME.tok}]);   /* 会員番号＝生徒ID（管理アプリの名簿のID） */
+  sendCleared();
   const data=JSON.parse(await dec(dkey,enc));
   TRACK=me.track||null;
   const tb=TRACK&&me.kb&&enc.t&&enc.t[TRACK.id];
@@ -748,7 +751,7 @@ function showResult(){
     apMark("chunk");
     // 章クリア＝章の問題＋アドリブ3問。ここへは、アドリブの添削まで終えた時だけ来る（単語ミックスは練習だけ）
     const done=store.get("done_"+LV,[]);
-    if(CHA&&!done.includes(chapter().n)){done.push(chapter().n);store.set("done_"+LV,done);renderNav();paintLog();}
+    if(CHA&&!done.includes(chapter().n)){done.push(chapter().n);store.set("done_"+LV,done);renderNav();paintLog();sendCleared();}
   }
   if(day){
     $("rbig").innerHTML=ads.length+"<em> 文 アドリブ</em>";

@@ -120,7 +120,7 @@
     connecting = signIn()
       .then(function () { return S.linked === uid ? null : link({ sid: S.sid, name: S.name }); })
       .then(function () { ready = true; return pull(); })
-      .then(function () { saveMe(); watchInbox(); sendPlan(); pushNudge(); return push(); })
+      .then(function () { saveMe(); watchInbox(); sendPlan(); sendCleared(); pushNudge(); return push(); })
       .catch(function (e) { connecting = null; if (/permission-denied/.test(e && e.code)) { S.linked = ""; save(); } warn(e); });   /* 名簿の uids が消えていた（契約の写し・取り込み）＝次はつなぎ直す */
     return connecting;
   }
@@ -132,6 +132,7 @@
     /* 今日の話す（functions の speakDaily が毎晩書く・本コースだけ）。今日＆計画と話すのページが ap_today を読む */
     me().get().then(function (d) {
       var t = d.get("spToday") || null;
+      cleared(d.get("cleared"));   /* 前の端末で章クリアした分も足す（名簿の cleared は足し合わせだけ＝減らさない） */
       try { localStorage.setItem("ap_today", JSON.stringify(t)); } catch (e) {}
       window.dispatchEvent(new Event("ap-today"));
     }).catch(warn);
@@ -398,7 +399,24 @@
     var j = JSON.stringify(S.plan);
     me().update({ plan: S.plan, updatedAt: TS() }).then(function () { S.planSent = j; save(); }).catch(warn);
   }
-  var API = { start: start, mark: mark, words: words, plan: plan, profile: profile, settings: settings, inbox: openInbox, login: function () { if (O && cfg()) ask(true); }, call: call };
+  /* 章クリア（本コース：章の問題＋アドリブ3問）{b:[1,2], i:[…], z:[…]}。名簿の cleared に送る（管理サイト・先生用の入口の「マスターした章」。2026-11-05 kimi：録音の代わり）
+     ponytail: 前の端末の分は名簿には足すが、話すのページの ✓（done_b など）には戻さない */
+  function cleared(c) {
+    if (!O || !c || typeof c !== "object") return;
+    var cur = S.cleared || {}, next = {};
+    ["b", "i", "z"].forEach(function (k) {
+      var a = (cur[k] || []).concat(Array.isArray(c[k]) ? c[k] : []).map(Number).filter(function (n) { return n > 0 && n <= 60 && n === Math.floor(n); });
+      next[k] = a.filter(function (n, i) { return a.indexOf(n) === i; }).sort(function (x, y) { return x - y; });
+    });
+    S.cleared = next; save();
+    if (ready) sendCleared();
+  }
+  function sendCleared() {
+    if (!S.cleared || JSON.stringify(S.cleared) === S.clearedSent) return;
+    var j = JSON.stringify(S.cleared);
+    me().update({ cleared: S.cleared, updatedAt: TS() }).then(function () { S.clearedSent = j; save(); }).catch(warn);
+  }
+  var API = { start: start, mark: mark, words: words, plan: plan, cleared: cleared, profile: profile, settings: settings, inbox: openInbox, login: function () { if (O && cfg()) ask(true); }, call: call };
   function run(a) { try { if (a && API[a[0]]) API[a[0]].apply(null, a.slice(1)); } catch (e) { warn(e); } }
   var q = window.aps || [];
   window.aps = { push: run };
