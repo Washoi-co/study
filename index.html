@@ -556,10 +556,7 @@ function loadWords(){
     let id=null;try{id=localStorage.getItem("apush-words-course");}catch(e){}
     if(BIZ&&TRACK){const g=(window.APW_COURSES||[]).filter(x=>x.g===TRACK.words);if(g.length&&!g.some(x=>x.id===id))id=g[0].id;}   /* 専門ON：単語ミックスも専門の単語 */
     if(!id||!/^[a-z0-9]+$/.test(id))return done();
-    const sc=document.createElement("script");sc.src="words/courses/"+id+".js";
-    sc.onload=()=>{if(window.APW_COURSE&&window.APW_COURSE.id===id)WC=window.APW_COURSE;done();};
-    sc.onerror=()=>done();
-    document.head.appendChild(sc);
+    apWords(id).then(C=>{if(C)WC=C;done();});
   });
 }
 function mixWords(q){

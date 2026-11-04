@@ -68,6 +68,8 @@
 <script src="/activity.js"></script>
 <script src="courses/index.js"></script>
 <script>
+// 本コース：単語帳を開ける鍵（ap_pk）が無ければ、トップで開け直す（words/index.html と同じ）
+try{ if(!JSON.parse(localStorage.getItem("ap_pass"))||!JSON.parse(localStorage.getItem("ap_pk"))) location.replace("/"); }catch(e){ location.replace("/"); }
 // 土木のコースは、その専門の生徒だけ。Business は本コースの全員に出す（2026-10-21 kimi・words/index.html と同じ）
 (function(){ var tr=null;try{tr=JSON.parse(localStorage.getItem("ap_track"));}catch(e){} var mine=tr&&tr.words;
   APW_COURSES=APW_COURSES.filter(function(x){ return ["土木"].indexOf(x.g)<0||x.g===mine; }); })();
@@ -104,13 +106,9 @@ $("tracks").innerHTML=TRACKS.map((t,i)=>{
 }).join("");
 $("tracks").onclick=e=>{const b=e.target.closest("[data-i]");if(b)start(TRACKS[+b.dataset.i]);};
 
-// コースのファイルは1つずつ読み込む（どれも window.APW_COURSE に入るので）
+// コースのファイルは apWords（activity.js）で読む
 const loaded={};
-function load(id){
-  if(loaded[id])return Promise.resolve(loaded[id]);
-  return new Promise((ok,ng)=>{const s=document.createElement("script");s.src="courses/"+id+".js";
-    s.onload=()=>{loaded[id]=window.APW_COURSE;ok(loaded[id]);};s.onerror=ng;document.head.appendChild(s);});
-}
+const load=id=>loaded[id]?Promise.resolve(loaded[id]):apWords(id).then(C=>{if(!C)throw 0;return loaded[id]=C;});
 
 let R=null;  // {g, levels, li, qs, qi, right, scores}
 async function start(t){
