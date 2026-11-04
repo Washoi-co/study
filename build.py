@@ -102,12 +102,20 @@ def main():
             continue
         tkeys[tid], tiv = os.urandom(32), os.urandom(12)
         out["t"][tid] = {"i": b64(tiv), "c": b64(AESGCM(tkeys[tid]).encrypt(tiv, json.dumps(lv, ensure_ascii=False).encode(), None))}
+    pk_file = os.path.join(os.path.dirname(__file__), "..", "exam-src", "bank", "plus.key")
+    if not os.path.exists(pk_file):   # club-kit/build.py の plus_key() と同じ物（どちらが先に作ってもよい）
+        with open(pk_file, "w") as f:
+            f.write(base64.b64encode(os.urandom(32)).decode())
+        os.chmod(pk_file, 0o600)
+    pk = open(pk_file).read().strip()
     keys = {}
     for st in students:
         salt, siv = os.urandom(16), os.urandom(12)
         kek = hashlib.pbkdf2_hmac("sha256", st["pass"].encode(), salt, 200_000, 32)
         sid = st["id"].upper()
         me = {"k": b64(dkey), "name": st["name"]}
+        if pk:   # 模擬テストの plus（本生徒だけの問題）を開ける鍵。club-kit の build が同じ鍵で exam/<id>.plus を作る（2026-11-04 監査 M1）
+            me["pk"] = pk
         if sk:   # この生徒だけの鍵：rk＝録音、tok＝管理アプリ（他の生徒の分は持たない＝他人のふりができない）
             me["rk"], me["tok"] = derive(sk, "rec", sid), derive(sk, "kanri", sid)
         tid = st.get("track")

@@ -338,6 +338,7 @@ async function unlock(sid,pass){
     data.levels.push(JSON.parse(await dec(bk,tb)));
   }
   store.set("track",TRACK);   /* 単語のページが読む（専門のコースの出し方） */
+  store.set("pk",me.pk||null);   /* 模擬テストの plus（本生徒だけの問題）を開ける鍵（2026-11-04 監査 M1） */
   return data;
 }
 const normSid=s=>{const n=s.replace(/[^0-9０-９]/g,"").replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0));return n?"STU"+n.padStart(3,"0"):s.trim().toUpperCase();};  // stu5・STU 005・５ → STU005
