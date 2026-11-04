@@ -5,8 +5,9 @@
 元データ（公開しない）は ../study-src/ に置く:
   beginner.txt       Beginner PDF を pdftotext -layout したもの
   intermediate.json  Intermediate の文字起こし [{ch,title,ja,items:[[T,S,T訳,S訳],...]}]
-  send.json          録音の送り先 {"url": Apps Script の URL, "key": 合い鍵}（任意）。合い鍵そのものは data.enc に入れず、
-                     生徒ごとの鍵（録音 rk・管理アプリ tok）を作って、その生徒の keys[会員番号] にだけ入れる
+  send.json          合い鍵 {"key": 合い鍵}（任意。functions の STUDY_SITE_KEY と同じ値）。合い鍵そのものは data.enc に入れず、
+                     生徒ごとの鍵（管理アプリ tok）を作って、その生徒の keys[会員番号] にだけ入れる。
+                     録音はどこにも送らない（2026-11-05 kimi。前は "url" に旧 Reviewing system の送り先があった。あっても読まない）
   students.json      生徒ごとのログイン [{"id": "STU005", "name": "T.Y", "pass": "パスワード", "track": "biz"}, ...]
                      track：その生徒の専門（下の TRACKS のキー）。ONにすると話すも単語もその専門になる。無い生徒は普通の教材だけ
   business.json / civil.json  専門の章 [{ch,title,ja,items:[[T,S,T訳,S訳,絵文字],...]}]。その専門の生徒だけが開ける
@@ -75,7 +76,7 @@ def track_level(tid):
 
 def derive(sk, purpose, sid):
     """生徒ごとの鍵：base64url(HMAC-SHA256(合い鍵, "rec|STU005")) の先頭32字。
-    rec＝録音の鍵（Reviewing system が同じ式で確かめる）／kanri＝管理アプリに入る鍵（functions/studentToken.js と同じ式）"""
+    kanri＝管理アプリに入る鍵（functions/studentToken.js と同じ式）"""
     return base64.urlsafe_b64encode(hmac.new(sk.encode(), (purpose + "|" + sid).encode(), hashlib.sha256).digest()).decode()[:32]
 
 
@@ -87,7 +88,6 @@ def main():
     send = json.load(open(send_path)) if os.path.exists(send_path) else None
     sk = str(send.get("key") or "").strip() if send else ""
     data = {
-        "send": {"url": send["url"]} if send else None,   # 合い鍵は共通の教材に入れない（生徒ごとの rk を keys[会員番号] に入れる）
         "levels": [{"id": "b", "name": "Beginner", "chapters": beginner()},
                    {"id": "i", "name": "Intermediate", "chapters": intermediate()}],
     }
@@ -116,8 +116,8 @@ def main():
         me = {"k": b64(dkey), "name": st["name"]}
         if pk:   # 模擬テストの plus（本生徒だけの問題）を開ける鍵。club-kit の build が同じ鍵で exam/<id>.plus を作る（2026-11-04 監査 M1）
             me["pk"] = pk
-        if sk:   # この生徒だけの鍵：rk＝録音、tok＝管理アプリ（他の生徒の分は持たない＝他人のふりができない）
-            me["rk"], me["tok"] = derive(sk, "rec", sid), derive(sk, "kanri", sid)
+        if sk:   # この生徒だけの管理アプリの鍵 tok（他の生徒の分は持たない＝他人のふりができない）
+            me["tok"] = derive(sk, "kanri", sid)
         tid = st.get("track")
         if tid in TRACKS:   # 専門：スイッチの名前・単語のグループ・章の鍵
             me["track"] = {"id": tid, "label": TRACKS[tid]["label"], "words": TRACKS[tid]["words"]}
@@ -126,7 +126,7 @@ def main():
         inner = json.dumps(me, ensure_ascii=False).encode()
         keys[sid] = {"s": b64(salt), "i": b64(siv), "c": b64(AESGCM(kek).encrypt(siv, inner, None))}
     json.dump({**out, "keys": keys}, open(os.path.join(os.path.dirname(__file__), "data.enc"), "w"))
-    print("data.enc:", sum(len(l["chapters"]) for l in data["levels"]), "chapters, students:", len(keys), ", send:", bool(data["send"]),
+    print("data.enc:", sum(len(l["chapters"]) for l in data["levels"]), "chapters, students:", len(keys), ", key:", bool(sk),
           ", tracks:", {tid: ",".join(s["id"] for s in students if s.get("track") == tid) for tid in tkeys})
 
 
