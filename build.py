@@ -16,7 +16,7 @@
 しくみ: 教材は1つの鍵（データ鍵）で暗号化し、そのデータ鍵を生徒ごとのパスワードで
 それぞれ包んで keys[会員番号] に入れる。生徒を消せば、その生徒はもう開けない。
 """
-import base64, hashlib, hmac, json, os, re, sys
+import base64, datetime, hashlib, hmac, json, os, re, sys
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 SRC = os.path.join(os.path.dirname(__file__), "..", "study-src")
@@ -125,6 +125,13 @@ def main():
                 me["kb"] = b64(tkeys[tid])
         inner = json.dumps(me, ensure_ascii=False).encode()
         keys[sid] = {"s": b64(salt), "i": b64(siv), "c": b64(AESGCM(kek).encrypt(siv, inner, None))}
+    # 体験コード（2026-11-09 の名刺）：kanri の trial が 11/30 まで受け付け、入れた日から2週間だけ、この箱の pass を返す（functions/index.js と同じ式）。
+    # 12/14 を過ぎて作り直すと箱が無くなる＝体験の端末は開けなくなる
+    if sk and datetime.date.today().isoformat() <= "2026-12-14":
+        salt, siv = os.urandom(16), os.urandom(12)
+        kek = hashlib.pbkdf2_hmac("sha256", derive(sk, "trial", "TRIAL").encode(), salt, 200_000, 32)
+        me = {"k": b64(dkey), "name": "体験", **({"pk": pk} if pk else {})}
+        keys["TRIAL"] = {"s": b64(salt), "i": b64(siv), "c": b64(AESGCM(kek).encrypt(siv, json.dumps(me, ensure_ascii=False).encode(), None))}
     json.dump({**out, "keys": keys}, open(os.path.join(os.path.dirname(__file__), "data.enc"), "w"))
     print("data.enc:", sum(len(l["chapters"]) for l in data["levels"]), "chapters, students:", len(keys), ", key:", bool(sk),
           ", tracks:", {tid: ",".join(s["id"] for s in students if s.get("track") == tid) for tid in tkeys})
