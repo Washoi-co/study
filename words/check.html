@@ -96,7 +96,7 @@ const nm=l=>R.g===l.t?l.t:R.g+" "+l.t;  // 「スラング スラング」と重
   var D={"Business":"仕事で使う英語。基本から経営・海外ビジネスまで","土木":"現場で使う英語。道具・材料から安全・管理まで"};
   if(tr&&tr.words&&!TRACKS.some(function(t){return t.g===tr.words;})&&APW_COURSES.some(function(c){return c.g===tr.words;}))TRACKS.push({g:tr.words,d:D[tr.words]||tr.label});
 })();
-try{if(localStorage.getItem("apush-words-course"))$("to-words").hidden=false;}catch(e){}
+try{var lc=JSON.parse(localStorage.getItem("ap_levelcheck")||"null");if(localStorage.getItem("apush-words-course")||(lc&&lc.id))$("to-words").hidden=false;}catch(e){}   // チェック済みなら「単語へ」を出す（単語のページが結果のコースを開く。2026-11-12）
 
 $("tracks").innerHTML=TRACKS.map((t,i)=>{
   const lv=levelsOf(t);
