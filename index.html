@@ -170,8 +170,8 @@ img.pic.small{max-height:18vh}
         <style>#a-en{justify-content:center;flex-wrap:wrap}#a-en .chip{font-family:var(--en);font-size:18px;color:var(--brand)}</style>
         <div class="adw"><div class="chips" id="a-en"></div><button class="tsay" id="a-say" aria-label="単語を聞く">🔊</button></div>
         <p class="say" id="a-ja"></p>
-        <p class="say">この3つの単語を全部使って、この型で1つの文を作り、声に出して言ってみよう。🎤を押して話し、言えたらもう一度押すと次へ進みます</p>
-        <p class="say">例：should ＋ ready / hiking / mountain → <span class="en">I should be ready for hiking on the mountain in the early morning.</span></p>
+        <p class="say">この2つの単語を両方使って、この型で1つの文を作り、声に出して言ってみよう。🎤を押して話し、言えたらもう一度押すと次へ進みます</p>
+        <p class="say">例：should ＋ ready / hiking → <span class="en">I should be ready for hiking in the early morning.</span></p>
         <button class="mic" id="a-mic">🎤 話す</button>
         <p class="say" id="a-live" aria-live="polite"></p>
         <div id="a-type" hidden>
@@ -292,8 +292,8 @@ img.pic.small{max-height:18vh}
 </div>
 <div class="hw" role="group" aria-roledescription="スライド">
   <span class="hw-k">05 アドリブ</span>
-  <h3>章の型＋単語3つで、<em>自分の1文</em>。</h3>
-  <p class="hw-x"><b>型・単語：should &amp; ready ／ hiking ／ mountain</b>I should be ready for hiking on the mountain in the early morning.</p>
+  <h3>章の型＋単語2つで、<em>自分の1文</em>。</h3>
+  <p class="hw-x"><b>型・単語：should &amp; ready ／ hiking</b>I should be ready for hiking in the early morning.</p>
   <p>思いついた1文を、🎤で言うだけ。</p>
 </div>
 <div class="hw" role="group" aria-roledescription="スライド">
@@ -353,7 +353,7 @@ let DATA=null, LV="b", CH=0, MODE="quiz", TODO=[];
 let queue=[], qi=0, score=0, log=[], taps=0, timer=null, left=0;
 /* MODE：quiz＝通常（6問→章の終わりにアドリブ3問）／adlib＝アドリブ5問
    RUN：ch＝章の練習（最後にアドリブ3問で、章クリア）／day＝アドリブ5問（MODE adlib・?adlib=1）／rev＝添削した文の復習
-   ACARDS：アドリブのカード {word,meaning,words}（1問＝単語3つ。queue の "a:番号"）。CHA：章のアドリブに入った */
+   ACARDS：アドリブのカード {word,meaning,words}（1問＝単語2つ。queue の "a:番号"）。CHA：章のアドリブに入った */
 let RUN="ch", ACARDS=[], CHA=false;
 const LIMIT={b:20,i:30,z:30};
 let ME=null;   /* この生徒だけの鍵 {sid, tok 管理アプリ}。パスワードで開けるたびに作り直す（localStorage に置かない） */
@@ -615,11 +615,11 @@ function addAdlib(n){
   let A=null;try{A=JSON.parse(localStorage.getItem("ap_adlib_words"));}catch(e){}
   const aw=A&&A.day===dayAgo(0)&&Array.isArray(A.words)?A.words:[];
   add(aw);add(shuffle(todayWords()));
-  if(pool.length<n*3)add(chWords());
-  const used=pool.slice(0,n*3).map(w=>w.word),rest=aw.filter(w=>!used.includes(w.word));
+  if(pool.length<n*2)add(chWords());
+  const used=pool.slice(0,n*2).map(w=>w.word),rest=aw.filter(w=>!used.includes(w.word));
   try{rest.length?localStorage.setItem("ap_adlib_words",JSON.stringify({day:A.day,words:rest})):aw.length&&localStorage.removeItem("ap_adlib_words");}catch(e){}
   for(let k=0;k<n;k++){
-    const ws=[0,1,2].map(j=>pool[(k*3+j)%pool.length]).filter((w,j,a)=>a.indexOf(w)===j);   // 単語が足りなければ、くり返す
+    const ws=[0,1].map(j=>pool[(k*2+j)%pool.length]).filter((w,j,a)=>a.indexOf(w)===j);   // 単語が足りなければ、くり返す
     queue.push("a:"+(ACARDS.push({word:ws.map(w=>w.word).join(" / "),meaning:ws.some(w=>w.meaning)?ws.map(w=>w.meaning||"").join(" / "):"",
       words:ws.map(w=>({en:w.word,ja:w.meaning||"",pic:w.pics||""}))})-1));
   }
