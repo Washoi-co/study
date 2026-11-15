@@ -167,11 +167,13 @@ img.pic.small{max-height:18vh}
         <p class="stem" id="a-frame"></p>
         <p class="say" id="a-fja"></p>
         <div class="pic" id="a-pic" aria-hidden="true"></div>
-        <style>#a-en{justify-content:center;flex-wrap:wrap}#a-en .chip{font-family:var(--en);font-size:18px;color:var(--brand)}</style>
+        <style>#a-en{justify-content:center;flex-wrap:wrap}#a-en .chip{font-family:var(--en);font-size:18px;color:var(--brand)}.sayja{margin:0;text-align:center;font-size:16px;font-weight:700;line-height:1.5}.sayja b{display:block;font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--mute)}#a-mbtn{align-self:center}.model{margin:0;text-align:center;font-size:16px;font-weight:600;background:var(--soft);border-radius:12px;padding:10px 12px}</style>
+        <p class="sayja" id="a-sayja" hidden></p>
         <div class="adw"><div class="chips" id="a-en"></div><button class="tsay" id="a-say" aria-label="単語を聞く">🔊</button></div>
         <p class="say" id="a-ja"></p>
-        <p class="say">この2つの単語を両方使って、この型で1つの文を作り、声に出して言ってみよう。🎤を押して話し、言えたらもう一度押すと次へ進みます</p>
-        <p class="say">例：should ＋ ready / hiking → <span class="en">I should be ready for hiking in the early morning.</span></p>
+        <p class="say" id="a-how">型と単語を使って、言うことを1文で。🎤を押して話し、言えたらもう一度押すと次へ進みます</p>
+        <button class="pill" id="a-mbtn" hidden>お手本を見る</button>
+        <p class="model en" id="a-model" hidden></p>
         <button class="mic" id="a-mic">🎤 話す</button>
         <p class="say" id="a-live" aria-live="polite"></p>
         <div id="a-type" hidden>
@@ -292,9 +294,9 @@ img.pic.small{max-height:18vh}
 </div>
 <div class="hw" role="group" aria-roledescription="スライド">
   <span class="hw-k">05 アドリブ</span>
-  <h3>章の型＋単語2つで、<em>自分の1文</em>。</h3>
-  <p class="hw-x"><b>型・単語：should &amp; ready ／ hiking</b>I should be ready for hiking in the early morning.</p>
-  <p>思いついた1文を、🎤で言うだけ。</p>
+  <h3>型と「言うこと」で、<em>自分の1文</em>。</h3>
+  <p class="hw-x"><b>型：I usually ＿＿ on weekends.　言うこと：週末にいつもすること　単語：play ／ tennis</b>I usually play tennis on weekends.</p>
+  <p>迷ったら「お手本を見る」。まねして言うのも練習です。</p>
 </div>
 <div class="hw" role="group" aria-roledescription="スライド">
   <span class="hw-k">06 AI添削と復習</span>
@@ -429,10 +431,10 @@ function start(){
     else addEventListener("ap-today",()=>{const t=store.get("today",null);if(tOk(t)&&todayCh(t)){paintLevels();WC=null;renderNav();loadWords().then(startRound);}},{once:true});   // 今日はじめて開いた＝つながってから届く
   }
   const rv=q.get("review")==="adlib";   // 今日＆計画の「A-PUSHの復習（添削した文）」から
-  if(q.get("adlib")==="1")MODE="adlib";   // 単語の画面・今日＆計画の「アドリブ5問」から（覚えない＝この時だけ）
+  const ad=q.get("adlib")==="1";if(ad)MODE="adlib";   // 毎日の「話す」の間違えた単語・単語の画面から：今日の単語で1文ずつ   // 単語の画面・今日＆計画の「アドリブ5問」から（覚えない＝この時だけ）
   if(q.toString())history.replaceState(null,"",location.pathname);
   paintLevels();
-  paintWho();renderNav();paintLog();loadWords().then(()=>{MODE==="adlib"&&!tq?startDay():startRound();if(rv)Adlib.openReview();});
+  paintWho();renderNav();paintLog();loadWords().then(()=>{ad?startDay(true):MODE==="adlib"&&!tq?startDay():startRound();if(rv)Adlib.openReview();});
 }
 function todayCh(t){
   if(!LEVELS().some(l=>l.id===t.lv))return false;
@@ -587,8 +589,10 @@ function loadWords(){
   });
 }
 
-/* ---- アドリブ（単語の記録は読むだけ。箱も期限も変えない） ----
-   アドリブ5問（MODE adlib・?adlib=1）と、章の最後のアドリブ3問。1問＝章の型＋単語3つ（addAdlib） */
+/* ---- アドリブ（単語の記録は読むだけ。箱も期限も変えない。2026-11-12 kimi「文章を作りやすく」） ----
+   1問＝型＋言うこと（日本語）＋単語2つ＋お手本。組は章ごとに教材（data.enc の ad）に作ってある。
+   アドリブ5問（MODE adlib）と章の最後の3問は、その章の組から。
+   ?adlib=1（毎日の「話す」の間違えた単語・単語の画面から）は、単語1つで「今日のことを1文」（型なし）。単語が無ければ章の組 */
 // 今日の新しい単語 → 今日の復習（期限が来たもの）→ 無ければ、最後に覚えた日の単語
 function todayWords(){
   const S=WC&&wload();if(!S||!S.cards)return [];
@@ -599,102 +603,42 @@ function todayWords(){
   if(!out.length){const d=Object.keys(days).filter(d=>d<=t&&days[d].batch&&days[d].batch.length).sort().pop();if(d)add(days[d].batch);}
   return out.map(wi=>{const w=WC.words[wi];return {word:w[0],meaning:w[1].map(x=>x[0]).join("・"),pics:w[1].map(x=>x[1]).filter(Boolean).join(" ")};});
 }
-// 章の文の単語：答えの文ごとに、いちばん長い中身の語（4文字以上を先に）。ponytail: 長さで選ぶだけ。品詞まで見たくなったら、章データに単語を足す
-const STOP=new Set("this that these those with what when where which there their they them from will would could should about very like just been does did into some than then here also because have your were they're it's i'm don't can't".split(" "));
-function chWords(){
-  const out=[];
-  chapter().items.forEach(it=>{
-    const w=(it.s.replace(/\(.*?\)/g,"").toLowerCase().match(/[a-z][a-z'-]+/g)||[]).sort((a,b)=>(STOP.has(a)||a.length<4)-(STOP.has(b)||b.length<4)||b.length-a.length)[0];   // 中身の語が無い文でも、1語は選ぶ
-    if(w&&!out.some(c=>c.word===w))out.push({word:w,meaning:"",pics:it.e||""});
-  });
-  return shuffle(out);
-}
-/* アドリブ n問を queue に足す。単語は (1) 毎日の「話す」の採点結果（ap_adlib_words、今日の分。使った分は消す）→ (2) 今日の単語 → (3) 章の文の単語 */
-function addAdlib(n){
-  const pool=[],add=l=>l.forEach(w=>{if(w&&w.word&&!pool.some(p=>p.word===w.word))pool.push(w);});
-  let A=null;try{A=JSON.parse(localStorage.getItem("ap_adlib_words"));}catch(e){}
-  const aw=A&&A.day===dayAgo(0)&&Array.isArray(A.words)?A.words:[];
-  add(aw);add(shuffle(todayWords()));
-  if(pool.length<n*2)add(chWords());
-  const used=pool.slice(0,n*2).map(w=>w.word),rest=aw.filter(w=>!used.includes(w.word));
-  try{rest.length?localStorage.setItem("ap_adlib_words",JSON.stringify({day:A.day,words:rest})):aw.length&&localStorage.removeItem("ap_adlib_words");}catch(e){}
-  for(let k=0;k<n;k++){
-    const ws=[0,1].map(j=>pool[(k*2+j)%pool.length]).filter((w,j,a)=>a.indexOf(w)===j);   // 単語が足りなければ、くり返す
-    queue.push("a:"+(ACARDS.push({word:ws.map(w=>w.word).join(" / "),meaning:ws.some(w=>w.meaning)?ws.map(w=>w.meaning||"").join(" / "):"",
-      words:ws.map(w=>({en:w.word,ja:w.meaning||"",pic:w.pics||""}))})-1));
+function addAdlib(n,words){
+  if(words){   // 単語1つずつ：(1) 毎日の「話す」の間違えた単語（ap_adlib_words、今日の分。使った分は消す）→ (2) 今日の単語
+    const pool=[],add=l=>l.forEach(w=>{if(w&&w.word&&!pool.some(p=>p.word===w.word))pool.push(w);});
+    let A=null;try{A=JSON.parse(localStorage.getItem("ap_adlib_words"));}catch(e){}
+    const aw=A&&A.day===dayAgo(0)&&Array.isArray(A.words)?A.words:[];
+    add(aw);add(shuffle(todayWords()));
+    if(pool.length){
+      const used=pool.slice(0,n).map(w=>w.word),rest=aw.filter(w=>!used.includes(w.word));
+      try{rest.length?localStorage.setItem("ap_adlib_words",JSON.stringify({day:A.day,words:rest})):aw.length&&localStorage.removeItem("ap_adlib_words");}catch(e){}
+      for(let k=0;k<n;k++){const w=pool[k%pool.length];queue.push("a:"+(ACARDS.push({w:[[w.word,w.meaning||""]],pic:w.pics||""})-1));}
+      return;
+    }
   }
+  const ad=chapter().ad||[];   // 章の組（無い章は、その章の答えの文をお手本に）
+  const sets=ad.length?shuffle(ad):chapter().items.map(it=>({f:"",ja:"この文をまねして、自分のことを1文",w:[[(it.s.match(/[A-Za-z']{4,}/g)||["it"]).sort((a,b)=>b.length-a.length)[0],""]],m:it.s}));
+  for(let k=0;k<n;k++)queue.push("a:"+(ACARDS.push(sets[k%sets.length])-1));
 }
-function startDay(){
+function startDay(words){
   RUN="day";CHA=false;ACARDS=[];queue=[];qi=0;score=0;log=[];adl=[];Adlib.reset();
-  addAdlib(5);
+  addAdlib(5,words);
   askQuestion();
   $("v-adlib").closest(".card").scrollIntoView({behavior:"smooth",block:"start"});
 }
 function chapterAdlib(){
   CHA=true;addAdlib(3);
 }
-// 章の文法から型を作る（章の題で決める。合わなければ、その章の答えの文を例に）
-const FRAMES=[
-  [/present perfect continuous/i,"I've been ＿＿ for a long time."],
-  [/present perfect/i,"I have ＿＿."],
-  [/past progressive|past continuous/i,"I was ＿＿ when you called."],
-  [/where\? \(past\)/i,"Where did you ＿＿?"],
-  [/simple past|past simple/i,"Yesterday, I ＿＿."],
-  [/present progressive|present continuous/i,"I'm ＿＿ right now."],
-  [/he \/ she \/ it/i,"She ＿＿ every day."],
-  [/simple present|present simple/i,"I ＿＿ every day."],
-  [/frequency/i,"I usually ＿＿."],
-  [/second conditional/i,"If I had ＿＿, I would be happy."],
-  [/first conditional|if \/ whether/i,"If it rains, I will ＿＿."],
-  [/\bwill\b|going to|future/i,"I'm going to ＿＿."],
-  [/must not|don't have to/i,"You don't have to ＿＿."],
-  [/must|have to|need to/i,"I have to ＿＿."],
-  [/should/i,"You should ＿＿."],
-  [/\bcan\b/i,"I can ＿＿."],
-  [/comparative/i,"This ＿＿ is better than that one."],
-  [/superlative/i,"This ＿＿ is the best."],
-  [/passive/i,"The ＿＿ was made by hand."],
-  [/reported speech/i,"She said that ＿＿."],
-  [/indirect question/i,"Could you tell me where ＿＿ is?"],
-  [/deduction/i,"It must be ＿＿."],
-  [/relative/i,"This is the ＿＿ that I like."],
-  [/gerund/i,"I enjoy ＿＿."],
-  [/infinitive/i,"I want to ＿＿."],
-  [/because/i,"I ＿＿ because I like it."],
-  [/although/i,"I like ＿＿, although it is hard."],
-  [/when \/ while/i,"When I ＿＿, I feel happy."],
-  [/before \/ after/i,"Before I ＿＿, I eat breakfast."],
-  [/as soon as/i,"I will ＿＿ as soon as I can."],
-  [/in case|even if/i,"I'll bring ＿＿ in case it rains."],
-  [/conjunction/i,"I like ＿＿, but I'm busy."],
-  [/what is this/i,"This is a ＿＿."],
-  [/colou?r/i,"My ＿＿ is blue."],
-  [/how many|quantity/i,"I have three ＿＿."],
-  [/who is this|whose/i,"This is my ＿＿."],
-  [/occupation/i,"I'm a ＿＿."],
-  [/adjective/i,"The ＿＿ is big."],
-  [/why/i,"Why do you like ＿＿?"],
-  [/how\b/i,"How do you ＿＿?"],
-  [/where/i,"Where is the ＿＿?"],
-  [/what \/ who/i,"What is ＿＿?"],
-  [/imperative/i,"Please ＿＿."],
-  [/phone/i,"Could you ＿＿, please?"],
-  [/agree/i,"I agree with ＿＿."],
-  [/presentation/i,"This graph shows ＿＿."],
-  [/propos|suggest/i,"I suggest we ＿＿."],
-  [/negotiation/i,"We could ＿＿."],
-  [/wrap|handover/i,"The ＿＿ is done."],
-];
 /* アドリブ1枚：🎤で言う（文字は直せる）→「送って次へ」で添削を後ろで頼んで、待たずに次へ */
 let adl=[];
 function askAdlib(){
   clearInterval(timer);$("tbar").style.width="100%";$("tbar").classList.remove("low");
-  const c=ACARDS[+queue[qi].slice(2)],f=(FRAMES.find(x=>x[0].test(chapter().title))||[])[1];
-  const its=chapter().items,prev=its[queue.slice(0,qi).filter(x=>typeof x==="number").pop()]||its[qi%its.length];
+  const c=ACARDS[+queue[qi].slice(2)],one=!c.f&&c.w.length===1,ws=c.w.map(([en,ja])=>({en,ja,pic:c.pic||""}));
   paintPips();
   $("qleft").textContent=(qi+1)+" / "+queue.length;
-  Adlib.show({tag:"アドリブ · Ch "+chapter().n,n:"",frame:f||"",frameJa:f?"":"型の例："+prev.s,   // 型が決まらない章は、直前の答えの文を例に
-    words:c.words,word:c.word,meaning:c.meaning||"この章の文の単語",pattern:f||prev.s});   // 型が無い章は、例の文を型として送る
+  Adlib.show({tag:"アドリブ · "+(one?"今日の単語":"Ch "+chapter().n),n:"",frame:c.f||"",say:one?"この単語を使って、今日のことを1文":c.ja,model:c.m||"",
+    words:ws,word:ws.length?ws.map(w=>w.en).join(" / "):(c.m||""),meaning:ws.map(w=>w.ja).join(" / "),
+    pattern:c.f||"＿＿"});   // 型なし＝「＿＿」だけ送る（添削は自由な1文として見る）
 }
 /* アドリブの流れ（🎤・添削・3回・復習は /adlib.js）。ここはこのページの分だけ */
 Adlib.setup({

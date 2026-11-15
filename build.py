@@ -16,13 +16,25 @@
 しくみ: 教材は1つの鍵（データ鍵）で暗号化し、そのデータ鍵を生徒ごとのパスワードで
 それぞれ包んで keys[会員番号] に入れる。生徒を消せば、その生徒はもう開けない。
 """
-import base64, datetime, hashlib, hmac, json, os, re, sys
+import base64, datetime, glob, hashlib, hmac, json, os, re, sys
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 SRC = os.path.join(os.path.dirname(__file__), "..", "study-src")
 UNITS_B = [(1, 6, "A"), (7, 13, "B"), (14, 20, "C"), (21, 24, "D")]
 UNITS_I = [(1, 6, "A"), (7, 12, "B"), (13, 18, "C"), (19, 26, "D")]
 UNITS_Z = [(1, 6, "A"), (7, 12, "B"), (13, 18, "C"), (19, 24, "D")]
+
+
+def adlib():
+    """章のアドリブの組（../study-src/adlib_parts/*.json。2026-11-12）：{(lv, 章): [{f 型, ja 言うこと, w 単語2つ, m お手本}, ×5]}"""
+    d = {}
+    for p in sorted(glob.glob(os.path.join(SRC, "adlib_parts", "[!_]*.json"))):
+        for c in json.load(open(p, encoding="utf-8")):
+            d[(c["lv"], c["ch"])] = c["ad"]
+    return d
+
+
+AD = adlib()
 
 
 def unit(n, table):
@@ -37,7 +49,7 @@ def beginner():
         ts = re.findall(r"T: (.+)", body)
         ss = re.findall(r"S: (.+)", body)
         assert len(ts) == len(ss) == 6, n
-        chs.append({"n": n, "u": unit(n, UNITS_B), "title": title,
+        chs.append({"n": n, "u": unit(n, UNITS_B), "title": title, "ad": AD.get(("b", n), []),
                     "items": [{"t": t.strip(), "s": s.strip(), "pic": f"img/b/{n}.webp"} for t, s in zip(ts, ss)]})
     assert [c["n"] for c in chs] == list(range(1, 25))
     return chs
@@ -47,7 +59,7 @@ def intermediate():
     chs = []
     for c in json.load(open(os.path.join(SRC, "intermediate.json"), encoding="utf-8")):
         n = c["ch"]
-        chs.append({"n": n, "u": unit(n, UNITS_I), "title": c["title"], "ja": c["ja"],
+        chs.append({"n": n, "u": unit(n, UNITS_I), "title": c["title"], "ja": c["ja"], "ad": AD.get(("i", n), []),
                     "items": [{"t": t, "s": s, "tj": tj, "sj": sj, "pic": f"img/i/{n}-{k + 1}.webp"}
                               for k, (t, s, tj, sj) in enumerate(c["items"])]})
     assert [c["n"] for c in chs] == list(range(1, 27))
@@ -69,7 +81,7 @@ def track_level(tid):
     chs = []
     for c in json.load(open(path, encoding="utf-8")):
         n = c["ch"]
-        chs.append({"n": n, "u": unit(n, UNITS_Z), "title": c["title"], "ja": c["ja"],
+        chs.append({"n": n, "u": unit(n, UNITS_Z), "title": c["title"], "ja": c["ja"], "ad": AD.get((tid, n), []),
                     "items": [{"t": t_, "s": s, "tj": tj, "sj": sj, "e": e} for t_, s, tj, sj, e in c["items"]]})
     return {"id": "z", "name": t["name"], "chapters": chs}
 
