@@ -10,6 +10,7 @@
                      録音はどこにも送らない（2026-11-05 kimi。前は "url" に旧 Reviewing system の送り先があった。あっても読まない）
   students.json      生徒ごとのログイン [{"id": "STU005", "name": "T.Y", "pass": "パスワード", "track": "biz"}, ...]
                      track：その生徒の専門（下の TRACKS のキー）。ONにすると話すも単語もその専門になる。無い生徒は普通の教材だけ
+                     only：true なら全部その専門の仕様（話すは専門の章だけ・単語は General・Native＋専門だけ）。無ければ専門が1つ増えるだけ
   business.json / civil.json  専門の章 [{ch,title,ja,items:[[T,S,T訳,S訳,絵文字],...]}]。その専門の生徒だけが開ける
 生徒を足した・パスワードを変えた時は、もう一度これを実行して data.enc を push する。
 
@@ -23,6 +24,8 @@ SRC = os.path.join(os.path.dirname(__file__), "..", "study-src")
 UNITS_B = [(1, 6, "A"), (7, 13, "B"), (14, 20, "C"), (21, 24, "D")]
 UNITS_I = [(1, 6, "A"), (7, 12, "B"), (13, 18, "C"), (19, 26, "D")]
 UNITS_Z = [(1, 6, "A"), (7, 12, "B"), (13, 18, "C"), (19, 24, "D")]
+# Business は本（場面別）の Unit と同じ（2026-11-15）
+UNITS_BIZ = [(1, 7, "A"), (8, 11, "B"), (12, 16, "C"), (17, 20, "D"), (21, 27, "E"), (28, 33, "F"), (34, 37, "G"), (38, 41, "H")]
 
 
 def adlib():
@@ -68,7 +71,7 @@ def intermediate():
 
 # 専門（生徒ごとにON/OFFするもの）。label＝スイッチの名前、words＝単語コースのグループ（words/courses/index.js の g）
 TRACKS = {
-    "biz": {"file": "business.json", "name": "Business", "label": "ビジネス英語", "words": "Business"},
+    "biz": {"file": "business.json", "name": "Business", "label": "ビジネス英語", "words": "Business", "units": UNITS_BIZ},
     "civ": {"file": "civil.json", "name": "土木", "label": "土木英語", "words": "土木"},
 }
 
@@ -81,7 +84,7 @@ def track_level(tid):
     chs = []
     for c in json.load(open(path, encoding="utf-8")):
         n = c["ch"]
-        chs.append({"n": n, "u": unit(n, UNITS_Z), "title": c["title"], "ja": c["ja"], "ad": AD.get((tid, n), []),
+        chs.append({"n": n, "u": unit(n, t.get("units", UNITS_Z)), "title": c["title"], "ja": c["ja"], "ad": AD.get((tid, n), []),
                     "items": [{"t": t_, "s": s, "tj": tj, "sj": sj, "e": e} for t_, s, tj, sj, e in c["items"]]})
     return {"id": "z", "name": t["name"], "chapters": chs}
 
@@ -133,6 +136,8 @@ def main():
         tid = st.get("track")
         if tid in TRACKS:   # 専門：スイッチの名前・単語のグループ・章の鍵
             me["track"] = {"id": tid, "label": TRACKS[tid]["label"], "words": TRACKS[tid]["words"]}
+            if st.get("only"):   # 全部その専門の仕様（2026-11-15 kimi）：話すは専門の章だけ、単語は General・Native と専門だけ
+                me["track"].update({"only": True, "groups": ["General", "Native", TRACKS[tid]["words"]]})
             if tid in tkeys:
                 me["kb"] = b64(tkeys[tid])
         inner = json.dumps(me, ensure_ascii=False).encode()
