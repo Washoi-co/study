@@ -5,7 +5,7 @@
 <script>window.SITE={"id":"honka","domain":"study.apush.jp","tourKey":"study","login":true,"words":{"title":"A-PUSH 単語トレーニング","dir":"courses/","index":true,"check":true,"default":null,"syncUrl":"","courses":null},"links":{},"tours":null,"manifest":{"name":"A-PUSH 本コース","short":"A-PUSH","description":"A-PUSH 本コースの練習（計画・シャドーイング・単語・テスト）。","start_url":"/?from=home","color":"#F4F4F5"},"exams":[{"id":"toeic","bank":true,"title":"TOEIC L&R","desc":"10分トレーニング・ショートタイムチャレンジ（25〜30分）・チャプター別トレーニング"},{"id":"ielts","bank":true,"title":"IELTS Academic","desc":"10分トレーニング・ショートタイムチャレンジ（25〜30分）・チャプター別トレーニング"},{"id":"toefl","bank":true,"title":"TOEFL iBT","desc":"10分トレーニング・ショートタイムチャレンジ（25〜30分）・チャプター別トレーニング"},{"id":"eiken1","bank":true,"title":"英検®1級","desc":"10分トレーニング・ショートタイムチャレンジ（25〜30分）・チャプター別トレーニング","group":"eiken","groupTitle":"英検®"},{"id":"eikenp1","bank":true,"title":"英検®準1級","desc":"10分トレーニング・ショートタイムチャレンジ（25〜30分）・チャプター別トレーニング","group":"eiken","groupTitle":"英検®"},{"id":"eiken2","bank":true,"title":"英検®2級","desc":"10分トレーニング・ショートタイムチャレンジ（25〜30分）・チャプター別トレーニング","group":"eiken","groupTitle":"英検®"},{"id":"eikenp2plus","bank":true,"title":"英検®準2級プラス","desc":"10分トレーニング・ショートタイムチャレンジ（25〜30分）・チャプター別トレーニング","group":"eiken","groupTitle":"英検®"},{"id":"eikenp2","bank":true,"title":"英検®準2級","desc":"10分トレーニング・ショートタイムチャレンジ（25〜30分）・チャプター別トレーニング","group":"eiken","groupTitle":"英検®"},{"id":"eiken3","bank":true,"title":"英検®3級","desc":"10分トレーニング・ショートタイムチャレンジ（25〜30分）・チャプター別トレーニング","group":"eiken","groupTitle":"英検®"},{"id":"eiken4","bank":true,"title":"英検®4級","desc":"10分トレーニング・ショートタイムチャレンジ（25〜30分）・チャプター別トレーニング","group":"eiken","groupTitle":"英検®"}],"daily":true,"free":null};</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#F4F4F5">
+<meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,11 +16,11 @@
 <title>A-PUSH トレーニング</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
 <link rel="stylesheet" href="/ui.css">
 <style>
 /* 生徒用「今日の分」＝今日の章（前の授業の振り返り。2026-11-16 kimi：計画の「今日の分」・公式LINE から章ごとに）。
-   今日の分で開いた時は章を選ぶ部品を隠して、その章の STEP だけを出す（UI はものすごくシンプルに）。会員番号＋パスワードで data.enc を復号して3ステップ：
+   今日の分で開いた時は章を選ぶ部品を隠して、その章の STEP を1つずつ出す（案 M1・2026-11-17 kimi）。会員番号＋パスワードで data.enc を復号して3ステップ：
    STEP 1＝教材と一緒に文1〜6を3回ずつ録音（30秒以上で「できた」）／STEP 2＝先生の質問に単語で答える→AI添削→3回（章の st2）／STEP 3＝状況で言う→添削→3回→モデル解答（Business の st3）。
    章の全部の STEP ができたら章クリア。
    録音はどこにも送らない。毎週1本だけ、この端末の IndexedDB（ap_growth）に成長記録として残す。見た目は /ui.css */
@@ -46,69 +46,45 @@
 .chrow button{flex:none;width:40px;height:40px;border-radius:50%;background:var(--soft);color:var(--brand);font-size:20px;font-weight:700}
 .chrow button:disabled{opacity:.3;cursor:default}
 
-/* 章の6問（全部並べる） */
-.it{display:flex;flex-direction:column;gap:8px;padding-top:12px;border-top:.5px solid var(--line2)}
-.it:first-child{border-top:0;padding-top:0}
-img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;border-radius:14px;background:#fff;box-shadow:0 0 0 1px var(--line) inset}
+/* 案 M1（2026-11-17 kimi）：白地・余白。左上に章の題、その下に STEP の丸、真ん中に今の主役1つ、一番下（タブの上）に赤いボタン（絵だけ） */
+html,body{background:var(--card)}
+#app{min-height:calc(100dvh - 52px - 108px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))}
+@media (min-width:1024px){#app{width:100%;max-width:560px}}
+.m1t{margin:14px 0 0;font-family:var(--fd);font-size:30px;font-weight:900;letter-spacing:-.025em;line-height:1.25;text-wrap:balance}
+.sdots{display:flex;margin:0 0 0 -10px}
+.sd{width:28px;height:36px;display:grid;place-items:center}
+.sd i{width:8px;height:8px;border-radius:50%;box-shadow:0 0 0 1.5px var(--soft2) inset}
+.sd.ok i{background:var(--ink);box-shadow:none}
+.sd.cur i{box-shadow:0 0 0 1.5px var(--ink) inset}
+.m1,#run{flex:1;display:flex;flex-direction:column;gap:14px}
+.m1c{flex:1;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:28px 0}
+.m1s{margin:0;min-height:1.3em;font-family:var(--en);font-size:13px;font-weight:700;color:var(--mute);text-align:center;font-variant-numeric:tabular-nums}
+.m1go{flex:none;width:100%;height:56px;border-radius:4px;background:var(--accent);color:var(--on);display:grid;place-items:center;transition:transform .1s ease-out,background-color .12s}
+.m1go:active:not(:disabled){transform:scale(.97)}
+.m1go:disabled{opacity:.3;cursor:default}
+.m1go .i-stop,.m1go.on .i-mic{display:none}
+.m1go.on .i-stop{display:block}
+@media (hover:hover) and (pointer:fine){.m1go:hover:not(:disabled){background:var(--accent2)}}
+.book{margin:0;font-size:18px;font-weight:700;line-height:1.6}
+#st1{position:relative}
+.m1lk{position:absolute;left:50%;bottom:-36px;transform:translateX(-50%);white-space:nowrap;font-size:12px;color:var(--mid);padding:8px 10px}   /* ボタンの下（タブとの間）。赤いボタンの位置をどの STEP でも同じに */
+.fin-mark{align-self:flex-start}
+
+/* 教材をなくした時：章の6問 */
+.it{display:flex;flex-direction:column;gap:8px;padding-top:16px}
+img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;border-radius:6px;background:#fff}
 .tq{display:flex;gap:9px;align-items:flex-start}
-.tq .who-t{flex:none;font-family:var(--en);font-size:11px;font-weight:900;color:var(--brand);background:var(--soft);border-radius:50%;width:24px;height:24px;display:grid;place-items:center;margin-top:2px}
-.tq.s .who-t{color:var(--on);background:var(--brand)}
-.tq p{margin:0;flex:1;font-family:var(--en);font-size:clamp(16px,4.3vw,19px);font-weight:700;letter-spacing:-.015em;line-height:1.35}
+.tq .who-t{flex:none;font-family:var(--en);font-size:11px;font-weight:900;color:var(--mute);width:16px;margin-top:4px}
+.tq p{margin:0;flex:1;font-family:var(--en);font-size:clamp(16px,4.3vw,19px);font-weight:700;letter-spacing:-.015em;line-height:1.35;cursor:pointer}
 .tq.s p{font-weight:500}
-.tj{font-size:12.5px;color:var(--mute);margin:-4px 0 0 33px}
+.tj{font-size:12.5px;color:var(--mute);margin:-4px 0 0 25px}
 
-/* 録音 */
-.rec{display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:12px;border-top:.5px solid var(--line2)}
-.rec .say{margin:0}
-#rec-done{width:100%;display:flex;flex-direction:column;gap:8px}
-.recbtn{display:inline-flex;align-items:center;gap:8px;background:var(--soft);color:var(--brand);border-radius:99px;padding:11px 20px;font-size:15px;font-weight:700;transition:transform .1s ease-out}
-.recbtn:active{transform:scale(.97)}
-.recbtn::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--ng)}
-.recbtn.on{background:var(--ng);color:#fff}
-.recbtn.on::before{background:#fff;border-radius:2px;animation:blink 1s infinite}
-@keyframes blink{50%{opacity:.3}}
-.rec audio,.gw audio{width:100%;max-width:360px;height:40px;margin:0 auto;display:block}
-.recmsg{font-size:12.5px;color:var(--mute);margin:0;min-height:1.2em;text-align:center}
-.recmsg.ok{color:var(--ok)} .recmsg.ng{color:var(--ng)}
-
-/* 今日の章の見出し・別の章を選ぶ */
-#pick{display:flex;flex-direction:column;gap:12px}
-.chh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-.chh b{font-size:22px;font-weight:900;letter-spacing:-.02em}
-.chh small{flex:none;font-size:12.5px;font-weight:700;color:var(--mute)}
-.cht{margin:-6px 0 0;font-size:15px;font-weight:700}
-.lk{align-self:flex-start;font-size:13px;color:var(--mute);text-decoration:underline;padding:2px 0}
-
-/* 成長記録（一番下の小さな折りたたみ） */
-.log{background:var(--card);border-radius:var(--r);padding:10px 14px}
-.log summary{cursor:pointer;font-weight:700;font-size:14px;color:var(--mute);display:flex;justify-content:space-between;gap:10px;list-style:none}
-.log summary::-webkit-details-marker{display:none}
-.log summary::after{content:"›";color:var(--mute);transition:transform .2s}
-.log[open] summary::after{transform:rotate(90deg)}
-.log summary .en{margin-left:auto;color:var(--brand)}
-.gw{display:flex;flex-direction:column;gap:8px;padding:12px 0;border-top:.5px solid var(--line2)}
-.gw:first-of-type{margin-top:10px}
+/* 成長記録：機能は残して、今は出さない（2026-11-17 kimi。表示は計画の奥へ移す予定） */
+.gw{display:flex;flex-direction:column;gap:8px;padding:12px 0}
 .gw .gh{display:flex;justify-content:space-between;gap:8px;font-size:14px}
 .gw .gh small{color:var(--mute)}
-.gw .ghost{flex:none;padding:10px;font-size:14px;text-align:center;text-decoration:none}
+.gw audio{width:100%;height:40px}
 .gempty{margin:10px 0 0;font-size:13px;color:var(--mute)}
-.book{margin:4px 0 0;font-size:16px;font-weight:700;line-height:1.6;text-align:center}
-#items-show{flex:none;align-self:center;font-size:14px;padding:10px 18px}
-
-/* STEP 1〜3 のカード（2026-11-16 kimi）。どれからでも押せる */
-.sth{display:flex;align-items:center;gap:10px}
-.sth .stn{flex:none;font-family:var(--en);font-size:12px;font-weight:900;letter-spacing:.06em;color:var(--on);background:var(--brand);border-radius:99px;padding:3px 10px}
-.sth h2{margin:0;flex:1;font-size:16px;font-weight:800;line-height:1.4}
-.sth .ck{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--ok);color:#fff;font-size:14px;font-weight:900}
-.stp.done .stn{background:var(--ok)}
-.stgo{flex:none}
-.stmsg{margin:0;font-size:13px;color:var(--ok);text-align:center}
-.stmsg:empty{display:none}
-.stl{margin:4px 0 0;padding-left:1.4em;display:flex;flex-direction:column;gap:12px}
-.stl li{line-height:1.5}
-.stl .chip{display:inline-flex;gap:6px;align-items:baseline;font-family:var(--en);font-weight:800;padding:3px 10px;margin-bottom:4px}
-.stl .chip small{font-family:var(--f);font-weight:500;font-size:12px;color:var(--mute)}
-.stl p{margin:0}.stl p.en{font-family:var(--en);font-size:16px}.stl p.ja{font-size:13px;color:var(--mute)}
 </style>
 <script src="/lock.js"></script>
 </head>
@@ -117,11 +93,9 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
 
 <main class="screen">
   <div class="nav"><span class="navl"><svg class="aplogo" viewBox="0 0 228.41 58.35" fill="currentColor" role="img" aria-label="A-PUSH"><use href="#aplogo"/></svg><span class="mini">今日の分</span></span><div class="navr"><button class="pill" id="who" title="ログアウト"></button></div></div>
-  <h1 class="large">今日の分</h1>
-
   <form class="lock" id="lock">
     <h2 class="g-h">A-PUSH Training</h2>
-    <p>生徒用の練習ページです。先生から届いた会員番号とパスワードを入れてください。</p>
+    <p>生徒用の練習ページです。先生から届いた会員番号とパスワードを入れてください。STEP 1 の録音はどこにも送りません。STEP 2・3 は添削のため声を送ります（文字にするためだけに使い、保存しません）。名前は送りません（ログインの印は元に戻せない形にして、今月の利用分を数えるだけに使います）。</p>
     <label>会員番号（例: STU005）<input id="sid" autocomplete="username" autocapitalize="characters" spellcheck="false" required></label>
     <label>パスワード<input id="pass" type="password" autocomplete="current-password" required></label>
     <p class="err" id="lock-err" role="alert"></p>
@@ -131,7 +105,7 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
   </form>
 
   <div id="app" hidden>
-    <div id="pick">   <!-- 章を選ぶ部品。今日の分で開いた時は「別の章を選ぶ」を押すまで隠す -->
+    <div id="pick" hidden>   <!-- 章を選ぶ部品：今日の分もリンクも無く開いた時だけ -->
       <div class="seg" id="levels" role="group" aria-label="レベル"></div>
       <div class="chrow">
         <button id="prev" aria-label="前の章">‹</button>
@@ -140,137 +114,103 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
       </div>
     </div>
 
-    <div class="card">
-      <div class="cin">
-        <div class="chh"><b class="en" id="chname"></b><small id="todo"></small></div>
-        <p class="cht" id="chtitle"></p>
-        <button class="lk" id="pick-show" hidden>別の章を選ぶ</button>
-      </div>
-    </div>
+    <h1 class="m1t" id="chtitle"></h1>
+    <div class="sdots" id="sdots" role="group" aria-label="STEP"></div>   <!-- 済み＝黒・今＝黒の輪・まだ＝薄い輪。押すとその STEP。STEP が1つの章は出さない -->
 
-    <div class="card stp" id="st1">
-      <div class="cin">
-        <div class="sth"><span class="stn">STEP 1</span><h2>教材と一緒に、文1〜6を3回ずつ</h2><span class="ck" hidden>✓</span></div>
-        <p class="book">📖 教材の <b id="book-ch"></b> を開いて、見ながらやってください。</p>   <!-- 教材を見ながら（2026-11-16 kimi）。画面の中身は教材が手元に無い時だけ -->
-        <button class="ghost" id="items-show">教材をなくした場合はこちら</button>
-        <div class="cin" style="padding:0" id="items" hidden></div>
-        <div class="rec" id="rec">
-          <p class="say">30秒以上で「できた」になります。</p>
-          <button class="recbtn" id="rec-btn">録音する</button>
-          <div id="rec-done" hidden>
-            <audio id="rec-audio" controls></audio>
-            <div class="acts">
-              <button class="ghost" id="rec-redo">録り直す</button>
-              <button class="primary" id="rec-ok" disabled>できた</button>
-            </div>
-          </div>
-          <p class="recmsg" id="rec-msg" role="status"></p>
-        </div>
+    <section class="m1" id="st1" hidden>   <!-- STEP 1：教材を見ながら文1〜6を3回ずつ録音。30秒以上で止めたら済み -->
+      <div class="m1c">
+        <p class="book">教材を開いて、3回ずつ復唱</p>
+        <div id="items" hidden></div>
       </div>
-    </div>
+      <p class="m1s" id="rec-msg" role="status"></p>
+      <button class="m1go" id="rec-btn" aria-label="録音する"><svg class="i-mic" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><svg class="i-stop" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1.5" fill="currentColor"/></svg></button>
+      <button class="m1lk" id="items-show">教材をなくした場合はこちら</button>
+    </section>
 
-    <div class="card stp" id="st2" hidden>
-      <div class="cin">
-        <div class="sth"><span class="stn">STEP 2</span><h2>アドリブ＋AI添削</h2><span class="ck" hidden>✓</span></div>
-        <p class="say">太字の単語を使って、自分のことを答えます。AIが直した文を3回。</p>
-        <ol class="stl" id="list2"></ol>
-        <button class="primary stgo" id="go2">はじめる</button>
-        <p class="stmsg" id="msg2" role="status"></p>
-      </div>
-    </div>
+    <section class="m1" id="st0" hidden>   <!-- 章の全部の STEP ができた（その日の最後の章） -->
+      <div class="m1c"><span class="fin-mark" aria-label="できた">✓</span></div>
+    </section>
 
-    <div class="card stp" id="st3" hidden>
-      <div class="cin">
-        <div class="sth"><span class="stn">STEP 3</span><h2>状況で言う（Business）</h2><span class="ck" hidden>✓</span></div>
-        <p class="say">状況を読んで、自分で言います。AIが直した文を3回→モデル解答。</p>
-        <ol class="stl" id="list3"></ol>
-        <button class="primary stgo" id="go3">はじめる</button>
-        <p class="stmsg" id="msg3" role="status"></p>
-      </div>
-    </div>
-
-    <div id="run" hidden>
-<!-- アドリブ（🎤で言う → AI添削 → 3回）の画面。本コースの章の振り返り STEP 2・3（build が「部品の差し込み」の印の所に入れる）。動きは /adlib.js -->
-      <style>/* 2026-11-16 ui.css から外した分を、部品の中へ */
-        .stem .blank{color:var(--brand);border-bottom:3px solid var(--brand);padding:0 .35em}
-        .adw{display:flex;justify-content:center;align-items:center;gap:10px}
-        .adw[hidden],#a-type[hidden],#f-err[hidden],#f-ok[hidden]{display:none}
+    <div id="run" hidden>   <!-- STEP 2・3 -->
+<!-- アドリブ（🎤で言う → AI添削 → 3回）の画面。本コースの章の振り返り STEP 2・3（build が「部品の差し込み」の印の所に入れる）。動きは /adlib.js
+     形は案 M1（2026-11-17 kimi）：真ん中に今の主役1つ・一番下に赤いボタン（絵だけ）。.m1c・.m1go・.m1s はページ（sites/honka/index.html）の style -->
+      <style>
+        #v-adlib,#v-fix{flex:1;display:flex;flex-direction:column;gap:14px}
         #a-type{display:flex;flex-direction:column;gap:9px}
-        #a-in{width:100%;border:0;background:var(--bg);border-radius:12px;padding:13px 14px;font-family:var(--en);font-size:17px}
-        #a-live{font-family:var(--en);font-size:16px;color:var(--ink);min-height:1.3em}
-        .say.priv{font-size:11.5px}
-        .you{margin:0;font-family:var(--en);font-size:16px;text-align:center;color:var(--mute);line-height:1.4}
-        .okb{align-self:center;font-size:12px;font-weight:700;background:var(--ok);color:#fff;border-radius:99px;padding:2px 10px}
-        #f-err,#f-ok{display:flex;flex-direction:column;gap:10px}
-        #f-msg{color:var(--ng);font-size:13px;margin:0;text-align:center}
-        #a-en{justify-content:center;flex-wrap:wrap}#a-en .chip{font-family:var(--en);font-size:18px;color:var(--brand)}
-        .a-title{margin:0;text-align:center;font-size:16px;font-weight:800}
-        .a-sit{margin:0;font-family:var(--en);font-size:15px;line-height:1.5;background:var(--bg);border-radius:12px;padding:10px 12px}
-        .a-q{margin:0;flex:1;font-family:var(--en);font-size:clamp(16px,4.3vw,19px);font-weight:600;line-height:1.4}
-        .a-q b,.model b{color:var(--brand)}
-        #f-mbtn{align-self:center}.model{margin:0;font-size:15px;font-weight:500;line-height:1.5;background:var(--soft);border-radius:12px;padding:10px 12px}</style>
-      <div id="v-adlib" class="cin" style="padding:0" hidden>
-        <div class="meta"><span class="wcat" id="a-tag">アドリブ</span><span id="a-n"></span></div>
-        <p class="a-title" id="a-title" hidden></p>
-        <p class="a-sit" id="a-sit" hidden></p>
-        <p class="say" id="a-sitja" hidden></p>
-        <div class="adw" id="a-qrow" hidden><p class="a-q" id="a-q"></p><button class="tsay" id="a-qsay" aria-label="質問を聞く">▶</button></div>
-        <p class="say" id="a-qja" hidden></p>
-        <p class="stem" id="a-frame"></p>
-        <p class="say" id="a-fja"></p>
-        <div class="pic" id="a-pic" aria-hidden="true"></div>
-        <div class="adw" id="a-words"><div class="chips" id="a-en"></div><button class="tsay" id="a-say" aria-label="単語を聞く">🔊</button></div>
-        <p class="say" id="a-ja"></p>
-        <p class="say" id="a-how"></p>
-        <button class="mic" id="a-mic">🎤 話す</button>
-        <p class="say" id="a-live" aria-live="polite"></p>
+        #a-in{width:100%;border:0;background:var(--bg);border-radius:6px;padding:13px 14px;font-family:var(--en);font-size:17px}
+        .a-q,.a-sit{margin:0;font-family:var(--en);font-weight:800;letter-spacing:-.015em;line-height:1.3;text-wrap:pretty;cursor:pointer}
+        .a-q{font-size:clamp(22px,6.6vw,26px)}
+        .a-sit{font-size:clamp(19px,5.4vw,22px);line-height:1.4}
+        .a-q b{font-weight:800;text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:5px}
+        .m1j{margin:0;font-size:13px;color:var(--mute);line-height:1.6}
+        .qa-h{margin:0;font-family:var(--en);font-size:12.5px;font-weight:800;letter-spacing:.02em;color:var(--ink)}   /* 「Question」「Answer」の小さな見出し（2026-11-17 kimi） */
+        #a-qbox,#a-abox{display:flex;flex-direction:column;gap:10px}
+        #a-abox{margin-top:36px}
+        #a-ans{margin:0;font-size:15px;font-weight:700;line-height:1.6;color:var(--ink)}   /* 答える側：STEP 3＝何を言うか（taskJa）・STEP 2＝使う単語 */
+        #a-ans b{font-family:var(--en);font-weight:800}
+        .you{margin:0;font-family:var(--en);font-size:14px;color:var(--mid);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+        #f-err,#f-ok{display:flex;flex-direction:column;gap:14px}
+        #f-msg{color:var(--ng);font-size:13px;margin:0}
+        #f-en{margin:0;font-family:var(--en);font-size:clamp(23px,6.8vw,27px);font-weight:800;letter-spacing:-.015em;line-height:1.3;text-wrap:pretty;cursor:pointer}
+        #f-note{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+        #f-wait{text-align:left}
+        #f-dots{justify-content:flex-start;gap:0;margin-left:-11px}
+        #f-dots .dot,#f-dots .dot.on{position:relative;width:44px;height:44px;background:none;font-size:0}   /* 押す所は44px、見える点は22px */
+        #f-dots .dot::after{content:"";position:absolute;inset:11px;border-radius:50%;box-shadow:0 0 0 2px var(--soft2) inset}
+        #f-dots .dot.on::after{background:var(--ink);box-shadow:none}
+        .model{margin:0;font-size:14px;font-weight:500;line-height:1.5;color:var(--ink)}
+        .model b{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}</style>
+      <div id="v-adlib" hidden>
+        <div class="m1c">
+          <div id="a-qbox">
+            <p class="qa-h">Question</p>
+            <p class="a-sit" id="a-sit" hidden></p>
+            <p class="m1j" id="a-sitja" hidden></p>
+            <div id="a-qrow" hidden><p class="a-q" id="a-q"></p></div>
+            <p class="m1j" id="a-qja" hidden></p>
+          </div>
+          <div id="a-abox" hidden>
+            <p class="qa-h">Answer</p>
+            <p id="a-ans"></p>
+          </div>
+        </div>
+        <p class="m1s" id="a-live" aria-live="polite"></p>
         <div id="a-type" hidden>
-          <p class="say" id="a-nomic" hidden>声が使えない時は、打って入力してください</p>
+          <p class="m1s" id="a-nomic" hidden>声が使えない時は、打って入力してください</p>
           <input id="a-in" lang="en" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send" aria-label="あなたの英文" placeholder="ここに英文（直せます）">
           <div class="acts"><button class="ghost" id="a-again">もう一度話す</button><button class="primary" id="a-next">送って次へ</button></div>
         </div>
-        <p class="say priv">添削のため、声（または英文）を送ります。声は文字にするためだけに使い、保存しません。名前は送りません（ログインの印は元に戻せない形にして、今月の利用分を数えるだけに使います）</p>
+        <button class="m1go" id="a-mic" aria-label="話す"><svg class="i-mic" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><svg class="i-stop" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1.5" fill="currentColor"/></svg></button>
       </div>
 
-      <div id="v-fix" class="cin" style="padding:0" hidden>
-        <div class="meta"><span class="wcat" id="f-tag">添削</span><span id="f-n"></span></div>
-        <p class="a-q" id="f-q" hidden></p>
-        <p class="say" id="f-you-h">① あなたの文</p>
+      <div id="v-fix" hidden>
         <p class="you" id="f-you"></p>
-        <p class="say" id="f-fix-h">② 添削</p>
-        <p class="say" id="f-wait" role="status">添削しています…</p>
-        <div id="f-err" hidden>
-          <p id="f-msg" role="alert"></p>
-          <div class="acts"><button class="ghost" id="f-skip">とばす</button><button class="ghost" id="f-retry">同じ文で送り直す</button><button class="primary" id="f-redo">言い直す</button></div>
-        </div>
-        <div id="f-ok" hidden>
-          <span class="okb" id="f-badge">そのままでOK</span>
-          <div class="adw"><p class="answer" id="f-en"></p><button class="tsay" id="f-say" aria-label="聞く">▶</button></div>
-          <p class="say" id="f-note"></p>
-          <p class="say">声に出して3回。タップすると音が鳴ります。</p>
-          <div class="dots" id="f-dots">
-            <button class="dot" data-f="0" aria-label="1回目">1</button>
-            <button class="dot" data-f="1" aria-label="2回目">2</button>
-            <button class="dot" data-f="2" aria-label="3回目">3</button>
+        <div class="m1c">
+          <p class="m1j" id="f-wait" role="status">添削しています…</p>
+          <div id="f-err" hidden>
+            <p id="f-msg" role="alert"></p>
+            <div class="acts"><button class="ghost" id="f-skip">とばす</button><button class="ghost" id="f-retry">同じ文で送り直す</button><button class="primary" id="f-redo">言い直す</button></div>
           </div>
-          <button class="pill" id="f-mbtn" hidden>モデル解答を見る</button>
-          <p class="model en" id="f-model" hidden></p>
+          <div id="f-ok" hidden>
+            <p id="f-en" role="button" tabindex="0" aria-label="直した文を聞く"></p>
+            <p class="m1j" id="f-note"></p>
+            <div class="dots" id="f-dots">
+              <button class="dot" data-f="0" aria-label="1回目">1</button>
+              <button class="dot" data-f="1" aria-label="2回目">2</button>
+              <button class="dot" data-f="2" aria-label="3回目">3</button>
+            </div>
+            <p class="model en" id="f-model" hidden></p>
+          </div>
         </div>
-        <div class="acts"><button class="primary" id="f-next" disabled>次へ</button></div>
+        <button class="m1go" id="f-next" aria-label="次へ" hidden><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
       </div>
 
     </div>
-    <div class="acts"><button class="primary" id="btn-nextch" hidden></button></div>
 
-    <details class="log" id="growth">
+    <details class="log" id="growth" hidden>
       <summary>成長記録<span class="en" id="g-sum"></span></summary>
       <div id="g-list"></div>
     </details>
-
-    <footer class="foot">
-      <span>STEP 1 の録音は送りません（毎週1本だけ、この端末の成長記録に残ります）。STEP 2・3 は添削のため声を送ります（保存しません）。</span>
-      <span class="by">TRAINING BY A-PUSH</span>
-    </footer>
   </div>
 </main>
 
@@ -283,7 +223,7 @@ const store={get(k,d){try{const v=localStorage.getItem("ap_"+k);return v===null?
              set(k,v){try{localStorage.setItem("ap_"+k,JSON.stringify(v));}catch(e){}}};
 function speak(t){if(window.apSay)return apSay(t.replace(/\(.*?\)/g,""));try{if(!("speechSynthesis" in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/\(.*?\)/g,""));u.lang="en-US";u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
 
-let DATA=null, LV="b", CH=0, TODO=[], PICK=false;   /* TODO：今日の分の章（?ch= か ap_today）。1章できたら次へ／PICK：「別の章を選ぶ」を押した */
+let DATA=null, LV="b", CH=0, TODO=[], PICK=false;   /* TODO：今日の分の章（?ch= か ap_today）。1章できたら次へ／PICK：章を選ぶ部品で選んだ（あとから届いた今日の分で上書きしない） */
 let ME=null;   /* この生徒だけの鍵 {sid, tok 管理アプリ}。パスワードで開けるたびに作り直す（localStorage に置かない） */
 let TRACK=null;   /* 専門（ビジネス英語・土木英語）：その専門の生徒だけ、レベルの並びに専門（id "z"）が1つ増える */
 const MIN=30;   /* 録音は30秒以上で「できた」（前の LINE の提出と同じ） */
@@ -358,9 +298,11 @@ $("trial-go").addEventListener("click",async()=>{
 })();
 
 /* ---- 画面の組み立て ---- */
-/* 開く章：?lv=b&ch=5&step=2（計画の「今日の分」・LINE から）→ ap_today（今日の分。sync.js が入れる）→ 前に開いた章 */
+/* 開く章：?lv=b&ch=5&step=2（計画の「今日の分」・LINE から）→ ap_today（今日の分。sync.js が入れる）→ 前に開いた章（この時だけ章を選ぶ部品を出す） */
 const tOk=t=>t&&t.day===dayAgo(0)&&Array.isArray(t.ch);
 const idx=n=>level().chapters.findIndex(c=>String(c.n)===String(n).trim());
+/* 章の題：Intermediate・専門は日本語の題の「—」より前。Beginner は日本語の題が無いので英語の題 */
+const chTitle=c=>c.ja?c.ja.split("—")[0].trim():c.title;
 function start(){
   $("lock").hidden=true;$("app").hidden=false;
   LV=store.get("lv","b");if(!LEVELS().some(l=>l.id===LV))LV=LEVELS()[0].id;
@@ -370,17 +312,14 @@ function start(){
   if(LEVELS().some(l=>l.id===q.get("lv"))&&q.get("ch")){
     LV=q.get("lv");store.set("lv",LV);
     const want=q.get("ch").split(",");
-    pickTodo(tOk(t)&&t.lv===LV&&want.every(n=>t.ch.some(c=>String(c)===n.trim()))?t.ch:want);   // 計画の1章のリンクでも、今日の分の残りの章へ「次の章へ」で続ける
+    pickTodo(tOk(t)&&t.lv===LV&&want.every(n=>t.ch.some(c=>String(c)===n.trim()))?t.ch:want);   // 計画の1章のリンクでも、今日の分の残りの章へ続ける
     if(idx(want[0])>=0){CH=idx(want[0]);S=+q.get("step");}
   }else if(tOk(t))todayCh(t);
-  else addEventListener("ap-today",()=>{const t=store.get("today",null);if(tOk(t)&&!busy()&&!RUN&&!PICK&&todayCh(t))go(CH);},{once:true});   // 今日はじめて開いた＝つながってから届く
+  else addEventListener("ap-today",()=>{const t=store.get("today",null);if(tOk(t)&&!busy()&&!(RUN&&RUN.sent.length)&&!PICK&&todayCh(t))go(CH);},{once:true});   // 今日はじめて開いた＝つながってから届く
   if(q.toString())history.replaceState(null,"",location.pathname);
   $("levels").innerHTML=LEVELS().map(l=>'<button data-lv="'+l.id+'">'+esc(l.name)+'</button>').join("");
   $("who").textContent=store.get("name","")+" さん";
-  go(CH);paintGrowth();
-  /* ?step=：その STEP のカードへ。STEP 2・3 はそのまま始める（STEP 1 は録音を押してから） */
-  const st=$("st"+S);
-  if(S>=1&&S<=3&&!st.hidden)S>1?stepStart(S):st.scrollIntoView({behavior:"smooth",block:"start"});
+  go(CH,S);paintGrowth();
 }
 function pickTodo(list){
   TODO=list.map(idx).filter(i=>i>=0);
@@ -395,8 +334,8 @@ function todayCh(t){
 $("who").addEventListener("click",()=>{
   if(confirm("ログアウトしますか？（次に開くとき、会員番号とパスワードがもう一度必要です）")){store.set("pass",null);location.reload();}
 });
-function go(ch){
-  stopRec(true);stepStop();
+/* 章を開く。s：開く STEP（無ければ、まだの最初の STEP） */
+function go(ch,s){
   CH=level().chapters[ch]?ch:0;store.set("ch_"+LV,CH);
   document.querySelectorAll("[data-lv]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lv===LV)));
   let html="",u=null;
@@ -407,32 +346,27 @@ function go(ch){
   $("chsel").innerHTML=html+"</optgroup>";
   $("chsel").value=CH;
   $("prev").disabled=CH===0;$("next").disabled=CH===level().chapters.length-1;
-  segSlide("levels");
-  const c=chapter(),k=TODO.indexOf(CH),f=TODO.length>0&&!PICK;   // f：今日の分で開いた＝選ぶ部品を隠す
-  $("pick").hidden=f;$("pick-show").hidden=!f;
-  document.querySelector(".nav .mini").textContent=document.querySelector("h1.large").textContent=k>=0?"今日の分":"振り返り";   // 今日の分の章の時だけ「今日の分」
-  $("chname").textContent=level().name+" Ch "+c.n;$("chtitle").textContent=c.title;
-  $("todo").textContent=k>=0&&TODO.length>1?(k+1)+" / "+TODO.length:"";
-  $("book-ch").textContent=level().name+" Ch "+c.n;$("items").hidden=true;$("items-show").hidden=false;   // 章を変えたら、また教材で
+  $("pick").hidden=TODO.length>0;segSlide("levels");
+  const c=chapter();
+  document.querySelector(".nav .mini").textContent=$("chtitle").textContent=chTitle(c);
+  $("items").hidden=true;$("items-show").hidden=false;   // 章を変えたら、また教材で
   $("items").innerHTML=c.items.map((it,i)=>'<div class="it">'+
     '<img class="pic" src="'+esc(picOf(it))+'" alt="Ch '+c.n+' の絵 '+(i+1)+'">'+
-    '<div class="tq"><span class="who-t">T</span><p>'+esc(it.t)+'</p><button class="tsay" data-say="t'+i+'" aria-label="質問を聞く">▶</button></div>'+
+    '<div class="tq"><span class="who-t">T</span><p data-say="t'+i+'">'+esc(it.t)+'</p></div>'+
     (it.tj?'<p class="tj">'+esc(it.tj)+'</p>':'')+
-    '<div class="tq s"><span class="who-t">S</span><p>'+esc(it.s)+'</p><button class="tsay" data-say="s'+i+'" aria-label="答えを聞く">▶</button></div>'+
+    '<div class="tq s"><span class="who-t">S</span><p data-say="s'+i+'">'+esc(it.s)+'</p></div>'+
     (it.sj?'<p class="tj">'+esc(it.sj)+'</p>':'')+'</div>').join("");
-  resetRec();paintSteps();
+  show(stepsOf(c).includes(s)?s:nextStep());
 }
-$("pick-show").addEventListener("click",()=>{PICK=true;$("pick").hidden=false;$("pick-show").hidden=true;segSlide("levels");});
 $("items-show").addEventListener("click",()=>{$("items").hidden=false;$("items-show").hidden=true;});
 $("items").addEventListener("click",e=>{const b=e.target.closest("[data-say]");if(b)speak(chapter().items[+b.dataset.say.slice(1)][b.dataset.say[0]]);});
 $("levels").addEventListener("click",e=>{
   const b=e.target.closest("[data-lv]");if(!b||b.dataset.lv===LV)return;
-  LV=b.dataset.lv;store.set("lv",LV);go(store.get("ch_"+LV,0));
+  PICK=true;LV=b.dataset.lv;store.set("lv",LV);go(store.get("ch_"+LV,0));
 });
-$("chsel").addEventListener("change",()=>go(+$("chsel").value));
-$("prev").addEventListener("click",()=>go(CH-1));
-$("next").addEventListener("click",()=>go(CH+1));
-$("btn-nextch").addEventListener("click",()=>{go(TODO[TODO.indexOf(CH)+1]);$("app").scrollIntoView({behavior:"smooth",block:"start"});});
+$("chsel").addEventListener("change",()=>{PICK=true;go(+$("chsel").value);});
+$("prev").addEventListener("click",()=>{PICK=true;go(CH-1);});
+$("next").addEventListener("click",()=>{PICK=true;go(CH+1);});
 
 /* 切り替え（セグメント）の白い板を、押した所へすべらせる（doboku の engine.js と同じ） */
 function segSlide(id){
@@ -446,113 +380,96 @@ function segSlide(id){
   i.style.transform="translateX("+n*100+"%)";
 }
 
-/* ---- 録音（この端末の中だけ。どこにも送らない） ---- */
-let rec=null, chunks=[], stream=null, t0=0, tick=null, last=null;   /* last：止めた録音 {blob, mime, sec} */
+/* ---- 録音（この端末の中だけ。どこにも送らない）。30秒以上で止めたら、そのまま STEP 1 は済み ---- */
+let rec=null, chunks=[], stream=null, t0=0, tick=null;
 const MIME=["audio/mp4","audio/webm;codecs=opus","audio/webm"].find(m=>window.MediaRecorder&&MediaRecorder.isTypeSupported(m))||"";
 const busy=()=>rec&&rec.state==="recording";
-const msg=(t,c)=>{$("rec-msg").textContent=t;$("rec-msg").className="recmsg"+(c?" "+c:"");};
+const msg=t=>{$("rec-msg").textContent=t;};
 function resetRec(){
-  $("rec-done").hidden=true;$("rec-btn").hidden=false;$("btn-nextch").hidden=true;
-  $("rec-btn").textContent="録音する";$("rec-btn").classList.remove("on");
-  $("rec-ok").disabled=true;last=null;msg("");
-  $("rec").hidden=!window.MediaRecorder;
+  $("rec-btn").classList.remove("on");$("rec-btn").setAttribute("aria-label","録音する");msg("");
+  $("rec-btn").hidden=!window.MediaRecorder;
 }
 function stopRec(discard){
   clearInterval(tick);
   if(busy()){if(discard)rec.onstop=null;rec.stop();}
   if(stream){stream.getTracks().forEach(t=>t.stop());stream=null;}
+  if(discard)resetRec();
 }
 $("rec-btn").addEventListener("click",async()=>{
   if(busy()){stopRec(false);return;}
-  Adlib.micRelease();   // STEP 2・3 の🎤は止める（問題はそのまま）
+  Adlib.micRelease();   // STEP 2・3 の🎤は止める
   try{stream=await navigator.mediaDevices.getUserMedia({audio:true});}
-  catch(e){msg("マイクが使えません。ブラウザの設定でマイクを許可してください。","ng");return;}
+  catch(e){msg("マイクを許可してください");return;}
   chunks=[];
   rec=new MediaRecorder(stream,MIME?{mimeType:MIME}:undefined);
   rec.ondataavailable=e=>e.data.size&&chunks.push(e.data);
   rec.onstop=()=>{
     const sec=Math.floor((Date.now()-t0)/1000),mime=rec.mimeType||MIME||"audio/webm";
-    last={blob:new Blob(chunks,{type:mime}),mime,sec};
-    $("rec-audio").src=URL.createObjectURL(last.blob);
-    $("rec-btn").hidden=true;$("rec-done").hidden=false;
-    $("rec-ok").disabled=sec<MIN;
-    sec<MIN?msg("短いです。あと"+(MIN-sec)+"秒。章を通して、もう一度録音してください。","ng"):msg(sec+"秒。聞き直して、よければ「できた」");
+    resetRec();
+    if(sec<MIN){msg("短いです。"+MIN+"秒以上で、もう一度");return;}
+    const c=chapter(),title=level().name+" Ch."+c.n;
+    apMark("rec",1,title);
+    keepWeek({blob:new Blob(chunks,{type:mime}),mime,sec,lv:LV,ch:c.n,title,at:new Date().toISOString()}).then(paintGrowth);
+    markStep(1);
   };
   rec.start();t0=Date.now();
-  $("rec-btn").textContent="止める";$("rec-btn").classList.add("on");
-  const show=()=>{const s=Math.floor((Date.now()-t0)/1000);msg("録音中 "+s+"秒"+(s<MIN?"（あと"+(MIN-s)+"秒）":"　言い終わったら「止める」"));};
-  show();tick=setInterval(show,1000);
-});
-$("rec-redo").addEventListener("click",resetRec);
-$("rec-ok").addEventListener("click",async()=>{
-  if(!last||last.sec<MIN)return;
-  $("rec-ok").disabled=true;
-  const c=chapter(),title=level().name+" Ch."+c.n;
-  apMark("rec",1,title);
-  const kept=await keepWeek({blob:last.blob,mime:last.mime,sec:last.sec,lv:LV,ch:c.n,title,at:new Date().toISOString()});
-  msg("できた。"+(kept===true?"今週の成長記録に残しました。":kept===false?"今週の分はもう残っています。":""),"ok");
-  paintGrowth();markStep(1);
+  $("rec-btn").classList.add("on");$("rec-btn").setAttribute("aria-label","止める");
+  const upd=()=>msg(Math.floor((Date.now()-t0)/1000)+"秒");   // 秒数は録音中だけ
+  upd();tick=setInterval(upd,1000);
 });
 
-/* ---- STEP の済み：今日の分だけ端末に {day, d:{"b:5":[1,2]}}。章の全部の STEP ができたら章クリア ---- */
+/* ---- STEP：今日の分だけ端末に {day, d:{"b:5":[1,2]}}。章の全部の STEP ができたら章クリア→今日の分の次の章へ ---- */
+let CUR=0;   /* 今出している STEP（0＝章の全部ができた） */
 const stepsOf=c=>[1].concat(c.st2&&c.st2.length?[2]:[],c.st3&&c.st3.length?[3]:[]);
 const stepsDone=()=>{const s=store.get("steps",null);return s&&s.day===dayAgo(0)?s.d:{};};
 const stepKey=()=>LV+":"+chapter().n;
-function paintSteps(){
-  const c=chapter(),has=stepsOf(c),d=stepsDone()[stepKey()]||[];
-  [1,2,3].forEach(n=>{
-    $("st"+n).hidden=!has.includes(n);
-    $("st"+n).classList.toggle("done",d.includes(n));$("st"+n).querySelector(".ck").hidden=!d.includes(n);
-    if(n>1){$("go"+n).textContent=d.includes(n)?"もう一度":"はじめる";$("msg"+n).textContent="";}
-  });
-  // STEP 2・3 の問題はカードの中にそのまま出す（教材なしでアプリだけでできる。2026-11-16 kimi）
-  const bold=t=>esc(t).replace(/\[([^\]]+)\]/g,"<b>$1</b>");
-  $("list2").innerHTML=(c.st2||[]).map(x=>'<li><span class="chip">'+esc(x.en)+'<small>'+esc(x.ja)+'</small></span><p class="en">'+bold(x.T)+'</p><p class="ja">'+esc(x.jaT)+'</p></li>').join("");
-  $("list3").innerHTML=(c.st3||[]).map(x=>'<li><b>'+esc(x.title)+(x.titleJa?"（"+esc(x.titleJa)+"）":"")+'</b><p class="en">'+esc(x.sit)+'</p><p class="ja">'+esc(x.sitJa)+'</p><p class="en"><b>→ </b>'+esc(x.task)+'</p><p class="ja">'+esc(x.taskJa)+'</p></li>').join("");
+const nextStep=()=>{const d=stepsDone()[stepKey()]||[];return stepsOf(chapter()).find(n=>!d.includes(n))||0;};
+function show(n){
+  stopRec(true);stepStop();
+  CUR=n;
+  $("st1").hidden=n!==1;$("st0").hidden=n!==0;
+  paintSteps();
+  if(n>1)stepStart(n);   // STEP 2・3 は開いたらすぐ問題
 }
+function paintSteps(){
+  const has=stepsOf(chapter()),d=stepsDone()[stepKey()]||[];
+  $("sdots").hidden=has.length<2;
+  $("sdots").innerHTML=has.map(n=>'<button class="sd'+(n===CUR?" cur":d.includes(n)?" ok":"")+'" data-st="'+n+'" aria-label="STEP '+n+(d.includes(n)?"（できた）":"")+'"'+(n===CUR?' aria-current="step"':"")+'><i></i></button>').join("");
+}
+$("sdots").addEventListener("click",e=>{const b=e.target.closest("[data-st]");if(b)show(+b.dataset.st);});
 function markStep(n){
   const all=stepsDone(),k=stepKey(),c=chapter();
   all[k]=[...new Set([...(all[k]||[]),n])];store.set("steps",{day:dayAgo(0),d:all});
-  paintSteps();
-  if(!stepsOf(c).every(x=>all[k].includes(x)))return;
+  if(!stepsOf(c).every(x=>all[k].includes(x))){show(nextStep());return;}
   const done=store.get("done_"+LV,[]);   /* 全部の STEP ができた章＝章クリア。名簿の cleared へ（管理サイト・先生用の入口の「マスターした章」） */
   if(!done.includes(c.n)){done.push(c.n);store.set("done_"+LV,done);}
   (window.aps=window.aps||[]).push(["cleared",{b:store.get("done_b",[]),i:store.get("done_i",[]),z:store.get("done_z",[])}]);
-  const nt=TODO[TODO.indexOf(CH)+1];
-  if(TODO.includes(CH)&&nt!==undefined){$("btn-nextch").textContent="次の章へ（Ch "+level().chapters[nt].n+"）";$("btn-nextch").hidden=false;}
+  const nt=TODO.includes(CH)?TODO[TODO.indexOf(CH)+1]:undefined;
+  nt!==undefined?go(nt):show(0);   // 2章ある日は、そのまま次の章へ
 }
 
 /* ---- STEP 2・3：1問ずつ出す → 🎤で送って次へ（待たない）→ 全部の後に添削を1文ずつ見て3回（/adlib.js） ---- */
 let RUN=null;   /* {n 2|3, L 問題, i, sent 送った分} */
 function view(k){$("v-adlib").hidden=k!=="adlib";$("v-fix").hidden=k!=="fix";}
-function stepStop(){if(RUN){Adlib.reset();Adlib.micRelease();RUN=null;}view("");$("run").hidden=true;   /* view("")：v-adlib・v-fix を隠す（sync.js が要素の hidden で「AI添削」の時間を数えるため） */
-  $("go2").hidden=$("go3").hidden=false;}
+function stepStop(){if(RUN){Adlib.reset();Adlib.micRelease();RUN=null;}view("");$("run").hidden=true;}   /* view("")：v-adlib・v-fix を隠す（sync.js が要素の hidden で「AI添削」の時間を数えるため） */
 function stepStart(n){
-  stepStop();stopRec(false);
-  $("st"+n).querySelector(".cin").appendChild($("run"));$("run").hidden=false;$("go"+n).hidden=true;$("msg"+n).textContent="";
+  $("run").hidden=false;
   RUN={n,L:n===2?chapter().st2:chapter().st3,i:0,sent:[]};ask();
-  $("st"+n).scrollIntoView({behavior:"smooth",block:"start"});
 }
 function ask(){
-  const c=chapter(),x=RUN.L[RUN.i],k=(RUN.i+1)+" / "+RUN.L.length,pattern=c.pattern||c.title;   /* 型：Business は章の pattern、B/I は章の題 */
-  if(RUN.n===2)Adlib.show({tag:"STEP 2",n:k,question:x.T,qja:x.jaT,words:[{en:x.en,ja:x.ja}],word:x.en,meaning:x.ja,pattern,
-    how:"太字の単語を使って、自分のことを答えます。🎤を押して話し、言えたらもう一度押すと次へ"});
-  else Adlib.show({tag:"STEP 3",n:k,title:x.title+(x.titleJa?"（"+x.titleJa+"）":""),situation:x.sit,sitJa:x.sitJa,question:x.task,qja:x.taskJa,word:"",meaning:"",pattern,model:x.model,
-    how:"状況を読んで、自分で言います。🎤を押して話し、言えたらもう一度押すと次へ"});
+  const c=chapter(),x=RUN.L[RUN.i],pattern=c.pattern||c.title;   /* 型：Business は章の pattern、B/I は章の題 */
+  if(RUN.n===2)Adlib.show({question:x.T,qja:x.jaT,words:[{en:x.en,ja:x.ja}],word:x.en,meaning:x.ja,pattern});
+  else Adlib.show({situation:x.sit,sitJa:x.sitJa,question:x.task,qja:x.taskJa,word:"",meaning:"",pattern,model:x.model});
 }
 Adlib.setup({
   send(it){if(!RUN)return;   /* STEP 2・3 の途中でない時は何もしない */RUN.sent.push(it);if(++RUN.i<RUN.L.length)ask();else Adlib.fix(RUN.sent);},
   done(){
     if(!RUN)return;
-    const n=RUN.n;RUN=null;
+    const n=RUN.n;
     apMark("adlib",1,level().name+" Ch."+chapter().n+" STEP"+n);
-    stepStop();markStep(n);$("msg"+n).textContent="できた。";
-    $("st"+n).scrollIntoView({behavior:"smooth",block:"start"});
+    stepStop();markStep(n);
   }
 });
-$("run").addEventListener("click",e=>{if(e.target.closest("#a-mic,#a-again"))stopRec(false);},true);   // STEP 2・3 の🎤の前に STEP 1 の録音を止める（マイクを2本同時に取らない）
-$("go2").addEventListener("click",()=>stepStart(2));
-$("go3").addEventListener("click",()=>stepStart(3));
 
 /* ---- 成長記録：毎週1本だけ（その週に最初に「できた」の録音）。IndexedDB ap_growth、キー＝週の月曜（日本時間）。最大52週 ---- */
 const weekOf=()=>{const d=new Date(Date.now()+9*36e5);d.setUTCDate(d.getUTCDate()-(d.getUTCDay()+6)%7);return d.toISOString().slice(0,10);};

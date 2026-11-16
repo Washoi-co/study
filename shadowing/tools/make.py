@@ -4,11 +4,13 @@
 使い方（shadowing/ で）:
   python3 tools/make.py fetch L3-1 ...  # VOAのページを保存・動画（音声だけの記事は音声＋タイトル画）を落とす・faster-whisper で単語の時刻 → sources/{id}_page.html, _src.mp4, _whisper.json
   python3 tools/make.py plan L1-1 ...   # OpenAI に区間・訳・単語・クイズを作らせる → sources/{id}_plan.json
-  python3 tools/make.py build L1-1 ...  # 動画を切って圧縮・字幕を作る・data/lessons.json を更新
+  python3 tools/make.py build L1-1 ...  # 動画を切って圧縮・字幕を作る・data/lessons.json を更新（話していない間は詰める）
+  python3 tools/make.py trim L1-4 ...   # build 済みの本の、話していない間だけを詰め直す（plan・OpenAI は使わない。間がない本は触らない）
 引数なしなら全部。APIキーは環境変数 OPENAI_API_KEY か、ENV_FILE（既定 ~/apush/sns-pipeline/.env）から読む。
 whisper のモデルは WHISPER_MODEL（既定 small、CPU int8）。id ごとに別プロセスで同時に走らせてよい（書くのは自分の id のファイルと、最後にまとめる lessons.json だけ）。
 """
-import json, os, re, sys, html, subprocess, difflib, time, ssl, urllib.request
+import json, os, re, sys, html, subprocess, difflib, time, ssl, urllib.request, math
+from fractions import Fraction
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -255,11 +257,67 @@ def still(title, path):
     im.save(path)
 
 
+def enc(i):
+    """縮める大きさと圧縮の設定。大きすぎる本は LESSONS に height=540 / crf=30〜32 を入れる（GitHub Pages 用に1本45MB未満）"""
+    L = LESSONS.get(i, {})
+    return f"scale=-2:{L.get('height', 720)}", ["-c:v", "libx264", "-crf", str(L.get("crf", 28)), "-preset", "slow", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart"]
+
+
+# 話していない間（音楽だけ・無音）を詰める（2026-11-17 kimi）。GAP_MAX 秒より長い間は、前の声の後 GAP_AFTER＋次の声の前 GAP_BEFORE＝0.6 秒だけ残す
+GAP_MAX, GAP_AFTER, GAP_BEFORE = 2.0, 0.2, 0.4
+
+
+def spans(i, cues, a, b):
+    """残す区間 [(s, e)]（元の動画の秒）。声＝字幕の行＋whisper の単語（字幕にない声も残す）。
+    切れ目は動画のコマに合わせて内側に丸める（つなぎ目で音と映像の長さがそろい、ずれがたまらない）"""
+    fps = Fraction(subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate", "-of", "csv=p=0", SRC / f"{i}_src.mp4"],
+                                  capture_output=True, text=True, check=True).stdout.strip())
+    talk = [(c["start"], c["end"]) for c in cues] + [(w[0], w[1]) for s in json.load(open(SRC / f"{i}_whisper.json")) for w in s["w"]
+                                                    if a < w[1] and w[0] < b and re.search(r"[A-Za-z0-9]", w[2])]
+    out, s0, end = [], a, a
+    for s, e in sorted(talk):
+        x, y = math.ceil((end + GAP_AFTER) * fps) / fps, math.floor((s - GAP_BEFORE) * fps) / fps
+        if s - end > GAP_MAX and y > x:
+            out.append((s0, float(x))); s0 = float(y)
+        end = max(end, e)
+    return out + [(s0, b)]
+
+
+def cut(i, lesson, cues, a, b):
+    """元の動画の a〜b から、話している所だけをつないで圧縮する（間がなければ今までの -ss/-to と同じ中身）。
+    字幕の行 cues（元の動画の秒）を、できた動画の秒にして返す。字幕なしの段の音声版（audio_only）も同じ音声で作る"""
+    sp = spans(i, cues, a, b); vf, codec = enc(i)
+    g = "".join(f"[0:v]trim={s:.3f}:{e:.3f},setpts=PTS-STARTPTS[v{n}];[0:a]atrim={s:.3f}:{e:.3f},asetpts=PTS-STARTPTS[a{n}];" for n, (s, e) in enumerate(sp))
+    g += "".join(f"[v{n}][a{n}]" for n in range(len(sp))) + f"concat=n={len(sp)}:v=1:a=1[vc][a];[vc]{vf}[v]"
+    ff("-i", SRC / f"{i}_src.mp4", "-filter_complex", g, "-map", "[v]", "-map", "[a]", *codec, MEDIA / f"{i}.mp4")
+    off, m = 0.0, []
+    for s, e in sp:
+        m.append((e, off - s)); off += e - s
+    sh = lambda t: next(t + d for e, d in m if t <= e + 1e-6)  # 声の前後は残しているので、行の時刻が切った所に落ちることはない
+    lesson["clip_spans"] = [[round(s, 2), round(e, 2)] for s, e in sp]
+    if lesson.get("audio_only"):  # 字幕なしの段：同じ音声（動画からそのまま）＋タイトルだけの静止画
+        ff("-loop", "1", "-framerate", "1", "-i", SRC / f"{i}_still.png", "-i", MEDIA / f"{i}.mp4", "-map", "0:v", "-map", "1:a", "-t", f"{off:.2f}",
+           "-c:v", "libx264", "-tune", "stillimage", "-pix_fmt", "yuv420p", "-r", "1", "-c:a", "copy", "-movflags", "+faststart", MEDIA / f"{i}_audio.mp4")
+    return [dict(c, start=sh(c["start"]), end=sh(c["end"])) for c in cues]
+
+
+def trim(i):
+    """build 済みの本の、話していない間だけを詰め直す（lesson.json の行の時刻から。plan も OpenAI も使わない）。間がない本・NASA は触らない"""
+    lesson = json.load(open(SRC / f"{i}_lesson.json"))
+    if lesson["source"] == "nasa" or lesson.get("clip_spans"):
+        return print(i, "そのまま（NASA は加工しない約束／もう詰めてある）")
+    if not (SRC / f"{i}_src.mp4").exists():
+        return print(i, "元の動画が sources にない（無料版の動画を使う本は、無料版の側で詰める）")
+    a, b = lesson["clip_start"], lesson["clip_end"]
+    cues = [dict(c, start=c["start"] + a, end=c["end"] + a) for c in lesson["lines"]]
+    if len(spans(i, cues, a, b)) == 1:
+        return print(i, "間なし（動画は触らない）")
+    save(i, lesson, cut(i, lesson, cues, a, b))
+
+
 def build(i):
     L, P = LESSONS[i], json.load(open(SRC / f"{i}_plan.json"))
     src = SRC / f"{i}_src.mp4"
-    # 大きすぎる本は LESSONS に height=540 / crf=30〜32 を入れる（GitHub Pages 用に1本45MB未満）
-    enc = ["-vf", f"scale=-2:{L.get('height', 720)}", "-c:v", "libx264", "-crf", str(L.get("crf", 28)), "-preset", "slow", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart"]
     lesson = dict(id=i, level=L["level"], title=L["title"], source=L["source"], source_url=L["url"],
                   video=f"media/{i}.mp4", audio_only=None, subs_en=f"subs/{i}.en.vtt", subs_ja=f"subs/{i}.ja.vtt",
                   clip_start=None, clip_end=None, cover_height=0.22 if L["source"] == "voa" and not L.get("report") else 0,
@@ -268,7 +326,7 @@ def build(i):
                   credit=VOA_CREDIT if L["source"] == "voa" else NASA_CREDIT, active=True)
     if L["source"] == "nasa":  # 切らない・焼き込まない。720pに縮めるだけ
         cues = [dict(c, ja=l["ja"]) for c, l in zip(srt_cues(SRC / f"{i}.en.srt"), P["lines"])]
-        ff("-i", src, *enc, MEDIA / f"{i}.mp4")
+        vf, codec = enc(i); ff("-i", src, "-vf", vf, *codec, MEDIA / f"{i}.mp4")
     else:
         segs = json.load(open(SRC / f"{i}_whisper.json"))
         # 区間は OpenAI が選んだセグメントの少し外まで探し、実際に最初と最後の行が聞こえる所で切る
@@ -276,15 +334,16 @@ def build(i):
         words = [w for s in segs for w in s["w"]]
         times = align(P["lines"], words, w0, w1)
         a = max(times[0][0] - 0.4, 0); b = times[-1][1] + 0.6
-        cues = [{"start": s - a, "end": e - a + 0.15, "en": l["en"], "ja": l["ja"]} for (s, e), l in zip(times, P["lines"])]
         lesson.update(clip_start=round(a, 2), clip_end=round(b, 2))
-        ff("-ss", f"{a:.2f}", "-to", f"{b:.2f}", "-i", src, *enc, MEDIA / f"{i}.mp4")
-        if L.get("story"):  # 字幕なしの段：同じ区間の音声＋タイトルだけの静止画
-            png = SRC / f"{i}_still.png"; still(L["title"], png)
-            ff("-loop", "1", "-framerate", "1", "-i", png, "-ss", f"{a:.2f}", "-to", f"{b:.2f}", "-i", src,
-               "-map", "0:v", "-map", "1:a", "-t", f"{b - a:.2f}",  # -shortest だけだと静止画が音声より長く残る "-c:v", "libx264", "-tune", "stillimage", "-pix_fmt", "yuv420p", "-r", "1",
-               "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", MEDIA / f"{i}_audio.mp4")
-            lesson["audio_only"] = f"media/{i}_audio.mp4"
+        if L.get("story"):  # 字幕なしの段の音声版（音声＋タイトルだけの静止画。cut が作る）
+            still(L["title"], SRC / f"{i}_still.png"); lesson["audio_only"] = f"media/{i}_audio.mp4"
+        cues = cut(i, lesson, [{"start": s, "end": e + 0.15, "en": l["en"], "ja": l["ja"]} for (s, e), l in zip(times, P["lines"])], a, b)
+    save(i, lesson, cues)
+
+
+def save(i, lesson, cues):
+    """字幕（英・日）と sources/{id}_lesson.json を書き、data/lessons.json をまとめ直す"""
+    L = LESSONS.get(i, {})
     vtt(SUBS / f"{i}.en.vtt", cues, "en"); vtt(SUBS / f"{i}.ja.vtt", cues, "ja")
     lesson["lines"] = [{"start": round(c["start"], 2), "end": round(c["end"], 2), "en": c["en"], "ja": c["ja"]} for c in cues]
     tmp = SRC / f"{i}_lesson.json.tmp"; tmp.write_text(json.dumps(lesson, ensure_ascii=False)); tmp.replace(SRC / f"{i}_lesson.json")  # 並列 build が書きかけを読まないように
@@ -294,7 +353,7 @@ def build(i):
     f.write_text(json.dumps(db, ensure_ascii=False, indent=1))
     mb = (MEDIA / f"{i}.mp4").stat().st_size / 1e6
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", MEDIA / f"{i}.mp4"], capture_output=True, text=True).stdout)
-    print(f"{i} build ok  clip={lesson['clip_start']}–{lesson['clip_end']}  {dur:.1f}s  {mb:.1f}MB")
+    print(f"{i} ok  clip={lesson['clip_start']}–{lesson['clip_end']}  区間{len(lesson.get('clip_spans') or [0])}  {dur:.1f}s  {mb:.1f}MB")
     if "dur" in L and not L["dur"][0] - 5 <= dur <= L["dur"][1] + 5:
         print(f"  ! 長さが範囲外: {dur:.0f}s（目安 {L['dur']}）")
     if mb > 45:
@@ -304,4 +363,4 @@ def build(i):
 if __name__ == "__main__":
     cmd, ids = sys.argv[1], sys.argv[2:] or list(LESSONS)
     for i in ids:
-        {"fetch": fetch, "plan": plan, "build": build}[cmd](i)
+        {"fetch": fetch, "plan": plan, "build": build, "trim": trim}[cmd](i)

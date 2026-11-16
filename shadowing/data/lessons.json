@@ -213,11 +213,21 @@
      "ja": "こちらこそ。じゃあね。"
     },
     {
-     "start": 40.64,
-     "end": 43.4,
+     "start": 38.72,
+     "end": 41.48,
      "en": "Apartment C2, here I come!",
      "ja": "C2号室、さあ行こう！"
     }
+   ],
+   "clip_spans": [
+    [
+     170.18,
+     208.48
+    ],
+    [
+     210.4,
+     214.03
+    ]
    ]
   },
   {
@@ -389,143 +399,165 @@
      "ja": "今日は職場のみんなに謝りに行きます。"
     },
     {
-     "start": 29.44,
-     "end": 31.77,
+     "start": 26.36,
+     "end": 28.69,
      "en": "Hi, Anne. Are you busy?",
      "ja": "やあ、アン。いま忙しい？"
     },
     {
-     "start": 31.62,
-     "end": 36.45,
+     "start": 28.54,
+     "end": 33.37,
      "en": "Hi, Anna. Yes. At 10 a.m. I am writing.",
      "ja": "こんにちは、アナ。忙しいわ。10時は原稿を書いているの。"
     },
     {
-     "start": 37.02,
-     "end": 39.77,
+     "start": 33.94,
+     "end": 36.69,
      "en": "Every day I do my morning show.",
      "ja": "毎朝、朝の番組をやっているのよ。"
     },
     {
-     "start": 40.46,
-     "end": 41.13,
+     "start": 37.38,
+     "end": 38.05,
      "en": "Sorry!",
      "ja": "ごめんなさいね。"
     },
     {
-     "start": 41.92,
-     "end": 45.61,
+     "start": 38.84,
+     "end": 42.53,
      "en": "Okay. See you later, maybe.",
      "ja": "そっか。またあとで、会えたらね。"
     },
     {
-     "start": 46.72,
-     "end": 48.19,
+     "start": 43.64,
+     "end": 45.11,
      "en": "Maybe I’ll see you later.",
      "ja": "たぶん、またあとで会いましょう。"
     },
     {
-     "start": 63.08,
-     "end": 65.49,
+     "start": 45.76,
+     "end": 48.17,
      "en": "Hi, Jonathan. Are you busy?",
      "ja": "やあ、ジョナサン。忙しい？"
     },
     {
-     "start": 65.94,
-     "end": 67.13,
+     "start": 48.62,
+     "end": 49.81,
      "en": "Yes, I’m busy.",
      "ja": "ああ、忙しいよ。"
     },
     {
-     "start": 67.52,
-     "end": 71.73,
+     "start": 50.2,
+     "end": 54.41,
      "en": "When the studio light is on, I am recording my evening show.",
      "ja": "スタジオのランプがついているときは、夕方の番組を録画しているんだ。"
     },
     {
-     "start": 72.12,
-     "end": 74.07,
+     "start": 54.8,
+     "end": 56.75,
      "en": "Right. Sorry about yesterday.",
      "ja": "そっか。昨日のことはごめんね。"
     },
     {
-     "start": 74.52,
-     "end": 75.29,
+     "start": 57.2,
+     "end": 57.97,
      "en": "No worries.",
      "ja": "気にしないで。"
     },
     {
-     "start": 75.74,
-     "end": 76.89,
+     "start": 58.42,
+     "end": 59.57,
      "en": "May I see the studio?",
      "ja": "スタジオを見てもいい？"
     },
     {
-     "start": 76.88,
-     "end": 78.27,
+     "start": 59.56,
+     "end": 60.95,
      "en": "Um, maybe another time?",
      "ja": "うーん、また今度にしてくれる？"
     },
     {
-     "start": 78.58,
-     "end": 80.31,
+     "start": 61.26,
+     "end": 62.99,
      "en": "Right now I am busy.",
      "ja": "今は忙しくてね。"
     },
     {
-     "start": 81.12,
-     "end": 83.67,
+     "start": 63.8,
+     "end": 66.35,
      "en": "Sure. Okay, ’bye.",
      "ja": "わかった。じゃあ、またね。"
     },
     {
-     "start": 84.02,
-     "end": 84.43,
+     "start": 66.7,
+     "end": 67.11,
      "en": "‘Bye.",
      "ja": "またね。"
     },
     {
-     "start": 116.4,
-     "end": 119.39,
+     "start": 75.32,
+     "end": 78.31,
      "en": "Hi, Amelia! Are you busy?",
      "ja": "やあ、アメリア。忙しい？"
     },
     {
-     "start": 119.72,
-     "end": 120.79,
+     "start": 78.64,
+     "end": 79.71,
      "en": "I’m a little busy.",
      "ja": "ちょっとだけ忙しいかな。"
     },
     {
-     "start": 120.64,
-     "end": 125.29,
+     "start": 79.56,
+     "end": 84.21,
      "en": "I want to say I’m sorry for yesterday.",
      "ja": "昨日のことを、ちゃんと謝りたいの。"
     },
     {
-     "start": 125.66,
-     "end": 126.79,
+     "start": 84.58,
+     "end": 85.71,
      "en": "It’s okay, Anna.",
      "ja": "大丈夫よ、アナ。"
     },
     {
-     "start": 127.16,
-     "end": 128.45,
+     "start": 86.08,
+     "end": 87.37,
      "en": "Well, I am sorry.",
      "ja": "でも、本当に悪かったと思ってるの。"
     },
     {
-     "start": 128.82,
-     "end": 131.27,
+     "start": 87.74,
+     "end": 90.19,
      "en": "It’s okay, Anna. Come by this afternoon.",
      "ja": "気にしないで、アナ。今日の午後、寄ってちょうだい。"
     },
     {
-     "start": 131.92,
-     "end": 132.49,
+     "start": 90.84,
+     "end": 91.41,
      "en": "Okay.",
      "ja": "わかった。"
     }
+   ],
+   "clip_spans": [
+    [
+     20.14,
+     46.08
+    ],
+    [
+     49.16,
+     68.56
+    ],
+    [
+     82.8,
+     104.8
+    ],
+    [
+     114.4,
+     121.96
+    ],
+    [
+     136.12,
+     153.08
+    ]
    ]
   },
   {
@@ -656,119 +688,133 @@
      "ja": "本当に、アナ？　ぼくを助けてくれる？"
     },
     {
-     "start": 16.4,
-     "end": 19.11,
+     "start": 11.88,
+     "end": 14.59,
      "en": "Yes, I can. Let me help.",
      "ja": "うん、できるよ。任せて。"
     },
     {
-     "start": 19.82,
-     "end": 22.33,
+     "start": 15.3,
+     "end": 17.81,
      "en": "Sure, Anna. Maybe you can help.",
      "ja": "わかったよ、アナ。もしかしたら助かるかも。"
     },
     {
-     "start": 22.44,
-     "end": 25.05,
+     "start": 17.92,
+     "end": 20.53,
      "en": "Can you write code?",
      "ja": "コードは書ける？"
     },
     {
-     "start": 26.7,
-     "end": 32.55,
+     "start": 22.18,
+     "end": 28.03,
      "en": "Sure, c-o-l-d. How is this going to help?",
      "ja": "もちろん。C-O-L-D。これがどう役に立つの？"
     },
     {
-     "start": 33.2,
-     "end": 43.19,
+     "start": 28.68,
+     "end": 38.67,
      "en": "No, not “cold.” Code; you know, for making phone apps, or websites. You can make tons of money writing code.",
      "ja": "違うよ、“cold”じゃなくて “code”。スマホのアプリやウェブサイトを作るためのもの。コードが書けると、たくさんお金を稼げるよ。"
     },
     {
-     "start": 44.1,
-     "end": 46.69,
+     "start": 39.58,
+     "end": 42.17,
      "en": "Tons of money? But I can’t code.",
      "ja": "そんなにお金？　でも、ぼくはコードは書けないよ。"
     },
     {
-     "start": 47.24,
-     "end": 49.63,
+     "start": 42.72,
+     "end": 45.11,
      "en": "Next question. Can you drive?",
      "ja": "次の質問。運転はできる？"
     },
     {
-     "start": 49.48,
-     "end": 57.35,
+     "start": 44.96,
+     "end": 52.83,
      "en": "Do you mean drive a race car? It’s really hard to be a race car driver. First, you need a race car ...",
      "ja": "レースカーを運転するってこと？　レーサーになるのはすごく大変だよ。まずレースカーが必要だし…"
     },
     {
-     "start": 57.4,
-     "end": 60.97,
+     "start": 52.88,
+     "end": 56.45,
      "en": "No, I mean drive a taxi or drive a bus.",
      "ja": "違うよ。タクシーとかバスを運転するってこと。"
     },
     {
-     "start": 62.72,
-     "end": 65.31,
+     "start": 58.2,
+     "end": 60.79,
      "en": "No, I always fall asleep when I drive.",
      "ja": "いや、ぼくは運転するといつも眠くなっちゃうんだ。"
     },
     {
-     "start": 66.06,
-     "end": 97.03,
+     "start": 61.54,
+     "end": 92.51,
      "en": "Oh, that’s not good. Next question. Can you teach? You can be a teacher in a school.",
      "ja": "それはよくないね。次の質問。教えることはできる？　学校の先生になれるよ。"
     },
     {
-     "start": 97.76,
-     "end": 99.85,
+     "start": 93.24,
+     "end": 95.33,
      "en": "No, I cannot teach.",
      "ja": "いや、教えるのは無理だ。"
     },
     {
-     "start": 101.4,
-     "end": 104.85,
+     "start": 96.88,
+     "end": 100.33,
      "en": "Can you cook? You can be a chef in a restaurant.",
      "ja": "料理はできる？　レストランのシェフになれるよ。"
     },
     {
-     "start": 109.96,
-     "end": 125.79,
+     "start": 100.96,
+     "end": 116.79,
      "en": "No, I can’t code! I can’t teach! I can’t cook! Anna, I can’t do anything. This is sad. I’m gonna write about my feelings in my blog.",
      "ja": "だめだよ。コードも書けない！　教えられない！　料理もできない！　アナ、ぼくには何もできないよ。悲しいな。ブログにこの気持ちを書くことにするよ。"
     },
     {
-     "start": 127.76,
-     "end": 129.29,
+     "start": 118.76,
+     "end": 120.29,
      "en": "You write a blog?",
      "ja": "ブログを書いてるの？"
     },
     {
-     "start": 129.76,
-     "end": 130.85,
+     "start": 120.76,
+     "end": 121.85,
      "en": "Yeah, I write a blog.",
      "ja": "うん、ブログ書いてるよ。"
     },
     {
-     "start": 131.76,
-     "end": 133.69,
+     "start": 122.76,
+     "end": 124.69,
      "en": "How many followers do you have?",
      "ja": "フォロワーは何人いるの？"
     },
     {
-     "start": 134.54,
-     "end": 135.29,
+     "start": 125.54,
+     "end": 126.29,
      "en": "I don’t know … 59,538.",
      "ja": "さあね…５万９５３８人かな。"
     },
     {
-     "start": 139.04,
-     "end": 144.59,
+     "start": 130.04,
+     "end": 135.59,
      "en": "Pete, that's a lot of followers! You can make money writing!",
      "ja": "ピート、それはすごい人数だよ！　文章でお金を稼げるよ！"
     }
+   ],
+   "clip_spans": [
+    [
+     87.18,
+     98.64
+    ],
+    [
+     103.16,
+     192.24
+    ],
+    [
+     196.72,
+     232.22
+    ]
    ]
   },
   {
@@ -916,179 +962,197 @@
      "ja": "マーシャなら知っている。"
     },
     {
-     "start": 9.06,
-     "end": 10.39,
+     "start": 6.78,
+     "end": 8.11,
      "en": "Marsha's work number is 555-8986.",
      "ja": "マーシャの職場の電話番号は 555-8986 です。"
     },
     {
-     "start": 10.24,
-     "end": 17.45,
+     "start": 7.96,
+     "end": 15.17,
      "en": "Hello.",
      "ja": "もしもし。"
     },
     {
-     "start": 17.3,
-     "end": 19.75,
+     "start": 15.02,
+     "end": 17.47,
      "en": "Hello. Is this Marsha?",
      "ja": "もしもし。マーシャさんですか。"
     },
     {
-     "start": 20.46,
-     "end": 21.27,
+     "start": 18.18,
+     "end": 18.99,
      "en": "It is Anna.",
      "ja": "アンナです。"
     },
     {
-     "start": 21.64,
-     "end": 23.81,
+     "start": 19.36,
+     "end": 21.53,
      "en": "I am sorry. You have the wrong number.",
      "ja": "すみません。番号が違っていますよ。"
     },
     {
-     "start": 24.41,
-     "end": 25.29,
+     "start": 22.13,
+     "end": 23.01,
      "en": "Oh. Is this 555-8986?",
      "ja": "あ、ここは 555-8986 ですか。"
     },
     {
-     "start": 28.98,
-     "end": 30.13,
+     "start": 26.7,
+     "end": 27.85,
      "en": "No. This is 555-8689.",
      "ja": "いいえ、ここは 555-8689 です。"
     },
     {
-     "start": 34.14,
-     "end": 35.99,
+     "start": 31.86,
+     "end": 33.71,
      "en": "Oh, excuse me!",
      "ja": "あ、失礼しました。"
     },
     {
-     "start": 36.04,
-     "end": 36.89,
+     "start": 33.76,
+     "end": 34.61,
      "en": "Okay. 'Bye.",
      "ja": "はい、では。"
     },
     {
-     "start": 38.22,
-     "end": 39.91,
+     "start": 35.94,
+     "end": 37.63,
      "en": "One more time.",
      "ja": "もう一回。"
     },
     {
-     "start": 39.76,
-     "end": 45.65,
+     "start": 37.48,
+     "end": 43.37,
      "en": "555-8986.",
      "ja": "555-8986。"
     },
     {
-     "start": 45.5,
-     "end": 46.35,
+     "start": 43.22,
+     "end": 44.07,
      "en": "Please be Marsha.",
      "ja": "どうかマーシャが出ますように。"
     },
     {
-     "start": 49.87,
-     "end": 51.41,
+     "start": 45.11,
+     "end": 46.65,
      "en": "Hello. This is Marsha.",
      "ja": "もしもし、マーシャです。"
     },
     {
-     "start": 52.02,
-     "end": 52.41,
+     "start": 47.26,
+     "end": 47.65,
      "en": "Yes, Marsha.",
      "ja": "よかった、マーシャ。"
     },
     {
-     "start": 52.76,
-     "end": 54.93,
+     "start": 48.0,
+     "end": 50.17,
      "en": "I want to cook dinner.",
      "ja": "夕ごはんを作りたいの。"
     },
     {
-     "start": 55.36,
-     "end": 56.05,
+     "start": 50.6,
+     "end": 51.29,
      "en": "Excuse me?",
      "ja": "えっ、何て言ったの？"
     },
     {
-     "start": 56.58,
-     "end": 57.85,
+     "start": 51.82,
+     "end": 53.09,
      "en": "Anna, is that you?",
      "ja": "アンナ？　あなたなの？"
     },
     {
-     "start": 58.02,
-     "end": 59.51,
+     "start": 53.26,
+     "end": 54.75,
      "en": "Oh, yes. I am here!",
      "ja": "あ、はい。私よ、アンナ。"
     },
     {
-     "start": 59.86,
-     "end": 61.55,
+     "start": 55.1,
+     "end": 56.79,
      "en": "Good. You are there.",
      "ja": "よかった、つながったわ。"
     },
     {
-     "start": 61.94,
-     "end": 64.53,
+     "start": 57.18,
+     "end": 59.77,
      "en": "I want to find a supermarket.",
      "ja": "スーパーを探したいの。"
     },
     {
-     "start": 64.8,
-     "end": 65.99,
+     "start": 60.04,
+     "end": 61.23,
      "en": "Oh, okay.",
      "ja": "ああ、わかった。"
     },
     {
-     "start": 66.38,
-     "end": 70.93,
+     "start": 61.62,
+     "end": 66.17,
      "en": "The supermarket is at 1500 Irving Street.",
      "ja": "スーパーはアーヴィング通り 1500 番地にあるわ。"
     },
     {
-     "start": 71.26,
-     "end": 72.85,
+     "start": 66.5,
+     "end": 68.09,
      "en": "It is near the apartment.",
      "ja": "私たちのアパートの近くよ。"
     },
     {
-     "start": 73.26,
-     "end": 74.61,
+     "start": 68.5,
+     "end": 69.85,
      "en": "Great! Goodbye!",
      "ja": "よかった！ じゃあね。"
     },
     {
-     "start": 75.16,
-     "end": 76.09,
+     "start": 70.4,
+     "end": 71.33,
      "en": "Goodbye, Anna.",
      "ja": "じゃあね、アンナ。"
     },
     {
-     "start": 78.32,
-     "end": 82.57,
+     "start": 71.96,
+     "end": 76.21,
      "en": "There is a big supermarket on our street.",
      "ja": "私たちの通りには大きなスーパーがあります。"
     },
     {
-     "start": 82.76,
-     "end": 86.39,
+     "start": 76.4,
+     "end": 80.03,
      "en": "And Marsha says I am a good cook!",
      "ja": "それに、マーシャは私の料理をほめてくれました。"
     },
     {
-     "start": 87.7,
-     "end": 88.75,
+     "start": 81.34,
+     "end": 82.39,
      "en": "Until next time!",
      "ja": "また次回。"
     },
     {
-     "start": 89.16,
-     "end": 89.61,
+     "start": 82.8,
+     "end": 83.25,
      "en": "Bye!",
      "ja": "バイバイ。"
     }
+   ],
+   "clip_spans": [
+    [
+     205.4,
+     211.48
+    ],
+    [
+     213.76,
+     252.36
+    ],
+    [
+     254.84,
+     281.72
+    ],
+    [
+     283.32,
+     295.46
+    ]
    ]
   },
   {
@@ -1282,83 +1346,117 @@
      "ja": "えっと、出てきたのは…"
     },
     {
-     "start": 38.22,
-     "end": 45.01,
+     "start": 33.58,
+     "end": 40.37,
      "en": "It is not a pen. It is a book. It is a big book.",
      "ja": "それ、ペンじゃないよ。本だよ。大きな本だね。"
     },
     {
-     "start": 45.36,
-     "end": 49.05,
+     "start": 40.72,
+     "end": 44.41,
      "en": "Yes. Yes it is, Pete. I know I have a pen, though…",
      "ja": "うん、そうねピート。本当はペンを持ってるはずなんだけど…。"
     },
     {
-     "start": 52.26,
-     "end": 54.46,
+     "start": 45.02,
+     "end": 47.22,
      "en": "I have a ....",
      "ja": "今度こそ…"
     },
     {
-     "start": 62.61,
-     "end": 67.93,
+     "start": 47.85,
+     "end": 53.17,
      "en": "It is not a pen, Anna ... a toy?",
      "ja": "それもペンじゃないよ、アンナ…。おもちゃ？"
     },
     {
-     "start": 68.36,
-     "end": 69.97,
+     "start": 53.6,
+     "end": 55.21,
      "en": "I have a ....",
      "ja": "えーと、これは…"
     },
     {
-     "start": 72.22,
-     "end": 75.09,
+     "start": 55.82,
+     "end": 58.69,
      "en": "And it is a pillow!",
      "ja": "それは…枕だよ！"
     },
     {
-     "start": 77.24,
-     "end": 80.95,
+     "start": 59.32,
+     "end": 63.03,
      "en": "Pete, Marsha, I know I have a pen.",
      "ja": "ピート、マーシャ、本当にペンは持ってるのよ。"
     },
     {
-     "start": 85.7,
-     "end": 88.29,
+     "start": 65.9,
+     "end": 68.49,
      "en": "Anna, it is a map.",
      "ja": "アンナ、それは地図だよ。"
     },
     {
-     "start": 90.04,
-     "end": 93.51,
+     "start": 70.24,
+     "end": 73.71,
      "en": "Why do you have a map of the world?",
      "ja": "なんで世界地図なんか持ってるの？"
     },
     {
-     "start": 93.96,
-     "end": 98.91,
+     "start": 74.16,
+     "end": 79.11,
      "en": "Pete, Marsha. Now I know I have a pen.",
      "ja": "ピート、マーシャ。今こそペンを見つけたわ。"
     },
     {
-     "start": 104.58,
-     "end": 106.67,
+     "start": 79.74,
+     "end": 81.83,
      "en": "And now you have a lamp.",
      "ja": "で、今度はランプまで出てきたね。"
     },
     {
-     "start": 106.52,
-     "end": 109.55,
+     "start": 81.68,
+     "end": 84.71,
      "en": "Anna.",
      "ja": "アンナ…。"
     },
     {
-     "start": 109.4,
-     "end": 112.13,
+     "start": 84.56,
+     "end": 87.29,
      "en": "I have a pen! Let’s get coffee!",
      "ja": "ペンあった！さあ、コーヒー飲みに行こう！"
     }
+   ],
+   "clip_spans": [
+    [
+     182.34,
+     215.52
+    ],
+    [
+     220.16,
+     231.6
+    ],
+    [
+     234.2,
+     237.0
+    ],
+    [
+     244.52,
+     252.52
+    ],
+    [
+     254.16,
+     257.64
+    ],
+    [
+     259.16,
+     263.52
+    ],
+    [
+     265.4,
+     281.48
+    ],
+    [
+     286.52,
+     294.92
+    ]
    ]
   },
   {
@@ -1516,89 +1614,115 @@
      "ja": "着きました！"
     },
     {
-     "start": 18.32,
-     "end": 20.55,
+     "start": 14.08,
+     "end": 16.31,
      "en": "Marsha, I am in the kitchen!",
      "ja": "マーシャ、私はキッチンにいるよ。"
     },
     {
-     "start": 23.06,
-     "end": 26.31,
+     "start": 16.94,
+     "end": 20.19,
      "en": "It is a beautiful kitchen!",
      "ja": "とってもきれいなキッチンだね。"
     },
     {
-     "start": 27.12,
-     "end": 28.87,
+     "start": 21.0,
+     "end": 22.75,
      "en": "It is beautiful.",
      "ja": "本当にきれいね。"
     },
     {
-     "start": 29.48,
-     "end": 32.77,
+     "start": 23.36,
+     "end": 26.65,
      "en": "We cook in the kitchen.",
      "ja": "キッチンでは料理をします。"
     },
     {
-     "start": 35.4,
-     "end": 37.59,
+     "start": 27.28,
+     "end": 29.47,
      "en": "I eat in the kitchen.",
      "ja": "私はキッチンでごはんを食べます。"
     },
     {
-     "start": 38.28,
-     "end": 41.29,
+     "start": 30.16,
+     "end": 33.17,
      "en": "We relax in the living room.",
      "ja": "私たちはリビングルームでくつろぎます。"
     },
     {
-     "start": 42.72,
-     "end": 46.73,
+     "start": 34.6,
+     "end": 38.61,
      "en": "I relax in the living room.",
      "ja": "私はリビングルームでくつろぎます。"
     },
     {
-     "start": 47.44,
-     "end": 49.93,
+     "start": 39.32,
+     "end": 41.81,
      "en": "Marsha, let’s go upstairs!",
      "ja": "マーシャ、二階に行こうよ。"
     },
     {
-     "start": 58.22,
-     "end": 60.15,
+     "start": 42.42,
+     "end": 44.35,
      "en": "Anna? Where are you?",
      "ja": "アンナ？ どこにいるの？"
     },
     {
-     "start": 60.22,
-     "end": 62.11,
+     "start": 44.42,
+     "end": 46.31,
      "en": "Marsha, I am in the bathroom!",
      "ja": "マーシャ、私はバスルームにいるよ。"
     },
     {
-     "start": 62.56,
-     "end": 64.47,
+     "start": 46.76,
+     "end": 48.67,
      "en": "I wash in the bathroom.",
      "ja": "バスルームでは体を洗います。"
     },
     {
-     "start": 70.68,
-     "end": 73.05,
+     "start": 49.32,
+     "end": 51.69,
      "en": "I am in the bedroom.",
      "ja": "私はベッドルームにいます。"
     },
     {
-     "start": 73.54,
-     "end": 76.33,
+     "start": 52.18,
+     "end": 54.97,
      "en": "We sleep in the bedroom.",
      "ja": "ベッドルームでは寝ます。"
     },
     {
-     "start": 78.1,
-     "end": 79.81,
+     "start": 56.74,
+     "end": 58.45,
      "en": "I sleep in the bedroom!",
      "ja": "私はベッドルームで寝ます！"
     }
+   ],
+   "clip_spans": [
+    [
+     149.86,
+     163.52
+    ],
+    [
+     167.76,
+     170.64
+    ],
+    [
+     172.52,
+     182.84
+    ],
+    [
+     184.84,
+     200.0
+    ],
+    [
+     207.68,
+     214.56
+    ],
+    [
+     220.12,
+     230.12
+    ]
    ]
   },
   {
@@ -1778,77 +1902,99 @@
      "ja": "違うよ、アナ！そっちじゃない！あっちに行って！"
     },
     {
-     "start": 57.72,
-     "end": 62.49,
+     "start": 31.04,
+     "end": 35.81,
      "en": "Oh, Pete. This is not the gym.",
      "ja": "ああ、ピート。ここ、ジムじゃないよ。"
     },
     {
-     "start": 63.34,
-     "end": 65.69,
+     "start": 36.66,
+     "end": 39.01,
      "en": "That’s right, Anna. This is the mailroom.",
      "ja": "そうだよ、アナ。ここは郵便室だ。"
     },
     {
-     "start": 67.68,
-     "end": 71.09,
+     "start": 41.0,
+     "end": 44.41,
      "en": "The gym is across from … what?",
      "ja": "ジムは何の向かいだっけ？"
     },
     {
-     "start": 71.42,
-     "end": 74.09,
+     "start": 44.74,
+     "end": 47.41,
      "en": "The gym is across from the lounge.",
      "ja": "ジムはラウンジの向かいだよ。"
     },
     {
-     "start": 73.94,
-     "end": 81.43,
+     "start": 47.26,
+     "end": 54.75,
      "en": "Across from the lounge. Right. Thanks!",
      "ja": "ラウンジの向かいね。そっか、ありがとう！"
     },
     {
-     "start": 93.82,
-     "end": 100.33,
+     "start": 55.42,
+     "end": 61.93,
      "en": "Pete! This is not the gym!",
      "ja": "ピート！ここ、ジムじゃないよ！"
     },
     {
-     "start": 100.18,
-     "end": 109.99,
+     "start": 61.78,
+     "end": 71.59,
      "en": "The gym is across from the lounge. It is behind the lobby.",
      "ja": "ジムはラウンジの向かいだよ。ロビーのうしろにあるんだ。"
     },
     {
-     "start": 111.52,
-     "end": 114.97,
+     "start": 73.12,
+     "end": 76.57,
      "en": "Right. Right. See you.",
      "ja": "そっか、そうか。じゃあね。"
     },
     {
-     "start": 115.82,
-     "end": 116.97,
+     "start": 77.42,
+     "end": 78.57,
      "en": "See you, Anna!",
      "ja": "またね、アナ！"
     },
     {
-     "start": 119.46,
-     "end": 120.79,
+     "start": 79.22,
+     "end": 80.55,
      "en": "See you.",
      "ja": "じゃあね。"
     },
     {
-     "start": 121.9,
-     "end": 123.35,
+     "start": 81.66,
+     "end": 83.11,
      "en": "See you, Anna.",
      "ja": "またね、アナ。"
     },
     {
-     "start": 126.98,
-     "end": 127.77,
+     "start": 83.74,
+     "end": 84.53,
      "en": "Listen.",
      "ja": "聞いてね。"
     }
+   ],
+   "clip_spans": [
+    [
+     36.58,
+     67.2
+    ],
+    [
+     93.88,
+     118.24
+    ],
+    [
+     129.96,
+     153.76
+    ],
+    [
+     155.6,
+     160.16
+    ],
+    [
+     163.16,
+     164.8
+    ]
    ]
   },
   {
@@ -2058,155 +2204,185 @@
      "ja": "お願い。お願いだから、もうやめて。お願い。"
     },
     {
-     "start": 23.64,
-     "end": 26.85,
+     "start": 21.52,
+     "end": 24.73,
      "en": "Sorry. Sorry.",
      "ja": "ごめんなさい、ごめんなさい。"
     },
     {
-     "start": 50.96,
-     "end": 58.27,
+     "start": 28.84,
+     "end": 36.15,
      "en": "“and people all around the world are waiting to hear news about the next president…”",
      "ja": "「そして世界中の人々が、次の大統領についてのニュースを待っています…」"
     },
     {
-     "start": 58.12,
-     "end": 61.79,
+     "start": 36.0,
+     "end": 39.67,
      "en": "Jonathan, hi! Remember me? I live in your building.",
      "ja": "ジョナサン、やあ！私のこと覚えていますか？同じアパートに住んでいます。"
     },
     {
-     "start": 62.22,
-     "end": 64.19,
+     "start": 40.1,
+     "end": 42.07,
      "en": "Oh. Uh. Hi, Anna.",
      "ja": "あ、えっと。やあ、アンナ。"
     },
     {
-     "start": 64.36,
-     "end": 65.61,
+     "start": 42.24,
+     "end": 43.49,
      "en": "What are you doing?",
      "ja": "何をしているんですか？"
     },
     {
-     "start": 65.9,
-     "end": 67.93,
+     "start": 43.78,
+     "end": 45.81,
      "en": "I am doing my show!",
      "ja": "自分の番組をやっています！"
     },
     {
-     "start": 68.62,
-     "end": 71.29,
+     "start": 46.5,
+     "end": 49.17,
      "en": "Oh, sorry. Are you recording?",
      "ja": "あ、ごめんなさい。録画（録音）中ですか？"
     },
     {
-     "start": 71.67,
-     "end": 75.23,
+     "start": 49.55,
+     "end": 53.11,
      "en": "Yes! And, now I have to record again!",
      "ja": "そうです！しかも、また録り直さないといけません！"
     },
     {
-     "start": 76.52,
-     "end": 77.75,
+     "start": 54.4,
+     "end": 55.63,
      "en": "Sorry. Have a good show.",
      "ja": "ごめんなさい。番組うまくいくといいですね。"
     },
     {
-     "start": 78.36,
-     "end": 79.11,
+     "start": 56.24,
+     "end": 56.99,
      "en": "Thank you.",
      "ja": "ありがとうございます。"
     },
     {
-     "start": 79.68,
-     "end": 80.27,
+     "start": 57.56,
+     "end": 58.15,
      "en": "Sorry.",
      "ja": "ごめんなさい。"
     },
     {
-     "start": 87.48,
-     "end": 89.93,
+     "start": 58.76,
+     "end": 61.21,
      "en": "The word of the day is social.",
      "ja": "今日の単語は “social” です。"
     },
     {
-     "start": 91.04,
-     "end": 91.19,
+     "start": 62.32,
+     "end": 62.47,
      "en": "Social -",
      "ja": "“social” は――"
     },
     {
-     "start": 91.04,
-     "end": 92.53,
+     "start": 62.32,
+     "end": 63.81,
      "en": "- is an adjective.",
      "ja": "――形容詞です。"
     },
     {
-     "start": 92.38,
-     "end": 93.69,
+     "start": 63.66,
+     "end": 64.97,
      "en": "Oh! Hi!",
      "ja": "あっ！こんにちは！"
     },
     {
-     "start": 93.54,
-     "end": 94.07,
+     "start": 64.82,
+     "end": 65.35,
      "en": "Hi! I’m Anna!",
      "ja": "こんにちは！アンナです！"
     },
     {
-     "start": 94.44,
-     "end": 95.63,
+     "start": 65.72,
+     "end": 66.91,
      "en": "Hi. I’m Amelia.",
      "ja": "こんにちは。アメリアです。"
     },
     {
-     "start": 95.98,
-     "end": 96.95,
+     "start": 67.26,
+     "end": 68.23,
      "en": "Nice to meet you!",
      "ja": "はじめまして！"
     },
     {
-     "start": 97.82,
-     "end": 98.83,
+     "start": 69.1,
+     "end": 70.11,
      "en": "What are you doing?",
      "ja": "何をしているんですか？"
     },
     {
-     "start": 99.98,
-     "end": 100.69,
+     "start": 71.26,
+     "end": 71.97,
      "en": "I’m reading.",
      "ja": "本を読んでいます。"
     },
     {
-     "start": 101.14,
-     "end": 103.59,
+     "start": 72.42,
+     "end": 74.87,
      "en": "Are you reading the news? Hi!",
      "ja": "ニュースを読んでいるんですか？こんにちは！"
     },
     {
-     "start": 103.98,
-     "end": 106.51,
+     "start": 75.26,
+     "end": 77.79,
      "en": "No, I’m reading for my show.",
      "ja": "いいえ、自分の番組のために読んでいます。"
     },
     {
-     "start": 109.64,
-     "end": 110.87,
+     "start": 78.4,
+     "end": 79.63,
      "en": "Can I read again?",
      "ja": "もう一度読み直していいですか？"
     },
     {
-     "start": 111.92,
-     "end": 112.57,
+     "start": 80.68,
+     "end": 81.33,
      "en": "Sorry.",
      "ja": "ごめんなさい。"
     },
     {
-     "start": 114.2,
-     "end": 116.93,
+     "start": 82.96,
+     "end": 85.69,
      "en": "This day is not going well.",
      "ja": "今日はうまくいかない日だなぁ。"
     }
+   ],
+   "clip_spans": [
+    [
+     94.92,
+     116.04
+    ],
+    [
+     118.16,
+     122.0
+    ],
+    [
+     126.48,
+     128.16
+    ],
+    [
+     136.48,
+     138.24
+    ],
+    [
+     145.44,
+     175.4
+    ],
+    [
+     182.0,
+     201.64
+    ],
+    [
+     204.16,
+     212.3
+    ]
    ]
   },
   {
@@ -2380,215 +2556,225 @@
      "ja": "だから毎日、天気予報をチェックします。"
     },
     {
-     "start": 20.76,
-     "end": 21.57,
+     "start": 18.92,
+     "end": 19.73,
      "en": "Hello, Phone?",
      "ja": "もしもし、スマホ。"
     },
     {
-     "start": 22.0,
-     "end": 23.53,
+     "start": 20.16,
+     "end": 21.69,
      "en": "What is today’s temperature?",
      "ja": "今日の気温は何度？"
     },
     {
-     "start": 24.24,
-     "end": 26.61,
+     "start": 22.4,
+     "end": 24.77,
      "en": "Today it is 18 degrees...",
      "ja": "今日は18度です。"
     },
     {
-     "start": 27.06,
-     "end": 29.31,
+     "start": 25.22,
+     "end": 27.47,
      "en": "Eighteen degrees! That is cold!",
      "ja": "18度！それは寒いね。"
     },
     {
-     "start": 29.92,
-     "end": 31.55,
+     "start": 28.08,
+     "end": 29.71,
      "en": "...eighteen degrees Celsius.",
      "ja": "……18度は摂氏です。"
     },
     {
-     "start": 32.16,
-     "end": 33.17,
+     "start": 30.32,
+     "end": 31.33,
      "en": "Oh, Celsius.",
      "ja": "ああ、摂氏ね。"
     },
     {
-     "start": 33.68,
-     "end": 36.53,
+     "start": 31.84,
+     "end": 34.69,
      "en": "That is 65 degrees Fahrenheit.",
      "ja": "それは華氏だと65度です。"
     },
     {
-     "start": 36.92,
-     "end": 37.91,
+     "start": 35.08,
+     "end": 36.07,
      "en": "That’s warm.",
      "ja": "それならあたたかいね。"
     },
     {
-     "start": 38.26,
-     "end": 40.65,
+     "start": 36.42,
+     "end": 38.81,
      "en": "Yes, Anna. It is warm.",
      "ja": "はい、アンナ。あたたかいです。"
     },
     {
-     "start": 41.06,
-     "end": 42.09,
+     "start": 39.22,
+     "end": 40.25,
      "en": "Excuse me, Phone.",
      "ja": "ねえ、スマホ。"
     },
     {
-     "start": 42.44,
-     "end": 44.15,
+     "start": 40.6,
+     "end": 42.31,
      "en": "Is it windy today?",
      "ja": "今日は風が強い？"
     },
     {
-     "start": 44.9,
-     "end": 47.89,
+     "start": 43.06,
+     "end": 46.05,
      "en": "No, it is not windy today.",
      "ja": "いいえ、今日は風は強くありません。"
     },
     {
-     "start": 48.5,
-     "end": 50.37,
+     "start": 46.66,
+     "end": 48.53,
      "en": "Is it sunny today?",
      "ja": "今日は晴れてる？"
     },
     {
-     "start": 50.92,
-     "end": 51.95,
+     "start": 49.08,
+     "end": 50.11,
      "en": "Yes, Anna.",
      "ja": "はい、アンナ。"
     },
     {
-     "start": 52.3,
-     "end": 53.61,
+     "start": 50.46,
+     "end": 51.77,
      "en": "It is sunny.",
      "ja": "晴れています。"
     },
     {
-     "start": 54.32,
-     "end": 55.37,
+     "start": 52.48,
+     "end": 53.53,
      "en": "Excuse me, Phone?",
      "ja": "ねえ、スマホ。"
     },
     {
-     "start": 55.22,
-     "end": 57.01,
+     "start": 53.38,
+     "end": 55.17,
      "en": "Yes, Anna.",
      "ja": "はい、アンナ。"
     },
     {
-     "start": 57.72,
-     "end": 59.37,
+     "start": 55.88,
+     "end": 57.53,
      "en": "Is it snowy today?",
      "ja": "今日は雪が降ってる？"
     },
     {
-     "start": 60.02,
-     "end": 60.93,
+     "start": 58.18,
+     "end": 59.09,
      "en": "No, Anna.",
      "ja": "いいえ、アンナ。"
     },
     {
-     "start": 61.16,
-     "end": 63.03,
+     "start": 59.32,
+     "end": 61.19,
      "en": "It is not snowy.",
      "ja": "雪は降っていません。"
     },
     {
-     "start": 64.14,
-     "end": 64.93,
+     "start": 62.3,
+     "end": 63.09,
      "en": "Thank you, Phone!",
      "ja": "ありがとう、スマホ。"
     },
     {
-     "start": 66.0,
-     "end": 71.21,
+     "start": 64.16,
+     "end": 69.37,
      "en": "Today the weather is warm and sunny -- great for seeing Washington, D.C.",
      "ja": "今日はあたたかくて晴れです。ワシントンD.C.を見て回るのにぴったりです。"
     },
     {
-     "start": 73.78,
-     "end": 77.11,
+     "start": 71.94,
+     "end": 75.27,
      "en": "Phone! It is not warm and sunny!",
      "ja": "スマホ！あたたかくも晴れでもないよ！"
     },
     {
-     "start": 77.58,
-     "end": 81.79,
+     "start": 75.74,
+     "end": 79.95,
      "en": "It is cold and windy and snowy!",
      "ja": "寒くて、風が強くて、雪まで降ってる！"
     },
     {
-     "start": 82.08,
-     "end": 86.37,
+     "start": 80.24,
+     "end": 84.53,
      "en": "Anna, it is not cold, windy, or snowy.",
      "ja": "アンナ、寒くも風が強くも雪も降っていません。"
     },
     {
-     "start": 87.02,
-     "end": 93.23,
+     "start": 85.18,
+     "end": 91.39,
      "en": "It is warm and sunny … in Mexico City, Mexico.",
      "ja": "あたたかくて晴れているのは……メキシコのメキシコシティです。"
     },
     {
-     "start": 94.14,
-     "end": 97.43,
+     "start": 92.3,
+     "end": 95.59,
      "en": "Oh. I see. Mexico.",
      "ja": "ああ、そういうことか。メキシコね。"
     },
     {
-     "start": 99.34,
-     "end": 101.91,
+     "start": 97.5,
+     "end": 100.07,
      "en": "Washington weather changes often.",
      "ja": "ワシントンの天気はよく変わります。"
     },
     {
-     "start": 102.54,
-     "end": 106.67,
+     "start": 100.7,
+     "end": 104.83,
      "en": "Remember to check the forecast -- the right forecast.",
      "ja": "天気予報をチェックしないとね――ちゃんとした予報を。"
     },
     {
-     "start": 107.1,
-     "end": 107.99,
+     "start": 105.26,
+     "end": 106.15,
      "en": "Yes, Anna.",
      "ja": "はい、アンナ。"
     },
     {
-     "start": 108.54,
-     "end": 111.27,
+     "start": 106.7,
+     "end": 109.43,
      "en": "Next time remember to check the right fore...",
      "ja": "次は正しい予報をチェックするのを忘れないでください。"
     },
     {
-     "start": 111.14,
-     "end": 112.61,
+     "start": 109.3,
+     "end": 110.77,
      "en": "Okay, thank you Phone.",
      "ja": "わかった、ありがとう、スマホ。"
     },
     {
-     "start": 113.18,
-     "end": 113.79,
+     "start": 111.34,
+     "end": 111.95,
      "en": "Goodbye, Phone.",
      "ja": "さようなら、スマホ。"
     },
     {
-     "start": 114.64,
-     "end": 116.81,
+     "start": 112.8,
+     "end": 114.97,
      "en": "Until next time.",
      "ja": "また今度。"
     },
     {
-     "start": 117.16,
-     "end": 119.51,
+     "start": 115.32,
+     "end": 117.67,
      "en": "Yes, until next time.",
      "ja": "うん、また今度ね。"
     }
+   ],
+   "clip_spans": [
+    [
+     177.36,
+     195.88
+    ],
+    [
+     197.72,
+     297.32
+    ]
    ]
   },
   {
@@ -2786,137 +2972,167 @@
      "ja": "写真って、すごく助けになるの。"
     },
     {
-     "start": 27.92,
-     "end": 31.57,
+     "start": 25.76,
+     "end": 29.41,
      "en": "This is my mother and this is my father.",
      "ja": "こっちが母で、こっちが父よ。"
     },
     {
-     "start": 32.04,
-     "end": 33.43,
+     "start": 29.88,
+     "end": 31.27,
      "en": "They are rodeo clowns.",
      "ja": "ふたりともロデオの道化師なの。"
     },
     {
-     "start": 35.34,
-     "end": 38.47,
+     "start": 33.18,
+     "end": 36.31,
      "en": "What do rodeo clowns do?",
      "ja": "ロデオの道化師って、何をするの？"
     },
     {
-     "start": 38.9,
-     "end": 41.45,
+     "start": 36.74,
+     "end": 39.29,
      "en": "They make jokes at a rodeo.",
      "ja": "ロデオで冗談を言ったりして、"
     },
     {
-     "start": 61.28,
-     "end": 62.29,
+     "start": 46.16,
+     "end": 47.17,
      "en": "They make people laugh.",
      "ja": "みんなを笑わせるのよ。"
     },
     {
-     "start": 76.6,
-     "end": 77.83,
+     "start": 52.36,
+     "end": 53.59,
      "en": "That-That's very different.",
      "ja": "そ、そんな仕事、すごくめずらしいわね。"
     },
     {
-     "start": 79.06,
-     "end": 80.65,
+     "start": 54.82,
+     "end": 56.41,
      "en": "Who is that woman in the picture?",
      "ja": "その写真の女の人はだれ？"
     },
     {
-     "start": 81.3,
-     "end": 83.51,
+     "start": 57.06,
+     "end": 59.27,
      "en": "That is my Aunt Lavender.",
      "ja": "あの人はラベンダーおばさんよ。"
     },
     {
-     "start": 83.9,
-     "end": 85.87,
+     "start": 59.66,
+     "end": 61.63,
      "en": "She is my mom's sister.",
      "ja": "母の妹（お姉さん）なの。"
     },
     {
-     "start": 86.92,
-     "end": 89.77,
+     "start": 62.68,
+     "end": 65.53,
      "en": "She loves gardening and makes spoons.",
      "ja": "庭いじりが大好きで、スプーンも作ってるの。"
     },
     {
-     "start": 91.54,
-     "end": 93.49,
+     "start": 67.3,
+     "end": 69.25,
      "en": "She makes spoons?",
      "ja": "スプーンを作るの？"
     },
     {
-     "start": 94.06,
-     "end": 94.81,
+     "start": 69.82,
+     "end": 70.57,
      "en": "Of course.",
      "ja": "そうよ。"
     },
     {
-     "start": 95.5,
-     "end": 98.31,
+     "start": 71.26,
+     "end": 74.07,
      "en": "That, too, is very different.",
      "ja": "それもまた、とってもめずらしいわね。"
     },
     {
-     "start": 98.84,
-     "end": 100.97,
+     "start": 74.6,
+     "end": 76.73,
      "en": "Oh! This is my Uncle John.",
      "ja": "あっ！こっちはジョンおじさん。"
     },
     {
-     "start": 101.28,
-     "end": 102.97,
+     "start": 77.04,
+     "end": 78.73,
      "en": "He is my father's brother.",
      "ja": "父の兄（弟）なの。"
     },
     {
-     "start": 104.18,
-     "end": 106.81,
+     "start": 79.94,
+     "end": 82.57,
      "en": "What does Uncle John do?",
      "ja": "ジョンおじさんは何をしているの？"
     },
     {
-     "start": 107.0,
-     "end": 108.23,
+     "start": 82.76,
+     "end": 83.99,
      "en": "He's a chicken farmer.",
      "ja": "ニワトリ農家をやっていて、"
     },
     {
-     "start": 108.08,
-     "end": 109.61,
+     "start": 83.84,
+     "end": 85.37,
      "en": "And makes guitars.",
      "ja": "ギターも作っているの。"
     },
     {
-     "start": 110.88,
-     "end": 114.49,
+     "start": 86.64,
+     "end": 90.25,
      "en": "He's awesome, and I'm his favorite niece.",
      "ja": "すごく素敵な人で、私は一番かわいがられてる姪なの。"
     },
     {
-     "start": 115.22,
-     "end": 116.05,
+     "start": 90.98,
+     "end": 91.81,
      "en": "Who are they?",
      "ja": "この子たちはだれ？"
     },
     {
-     "start": 116.44,
-     "end": 117.85,
+     "start": 92.2,
+     "end": 93.61,
      "en": "They are my cousins.",
      "ja": "私のいとこたちよ。"
     },
     {
-     "start": 118.44,
-     "end": 121.63,
+     "start": 94.2,
+     "end": 97.39,
      "en": "They are my Uncle John's daughter and son.",
      "ja": "ジョンおじさんの娘と息子なの。"
     }
+   ],
+   "clip_spans": [
+    [
+     33.72,
+     59.08
+    ],
+    [
+     61.24,
+     76.44
+    ],
+    [
+     79.56,
+     83.8
+    ],
+    [
+     87.52,
+     88.48
+    ],
+    [
+     94.6,
+     97.84
+    ],
+    [
+     101.04,
+     102.24
+    ],
+    [
+     108.16,
+     155.8
+    ]
    ]
   },
   {
@@ -3156,59 +3372,93 @@
      "ja": "来月からよ。番組のアイデアを考え始めてちょうだい。"
     },
     {
-     "start": 134.44,
-     "end": 140.31,
+     "start": 111.84,
+     "end": 117.71,
      "en": "I have tons of ideas! I can show children what it’s like in outer space ...",
      "ja": "アイデアは山ほどあります！　宇宙に行くとどんな感じか、子どもたちに見せられるし…"
     },
     {
-     "start": 141.06,
-     "end": 143.93,
+     "start": 118.46,
+     "end": 121.33,
      "en": "… or in the deep, dark ocean …",
      "ja": "…深くて暗い海の中がどんなところかも見せられるし…。"
     },
     {
-     "start": 143.78,
-     "end": 149.51,
+     "start": 121.18,
+     "end": 126.91,
      "en": "Those are great ideas, Anna. Please go think of more … at your desk.",
      "ja": "どれもいいアイデアね、アンナ。続きは自分のデスクで考えてきて。"
     },
     {
-     "start": 151.7,
-     "end": 155.39,
+     "start": 127.54,
+     "end": 131.23,
      "en": "Yes. What other things can I show them? Mt. Everest!",
      "ja": "はい。他には何を見せられるかな。エベレストとか！"
     },
     {
-     "start": 162.32,
-     "end": 164.63,
+     "start": 131.88,
+     "end": 134.19,
      "en": "Everyone has different skills.",
      "ja": "誰にでも、それぞれ違った得意なことがあります。"
     },
     {
-     "start": 165.08,
-     "end": 166.05,
+     "start": 134.64,
+     "end": 135.61,
      "en": "You have skills.",
      "ja": "あなたにも得意なことがあります。"
     },
     {
-     "start": 166.34,
-     "end": 167.19,
+     "start": 135.9,
+     "end": 136.75,
      "en": "I have skills.",
      "ja": "私にも得意なことがあります。"
     },
     {
-     "start": 167.46,
-     "end": 170.79,
+     "start": 137.02,
+     "end": 140.35,
      "en": "The important thing is to know what you are good at.",
      "ja": "大事なのは、自分は何が得意かを知ることです。"
     },
     {
-     "start": 170.64,
-     "end": 172.29,
+     "start": 140.2,
+     "end": 141.85,
      "en": "Until next time!",
      "ja": "それでは、また次回！"
     }
+   ],
+   "clip_spans": [
+    [
+     120.82,
+     219.28
+    ],
+    [
+     220.8,
+     222.68
+    ],
+    [
+     224.96,
+     227.2
+    ],
+    [
+     234.64,
+     240.08
+    ],
+    [
+     243.16,
+     246.56
+    ],
+    [
+     254.84,
+     270.56
+    ],
+    [
+     272.12,
+     276.44
+    ],
+    [
+     282.72,
+     293.56
+    ]
    ]
   },
   {
@@ -3380,137 +3630,191 @@
      "ja": "ダンスや食べ物、それにゲームもあったのよ。"
     },
     {
-     "start": 30.24,
-     "end": 33.81,
+     "start": 27.0,
+     "end": 30.57,
      "en": "I am dancing a traditional Basque dance.",
      "ja": "私は今、バスクの伝統的なダンスを踊っているの。"
     },
     {
-     "start": 34.78,
-     "end": 39.23,
+     "start": 31.54,
+     "end": 35.99,
      "en": "At the festival, I danced a traditional Basque dance!",
      "ja": "フェスティバルで、バスクの伝統的なダンスを踊ったの！"
     },
     {
-     "start": 49.34,
-     "end": 52.83,
+     "start": 36.62,
+     "end": 40.11,
      "en": "They are cooking traditional Basque food.",
      "ja": "あの人たちは、バスクの伝統的な料理を作っているところよ。"
     },
     {
-     "start": 54.04,
-     "end": 57.51,
+     "start": 41.32,
+     "end": 44.79,
      "en": "They cooked a lot of traditional Basque food.",
      "ja": "バスクの伝統料理をたくさん作ってくれたの。"
     },
     {
-     "start": 73.64,
-     "end": 75.27,
+     "start": 45.44,
+     "end": 47.07,
      "en": "They are playing a game.",
      "ja": "あの人たちはゲームをしているの。"
     },
     {
-     "start": 75.58,
-     "end": 76.99,
+     "start": 47.38,
+     "end": 48.79,
      "en": "It’s a kind of handball.",
      "ja": "ハンドボールの一種なんだって。"
     },
     {
-     "start": 77.82,
-     "end": 78.81,
+     "start": 49.62,
+     "end": 50.61,
      "en": "What do they call it?",
      "ja": "何ていう名前なんだろう？"
     },
     {
-     "start": 79.18,
-     "end": 80.45,
+     "start": 50.98,
+     "end": 52.25,
      "en": "They call it pilota!",
      "ja": "ピロタって呼ばれているの！"
     },
     {
-     "start": 82.56,
-     "end": 85.93,
+     "start": 52.88,
+     "end": 56.25,
      "en": "They played a game with their hands and a small ball.",
      "ja": "その人たちは、手と小さなボールを使うゲームをしていたの。"
     },
     {
-     "start": 85.78,
-     "end": 88.39,
+     "start": 56.1,
+     "end": 58.71,
      "en": "It’s a kind of handball.",
      "ja": "ハンドボールの一種なの。"
     },
     {
-     "start": 88.98,
-     "end": 91.37,
+     "start": 59.3,
+     "end": 61.69,
      "en": "But this game is called pilota.",
      "ja": "でも、このゲームはピロタっていう名前なのよ。"
     },
     {
-     "start": 104.36,
-     "end": 107.21,
+     "start": 62.32,
+     "end": 65.17,
      "en": "This is beautiful!",
      "ja": "これ、すごくきれい！"
     },
     {
-     "start": 107.8,
-     "end": 110.83,
+     "start": 65.76,
+     "end": 68.79,
      "en": "This is traditional Basque art.",
      "ja": "これはバスク地方の伝統的なアートなの。"
     },
     {
-     "start": 125.72,
-     "end": 129.43,
+     "start": 69.4,
+     "end": 73.11,
      "en": "They are making a traditional Basque ship.",
      "ja": "あの人たちは、バスクの伝統的な船を作っているところよ。"
     },
     {
-     "start": 139.9,
-     "end": 142.39,
+     "start": 73.74,
+     "end": 76.23,
      "en": "This festival is a lot of fun!",
      "ja": "このフェスティバル、とっても楽しいの！"
     },
     {
-     "start": 142.42,
-     "end": 144.89,
+     "start": 76.26,
+     "end": 78.73,
      "en": "The whole day was a lot of fun!",
      "ja": "一日中すごく楽しかったの！"
     },
     {
-     "start": 144.74,
-     "end": 145.81,
+     "start": 78.58,
+     "end": 79.65,
      "en": "Who said that?",
      "ja": "今の誰の声？"
     },
     {
-     "start": 145.66,
-     "end": 150.43,
+     "start": 79.5,
+     "end": 84.27,
      "en": "I want to write my friends and tell them about my day!",
      "ja": "友だちに今日一日のことを手紙で伝えたいな。"
     },
     {
-     "start": 184.92,
-     "end": 188.13,
+     "start": 96.44,
+     "end": 99.65,
      "en": "... So, I wanted to tell you about my day!",
      "ja": "……そんなわけで、今日のことをあなたに話したかったの。"
     },
     {
-     "start": 188.56,
-     "end": 192.01,
+     "start": 100.08,
+     "end": 103.53,
      "en": "Please, my friend, come visit Washington, D.C. soon.",
      "ja": "ねえ、今度ワシントンD.C.に遊びに来て。"
     },
     {
-     "start": 192.52,
-     "end": 193.95,
+     "start": 104.04,
+     "end": 105.47,
      "en": "There is a lot to do!",
      "ja": "ここは楽しいことがたくさんあるのよ。"
     },
     {
-     "start": 194.4,
-     "end": 196.43,
+     "start": 105.92,
+     "end": 107.95,
      "en": "Until next time … Anna.",
      "ja": "それじゃ、またね。アンナより。"
     }
+   ],
+   "clip_spans": [
+    [
+     97.32,
+     123.88
+    ],
+    [
+     127.12,
+     136.76
+    ],
+    [
+     146.24,
+     155.04
+    ],
+    [
+     170.52,
+     178.0
+    ],
+    [
+     179.48,
+     188.92
+    ],
+    [
+     201.28,
+     208.36
+    ],
+    [
+     222.64,
+     226.96
+    ],
+    [
+     236.8,
+     247.96
+    ],
+    [
+     249.48,
+     254.72
+    ],
+    [
+     262.6,
+     265.6
+    ],
+    [
+     267.08,
+     269.16
+    ],
+    [
+     273.08,
+     274.28
+    ],
+    [
+     281.8,
+     294.2
+    ]
    ]
   },
   {
@@ -3758,191 +4062,205 @@
      "ja": "それをリストに書いておきます！"
     },
     {
-     "start": 73.22,
-     "end": 79.21,
+     "start": 64.14,
+     "end": 70.13,
      "en": "Have you been to the Museum of the American Indian?",
      "ja": "アメリカン・インディアン博物館には行ったことある？"
     },
     {
-     "start": 79.52,
-     "end": 82.37,
+     "start": 70.44,
+     "end": 73.29,
      "en": "I’ve visited that museum many times.",
      "ja": "その博物館には何度も行ったことがあるわ。"
     },
     {
-     "start": 82.68,
-     "end": 85.01,
+     "start": 73.6,
+     "end": 75.93,
      "en": "It is very peaceful.",
      "ja": "とても落ち着いた雰囲気なの。"
     },
     {
-     "start": 85.9,
-     "end": 89.41,
+     "start": 76.82,
+     "end": 80.33,
      "en": "I have always liked American Indian culture.",
      "ja": "私はずっとアメリカ先住民の文化が好きなんです。"
     },
     {
-     "start": 89.26,
-     "end": 91.09,
+     "start": 80.18,
+     "end": 82.01,
      "en": "I’ll put that on my list.",
      "ja": "それもリストに入れておきます。"
     },
     {
-     "start": 91.94,
-     "end": 93.75,
+     "start": 82.86,
+     "end": 84.67,
      "en": "Do you have any other suggestions?",
      "ja": "ほかに何かおすすめはありますか？"
     },
     {
-     "start": 94.66,
-     "end": 100.27,
+     "start": 85.58,
+     "end": 91.19,
      "en": "Well, if you like plants, you can visit the U.S. Botanic Gardens.",
      "ja": "そうね、植物が好きなら、アメリカ植物園に行くといいわ。"
     },
     {
-     "start": 101.18,
-     "end": 103.97,
+     "start": 92.1,
+     "end": 94.89,
      "en": "It's very organic.",
      "ja": "とても自然がいっぱいよ。"
     },
     {
-     "start": 104.88,
-     "end": 107.35,
+     "start": 95.8,
+     "end": 98.27,
      "en": "I have always loved plants.",
      "ja": "私はずっと植物が大好きなんです。"
     },
     {
-     "start": 107.92,
-     "end": 109.81,
+     "start": 98.84,
+     "end": 100.73,
      "en": "I’ll write that on my list, too!",
      "ja": "それもリストに書いておきます！"
     },
     {
-     "start": 110.44,
-     "end": 114.37,
+     "start": 101.36,
+     "end": 105.29,
      "en": "Wow, you know so much about D.C.’s museums.",
      "ja": "わあ、ワシントンD.C.の博物館のこと、本当によく知っているんですね。"
     },
     {
-     "start": 115.7,
-     "end": 119.85,
+     "start": 106.62,
+     "end": 110.77,
      "en": "Well, I have lived here for over a year.",
      "ja": "まあね、ここに一年以上住んでいるから。"
     },
     {
-     "start": 120.34,
-     "end": 127.71,
+     "start": 111.26,
+     "end": 118.63,
      "en": "You’re so lucky to live in such a beautiful city filled with so many museums and a zoo!",
      "ja": "こんなにたくさん博物館があって、動物園まであるきれいな街に住めるなんて、うらやましいです！"
     },
     {
-     "start": 128.76,
-     "end": 131.17,
+     "start": 119.68,
+     "end": 122.09,
      "en": "What? D.C. has a zoo?",
      "ja": "えっ？ワシントンD.C.に動物園があるの？"
     },
     {
-     "start": 131.5,
-     "end": 133.95,
+     "start": 122.42,
+     "end": 124.87,
      "en": "Yes, and it’s beautiful.",
      "ja": "ええ、とてもすてきな動物園よ。"
     },
     {
-     "start": 135.5,
-     "end": 140.3,
+     "start": 126.42,
+     "end": 131.22,
      "en": "You’ve lived here for so long and you haven’t been to the zoo?",
      "ja": "こんなに長くここに住んでいて、まだ動物園に行ったことがないの？"
     },
     {
-     "start": 140.77,
-     "end": 143.24,
+     "start": 131.69,
+     "end": 134.16,
      "en": "I've never been to D.C.’s zoo.",
      "ja": "ワシントンD.C.の動物園には行ったことがないの。"
     },
     {
-     "start": 143.59,
-     "end": 145.56,
+     "start": 134.51,
+     "end": 136.48,
      "en": "I've never been to any zoos!",
      "ja": "どこの動物園にも行ったことがないわ！"
     },
     {
-     "start": 154.11,
-     "end": 157.08,
+     "start": 137.11,
+     "end": 140.08,
      "en": "You have never seen zoo animals?",
      "ja": "動物園の動物を見たことがないの？"
     },
     {
-     "start": 157.39,
-     "end": 159.74,
+     "start": 140.39,
+     "end": 142.74,
      "en": "I grew up on a farm, Jean.",
      "ja": "私は牧場で育ったのよ、ジーン。"
     },
     {
-     "start": 160.17,
-     "end": 162.6,
+     "start": 143.17,
+     "end": 145.6,
      "en": "I've known farm animals my whole life.",
      "ja": "家畜の動物たちは、ずっと身近な存在だったの。"
     },
     {
-     "start": 163.05,
-     "end": 171.56,
+     "start": 146.05,
+     "end": 154.56,
      "en": "But the zoo has lions and elephants and zebras!",
      "ja": "でも動物園には、ライオンやゾウやシマウマがいるのよ！"
     },
     {
-     "start": 172.55,
-     "end": 177.98,
+     "start": 155.55,
+     "end": 160.98,
      "en": "If you have never seen a real, live elephant, you must.",
      "ja": "本物の生きているゾウを見たことがないなら、絶対に見たほうがいいわ。"
     },
     {
-     "start": 178.45,
-     "end": 181.0,
+     "start": 161.45,
+     "end": 164.0,
      "en": "They are so majestic.",
      "ja": "とても堂々としていて迫力があるの。"
     },
     {
-     "start": 182.43,
-     "end": 183.36,
+     "start": 165.43,
+     "end": 166.36,
      "en": "I will.",
      "ja": "そうするわ。"
     },
     {
-     "start": 184.47,
-     "end": 185.04,
+     "start": 167.47,
+     "end": 168.04,
      "en": "I will!",
      "ja": "絶対行く！"
     },
     {
-     "start": 186.07,
-     "end": 187.22,
+     "start": 169.07,
+     "end": 170.22,
      "en": "There.",
      "ja": "よし。"
     },
     {
-     "start": 187.87,
-     "end": 191.36,
+     "start": 170.87,
+     "end": 174.36,
      "en": "I’ve written my own must-see zoo animal list!",
      "ja": "私だけの「見に行きたい動物リスト」を書いたわ！"
     },
     {
-     "start": 191.67,
-     "end": 194.3,
+     "start": 174.67,
+     "end": 177.3,
      "en": "Have fun at the zoo and thanks, Anna!",
      "ja": "動物園、楽しんでね。ありがとう、アナ！"
     },
     {
-     "start": 194.53,
-     "end": 196.34,
+     "start": 177.53,
+     "end": 179.34,
      "en": "Have fun at the museums, Jean!",
      "ja": "ジーンも博物館、楽しんでね！"
     },
     {
-     "start": 196.73,
-     "end": 197.74,
+     "start": 179.73,
+     "end": 180.74,
      "en": "And thank YOU!",
      "ja": "それから、こちらこそありがとう！"
     }
+   ],
+   "clip_spans": [
+    [
+     51.18,
+     114.88
+    ],
+    [
+     123.96,
+     196.96
+    ],
+    [
+     204.88,
+     249.37
+    ]
    ]
   },
   {
@@ -4173,35 +4491,49 @@
      "ja": "君もがんばって！"
     },
     {
-     "start": 144.24,
-     "end": 153.51,
+     "start": 86.48,
+     "end": 95.75,
      "en": "This is the Jefferson Memorial. I know that Thomas Jefferson signed the Declaration of Independence! Now, where is that symbol?",
      "ja": "ここはジェファソン・メモリアルよ。トーマス・ジェファソンが独立宣言に署名したのは知ってるわ！ さて、そのシンボルはどこかしら？"
     },
     {
-     "start": 154.64,
-     "end": 160.99,
+     "start": 96.88,
+     "end": 103.23,
      "en": "Here it is! My first one. It’s an American flag! I won 60 points!",
      "ja": "あった！ 最初の1つ目ね。アメリカ国旗だわ！ 60ポイント獲得！"
     },
     {
-     "start": 161.54,
-     "end": 168.47,
+     "start": 103.78,
+     "end": 110.71,
      "en": "An American flag works well for Thomas Jefferson*. I see lots of American flags on Independence Day!",
      "ja": "トーマス・ジェファソンにはアメリカ国旗がよく合うわね。独立記念日にはアメリカ国旗をたくさん見るもの。"
     },
     {
-     "start": 168.32,
-     "end": 171.89,
+     "start": 110.56,
+     "end": 114.13,
      "en": "Where is my Jefferson Fun Fact?",
      "ja": "ジェファソンの豆知識はどこ？"
     },
     {
-     "start": 172.42,
-     "end": 176.65,
+     "start": 114.66,
+     "end": 118.89,
      "en": "In his lifetime, Thomas Jefferson wrote about 19,000 letters!",
      "ja": "トーマス・ジェファソンは、生涯でおよそ1万9千通の手紙を書きました！"
     }
+   ],
+   "clip_spans": [
+    [
+     105.7,
+     188.72
+    ],
+    [
+     216.16,
+     219.2
+    ],
+    [
+     249.52,
+     282.8
+    ]
    ]
   },
   {
@@ -4349,209 +4681,259 @@
      "ja": "最初は順調だったんです。"
     },
     {
-     "start": 12.14,
-     "end": 16.33,
+     "start": 6.7,
+     "end": 10.89,
      "en": "Okay, Anna. Is your seatbelt buckled?",
      "ja": "いいですね、アンナ。シートベルトはちゃんと締めましたか？"
     },
     {
-     "start": 17.34,
-     "end": 18.21,
+     "start": 11.9,
+     "end": 12.77,
      "en": "Yes, sir!",
      "ja": "はい、しました！"
     },
     {
-     "start": 20.56,
-     "end": 23.51,
+     "start": 13.4,
+     "end": 16.35,
      "en": "Great. Please start the car.",
      "ja": "よろしい。では、エンジンをかけてください。"
     },
     {
-     "start": 24.4,
-     "end": 26.55,
+     "start": 17.24,
+     "end": 19.39,
      "en": "Okay, Anna, start the car.",
      "ja": "よし、アンナ。エンジンをかけるのよ。"
     },
     {
-     "start": 29.54,
-     "end": 30.69,
+     "start": 20.66,
+     "end": 21.81,
      "en": "Started the car.",
      "ja": "エンジン、かけた。"
     },
     {
-     "start": 31.22,
-     "end": 32.17,
+     "start": 22.34,
+     "end": 23.29,
      "en": "Good job, Anna.",
      "ja": "よくできました、アンナ。"
     },
     {
-     "start": 32.76,
-     "end": 34.71,
+     "start": 23.88,
+     "end": 25.83,
      "en": "Why are you talking to yourself?",
      "ja": "どうして独り言を言っているんですか？"
     },
     {
-     "start": 35.16,
-     "end": 36.81,
+     "start": 26.28,
+     "end": 27.93,
      "en": "I am a little nervous.",
      "ja": "ちょっと緊張していて。"
     },
     {
-     "start": 37.32,
-     "end": 39.45,
+     "start": 28.44,
+     "end": 30.57,
      "en": "When I'm nervous, I talk to myself.",
      "ja": "緊張すると、独り言を言っちゃうんです。"
     },
     {
-     "start": 40.04,
-     "end": 43.23,
+     "start": 31.16,
+     "end": 34.35,
      "en": "You don't need to be nervous.",
      "ja": "そんなに緊張しなくて大丈夫ですよ。"
     },
     {
-     "start": 44.94,
-     "end": 46.25,
+     "start": 36.06,
+     "end": 37.37,
      "en": "Listen to that engine!",
      "ja": "このエンジンの音、すごい！"
     },
     {
-     "start": 50.72,
-     "end": 53.65,
+     "start": 38.04,
+     "end": 40.97,
      "en": "Please, stop pushing the gas pedal.",
      "ja": "アクセルを踏むのをやめてください。"
     },
     {
-     "start": 54.66,
-     "end": 55.27,
+     "start": 41.98,
+     "end": 42.59,
      "en": "Sorry.",
      "ja": "すみません。"
     },
     {
-     "start": 58.54,
-     "end": 60.97,
+     "start": 43.22,
+     "end": 45.65,
      "en": "Okay, when you are ready, turn.",
      "ja": "では、準備ができたら曲がってください。"
     },
     {
-     "start": 61.06,
-     "end": 61.45,
+     "start": 45.74,
+     "end": 46.13,
      "en": "Great!",
      "ja": "よし！"
     },
     {
-     "start": 61.92,
-     "end": 63.89,
+     "start": 46.6,
+     "end": 48.57,
      "en": "Not now! You almost hit that car!",
      "ja": "今じゃありません！あの車にぶつかりそうでしたよ！"
     },
     {
-     "start": 64.26,
-     "end": 65.55,
+     "start": 48.94,
+     "end": 50.23,
      "en": "You said “turn!”",
      "ja": "今「曲がって」って言ったじゃないですか！"
     },
     {
-     "start": 65.88,
-     "end": 68.09,
+     "start": 50.56,
+     "end": 52.77,
      "en": "Look first! There were cars in the street.",
      "ja": "まずはよく見てください！道路には車がいたでしょう。"
     },
     {
-     "start": 67.94,
-     "end": 70.49,
+     "start": 52.62,
+     "end": 55.17,
      "en": "Please don’t yell at me!",
      "ja": "大声で怒鳴らないでください！"
     },
     {
-     "start": 71.4,
-     "end": 73.29,
+     "start": 56.08,
+     "end": 57.97,
      "en": "I’m sorry! I was afraid.",
      "ja": "ごめんなさい。怖かったんです。"
     },
     {
-     "start": 73.52,
-     "end": 74.67,
+     "start": 58.2,
+     "end": 59.35,
      "en": "You were yelling.",
      "ja": "すごく怒鳴ってましたよ。"
     },
     {
-     "start": 75.26,
-     "end": 76.35,
+     "start": 59.94,
+     "end": 61.03,
      "en": "Look out for that car! Brake! Brake!!",
      "ja": "あの車に気をつけて！ブレーキ！ブレーキ！！"
     },
     {
-     "start": 79.48,
-     "end": 82.45,
+     "start": 62.2,
+     "end": 65.17,
      "en": "Why is everyone honking at us?",
      "ja": "みんな、なんでクラクションを鳴らしてるの？"
     },
     {
-     "start": 82.64,
-     "end": 84.33,
+     "start": 65.36,
+     "end": 67.05,
      "en": "You were driving too slow!",
      "ja": "スピードが遅すぎたんですよ！"
     },
     {
-     "start": 84.78,
-     "end": 86.69,
+     "start": 67.5,
+     "end": 69.41,
      "en": "Anna, stay on the street!",
      "ja": "アンナ、車線から出ないでください！"
     },
     {
-     "start": 88.36,
-     "end": 89.95,
+     "start": 71.08,
+     "end": 72.67,
      "en": "Hands on the wheel, Anna.",
      "ja": "アンナ、ハンドルから手を離さないで。"
     },
     {
-     "start": 90.64,
-     "end": 92.27,
+     "start": 73.36,
+     "end": 74.99,
      "en": "What’s that sound?",
      "ja": "この音、何？"
     },
     {
-     "start": 94.58,
-     "end": 97.25,
+     "start": 75.62,
+     "end": 78.29,
      "en": "That, Anna, is the police.",
      "ja": "あれはね、アンナ、警察の車だよ。"
     },
     {
-     "start": 123.52,
-     "end": 125.79,
+     "start": 85.08,
+     "end": 87.35,
      "en": "That sounds awful.",
      "ja": "それはひどいわね。"
     },
     {
-     "start": 125.64,
-     "end": 128.71,
+     "start": 87.2,
+     "end": 90.27,
      "en": "Yes, it did not go well.",
      "ja": "ええ、本当にうまくいかなかったんです。"
     },
     {
-     "start": 129.08,
-     "end": 132.45,
+     "start": 90.64,
+     "end": 94.01,
      "en": "But, I practiced and passed the second time!",
      "ja": "でも、練習して、2回目で合格しました！"
     },
     {
-     "start": 133.12,
-     "end": 138.29,
+     "start": 94.68,
+     "end": 99.85,
      "en": "Do you know where you want to take your first drive in Washington, D.C.?",
      "ja": "ワシントンD.C.で最初にどこをドライブしたいか、決めてある？"
     },
     {
-     "start": 139.12,
-     "end": 141.11,
+     "start": 100.68,
+     "end": 102.67,
      "en": "Yes! Let’s go!",
      "ja": "うん！行こう！"
     },
     {
-     "start": 153.58,
-     "end": 156.83,
+     "start": 103.3,
+     "end": 106.55,
      "en": "There it is … the White House!",
      "ja": "あった……ホワイトハウスだ！"
     }
+   ],
+   "clip_spans": [
+    [
+     93.24,
+     99.52
+    ],
+    [
+     104.96,
+     111.68
+    ],
+    [
+     113.4,
+     120.0
+    ],
+    [
+     121.72,
+     139.72
+    ],
+    [
+     143.52,
+     148.72
+    ],
+    [
+     151.36,
+     170.36
+    ],
+    [
+     172.32,
+     185.72
+    ],
+    [
+     187.4,
+     190.72
+    ],
+    [
+     193.56,
+     196.48
+    ],
+    [
+     205.4,
+     208.64
+    ],
+    [
+     216.36,
+     234.56
+    ],
+    [
+     246.4,
+     250.52
+    ]
    ]
   },
   {
@@ -4815,185 +5197,227 @@
      "ja": "でも、わたし自転車を持ってないの。"
     },
     {
-     "start": 54.4,
-     "end": 57.77,
+     "start": 48.72,
+     "end": 52.09,
      "en": "Okay, Anna, you can use my bicycle.",
      "ja": "いいよ、アンナ。私の自転車を使って。"
     },
     {
-     "start": 58.08,
-     "end": 58.57,
+     "start": 52.4,
+     "end": 52.89,
      "en": "Thanks!",
      "ja": "ありがとう！"
     },
     {
-     "start": 60.86,
-     "end": 64.29,
+     "start": 55.18,
+     "end": 58.61,
      "en": "I really want to learn how to ride one.",
      "ja": "前から自転車の乗り方を覚えたいと思ってたの。"
     },
     {
-     "start": 64.56,
-     "end": 68.19,
+     "start": 58.88,
+     "end": 62.51,
      "en": "Well, what do you mean learn how to ride a bike?",
      "ja": "えっ、自転車の乗り方を覚えたいって、どういうこと？"
     },
     {
-     "start": 68.74,
-     "end": 70.23,
+     "start": 63.06,
+     "end": 64.55,
      "en": "Oh, Anna, Anna.",
      "ja": "ああ、アンナったら。"
     },
     {
-     "start": 79.12,
-     "end": 85.53,
+     "start": 65.2,
+     "end": 71.61,
      "en": "You know, Anna, the Metro is faster than a taxi and a bicycle.",
      "ja": "いい、アンナ。地下鉄のほうが、タクシーや自転車より速いのよ。"
     },
     {
-     "start": 86.2,
-     "end": 87.79,
+     "start": 72.28,
+     "end": 73.87,
      "en": "You want to take the Metro.",
      "ja": "地下鉄で行ったほうがいいわ。"
     },
     {
-     "start": 88.24,
-     "end": 89.39,
+     "start": 74.32,
+     "end": 75.47,
      "en": "It's that way.",
      "ja": "地下鉄はあっちよ。"
     },
     {
-     "start": 90.4,
-     "end": 90.97,
+     "start": 76.48,
+     "end": 77.05,
      "en": "Good idea.",
      "ja": "それはいいね。"
     },
     {
-     "start": 91.5,
-     "end": 93.15,
+     "start": 77.58,
+     "end": 79.23,
      "en": "Okay, see you later.",
      "ja": "よし、じゃあまたね。"
     },
     {
-     "start": 93.4,
-     "end": 94.17,
+     "start": 79.48,
+     "end": 80.25,
      "en": "Bye, Anna.",
      "ja": "バイバイ、アンナ。"
     },
     {
-     "start": 94.3,
-     "end": 94.75,
+     "start": 80.38,
+     "end": 80.83,
      "en": "Bye.",
      "ja": "バイバイ。"
     },
     {
-     "start": 96.72,
-     "end": 100.41,
+     "start": 82.8,
+     "end": 86.49,
      "en": "You should go a lot earlier than seven o'clock.",
      "ja": "７時よりずっと早く行くべきだったわね。"
     },
     {
-     "start": 115.68,
-     "end": 120.49,
+     "start": 87.6,
+     "end": 92.41,
      "en": "The Metro was a lot faster than a bus, taxi, or bike.",
      "ja": "地下鉄はバスやタクシー、自転車よりずっと速かったわ。"
     },
     {
-     "start": 121.02,
-     "end": 123.37,
+     "start": 92.94,
+     "end": 95.29,
      "en": "And now, I'm at National Park.",
      "ja": "そして今、ナショナルズ・パークに着いたの。"
     },
     {
-     "start": 127.96,
-     "end": 130.05,
+     "start": 95.92,
+     "end": 98.01,
      "en": "Look at all these fans.",
      "ja": "ほら、ファンがこんなにたくさん。"
     },
     {
-     "start": 129.9,
-     "end": 133.11,
+     "start": 97.86,
+     "end": 101.07,
      "en": "So many people like to watch baseball.",
      "ja": "本当にたくさんの人が野球を見るのが好きなのね。"
     },
     {
-     "start": 137.66,
-     "end": 140.39,
+     "start": 101.7,
+     "end": 104.43,
      "en": "There's the ticket window.",
      "ja": "あそこがチケット売り場だ。"
     },
     {
-     "start": 143.74,
-     "end": 144.69,
+     "start": 105.06,
+     "end": 106.01,
      "en": "What?",
      "ja": "えっ？"
     },
     {
-     "start": 145.34,
-     "end": 147.69,
+     "start": 106.66,
+     "end": 109.01,
      "en": "The tickets are sold out.",
      "ja": "チケットは売り切れだって。"
     },
     {
-     "start": 148.4,
-     "end": 149.41,
+     "start": 109.72,
+     "end": 110.73,
      "en": "No!",
      "ja": "うそでしょ！"
     },
     {
-     "start": 151.64,
-     "end": 152.99,
+     "start": 111.36,
+     "end": 112.71,
      "en": "No!",
      "ja": "そんな！"
     },
     {
-     "start": 160.76,
-     "end": 164.43,
+     "start": 113.32,
+     "end": 116.99,
      "en": "But I really want to watch a baseball game.",
      "ja": "でも、どうしても野球の試合が見たいのに。"
     },
     {
-     "start": 164.94,
-     "end": 166.85,
+     "start": 117.5,
+     "end": 119.41,
      "en": "Does anybody have an extra ticket?",
      "ja": "だれか余っているチケット、ありませんか？"
     },
     {
-     "start": 167.64,
-     "end": 170.49,
+     "start": 120.2,
+     "end": 123.05,
      "en": "Next time, you should buy your ticket online.",
      "ja": "次はネットでチケットを買ったほうがいいよ。"
     },
     {
-     "start": 171.14,
-     "end": 171.47,
+     "start": 123.7,
+     "end": 124.03,
      "en": "Thanks.",
      "ja": "ありがとう。"
     },
     {
-     "start": 171.9,
-     "end": 173.05,
+     "start": 124.46,
+     "end": 125.61,
      "en": "Thanks a lot.",
      "ja": "本当にありがとう。"
     },
     {
-     "start": 174.38,
-     "end": 175.53,
+     "start": 126.94,
+     "end": 128.09,
      "en": "It is good advice.",
      "ja": "いいアドバイスね。"
     },
     {
-     "start": 176.08,
-     "end": 178.65,
+     "start": 128.64,
+     "end": 131.21,
      "en": "Being early is better than being late.",
      "ja": "早く行くほうが、遅れるよりずっといいわね。"
     },
     {
-     "start": 181.12,
-     "end": 182.17,
+     "start": 131.84,
+     "end": 132.89,
      "en": "Until next time.",
      "ja": "それじゃあ、またね。"
     }
+   ],
+   "clip_spans": [
+    [
+     113.96,
+     162.24
+    ],
+    [
+     167.92,
+     184.4
+    ],
+    [
+     192.64,
+     215.04
+    ],
+    [
+     229.2,
+     237.56
+    ],
+    [
+     241.52,
+     247.28
+    ],
+    [
+     251.2,
+     254.56
+    ],
+    [
+     257.28,
+     263.6
+    ],
+    [
+     265.2,
+     267.16
+    ],
+    [
+     274.32,
+     292.84
+    ],
+    [
+     294.68,
+     296.58
+    ]
    ]
   },
   {
@@ -5149,107 +5573,145 @@
      "ja": "どれどれ。"
     },
     {
-     "start": 13.74,
-     "end": 31.39,
+     "start": 11.9,
+     "end": 29.55,
      "en": "You bought a bunch of bananas, a box of pancake mix, a bag of coffee … Anna, this is all wrong!",
      "ja": "バナナひと房に、パンケーキミックス１箱、コーヒー１袋……アンナ、これ全部ちがうじゃない！"
     },
     {
-     "start": 31.76,
-     "end": 33.23,
+     "start": 29.92,
+     "end": 31.39,
      "en": "What do you mean wrong?",
      "ja": "ちがうって、どういうこと？"
     },
     {
-     "start": 33.76,
-     "end": 46.61,
+     "start": 31.92,
+     "end": 44.77,
      "en": "I bought a jar of peanut butter and a loaf of bread … no, wait … two loaves of bread.",
      "ja": "ピーナッツバターを１びんと、パンを１本買ったよ……いや、待って……パンは２本だった。"
     },
     {
-     "start": 48.28,
-     "end": 51.89,
+     "start": 46.44,
+     "end": 50.05,
      "en": "Anna, these are the wrong ingredients!",
      "ja": "アンナ、これじゃ材料がちがうのよ！"
     },
     {
-     "start": 93.81,
-     "end": 97.27,
+     "start": 61.45,
+     "end": 64.91,
      "en": "These ingredients are all on the list!",
      "ja": "この材料は全部リストに書いてあったよ！"
     },
     {
-     "start": 97.96,
-     "end": 100.61,
+     "start": 65.6,
+     "end": 68.25,
      "en": "I took this list from the counter.",
      "ja": "このリストはカウンターの上から取ったんだよ。"
     },
     {
-     "start": 101.56,
-     "end": 106.19,
+     "start": 69.2,
+     "end": 73.83,
      "en": "Anna, this is the shopping list for breakfast.",
      "ja": "アンナ、これは朝ごはん用の買い物リストよ。"
     },
     {
-     "start": 106.04,
-     "end": 114.21,
+     "start": 73.68,
+     "end": 81.85,
      "en": "I said, take the shopping list - on the refrigerator - for dinner!",
      "ja": "冷蔵庫に貼ってある、夕食用の買い物リストを取ってって言ったの！"
     },
     {
-     "start": 116.16,
-     "end": 120.95,
+     "start": 83.8,
+     "end": 88.59,
      "en": "Marsha, there was no shopping list - on the refrigerator - for dinner!",
      "ja": "マーシャ、冷蔵庫には夕食の買い物リストなんてなかったよ！"
     },
     {
-     "start": 123.28,
-     "end": 125.89,
+     "start": 89.24,
+     "end": 91.85,
      "en": "Oh no! It’s on the floor!!",
      "ja": "うそ！ 床に落ちてる！！"
     },
     {
-     "start": 130.18,
-     "end": 133.19,
+     "start": 92.46,
+     "end": 95.47,
      "en": "What are we going to do?",
      "ja": "どうしたらいいの？"
     },
     {
-     "start": 134.24,
-     "end": 136.61,
+     "start": 96.52,
+     "end": 98.89,
      "en": "When do our guests arrive?",
      "ja": "お客さんたちはいつ来るの？"
     },
     {
-     "start": 137.28,
-     "end": 139.93,
+     "start": 99.56,
+     "end": 102.21,
      "en": "They arrive in 30 minutes!",
      "ja": "あと30分で来ちゃうわ！"
     },
     {
-     "start": 140.86,
-     "end": 142.39,
+     "start": 103.14,
+     "end": 104.67,
      "en": "I can fix this.",
      "ja": "私がなんとかするよ。"
     },
     {
-     "start": 143.26,
-     "end": 144.43,
+     "start": 105.54,
+     "end": 106.71,
      "en": "Do you trust me?",
      "ja": "私のこと信じてる？"
     },
     {
-     "start": 145.4,
-     "end": 146.61,
+     "start": 107.68,
+     "end": 108.89,
      "en": "Do I have to?",
      "ja": "信じなきゃダメ？"
     },
     {
-     "start": 147.46,
-     "end": 147.97,
+     "start": 109.74,
+     "end": 110.25,
      "en": "Yes.",
      "ja": "うん。"
     }
+   ],
+   "clip_spans": [
+    [
+     148.14,
+     159.6
+    ],
+    [
+     161.44,
+     201.6
+    ],
+    [
+     204.48,
+     206.44
+    ],
+    [
+     209.04,
+     210.0
+    ],
+    [
+     221.84,
+     226.76
+    ],
+    [
+     228.56,
+     230.12
+    ],
+    [
+     241.52,
+     269.32
+    ],
+    [
+     271.0,
+     274.24
+    ],
+    [
+     277.92,
+     296.56
+    ]
    ]
   },
   {
@@ -5751,221 +6213,247 @@
      "ja": "わあ、このスーパーはすごく大きい！"
     },
     {
-     "start": 10.08,
-     "end": 13.65,
+     "start": 6.24,
+     "end": 9.81,
      "en": "Look at all of these fruits and vegetables.",
      "ja": "見てよ、このたくさんのフルーツと野菜。"
     },
     {
-     "start": 20.68,
-     "end": 23.37,
+     "start": 10.48,
+     "end": 13.17,
      "en": "I should eat more vegetables.",
      "ja": "私、もっと野菜を食べたほうがいいな。"
     },
     {
-     "start": 23.66,
-     "end": 31.21,
+     "start": 13.46,
+     "end": 21.01,
      "en": "Good idea, Anna. You must eat more vegetables. Like celery.",
      "ja": "いい考えだよ、アンナ。もっと野菜を食べなきゃ。セロリとかね。"
     },
     {
-     "start": 31.88,
-     "end": 35.41,
+     "start": 21.68,
+     "end": 25.21,
      "en": "Celery? Do you know what the web says about celery?",
      "ja": "セロリ？インターネットでセロリが何て言われてるか知ってる？"
     },
     {
-     "start": 35.46,
-     "end": 36.43,
+     "start": 25.26,
+     "end": 26.23,
      "en": "No. What?",
      "ja": "ううん、なに？"
     },
     {
-     "start": 36.84,
-     "end": 43.03,
+     "start": 26.64,
+     "end": 32.83,
      "en": "Celery is 95% water, 100% not ice cream.",
      "ja": "セロリは水が95％で、アイスクリームは0％なんだって。"
     },
     {
-     "start": 42.88,
-     "end": 47.37,
+     "start": 32.68,
+     "end": 37.17,
      "en": "I love the web.",
      "ja": "ネットって最高。"
     },
     {
-     "start": 47.7,
-     "end": 53.17,
+     "start": 37.5,
+     "end": 42.97,
      "en": "Anna, you mustn't eat junk food. Junk food will kill you.",
      "ja": "アンナ、ジャンクフードは食べちゃだめ。そんなの体にすごく悪いよ。"
     },
     {
-     "start": 53.54,
-     "end": 55.23,
+     "start": 43.34,
+     "end": 45.03,
      "en": "You are being silly.",
      "ja": "バカなこと言ってるだけよ。"
     },
     {
-     "start": 55.82,
-     "end": 57.59,
+     "start": 45.62,
+     "end": 47.39,
      "en": "No, you are.",
      "ja": "バカなのはあなただって。"
     },
     {
-     "start": 57.66,
-     "end": 59.27,
+     "start": 47.46,
+     "end": 49.07,
      "en": "No, you are.",
      "ja": "いいえ、あなただから。"
     },
     {
-     "start": 59.66,
-     "end": 62.73,
+     "start": 49.46,
+     "end": 52.53,
      "en": "Will you two please be nice to each other?",
      "ja": "ちょっと二人とも、もう少し仲良くしてくれない？"
     },
     {
-     "start": 63.12,
-     "end": 66.55,
+     "start": 52.92,
+     "end": 56.35,
      "en": "It is important to eat healthy foods.",
      "ja": "体にいいものを食べるのは大事だよ。"
     },
     {
-     "start": 67.26,
-     "end": 71.49,
+     "start": 57.06,
+     "end": 61.29,
      "en": "But a little junk food will not kill me.",
      "ja": "でも、少しぐらいのジャンクフードなら大丈夫。"
     },
     {
-     "start": 72.84,
-     "end": 77.09,
+     "start": 62.64,
+     "end": 66.89,
      "en": "Ice cream. Ice cream does sound good.",
      "ja": "アイス。アイスっておいしそうだなあ。"
     },
     {
-     "start": 77.44,
-     "end": 80.43,
+     "start": 67.24,
+     "end": 70.23,
      "en": "Take this cart to the frozen food aisle.",
      "ja": "このカートを冷凍食品の売り場まで押していって。"
     },
     {
-     "start": 81.46,
-     "end": 86.65,
+     "start": 71.26,
+     "end": 76.45,
      "en": "No, wait. Go back. Go back. We forgot fruit. Go back.",
      "ja": "ちょっと待って。戻って、戻って。フルーツを忘れたわ。戻って。"
     },
     {
-     "start": 88.3,
-     "end": 91.53,
+     "start": 78.1,
+     "end": 81.33,
      "en": "It is important to eat healthy foods.",
      "ja": "体にいいものを食べるのは大事よ。"
     },
     {
-     "start": 105.04,
-     "end": 109.07,
+     "start": 81.96,
+     "end": 85.99,
      "en": "Okay, we are in the frozen food aisle.",
      "ja": "よし、冷凍食品の売り場に着いた。"
     },
     {
-     "start": 109.76,
-     "end": 111.11,
+     "start": 86.68,
+     "end": 88.03,
      "en": "Mmm, ice cream.",
      "ja": "ん〜、アイスクリーム。"
     },
     {
-     "start": 111.72,
-     "end": 113.57,
+     "start": 88.64,
+     "end": 90.49,
      "en": "Mmm, frozen peas.",
      "ja": "ん〜、冷凍グリンピース。"
     },
     {
-     "start": 114.0,
-     "end": 120.47,
+     "start": 90.92,
+     "end": 97.39,
      "en": "Nobody says mmm, frozen peas. They say mmm, ice cream.",
      "ja": "「ん〜、冷凍グリンピース」なんて誰も言わないわよ。「ん〜、アイスクリーム」って言うの。"
     },
     {
-     "start": 120.8,
-     "end": 122.59,
+     "start": 97.72,
+     "end": 99.51,
      "en": "Mmm, frozen peas.",
      "ja": "ん〜、冷凍グリンピース。"
     },
     {
-     "start": 122.78,
-     "end": 124.03,
+     "start": 99.7,
+     "end": 100.95,
      "en": "Mmm, ice cream.",
      "ja": "ん〜、アイスクリーム。"
     },
     {
-     "start": 124.22,
-     "end": 128.77,
+     "start": 101.14,
+     "end": 105.69,
      "en": "I am not going to tell you two again. Stop fighting.",
      "ja": "もう一度は言わないからね。けんかはやめて。"
     },
     {
-     "start": 143.4,
-     "end": 147.31,
+     "start": 106.32,
+     "end": 110.23,
      "en": "Mmm, I smell fresh bread.",
      "ja": "ん、焼きたてのパンのにおいがする。"
     },
     {
-     "start": 154.72,
-     "end": 158.77,
+     "start": 110.84,
+     "end": 114.89,
      "en": "I love the smells of a bakery.",
      "ja": "パン屋さんのにおいって大好き。"
     },
     {
-     "start": 158.62,
-     "end": 165.97,
+     "start": 114.74,
+     "end": 122.09,
      "en": "Oh, Anna, let's buy a fresh loaf of whole wheat organic bread.",
      "ja": "ねえアンナ、全粒粉のオーガニックの焼きたてパンを買おうよ。"
     },
     {
-     "start": 167.28,
-     "end": 172.35,
+     "start": 123.4,
+     "end": 128.47,
      "en": "You don't have to buy bread. Buy some donuts, Anna.",
      "ja": "パンなんて買わなくていいって。ドーナツを買いなよ、アンナ。"
     },
     {
-     "start": 172.74,
-     "end": 177.19,
+     "start": 128.86,
+     "end": 133.31,
      "en": "You mustn't buy donuts. They are only fat and sugar.",
      "ja": "ドーナツは買っちゃだめ。脂と砂糖のかたまりよ。"
     },
     {
-     "start": 177.76,
-     "end": 183.17,
+     "start": 133.88,
+     "end": 139.29,
      "en": "Exactly. You know, you are really no fun at all.",
      "ja": "そう、そのとおり。ほんと、あなたって全然おもしろくないよね。"
     },
     {
-     "start": 183.24,
-     "end": 186.55,
+     "start": 139.36,
+     "end": 142.67,
      "en": "And you must think having high cholesterol is fun.",
      "ja": "じゃあ、コレステロールが高くなるのが楽しいって本気で思ってるのね。"
     },
     {
-     "start": 186.4,
-     "end": 191.21,
+     "start": 142.52,
+     "end": 147.33,
      "en": "Everyone likes donuts. That is why you don't have friends.",
      "ja": "みんなドーナツは好きなの。だからあなたには友だちがいないのよ。"
     },
     {
-     "start": 191.6,
-     "end": 194.33,
+     "start": 147.72,
+     "end": 150.45,
      "en": "And that is why your cholesterol is so high.",
      "ja": "だからあなたのコレステロールはそんなに高いのよ。"
     },
     {
-     "start": 194.92,
-     "end": 197.13,
+     "start": 151.04,
+     "end": 153.25,
      "en": "My cholesterol is none of your business.",
      "ja": "私のコレステロールなんて、あなたに関係ないでしょ。"
     },
     {
-     "start": 197.38,
-     "end": 198.83,
+     "start": 153.5,
+     "end": 154.95,
      "en": "And I have lots of friends.",
      "ja": "それに、私には友だちがいっぱいいるから。"
     }
+   ],
+   "clip_spans": [
+    [
+     52.04,
+     57.88
+    ],
+    [
+     61.72,
+     65.92
+    ],
+    [
+     72.28,
+     143.8
+    ],
+    [
+     156.68,
+     181.04
+    ],
+    [
+     195.04,
+     199.56
+    ],
+    [
+     206.36,
+     251.32
+    ]
    ]
   },
   {
@@ -6195,191 +6683,229 @@
      "ja": "名人に教わったんだよ。"
     },
     {
-     "start": 57.06,
-     "end": 60.31,
+     "start": 53.26,
+     "end": 56.51,
      "en": "You can trust me.",
      "ja": "私に任せて大丈夫。"
     },
     {
-     "start": 64.02,
-     "end": 65.23,
+     "start": 57.14,
+     "end": 58.35,
      "en": "Okay.",
      "ja": "わかったよ。"
     },
     {
-     "start": 81.82,
-     "end": 84.73,
+     "start": 65.5,
+     "end": 68.41,
      "en": "Great! But we need teamwork.",
      "ja": "よし！　でも、チームワークが必要だよ。"
     },
     {
-     "start": 85.26,
-     "end": 86.49,
+     "start": 68.94,
+     "end": 70.17,
      "en": "You sit in the car.",
      "ja": "あなたは車に乗ってて。"
     },
     {
-     "start": 86.64,
-     "end": 89.15,
+     "start": 70.32,
+     "end": 72.83,
      "en": "When I say “go,” you start the engine.",
      "ja": "私が「ゴー」って言ったら、エンジンをかけて。"
     },
     {
-     "start": 90.32,
-     "end": 93.13,
+     "start": 74.0,
+     "end": 76.81,
      "en": "Okay, go!",
      "ja": "はい、ゴー！"
     },
     {
-     "start": 96.08,
-     "end": 96.73,
+     "start": 77.44,
+     "end": 78.09,
      "en": "Stop!",
      "ja": "ストップ！"
     },
     {
-     "start": 99.7,
-     "end": 103.93,
+     "start": 78.74,
+     "end": 82.97,
      "en": "Okay, go! Huh.",
      "ja": "はい、ゴー！　あれ？"
     },
     {
-     "start": 105.14,
-     "end": 107.97,
+     "start": 84.18,
+     "end": 87.01,
      "en": "It's not starting! It’s not starting!",
      "ja": "エンジンがかからない！　全然かからないよ！"
     },
     {
-     "start": 108.34,
-     "end": 109.41,
+     "start": 87.38,
+     "end": 88.45,
      "en": "What’s wrong?",
      "ja": "どうしたの？"
     },
     {
-     "start": 109.66,
-     "end": 113.07,
+     "start": 88.7,
+     "end": 92.11,
      "en": "This car is stupid … stupid, stupid!",
      "ja": "この車、ほんとバカだ……バカバカバカ！"
     },
     {
-     "start": 114.2,
-     "end": 116.71,
+     "start": 93.24,
+     "end": 95.75,
      "en": "Pete, kicking the tires will not help.",
      "ja": "ピート、タイヤを蹴っても意味ないよ。"
     },
     {
-     "start": 117.38,
-     "end": 119.61,
+     "start": 96.42,
+     "end": 98.65,
      "en": "Well, you did not help, Anna.",
      "ja": "だって、アンナ、君は何の役にも立たなかったじゃないか。"
     },
     {
-     "start": 119.82,
-     "end": 121.25,
+     "start": 98.86,
+     "end": 100.29,
      "en": "You did not help!!",
      "ja": "全然役に立たなかった！"
     },
     {
-     "start": 121.42,
-     "end": 124.21,
+     "start": 100.46,
+     "end": 103.25,
      "en": "Pete, Pete! Pull yourself together, man.",
      "ja": "ピート、ピート！　しっかりして。"
     },
     {
-     "start": 125.06,
-     "end": 126.49,
+     "start": 104.1,
+     "end": 105.53,
      "en": "Give me the keys.",
      "ja": "鍵をちょうだい。"
     },
     {
-     "start": 127.48,
-     "end": 132.29,
+     "start": 106.52,
+     "end": 111.33,
      "en": "I must feel the key in the ignition and turn it myself.",
      "ja": "私が自分で、鍵穴にさした鍵を回さないとね。"
     },
     {
-     "start": 142.9,
-     "end": 146.29,
+     "start": 111.98,
+     "end": 115.37,
      "en": "Use the key, Anna.",
      "ja": "鍵を使うんだ、アンナ。"
     },
     {
-     "start": 148.26,
-     "end": 150.47,
+     "start": 117.34,
+     "end": 119.55,
      "en": "Turn the key, Anna.",
      "ja": "鍵を回すんだ、アンナ。"
     },
     {
-     "start": 151.04,
-     "end": 154.93,
+     "start": 120.12,
+     "end": 124.01,
      "en": "What are you forgetting, Anna?",
      "ja": "アンナ、何を忘れている？"
     },
     {
-     "start": 158.14,
-     "end": 161.21,
+     "start": 124.66,
+     "end": 127.73,
      "en": "Pete. Pete.",
      "ja": "ピート、ピート。"
     },
     {
-     "start": 163.12,
-     "end": 164.27,
+     "start": 129.64,
+     "end": 130.79,
      "en": "What?",
      "ja": "なに？"
     },
     {
-     "start": 164.74,
-     "end": 166.99,
+     "start": 131.26,
+     "end": 133.51,
      "en": "You are out of gas.",
      "ja": "ガソリンが切れてるよ。"
     },
     {
-     "start": 168.02,
-     "end": 170.73,
+     "start": 134.54,
+     "end": 137.25,
      "en": "I can’t be out of gas.",
      "ja": "ガソリンが切れてるはずないよ。"
     },
     {
-     "start": 173.34,
-     "end": 174.65,
+     "start": 137.9,
+     "end": 139.21,
      "en": "I’m out of gas.",
      "ja": "あ、本当にガソリンがないや。"
     },
     {
-     "start": 176.4,
-     "end": 183.29,
+     "start": 140.96,
+     "end": 147.85,
      "en": "Sorry, Anna. I’ll go get some.",
      "ja": "ごめん、アンナ。ガソリン取ってくるよ。"
     },
     {
-     "start": 183.92,
-     "end": 186.11,
+     "start": 148.48,
+     "end": 150.67,
      "en": "Pete. You relax.",
      "ja": "ピート、あなたは休んでて。"
     },
     {
-     "start": 186.9,
-     "end": 188.13,
+     "start": 151.46,
+     "end": 152.69,
      "en": "Clean your face.",
      "ja": "顔を洗ってきなよ。"
     },
     {
-     "start": 189.46,
-     "end": 193.09,
+     "start": 154.02,
+     "end": 157.65,
      "en": "You can watch the rest of your online video course.",
      "ja": "残りのオンライン講座でも見てて。"
     },
     {
-     "start": 193.44,
-     "end": 196.33,
+     "start": 158.0,
+     "end": 160.89,
      "en": "It’ll be faster if I go … in a flash.",
      "ja": "私がさっと行ったほうが早いからさ。"
     },
     {
-     "start": 197.18,
-     "end": 197.97,
+     "start": 161.74,
+     "end": 162.53,
      "en": "Until next time …",
      "ja": "それじゃ、またね……。"
     }
+   ],
+   "clip_spans": [
+    [
+     91.36,
+     144.2
+    ],
+    [
+     148.0,
+     151.88
+    ],
+    [
+     154.96,
+     163.32
+    ],
+    [
+     172.76,
+     184.72
+    ],
+    [
+     187.04,
+     188.32
+    ],
+    [
+     190.64,
+     223.88
+    ],
+    [
+     233.84,
+     246.52
+    ],
+    [
+     249.08,
+     262.32
+    ],
+    [
+     264.28,
+     289.78
+    ]
    ]
   },
   {
@@ -6883,227 +7409,241 @@
      "ja": "はい、使っています。"
     },
     {
-     "start": 7.76,
-     "end": 10.55,
+     "start": 4.56,
+     "end": 7.35,
      "en": "Pete, hi! Thanks for meeting me.",
      "ja": "ピート、やあ。来てくれてありがとう。"
     },
     {
-     "start": 11.02,
-     "end": 14.23,
+     "start": 7.82,
+     "end": 11.03,
      "en": "Sure. But I don’t have lots of time, Anna.",
      "ja": "いいよ。でも、あんまり時間がないんだ、アナ。"
     },
     {
-     "start": 14.58,
-     "end": 16.87,
+     "start": 11.38,
+     "end": 13.67,
      "en": "I’m busy looking for work.",
      "ja": "今、仕事探しで忙しくてさ。"
     },
     {
-     "start": 17.64,
-     "end": 22.33,
+     "start": 14.44,
+     "end": 19.13,
      "en": "Pete, you can tear these want ads up and throw them away!",
      "ja": "ピート、この求人広告はビリビリに破って、捨てていいよ！"
     },
     {
-     "start": 22.64,
-     "end": 23.83,
+     "start": 19.44,
+     "end": 20.63,
      "en": "I have good news!",
      "ja": "いい知らせがあるんだ。"
     },
     {
-     "start": 24.3,
-     "end": 27.03,
+     "start": 21.1,
+     "end": 23.83,
      "en": "Anna, I was working on that crossword puzzle.",
      "ja": "アナ、そのクロスワードパズルを解いてたんだけど。"
     },
     {
-     "start": 27.36,
-     "end": 29.09,
+     "start": 24.16,
+     "end": 25.89,
      "en": "Oh. Sorry. Sorry.",
      "ja": "あ、ごめん、ごめん。"
     },
     {
-     "start": 30.38,
-     "end": 32.75,
+     "start": 27.18,
+     "end": 29.55,
      "en": "Pete, forget about the crossword puzzle.",
      "ja": "ピート、クロスワードはもう忘れて。"
     },
     {
-     "start": 32.86,
-     "end": 35.39,
+     "start": 29.66,
+     "end": 32.19,
      "en": "I have a job offer for you!",
      "ja": "あなたに仕事の話があるの。"
     },
     {
-     "start": 36.32,
-     "end": 37.39,
+     "start": 33.12,
+     "end": 34.19,
      "en": "I'm listening.",
      "ja": "聞いてるよ。"
     },
     {
-     "start": 37.64,
-     "end": 42.41,
+     "start": 34.44,
+     "end": 39.21,
      "en": "My boss wants me to team up with someone to host a talk show.",
      "ja": "上司がね、トークショーを一緒にやる相手と組みなさいって言ってるの。"
     },
     {
-     "start": 42.84,
-     "end": 45.95,
+     "start": 39.64,
+     "end": 42.75,
      "en": "But the person must be different from me.",
      "ja": "でも、その人は私とタイプが違ってないといけないの。"
     },
     {
-     "start": 46.32,
-     "end": 47.81,
+     "start": 43.12,
+     "end": 44.61,
      "en": "So, I thought of you.",
      "ja": "それで、あなたが浮かんだの。"
     },
     {
-     "start": 48.28,
-     "end": 50.75,
+     "start": 45.08,
+     "end": 47.55,
      "en": "Different from you? What do you mean?",
      "ja": "君と違うって？どういう意味？"
     },
     {
-     "start": 51.42,
-     "end": 53.95,
+     "start": 48.22,
+     "end": 50.75,
      "en": "I'm sorry, Pete, I don't have time right now.",
      "ja": "ごめんねピート、今あんまり時間がなくて。"
     },
     {
-     "start": 54.28,
-     "end": 55.91,
+     "start": 51.08,
+     "end": 52.71,
      "en": "Here's my boss's address.",
      "ja": "これが私の上司の住所。"
     },
     {
-     "start": 56.34,
-     "end": 58.97,
+     "start": 53.14,
+     "end": 55.77,
      "en": "Your interview is tomorrow morning at 10 am.",
      "ja": "あなたの面接は明日の朝10時よ。"
     },
     {
-     "start": 60.46,
-     "end": 63.21,
+     "start": 57.26,
+     "end": 60.01,
      "en": "But what do you mean “different”?",
      "ja": "でも「違う」って、どういうこと？"
     },
     {
-     "start": 64.24,
-     "end": 65.79,
+     "start": 61.04,
+     "end": 62.59,
      "en": "Just be yourself, Pete.",
      "ja": "ピート、自分らしくしてればいいの。"
     },
     {
-     "start": 67.08,
-     "end": 68.35,
+     "start": 63.88,
+     "end": 65.15,
      "en": "Just be yourself.",
      "ja": "ありのままの自分でいて。"
     },
     {
-     "start": 69.26,
-     "end": 72.29,
+     "start": 66.06,
+     "end": 69.09,
      "en": "Did you find any two-word verbs?",
      "ja": "二語動詞は見つかりましたか？"
     },
     {
-     "start": 72.44,
-     "end": 74.09,
+     "start": 69.24,
+     "end": 70.89,
      "en": "Here’s one example.",
      "ja": "ひとつ例を出しましょう。"
     },
     {
-     "start": 74.38,
-     "end": 77.55,
+     "start": 71.18,
+     "end": 74.35,
      "en": "Pete can throw the want ads away!",
      "ja": "ピートは求人広告を捨てることができます。"
     },
     {
-     "start": 77.92,
-     "end": 80.99,
+     "start": 74.72,
+     "end": 77.79,
      "en": "Throw away is a two-word verb.",
      "ja": "「throw away」は二語動詞です。"
     },
     {
-     "start": 81.98,
-     "end": 83.95,
+     "start": 78.78,
+     "end": 80.75,
      "en": "Thanks for coming in, Pete.",
      "ja": "来てくれてありがとう、ピート。"
     },
     {
-     "start": 85.56,
-     "end": 87.43,
+     "start": 82.36,
+     "end": 84.23,
      "en": "Thanks for the opportunity, Ms. Weaver.",
      "ja": "この機会をありがとうございます、ウィーバーさん。"
     },
     {
-     "start": 87.74,
-     "end": 94.09,
+     "start": 84.54,
+     "end": 90.89,
      "en": "I need to find out if you have the skills for this job.",
      "ja": "あなたにこの仕事に必要な能力があるか、確認する必要があります。"
     },
     {
-     "start": 95.32,
-     "end": 99.73,
+     "start": 92.12,
+     "end": 96.53,
      "en": "And I want you to be completely honest.",
      "ja": "それから、正直に答えてほしいの。"
     },
     {
-     "start": 102.5,
-     "end": 103.17,
+     "start": 97.18,
+     "end": 97.85,
      "en": "Okay.",
      "ja": "わかりました。"
     },
     {
-     "start": 103.5,
-     "end": 106.47,
+     "start": 98.18,
+     "end": 101.15,
      "en": "First, let's talk about your personal skills.",
      "ja": "まず、あなたの対人スキルについて話しましょう。"
     },
     {
-     "start": 107.48,
-     "end": 111.65,
+     "start": 102.16,
+     "end": 106.33,
      "en": "Pete, are you a people person?",
      "ja": "ピート、あなたは人付き合いが得意なタイプ？"
     },
     {
-     "start": 112.72,
-     "end": 119.59,
+     "start": 107.4,
+     "end": 114.27,
      "en": "Well, okay, sometimes I think people talk too much.",
      "ja": "ええと、その…人って、しゃべりすぎだなって思うことがあるんです。"
     },
     {
-     "start": 120.18,
-     "end": 126.15,
+     "start": 114.86,
+     "end": 120.83,
      "en": "Pete, what work of yours are you most proud of?",
      "ja": "ピート、自分の仕事で、いちばん誇りに思っているのは何？"
     },
     {
-     "start": 126.32,
-     "end": 130.97,
+     "start": 121.0,
+     "end": 125.65,
      "en": "Last year, I locked myself in a cabin and wrote a book.",
      "ja": "去年、小屋にこもって本を書いたんです。"
     },
     {
-     "start": 131.76,
-     "end": 134.51,
+     "start": 126.44,
+     "end": 129.19,
      "en": "I didn't speak to anybody the entire time!",
      "ja": "その間、誰とも一言も話しませんでした。"
     },
     {
-     "start": 135.44,
-     "end": 137.89,
+     "start": 130.12,
+     "end": 132.57,
      "en": "It was the best two months of my life.",
      "ja": "あの二か月は、人生で一番よかったです。"
     },
     {
-     "start": 138.74,
-     "end": 142.61,
+     "start": 133.42,
+     "end": 137.29,
      "en": "Okay. I think I’ve heard enough.",
      "ja": "そう。もう十分聞きました。"
     }
+   ],
+   "clip_spans": [
+    [
+     111.62,
+     115.76
+    ],
+    [
+     118.96,
+     211.56
+    ],
+    [
+     213.68,
+     254.68
+    ]
    ]
   },
   {
@@ -7255,311 +7795,325 @@
      "ja": "ピートが来たとき、私は15分も待ってたの。"
     },
     {
-     "start": 22.72,
-     "end": 28.25,
+     "start": 18.2,
+     "end": 23.73,
      "en": "After Pete had wasted time waiting for coffee, we were late.",
      "ja": "ピートがコーヒーを待って時間をムダにしたせいで、私たちは遅刻したの。"
     },
     {
-     "start": 28.1,
-     "end": 31.03,
+     "start": 23.58,
+     "end": 26.51,
      "en": "I left you a message.",
      "ja": "あなたにメッセージを残したわ。"
     },
     {
-     "start": 31.4,
-     "end": 34.13,
+     "start": 26.88,
+     "end": 29.61,
      "en": "I didn't get that message.",
      "ja": "そのメッセージは受け取ってないわ。"
     },
     {
-     "start": 34.6,
-     "end": 36.25,
+     "start": 30.08,
+     "end": 31.73,
      "en": "Oh, sorry.",
      "ja": "あ、ごめんなさい。"
     },
     {
-     "start": 37.06,
-     "end": 37.71,
+     "start": 32.54,
+     "end": 33.19,
      "en": "Pete?",
      "ja": "ピート？"
     },
     {
-     "start": 38.38,
-     "end": 40.55,
+     "start": 33.86,
+     "end": 36.03,
      "en": "Anna left a message.",
      "ja": "アンナはメッセージを残しました。"
     },
     {
-     "start": 40.8,
-     "end": 42.99,
+     "start": 36.28,
+     "end": 38.47,
      "en": "That's the right thing to do.",
      "ja": "それは正しい対応ですね。"
     },
     {
-     "start": 43.18,
-     "end": 47.25,
+     "start": 38.66,
+     "end": 42.73,
      "en": "Did you find some examples of the past perfect tense?",
      "ja": "過去完了の文の例は見つかりましたか？"
     },
     {
-     "start": 47.62,
-     "end": 48.11,
+     "start": 43.1,
+     "end": 43.59,
      "en": "I did.",
      "ja": "見つけました。"
     },
     {
-     "start": 48.24,
-     "end": 49.17,
+     "start": 43.72,
+     "end": 44.65,
      "en": "Anna said.",
      "ja": "アンナはこう言いました。"
     },
     {
-     "start": 49.42,
-     "end": 54.25,
+     "start": 44.9,
+     "end": 49.73,
      "en": "After Pete had wasted time waiting for coffee, we were late.",
      "ja": "「ピートがコーヒーを待って時間をムダにしたせいで、私たちは遅刻したの。」"
     },
     {
-     "start": 54.56,
-     "end": 56.13,
+     "start": 50.04,
+     "end": 51.61,
      "en": "Look at that coffee.",
      "ja": "そのコーヒーを見てください。"
     },
     {
-     "start": 55.98,
-     "end": 58.13,
+     "start": 51.46,
+     "end": 53.61,
      "en": "It looks more like dessert.",
      "ja": "コーヒーというよりデザートに見えますね。"
     },
     {
-     "start": 58.38,
-     "end": 59.09,
+     "start": 53.86,
+     "end": 54.57,
      "en": "Okay.",
      "ja": "よし。"
     },
     {
-     "start": 59.4,
-     "end": 62.19,
+     "start": 54.88,
+     "end": 57.67,
      "en": "Deep watching for past perfect.",
      "ja": "過去完了をしっかり探し続けてください。"
     },
     {
-     "start": 65.02,
-     "end": 67.29,
+     "start": 58.3,
+     "end": 60.57,
      "en": "Yeah, that's not why we're late.",
      "ja": "いや、遅れたのはそのせいじゃないんだ。"
     },
     {
-     "start": 67.68,
-     "end": 69.23,
+     "start": 60.96,
+     "end": 62.51,
      "en": "This is why we're late.",
      "ja": "遅れた本当の理由はこっちさ。"
     },
     {
-     "start": 69.6,
-     "end": 72.85,
+     "start": 62.88,
+     "end": 66.13,
      "en": "I had arrived on time at 8 a.m.",
      "ja": "僕は8時ちょうどに時間どおり着いていた。"
     },
     {
-     "start": 73.16,
-     "end": 74.71,
+     "start": 66.44,
+     "end": 67.99,
      "en": "but didn't see Anna.",
      "ja": "でも、アンナが見えなかったんだ。"
     },
     {
-     "start": 74.9,
-     "end": 76.99,
+     "start": 68.18,
+     "end": 70.27,
      "en": "She was standing behind a tree.",
      "ja": "彼女は木の後ろに立っていたんだよ。"
     },
     {
-     "start": 77.06,
-     "end": 78.51,
+     "start": 70.34,
+     "end": 71.79,
      "en": "I think she was hugging it.",
      "ja": "たぶん木を抱きしめてたと思う。"
     },
     {
-     "start": 78.76,
-     "end": 80.65,
+     "start": 72.04,
+     "end": 73.93,
      "en": "I always walk to work,",
      "ja": "僕はいつも歩いて通勤しているんだけど、"
     },
     {
-     "start": 80.62,
-     "end": 84.35,
+     "start": 73.9,
+     "end": 77.63,
      "en": "but she said that would take too long",
      "ja": "彼女は「それじゃ時間がかかりすぎる」って言って、"
     },
     {
-     "start": 84.2,
-     "end": 86.87,
+     "start": 77.48,
+     "end": 80.15,
      "en": "and that a scooter would be faster.",
      "ja": "スクーターのほうが早いって言うんだ。"
     },
     {
-     "start": 87.12,
-     "end": 88.91,
+     "start": 80.4,
+     "end": 82.19,
      "en": "It was awful.",
      "ja": "ひどかったよ。"
     },
     {
-     "start": 89.1,
-     "end": 94.11,
+     "start": 82.38,
+     "end": 87.39,
      "en": "I hated it and it added too much time to our commute.",
      "ja": "最悪だったし、通勤時間がすごく長くなってしまった。"
     },
     {
-     "start": 94.28,
-     "end": 99.47,
+     "start": 87.56,
+     "end": 92.75,
      "en": "Then Anna stopped by a pond to feed the birds.",
      "ja": "そのあとアンナが池に寄って、鳥にエサをあげたんだ。"
     },
     {
-     "start": 99.7,
-     "end": 103.17,
+     "start": 92.98,
+     "end": 96.45,
      "en": "She had named them after characters from books",
      "ja": "その鳥たちに、本の登場人物の名前をつけていて、"
     },
     {
-     "start": 103.02,
-     "end": 106.41,
+     "start": 96.3,
+     "end": 99.69,
      "en": "and yelled the names out loud.",
      "ja": "その名前を大声で呼んだんだ。"
     },
     {
-     "start": 106.7,
-     "end": 110.59,
+     "start": 99.98,
+     "end": 103.87,
      "en": "Romeo, Juliet, Sherlock.",
      "ja": "ロミオ！ジュリエット！シャーロック！"
     },
     {
-     "start": 111.76,
-     "end": 116.87,
+     "start": 105.04,
+     "end": 110.15,
      "en": "By the time she had fed all the birds, we were late.",
      "ja": "全部の鳥にエサをやり終わったころには、もう遅刻していたよ。"
     },
     {
-     "start": 116.98,
-     "end": 118.15,
+     "start": 110.26,
+     "end": 111.43,
      "en": "This is what I think.",
      "ja": "私の考えはこうです。"
     },
     {
-     "start": 118.86,
-     "end": 123.41,
+     "start": 112.14,
+     "end": 116.69,
      "en": "You two see the same event very differently.",
      "ja": "あなたたち二人は、同じ出来事をまったく違って見ているのね。"
     },
     {
-     "start": 123.94,
-     "end": 125.87,
+     "start": 117.22,
+     "end": 119.15,
      "en": "Does this happen often with you two?",
      "ja": "こういうこと、二人にはよくあるの？"
     },
     {
-     "start": 126.46,
-     "end": 127.01,
+     "start": 119.74,
+     "end": 120.29,
      "en": "Yes.",
      "ja": "ある。"
     },
     {
-     "start": 126.98,
-     "end": 127.23,
+     "start": 120.26,
+     "end": 120.51,
      "en": "No.",
      "ja": "ないわ。"
     },
     {
-     "start": 128.04,
-     "end": 128.63,
+     "start": 121.32,
+     "end": 121.91,
      "en": "Yes.",
      "ja": "あるよ。"
     },
     {
-     "start": 129.66,
-     "end": 131.21,
+     "start": 122.94,
+     "end": 124.49,
      "en": "What are you talking about?",
      "ja": "何の話してるの？"
     },
     {
-     "start": 131.16,
-     "end": 131.71,
+     "start": 124.44,
+     "end": 124.99,
      "en": "Okay.",
      "ja": "なるほど。"
     },
     {
-     "start": 131.86,
-     "end": 132.85,
+     "start": 125.14,
+     "end": 126.13,
      "en": "This is good.",
      "ja": "これはいいわ。"
     },
     {
-     "start": 132.9,
-     "end": 133.73,
+     "start": 126.18,
+     "end": 127.01,
      "en": "This is good.",
      "ja": "本当にいいわ。"
     },
     {
-     "start": 133.94,
-     "end": 135.87,
+     "start": 127.22,
+     "end": 129.15,
      "en": "It's good to see things differently.",
      "ja": "物事を違うふうに見るのは、いいことよ。"
     },
     {
-     "start": 136.48,
-     "end": 138.49,
+     "start": 129.76,
+     "end": 131.77,
      "en": "I have an idea.",
      "ja": "いい考えがあるわ。"
     },
     {
-     "start": 138.34,
-     "end": 140.67,
+     "start": 131.62,
+     "end": 133.95,
      "en": "We will call the show",
      "ja": "番組のタイトルは——"
     },
     {
-     "start": 140.52,
-     "end": 143.41,
+     "start": 133.8,
+     "end": 136.69,
      "en": "He Said, She Said.",
      "ja": "『ヒー・セッド、シー・セッド』にしましょう。"
     },
     {
-     "start": 144.66,
-     "end": 147.93,
+     "start": 137.94,
+     "end": 141.21,
      "en": "For every story, you tell a different point of view.",
      "ja": "毎回、一つの出来事を違う立場から話すのよ。"
     },
     {
-     "start": 148.36,
-     "end": 150.41,
+     "start": 141.64,
+     "end": 143.69,
      "en": "That is a great idea, Kelly.",
      "ja": "それはすてきなアイデアだよ、ケリー。"
     },
     {
-     "start": 151.06,
-     "end": 153.67,
+     "start": 144.34,
+     "end": 146.95,
      "en": "Pete, we are different.",
      "ja": "ピート、私たちって全然ちがうでしょ。"
     },
     {
-     "start": 154.14,
-     "end": 156.55,
+     "start": 147.42,
+     "end": 149.83,
      "en": "That's why I thought of you for this job.",
      "ja": "だからこそ、この仕事にあなたを選んだのよ。"
     },
     {
-     "start": 156.82,
-     "end": 159.03,
+     "start": 150.1,
+     "end": 152.31,
      "en": "I think you two understand perfectly.",
      "ja": "あなたたち二人は、ちゃんと分かり合えてると思うわ。"
     },
     {
-     "start": 161.02,
-     "end": 162.37,
+     "start": 154.3,
+     "end": 155.65,
      "en": "Let's get to work.",
      "ja": "さあ、仕事を始めましょう。"
     }
+   ],
+   "clip_spans": [
+    [
+     103.88,
+     121.64
+    ],
+    [
+     126.16,
+     166.28
+    ],
+    [
+     168.48,
+     266.7
+    ]
    ]
   },
   {
@@ -8379,143 +8933,157 @@
      "ja": "夜は星空の下で野外に泊まります。"
     },
     {
-     "start": 79.74,
-     "end": 83.33,
+     "start": 77.82,
+     "end": 81.41,
      "en": "Look, I think this was a bad idea.",
      "ja": "あの、やっぱり来るべきじゃなかった気がします。"
     },
     {
-     "start": 84.26,
-     "end": 86.23,
+     "start": 82.34,
+     "end": 84.31,
      "en": "Sure, you can leave.",
      "ja": "もちろん、帰ってもいいですよ。"
     },
     {
-     "start": 86.88,
-     "end": 91.13,
+     "start": 84.96,
+     "end": 89.21,
      "en": "But then you won’t see the latest vacation technology.",
      "ja": "でもそうすると、最新のバケーション技術が見られませんよ。"
     },
     {
-     "start": 93.82,
-     "end": 97.19,
+     "start": 89.86,
+     "end": 93.23,
      "en": "Did you find all of those adjectives?",
      "ja": "今出てきた形容詞は、全部見つけられましたか？"
     },
     {
-     "start": 97.24,
-     "end": 99.47,
+     "start": 93.28,
+     "end": 95.51,
      "en": "Dan started with good - The Mountain Getaway;",
      "ja": "ダンはまず「good」――マウンテン・ゲッタウェイから始めました。"
     },
     {
-     "start": 99.74,
-     "end": 101.89,
+     "start": 95.78,
+     "end": 97.93,
      "en": "then he moved to better - The Deep Sea Adventure.",
      "ja": "それから「better」――ディープ・シー・アドベンチャーに進みました。"
     },
     {
-     "start": 101.74,
-     "end": 108.71,
+     "start": 97.78,
+     "end": 104.75,
      "en": "And finally, he said the Safari Campout was the best vacation for Anna!",
      "ja": "最後に、サファリ・キャンプアウトがアンナにとって「the best」な休暇だと言いましたね。"
     },
     {
-     "start": 109.02,
-     "end": 114.65,
+     "start": 105.06,
+     "end": 110.69,
      "en": "Exactly what is the “latest vacation technology” … exactly?",
      "ja": "その「最新のバケーション技術」って、具体的には何なんですか？"
     },
     {
-     "start": 115.44,
-     "end": 116.79,
+     "start": 111.48,
+     "end": 112.83,
      "en": "I’m happy you asked.",
      "ja": "聞いてくれてうれしいです。"
     },
     {
-     "start": 117.48,
-     "end": 120.43,
+     "start": 113.52,
+     "end": 116.47,
      "en": "Meet the Travel Max 2000!",
      "ja": "こちらが「トラベルマックス2000」です！"
     },
     {
-     "start": 121.7,
-     "end": 122.55,
+     "start": 117.74,
+     "end": 118.59,
      "en": "Wow.",
      "ja": "わあ。"
     },
     {
-     "start": 123.46,
-     "end": 125.39,
+     "start": 119.5,
+     "end": 121.43,
      "en": "So, tell me, how do you like to travel?",
      "ja": "では、どんな旅のスタイルがお好きか教えてください。"
     },
     {
-     "start": 125.64,
-     "end": 131.27,
+     "start": 121.68,
+     "end": 127.31,
      "en": "Well, I like travel that is cozy and romantic but still exciting.",
      "ja": "ええと、くつろげてロマンチックで、でもワクワクもある旅が好きです。"
     },
     {
-     "start": 131.86,
-     "end": 133.81,
+     "start": 127.9,
+     "end": 129.85,
      "en": "Great. Tell me more.",
      "ja": "いいですね。もっと聞かせてください。"
     },
     {
-     "start": 134.4,
-     "end": 138.25,
+     "start": 130.44,
+     "end": 134.29,
      "en": "I like traveling in a plane but not in a helicopter!",
      "ja": "飛行機で移動するのは好きですけど、ヘリコプターは嫌です。"
     },
     {
-     "start": 138.84,
-     "end": 143.33,
+     "start": 134.88,
+     "end": 139.37,
      "en": "Planes are a little scary but helicopters are scarier!",
      "ja": "飛行機も少しは怖いけれど、ヘリコプターのほうがもっと怖いです。"
     },
     {
-     "start": 143.8,
-     "end": 146.69,
+     "start": 139.84,
+     "end": 142.73,
      "en": "My favorite way of traveling is by train.",
      "ja": "一番好きな移動手段は電車です。"
     },
     {
-     "start": 147.14,
-     "end": 149.27,
+     "start": 143.18,
+     "end": 145.31,
      "en": "Ships can be the scariest!",
      "ja": "船は、いちばん怖いこともあります！"
     },
     {
-     "start": 150.02,
-     "end": 151.85,
+     "start": 146.06,
+     "end": 147.89,
      "en": "Have you seen the movie “Titanic”?",
      "ja": "映画『タイタニック』を観ましたか？"
     },
     {
-     "start": 152.1,
-     "end": 153.15,
+     "start": 148.14,
+     "end": 149.19,
      "en": "Oh, and no horses.",
      "ja": "あ、馬もナシで。"
     },
     {
-     "start": 153.7,
-     "end": 155.31,
+     "start": 149.74,
+     "end": 151.35,
      "en": "But I will ride a camel.",
      "ja": "でも、ラクダなら乗ります。"
     },
     {
-     "start": 155.88,
-     "end": 157.09,
+     "start": 151.92,
+     "end": 153.13,
      "en": "And no bike tours.",
      "ja": "それから、自転車ツアーもやめてください。"
     },
     {
-     "start": 157.84,
-     "end": 162.65,
+     "start": 153.88,
+     "end": 158.69,
      "en": "Biking is THE slowest AND least romantic way to travel.",
      "ja": "自転車旅は、いちばんゆっくりで、いちばんロマンチックじゃない移動手段です。"
     }
+   ],
+   "clip_spans": [
+    [
+     82.36,
+     159.76
+    ],
+    [
+     161.68,
+     173.72
+    ],
+    [
+     175.76,
+     245.46
+    ]
    ]
   },
   {
@@ -8973,287 +9541,309 @@
      "ja": "ここから見る川がすごくきれい。"
     },
     {
-     "start": 9.82,
-     "end": 12.25,
+     "start": 6.54,
+     "end": 8.97,
      "en": "Penelope, this is amazing!",
      "ja": "ペネロペ、これすごいね。"
     },
     {
-     "start": 12.68,
-     "end": 20.43,
+     "start": 9.4,
+     "end": 17.15,
      "en": "A minute ago, we were riding along the river, and now we’re riding in the river!",
      "ja": "さっきまでは川沿いを走ってたのに、今は川の中を走ってるよ！"
     },
     {
-     "start": 20.28,
-     "end": 20.43,
+     "start": 17.0,
+     "end": 17.15,
      "en": "Awesome.",
      "ja": "最高。"
     },
     {
-     "start": 20.28,
-     "end": 23.71,
+     "start": 17.0,
+     "end": 20.43,
      "en": "Hey, we’re passing by the Pentagon on our right!",
      "ja": "ねえ、右手にペンタゴンが見えてきたよ。"
     },
     {
-     "start": 24.86,
-     "end": 28.81,
+     "start": 21.58,
+     "end": 25.53,
      "en": "Penelope, you love riding over the water on a bridge.",
      "ja": "ペネロペは、水の上の橋を走るのが好きなんだよね。"
     },
     {
-     "start": 28.94,
-     "end": 32.33,
+     "start": 25.66,
+     "end": 29.05,
      "en": "But I love riding under a bridge in a boat!",
      "ja": "でも私は、ボートで橋の下を進むのが好き！"
     },
     {
-     "start": 33.62,
-     "end": 34.67,
+     "start": 30.34,
+     "end": 31.39,
      "en": "Anna, look!",
      "ja": "アナ、見て！"
     },
     {
-     "start": 35.04,
-     "end": 37.55,
+     "start": 31.76,
+     "end": 34.27,
      "en": "An airplane is flying right over our heads!",
      "ja": "飛行機が、ちょうど私たちの頭の真上を飛んでる！"
     },
     {
-     "start": 37.62,
-     "end": 38.15,
+     "start": 34.34,
+     "end": 34.87,
      "en": "Wow!",
      "ja": "わあ！"
     },
     {
-     "start": 38.18,
-     "end": 42.61,
+     "start": 34.9,
+     "end": 39.33,
      "en": "This is the closest I’ve ever been to an airplane in flight.",
      "ja": "飛んでいる飛行機に、こんなに近づいたのは初めて。"
     },
     {
-     "start": 43.7,
-     "end": 47.61,
+     "start": 40.42,
+     "end": 44.33,
      "en": "Well, I’ve been inside a flying airplane.",
      "ja": "まあ、飛行機に乗ったことはあるけどね。"
     },
     {
-     "start": 47.58,
-     "end": 51.69,
+     "start": 44.3,
+     "end": 48.41,
      "en": "But not outside of an airplane as it flies over my head!",
      "ja": "でも、頭の上を飛んでいく飛行機の外側にいるのは初めて！"
     },
     {
-     "start": 52.76,
-     "end": 55.41,
+     "start": 49.48,
+     "end": 52.13,
      "en": "And now we’re driving out of the water.",
      "ja": "それに今は、水の中から車で出ていってるところだよ。"
     },
     {
-     "start": 55.72,
-     "end": 58.07,
+     "start": 52.44,
+     "end": 54.79,
      "en": "I still can’t believe this thing drives and sails!",
      "ja": "これが走るし船にもなるなんて、今でも信じられない。"
     },
     {
-     "start": 59.04,
-     "end": 59.71,
+     "start": 55.76,
+     "end": 56.43,
      "en": "I know.",
      "ja": "だよね。"
     },
     {
-     "start": 59.86,
-     "end": 60.99,
+     "start": 56.58,
+     "end": 57.71,
      "en": "It’s amazing.",
      "ja": "本当にすごい。"
     },
     {
-     "start": 62.16,
-     "end": 68.35,
+     "start": 58.88,
+     "end": 65.07,
      "en": "After we ride along these railroad tracks, you’ll see my favorite part of the tour!",
      "ja": "この線路沿いを走ったあとで、ツアーで一番好きな場所が見えるよ！"
     },
     {
-     "start": 69.4,
-     "end": 73.53,
+     "start": 66.12,
+     "end": 70.25,
      "en": "The U.S. Treasury where they make money!",
      "ja": "お金を作っているアメリカ財務省だよ！"
     },
     {
-     "start": 73.94,
-     "end": 77.19,
+     "start": 70.66,
+     "end": 73.91,
      "en": "That young man is making a lot of money, too.",
      "ja": "あの男の子も、かなり稼いでいるね。"
     },
     {
-     "start": 77.24,
-     "end": 79.05,
+     "start": 73.96,
+     "end": 75.77,
      "en": "Did you hear these prepositions?",
      "ja": "今の前置詞、聞き取れたかな？"
     },
     {
-     "start": 78.9,
-     "end": 79.81,
+     "start": 75.62,
+     "end": 76.53,
      "en": "On your left, on our right, in the river, over bridges, over our heads, over my head, on a bridge.",
      "ja": "on your left、on our right、in the river、over bridges、over our heads、over my head、on a bridge。"
     },
     {
-     "start": 79.66,
-     "end": 84.25,
+     "start": 76.38,
+     "end": 80.97,
      "en": "As you watch more, look for 'inside' and 'outside.'",
      "ja": "このあとを見るときは、inside と outside も探してみてね。"
     },
     {
-     "start": 84.78,
-     "end": 87.65,
+     "start": 81.5,
+     "end": 84.37,
      "en": "Look, the U.S. Capitol is coming up!",
      "ja": "見て、アメリカ連邦議会議事堂が近づいてきた！"
     },
     {
-     "start": 88.44,
-     "end": 92.15,
+     "start": 85.16,
+     "end": 88.87,
      "en": "I have a great Fun Fact about the U.S. Capitol.",
      "ja": "この議事堂について、おもしろい豆知識があるんだ。"
     },
     {
-     "start": 92.78,
-     "end": 93.85,
+     "start": 89.5,
+     "end": 90.57,
      "en": "What is it?",
      "ja": "どんな話？"
     },
     {
-     "start": 94.18,
-     "end": 96.47,
+     "start": 90.9,
+     "end": 93.19,
      "en": "There are tunnels under the Capitol.",
      "ja": "議事堂の下にはトンネルがあるんだ。"
     },
     {
-     "start": 96.94,
-     "end": 100.79,
+     "start": 93.66,
+     "end": 97.51,
      "en": "They connect the Capitol and office buildings of lawmakers.",
      "ja": "そのトンネルは、議事堂と議員たちのオフィスビルをつないでいるんだよ。"
     },
     {
-     "start": 101.3,
-     "end": 105.81,
+     "start": 98.02,
+     "end": 102.53,
      "en": "I bet they built them years ago for secret reasons!",
      "ja": "きっと昔、何か秘密の目的で作ったんだろうね！"
     },
     {
-     "start": 106.46,
-     "end": 107.27,
+     "start": 103.18,
+     "end": 103.99,
      "en": "No.",
      "ja": "違うよ。"
     },
     {
-     "start": 107.88,
-     "end": 112.39,
+     "start": 104.6,
+     "end": 109.11,
      "en": "The lawmakers did not want to walk around outside in bad weather.",
      "ja": "議員たちが、天気の悪い日に外を歩き回りたくなかったからなんだ。"
     },
     {
-     "start": 112.74,
-     "end": 113.09,
+     "start": 109.46,
+     "end": 109.81,
      "en": "Oh.",
      "ja": "そっか。"
     },
     {
-     "start": 116.12,
-     "end": 118.07,
+     "start": 110.48,
+     "end": 112.43,
      "en": "We’re back at Union Station!",
      "ja": "ユニオン駅に戻ってきた！"
     },
     {
-     "start": 118.84,
-     "end": 123.65,
+     "start": 113.2,
+     "end": 118.01,
      "en": "Do you want to know a creepy Fun Fact about Union Station?",
      "ja": "ユニオン駅について、ちょっとゾッとする豆知識、聞きたい？"
     },
     {
-     "start": 124.48,
-     "end": 126.97,
+     "start": 118.84,
+     "end": 121.33,
      "en": "The creepier the better!",
      "ja": "ゾッとするほどいいね！"
     },
     {
-     "start": 127.5,
-     "end": 133.43,
+     "start": 121.86,
+     "end": 127.79,
      "en": "Many years ago, inside Union Station, there was a funeral home!",
      "ja": "昔、このユニオン駅の中には、葬儀場があったんだ！"
     },
     {
-     "start": 133.88,
-     "end": 135.81,
+     "start": 128.24,
+     "end": 130.17,
      "en": "A funeral home?!",
      "ja": "葬儀場？！"
     },
     {
-     "start": 136.3,
-     "end": 138.91,
+     "start": 130.66,
+     "end": 133.27,
      "en": "You mean, for dead people?!",
      "ja": "亡くなった人のための葬儀場ってこと？！"
     },
     {
-     "start": 139.24,
-     "end": 142.27,
+     "start": 133.6,
+     "end": 136.63,
      "en": "Do you know another kind of funeral home?",
      "ja": "ほかにどんな葬儀場があるっていうの？"
     },
     {
-     "start": 143.02,
-     "end": 143.87,
+     "start": 137.38,
+     "end": 138.23,
      "en": "No!",
      "ja": "ないわ。"
     },
     {
-     "start": 145.98,
-     "end": 148.73,
+     "start": 138.86,
+     "end": 141.61,
      "en": "Well, I’ve gotta run!",
      "ja": "じゃあ、もう行かなきゃ！"
     },
     {
-     "start": 148.74,
-     "end": 150.75,
+     "start": 141.62,
+     "end": 143.63,
      "en": "Thanks for giving us the great tour!",
      "ja": "楽しいツアーをしてくれてありがとう！"
     },
     {
-     "start": 153.72,
-     "end": 155.79,
+     "start": 144.24,
+     "end": 146.31,
      "en": "Captain, that was awesome!",
      "ja": "キャプテン、さっきのツアー最高でした！"
     },
     {
-     "start": 155.94,
-     "end": 158.49,
+     "start": 146.46,
+     "end": 149.01,
      "en": "And your son is a great tour guide!",
      "ja": "それに、息子さんも素晴らしいガイドですね！"
     },
     {
-     "start": 158.6,
-     "end": 159.07,
+     "start": 149.12,
+     "end": 149.59,
      "en": "What son?",
      "ja": "息子？"
     },
     {
-     "start": 159.5,
-     "end": 160.09,
+     "start": 150.02,
+     "end": 150.61,
      "en": "Him.",
      "ja": "あの子です。"
     },
     {
-     "start": 161.12,
-     "end": 163.13,
+     "start": 151.64,
+     "end": 153.65,
      "en": "I’ve never seen that boy in my life!",
      "ja": "あの子なんて生まれてこのかた見たことないよ！"
     },
     {
-     "start": 163.66,
-     "end": 164.81,
+     "start": 154.18,
+     "end": 155.33,
      "en": "See ya, ladies!",
      "ja": "じゃあね、お嬢さん方！"
     }
+   ],
+   "clip_spans": [
+    [
+     90.52,
+     96.64
+    ],
+    [
+     99.92,
+     203.84
+    ],
+    [
+     206.2,
+     234.6
+    ],
+    [
+     236.08,
+     241.48
+    ],
+    [
+     243.84,
+     255.78
+    ]
    ]
   },
   {
@@ -9451,239 +10041,257 @@
      "ja": "えっとね、私が一番ペットに近いって言えるのは、このペットの石なの。"
     },
     {
-     "start": 43.4,
-     "end": 48.65,
+     "start": 39.68,
+     "end": 44.93,
      "en": "I know it’s silly, but I’ve had it since I was a little girl.",
      "ja": "バカみたいなのはわかってるけど、小さいころからずっと持ってるんだ。"
     },
     {
-     "start": 50.22,
-     "end": 53.53,
+     "start": 46.5,
+     "end": 49.81,
      "en": "So, for a joke, I brought it to the fair.",
      "ja": "だから、ちょっとした冗談のつもりで、フェアに持って行ったの。"
     },
     {
-     "start": 54.84,
-     "end": 60.73,
+     "start": 51.12,
+     "end": 57.01,
      "en": "But then I was invited to enter the “One-of-Kind Pet” contest.",
      "ja": "そしたら、「唯一無二のペット」コンテストに出ませんかって誘われてね。"
     },
     {
-     "start": 60.58,
-     "end": 62.67,
+     "start": 56.86,
+     "end": 58.95,
      "en": "And I won!",
      "ja": "それで、私が優勝しちゃったの！"
     },
     {
-     "start": 63.98,
-     "end": 69.97,
+     "start": 60.26,
+     "end": 66.25,
      "en": "Anna, only you could have won a pet contest with a pet rock.",
      "ja": "アナ、石のペットでコンテストに勝てるなんて、あなただけよ。"
     },
     {
-     "start": 71.34,
-     "end": 72.95,
+     "start": 67.62,
+     "end": 69.23,
      "en": "I should have brought Dublin.",
      "ja": "ダブリンを連れて行けばよかったわ。"
     },
     {
-     "start": 73.46,
-     "end": 74.73,
+     "start": 69.74,
+     "end": 71.01,
      "en": "He would’ve won a contest!",
      "ja": "あの子なら、どれかのコンテストで優勝してたはず。"
     },
     {
-     "start": 75.04,
-     "end": 77.07,
+     "start": 71.32,
+     "end": 73.35,
      "en": "It’s not very easy to win one of these.",
      "ja": "こういうのに勝つのって、けっこう大変なんだよ。"
     },
     {
-     "start": 77.78,
-     "end": 78.99,
+     "start": 74.06,
+     "end": 75.27,
      "en": "Does he have a costume?",
      "ja": "ダブリンには衣装あるの？"
     },
     {
-     "start": 79.82,
-     "end": 81.99,
+     "start": 76.1,
+     "end": 78.27,
      "en": "They had a costume contest.",
      "ja": "衣装コンテストもあったんだ。"
     },
     {
-     "start": 82.38,
-     "end": 85.17,
+     "start": 78.66,
+     "end": 81.45,
      "en": "You should have seen this little girl.",
      "ja": "ある女の子がいてね、見せてあげたかったな。"
     },
     {
-     "start": 86.2,
-     "end": 90.79,
+     "start": 82.48,
+     "end": 87.07,
      "en": "She and her dog wore matching princess costumes!",
      "ja": "その子と犬が、おそろいのプリンセスの衣装を着てたの！"
     },
     {
-     "start": 91.66,
-     "end": 93.43,
+     "start": 87.94,
+     "end": 89.71,
      "en": "Dublin doesn’t wear costumes.",
      "ja": "ダブリンは衣装なんて着ないの。"
     },
     {
-     "start": 93.92,
-     "end": 95.89,
+     "start": 90.2,
+     "end": 92.17,
      "en": "Does he know any tricks?",
      "ja": "何か芸はできる？"
     },
     {
-     "start": 96.68,
-     "end": 97.73,
+     "start": 92.96,
+     "end": 94.01,
      "en": "Come this way.",
      "ja": "こっちに来て。"
     },
     {
-     "start": 98.92,
-     "end": 101.85,
+     "start": 95.2,
+     "end": 98.13,
      "en": "Now, watch this.",
      "ja": "じゃあ、これ見てて。"
     },
     {
-     "start": 112.56,
-     "end": 117.11,
+     "start": 98.76,
+     "end": 103.31,
      "en": "You caught it, Dublin!",
      "ja": "ダブリン、キャッチしたね！"
     },
     {
-     "start": 116.96,
-     "end": 119.29,
+     "start": 103.16,
+     "end": 105.49,
      "en": "And you killed it!",
      "ja": "仕留めたね！"
     },
     {
-     "start": 120.36,
-     "end": 122.21,
+     "start": 106.56,
+     "end": 108.41,
      "en": "Good dog!",
      "ja": "いい子だね！"
     },
     {
-     "start": 122.54,
-     "end": 126.05,
+     "start": 108.74,
+     "end": 112.25,
      "en": "Ashley, he could have won the Best Catch contest!",
      "ja": "アシュリー、この子なら「ベストキャッチ」コンテストで優勝できたよ！"
     },
     {
-     "start": 126.94,
-     "end": 128.27,
+     "start": 113.14,
+     "end": 114.47,
      "en": "Aw, good boy!",
      "ja": "よしよし、いい子！"
     },
     {
-     "start": 128.4,
-     "end": 131.45,
+     "start": 114.6,
+     "end": 117.65,
      "en": "Ashley, pets are fun, aren’t they?",
      "ja": "アシュリー、ペットって楽しいよね？"
     },
     {
-     "start": 131.64,
-     "end": 132.15,
+     "start": 117.84,
+     "end": 118.35,
      "en": "Yes.",
      "ja": "うん、そうね。"
     },
     {
-     "start": 132.0,
-     "end": 134.57,
+     "start": 118.2,
+     "end": 120.77,
      "en": "And they become part of your family.",
      "ja": "それに、家族の一員みたいになってくるのよ。"
     },
     {
-     "start": 135.32,
-     "end": 138.15,
+     "start": 121.52,
+     "end": 124.35,
      "en": "Ashley, I think I want a dog.",
      "ja": "アシュリー、私、犬がほしい気がしてきた。"
     },
     {
-     "start": 138.88,
-     "end": 139.55,
+     "start": 125.08,
+     "end": 125.75,
      "en": "No.",
      "ja": "ううん。"
     },
     {
-     "start": 139.4,
-     "end": 141.33,
+     "start": 125.6,
+     "end": 127.53,
      "en": "I know I want a dog!",
      "ja": "犬がほしいって、はっきりわかった！"
     },
     {
-     "start": 141.76,
-     "end": 143.25,
+     "start": 127.96,
+     "end": 129.45,
      "en": "It’s a big responsibility.",
      "ja": "すごく責任が大きいことよ。"
     },
     {
-     "start": 143.66,
-     "end": 146.67,
+     "start": 129.86,
+     "end": 132.87,
      "en": "You may want to spend time with a dog first.",
      "ja": "まずは、しばらく犬と一緒に過ごしてみたほうがいいかもね。"
     },
     {
-     "start": 146.96,
-     "end": 148.97,
+     "start": 133.16,
+     "end": 135.17,
      "en": "That is a great idea.",
      "ja": "それ、とてもいい考えだね。"
     },
     {
-     "start": 148.82,
-     "end": 152.13,
+     "start": 135.02,
+     "end": 138.33,
      "en": "But where can I find a dog?",
      "ja": "でも、どこで犬を見つければいいんだろう？"
     },
     {
-     "start": 157.94,
-     "end": 161.45,
+     "start": 138.94,
+     "end": 142.45,
      "en": "You know, Anna, I have some shopping to do.",
      "ja": "あのね、アナ、これから買い物に行かなきゃいけないの。"
     },
     {
-     "start": 162.38,
-     "end": 165.31,
+     "start": 143.38,
+     "end": 146.31,
      "en": "Do you want to watch Dublin for a couple of hours?",
      "ja": "2時間くらい、ダブリンを見ていてくれない？"
     },
     {
-     "start": 165.3,
-     "end": 165.67,
+     "start": 146.3,
+     "end": 146.67,
      "en": "Yes!",
      "ja": "うん、もちろん！"
     },
     {
-     "start": 165.52,
-     "end": 166.25,
+     "start": 146.52,
+     "end": 147.25,
      "en": "I would!",
      "ja": "ぜひやりたい！"
     },
     {
-     "start": 166.54,
-     "end": 169.11,
+     "start": 147.54,
+     "end": 150.11,
      "en": "I will take very good care of him!",
      "ja": "すごく大事にお世話するから！"
     },
     {
-     "start": 169.16,
-     "end": 170.07,
+     "start": 150.16,
+     "end": 151.07,
      "en": "I know you will.",
      "ja": "そうしてくれるって、わかってるわ。"
     },
     {
-     "start": 170.44,
-     "end": 171.49,
+     "start": 151.44,
+     "end": 152.49,
      "en": "Here’s his leash.",
      "ja": "これがリードね。"
     },
     {
-     "start": 172.24,
-     "end": 172.95,
+     "start": 153.24,
+     "end": 153.95,
      "en": "Thank you.",
      "ja": "ありがとう。"
     }
+   ],
+   "clip_spans": [
+    [
+     85.18,
+     124.44
+    ],
+    [
+     128.16,
+     187.24
+    ],
+    [
+     197.32,
+     237.52
+    ],
+    [
+     242.72,
+     258.58
+    ]
    ]
   },
   {
@@ -9863,119 +10471,137 @@
      "ja": "いいね。 行こう！"
     },
     {
-     "start": 53.26,
-     "end": 57.93,
+     "start": 19.78,
+     "end": 24.45,
      "en": "There's this very special Peruvian dance called Marinera Norteña.",
      "ja": "マリネラ・ノルテーニャっていう、特別なペルーのダンスがあるの。"
     },
     {
-     "start": 57.78,
-     "end": 60.41,
+     "start": 24.3,
+     "end": 26.93,
      "en": "I love the Marinera Norteña… !",
      "ja": "マリネラ・ノルテーニャ、大好き…！"
     },
     {
-     "start": 60.26,
-     "end": 60.41,
+     "start": 26.78,
+     "end": 26.93,
      "en": "Marinera Norteña.",
      "ja": "マリネラ・ノルテーニャよ。"
     },
     {
-     "start": 60.26,
-     "end": 60.41,
+     "start": 26.78,
+     "end": 26.93,
      "en": "Marinera Norten… ?",
      "ja": "マリネラ・ノルテン…？"
     },
     {
-     "start": 60.26,
-     "end": 62.61,
+     "start": 26.78,
+     "end": 29.13,
      "en": "No. Marinera Norteña.",
      "ja": "違う違う、マリネラ・ノルテーニャ。"
     },
     {
-     "start": 64.16,
-     "end": 73.03,
+     "start": 30.68,
+     "end": 39.55,
      "en": "I love the … marriage dance!",
      "ja": "えっと… 結婚のダンスが大好き！"
     },
     {
-     "start": 76.46,
-     "end": 82.71,
+     "start": 40.18,
+     "end": 46.43,
      "en": "Bruna, I read about this dance. But it is much more romantic in person!",
      "ja": "ブルーナ、このダンスについては読んだけど、 実際に見るとずっとロマンチックだね。"
     },
     {
-     "start": 83.38,
-     "end": 87.33,
+     "start": 47.1,
+     "end": 51.05,
      "en": "The dancers are giving lessons after their performance. You should try it!",
      "ja": "このあと、ダンサーたちがレッスンをしてくれるの。 やってみたら？"
     },
     {
-     "start": 87.18,
-     "end": 91.87,
+     "start": 50.9,
+     "end": 55.59,
      "en": "I’d love to. But I’m not ready to get married.",
      "ja": "やってみたいなあ。 でも、まだ結婚する準備はできてないよ。"
     },
     {
-     "start": 92.54,
-     "end": 96.11,
+     "start": 56.26,
+     "end": 59.83,
      "en": "I mean, one day I hope to meet the right guy.",
      "ja": "というか、いつか運命の人に出会えたらいいな、とは思ってるけど。"
     },
     {
-     "start": 96.34,
-     "end": 102.93,
+     "start": 60.06,
+     "end": 66.65,
      "en": "We’ll buy matching motorcycles and ride into the sunset -- the wind blowing through our hair!",
      "ja": "おそろいのバイクを買って、夕日へ向かって走るの。 風が髪をなびかせてね！"
     },
     {
-     "start": 103.14,
-     "end": 109.11,
+     "start": 66.86,
+     "end": 72.83,
      "en": "Anna, the dance just shows the courtship tradition. It doesn’t mean you will get married.",
      "ja": "アンナ、このダンスは求愛のしきたりを表しているだけよ。 結婚するって意味じゃないから。"
     },
     {
-     "start": 109.84,
-     "end": 112.39,
+     "start": 73.56,
+     "end": 76.11,
      "en": "Oh. Well, I’ll try anyway.",
      "ja": "そっか。 まあ、でもやってみるよ。"
     },
     {
-     "start": 119.48,
-     "end": 122.73,
+     "start": 76.76,
+     "end": 80.01,
      "en": "Don’t forget. This festival also shows Peruvian art!",
      "ja": "それとね、このフェスティバルではペルーの美術も展示してるの、忘れないで。"
     },
     {
-     "start": 123.3,
-     "end": 125.63,
+     "start": 80.58,
+     "end": 82.91,
      "en": "I hope I have time to see everything!",
      "ja": "全部見て回れる時間があるといいな。"
     },
     {
-     "start": 126.34,
-     "end": 129.01,
+     "start": 83.62,
+     "end": 86.29,
      "en": "Anna, I wish I could join you. But I have some work to do.",
      "ja": "アンナ、一緒に回れたらいいんだけど、 ちょっと仕事があって。"
     },
     {
-     "start": 129.44,
-     "end": 133.29,
+     "start": 86.72,
+     "end": 90.57,
      "en": "Of course, of course. You go back to work. I’ll check out the art.",
      "ja": "そうだよね。 仕事に戻って。 私はアートを見てくるね。"
     },
     {
-     "start": 133.74,
-     "end": 137.83,
+     "start": 91.02,
+     "end": 95.11,
      "en": "Okay, I’m hoping to finish in about an hour. Let’s meet then.",
      "ja": "わかったわ。 1時間くらいで終わるといいんだけど。 その頃また会おう。"
     },
     {
-     "start": 137.94,
-     "end": 138.87,
+     "start": 95.22,
+     "end": 96.15,
      "en": "Great. See you then!",
      "ja": "了解。 じゃあ、またあとで！"
     }
+   ],
+   "clip_spans": [
+    [
+     72.6,
+     91.96
+    ],
+    [
+     125.44,
+     145.84
+    ],
+    [
+     148.64,
+     185.2
+    ],
+    [
+     191.64,
+     211.92
+    ]
    ]
   },
   {
@@ -10123,197 +10749,219 @@
      "ja": "ピート、これは私の準備よ。食べ物に毛布、防寒着もあるわ。あなたの準備はどこ？"
     },
     {
-     "start": 17.22,
-     "end": 23.69,
+     "start": 15.26,
+     "end": 21.73,
      "en": "Pete, Pete, Pete. This could be the “blizzard of the century.”",
      "ja": "ピート、ピート、ピート。これは「今世紀最大の猛吹雪」になるかもしれないのよ。"
     },
     {
-     "start": 25.1,
-     "end": 26.19,
+     "start": 23.14,
+     "end": 24.23,
      "en": "It’ll be fine.",
      "ja": "大丈夫だって。"
     },
     {
-     "start": 26.76,
-     "end": 29.03,
+     "start": 24.8,
+     "end": 27.07,
      "en": "How else had you prepared?",
      "ja": "ほかにはどう準備していたの？"
     },
     {
-     "start": 29.5,
-     "end": 35.97,
+     "start": 27.54,
+     "end": 34.01,
      "en": "Well, I had just bought the latest weather forecasting software. So, I brought it!",
      "ja": "ええと、ちょうど最新の天気予報ソフトを買ったところだったの。それで持ってきたのよ。"
     },
     {
-     "start": 36.38,
-     "end": 40.85,
+     "start": 34.42,
+     "end": 38.89,
      "en": "Do you mean The Weather Genie Pro?",
      "ja": "「ウェザー・ジーニー・プロ」のこと？"
     },
     {
-     "start": 41.58,
-     "end": 44.73,
+     "start": 39.62,
+     "end": 42.77,
      "en": "You know it. Pete thought it was pretty great too.",
      "ja": "そう、それよ。ピートもすごく気に入ってたの。"
     },
     {
-     "start": 45.14,
-     "end": 47.61,
+     "start": 43.18,
+     "end": 45.65,
      "en": "Do you have any games on that thing?",
      "ja": "そのパソコンにゲーム入ってる？"
     },
     {
-     "start": 48.04,
-     "end": 52.09,
+     "start": 46.08,
+     "end": 50.13,
      "en": "Yes! I have the best weather survival game. Boom!",
      "ja": "もちろん！最高の天気サバイバルゲームが入ってるわ。ドーン！"
     },
     {
-     "start": 53.12,
-     "end": 54.21,
+     "start": 51.16,
+     "end": 52.25,
      "en": "Sounds fun.",
      "ja": "楽しそうだね。"
     },
     {
-     "start": 54.84,
-     "end": 68.45,
+     "start": 52.88,
+     "end": 66.49,
      "en": "It is. But right now, Pete, this computer is a work tool. It will give us the temperature, wind speed, wind direction and amount of snowfall … in real time! Boom, boom!",
      "ja": "楽しいわよ。でも今はね、ピート、このパソコンは仕事道具なの。気温や風速、風向き、それに降雪量までリアルタイムで分かるの。ドーン、ドーン！"
     },
     {
-     "start": 69.28,
-     "end": 70.57,
+     "start": 67.32,
+     "end": 68.61,
      "en": "I can’t wait.",
      "ja": "待ちきれないな。"
     },
     {
-     "start": 70.86,
-     "end": 74.71,
+     "start": 68.9,
+     "end": 72.75,
      "en": "Pete, we need a name for this blizzard.",
      "ja": "ピート、この猛吹雪に名前をつけないと。"
     },
     {
-     "start": 74.92,
-     "end": 75.53,
+     "start": 72.96,
+     "end": 73.57,
      "en": "No, we don’t.",
      "ja": "いや、つけなくていいよ。"
     },
     {
-     "start": 75.7,
-     "end": 77.51,
+     "start": 73.74,
+     "end": 75.55,
      "en": "All the great storms have names.",
      "ja": "大きな嵐にはみんな名前がついてるの。"
     },
     {
-     "start": 78.06,
-     "end": 78.87,
+     "start": 76.1,
+     "end": 76.91,
      "en": "No, they don’t.",
      "ja": "いや、そんなことないって。"
     },
     {
-     "start": 78.98,
-     "end": 82.01,
+     "start": 77.02,
+     "end": 80.05,
      "en": "I know -- “The Big Snow!”",
      "ja": "分かった！「ザ・ビッグ・スノー」よ！"
     },
     {
-     "start": 83.04,
-     "end": 85.09,
+     "start": 81.08,
+     "end": 83.13,
      "en": "I am not saying “The Big Snow.”",
      "ja": "俺は『ザ・ビッグ・スノー』なんて言わないからな。"
     },
     {
-     "start": 85.9,
-     "end": 87.95,
+     "start": 83.94,
+     "end": 85.99,
      "en": "Welcome to “The Big Snow.”",
      "ja": "ようこそ、『ザ・ビッグ・スノー』の現場からお伝えします。"
     },
     {
-     "start": 89.24,
-     "end": 94.01,
+     "start": 87.28,
+     "end": 92.05,
      "en": "The Big Snow broke all kinds of records, didn’t it?",
      "ja": "このビッグ・スノーはいろんな記録を塗り替えたのよね？"
     },
     {
-     "start": 94.42,
-     "end": 100.17,
+     "start": 92.46,
+     "end": 98.21,
      "en": "Yes it did. And every time a record was broken, we celebrated!",
      "ja": "そうなの。そして記録が更新されるたびに、私たちはお祝いしたの！"
     },
     {
-     "start": 102.06,
-     "end": 112.15,
+     "start": 100.1,
+     "end": 110.19,
      "en": "So far, in Washington, D.C. 29 inches of snow has fallen. That, my dear listeners, is a record!",
      "ja": "これまでのところ、ワシントンD.C.では29インチの雪が降りました。親愛なるリスナーのみなさん、これは記録的な数字です！"
     },
     {
-     "start": 112.62,
-     "end": 118.47,
+     "start": 110.66,
+     "end": 116.51,
      "en": "We just broke the wind speed record!",
      "ja": "たった今、風速の記録を更新しました！"
     },
     {
-     "start": 121.18,
-     "end": 126.79,
+     "start": 117.14,
+     "end": 122.75,
      "en": "Snow has been falling for 30 hours straight! That’s another record!",
      "ja": "雪は30時間ぶっ続けで降り続いています！これも新記録です！"
     },
     {
-     "start": 137.48,
-     "end": 144.67,
+     "start": 123.4,
+     "end": 130.59,
      "en": "By Saturday night, stores and restaurants had closed. Did you bring enough food?",
      "ja": "土曜の夜までには、お店やレストランは閉まってしまったの。食べ物は十分に持って行った？"
     },
     {
-     "start": 146.58,
-     "end": 151.91,
+     "start": 132.5,
+     "end": 137.83,
      "en": "I thought I had brought enough food. But I ran out.",
      "ja": "足りるくらい持ってきたつもりだったんだけど、なくなっちゃったの。"
     },
     {
-     "start": 152.7,
-     "end": 155.07,
+     "start": 138.62,
+     "end": 140.99,
      "en": "Hey, Pete, where is my bag of popcorn?",
      "ja": "ねえピート、私のポップコーンの袋どこ？"
     },
     {
-     "start": 155.58,
-     "end": 157.55,
+     "start": 141.5,
+     "end": 143.47,
      "en": "Maybe you ate it already.",
      "ja": "もう自分で食べちゃったんじゃない？"
     },
     {
-     "start": 158.02,
-     "end": 159.67,
+     "start": 143.94,
+     "end": 145.59,
      "en": "No, I didn’t.",
      "ja": "食べてないわよ。"
     },
     {
-     "start": 160.26,
-     "end": 161.43,
+     "start": 146.18,
+     "end": 147.35,
      "en": "I haven't seen it.",
      "ja": "見てないけどなあ。"
     },
     {
-     "start": 163.7,
-     "end": 168.37,
+     "start": 147.98,
+     "end": 152.65,
      "en": "We had reported together for 48 hours straight!",
      "ja": "私たち、48時間ぶっ通しで一緒に中継したのよ！"
     },
     {
-     "start": 168.88,
-     "end": 175.71,
+     "start": 153.16,
+     "end": 159.99,
      "en": "Wow. That must have been a great team-building exercise for you and Pete.",
      "ja": "わあ。あなたとピートにとって、すごくいいチーム作りの経験になったんじゃない？"
     },
     {
-     "start": 176.26,
-     "end": 180.23,
+     "start": 160.54,
+     "end": 164.51,
      "en": "Yeah. You - you could say that.",
      "ja": "まあね…そうとも言えるかな。"
     }
+   ],
+   "clip_spans": [
+    [
+     108.3,
+     123.12
+    ],
+    [
+     125.08,
+     227.0
+    ],
+    [
+     229.08,
+     235.32
+    ],
+    [
+     245.36,
+     269.96
+    ],
+    [
+     271.6,
+     288.98
+    ]
    ]
   },
   {
@@ -12801,191 +13449,201 @@
      "ja": "さて、VOAラーニングイングリッシュ「Words and Their Stories」の時間です。"
     },
     {
-     "start": 12.54,
-     "end": 17.09,
+     "start": 8.54,
+     "end": 13.09,
      "en": "Springtime is a time of renewal and growth.",
      "ja": "春は、物事が新しく生まれ変わり、成長していく季節です。"
     },
     {
-     "start": 16.94,
-     "end": 24.65,
+     "start": 12.94,
+     "end": 20.65,
      "en": "Many plants end their long winter sleep and form new buds and shoots.",
      "ja": "多くの植物が、長い冬眠から目を覚まし、新しいつぼみや芽を出します。"
     },
     {
-     "start": 26.04,
-     "end": 30.33,
+     "start": 22.04,
+     "end": 26.33,
      "en": "Beautiful flowers will soon be showing their bright colors.",
      "ja": "まもなく美しい花が、あざやかな色を見せてくれます。"
     },
     {
-     "start": 30.62,
-     "end": 35.23,
+     "start": 26.62,
+     "end": 31.23,
      "en": "And the grass will grow thicker and greener again.",
      "ja": "そして草も、また濃く、青々と茂っていきます。"
     },
     {
-     "start": 36.7,
-     "end": 43.67,
+     "start": 32.7,
+     "end": 39.67,
      "en": "Some flowers bloom in a very noticeable way, but that is not the case with grass.",
      "ja": "中には、とても目立つ咲き方をする花もありますが、草はそうではありません。"
     },
     {
-     "start": 44.76,
-     "end": 48.69,
+     "start": 40.76,
+     "end": 44.69,
      "en": "Imagine you are sitting in a grassy field.",
      "ja": "草の生えた野原に座っているところを想像してみてください。"
     },
     {
-     "start": 48.54,
-     "end": 53.81,
+     "start": 44.54,
+     "end": 49.81,
      "en": "And you have only one job – to watch the grass grow.",
      "ja": "あなたの仕事は、ただ一つ──草が伸びるのを見つめることだけです。"
     },
     {
-     "start": 54.74,
-     "end": 57.59,
+     "start": 50.74,
+     "end": 53.59,
      "en": "That does not sound very interesting.",
      "ja": "あまりおもしろそうには聞こえませんよね。"
     },
     {
-     "start": 58.36,
-     "end": 61.81,
+     "start": 54.36,
+     "end": 57.81,
      "en": "In fact, it sounds really boring.",
      "ja": "むしろ、とても退屈そうです。"
     },
     {
-     "start": 63.08,
-     "end": 68.55,
+     "start": 59.08,
+     "end": 64.55,
      "en": "That idea is what gives us the expression “like watching grass grow.”",
      "ja": "このイメージから生まれたのが、“like watching grass grow” という表現です。"
     },
     {
-     "start": 68.4,
-     "end": 75.31,
+     "start": 64.4,
+     "end": 71.31,
      "en": "We use this expression to describe an experience that is uninteresting.",
      "ja": "この表現は、つまらない体験を表すときに使います。"
     },
     {
-     "start": 76.1,
-     "end": 80.41,
+     "start": 72.1,
+     "end": 76.41,
      "en": "Another good word to describe it is tedious.",
      "ja": "ほかに「退屈でうんざりする」という意味の tedious という言葉も合います。"
     },
     {
-     "start": 82.26,
-     "end": 85.71,
+     "start": 78.26,
+     "end": 81.71,
      "en": "We use this expression in many situations.",
      "ja": "この表現は、いろいろな場面で使われます。"
     },
     {
-     "start": 86.78,
-     "end": 89.25,
+     "start": 82.78,
+     "end": 85.25,
      "en": "Let’s hear a few examples:",
      "ja": "いくつか例を聞いてみましょう。"
     },
     {
-     "start": 89.1,
-     "end": 97.81,
+     "start": 85.1,
+     "end": 93.81,
      "en": "After the politician won his campaign, he gave a two-hour long acceptance speech.",
      "ja": "その政治家は選挙に勝ったあと、2時間も当選スピーチをしました。"
     },
     {
-     "start": 98.7,
-     "end": 103.71,
+     "start": 94.7,
+     "end": 99.71,
      "en": "Two hours! It was as much fun as watching grass grow.",
      "ja": "2時間ですよ！草が伸びるのを見ているのと同じくらい退屈でした。"
     },
     {
-     "start": 105.08,
-     "end": 108.51,
+     "start": 101.08,
+     "end": 104.51,
      "en": "I really don’t like watching long sports games.",
      "ja": "私は長いスポーツの試合を見るのが本当に好きではありません。"
     },
     {
-     "start": 109.36,
-     "end": 111.53,
+     "start": 105.36,
+     "end": 107.53,
      "en": "It’s like watching grass grow.",
      "ja": "草が伸びるのを見ているようなものです。"
     },
     {
-     "start": 112.18,
-     "end": 115.83,
+     "start": 108.18,
+     "end": 111.83,
      "en": "Now, grass grows on the ground all the time.",
      "ja": "さて、草はいつも地面で伸び続けています。"
     },
     {
-     "start": 116.06,
-     "end": 119.21,
+     "start": 112.06,
+     "end": 115.21,
      "en": "And usually, we don’t give it much thought.",
      "ja": "そしてふつう、私たちはそのことをあまり意識しません。"
     },
     {
-     "start": 119.96,
-     "end": 127.19,
+     "start": 115.96,
+     "end": 123.19,
      "en": "If you stand in one place for a long time, the grass will continue to grow under your feet.",
      "ja": "同じ場所に長く立ち続けていると、足もとでは草がどんどん伸びていきます。"
     },
     {
-     "start": 128.14,
-     "end": 138.95,
+     "start": 124.14,
+     "end": 134.95,
      "en": "For people who are always active, always moving, always on-the-go, we can say they don't let grass grow under their feet.",
      "ja": "いつも活動的で、動き回っていて、じっとしていない人たちのことを、they don't let grass grow under their feet と言うことができます。"
     },
     {
-     "start": 139.76,
-     "end": 142.63,
+     "start": 135.76,
+     "end": 138.63,
      "en": "We can also say beneath their feet.",
      "ja": "beneath their feet と言い換えることもできます。"
     },
     {
-     "start": 143.72,
-     "end": 148.13,
+     "start": 139.72,
+     "end": 144.13,
      "en": "And sometimes we use this expression as a command.",
      "ja": "また、ときにはこの表現を命令形で使うこともあります。"
     },
     {
-     "start": 149.24,
-     "end": 151.21,
+     "start": 145.24,
+     "end": 147.21,
      "en": "Let’s hear some examples:",
      "ja": "いくつか例を聞いてみましょう。"
     },
     {
-     "start": 152.26,
-     "end": 154.73,
+     "start": 148.26,
+     "end": 150.73,
      "en": "Don’t let the grass grow beneath your feet.",
      "ja": "Don’t let the grass grow beneath your feet."
     },
     {
-     "start": 155.12,
-     "end": 156.25,
+     "start": 151.12,
+     "end": 152.25,
      "en": "Get back to work.",
      "ja": "ぼんやりしてないで、仕事に戻りなさい。"
     },
     {
-     "start": 157.36,
-     "end": 160.93,
+     "start": 153.36,
+     "end": 156.93,
      "en": "She certainly doesn’t let the grass grow under her feet.",
      "ja": "彼女は本当に、のんびりしている暇なんてない人です。"
     },
     {
-     "start": 161.34,
-     "end": 165.05,
+     "start": 157.34,
+     "end": 161.05,
      "en": "She’s been traveling non-stop for over a year.",
      "ja": "もう1年以上、休みなく旅を続けています。"
     },
     {
-     "start": 166.94,
-     "end": 170.69,
+     "start": 162.94,
+     "end": 166.69,
      "en": "And that’s all the time we have for this Words and Their Stories.",
      "ja": "「Words and Their Stories」、きょうはここまでです。"
     },
     {
-     "start": 171.62,
-     "end": 174.65,
+     "start": 167.62,
+     "end": 170.65,
      "en": "Until next time, I’m Anna Matteo.",
      "ja": "また次回お会いしましょう。アンナ・マテオでした。"
     }
+   ],
+   "clip_spans": [
+    [
+     6.48,
+     14.0
+    ],
+    [
+     18.0,
+     181.58
+    ]
    ]
   },
   {
@@ -14701,203 +15359,217 @@
      "ja": "私は少年から石を取り上げて、その口論を終わらせました。"
     },
     {
-     "start": 135.3,
-     "end": 137.79,
+     "start": 133.9,
+     "end": 136.39,
      "en": "“I’ll fix you,” says the boy to Bill.",
      "ja": "「仕返ししてやるからな」と少年がビルに言いました。"
     },
     {
-     "start": 138.16,
-     "end": 142.27,
+     "start": 136.76,
+     "end": 140.87,
      "en": "“No man ever yet struck the Red Chief but what he got paid for it.",
      "ja": "「レッド・チーフを殴ったやつは、誰だってただではすまないんだ。"
     },
     {
-     "start": 142.4,
-     "end": 143.79,
+     "start": 141.0,
+     "end": 142.39,
      "en": "You better be careful!”",
      "ja": "気をつけろよ！」"
     },
     {
-     "start": 144.54,
-     "end": 158.41,
+     "start": 143.14,
+     "end": 157.01,
      "en": "After eating, the boy takes a leather object with strings tied around it from his clothes and goes outside the cave unwinding it.",
      "ja": "食事のあと、少年は服からひも付きの革の道具を取り出し、それをほどきながら洞穴の外へ出ていきました。"
     },
     {
-     "start": 159.3,
-     "end": 160.93,
+     "start": 157.9,
+     "end": 159.53,
      "en": "Then we heard a kind of shout.",
      "ja": "そのとき、何か叫び声のような音が聞こえました。"
     },
     {
-     "start": 161.62,
-     "end": 166.37,
+     "start": 160.22,
+     "end": 164.97,
      "en": "It was Red Chief holding a sling in one hand.",
      "ja": "見ると、レッド・チーフが片手に投石ひもを持っていました。"
     },
     {
-     "start": 166.64,
-     "end": 170.75,
+     "start": 165.24,
+     "end": 169.35,
      "en": "He moved it faster and faster around his head.",
      "ja": "彼はそれを頭の上でどんどん速く振り回しました。"
     },
     {
-     "start": 170.6,
-     "end": 179.05,
+     "start": 169.2,
+     "end": 177.65,
      "en": "Just then I heard a heavy sound and a deep breath from Bill.",
      "ja": "そのとたん、重い音と、ビルがうめくような息づかいが聞こえました。"
     },
     {
-     "start": 180.34,
-     "end": 187.31,
+     "start": 178.94,
+     "end": 185.91,
      "en": "A rock the size of an egg had hit him just behind his left ear.",
      "ja": "卵ほどの大きさの石が、ビルの左耳のすぐ後ろを直撃したのです。"
     },
     {
-     "start": 188.16,
-     "end": 194.31,
+     "start": 186.76,
+     "end": 192.91,
      "en": "Bill fell in the fire across the frying pan of hot water for washing the dishes.",
      "ja": "ビルは、皿洗い用の熱い湯を入れたフライパンの上に倒れ込み、焚き火の中へ落ちました。"
     },
     {
-     "start": 195.26,
-     "end": 201.57,
+     "start": 193.86,
+     "end": 200.17,
      "en": "I pulled him out and poured cold water on his head for half an hour.",
      "ja": "私はビルを引きずり出し、30分ほど頭に冷たい水をかけ続けました。"
     },
     {
-     "start": 203.26,
-     "end": 208.37,
+     "start": 201.86,
+     "end": 206.97,
      "en": "Then I went out and caught that boy and shook him.",
      "ja": "それから外へ出て、あの少年をつかまえ、ガタガタと揺さぶりました。"
     },
     {
-     "start": 209.48,
-     "end": 214.89,
+     "start": 208.08,
+     "end": 213.49,
      "en": "“If your behavior doesn’t improve,” says I, “I’ll take you straight home.",
      "ja": "「その態度を改めないなら」と私は言いました。「すぐにお前を家に連れて帰るぞ。"
     },
     {
-     "start": 215.38,
-     "end": 218.29,
+     "start": 213.98,
+     "end": 216.89,
      "en": "Now, are you going to be good, or not?”",
      "ja": "さあ、大人しくするのか、しないのか？」"
     },
     {
-     "start": 218.14,
-     "end": 221.37,
+     "start": 216.74,
+     "end": 219.97,
      "en": "“I was only funning,” says he.",
      "ja": "「ちょっとふざけてただけだよ」と少年は言いました。"
     },
     {
-     "start": 221.22,
-     "end": 223.77,
+     "start": 219.82,
+     "end": 222.37,
      "en": "“I didn’t mean to hurt Old Hank.",
      "ja": "「オールド・ハンクを本気で傷つけるつもりはなかったんだ。"
     },
     {
-     "start": 223.78,
-     "end": 225.69,
+     "start": 222.38,
+     "end": 224.29,
      "en": "But what did he hit me for?",
      "ja": "でも、なんであいつは俺をぶつんだよ？"
     },
     {
-     "start": 226.28,
-     "end": 229.15,
+     "start": 224.88,
+     "end": 227.75,
      "en": "I’ll behave if you don’t send me home.”",
      "ja": "家に帰さないなら、ちゃんとするよ」"
     },
     {
-     "start": 230.6,
-     "end": 241.65,
+     "start": 229.2,
+     "end": 240.25,
      "en": "I thought it best to send a letter to old man Dorset that day, demanding the ransom and telling how it should be paid.",
      "ja": "その日のうちに、ドーセットのじいさんへ身代金を要求し、支払い方法を書いた手紙を送るのがいちばんだと考えました。"
     },
     {
-     "start": 242.56,
-     "end": 243.73,
+     "start": 241.16,
+     "end": 242.33,
      "en": "The letter said:",
      "ja": "手紙にはこう書きました。"
     },
     {
-     "start": 244.93,
-     "end": 251.22,
+     "start": 243.53,
+     "end": 249.82,
      "en": "“We have your boy hidden in a place far from Summit.",
      "ja": "「あなたの坊ちゃんは、サミットから遠く離れた場所にかくしてある。"
     },
     {
-     "start": 252.35,
-     "end": 265.9,
+     "start": 250.95,
+     "end": 264.5,
      "en": "We demand $1,500 for his return; the money to be left at midnight tonight at the same place and in the same box as your answer.",
      "ja": "引き渡しの条件として1,500ドルを要求する。あなたの返事と同じ場所、同じ箱に、今夜0時に金を置いてもらいたい。"
     },
     {
-     "start": 266.61,
-     "end": 274.54,
+     "start": 265.21,
+     "end": 273.14,
      "en": "\"If you agree to these terms, send the answer in writing by a messenger tonight at half past 8 o’clock.",
      "ja": "この条件に同意するなら、今夜8時半までに、使いの者に書面で返事を持たせて送れ。"
     },
     {
-     "start": 276.45,
-     "end": 285.02,
+     "start": 275.05,
+     "end": 283.62,
      "en": "After crossing Owl Creek, on the road to Poplar Cove, there are three large trees.",
      "ja": "フクロウ川を渡ってポプラー・コーブへ向かう道沿いに、大きな木が3本並んでいる。"
     },
     {
-     "start": 286.07,
-     "end": 292.52,
+     "start": 284.67,
+     "end": 291.12,
      "en": "At the bottom of the fence, opposite the third tree, will be a small box.",
      "ja": "3本目の木の向かい側の柵の下に、小さな箱が置いてあるはずだ。"
     },
     {
-     "start": 293.37,
-     "end": 300.46,
+     "start": 291.97,
+     "end": 299.06,
      "en": "The messenger will place the answer in this box and return immediately to Summit.",
      "ja": "使いの者は、その箱に返事を入れたら、すぐにサミットへ引き返すこと。"
     },
     {
-     "start": 301.85,
-     "end": 307.3,
+     "start": 300.45,
+     "end": 305.9,
      "en": "If you fail to agree to our demand, you will never see your boy again.",
      "ja": "この要求に応じないなら、二度と坊ちゃんには会えない。"
     },
     {
-     "start": 308.65,
-     "end": 319.74,
+     "start": 307.25,
+     "end": 318.34,
      "en": "If you pay the money as demanded, he will be returned to you safe and well within three hours.”",
      "ja": "指定どおり金を払えば、3時間以内に無事な姿で坊ちゃんを返す。」"
     },
     {
-     "start": 322.37,
-     "end": 326.74,
+     "start": 318.97,
+     "end": 323.34,
      "en": "I took the letter and walked over to Poplar Cove.",
      "ja": "私はその手紙を持って、ポプラー・コーブまで歩いて行きました。"
     },
     {
-     "start": 327.57,
-     "end": 331.68,
+     "start": 324.17,
+     "end": 328.28,
      "en": "I then sat around the post office and store.",
      "ja": "それから、郵便局兼雑貨店のあたりでぶらぶらしていました。"
     },
     {
-     "start": 332.97,
-     "end": 342.82,
+     "start": 329.57,
+     "end": 339.42,
      "en": "An old man there says he hears Summit is all worried because of Ebenezer Dorset’s boy having been lost or stolen.",
      "ja": "そこにいた老人が、サミットの町じゅうが、エビニザー・ドーセットの坊ちゃんが行方不明か、さらわれたらしいと心配していると話してくれました。"
     },
     {
-     "start": 343.87,
-     "end": 345.76,
+     "start": 340.47,
+     "end": 342.36,
      "en": "That was all I wanted to know.",
      "ja": "それだけ分かれば十分でした。"
     },
     {
-     "start": 346.45,
-     "end": 348.6,
+     "start": 343.05,
+     "end": 345.2,
      "en": "I mailed my letter and left.",
      "ja": "私は手紙を投函し、その場を離れました。"
     }
+   ],
+   "clip_spans": [
+    [
+     222.16,
+     355.64
+    ],
+    [
+     357.04,
+     542.12
+    ],
+    [
+     544.12,
+     571.21
+    ]
    ]
   },
   {
@@ -15155,161 +15827,183 @@
      "ja": "「お肉、火にかけてもいい？」"
     },
     {
-     "start": 97.6,
-     "end": 103.21,
+     "start": 95.72,
+     "end": 101.33,
      "en": "Jim seemed to awaken quickly and put his arms around Della.",
      "ja": "ジムははっと目を覚ましたように我に返り、デラを抱き寄せました。"
     },
     {
-     "start": 103.62,
-     "end": 108.17,
+     "start": 101.74,
+     "end": 106.29,
      "en": "Then he took a package from his coat and threw it on the table.",
      "ja": "それからコートのポケットから包みを取り出し、テーブルの上に置きました。"
     },
     {
-     "start": 109.66,
-     "end": 112.73,
+     "start": 107.78,
+     "end": 110.85,
      "en": "\"Do not make any mistake about me, Dell,\" he said.",
      "ja": "「ぼくの気持ちを誤解しないでくれ、デラ。」と彼は言いました。"
     },
     {
-     "start": 113.26,
-     "end": 118.87,
+     "start": 111.38,
+     "end": 116.99,
      "en": "\"I do not think there is any haircut that could make me like my girl any less.",
      "ja": "「どんな髪型になったって、きみのことを前より嫌いになるなんてありえないさ。」"
     },
     {
-     "start": 118.72,
-     "end": 125.27,
+     "start": 116.84,
+     "end": 123.39,
      "en": "But if you will open that package you may see why you had me frightened at first.\"",
      "ja": "「でも、その包みを開けてみれば、さっきぼくがびっくりした理由がわかるよ。」"
     },
     {
-     "start": 127.3,
-     "end": 131.59,
+     "start": 124.06,
+     "end": 128.35,
      "en": "White fingers quickly tore at the string and paper.",
      "ja": "白い指が、ひもと包み紙を素早く引き裂きました。"
     },
     {
-     "start": 132.64,
-     "end": 147.01,
+     "start": 129.4,
+     "end": 143.77,
      "en": "There was a scream of joy; and then, alas! a change to tears and cries, requiring the man of the house to use all his skill to calm his wife.",
      "ja": "喜びの叫び声があがり――しかし、ああ、それはたちまち涙とすすり泣きに変わり、夫は持てるかぎりのなだめ方を総動員して彼女を落ち着かせなければなりませんでした。"
     },
     {
-     "start": 147.94,
-     "end": 163.31,
+     "start": 144.7,
+     "end": 160.07,
      "en": "For there were the combs -- the special set of objects to hold her hair that Della had wanted ever since she saw them in a shop window.",
      "ja": "包みの中にあったのは、あのくしだったのです――ショーウィンドウで見て以来、デラがずっと欲しいと願っていた、髪を飾る特別なセットのくしでした。"
     },
     {
-     "start": 164.22,
-     "end": 177.97,
+     "start": 160.98,
+     "end": 174.73,
      "en": "Beautiful combs, made of shells, with jewels at the edge --just the color to wear in the beautiful hair that was no longer hers.",
      "ja": "貝がらで作られ、縁には宝石があしらわれた、とても美しいくしで、その色合いは、かつて彼女のものだったあの美しい髪にぴったりのものでした。"
     },
     {
-     "start": 179.24,
-     "end": 187.99,
+     "start": 176.0,
+     "end": 184.75,
      "en": "They cost a lot of money, she knew, and her heart had wanted them without ever hoping to have them.",
      "ja": "とても高価なものだと彼女は知っていて、手に入るとは思わないまま、心の中だけで憧れていたのです。"
     },
     {
-     "start": 188.84,
-     "end": 199.47,
+     "start": 185.6,
+     "end": 196.23,
      "en": "And now, the beautiful combs were hers, but the hair that should have touched them was gone.",
      "ja": "それなのに今、その美しいくしは彼女のものになりましたが、本来それに触れているはずの髪は、もうありませんでした。"
     },
     {
-     "start": 201.76,
-     "end": 215.31,
+     "start": 196.88,
+     "end": 210.43,
      "en": "But she held the combs to herself, and soon she was able to look up with a smile and say, \"My hair grows so fast, Jim!\"",
      "ja": "それでもデラはくしを胸に抱きしめ、やがて顔を上げてほほえみ、「私の髪はすぐ伸びるわ、ジム。」と言えるようになりました。"
     },
     {
-     "start": 217.46,
-     "end": 221.83,
+     "start": 211.06,
+     "end": 215.43,
      "en": "Then Della jumped up like a little burned cat and cried, \"Oh, oh!\"",
      "ja": "するとデラは、小さな猫が熱いものに触れたときのように飛び上がり、「あっ！」と声を上げました。"
     },
     {
-     "start": 223.26,
-     "end": 226.57,
+     "start": 216.86,
+     "end": 220.17,
      "en": "Jim had not yet seen his beautiful gift.",
      "ja": "ジムは、まだ自分へのきれいな贈り物を見ていなかったのです。"
     },
     {
-     "start": 227.3,
-     "end": 231.47,
+     "start": 220.9,
+     "end": 225.07,
      "en": "She happily held it out to him in her open hands.",
      "ja": "彼女はそれを両手にのせ、うれしそうに差し出しました。"
     },
     {
-     "start": 231.8,
-     "end": 234.81,
+     "start": 225.4,
+     "end": 228.41,
      "en": "The silver chain seemed so bright.",
      "ja": "銀の鎖は、とても明るく輝いて見えました。"
     },
     {
-     "start": 236.3,
-     "end": 238.31,
+     "start": 229.9,
+     "end": 231.91,
      "en": "\"Isn't it wonderful, Jim?",
      "ja": "「すてきでしょう、ジム。」"
     },
     {
-     "start": 238.56,
-     "end": 241.43,
+     "start": 232.16,
+     "end": 235.03,
      "en": "I looked all over town to find it.",
      "ja": "これを探して、町じゅうを歩き回ったのよ。"
     },
     {
-     "start": 241.86,
-     "end": 245.85,
+     "start": 235.46,
+     "end": 239.45,
      "en": "You will have to look at the time a hundred times a day now.",
      "ja": "これからは、一日に何度も何度も時間を見ることになるわね。"
     },
     {
-     "start": 246.34,
-     "end": 247.45,
+     "start": 239.94,
+     "end": 241.05,
      "en": "Give me your watch.",
      "ja": "あなたの時計を貸して。"
     },
     {
-     "start": 247.76,
-     "end": 250.11,
+     "start": 241.36,
+     "end": 243.71,
      "en": "I want to see how it looks on it.\"",
      "ja": "これをつけたら、どんなふうに見えるか見てみたいの。」"
     },
     {
-     "start": 251.48,
-     "end": 259.71,
+     "start": 245.08,
+     "end": 253.31,
      "en": "Instead of obeying, Jim fell on the couch and put his hands under the back of his head and smiled.",
      "ja": "しかしジムは、その言葉に従う代わりに、ソファにどさりと身を投げ出し、頭の後ろで手を組んで、にこっと笑いました。"
     },
     {
-     "start": 261.38,
-     "end": 269.49,
+     "start": 254.98,
+     "end": 263.09,
      "en": "\"Dell,\" said he, \"let us put our Christmas gifts away and keep them a while.",
      "ja": "「デラ。」と彼は言いました。「クリスマスの贈り物は、しばらくしまっておこう。」"
     },
     {
-     "start": 269.98,
-     "end": 273.63,
+     "start": 263.58,
+     "end": 267.23,
      "en": "They are too nice to use just right now.",
      "ja": "今すぐ使うには、あまりにももったいないからね。"
     },
     {
-     "start": 274.86,
-     "end": 281.09,
+     "start": 268.46,
+     "end": 274.69,
      "en": "I sold my gold watch to get the money to buy the set of combs for your hair.",
      "ja": "ぼくは、きみのためにあのくしのセットを買うお金を作ろうとして、自分の金の時計を売ってしまったんだ。"
     },
     {
-     "start": 281.98,
-     "end": 284.59,
+     "start": 275.58,
+     "end": 278.19,
      "en": "And now, why not put the meat on.\"",
      "ja": "さあ、それよりお肉を火にかけようか。」"
     }
+   ],
+   "clip_spans": [
+    [
+     485.78,
+     581.08
+    ],
+    [
+     582.96,
+     611.28
+    ],
+    [
+     612.64,
+     685.48
+    ],
+    [
+     687.12,
+     701.32
+    ],
+    [
+     702.84,
+     770.82
+    ]
    ]
   },
   {
@@ -15499,377 +16193,391 @@
      "ja": "老人は死んだのだ。"
     },
     {
-     "start": 46.18,
-     "end": 50.85,
+     "start": 44.42,
+     "end": 49.09,
      "en": "I removed the bed and examined the body.",
      "ja": "私はベッドをどけて、遺体を調べた。"
     },
     {
-     "start": 51.58,
-     "end": 55.69,
+     "start": 49.82,
+     "end": 53.93,
      "en": "I placed my hand over his heart and held it there many minutes.",
      "ja": "胸に手を当て、何分もそのままにしていた。"
     },
     {
-     "start": 56.12,
-     "end": 57.31,
+     "start": 54.36,
+     "end": 55.55,
      "en": "There was no movement.",
      "ja": "そこには、なんの動きもなかった。"
     },
     {
-     "start": 57.76,
-     "end": 59.21,
+     "start": 56.0,
+     "end": 57.45,
      "en": "He was stone dead.",
      "ja": "彼は本当に、完全に死んでいた。"
     },
     {
-     "start": 60.06,
-     "end": 63.87,
+     "start": 58.3,
+     "end": 62.11,
      "en": "His eye would trouble me no more.",
      "ja": "あの目に悩まされることも、もう二度とない。"
     },
     {
-     "start": 73.06,
-     "end": 82.35,
+     "start": 62.74,
+     "end": 72.03,
      "en": "If still you think me mad, you will think so no longer when I describe the wise steps I took for hiding the body.",
      "ja": "それでもまだ私を狂っていると思うなら、これから話す“いかに賢く死体を隠したか”を聞けば、考えが変わるだろう。"
     },
     {
-     "start": 83.12,
-     "end": 85.81,
+     "start": 72.8,
+     "end": 75.49,
      "en": "I worked quickly, but in silence.",
      "ja": "私は手早く、しかし物音を立てずに作業した。"
     },
     {
-     "start": 86.58,
-     "end": 89.05,
+     "start": 76.26,
+     "end": 78.73,
      "en": "First of all, I took apart the body.",
      "ja": "まず最初に、死体をばらばらにした。"
     },
     {
-     "start": 89.06,
-     "end": 93.45,
+     "start": 78.74,
+     "end": 83.13,
      "en": "I cut off the head and the arms and the legs.",
      "ja": "頭と両腕、両脚を切り離した。"
     },
     {
-     "start": 94.42,
-     "end": 100.83,
+     "start": 84.1,
+     "end": 90.51,
      "en": "I then took up three pieces of wood from the flooring, and placed his body parts under the room.",
      "ja": "それから床板を三枚はがし、その下の空間に身体の各部分を押し込んだ。"
     },
     {
-     "start": 101.58,
-     "end": 112.65,
+     "start": 91.26,
+     "end": 102.33,
      "en": "I then replaced the wooden boards so well that no human eye — not even his — could have seen anything wrong.",
      "ja": "そして床板を元どおりに、見事に戻したので、人間の目には──あの老人の目でさえも──異常はまったく見抜けなかったはずだ。"
     },
     {
-     "start": 114.14,
-     "end": 120.03,
+     "start": 103.82,
+     "end": 109.71,
      "en": "There was nothing to wash out — no mark of any kind — no blood whatever.",
      "ja": "洗い流すものは何もなかった──跡形もなく、血のしみ一つ残っていなかった。"
     },
     {
-     "start": 120.18,
-     "end": 122.21,
+     "start": 109.86,
+     "end": 111.89,
      "en": "I had been too smart for that.",
      "ja": "その点では、私は用心深く抜かりなかったのだ。"
     },
     {
-     "start": 122.42,
-     "end": 124.01,
+     "start": 112.1,
+     "end": 113.69,
      "en": "A tub had caught all — ha! ha!",
      "ja": "桶を用意しておいたから、すべて受け止められたのだ──ははっ。"
     },
     {
-     "start": 125.76,
-     "end": 130.21,
+     "start": 115.44,
+     "end": 119.89,
      "en": "When I had made an end of these labors, it was four o'clock in the morning.",
      "ja": "こうした作業をすべて終えたとき、時刻は午前四時になっていた。"
     },
     {
-     "start": 130.4,
-     "end": 134.89,
+     "start": 120.08,
+     "end": 124.57,
      "en": "As a clock sounded the hour, there came a noise at the street door.",
      "ja": "ちょうど時計が四時を打ったとき、通りに面した玄関のほうで物音がした。"
     },
     {
-     "start": 135.52,
-     "end": 140.33,
+     "start": 125.2,
+     "end": 130.01,
      "en": "I went down to open it with a light heart — for what had I now to fear?",
      "ja": "私は晴れやかな気持ちで階下に降り、戸を開けに行った──もはや何を恐れることがあろう。"
     },
     {
-     "start": 141.02,
-     "end": 145.59,
+     "start": 130.7,
+     "end": 135.27,
      "en": "There entered three men, who said they were officers of the police.",
      "ja": "入ってきたのは三人の男で、自分たちは警官だと名乗った。"
     },
     {
-     "start": 146.62,
-     "end": 159.89,
+     "start": 136.3,
+     "end": 149.57,
      "en": "A cry had been heard by a neighbor during the night; suspicion of a crime had been aroused; information had been given at the police office, and the officers had been sent to search the building.",
      "ja": "夜のあいだに近所の者が叫び声を聞き、何かあったのではと疑って警察に知らせたので、建物の中を調べに来たというのだ。"
     },
     {
-     "start": 161.06,
-     "end": 165.45,
+     "start": 150.74,
+     "end": 155.13,
      "en": "I smiled — for what had I to fear?",
      "ja": "私はほほえんだ──恐れる理由など、どこにもないのだから。"
     },
     {
-     "start": 166.04,
-     "end": 169.97,
+     "start": 155.72,
+     "end": 159.65,
      "en": "The cry, I said, was my own in a dream.",
      "ja": "あの叫びは、私が夢の中で上げた声だと説明した。"
     },
     {
-     "start": 170.68,
-     "end": 174.27,
+     "start": 160.36,
+     "end": 163.95,
      "en": "The old man, I said, was not in the country.",
      "ja": "老人は今、町におらず留守にしているのだとも告げた。"
     },
     {
-     "start": 174.12,
-     "end": 178.15,
+     "start": 163.8,
+     "end": 167.83,
      "en": "I took my visitors all over the house.",
      "ja": "私は客人たちを家じゅう案内した。"
     },
     {
-     "start": 178.46,
-     "end": 180.73,
+     "start": 168.14,
+     "end": 170.41,
      "en": "I told them to search — search well.",
      "ja": "どうぞ調べてください、すみずみまで、と言った。"
     },
     {
-     "start": 181.0,
-     "end": 184.53,
+     "start": 170.68,
+     "end": 174.21,
      "en": "I led them, at length, to his room.",
      "ja": "しまいには、あの老人の部屋にも案内した。"
     },
     {
-     "start": 184.88,
-     "end": 189.09,
+     "start": 174.56,
+     "end": 178.77,
      "en": "I brought chairs there, and told them to rest.",
      "ja": "そこに椅子を運び込み、座ってくつろぐよう勧めた。"
     },
     {
-     "start": 189.86,
-     "end": 195.27,
+     "start": 179.54,
+     "end": 184.95,
      "en": "I placed my own seat upon the very place under which lay the body of the victim.",
      "ja": "私は、自分の椅子を、被害者の死体がちょうど真下に横たわっている、その場所の上に置いて腰かけた。"
     },
     {
-     "start": 196.56,
-     "end": 199.23,
+     "start": 186.24,
+     "end": 188.91,
      "en": "The officers were satisfied.",
      "ja": "警官たちは納得した様子だった。"
     },
     {
-     "start": 200.16,
-     "end": 202.33,
+     "start": 189.84,
+     "end": 192.01,
      "en": "I was completely at ease.",
      "ja": "私はまったく気楽な気分でいた。"
     },
     {
-     "start": 202.92,
-     "end": 208.81,
+     "start": 192.6,
+     "end": 198.49,
      "en": "They sat, and while I answered happily, they talked of common things.",
      "ja": "彼らは腰を下ろし、私も上きげんで受け答えしながら、ありふれた話を交わした。"
     },
     {
-     "start": 210.14,
-     "end": 214.27,
+     "start": 199.82,
+     "end": 203.95,
      "en": "But, after a while, I felt myself getting weak and wished them gone.",
      "ja": "だがしばらくすると、私はだんだん気分が悪くなり、早く帰ってほしいと思い始めた。"
     },
     {
-     "start": 214.64,
-     "end": 219.77,
+     "start": 204.32,
+     "end": 209.45,
      "en": "My head hurt, and I had a ringing in my ears; but still they sat and talked.",
      "ja": "頭が痛み、耳鳴りがし始めたが、それでも彼らは腰を上げず、しゃべり続けた。"
     },
     {
-     "start": 220.16,
-     "end": 222.05,
+     "start": 209.84,
+     "end": 211.73,
      "en": "The ringing became more severe.",
      "ja": "耳鳴りはどんどんひどくなった。"
     },
     {
-     "start": 222.36,
-     "end": 225.49,
+     "start": 212.04,
+     "end": 215.17,
      "en": "I talked more freely to do away with the feeling.",
      "ja": "その不快さを振り払おうと、私はむしろ口数を増やした。"
     },
     {
-     "start": 225.58,
-     "end": 230.21,
+     "start": 215.26,
+     "end": 219.89,
      "en": "But it continued until, at length, I found that the noise was not within my ears.",
      "ja": "しかし音は止まず、ついには、それが耳の中の音ではないと気づいてしまった。"
     },
     {
-     "start": 230.06,
-     "end": 233.27,
+     "start": 219.74,
+     "end": 222.95,
      "en": "I talked more and with a heightened voice.",
      "ja": "私はさらに多くしゃべり、声もだんだん大きくなっていった。"
     },
     {
-     "start": 233.58,
-     "end": 236.71,
+     "start": 223.26,
+     "end": 226.39,
      "en": "Yet the sound increased — and what could I do?",
      "ja": "それでもその音は強まるばかり──私に、いったい何ができただろう。"
     },
     {
-     "start": 236.94,
-     "end": 242.49,
+     "start": 226.62,
+     "end": 232.17,
      "en": "It was a low, dull, quick sound like a watch makes when inside a piece of cotton.",
      "ja": "それは、綿に包まれた時計が刻むような、低くくぐもった、せわしない音だった。"
     },
     {
-     "start": 242.92,
-     "end": 246.35,
+     "start": 232.6,
+     "end": 236.03,
      "en": "I had trouble breathing — and yet the officers heard it not.",
      "ja": "息苦しくてたまらないのに、警官たちはその音にまるで気づいていない。"
     },
     {
-     "start": 246.62,
-     "end": 250.23,
+     "start": 236.3,
+     "end": 239.91,
      "en": "I talked more quickly — more loudly; but the noise increased.",
      "ja": "私はますます早口になり、声も大きくしたが、音はいっそう高まった。"
     },
     {
-     "start": 250.46,
-     "end": 256.21,
+     "start": 240.14,
+     "end": 245.89,
      "en": "I stood up and argued about silly things, in a high voice and with violent hand movements.",
      "ja": "私は立ち上がり、取るに足らないことを大声でまくし立て、激しく手を振り回した。"
     },
     {
-     "start": 256.08,
-     "end": 258.61,
+     "start": 245.76,
+     "end": 248.29,
      "en": "But the noise kept increasing.",
      "ja": "だが、その音はいよいよ大きくなっていった。"
     },
     {
-     "start": 259.33,
-     "end": 261.49,
+     "start": 249.01,
+     "end": 251.17,
      "en": "Why would they not be gone?",
      "ja": "なぜ彼らは帰らないのだ？"
     },
     {
-     "start": 261.98,
-     "end": 271.09,
+     "start": 251.66,
+     "end": 260.77,
      "en": "I walked across the floor with heavy steps, as if excited to anger by the observations of the men — but the noise increased.",
      "ja": "男たちの言葉に怒りをかき立てられたふりをして、床をドスドスと歩き回ったが、それでも音はいっそう強くなった。"
     },
     {
-     "start": 271.34,
-     "end": 272.75,
+     "start": 261.02,
+     "end": 262.43,
      "en": "What could I do?",
      "ja": "私はどうすればよかったのだ？"
     },
     {
-     "start": 272.82,
-     "end": 279.75,
+     "start": 262.5,
+     "end": 269.43,
      "en": "I swung my chair and moved it upon the floor, but the noise continually increased.",
      "ja": "椅子を引きずって床の上でがたがたと鳴らしてみても、その音はいっこうにおさまらず、増す一方だった。"
     },
     {
-     "start": 279.9,
-     "end": 283.53,
+     "start": 269.58,
+     "end": 273.21,
      "en": "It grew louder — louder — louder!",
      "ja": "音は大きく──さらに大きく──ますます大きくなっていった！"
     },
     {
-     "start": 283.78,
-     "end": 288.61,
+     "start": 273.46,
+     "end": 278.29,
      "en": "And still the men talked pleasantly, and smiled.",
      "ja": "それなのに男たちは、にこやかに世間話をしているだけだった。"
     },
     {
-     "start": 290.12,
-     "end": 292.39,
+     "start": 279.8,
+     "end": 282.07,
      "en": "Was it possible they heard not?",
      "ja": "あの音が聞こえていない、ということなどあり得るだろうか。"
     },
     {
-     "start": 292.84,
-     "end": 294.23,
+     "start": 282.52,
+     "end": 283.91,
      "en": "No, no! They heard!",
      "ja": "いや、そんなはずはない！　彼らには聞こえている！"
     },
     {
-     "start": 294.44,
-     "end": 295.23,
+     "start": 284.12,
+     "end": 284.91,
      "en": "They suspected!",
      "ja": "彼らは勘づいている！"
     },
     {
-     "start": 295.66,
-     "end": 296.39,
+     "start": 285.34,
+     "end": 286.07,
      "en": "They knew!",
      "ja": "すべてお見通しなのだ！"
     },
     {
-     "start": 296.8,
-     "end": 298.75,
+     "start": 286.48,
+     "end": 288.43,
      "en": "They were making a joke of my horror!",
      "ja": "私のおびえぶりを、面白がっているのだ！"
     },
     {
-     "start": 299.24,
-     "end": 302.05,
+     "start": 288.92,
+     "end": 291.73,
      "en": "This I thought, and this I think.",
      "ja": "そのときもそう考えたし、今もそう思っている。"
     },
     {
-     "start": 302.46,
-     "end": 305.57,
+     "start": 292.14,
+     "end": 295.25,
      "en": "But anything was better than this pain!",
      "ja": "だが、この苦しみに比べれば、ほかのどんなことのほうがましだった！"
     },
     {
-     "start": 306.24,
-     "end": 308.87,
+     "start": 295.92,
+     "end": 298.55,
      "en": "I could bear those smiles no longer!",
      "ja": "あの笑顔を、これ以上がまんしてはいられなかった！"
     },
     {
-     "start": 309.26,
-     "end": 311.93,
+     "start": 298.94,
+     "end": 301.61,
      "en": "I felt that I must scream or die!",
      "ja": "叫ぶか、さもなければ死ぬしかないと感じた！"
     },
     {
-     "start": 312.24,
-     "end": 316.83,
+     "start": 301.92,
+     "end": 306.51,
      "en": "And now — again! Louder! Louder! Louder!",
      "ja": "そして今──またしても！　さらに大きく！　もっと大きく！　限りなく大きく！"
     },
     {
-     "start": 317.84,
-     "end": 320.77,
+     "start": 307.52,
+     "end": 310.45,
      "en": "\"Villains!\" I cried, \"Pretend no more!",
      "ja": "「悪党め！」と私は叫んだ。「もうとぼけるな！"
     },
     {
-     "start": 321.08,
-     "end": 322.39,
+     "start": 310.76,
+     "end": 312.07,
      "en": "I admit the deed!",
      "ja": "私がやったと認める！"
     },
     {
-     "start": 322.68,
-     "end": 325.05,
+     "start": 312.36,
+     "end": 314.73,
      "en": "Tear up the floor boards! Here, here!",
      "ja": "床板をはがせ！　ここだ、ここをだ！"
     },
     {
-     "start": 325.08,
-     "end": 329.09,
+     "start": 314.76,
+     "end": 318.77,
      "en": "It is the beating of his hideous heart!\"",
      "ja": "この下で、あいつのおぞましい心臓が鳴っているんだ！」"
     }
+   ],
+   "clip_spans": [
+    [
+     419.01,
+     463.0
+    ],
+    [
+     464.76,
+     483.08
+    ],
+    [
+     491.64,
+     748.55
+    ]
    ]
   },
   {
@@ -16109,173 +16817,191 @@
      "ja": "するとスマイリーは、気軽な調子で「そうだなあ、このカエルなら、カラヴェラス郡のどのカエルよりも遠くに跳べるね」と言いました。"
     },
     {
-     "start": 151.48,
-     "end": 165.51,
+     "start": 149.92,
+     "end": 163.95,
      "en": "The man took the box again, and took another long look, and gave it back to Smiley, and says, \"Well, I don’t see anything about that frog that is any better than any other frog.\"",
      "ja": "男はもう一度箱を取り、じろじろ長いこと眺めてからスマイリーに返し、「いやあ、そのカエルがほかのカエルより優れているようには、とても見えないね」と言いました。"
     },
     {
-     "start": 166.7,
-     "end": 168.69,
+     "start": 165.14,
+     "end": 167.13,
      "en": "\"Maybe you don’t,\" Smiley says.",
      "ja": "「あんたにはそう見えないのかもな」とスマイリーは言いました。"
     },
     {
-     "start": 169.3,
-     "end": 173.21,
+     "start": 167.74,
+     "end": 171.65,
      "en": "\"Maybe you understand frogs and maybe you don’t.",
      "ja": "「カエルのことが分かってるのか、分かってないのか、それは知らないがね。」"
     },
     {
-     "start": 174.0,
-     "end": 183.11,
+     "start": 172.44,
+     "end": 181.55,
      "en": "Anyways, I will risk forty dollars and bet you that he can jump farther than any frog in Calaveras County.\"",
      "ja": "「とにかく、四十ドル賭けてもいい。このカエルが、カラヴェラス郡のどのカエルよりも遠くに跳べるってね。」"
     },
     {
-     "start": 184.54,
-     "end": 186.35,
+     "start": 182.98,
+     "end": 184.79,
      "en": "And the man studied a minute.",
      "ja": "男はしばらく考え込みました。"
     },
     {
-     "start": 187.56,
-     "end": 191.79,
+     "start": 186.0,
+     "end": 190.23,
      "en": "\"Well, I’m only a stranger here, and I do not have a frog.",
      "ja": "「そうだなあ、俺はここじゃよそ者だし、カエルも持っていない。」"
     },
     {
-     "start": 192.36,
-     "end": 197.41,
+     "start": 190.8,
+     "end": 195.85,
      "en": "But if I had a frog, I would risk my money on it.",
      "ja": "「でもカエルさえいれば、金を賭けてもいいところだが。」"
     },
     {
-     "start": 198.78,
-     "end": 202.93,
+     "start": 197.22,
+     "end": 201.37,
      "en": "And then Smiley says, \"That’s all right.",
      "ja": "そこでスマイリーが「それなら心配いらない。」と言いました。"
     },
     {
-     "start": 203.7,
-     "end": 208.09,
+     "start": 202.14,
+     "end": 206.53,
      "en": "If you will hold my box a minute, I will go and get you a frog.\"",
      "ja": "「ちょっとの間この箱を持っててくれりゃ、あんたの分のカエルを取ってきてやるよ。」"
     },
     {
-     "start": 209.16,
-     "end": 215.83,
+     "start": 207.6,
+     "end": 214.27,
      "en": "And so the man took the box, and put up his forty dollars and sat down to wait.",
      "ja": "それで男は箱を受け取り、四十ドルを賭け金として出して、腰をおろして待つことにしました。"
     },
     {
-     "start": 217.14,
-     "end": 221.59,
+     "start": 215.58,
+     "end": 220.03,
      "en": "He sat there a long time thinking and thinking.",
      "ja": "男はそこに長いこと座り込んで、あれこれ考えていました。"
     },
     {
-     "start": 222.6,
-     "end": 225.41,
+     "start": 221.04,
+     "end": 223.85,
      "en": "Then he got the frog out of the box.",
      "ja": "それから箱からカエルを取り出しました。"
     },
     {
-     "start": 226.64,
-     "end": 231.73,
+     "start": 225.08,
+     "end": 230.17,
      "en": "He filled its mouth full of bullets used to kill small birds.",
      "ja": "そして、小鳥を撃つための小さな弾を、カエルの口いっぱいに詰め込みました。"
     },
     {
-     "start": 232.34,
-     "end": 234.81,
+     "start": 230.78,
+     "end": 233.25,
      "en": "Then he put the frog on the floor.",
      "ja": "それからカエルを床の上に置きました。"
     },
     {
-     "start": 237.1,
-     "end": 246.69,
+     "start": 233.9,
+     "end": 243.49,
      "en": "Now Smiley had caught another frog and gave it to the man and said, \"Now sit him next to Dan'l and I will give the word.\"",
      "ja": "やがてスマイリーが別のカエルを捕まえて戻ってきて、男に手渡し、「さあ、そのカエルをダニエルの横に置いてくれ。合図はこっちでする」と言いました。"
     },
     {
-     "start": 248.32,
-     "end": 257.65,
+     "start": 245.12,
+     "end": 254.45,
      "en": "Then Smiley says, \"One-two-three-go!\" and Smiley and the other man touched the frogs.",
      "ja": "それからスマイリーが「ワン、ツー、スリー、ゴー！」と言って、スマイリーと男がそれぞれ自分のカエルに触りました。"
     },
     {
-     "start": 258.8,
-     "end": 260.45,
+     "start": 255.6,
+     "end": 257.25,
      "en": "The new frog jumped.",
      "ja": "新しいカエルはぴょんと跳びました。"
     },
     {
-     "start": 262.1,
-     "end": 266.37,
+     "start": 258.9,
+     "end": 263.17,
      "en": "Dan'l just lifted up his body but could not move at all.",
      "ja": "ところがダニエルは、体を少し持ち上げただけで、まるで動けませんでした。"
     },
     {
-     "start": 266.74,
-     "end": 268.41,
+     "start": 263.54,
+     "end": 265.21,
      "en": "He was planted like a building.",
      "ja": "建物みたいに、床にどっしりくっついたままだったんです。"
     },
     {
-     "start": 269.14,
-     "end": 272.75,
+     "start": 265.94,
+     "end": 269.55,
      "en": "Smiley was very surprised and angry too.",
      "ja": "スマイリーはひどく驚き、同時に腹も立ちました。"
     },
     {
-     "start": 272.84,
-     "end": 275.31,
+     "start": 269.64,
+     "end": 272.11,
      "en": "But he did not know what the problem was.",
      "ja": "でも、何がいけないのかさっぱり分かりません。"
     },
     {
-     "start": 276.04,
-     "end": 279.27,
+     "start": 272.84,
+     "end": 276.07,
      "en": "The other man took the money and started away.",
      "ja": "男は金を受け取ると、そのまま立ち去ろうとしました。"
     },
     {
-     "start": 280.16,
-     "end": 291.85,
+     "start": 276.96,
+     "end": 288.65,
      "en": "And when he was going out the door, he looked back and said \"Well, I don't see anything about that frog that is any better than any other frog.\"",
      "ja": "そして戸口を出ていきながら振り返り、「やっぱりそのカエルが、ほかのカエルより優れているようには見えないな」と言いました。"
     },
     {
-     "start": 294.08,
-     "end": 303.97,
+     "start": 289.28,
+     "end": 299.17,
      "en": "Smiley stood looking down at Dan’l a long time, and at last says, \"I wonder what in the nation happened to that frog.",
      "ja": "スマイリーは長いことダニエルを見下ろしていて、とうとう「いったい何がどうなったんだ、このカエルに。」と言いました。"
     },
     {
-     "start": 303.82,
-     "end": 307.35,
+     "start": 299.02,
+     "end": 302.55,
      "en": "I wonder if there is something wrong with him.\"",
      "ja": "「どこか具合が悪いのかね。」とつぶやきました。"
     },
     {
-     "start": 308.5,
-     "end": 315.73,
+     "start": 303.7,
+     "end": 310.93,
      "en": "And he picked up Dan'l and turned him upside down and out came a whole lot of bullets.",
      "ja": "それからダニエルをつかみ上げて逆さまにすると、中からどさっと弾丸が山ほど転がり出てきました。"
     },
     {
-     "start": 316.74,
-     "end": 319.59,
+     "start": 311.94,
+     "end": 314.79,
      "en": "And Smiley was the angriest man.",
      "ja": "そこでスマイリーは、この上なく怒りました。"
     },
     {
-     "start": 320.08,
-     "end": 325.89,
+     "start": 315.28,
+     "end": 321.09,
      "en": "He set the frog down and took out after that man but he never caught him.",
      "ja": "カエルを下に置くと、あの男を追いかけて飛び出しましたが、とうとう追いつくことはできませんでした。"
     }
+   ],
+   "clip_spans": [
+    [
+     391.36,
+     540.88
+    ],
+    [
+     542.44,
+     626.4
+    ],
+    [
+     628.04,
+     683.44
+    ],
+    [
+     685.04,
+     717.7
+    ]
    ]
   },
   {
