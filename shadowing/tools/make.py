@@ -30,8 +30,8 @@ LESSONS = {
     "L2-1": dict(level=2, source="voa", title="When Do I Start?", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-19-when-do-you-start/3357760.html", dur=(120, 180)),
     "L2-2": dict(level=2, source="voa", title="Yesterday Was Amazing!", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-24-yesterday-was-amazing/3439164.html", dur=(120, 180)),
     "L2-3": dict(level=2, source="voa", title="Have You Ever ...?", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-48-have-you-ever/3753664.html", dur=(120, 180)),
-    "L5-1": dict(level=5, source="nasa", title="Northward Shift of Boreal Tree Cover", url="https://svs.gsfc.nasa.gov/14965/"),
-    "L5-2": dict(level=5, source="nasa", title="Webb Spies Rain Clouds, New Molecule on Titan", url="https://svs.gsfc.nasa.gov/14843/"),
+    "L5-1": dict(start_at=9.7, level=5, source="nasa", title="Northward Shift of Boreal Tree Cover", url="https://svs.gsfc.nasa.gov/14965/"),
+    "L5-2": dict(start_at=1.7, level=5, source="nasa", title="Webb Spies Rain Clouds, New Molecule on Titan", url="https://svs.gsfc.nasa.gov/14843/"),
     "L5-3": dict(level=5, source="voa", title="The Ransom of Red Chief", url="https://learningenglish.voanews.com/a/the-ransom-of-red-chief-by-o-henry/4656557.html", dur=(270, 330), story=True, scene="子どもが誘拐犯を振り回す場面"),
     "L1-4": dict(level=1, source="voa", title="I'm Here!", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-3-i-am-here/3126527.html", dur=(60, 120)),
     "L1-5": dict(level=1, source="voa", title="What Is It?", url="https://learningenglish.voanews.com/a/lets-learn-english-lesson-4/3168920.html", dur=(60, 120)),
@@ -53,7 +53,7 @@ LESSONS = {
     "L5-7": dict(level=5, source="voa", title="The Cask of Amontillado", url="https://learningenglish.voanews.com/a/cask-of-amontillado-edgar-allan-poe-american-stories/3249195.html", dur=(270, 330), story=True, scene="モントレゾールがフォルトゥナートを地下墓所の奥へ連れて行き、壁に塗り込める場面（物語の結末まで）"),
     "L5-8": dict(level=5, source="nasa", title="Ingredients of Life from Asteroid Bennu", url="https://svs.gsfc.nasa.gov/14774/"),
     "L5-9": dict(level=5, source="nasa", title="Hubble's AI Revolution", url="https://svs.gsfc.nasa.gov/14860/", crf=30),
-    "L5-10": dict(level=5, source="nasa", title="Landsat 9: More Than Just a Picture", url="https://svs.gsfc.nasa.gov/14978/", crf=30),
+    "L5-10": dict(start_at=2.6, level=5, source="nasa", title="Landsat 9: More Than Just a Picture", url="https://svs.gsfc.nasa.gov/14978/", crf=30),
     # レベル3：Let's Learn English Level 2（会話。Professor Bot の解説が途中に入る）
     "L3-1": dict(level=3, source="voa", title="Budget Cuts", url="https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson1/3960391.html", dur=(120, 180)),
     "L3-2": dict(level=3, source="voa", title="The Interview", url="https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-2/3960471.html", dur=(120, 180)),
@@ -75,7 +75,7 @@ LESSONS = {
     "L4-7": dict(level=4, source="voa", title="Halloween in America", url="https://learningenglish.voanews.com/a/halloween-in-america-costumes-candy-costs-for-night-of-fun/7837907.html", dur=(120, 180), report=True),
     "L4-8": dict(level=4, source="voa", title="What Is the Super Bowl?", url="https://learningenglish.voanews.com/a/what-is-the-super-bowl/7964993.html", dur=(120, 180), report=True),
     "L4-9": dict(level=4, source="voa", title="Thanksgiving: An American Tradition", url="https://learningenglish.voanews.com/a/thanksgiving-american-tradition-2017/4117570.html", dur=(120, 180), report=True),
-    "L4-10": dict(level=4, source="voa", title="'Watching the Grass Grow' Is Not Fun", url="https://learningenglish.voanews.com/a/watching-the-grass-grow-is-not-fun/8003108.html", dur=(120, 180), report=True),
+    "L4-10": dict(start_at=8.5, level=4, source="voa", title="'Watching the Grass Grow' Is Not Fun", url="https://learningenglish.voanews.com/a/watching-the-grass-grow-is-not-fun/8003108.html", dur=(120, 180), report=True),
 }
 
 
@@ -323,7 +323,8 @@ def build(i):
                   clip_start=None, clip_end=None, cover_height=0.22 if L["source"] == "voa" and not L.get("report") else 0,
                   repeat="minute" if L["level"] == 5 else "line", synopsis=P.get("synopsis"),
                   vocab=P["vocab"], quiz=P["quiz"], ja_reviewed=False, ja_unsure=P.get("ja_unsure", []),
-                  credit=VOA_CREDIT if L["source"] == "voa" else NASA_CREDIT, active=True)
+                  credit=VOA_CREDIT if L["source"] == "voa" else NASA_CREDIT, active=True,
+                  start_at=L.get("start_at"))   # 最初の音楽・番組の前置きを飛ばして、話し始めから再生（ファイルは切らない。NASA は加工しない約束。2026-11-17 kimi）
     if L["source"] == "nasa":  # 切らない・焼き込まない。720pに縮めるだけ
         cues = [dict(c, ja=l["ja"]) for c, l in zip(srt_cues(SRC / f"{i}.en.srt"), P["lines"])]
         vf, codec = enc(i); ff("-i", src, "-vf", vf, *codec, MEDIA / f"{i}.mp4")
