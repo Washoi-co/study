@@ -28,16 +28,17 @@ UNITS_Z = [(1, 6, "A"), (7, 12, "B"), (13, 18, "C"), (19, 24, "D")]
 UNITS_BIZ = [(1, 7, "A"), (8, 11, "B"), (12, 16, "C"), (17, 20, "D"), (21, 27, "E"), (28, 33, "F"), (34, 37, "G"), (38, 41, "H")]
 
 
-def adlib():
-    """章のアドリブの組（../study-src/adlib_parts/*.json。2026-11-12）：{(lv, 章): [{f 型, ja 言うこと, w 単語2つ, m お手本}, ×5]}"""
+def steps():
+    """章の振り返りの STEP 2・3（../study-src/steps/*.json。_ で始まる物は読まない。2026-11-16 kimi）：
+    {(lv, 章): {st2, st3?, pattern?}}。lv＝"b"・"i"・専門の track の id（"biz"・"civ"）"""
     d = {}
-    for p in sorted(glob.glob(os.path.join(SRC, "adlib_parts", "[!_]*.json"))):
+    for p in sorted(glob.glob(os.path.join(SRC, "steps", "[!_]*.json"))):
         for c in json.load(open(p, encoding="utf-8")):
-            d[(c["lv"], c["ch"])] = c["ad"]
+            d[(c["lv"], c["ch"])] = {k: c[k] for k in ("st2", "st3", "pattern") if c.get(k)}
     return d
 
 
-AD = adlib()
+ST = steps()
 
 
 def unit(n, table):
@@ -52,7 +53,7 @@ def beginner():
         ts = re.findall(r"T: (.+)", body)
         ss = re.findall(r"S: (.+)", body)
         assert len(ts) == len(ss) == 6, n
-        chs.append({"n": n, "u": unit(n, UNITS_B), "title": title, "ad": AD.get(("b", n), []),
+        chs.append({"n": n, "u": unit(n, UNITS_B), "title": title, **ST.get(("b", n), {}),
                     "items": [{"t": t.strip(), "s": s.strip(), "pic": f"img/b/{n}.webp"} for t, s in zip(ts, ss)]})
     assert [c["n"] for c in chs] == list(range(1, 25))
     return chs
@@ -62,7 +63,7 @@ def intermediate():
     chs = []
     for c in json.load(open(os.path.join(SRC, "intermediate.json"), encoding="utf-8")):
         n = c["ch"]
-        chs.append({"n": n, "u": unit(n, UNITS_I), "title": c["title"], "ja": c["ja"], "ad": AD.get(("i", n), []),
+        chs.append({"n": n, "u": unit(n, UNITS_I), "title": c["title"], "ja": c["ja"], **ST.get(("i", n), {}),
                     "items": [{"t": t, "s": s, "tj": tj, "sj": sj, "pic": f"img/i/{n}-{k + 1}.webp"}
                               for k, (t, s, tj, sj) in enumerate(c["items"])]})
     assert [c["n"] for c in chs] == list(range(1, 27))
@@ -84,7 +85,7 @@ def track_level(tid):
     chs = []
     for c in json.load(open(path, encoding="utf-8")):
         n = c["ch"]
-        chs.append({"n": n, "u": unit(n, t.get("units", UNITS_Z)), "title": c["title"], "ja": c["ja"], "ad": AD.get((tid, n), []),
+        chs.append({"n": n, "u": unit(n, t.get("units", UNITS_Z)), "title": c["title"], "ja": c["ja"], **ST.get((tid, n), {}),
                     "items": [{"t": t_, "s": s, "tj": tj, "sj": sj, "e": e} for t_, s, tj, sj, e in c["items"]]})
     return {"id": "z", "name": t["name"], "chapters": chs}
 

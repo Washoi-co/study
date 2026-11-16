@@ -19,8 +19,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
 <link rel="stylesheet" href="/ui.css">
 <style>
-/* 生徒用「章の録音」（2026-11-16 kimi：A-PUSHメソッドを外して、計画の「今日の復習」から章ごとに録音）。
-   会員番号＋パスワードで data.enc を復号 → 章の6問を通して声に出して録音（30秒以上で「できた」）。
+/* 生徒用「章の振り返り」（2026-11-16 kimi：計画の「今日の復習」・公式LINE から章ごとに）。会員番号＋パスワードで data.enc を復号して3ステップ：
+   STEP 1＝教材と一緒に文1〜6を3回ずつ録音（30秒以上で「できた」）／STEP 2＝先生の質問に単語で答える→AI添削→3回（章の st2）／STEP 3＝状況で言う→添削→3回→モデル解答（Business の st3）。
+   章の全部の STEP ができたら章クリア。
    録音はどこにも送らない。毎週1本だけ、この端末の IndexedDB（ap_growth）に成長記録として残す。見た目は /ui.css */
 .en{font-family:var(--en)}
 #app{display:flex;flex-direction:column;gap:12px}
@@ -91,6 +92,21 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
 .gempty{margin:10px 0 0;font-size:13px;color:var(--mute)}
 .book{margin:4px 0 0;font-size:16px;font-weight:700;line-height:1.6;text-align:center}
 #items-show{flex:none;align-self:center;font-size:14px;padding:10px 18px}
+
+/* 章の振り返り：STEP 1〜3 のカード（2026-11-16 kimi）。おすすめの順だけど、どれからでも押せる */
+.sth{display:flex;align-items:center;gap:10px}
+.sth .stn{flex:none;font-family:var(--en);font-size:12px;font-weight:900;letter-spacing:.06em;color:var(--on);background:var(--brand);border-radius:99px;padding:3px 10px}
+.sth h2{margin:0;flex:1;font-size:16px;font-weight:800;line-height:1.4}
+.sth .ck{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--ok);color:#fff;font-size:14px;font-weight:900}
+.stp.done .stn{background:var(--ok)}
+.stgo{flex:none}
+.stmsg{margin:0;font-size:13px;color:var(--ok);text-align:center}
+.stmsg:empty{display:none}
+.stl{margin:4px 0 0;padding-left:1.4em;display:flex;flex-direction:column;gap:12px}
+.stl li{line-height:1.5}
+.stl .chip{display:inline-flex;gap:6px;align-items:baseline;font-family:var(--en);font-weight:800;padding:3px 10px;margin-bottom:4px}
+.stl .chip small{font-family:var(--f);font-weight:500;font-size:12px;color:var(--mute)}
+.stl p{margin:0}.stl p.en{font-family:var(--en);font-size:16px}.stl p.ja{font-size:13px;color:var(--mute)}
 </style>
 <script src="/lock.js"></script>
 </head>
@@ -98,8 +114,8 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="aplogo" viewBox="0 0 228.41 58.35"><polygon points="21.57 0 0 57.45 16.22 57.45 25.48 57.45 25.48 45.57 20.25 45.57 29.37 18.69 38.55 45.57 33.35 45.57 33.35 57.45 42.61 57.45 59.18 57.45 37.53 0 21.57 0"/><path d="M93.35.33h-20.4v28.56h-15v12.25h15v16.31h14.61v-16.31h5.63c12.49-.16,22.44-6.95,22.44-20.66v-.33C115.62,7.34,106.81.33,93.35.33ZM100.94,21.05c0,4.81-3.1,7.83-8.24,7.83h-5.14v-16h5.06c5.3,0,8.32,2.69,8.32,7.92v.25Z"/><path d="M215.36,12.4c-5.63,0-9.22,3.18-11.67,6.69V.33h-14.36v43.41c0-7.51-5.39-10.77-13.38-13.79-4.32-1.79-6.53-2.69-6.53-4.32v-.16c0-1.22,1.06-2.28,3.35-2.28,3.18,0,7.34,1.55,10.85,3.75l5.22-9.71c-4.9-3.18-10.69-4.73-16.16-4.73-9.63,0-16.4,5.3-16.4,14.2v.16c0,8,5.71,11.1,13.47,13.95,4.41,1.71,6.45,2.53,6.45,4.24v.16c0,1.39-1.14,2.45-3.59,2.45-3.92,0-8.49-1.79-12.81-4.81l-4.66,8.26V13.3h-14.36v26.03c0,4.08-2.2,6.28-5.3,6.28s-5.06-2.2-5.06-6.28V13.3h-14.36v30.44c0,8.98,4.81,14.61,13.06,14.61,5.63,0,9.22-3.18,11.67-6.69v5.79h14.36v-4.55c5.54,3.86,11.77,5.44,17.56,5.44,9.96,0,16.65-5.22,16.65-14.44v13.55h14.36v-26.03c0-4.08,2.2-6.28,5.3-6.28s5.06,2.2,5.06,6.28v26.03h14.36v-30.44c0-8.98-4.81-14.61-13.06-14.61Z"/></symbol></svg>
 
 <main class="screen">
-  <div class="nav"><span class="navl"><svg class="aplogo" viewBox="0 0 228.41 58.35" fill="currentColor" role="img" aria-label="A-PUSH"><use href="#aplogo"/></svg><span class="mini">録音</span></span><div class="navr"><button class="pill" id="who" title="ログアウト"></button></div></div>
-  <h1 class="large">録音</h1>
+  <div class="nav"><span class="navl"><svg class="aplogo" viewBox="0 0 228.41 58.35" fill="currentColor" role="img" aria-label="A-PUSH"><use href="#aplogo"/></svg><span class="mini">振り返り</span></span><div class="navr"><button class="pill" id="who" title="ログアウト"></button></div></div>
+  <h1 class="large">章の振り返り</h1>
 
   <form class="lock" id="lock">
     <h2 class="g-h">A-PUSH Training</h2>
@@ -123,11 +139,18 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
     <div class="card">
       <div class="cin">
         <div class="meta"><span id="chname"></span><b id="todo"></b></div>
+        <p class="say">おすすめは STEP 1 → 2 → 3 の順。どれからでも始められます。</p>
+      </div>
+    </div>
+
+    <div class="card stp" id="st1">
+      <div class="cin">
+        <div class="sth"><span class="stn">STEP 1</span><h2>教材と一緒に、文1〜6を3回ずつ</h2><span class="ck" hidden>✓</span></div>
         <p class="book">📖 教材の <b id="book-ch"></b> を開いて、見ながらやってください。</p>   <!-- 教材を見ながら（2026-11-16 kimi）。画面の中身は教材が手元に無い時だけ -->
         <button class="ghost" id="items-show">教材をなくした場合はこちら</button>
         <div class="cin" style="padding:0" id="items" hidden></div>
         <div class="rec" id="rec">
-          <p class="say">章を通して声に出します。先生の質問（T）に答える形で。30秒以上で「できた」になります。</p>
+          <p class="say">文1〜6を3回ずつ、声に出して録音します。30秒以上で「できた」になります。</p>
           <button class="recbtn" id="rec-btn">録音する</button>
           <div id="rec-done" hidden>
             <audio id="rec-audio" controls></audio>
@@ -137,10 +160,102 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
             </div>
           </div>
           <p class="recmsg" id="rec-msg" role="status"></p>
-          <div class="acts" style="width:100%"><button class="primary" id="btn-nextch" hidden></button></div>
         </div>
       </div>
     </div>
+
+    <div class="card stp" id="st2" hidden>
+      <div class="cin">
+        <div class="sth"><span class="stn">STEP 2</span><h2>アドリブ＋AI添削</h2><span class="ck" hidden>✓</span></div>
+        <p class="say">教材は要りません。この画面だけでできます。下の先生の質問に、太字の単語を使って自分のことを答えます（4問）。AIが直した文を3回。</p>
+        <ol class="stl" id="list2"></ol>
+        <button class="primary stgo" id="go2">はじめる</button>
+        <p class="stmsg" id="msg2" role="status"></p>
+      </div>
+    </div>
+
+    <div class="card stp" id="st3" hidden>
+      <div class="cin">
+        <div class="sth"><span class="stn">STEP 3</span><h2>状況で言う（Business）</h2><span class="ck" hidden>✓</span></div>
+        <p class="say">教材は要りません。この画面だけでできます。下の状況を読んで、自分で言います（3問）。AIが直した文を3回言ってから、モデル解答を見ます。</p>
+        <ol class="stl" id="list3"></ol>
+        <button class="primary stgo" id="go3">はじめる</button>
+        <p class="stmsg" id="msg3" role="status"></p>
+      </div>
+    </div>
+
+    <div id="run" hidden>
+<!-- アドリブ（🎤で言う → AI添削 → 3回）の画面。本コースの章の振り返り STEP 2・3（build が「部品の差し込み」の印の所に入れる）。動きは /adlib.js -->
+      <style>/* 2026-11-16 ui.css から外した分を、部品の中へ */
+        .stem .blank{color:var(--brand);border-bottom:3px solid var(--brand);padding:0 .35em}
+        .adw{display:flex;justify-content:center;align-items:center;gap:10px}
+        .adw[hidden],#a-type[hidden],#f-err[hidden],#f-ok[hidden]{display:none}
+        #a-type{display:flex;flex-direction:column;gap:9px}
+        #a-in{width:100%;border:0;background:var(--bg);border-radius:12px;padding:13px 14px;font-family:var(--en);font-size:17px}
+        #a-live{font-family:var(--en);font-size:16px;color:var(--ink);min-height:1.3em}
+        .say.priv{font-size:11.5px}
+        .you{margin:0;font-family:var(--en);font-size:16px;text-align:center;color:var(--mute);line-height:1.4}
+        .okb{align-self:center;font-size:12px;font-weight:700;background:var(--ok);color:#fff;border-radius:99px;padding:2px 10px}
+        #f-err,#f-ok{display:flex;flex-direction:column;gap:10px}
+        #f-msg{color:var(--ng);font-size:13px;margin:0;text-align:center}
+        #a-en{justify-content:center;flex-wrap:wrap}#a-en .chip{font-family:var(--en);font-size:18px;color:var(--brand)}
+        .a-title{margin:0;text-align:center;font-size:16px;font-weight:800}
+        .a-sit{margin:0;font-family:var(--en);font-size:15px;line-height:1.5;background:var(--bg);border-radius:12px;padding:10px 12px}
+        .a-q{margin:0;flex:1;font-family:var(--en);font-size:clamp(16px,4.3vw,19px);font-weight:600;line-height:1.4}
+        .a-q b,.model b{color:var(--brand)}
+        #f-mbtn{align-self:center}.model{margin:0;font-size:15px;font-weight:500;line-height:1.5;background:var(--soft);border-radius:12px;padding:10px 12px}</style>
+      <div id="v-adlib" class="cin" style="padding:0" hidden>
+        <div class="meta"><span class="wcat" id="a-tag">アドリブ</span><span id="a-n"></span></div>
+        <p class="a-title" id="a-title" hidden></p>
+        <p class="a-sit" id="a-sit" hidden></p>
+        <p class="say" id="a-sitja" hidden></p>
+        <div class="adw" id="a-qrow" hidden><p class="a-q" id="a-q"></p><button class="tsay" id="a-qsay" aria-label="質問を聞く">▶</button></div>
+        <p class="say" id="a-qja" hidden></p>
+        <p class="stem" id="a-frame"></p>
+        <p class="say" id="a-fja"></p>
+        <div class="pic" id="a-pic" aria-hidden="true"></div>
+        <div class="adw" id="a-words"><div class="chips" id="a-en"></div><button class="tsay" id="a-say" aria-label="単語を聞く">🔊</button></div>
+        <p class="say" id="a-ja"></p>
+        <p class="say" id="a-how"></p>
+        <button class="mic" id="a-mic">🎤 話す</button>
+        <p class="say" id="a-live" aria-live="polite"></p>
+        <div id="a-type" hidden>
+          <p class="say" id="a-nomic" hidden>声が使えない時は、打って入力してください</p>
+          <input id="a-in" lang="en" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send" aria-label="あなたの英文" placeholder="ここに英文（直せます）">
+          <div class="acts"><button class="ghost" id="a-again">もう一度話す</button><button class="primary" id="a-next">送って次へ</button></div>
+        </div>
+        <p class="say priv">添削のため、声（または英文）を送ります。声は文字にするためだけに使い、保存しません。名前は送りません（ログインの印は元に戻せない形にして、今月の利用分を数えるだけに使います）</p>
+      </div>
+
+      <div id="v-fix" class="cin" style="padding:0" hidden>
+        <div class="meta"><span class="wcat" id="f-tag">添削</span><span id="f-n"></span></div>
+        <p class="a-q" id="f-q" hidden></p>
+        <p class="say" id="f-you-h">① あなたの文</p>
+        <p class="you" id="f-you"></p>
+        <p class="say" id="f-fix-h">② 添削</p>
+        <p class="say" id="f-wait" role="status">添削しています…</p>
+        <div id="f-err" hidden>
+          <p id="f-msg" role="alert"></p>
+          <div class="acts"><button class="ghost" id="f-skip">とばす</button><button class="ghost" id="f-retry">同じ文で送り直す</button><button class="primary" id="f-redo">言い直す</button></div>
+        </div>
+        <div id="f-ok" hidden>
+          <span class="okb" id="f-badge">そのままでOK</span>
+          <div class="adw"><p class="answer" id="f-en"></p><button class="tsay" id="f-say" aria-label="聞く">▶</button></div>
+          <p class="say" id="f-note"></p>
+          <p class="say">声に出して3回。タップすると音が鳴ります。</p>
+          <div class="dots" id="f-dots">
+            <button class="dot" data-f="0" aria-label="1回目">1</button>
+            <button class="dot" data-f="1" aria-label="2回目">2</button>
+            <button class="dot" data-f="2" aria-label="3回目">3</button>
+          </div>
+          <button class="pill" id="f-mbtn" hidden>モデル解答を見る</button>
+          <p class="model en" id="f-model" hidden></p>
+        </div>
+        <div class="acts"><button class="primary" id="f-next" disabled>次へ</button></div>
+      </div>
+
+    </div>
+    <div class="acts"><button class="primary" id="btn-nextch" hidden></button></div>
 
     <details class="log" id="log">
       <summary>あなたの記録<span class="en" id="log-sum"></span></summary>
@@ -157,7 +272,7 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
     </details>
 
     <footer class="foot">
-      <span>録音はこの端末の中だけで、どこにも送りません。毎週1本だけ、成長記録として残ります（送るのは自分で押した時だけ）。</span>
+      <span>STEP 1 の録音はこの端末の中だけで、どこにも送りません。毎週1本だけ、成長記録として残ります（送るのは自分で押した時だけ）。STEP 2・3 は添削のため声（または英文）を送ります（保存しません）。</span>
       <span>音声は端末の読み上げ機能を使っています。端末や設定によっては鳴りません。録音するとき、マイクの許可を求められます。</span>
       <span class="by">TRAINING BY A-PUSH</span>
     </footer>
@@ -165,6 +280,7 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
 </main>
 
 <script src="/activity.js"></script>
+<script src="/adlib.js"></script>  <!-- STEP 2・3：🎤→AI添削→3回 -->
 <script>
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -278,7 +394,7 @@ $("who").addEventListener("click",()=>{
   if(confirm("ログアウトしますか？（次に開くとき、会員番号とパスワードがもう一度必要です）")){store.set("pass",null);location.reload();}
 });
 function go(ch){
-  stopRec(true);
+  stopRec(true);stepStop();
   CH=level().chapters[ch]?ch:0;store.set("ch_"+LV,CH);
   document.querySelectorAll("[data-lv]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lv===LV)));
   let html="",u=null;
@@ -292,7 +408,7 @@ function go(ch){
   segSlide("levels");
   const c=chapter(),k=TODO.indexOf(CH);
   $("chname").textContent=level().name+" Ch "+c.n+"　"+c.title;
-  $("todo").textContent=k>=0?"今日の復習 "+(k+1)+" / "+TODO.length:"";
+  $("todo").textContent=k>=0?"今日の振り返り "+(k+1)+" / "+TODO.length:"";
   $("book-ch").textContent=level().name+" Ch "+c.n;$("items").hidden=true;$("items-show").hidden=false;   // 章を変えたら、また教材で
   $("items").innerHTML=c.items.map((it,i)=>'<div class="it">'+
     '<img class="pic" src="'+esc(picOf(it))+'" alt="Ch '+c.n+' の絵 '+(i+1)+'">'+
@@ -300,7 +416,7 @@ function go(ch){
     (it.tj?'<p class="tj">'+esc(it.tj)+'</p>':'')+
     '<div class="tq s"><span class="who-t">S</span><p>'+esc(it.s)+'</p><button class="tsay" data-say="s'+i+'" aria-label="答えを聞く">▶</button></div>'+
     (it.sj?'<p class="tj">'+esc(it.sj)+'</p>':'')+'</div>').join("");
-  resetRec();
+  resetRec();paintSteps();
 }
 $("items-show").addEventListener("click",()=>{$("items").hidden=false;$("items-show").hidden=true;});
 $("items").addEventListener("click",e=>{const b=e.target.closest("[data-say]");if(b)speak(chapter().items[+b.dataset.say.slice(1)][b.dataset.say[0]]);});
@@ -343,6 +459,7 @@ function stopRec(discard){
 }
 $("rec-btn").addEventListener("click",async()=>{
   if(busy()){stopRec(false);return;}
+  Adlib.micRelease();   // STEP 2・3 の🎤は止める（問題はそのまま）
   try{stream=await navigator.mediaDevices.getUserMedia({audio:true});}
   catch(e){msg("マイクが使えません。ブラウザの設定でマイクを許可してください。","ng");return;}
   chunks=[];
@@ -367,15 +484,70 @@ $("rec-ok").addEventListener("click",async()=>{
   $("rec-ok").disabled=true;
   const c=chapter(),title=level().name+" Ch."+c.n;
   apMark("rec",1,title);markToday();
-  const done=store.get("done_"+LV,[]);   /* 録音できた章＝章クリア。名簿の cleared へ（管理サイト・先生用の入口の「マスターした章」） */
-  if(!done.includes(c.n)){done.push(c.n);store.set("done_"+LV,done);}
-  (window.aps=window.aps||[]).push(["cleared",{b:store.get("done_b",[]),i:store.get("done_i",[]),z:store.get("done_z",[])}]);
   const kept=await keepWeek({blob:last.blob,mime:last.mime,sec:last.sec,lv:LV,ch:c.n,title,at:new Date().toISOString()});
   msg("できた。"+(kept===true?"今週の成長記録に残しました。":kept===false?"今週の分はもう残っています。":""),"ok");
-  paintGrowth();
-  const nt=TODO[TODO.indexOf(CH)+1];
-  if(TODO.includes(CH)&&nt!==undefined){$("btn-nextch").textContent="次の復習へ（Ch "+level().chapters[nt].n+"）";$("btn-nextch").hidden=false;}
+  paintGrowth();markStep(1);
 });
+
+/* ---- STEP の済み：今日の分だけ端末に {day, d:{"b:5":[1,2]}}。章の全部の STEP ができたら章クリア ---- */
+const stepsOf=c=>[1].concat(c.st2&&c.st2.length?[2]:[],c.st3&&c.st3.length?[3]:[]);
+const stepsDone=()=>{const s=store.get("steps",null);return s&&s.day===dayAgo(0)?s.d:{};};
+const stepKey=()=>LV+":"+chapter().n;
+function paintSteps(){
+  const c=chapter(),has=stepsOf(c),d=stepsDone()[stepKey()]||[];
+  [1,2,3].forEach(n=>{
+    $("st"+n).hidden=!has.includes(n);
+    $("st"+n).classList.toggle("done",d.includes(n));$("st"+n).querySelector(".ck").hidden=!d.includes(n);
+    if(n>1){$("go"+n).textContent=d.includes(n)?"もう一度":"はじめる";$("msg"+n).textContent="";}
+  });
+  // STEP 2・3 の問題はカードの中にそのまま出す（教材なしでアプリだけでできる。2026-11-16 kimi）
+  const bold=t=>esc(t).replace(/\[([^\]]+)\]/g,"<b>$1</b>");
+  $("list2").innerHTML=(c.st2||[]).map(x=>'<li><span class="chip">'+esc(x.en)+'<small>'+esc(x.ja)+'</small></span><p class="en">'+bold(x.T)+'</p><p class="ja">'+esc(x.jaT)+'</p></li>').join("");
+  $("list3").innerHTML=(c.st3||[]).map(x=>'<li><b>'+esc(x.title)+(x.titleJa?"（"+esc(x.titleJa)+"）":"")+'</b><p class="en">'+esc(x.sit)+'</p><p class="ja">'+esc(x.sitJa)+'</p><p class="en"><b>→ </b>'+esc(x.task)+'</p><p class="ja">'+esc(x.taskJa)+'</p></li>').join("");
+}
+function markStep(n){
+  const all=stepsDone(),k=stepKey(),c=chapter();
+  all[k]=[...new Set([...(all[k]||[]),n])];store.set("steps",{day:dayAgo(0),d:all});
+  paintSteps();
+  if(!stepsOf(c).every(x=>all[k].includes(x)))return;
+  const done=store.get("done_"+LV,[]);   /* 全部の STEP ができた章＝章クリア。名簿の cleared へ（管理サイト・先生用の入口の「マスターした章」） */
+  if(!done.includes(c.n)){done.push(c.n);store.set("done_"+LV,done);}
+  (window.aps=window.aps||[]).push(["cleared",{b:store.get("done_b",[]),i:store.get("done_i",[]),z:store.get("done_z",[])}]);
+  const nt=TODO[TODO.indexOf(CH)+1];
+  if(TODO.includes(CH)&&nt!==undefined){$("btn-nextch").textContent="次の振り返りへ（Ch "+level().chapters[nt].n+"）";$("btn-nextch").hidden=false;}
+}
+
+/* ---- STEP 2・3：1問ずつ出す → 🎤で送って次へ（待たない）→ 全部の後に添削を1文ずつ見て3回（/adlib.js） ---- */
+let RUN=null;   /* {n 2|3, L 問題, i, sent 送った分} */
+function view(k){$("v-adlib").hidden=k!=="adlib";$("v-fix").hidden=k!=="fix";}
+function stepStop(){if(RUN){Adlib.reset();Adlib.micRelease();RUN=null;}view("");$("run").hidden=true;   /* view("")：v-adlib・v-fix を隠す（sync.js が要素の hidden で「AI添削」の時間を数えるため） */
+  $("go2").hidden=$("go3").hidden=false;}
+function stepStart(n){
+  stepStop();stopRec(false);
+  $("st"+n).querySelector(".cin").appendChild($("run"));$("run").hidden=false;$("go"+n).hidden=true;$("msg"+n).textContent="";
+  RUN={n,L:n===2?chapter().st2:chapter().st3,i:0,sent:[]};ask();
+  $("st"+n).scrollIntoView({behavior:"smooth",block:"start"});
+}
+function ask(){
+  const c=chapter(),x=RUN.L[RUN.i],k=(RUN.i+1)+" / "+RUN.L.length,pattern=c.pattern||c.title;   /* 型：Business は章の pattern、B/I は章の題 */
+  if(RUN.n===2)Adlib.show({tag:"STEP 2",n:k,question:x.T,qja:x.jaT,words:[{en:x.en,ja:x.ja}],word:x.en,meaning:x.ja,pattern,
+    how:"太字の単語を使って、自分のことを答えます。🎤を押して話し、言えたらもう一度押すと次へ"});
+  else Adlib.show({tag:"STEP 3",n:k,title:x.title+(x.titleJa?"（"+x.titleJa+"）":""),situation:x.sit,sitJa:x.sitJa,question:x.task,qja:x.taskJa,word:"",meaning:"",pattern,model:x.model,
+    how:"状況を読んで、自分で言います。🎤を押して話し、言えたらもう一度押すと次へ"});
+}
+Adlib.setup({
+  send(it){if(!RUN)return;   /* STEP 2・3 の途中でない時は何もしない */RUN.sent.push(it);if(++RUN.i<RUN.L.length)ask();else Adlib.fix(RUN.sent);},
+  done(){
+    if(!RUN)return;
+    const n=RUN.n;RUN=null;
+    apMark("adlib",1,level().name+" Ch."+chapter().n+" STEP"+n);
+    stepStop();markStep(n);$("msg"+n).textContent="できた。";
+    $("st"+n).scrollIntoView({behavior:"smooth",block:"start"});
+  }
+});
+$("run").addEventListener("click",e=>{if(e.target.closest("#a-mic,#a-again"))stopRec(false);},true);   // STEP 2・3 の🎤の前に STEP 1 の録音を止める（マイクを2本同時に取らない）
+$("go2").addEventListener("click",()=>stepStart(2));
+$("go3").addEventListener("click",()=>stepStart(3));
 
 /* ---- 成長記録：毎週1本だけ（その週に最初に「できた」の録音）。IndexedDB ap_growth、キー＝週の月曜（日本時間）。最大52週 ---- */
 const weekOf=()=>{const d=new Date(Date.now()+9*36e5);d.setUTCDate(d.getUTCDate()-(d.getUTCDay()+6)%7);return d.toISOString().slice(0,10);};
