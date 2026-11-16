@@ -89,6 +89,8 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
 .gw .gh small{color:var(--mute)}
 .gw .ghost{flex:none;padding:10px;font-size:14px;text-align:center;text-decoration:none}
 .gempty{margin:10px 0 0;font-size:13px;color:var(--mute)}
+.book{margin:4px 0 0;font-size:16px;font-weight:700;line-height:1.6;text-align:center}
+#items-show{flex:none;align-self:center;font-size:14px;padding:10px 18px}
 </style>
 <script src="/lock.js"></script>
 </head>
@@ -121,7 +123,9 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
     <div class="card">
       <div class="cin">
         <div class="meta"><span id="chname"></span><b id="todo"></b></div>
-        <div class="cin" style="padding:0" id="items"></div>
+        <p class="book">📖 教材の <b id="book-ch"></b> を開いて、見ながらやってください。</p>   <!-- 教材を見ながら（2026-11-16 kimi）。画面の中身は教材が手元に無い時だけ -->
+        <button class="ghost" id="items-show">教材をなくした場合はこちら</button>
+        <div class="cin" style="padding:0" id="items" hidden></div>
         <div class="rec" id="rec">
           <p class="say">章を通して声に出します。先生の質問（T）に答える形で。30秒以上で「できた」になります。</p>
           <button class="recbtn" id="rec-btn">録音する</button>
@@ -289,6 +293,7 @@ function go(ch){
   const c=chapter(),k=TODO.indexOf(CH);
   $("chname").textContent=level().name+" Ch "+c.n+"　"+c.title;
   $("todo").textContent=k>=0?"今日の復習 "+(k+1)+" / "+TODO.length:"";
+  $("book-ch").textContent=level().name+" Ch "+c.n;$("items").hidden=true;$("items-show").hidden=false;   // 章を変えたら、また教材で
   $("items").innerHTML=c.items.map((it,i)=>'<div class="it">'+
     '<img class="pic" src="'+esc(picOf(it))+'" alt="Ch '+c.n+' の絵 '+(i+1)+'">'+
     '<div class="tq"><span class="who-t">T</span><p>'+esc(it.t)+'</p><button class="tsay" data-say="t'+i+'" aria-label="質問を聞く">▶</button></div>'+
@@ -297,6 +302,7 @@ function go(ch){
     (it.sj?'<p class="tj">'+esc(it.sj)+'</p>':'')+'</div>').join("");
   resetRec();
 }
+$("items-show").addEventListener("click",()=>{$("items").hidden=false;$("items-show").hidden=true;});
 $("items").addEventListener("click",e=>{const b=e.target.closest("[data-say]");if(b)speak(chapter().items[+b.dataset.say.slice(1)][b.dataset.say[0]]);});
 $("levels").addEventListener("click",e=>{
   const b=e.target.closest("[data-lv]");if(!b||b.dataset.lv===LV)return;
