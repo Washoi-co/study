@@ -53,6 +53,11 @@
     <div class="choices" id="q-choices"></div>
   </div></section>
 
+  <section class="card" id="v-vs" hidden><div class="cin">
+    <p class="say" style="padding:0;background:none;text-align:left">Versant を受けたことはありますか？</p>
+    <div class="choices"><button class="ch" data-vs="1"><span class="k">Y</span><span>はい</span></button><button class="ch" data-vs="0"><span class="k">N</span><span>いいえ</span></button></div>
+  </div></section>
+
   <section class="card" id="v-res" hidden><div class="cin">
     <p class="say" style="padding:0;background:none">あなたにおすすめのコース</p>
     <p class="rc" id="r-course"></p>
@@ -161,6 +166,89 @@ function result(){
   $("v-q").hidden=true;$("v-res").hidden=false;window.scrollTo(0,0);
 }
 $("r-again").onclick=()=>{$("v-res").hidden=true;$("v-pick").hidden=false;};
+</script>
+
+<script>
+/* ---- 単語のレベルテスト（100問以上・2026-11-17 kimi）：?full=1。自分の計画（/start/）の後に通る。
+   中学2年・中学3年・高校基礎・高校標準・高校発展（・高校難関）から各20問。仕事の人はビジネス基本〜レベル4から各8問。
+   正答率×帳の語数で「推定の語数」。毎日の単語をどこから進めるかは、こちらが決めて出す（正答率が80%を切った最初の帳の最初から）。
+   10問ごとに端末に保存＝途中で閉じても続きから。STU005・STU009 だけ、終わりに Versant の質問。結果は端末（ap_levelcheck・ap_path・ap_vocab）と名簿（vocab）へ。 */
+(function(){
+if(new URLSearchParams(location.search).get("full")!=="1")return;
+const get=(k,d)=>{try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v);}catch(e){return d;}},put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}};
+const G=get("ap_goals",{}),TR=get("ap_track",null),SID=String(get("ap_sid","")||"").toUpperCase();
+const purpose=G.purpose||"general",PASS=.8,PER=20,PER_BIZ=8;
+const GEN=["gen2","gen3","gen4","high1","high2","high3"],BIZ=["biz0","biz1","biz2","biz3","biz4"];
+const EXAMS={toeic:["toeic700","toeic800","toeic900","toeic950"],ielts:["ielts55","ielts60","ielts65","ielts70","ielts75","ielts80","ielts85"],toefl:["toefl60","toefl70","toefl80","toefl90","toefl100","toefl110"],eiken:["eikenp2","eiken2","eikenp1","eiken1"]};
+const ids=g=>APW_COURSES.filter(c=>c.g===g).map(c=>c.id);
+const tail=purpose==="business"?["native"].concat(ids("Business")):purpose==="exam"?(EXAMS[G.target]||[]):purpose==="special"&&TR&&TR.words?ids(TR.words):["native"];
+const title=id=>{const c=APW_COURSES.filter(x=>x.id===id)[0];return c?(c.g==="General"?"":c.g+" ")+c.t:id;};
+document.querySelector("h1.large").textContent="単語のレベルテスト";
+document.querySelector("p.sub").textContent="100問ほど。知らない単語は「わからない」。途中で閉じても、続きからできます。";
+$("v-pick").hidden=true;$("to-words").hidden=true;$("r-again").hidden=true;
+let V=get("ap_vtest",null),SIZE={};
+async function build(){
+  const qs=[];
+  const decks=GEN.map(id=>[id,PER]).concat(purpose==="business"?BIZ.map(id=>[id,PER_BIZ]):[]);
+  for(const [id,n] of decks){
+    let C=null;try{C=await load(id);}catch(e){}
+    if(!C||!C.words)continue;   // まだ無い帳（high3 など）は飛ばす
+    const W=C.words;SIZE[id]=W.length;
+    shuffle(W.map((_,i)=>i)).slice(0,n).forEach(wi=>{
+      const right=W[wi][1][0][0],others=shuffle(W.filter((_,i)=>i!==wi).map(w=>w[1][0][0]).filter(m=>m!==right)).slice(0,3);
+      qs.push({id,en:W[wi][0],right,opts:shuffle([right,...others])});
+    });
+  }
+  return {qs,i:0,right:{},asked:{},size:SIZE,date:new Date().toLocaleDateString("sv")};
+}
+function ask(){
+  const q=V.qs[V.i];
+  $("q-level").textContent=title(q.id);$("q-count").textContent=(V.i+1)+" / "+V.qs.length;
+  $("q-word").textContent=q.en;speak(q.en);
+  $("q-choices").innerHTML=q.opts.map((o,n)=>'<button class="ch"><span class="k">'+(n+1)+'</span><span>'+o.replace(/[&<>]/g,"")+'</span></button>').join("")+'<button class="ch idk" data-idk="1">わからない</button>';
+  window.scrollTo(0,0);
+}
+$("q-say").onclick=()=>speak(V.qs[V.i].en);
+$("q-choices").onclick=e=>{
+  const b=e.target.closest("button");if(!b)return;
+  const q=V.qs[V.i];V.asked[q.id]=(V.asked[q.id]||0)+1;
+  if(!b.dataset.idk&&b.lastElementChild.textContent===q.right.replace(/[&<>]/g,""))V.right[q.id]=(V.right[q.id]||0)+1;
+  V.i++;
+  if(V.i%10===0)put("ap_vtest",V);   // 10問ごとに保存（続きから）
+  if(V.i<V.qs.length){ask();return;}
+  $("v-q").hidden=true;
+  if(["STU005","STU009"].indexOf(SID)>=0){$("v-vs").hidden=false;window.scrollTo(0,0);}else result(null);
+};
+$("v-vs").onclick=e=>{const b=e.target.closest("[data-vs]");if(!b)return;$("v-vs").hidden=true;result(b.dataset.vs==="1");};
+function result(versant){
+  const sc={};Object.keys(V.asked).forEach(id=>{sc[id]=Math.round(100*(V.right[id]||0)/V.asked[id])/100;});
+  const tested=GEN.concat(BIZ).filter(id=>id in sc);
+  let est=400;   // 中学1年（gen1）は一覧から外してあるので、知っている物として足す
+  tested.forEach(id=>{est+=Math.round(sc[id]*(V.size[id]||0));});est=Math.round(est/100)*100;
+  const path=GEN.filter(id=>id in V.size).concat(tail).filter(id=>APW_COURSES.some(c=>c.id===id));
+  const start=tested.filter(id=>sc[id]<PASS&&path.indexOf(id)>=0)[0]||path.filter(id=>tested.indexOf(id)<0)[0]||path[0];
+  const per=+G.words||20;
+  document.querySelector("#v-res .say").textContent="あなたの単語力";
+  $("r-course").textContent="推定 約"+est.toLocaleString()+"語";
+  $("r-msg").textContent="毎日の単語は「"+title(start)+"」の最初から、1日 "+per+"語ずつ進めます。順番はこちらで決めてあります。";
+  $("r-levels").innerHTML=tested.map(id=>'<div><span>'+title(id)+'</span><span class="'+(sc[id]>=PASS?"y":"s")+'">'+Math.round(sc[id]*100)+'%</span></div>').join("");   // 赤は使わない（80%未満は灰色）
+  $("r-start").href="./?c="+start;$("r-start").textContent="単語を始める";
+  const v={scores:sc,est,start,path,at:V.date};if(versant!==null)v.versant=versant;
+  put("ap_levelcheck",{g:"General",id:start,scores:[],date:V.date});put("ap_path",path);put("ap_vocab",v);
+  try{localStorage.setItem("apush-words-course",start);localStorage.removeItem("ap_vtest");}catch(e){}
+  try{window.aps.push(["vocab",v]);}catch(e){}
+  $("v-res").hidden=false;window.scrollTo(0,0);
+}
+(async function(){
+  if(V&&V.qs&&V.qs.length&&V.i>=V.qs.length){   // 全部答えた後（Versant の画面で閉じた等）：作り直さず結果へ
+    if(["STU005","STU009"].indexOf(SID)>=0){$("v-vs").hidden=false;}else result(null);
+    return;
+  }
+  if(!V||!V.qs)V=await build();
+  if(!V.qs.length){location.replace("./");return;}   // 帳が1つも読めない：単語のページへ（止まらない）
+  $("v-q").hidden=false;ask();
+})();
+})();
 </script>
 <script src="/ui.js" defer></script>
 </body>

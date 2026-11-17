@@ -5,6 +5,10 @@ window.APW_COURSES = [
   {g:"General", id:"gen2", t:"中学2年レベル"},
   {g:"General", id:"gen3", t:"中学3年レベル"},
   {g:"General", id:"gen4", t:"高校基礎レベル"},
+  // 2026-11-17 kimi「高校は基礎だけじゃない」：標準・発展・難関を足した（study-src/words/high*.js・各1000語・例文付き）
+  {g:"General", id:"high1", t:"高校標準レベル"},
+  {g:"General", id:"high2", t:"高校発展レベル"},
+  {g:"General", id:"high3", t:"高校難関レベル"},
   // 2026-10-19：会話でよく使うフレーズ・スラング
   {g:"Native", id:"native", t:"よく使うフレーズ"},
   {g:"Native", id:"slang", t:"スラング"},
