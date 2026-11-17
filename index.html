@@ -67,6 +67,7 @@ html,body{background:var(--card)}
 @media (hover:hover) and (pointer:fine){.m1go:hover:not(:disabled){background:var(--accent2)}}
 .book{margin:0;font-size:18px;font-weight:700;line-height:1.6}
 #st1{position:relative}
+.promo{display:flex;gap:8px;margin:8px 0}.promo input{flex:1;min-width:0;padding:12px;border:1px solid var(--line);border-radius:12px;font-size:16px}.promo .ghost{flex:0 0 auto;padding:12px 18px}
 .m1lk{position:absolute;left:50%;bottom:-36px;transform:translateX(-50%);white-space:nowrap;font-size:12px;color:var(--mid);padding:8px 10px}   /* ボタンの下（タブとの間）。赤いボタンの位置をどの STEP でも同じに */
 .fin-mark{align-self:flex-start}
 
@@ -100,8 +101,8 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
     <label>パスワード<input id="pass" type="password" autocomplete="current-password" required></label>
     <p class="err" id="lock-err" role="alert"></p>
     <button class="primary" type="submit" id="lock-go">はじめる</button>
-    <label>体験コードをお持ちの方<input id="tcode" autocomplete="off" spellcheck="false"></label>
-    <button class="ghost" type="button" id="trial-go">体験をはじめる</button>
+    <label>プロモーションコードをお持ちの方<input id="tcode" autocomplete="off" spellcheck="false" placeholder="コード"></label>
+    <button class="ghost" type="button" id="trial-go">コードではじめる</button>
   </form>
 
   <div id="app" hidden>
@@ -211,6 +212,11 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
       <summary>成長記録<span class="en" id="g-sum"></span></summary>
       <div id="g-list"></div>
     </details>
+    <details class="log" id="promo">   <!-- サイト内のプロモーションコード（2026-11-17 kimi）：体験の期間を延ばす・次のキャンペーンのコード -->
+      <summary>プロモーションコード</summary>
+      <div class="promo"><input id="pcode" autocomplete="off" spellcheck="false" placeholder="コード" aria-label="プロモーションコード"><button class="ghost" type="button" id="promo-go">使う</button></div>
+      <p class="err" id="promo-msg" role="status"></p>
+    </details>
   </div>
 </main>
 
@@ -275,8 +281,17 @@ const apCall=(name,data)=>new Promise((ok,ng)=>{let n=0;const t=setInterval(()=>
 const trialMsg=e=>/^functions\/(not-found|permission-denied|failed-precondition|resource-exhausted)$/.test(e&&e.code||"")?e.message:"つながりませんでした。もう一度押してください。";
 async function trialOpen(code){
   const r=(await apCall("trial",{code})).data;
+  store.set("sid",r.sid);   /* 体験の生徒番号。activity.js が初回の計画→レベルチェックへ流すのに使う（2026-11-17） */
   return unlock("TRIAL",r.pass,{sid:r.sid,tok:r.tok});
 }
+/* サイト内のプロモーションコード：同じ trial に聞く。体験の人は期間が延びる（kanri が長い方を取る）。本生徒は「会員番号とパスワードで」と返る */
+$("promo-go").addEventListener("click",async()=>{
+  const code=$("pcode").value.trim();if(!code){$("pcode").focus();return;}
+  $("promo-go").disabled=true;$("promo-msg").textContent="";
+  try{const r=(await apCall("trial",{code})).data;store.set("tcode",code);$("promo-msg").textContent="使えるようになりました（"+String(r.until||"").replace(/^\d{4}-/,"").replace("-","/")+" まで）。";setTimeout(()=>location.reload(),1200);}
+  catch(err){$("promo-msg").textContent=trialMsg(err);}
+  $("promo-go").disabled=false;
+});
 $("trial-go").addEventListener("click",async()=>{
   const code=$("tcode").value.trim();if(!code){$("tcode").focus();return;}
   $("trial-go").disabled=true;$("lock-err").textContent="";
@@ -286,7 +301,7 @@ $("trial-go").addEventListener("click",async()=>{
 });
 (async()=>{
   const u=new URLSearchParams(location.search).get("sid");
-  $("sid").value=u||store.get("sid","");
+  $("sid").value=u||(store.get("tcode",null)?"":store.get("sid",""));
   const p=store.get("pass",null),sid=store.get("sid","");
   if(p&&sid&&(!u||u===sid)){try{DATA=await unlock(sid,p);start();return;}catch(e){}}
   const tc=store.get("tcode",null);
