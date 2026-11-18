@@ -148,12 +148,24 @@ def main():
         keys[sid] = {"s": b64(salt), "i": b64(siv), "c": b64(AESGCM(kek).encrypt(siv, inner, None))}
     # 体験コード（2026-11-09 の名刺）：kanri の trial が 11/30 まで受け付け、入れた日から2週間だけ、この箱の pass を返す（functions/index.js と同じ式）。
     # 12/14 を過ぎて作り直すと箱が無くなる＝体験の端末は開けなくなる
+    # DOBOKU（2026-11-18 kimi「ドボプロの子達全員に2週間、study と同じ範囲。単語は doboku 系統＋general＋各種試験」）：kanri の TRIALS の box。
+    # 土木の専門（track civ）を足した体験の箱＝単語は全部＋土木、章も土木が開く。only ではない（Business・試験もそのまま）
+    civ = {"id": "civ", "label": TRACKS["civ"]["label"], "words": TRACKS["civ"]["words"]}
+    boxes = {"TRIAL": {}, "DOBOKU": {"track": civ, **({"kb": b64(tkeys["civ"])} if "civ" in tkeys else {})}}
     if sk and datetime.date.today().isoformat() <= "2026-12-14":
-        salt, siv = os.urandom(16), os.urandom(12)
-        kek = hashlib.pbkdf2_hmac("sha256", derive(sk, "trial", "TRIAL").encode(), salt, 200_000, 32)
-        me = {"k": b64(dkey), "name": "体験", **({"pk": pk} if pk else {})}
-        keys["TRIAL"] = {"s": b64(salt), "i": b64(siv), "c": b64(AESGCM(kek).encrypt(siv, json.dumps(me, ensure_ascii=False).encode(), None))}
+        for box, extra in boxes.items():
+            salt, siv = os.urandom(16), os.urandom(12)
+            kek = hashlib.pbkdf2_hmac("sha256", derive(sk, "trial", box).encode(), salt, 200_000, 32)
+            me = {"k": b64(dkey), "name": "体験", **({"pk": pk} if pk else {}), **extra}
+            keys[box] = {"s": b64(salt), "i": b64(siv), "c": b64(AESGCM(kek).encrypt(siv, json.dumps(me, ensure_ascii=False).encode(), None))}
     json.dump({**out, "keys": keys}, open(os.path.join(os.path.dirname(__file__), "data.enc"), "w"))
+    # 団体のサイト用の data.enc（2026-11-18 kimi「ドボプロに study と同じ中身」）：その団体の箱と、その専門の章だけ（他の生徒の鍵は入れない）。
+    # 鍵は kanri の student が ORG_BOX の期間だけ返す。フォルダが無ければ書かない
+    for box, path in {"DOBOKU": "../doboku/data.enc"}.items():
+        p = os.path.join(os.path.dirname(__file__), path)
+        if box in keys and os.path.isdir(os.path.dirname(p)):
+            tid = (boxes[box].get("track") or {}).get("id")
+            json.dump({**out, "t": {tid: out["t"][tid]} if tid in out["t"] else {}, "keys": {box: keys[box]}}, open(p, "w"))
     print("data.enc:", sum(len(l["chapters"]) for l in data["levels"]), "chapters, students:", len(keys), ", key:", bool(sk),
           ", tracks:", {tid: ",".join(s["id"] for s in students if s.get("track") == tid) for tid in tkeys})
 

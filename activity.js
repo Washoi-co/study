@@ -39,8 +39,8 @@ window.apWords = function (id) {
    本コース（study）・無料版（training）・団体のサイトで、同じデータの形・同じ流れ（名前＋同意 → 練習した日を送る → お知らせ・既読）。
    生徒が同意した時だけ送る。kanri の config.js が未設定の間は何もしない。 */
 (function () {
-  var honka = /^study\./.test(location.hostname);
-  var o = { org: honka ? "honka" : "free", site: honka ? "study.apush.jp" : "training.apush.jp", to: "A-PUSHの講師" };
+  var S0 = window.SITE || {}, honka = !!S0.login;   /* ログインのあるサイト（本コース・団体の本コース版）：生徒IDは決まっている・/start/ へ・rec */
+  var o = { org: S0.org || (honka ? "honka" : "free"), site: S0.domain || location.hostname, to: "A-PUSHの講師" };   /* org：団体の本コース版は団体の名簿（doboku）。2026-11-18 */
   if (honka) {
     try {
       var sid = JSON.parse(localStorage.getItem("ap_sid") || "null"), nm = JSON.parse(localStorage.getItem("ap_name") || "null");
