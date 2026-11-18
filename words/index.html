@@ -419,7 +419,10 @@ try{ if((!JSON.parse(localStorage.getItem("ap_pass"))&&!JSON.parse(localStorage.
   if(!ok(c) && !ok(last) && LIMITED.indexOf(APW_COURSES[0].g)>=0) c=APW_COURSES[0].id;   // 専門ON：専門の最初のコースから（レベルチェックは飛ばす）
   else if(!ok(c) && !ok(last)){   // 初めてなら、レベルチェック（無料版は決まった単語帳）
     var lc=null; try{ lc=JSON.parse(localStorage.getItem("ap_levelcheck")); }catch(e){}
-    if(lc&&ok(lc.id)) c=lc.id;   // 2026-11-12：チェック済みなら、その結果のコース（結果の画面で「始める」を押さずに離れると、毎回チェックに飛ばされて単語帳が出なかった）
+    var p=[]; try{ p=JSON.parse(localStorage.getItem("ap_path"))||[]; }catch(e){}
+    if(lc&&ok(lc.id)) c=lc.id;
+    else if(last||(lc&&lc.id)){ var g0=last||lc.id; c=p.slice(p.indexOf(g0)+1).filter(ok)[0]||APW_COURSES[0].id; }   // 2026-11-18：前の帳が一覧から消えた（11/17 に高校難関 high3 を外した）→ 決めた順番で次の帳。チェックに飛ばし続けて単語帳が出なかった（kimi の Brave）
+    // 2026-11-12：チェック済みなら、その結果のコース（結果の画面で「始める」を押さずに離れると、毎回チェックに飛ばされて単語帳が出なかった）
     else if(SITE.words.check){ location.replace("check.html"); return; }
     else c=SITE.words["default"]||APW_COURSES[0].id; }
   if(!ok(c)) c = last;
