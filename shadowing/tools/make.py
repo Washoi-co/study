@@ -348,10 +348,7 @@ def save(i, lesson, cues):
     vtt(SUBS / f"{i}.en.vtt", cues, "en"); vtt(SUBS / f"{i}.ja.vtt", cues, "ja")
     lesson["lines"] = [{"start": round(c["start"], 2), "end": round(c["end"], 2), "en": c["en"], "ja": c["ja"]} for c in cues]
     tmp = SRC / f"{i}_lesson.json.tmp"; tmp.write_text(json.dumps(lesson, ensure_ascii=False)); tmp.replace(SRC / f"{i}_lesson.json")  # 並列 build が書きかけを読まないように
-    f = DATA / "lessons.json"  # 並列で走らせても、最後に終わったものが全部をまとめる
-    db = json.load(open(f)) if f.exists() else {"links": LINKS, "lessons": []}
-    db["lessons"] = sorted((json.load(open(x)) for x in SRC.glob("L*_lesson.json")), key=lambda l: tuple(map(int, re.findall(r"\d+", l["id"]))))  # L1-2 の後に L1-10
-    f.write_text(json.dumps(db, ensure_ascii=False, indent=1))
+    collect()
     mb = (MEDIA / f"{i}.mp4").stat().st_size / 1e6
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", MEDIA / f"{i}.mp4"], capture_output=True, text=True).stdout)
     print(f"{i} ok  clip={lesson['clip_start']}–{lesson['clip_end']}  区間{len(lesson.get('clip_spans') or [0])}  {dur:.1f}s  {mb:.1f}MB")
@@ -361,7 +358,19 @@ def save(i, lesson, cues):
         print("  ! 45MBを超えた（LESSONS に height=540 か crf=30〜32 を入れて build し直す）")
 
 
+def collect(_=None):
+    """sources/*_lesson.json から data/lessons.json をまとめ直す（サムネイルを足した時も、python3 tools/make.py collect）"""
+    f = DATA / "lessons.json"  # 並列で走らせても、最後に終わったものが全部をまとめる
+    db = json.load(open(f)) if f.exists() else {"links": LINKS, "lessons": []}
+    ls = [json.load(open(x)) for k in "LBT" for x in SRC.glob(f"{k}*_lesson.json")]  # B＝Business・T＝Tech（biz.py・2026-11-18）は General の後
+    for l in ls:  # サムネイル（tools/thumb.py が thumbs/{id}.jpg を作る）
+        if (ROOT / "thumbs" / f"{l['id']}.jpg").exists():
+            l["thumb"] = f"thumbs/{l['id']}.jpg"
+    db["lessons"] = sorted(ls, key=lambda l: ("LBT".index(l["id"][0]), *map(int, re.findall(r"\d+", l["id"]))))  # L1-2 の後に L1-10
+    f.write_text(json.dumps(db, ensure_ascii=False, indent=1))
+
+
 if __name__ == "__main__":
-    cmd, ids = sys.argv[1], sys.argv[2:] or list(LESSONS)
+    cmd, ids = sys.argv[1], sys.argv[2:] or (["all"] if sys.argv[1] == "collect" else list(LESSONS))
     for i in ids:
-        {"fetch": fetch, "plan": plan, "build": build, "trim": trim}[cmd](i)
+        {"fetch": fetch, "plan": plan, "build": build, "trim": trim, "collect": collect}[cmd](i)

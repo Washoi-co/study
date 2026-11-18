@@ -36,6 +36,9 @@ html,body{background:var(--card)}
 .lvt button[aria-selected="true"]{background:var(--ink);color:var(--on)}
 .lvt button[aria-selected="true"] small{color:rgba(255,255,255,.7)}
 .lvnote{margin:12px 2px 0;font-size:12.5px;color:var(--mute)}
+#cats:not([hidden])+.lvt{margin-top:10px}   /* 本コース：General・Business のタブの下にレベルのタブ（2026-11-18） */
+.shl h3{grid-column:1/-1;margin:26px 2px 2px;font-family:var(--en);font-weight:900;font-size:17px;line-height:1.25}   /* Business・Tech：話し手の名前（役職は ui.css の span） */
+.shl h3:first-child{margin-top:0}
 /* 一覧：動画の行（済み＝✓、続きの1本＝赤） */
 .shl{display:grid;gap:6px;margin:28px 0 0}
 .vid{display:grid;grid-template-columns:30px 1fr auto;align-items:center;gap:10px;min-height:64px;padding:10px 16px;background:var(--bg);border-radius:6px;text-decoration:none;color:var(--ink)}
@@ -48,6 +51,18 @@ html,body{background:var(--card)}
 .vid.next{background:var(--accent);color:var(--on);box-shadow:0 10px 30px -12px rgba(255,45,22,.5)}
 .vid.next .n,.vid.next small{color:rgba(255,255,255,.85)}
 .vid.locked{opacity:.55}
+/* 絵（thumb）のある動画：大きな絵＋番号・題・出どころ（2026-11-18）。スマホ1列・タブレット2列・パソコン3列 */
+.shl:has(.th){column-gap:14px;row-gap:22px}
+.shl:has(.th) .vid:not(.th){align-self:start}   /* 絵の無い動画は今までの行のまま */
+@media (min-width:481px){.shl:has(.th){grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1024px){.shl:has(.th){grid-template-columns:repeat(3,minmax(0,1fr))}}
+.vid.th,.vid.th.next{display:block;min-height:0;padding:0;background:none;box-shadow:none;color:var(--ink)}
+.vid.th .ph{position:relative;display:block}
+.vid.th img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:var(--bg)}
+.vid.th.next img{box-shadow:0 0 0 3px var(--accent)}
+.vid.th .ph b{position:absolute;left:10px;top:10px;padding:4px 9px;border-radius:999px;background:var(--accent);color:var(--on);font-family:var(--fd);font-weight:900;font-size:12px}
+.vid.th .cap{display:grid;grid-template-columns:auto 1fr auto;align-items:start;gap:10px;padding:10px 2px 0}
+.vid.th.next .n,.vid.th.next small{color:var(--mute)}
 .foot{margin:48px 2px 0;padding:0;font-size:11px;line-height:1.6}
 /* 練習 */
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:4px 0 0}
@@ -58,10 +73,16 @@ html,body{background:var(--card)}
 .ttl{font-family:var(--en);font-weight:900;font-size:26px;letter-spacing:-.01em;line-height:1.15;margin:14px 2px 0}
 .player{position:relative;margin:18px 0 0;aspect-ratio:16/9;background:var(--ink);border-radius:6px;overflow:hidden}
 .player video{display:block;width:100%;height:100%}
+.player{container-type:inline-size}
+.bigsub{position:absolute;inset:0;display:grid;place-items:center;padding:0 8%;text-align:center;color:#fff;pointer-events:none}   /* 音だけの動画（screen:"black"）：字幕を黒い画面の真ん中に大きく。色は sub_color（data）を style で */
+.bigsub span{font-family:var(--en);font-weight:900;font-size:clamp(20px,6cqw,44px);line-height:1.25}
+.bigsub.long span{font-size:clamp(16px,4.6cqw,34px)}   /* 長い文は字を小さくして2行ほどに（切らない） */
+.player.vert{aspect-ratio:9/16;width:min(100%,60vh*9/16);margin-left:auto;margin-right:auto}   /* 縦の動画（Business のショート） */
 .cover{position:absolute;left:0;right:0;bottom:0;background:var(--ink);pointer-events:none}
 .subt{margin:6px 0 0;min-height:3.4em;padding:12px 14px;background:var(--ink);color:var(--on);border-radius:6px;line-height:1.45}
 .subt .e{font-family:var(--en);font-weight:700;font-size:16px}
 .subt .j{font-size:12.5px;opacity:.75;margin-top:2px}
+.subt .j:empty{display:none}
 .pbar{display:flex;align-items:center;gap:12px;margin:14px 0 0}
 .play{width:56px;height:56px;flex:none;display:grid;place-items:center;background:var(--accent);color:var(--on);border-radius:6px;box-shadow:0 10px 30px -10px rgba(255,45,22,.5)}
 .play svg{width:22px;height:22px}
@@ -126,12 +147,13 @@ html,body{background:var(--card)}
   <!-- 一覧 -->
   <section id="home">
     <h1 class="large">シャドーイング</h1>
+    <div class="lvt" id="cats" role="tablist" aria-label="種類" hidden></div>
     <div class="lvt" id="lvs" role="tablist" aria-label="レベル"></div>
     <p class="lvnote" id="lvnote"></p>
     <nav class="shl" id="sh-list" aria-label="動画"></nav>
     <div class="foot">
       <span id="credits"></span>
-      <span>英検®は公益財団法人 日本英語検定協会の登録商標です。本教材は同協会の承認を受けたものではありません。</span>
+      <span id="eiken">英検®は公益財団法人 日本英語検定協会の登録商標です。本教材は同協会の承認を受けたものではありません。</span>
       <span>進み具合や結果はこの端末の中だけに保存し、どこにも送りません。</span>
     </div>
   </section>
@@ -140,9 +162,10 @@ html,body{background:var(--card)}
   <section id="lesson" hidden>
     <div class="top"><a class="back press" href="#"><svg aria-hidden="true"><use href="#i-back"/></svg>動画</a><span class="stepn" id="snum"></span></div>
     <h1 class="ttl" id="stitle"></h1>
-    <div class="player">
+    <div class="player" id="player">
       <video id="v" playsinline webkit-playsinline preload="metadata" disablepictureinpicture></video>
       <div class="cover" id="cover" hidden></div>
+      <div class="bigsub" id="bs" hidden><span id="bse"></span></div>
     </div>
     <div class="subt" id="sub" hidden><div class="e" id="se"></div><div class="j" id="sj"></div></div>
     <div class="pbar">
@@ -177,7 +200,12 @@ const STEPS = [   /* 2026-10-18：2つだけ。① 3回聞く → ② 質問に�
 const TIMES = 3;
 const $ = s => document.querySelector(s);
 const v = $("#v");
-let DB, L, step = 0, subs = "en", stopAt = null, loopSeg = null, lv = 0;   // lv＝一覧で見ているレベル
+let DB, L, step = 0, subs = "en", stopAt = null, loopSeg = null, lv = 0, cat = "general";   // lv＝一覧で見ているレベル・cat＝General／Business
+/* Business（2026-11-18 kimi）：本コースだけ。students.json の shadowing:"business" の生徒（ログインで ap_shadow）は Business だけ、ほかは General と Business の2つのタブ */
+const BIZ_ONLY = (() => { try { return JSON.parse(localStorage.getItem("ap_shadow")) === "business"; } catch (e) { return false; } })();
+const CATS = {general: "General", business: "Business", tech: "Tech"};   // 上のタブの順番
+const catOf = x => CATS[x.cat] ? x.cat : "general";
+const pool = () => DB.lessons.filter(x => catOf(x) === cat);
 
 const store = {
   get() {
@@ -196,18 +224,19 @@ const prog = id => store.get()[id] || {};
 const setProg = (id, k, val) => store.set(s => { s[id] = Object.assign(s[id] || {}, {[k]: val}); });
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const icon = n => `<svg aria-hidden="true"><use href="#i-${n}"/></svg>`;
-const srcName = x => x.source === "nasa" ? "NASA" : x.source === "apush" ? "A-PUSH講師" : "VOA";
+const srcName = x => ({nasa: "NASA", apush: "A-PUSH講師", startupdad: "Startup Dad", codestory: "Code Story"})[x.source] || "VOA";
 /* 続きの1本：途中の動画 → 最後に終えた動画の次 → まだの最初（今日＆計画の「今日のシャドーイング」と一覧の赤い行） */
 function nextLesson() {
-  const all = DB.lessons, p = x => prog(x.id);
+  const all = pool(), p = x => prog(x.id);
   const lastDone = all.reduce((k, x, i) => p(x).done ? i : k, -1);
   return all.find(x => p(x).step && !p(x).done) || all.slice(lastDone + 1).find(x => !p(x).done) || all.find(x => !p(x).done) || all[0];
 }
 
 if ((window.SITE || {}).free) fetch("data/locked.json").then(r => r.ok ? r.json() : []).then(l => { window.SH_LOCKED = l; if (typeof DB !== "undefined" && DB && !location.hash.slice(1)) home(); }).catch(() => {});
 fetch("data/lessons.json").then(r => r.json()).then(d => {
-  DB = d; DB.lessons = DB.lessons.filter(x => x.active);
-  $("#credits").textContent = [...new Set(DB.lessons.map(x => x.credit))].join(" / ");
+  DB = d; DB.lessons = DB.lessons.filter(x => x.active && !((window.SITE || {}).free && catOf(x) !== "general"));   // 無料版に Business・Tech は出さない
+  if (BIZ_ONLY && DB.lessons.some(x => x.cat === "business")) DB.lessons = DB.lessons.filter(x => x.cat === "business");
+  cat = DB.lessons.some(x => catOf(x) === store.get().cat) ? store.get().cat : catOf(DB.lessons[0] || {});
   if (/[?&]today=1/.test(location.search)) {   /* 今日＆計画の「今日のシャドーイング」から */
     const x = nextLesson();
     history.replaceState(null, "", location.pathname + (x ? "#" + x.id : ""));
@@ -222,23 +251,43 @@ $("#introOk").onclick = () => { $("#intro").hidden = true; store.set(s => s.intr
 function home() {
   v.pause(); $("#lesson").hidden = true; $("#home").hidden = false;
   /* 無料版：本コースの動画も鍵付きで並べる（data/locked.json。押すと「本生徒のみ」のシート） */
-  const LK = window.SH_LOCKED || [], nx = nextLesson();
+  const LK = window.SH_LOCKED || [], nx = nextLesson(), biz = cat !== "general";   // biz＝話し手ごとに並べる（Business・Tech）
+  const cats = Object.keys(CATS).filter(c => DB.lessons.some(x => catOf(x) === c));
+  $("#cats").hidden = cats.length < 2;
+  $("#cats").innerHTML = cats.map(c => `<button class="press" role="tab" data-cat="${c}" aria-selected="${c === cat}"><b>${CATS[c]}</b></button>`).join("");
+  $("#lvs").hidden = $("#lvnote").hidden = $("#eiken").hidden = biz;
+  $("#credits").textContent = [...new Set(pool().map(x => x.credit))].join(" / ");
+  if (biz) {   /* 話し手ごとに並べる */
+    const sp = [];
+    pool().forEach(x => { let g = sp.find(g => g.name === x.speaker); if (!g) sp.push(g = {name: x.speaker, role: x.role, ls: []}); g.ls.push(x); });
+    $("#sh-list").innerHTML = sp.map(g => `<h3>${esc(g.name || "")}${g.role ? `<span>${esc(g.role)}</span>` : ""}</h3>` + g.ls.map((x, i) => row(x, i, nx)).join("")).join("");
+    return;
+  }
   const lvs = [1, 2, 3, 4, 5].filter(k => DB.lessons.some(x => x.level === k) || LK.some(x => x.level === k));
   if (!lvs.includes(lv)) lv = nx && lvs.includes(nx.level) ? nx.level : lvs[0];
   $("#lvs").innerHTML = lvs.map(k => `<button class="press" role="tab" data-lv="${k}" aria-selected="${k === lv}"><b>${k}</b><small>レベル</small></button>`).join("");
   $("#lvnote").textContent = LEVELS[lv] || "";
   const mine = DB.lessons.filter(x => x.level === lv);
-  $("#sh-list").innerHTML = mine.map((x, i) => {
-    const p = prog(x.id), mins = Math.round((x.lines[x.lines.length-1].end - x.lines[0].start) / 60 * 10) / 10;
-    const st = p.done ? icon("check") : (p.step || p.heard ? `${(p.step || 0) + 1} / 2` : "") + icon("chev");
-    return `<a class="vid press${p.done ? " done" : x === nx ? " next" : ""}" data-id="${x.id}" href="#${x.id}"><span class="n">${i + 1}</span><span class="t">${esc(x.title)}<small>${srcName(x)} ・ 約${mins}分</small></span><span class="st">${st}</span></a>`;
-  }).join("") + LK.filter(x => x.level === lv).map((x, i) => `<a class="vid locked" href="#" data-lock="この動画"><span class="n">${mine.length + i + 1}</span><span class="t">${esc(x.title)}<small>${x.source === "nasa" ? "NASA" : "VOA"}${x.mins ? ` ・ 約${x.mins}分` : ""} ・ 本コース</small></span><span class="st">${icon("lock")}</span></a>`).join("");
+  $("#sh-list").innerHTML = mine.map((x, i) => row(x, i, nx)).join("") + LK.filter(x => x.level === lv).map((x, i) => card(x, mine.length + i + 1, " locked", `href="#" data-lock="この動画"`, `${srcName(x)}${x.mins ? ` ・ 約${x.mins}分` : ""} ・ 本コース`, icon("lock"))).join("");
+}
+function row(x, i, nx) {
+  const p = prog(x.id), mins = Math.round((x.lines[x.lines.length-1].end - x.lines[0].start) / 60 * 10) / 10;
+  const st = p.done ? icon("check") : (p.step || p.heard ? `${(p.step || 0) + 1} / 2` : "") + icon("chev");
+  return card(x, i + 1, " press" + (p.done ? " done" : x === nx ? " next" : ""), `data-id="${x.id}" href="#${x.id}"`, `${srcName(x)} ・ 約${mins}分`, st);
+}
+/* 1枚のカード：絵（x.thumb）があれば大きな絵の下に番号・題、無ければ今までの行 */
+function card(x, n, cls, attr, sub, st) {
+  const cap = `<span class="n">${n}</span><span class="t">${esc(x.title)}<small>${sub}</small></span><span class="st">${st}</span>`;
+  return x.thumb
+    ? `<a class="vid th${cls}" ${attr}><span class="ph"><img src="${esc(x.thumb)}" alt="" width="1280" height="720" loading="lazy" decoding="async">${/ next/.test(cls) ? "<b>つづき</b>" : ""}</span><span class="cap">${cap}</span></a>`
+    : `<a class="vid${cls}" ${attr}>${cap}</a>`;
 }
 $("#lvs").onclick = e => { const b = e.target.closest("[data-lv]"); if (b) { lv = +b.dataset.lv; home(); } };
+$("#cats").onclick = e => { const b = e.target.closest("[data-cat]"); if (b) { cat = b.dataset.cat; store.set(s => s.cat = cat); home(); } };
 
 function open(x) {
-  L = x; lv = x.level; loopSeg = null; $("#home").hidden = true; $("#lesson").hidden = false;
-  v.src = L.video; $("#credit").textContent = L.credit;
+  L = x; lv = x.level; cat = catOf(x); store.set(s => s.cat = cat); loopSeg = null; $("#home").hidden = true; $("#lesson").hidden = false;
+  v.src = L.video; $("#credit").textContent = L.credit; $("#player").classList.toggle("vert", !!L.vertical);
   const rep = $("#rep"), mn = L.repeat === "minute";   // レベル5：1分ずつの区間をくり返す／ほか：今の文をもう一回
   rep.hidden = !mn; $("#again").hidden = mn;
   if (mn) {
@@ -282,7 +331,7 @@ function quiz() {
     setProg(L.id, "done", 1);
     const td = new Date().toDateString();  // 同じ動画でも、日が変われば「今日の1本」に数える（画面を描き直しても1日1回）
     if (prog(L.id).doneOn !== td) { apMark("shadow", 1, L.id); setProg(L.id, "doneOn", td); }
-    const all = DB.lessons, k = all.indexOf(L), nxt = all[k + 1];
+    const all = pool(), k = all.indexOf(L), nxt = all[k + 1];
     h += `<div class="fin"><h2>おつかれさまでした</h2><p>クイズ <b>${ok}</b> / ${L.quiz.length} 問正解</p>
       ${nxt ? `<a class="fwd press" href="#${nxt.id}"><span>次の動画へ：${esc(nxt.title)}</span>${icon("chev")}</a>` : ""}</div>`;
   }
@@ -299,7 +348,9 @@ function setSubs(m) {
   document.querySelectorAll("[data-subs]").forEach(b => b.setAttribute("aria-pressed", b.dataset.subs === m));
   const off = m === "off";
   $("#cover").hidden = !(off && L.cover_height > 0); $("#cover").style.height = (L.cover_height * 100) + "%";
-  $("#sub").hidden = off;
+  const blk = L.screen === "black";
+  const burned = L.cat === "business";   /* Business（Startup Dad）は元の動画に字幕が焼き込まれているので、アプリの字幕は出さない（kimi 2026-11-18） */
+  $("#sub").hidden = off || blk || burned; $("#bs").hidden = off || !blk; $("#bs").style.color = blk && L.sub_color || "";
   if (L.audio_only) { // 文字だけの動画：字幕なしの段は音声＋静止画に替える
     const want = off ? L.audio_only : L.video;
     if (!v.src.endsWith(want)) { const t = v.currentTime, play = !v.paused, r = v.playbackRate; v.src = want; v.addEventListener("loadedmetadata", () => { v.currentTime = t; v.playbackRate = r; if (play) v.play(); }, {once: true}); }
@@ -326,7 +377,7 @@ function tick() {
   if (stopAt != null && t >= stopAt) { v.pause(); stopAt = null; }
   if (loopSeg != null && (t >= (loopSeg + 1) * 60 || t >= v.duration - 0.2)) v.currentTime = loopSeg * 60;
   const l = L.lines.find(x => x.start <= t && t <= x.end + 0.3);
-  $("#se").textContent = l ? l.en : ""; $("#sj").textContent = l && subs === "both" ? l.ja : "";
+  $("#se").textContent = $("#bse").textContent = l ? l.en : ""; $("#bs").classList.toggle("long", !!l && l.en.length > 45); $("#sj").textContent = l && subs === "both" ? l.ja : "";
 }
 v.addEventListener("timeupdate", tick);
 const fmt = t => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;

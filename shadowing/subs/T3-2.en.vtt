@@ -1,0 +1,237 @@
+WEBVTT
+
+1
+00:00:00.300 --> 00:00:03.140
+Okay, Drew, as you step out on the balcony
+
+2
+00:00:03.140 --> 00:00:04.360
+and you look across all
+
+3
+00:00:04.360 --> 00:00:06.410
+that you've built thus far at Brief,
+
+4
+00:00:06.600 --> 00:00:08.070
+what are you most proud of?
+
+5
+00:00:09.280 --> 00:00:11.460
+Every new feature has a moment
+
+6
+00:00:11.460 --> 00:00:12.720
+where we dark launch
+
+7
+00:00:12.720 --> 00:00:15.970
+it and we are the only users of it.
+
+8
+00:00:16.360 --> 00:00:18.860
+And like, it's funny building an agent
+
+9
+00:00:18.860 --> 00:00:19.580
+that gives advice
+
+10
+00:00:19.580 --> 00:00:22.750
+because how do you build evals against advice?
+
+11
+00:00:22.980 --> 00:00:25.000
+That's not, we're not scanning medical records.
+
+12
+00:00:25.000 --> 00:00:28.230
+There's no numerical correctness that we're working towards.
+
+13
+00:00:28.680 --> 00:00:29.480
+Was this good advice
+
+14
+00:00:29.480 --> 00:00:31.060
+or my bar for me is like,
+
+15
+00:00:31.060 --> 00:00:32.030
+does it sound like me?
+
+16
+00:00:32.460 --> 00:00:33.300
+Does it sound like a decision
+
+17
+00:00:33.300 --> 00:00:34.970
+I would have made in that moment?
+
+18
+00:00:35.000 --> 00:00:36.400
+Does it express that opinion
+
+19
+00:00:36.400 --> 00:00:38.830
+the way I would express that opinion?
+
+20
+00:00:39.020 --> 00:00:41.700
+And I think as each part of the product
+
+21
+00:00:41.700 --> 00:00:43.950
+hits that inflection point of,
+
+22
+00:00:43.960 --> 00:00:45.170
+hey, this is actually really good advice.
+
+23
+00:00:45.220 --> 00:00:45.860
+I'm like, actually,
+
+24
+00:00:45.860 --> 00:00:47.180
+this is something I wouldn't have even known
+
+25
+00:00:47.180 --> 00:00:49.030
+because I don't go scan all of our competitors'
+
+26
+00:00:49.120 --> 00:00:50.850
+websites every day the way Brief does.
+
+27
+00:00:51.300 --> 00:00:53.220
+That's the stuff I get really excited about.
+
+28
+00:00:53.220 --> 00:00:54.540
+So we send out a weekly email.
+
+29
+00:00:54.540 --> 00:00:56.740
+That's probably the crown jewel of the product
+
+30
+00:00:56.740 --> 00:00:58.380
+of here's what we learned last week
+
+31
+00:00:58.380 --> 00:00:59.640
+and based on what we learned last week,
+
+32
+00:00:59.640 --> 00:01:00.440
+here's what we think we should
+
+33
+00:01:00.440 --> 00:01:01.730
+be focused on next week.
+
+34
+00:01:02.240 --> 00:01:04.090
+And it's, at this point, it's really good.
+
+35
+00:01:04.100 --> 00:01:05.700
+It actually really sounds like me.
+
+36
+00:01:05.700 --> 00:01:06.890
+It sounds like good advice.
+
+37
+00:01:07.040 --> 00:01:09.810
+I learned stuff whenever that email comes out.
+
+38
+00:01:10.040 --> 00:01:11.300
+So those, the fact
+
+39
+00:01:11.300 --> 00:01:12.930
+that it took a lot of work,
+
+40
+00:01:13.140 --> 00:01:15.090
+it took all the underlying infrastructure,
+
+41
+00:01:15.140 --> 00:01:17.520
+all the agents, all the APIs and everything
+
+42
+00:01:17.520 --> 00:01:19.280
+to get to a point where it could have
+
+43
+00:01:19.280 --> 00:01:22.000
+that sort of 360 view of the organization.
+
+44
+00:01:22.000 --> 00:01:26.990
+But I'm really happy about how that came out.
+
+45
+00:01:27.380 --> 00:01:29.230
+Okay, Drew, let's flip the script a little bit.
+
+46
+00:01:29.240 --> 00:01:30.640
+Tell me about a mistake you made
+
+47
+00:01:30.640 --> 00:01:33.150
+and how you and your team responded to it.
+
+48
+00:01:34.140 --> 00:01:35.500
+The end of the day, Brief, of course,
+
+49
+00:01:35.500 --> 00:01:37.670
+was a pivot from a previous idea.
+
+50
+00:01:37.960 --> 00:01:40.120
+So I think understanding
+
+51
+00:01:40.120 --> 00:01:42.430
+the signals of what you're learning,
+
+52
+00:01:42.560 --> 00:01:45.940
+that the previous idea hit kind of a moment
+
+53
+00:01:45.940 --> 00:01:47.560
+where we were ready
+
+54
+00:01:47.560 --> 00:01:49.240
+to go asking people for money
+
+55
+00:01:49.240 --> 00:01:51.120
+and the money just wasn't there.
+
+56
+00:01:51.120 --> 00:01:52.850
+People were, come back next quarter.
+
+57
+00:01:52.860 --> 00:01:54.490
+It was basically the best response we got,
+
+58
+00:01:54.840 --> 00:01:56.040
+which for an early stage startup
+
+59
+00:01:56.040 --> 00:01:57.430
+means you don't have it.

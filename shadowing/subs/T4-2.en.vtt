@@ -1,0 +1,349 @@
+WEBVTT
+
+1
+00:00:00.300 --> 00:00:02.100
+I think early on we were our own customer
+
+2
+00:00:02.100 --> 00:00:03.890
+and so we had a lot of pain points.
+
+3
+00:00:04.020 --> 00:00:05.380
+I think the next thing we did
+
+4
+00:00:05.380 --> 00:00:08.040
+was we realized that we now had
+
+5
+00:00:08.040 --> 00:00:10.220
+reliable upload of a lot of telemetry
+
+6
+00:00:10.220 --> 00:00:10.960
+that you can collect.
+
+7
+00:00:10.960 --> 00:00:12.060
+A lot of that data
+
+8
+00:00:12.060 --> 00:00:13.380
+was never being looked at, right?
+
+9
+00:00:13.380 --> 00:00:15.560
+That's actually true of most observability systems,
+
+10
+00:00:15.560 --> 00:00:17.440
+like 90% of the data is never looked at.
+
+11
+00:00:17.440 --> 00:00:18.490
+It's only the bad conditions.
+
+12
+00:00:20.060 --> 00:00:22.600
+And so why were we wasting all this bandwidth
+
+13
+00:00:22.600 --> 00:00:24.180
+and storage and ingest
+
+14
+00:00:24.180 --> 00:00:26.150
+for data we weren't looking at?
+
+15
+00:00:26.160 --> 00:00:27.440
+And so the next thing we did
+
+16
+00:00:27.440 --> 00:00:28.440
+was add a little bit
+
+17
+00:00:28.440 --> 00:00:29.700
+of processing at the edge.
+
+18
+00:00:29.700 --> 00:00:31.410
+So instead of saying,
+
+19
+00:00:31.440 --> 00:00:32.830
+hey, I'm going to upload all these logs,
+
+20
+00:00:32.940 --> 00:00:34.100
+maybe I just summarize
+
+21
+00:00:34.100 --> 00:00:35.760
+or metricize them at the edge.
+
+22
+00:00:35.760 --> 00:00:37.870
+And so instead of megabytes of logs,
+
+23
+00:00:37.880 --> 00:00:39.770
+I could send very small counters.
+
+24
+00:00:40.300 --> 00:00:41.180
+Saved a huge amount of bandwidth
+
+25
+00:00:41.180 --> 00:00:43.120
+and really allowed us
+
+26
+00:00:43.120 --> 00:00:44.540
+to create metrics on the fly
+
+27
+00:00:44.540 --> 00:00:46.510
+based on what was happening on the device.
+
+28
+00:00:46.660 --> 00:00:47.140
+And so that was
+
+29
+00:00:47.140 --> 00:00:48.690
+a really powerful feature we added.
+
+30
+00:00:49.360 --> 00:00:50.380
+And then the next thing we did
+
+31
+00:00:50.380 --> 00:00:52.530
+was making this all runtime configurable.
+
+32
+00:00:52.900 --> 00:00:56.560
+Now, most observability systems make decisions at compile time.
+
+33
+00:00:56.560 --> 00:00:58.770
+You add a logline, you add a metric,
+
+34
+00:00:58.900 --> 00:01:00.060
+and that is done
+
+35
+00:01:00.060 --> 00:01:01.370
+when you compile and then you release.
+
+36
+00:01:01.720 --> 00:01:03.540
+You're doing 500 or 600 releases a day
+
+37
+00:01:03.540 --> 00:01:04.880
+on the server side,
+
+38
+00:01:04.880 --> 00:01:05.810
+which is what we were.
+
+39
+00:01:06.200 --> 00:01:07.050
+That's not a problem.
+
+40
+00:01:07.320 --> 00:01:09.370
+That's like a few minutes or 10 minutes,
+
+41
+00:01:09.400 --> 00:01:10.870
+like 20 minutes of delay.
+
+42
+00:01:11.300 --> 00:01:13.460
+On mobile, an average release cycle
+
+43
+00:01:13.460 --> 00:01:16.290
+was anywhere between 10 and 15 days.
+
+44
+00:01:16.420 --> 00:01:17.670
+You have your weekly trains,
+
+45
+00:01:17.820 --> 00:01:19.570
+you have your alphas and betas the next week.
+
+46
+00:01:19.820 --> 00:01:21.010
+Then you have to go to the App Store,
+
+47
+00:01:21.020 --> 00:01:22.170
+you have to get it approved,
+
+48
+00:01:22.240 --> 00:01:23.300
+and then it has to propagate
+
+49
+00:01:23.300 --> 00:01:24.850
+to everyone's customer devices.
+
+50
+00:01:25.220 --> 00:01:25.980
+So by the time
+
+51
+00:01:25.980 --> 00:01:27.120
+you hear about a customer problem
+
+52
+00:01:27.120 --> 00:01:28.270
+and add a logline,
+
+53
+00:01:28.600 --> 00:01:29.160
+all of a sudden
+
+54
+00:01:29.160 --> 00:01:31.190
+you had a really long delay.
+
+55
+00:01:31.480 --> 00:01:32.830
+And God forbid you didn't get it right,
+
+56
+00:01:32.940 --> 00:01:33.890
+you'd have to do that again.
+
+57
+00:01:34.460 --> 00:01:35.180
+And then after all that,
+
+58
+00:01:35.180 --> 00:01:36.420
+you'd have to turn it off at the end
+
+59
+00:01:36.420 --> 00:01:37.410
+because it was so expensive.
+
+60
+00:01:37.960 --> 00:01:39.730
+So the other thing we did,
+
+61
+00:01:39.800 --> 00:01:40.540
+and this is I think
+
+62
+00:01:40.540 --> 00:01:41.400
+one of the really things
+
+63
+00:01:41.400 --> 00:01:42.760
+that unlocked a lot of the rest
+
+64
+00:01:42.760 --> 00:01:43.930
+of what we do with Bitdrift,
+
+65
+00:01:44.640 --> 00:01:46.800
+is now we at runtime can say,
+
+66
+00:01:46.800 --> 00:01:47.740
+do I want this log or not?
+
+67
+00:01:47.740 --> 00:01:50.590
+For these conditions, for these set of people,
+
+68
+00:01:51.120 --> 00:01:51.920
+I can at runtime
+
+69
+00:01:51.920 --> 00:01:53.500
+choose what I want to do.
+
+70
+00:01:53.500 --> 00:01:55.450
+And so observability has now become runtime for mobile,
+
+71
+00:01:55.480 --> 00:01:56.410
+which makes it really nice.
+
+72
+00:01:56.460 --> 00:01:57.570
+You can say, I heard this problem,
+
+73
+00:01:57.640 --> 00:01:58.650
+get more information,
+
+74
+00:01:59.180 --> 00:02:00.590
+I don't need any more, turn it off.
+
+75
+00:02:00.780 --> 00:02:01.440
+And that's something
+
+76
+00:02:01.440 --> 00:02:02.920
+that used to take you weeks or months,
+
+77
+00:02:02.920 --> 00:02:03.540
+and now you can do it
+
+78
+00:02:03.540 --> 00:02:04.150
+in a few minutes.
+
+79
+00:02:04.940 --> 00:02:07.250
+So you combined like the local storage,
+
+80
+00:02:07.420 --> 00:02:08.650
+the ability to edge process,
+
+81
+00:02:08.780 --> 00:02:09.780
+and the ability to just be able
+
+82
+00:02:09.780 --> 00:02:10.320
+to turn it on
+
+83
+00:02:10.320 --> 00:02:11.930
+and control it from runtime.
+
+84
+00:02:12.020 --> 00:02:13.520
+We built that last part.
+
+85
+00:02:13.520 --> 00:02:15.870
+That really is the core of the platform.
+
+86
+00:02:15.900 --> 00:02:17.040
+And we've layered all the sort of
+
+87
+00:02:17.040 --> 00:02:19.190
+traditional observability use cases on top.

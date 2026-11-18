@@ -1,0 +1,301 @@
+WEBVTT
+
+1
+00:00:00.300 --> 00:00:02.220
+And the first thing my co-founder Aaron and I
+
+2
+00:00:02.220 --> 00:00:03.580
+realized was that there was just gonna be
+
+3
+00:00:03.580 --> 00:00:04.820
+a big gap in between
+
+4
+00:00:04.820 --> 00:00:06.440
+what people wanted to do with LLMs
+
+5
+00:00:06.440 --> 00:00:07.800
+and what they were gonna be capable of
+
+6
+00:00:07.800 --> 00:00:09.610
+from a regulatory compliance perspective.
+
+7
+00:00:09.700 --> 00:00:11.530
+So we wanted to solve for that gap.
+
+8
+00:00:11.920 --> 00:00:14.870
+And we wanted to truly enable any enterprise
+
+9
+00:00:15.280 --> 00:00:18.070
+that sits in a regulated or regulated adjacent space,
+
+10
+00:00:18.120 --> 00:00:20.070
+think banks, financial services, insurance,
+
+11
+00:00:20.140 --> 00:00:21.190
+life sciences, healthcare,
+
+12
+00:00:21.620 --> 00:00:23.500
+and government, and defense tech even,
+
+13
+00:00:23.500 --> 00:00:24.940
+to be able to leverage LLMs
+
+14
+00:00:24.940 --> 00:00:27.160
+without fear of data privacy,
+
+15
+00:00:27.160 --> 00:00:28.480
+giving them complete control
+
+16
+00:00:28.480 --> 00:00:30.290
+with governance and administration features,
+
+17
+00:00:30.340 --> 00:00:32.970
+and crucially also providing observability into interactions.
+
+18
+00:00:33.840 --> 00:00:36.150
+So we built an application security platform
+
+19
+00:00:36.460 --> 00:00:37.400
+and we were able to book
+
+20
+00:00:37.400 --> 00:00:38.650
+a few large enterprises,
+
+21
+00:00:38.780 --> 00:00:40.220
+but that actually ended up being
+
+22
+00:00:40.220 --> 00:00:42.110
+not our final destination.
+
+23
+00:00:42.300 --> 00:00:43.950
+It was another blip on the radar.
+
+24
+00:00:44.100 --> 00:00:45.510
+For this being my fifth startup,
+
+25
+00:00:45.520 --> 00:00:48.520
+I always like to say that I would think
+
+26
+00:00:48.520 --> 00:00:49.180
+at this juncture
+
+27
+00:00:49.180 --> 00:00:50.770
+I would have learned a thing or two.
+
+28
+00:00:51.260 --> 00:00:52.430
+It turns out I haven't.
+
+29
+00:00:52.640 --> 00:00:55.100
+And I think we've hit every startup trope branch
+
+30
+00:00:55.100 --> 00:00:57.170
+as we've fallen through that tree.
+
+31
+00:00:58.040 --> 00:00:59.760
+And oh, we overhired at one point.
+
+32
+00:00:59.760 --> 00:01:00.700
+We overspent here.
+
+33
+00:01:00.700 --> 00:01:02.090
+We didn't do this thing here.
+
+34
+00:01:02.380 --> 00:01:03.830
+We had to pivot our products.
+
+35
+00:01:03.880 --> 00:01:04.740
+All of those things
+
+36
+00:01:04.740 --> 00:01:06.840
+that you hear so many stories about,
+
+37
+00:01:06.840 --> 00:01:08.810
+I think we've hit literally everyone.
+
+38
+00:01:09.740 --> 00:01:13.310
+And so I'd say come '24, about December,
+
+39
+00:01:13.400 --> 00:01:14.760
+we had to sit down with our team
+
+40
+00:01:14.760 --> 00:01:15.500
+and we said, listen,
+
+41
+00:01:15.500 --> 00:01:17.510
+if we stick the application security route,
+
+42
+00:01:17.520 --> 00:01:18.150
+we're gonna fail.
+
+43
+00:01:18.460 --> 00:01:20.410
+This isn't the right spot for us to land.
+
+44
+00:01:20.460 --> 00:01:22.380
+We're just not able to successfully scale
+
+45
+00:01:22.380 --> 00:01:23.330
+our customer base.
+
+46
+00:01:23.760 --> 00:01:25.300
+And what we ended up doing is
+
+47
+00:01:25.300 --> 00:01:26.640
+we took our security platform
+
+48
+00:01:26.640 --> 00:01:30.000
+and we combined it with a multi-model offering
+
+49
+00:01:30.000 --> 00:01:33.320
+where end users could engage with a chat interface
+
+50
+00:01:33.320 --> 00:01:35.440
+like they do through these
+
+51
+00:01:35.440 --> 00:01:38.640
+single model provider tools, Claude or Chat GPT
+
+52
+00:01:38.640 --> 00:01:41.360
+or Perplexity, but combining that
+
+53
+00:01:41.360 --> 00:01:43.810
+with really deep security tooling.
+
+54
+00:01:43.960 --> 00:01:47.160
+So the ability to have complete and total observability,
+
+55
+00:01:47.160 --> 00:01:48.820
+control over how data is treated
+
+56
+00:01:48.820 --> 00:01:49.960
+in exchange with these models,
+
+57
+00:01:49.960 --> 00:01:51.680
+whether that's data you upload intentionally
+
+58
+00:01:51.680 --> 00:01:53.650
+or data you're just putting inside of a prompt
+
+59
+00:01:54.020 --> 00:01:56.260
+and securely be able to provide
+
+60
+00:01:56.260 --> 00:01:58.580
+these regulated companies with the means
+
+61
+00:01:58.580 --> 00:02:02.080
+to deploy any model that they possibly could
+
+62
+00:02:02.080 --> 00:02:04.640
+without fear, again, of data privacy
+
+63
+00:02:04.640 --> 00:02:06.460
+with giving them complete control
+
+64
+00:02:06.460 --> 00:02:08.170
+over governance and administration,
+
+65
+00:02:08.300 --> 00:02:10.430
+of course, giving them that observability.
+
+66
+00:02:10.680 --> 00:02:11.840
+But also doing that
+
+67
+00:02:11.840 --> 00:02:13.520
+with a really delightful end user experience
+
+68
+00:02:13.520 --> 00:02:14.460
+so that the end users
+
+69
+00:02:14.460 --> 00:02:15.820
+that are leveraging this tool
+
+70
+00:02:15.820 --> 00:02:17.300
+feel like they're leveraging
+
+71
+00:02:17.300 --> 00:02:19.380
+any one of the modern AI tools
+
+72
+00:02:19.380 --> 00:02:20.680
+that is out there,
+
+73
+00:02:20.680 --> 00:02:22.960
+only it's contained within the corporate environment
+
+74
+00:02:22.960 --> 00:02:24.660
+so that their data is secure
+
+75
+00:02:24.660 --> 00:02:27.150
+and the exchanges of these models are secure.

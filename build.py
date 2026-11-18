@@ -10,6 +10,7 @@
                      録音はどこにも送らない（2026-11-05 kimi。前は "url" に旧 Reviewing system の送り先があった。あっても読まない）
   students.json      生徒ごとのログイン [{"id": "STU005", "name": "T.Y", "pass": "パスワード", "track": "biz"}, ...]
                      track：その生徒の専門（下の TRACKS のキー）。ONにすると話すも単語もその専門になる。無い生徒は普通の教材だけ
+                     shadowing："business" ならシャドーイングは Business の動画だけ（無ければ General と Business の2つのタブ）
                      only：true なら全部その専門の仕様（話すは専門の章だけ・単語は General・Native＋専門だけ）。無ければ専門が1つ増えるだけ
   business.json / civil.json  専門の章 [{ch,title,ja,items:[[T,S,T訳,S訳,絵文字],...]}]。その専門の生徒だけが開ける
 生徒を足した・パスワードを変えた時は、もう一度これを実行して data.enc を push する。
@@ -141,6 +142,8 @@ def main():
                 me["track"].update({"only": True, "groups": ["General", "Native", TRACKS[tid]["words"]]})
             if tid in tkeys:
                 me["kb"] = b64(tkeys[tid])
+        if st.get("shadowing") == "business":   # シャドーイングは Business だけ（2026-11-18 kimi）
+            me["shadow"] = "business"
         inner = json.dumps(me, ensure_ascii=False).encode()
         keys[sid] = {"s": b64(salt), "i": b64(siv), "c": b64(AESGCM(kek).encrypt(siv, inner, None))}
     # 体験コード（2026-11-09 の名刺）：kanri の trial が 11/30 まで受け付け、入れた日から2週間だけ、この箱の pass を返す（functions/index.js と同じ式）。

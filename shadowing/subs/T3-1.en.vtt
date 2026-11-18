@@ -1,0 +1,385 @@
+WEBVTT
+
+1
+00:00:00.300 --> 00:00:03.540
+Brief is basically your AI product brain,
+
+2
+00:00:03.540 --> 00:00:05.040
+so it's really an extension
+
+3
+00:00:05.040 --> 00:00:07.300
+of your product team's understanding
+
+4
+00:00:07.300 --> 00:00:08.850
+and capability, their knowledge,
+
+5
+00:00:09.200 --> 00:00:10.480
+as well as an operator
+
+6
+00:00:10.480 --> 00:00:13.150
+that helps you extend the capabilities of that team.
+
+7
+00:00:13.160 --> 00:00:14.240
+This is all based
+
+8
+00:00:14.240 --> 00:00:15.830
+in my own background, of course,
+
+9
+00:00:15.840 --> 00:00:16.910
+in product management.
+
+10
+00:00:17.700 --> 00:00:19.850
+What I found, especially in the past six years,
+
+11
+00:00:19.900 --> 00:00:21.590
+in between starting my own startups,
+
+12
+00:00:21.700 --> 00:00:24.120
+I was a fractional chief product officer
+
+13
+00:00:24.120 --> 00:00:26.890
+and always at any company,
+
+14
+00:00:27.380 --> 00:00:30.450
+the process of building software changes all the time.
+
+15
+00:00:30.500 --> 00:00:32.030
+It changes between projects,
+
+16
+00:00:32.060 --> 00:00:35.030
+it changes between teams, especially more so between companies.
+
+17
+00:00:36.040 --> 00:00:38.360
+But what I found was the why
+
+18
+00:00:38.360 --> 00:00:42.270
+of why you build products is actually extremely similar.
+
+19
+00:00:42.320 --> 00:00:44.510
+It's the same process at every company.
+
+20
+00:00:44.900 --> 00:00:46.720
+You start with where you see the company
+
+21
+00:00:46.720 --> 00:00:48.760
+going over the next three to six months,
+
+22
+00:00:48.760 --> 00:00:49.840
+then to the roadmap
+
+23
+00:00:49.840 --> 00:00:51.620
+of what helped you get there,
+
+24
+00:00:51.620 --> 00:00:54.050
+then down to the individual features and capabilities,
+
+25
+00:00:54.400 --> 00:00:55.700
+then down to the build,
+
+26
+00:00:55.700 --> 00:00:57.100
+and then each of these, of course,
+
+27
+00:00:57.100 --> 00:00:58.300
+are iterative back and forth
+
+28
+00:00:58.300 --> 00:01:00.120
+that you learn as you go along the way.
+
+29
+00:01:00.120 --> 00:01:04.370
+But that structure actually was repeatable,
+
+30
+00:01:04.460 --> 00:01:06.360
+and that's what my consultancy basically did.
+
+31
+00:01:06.360 --> 00:01:09.590
+I helped companies operationalize that process,
+
+32
+00:01:09.620 --> 00:01:11.010
+and in doing so,
+
+33
+00:01:11.180 --> 00:01:13.180
+basically found that we would more than double
+
+34
+00:01:13.180 --> 00:01:17.000
+their engineering velocity just through helping everybody through
+
+35
+00:01:17.000 --> 00:01:18.700
+that entire process understand everything
+
+36
+00:01:18.700 --> 00:01:20.220
+that comes into building software.
+
+37
+00:01:20.220 --> 00:01:23.520
+And that's basically the inspiration behind Brief.
+
+38
+00:01:23.520 --> 00:01:25.040
+That's what Brief does for companies.
+
+39
+00:01:25.040 --> 00:01:26.120
+It helps them operate
+
+40
+00:01:26.120 --> 00:01:28.640
+that why along with the how
+
+41
+00:01:28.640 --> 00:01:30.170
+of actually building software.
+
+42
+00:01:31.180 --> 00:01:34.180
+So tell me about the MVP for Brief,
+
+43
+00:01:34.180 --> 00:01:36.520
+the first version you built, you created.
+
+44
+00:01:36.520 --> 00:01:37.580
+How long did it take to build,
+
+45
+00:01:37.580 --> 00:01:38.200
+and what sort of tools
+
+46
+00:01:38.200 --> 00:01:39.790
+were you using to bring it to life?
+
+47
+00:01:42.000 --> 00:01:44.790
+So Brief, we started actually at a different company.
+
+48
+00:01:44.820 --> 00:01:46.460
+The company previously was called Moxie,
+
+49
+00:01:46.460 --> 00:01:48.390
+and it was around AI-powered sales demos.
+
+50
+00:01:49.280 --> 00:01:51.040
+And prior to starting Moxie,
+
+51
+00:01:51.040 --> 00:01:51.980
+I hadn't really coded
+
+52
+00:01:51.980 --> 00:01:53.620
+in anger in about 15 years,
+
+53
+00:01:53.620 --> 00:01:56.500
+where I had been managing engineering teams,
+
+54
+00:01:56.500 --> 00:01:58.890
+but not actually a coding engineer working on anything.
+
+55
+00:01:59.240 --> 00:02:00.700
+When I was working on Moxie,
+
+56
+00:02:00.700 --> 00:02:02.650
+I picked up Cursor for the first time.
+
+57
+00:02:03.060 --> 00:02:03.820
+And for the first time,
+
+58
+00:02:03.820 --> 00:02:05.220
+I was able to describe the software
+
+59
+00:02:05.220 --> 00:02:05.740
+that I wanted
+
+60
+00:02:05.740 --> 00:02:08.010
+and have it come out in a reasonable shape.
+
+61
+00:02:08.840 --> 00:02:09.640
+And when I went around
+
+62
+00:02:09.640 --> 00:02:10.440
+and showed a bunch of people
+
+63
+00:02:10.440 --> 00:02:11.470
+what I was working on,
+
+64
+00:02:11.700 --> 00:02:13.480
+they all basically said I was weird
+
+65
+00:02:13.480 --> 00:02:16.770
+the way my operating process was for using Cursor.
+
+66
+00:02:17.500 --> 00:02:19.260
+And it's because I was using
+
+67
+00:02:19.260 --> 00:02:20.320
+my product management tools.
+
+68
+00:02:20.320 --> 00:02:21.700
+I've been explaining to engineers
+
+69
+00:02:21.700 --> 00:02:24.050
+why we need to build stuff for 20 years.
+
+70
+00:02:24.540 --> 00:02:25.600
+And I was doing the same thing
+
+71
+00:02:25.600 --> 00:02:26.420
+at the coding agent.
+
+72
+00:02:26.420 --> 00:02:28.410
+I wasn't like, move this button, center that div.
+
+73
+00:02:28.500 --> 00:02:29.660
+I was like, here's the user.
+
+74
+00:02:29.660 --> 00:02:30.890
+Here's what the user wants.
+
+75
+00:02:30.900 --> 00:02:32.590
+Here's why we're doing this thing.
+
+76
+00:02:32.960 --> 00:02:34.500
+And so Brief kind of grew
+
+77
+00:02:34.500 --> 00:02:36.520
+out of that process that I had developed
+
+78
+00:02:36.520 --> 00:02:38.900
+through initially copying and pasting
+
+79
+00:02:38.900 --> 00:02:40.150
+prompts out of a document,
+
+80
+00:02:40.160 --> 00:02:41.480
+then into markdown documents,
+
+81
+00:02:41.480 --> 00:02:43.370
+then connecting a bunch of MCPs,
+
+82
+00:02:43.500 --> 00:02:45.320
+actually building kind of a second brain
+
+83
+00:02:45.320 --> 00:02:46.840
+that could actually coordinate
+
+84
+00:02:46.840 --> 00:02:49.530
+with the agent itself at that velocity.
+
+85
+00:02:50.120 --> 00:02:52.170
+And then just got smarter and smarter,
+
+86
+00:02:52.200 --> 00:02:53.270
+add more intelligence,
+
+87
+00:02:53.280 --> 00:02:54.360
+add more things to it
+
+88
+00:02:54.360 --> 00:02:55.720
+so they could make better decisions
+
+89
+00:02:55.720 --> 00:02:57.760
+and continue to extend my speed
+
+90
+00:02:57.760 --> 00:02:59.390
+and understanding to the coding agent.
+
+91
+00:02:59.840 --> 00:03:02.210
+And so funny enough, the MVP was very dumb.
+
+92
+00:03:02.960 --> 00:03:04.660
+We built it in about three days,
+
+93
+00:03:04.660 --> 00:03:07.000
+and it was a log of all the decisions
+
+94
+00:03:07.000 --> 00:03:09.390
+that we had made around the product,
+
+95
+00:03:09.400 --> 00:03:10.160
+who our users were,
+
+96
+00:03:10.160 --> 00:03:11.330
+what they were doing, et cetera.

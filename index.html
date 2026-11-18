@@ -261,6 +261,7 @@ async function unlock(sid,pass,as){   /* as：体験コードの時だけ {sid, 
     if(TRACK.only)data.levels=data.levels.filter(l=>l.id==="z");   /* 全部専門仕様の生徒（students.json の only）：Beginner・Intermediate は出さない（2026-11-15 kimi） */
   }
   store.set("track",TRACK);   /* 単語のページが読む（専門のコースの出し方） */
+  store.set("shadow",me.shadow||null);   /* シャドーイングが読む（"business"＝Business だけ。2026-11-18） */
   store.set("pk",me.pk||null);   /* 単語帳・模擬テストの plus（本生徒だけの問題）を開ける鍵（2026-11-04 監査 M1） */
   return data;
 }

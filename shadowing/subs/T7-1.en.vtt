@@ -1,0 +1,329 @@
+WEBVTT
+
+1
+00:00:00.300 --> 00:00:03.210
+With the MVP specifically,
+
+2
+00:00:03.500 --> 00:00:05.710
+Christian built it directing the AI agents.
+
+3
+00:00:05.740 --> 00:00:07.260
+And that's what we just divulged,
+
+4
+00:00:07.260 --> 00:00:09.710
+but I can't read the code, right?
+
+5
+00:00:09.860 --> 00:00:11.940
+So that whole emphasis of me
+
+6
+00:00:11.940 --> 00:00:13.230
+with the crayon drawing,
+
+7
+00:00:13.600 --> 00:00:17.210
+I don't know SQLite. I don't know Python,
+
+8
+00:00:17.440 --> 00:00:20.290
+like it's very crude understanding from my end.
+
+9
+00:00:20.300 --> 00:00:23.210
+So I wasn't even going to enter that realm.
+
+10
+00:00:23.620 --> 00:00:25.640
+And that's when Christian stepped in
+
+11
+00:00:25.640 --> 00:00:27.900
+and he thought of this genius process,
+
+12
+00:00:27.900 --> 00:00:29.070
+which I can share.
+
+13
+00:00:29.400 --> 00:00:30.390
+And it's pretty simple.
+
+14
+00:00:30.420 --> 00:00:32.490
+It's just a system of checks and balances.
+
+15
+00:00:32.960 --> 00:00:33.300
+And the reason
+
+16
+00:00:33.300 --> 00:00:34.880
+that we had to get into that
+
+17
+00:00:34.880 --> 00:00:37.600
+was because the AI will lie to you.
+
+18
+00:00:37.600 --> 00:00:39.820
+And we had oftentimes where we're like,
+
+19
+00:00:39.820 --> 00:00:40.870
+oh my gosh, we're done.
+
+20
+00:00:41.120 --> 00:00:41.890
+And it lied.
+
+21
+00:00:42.300 --> 00:00:43.420
+And for the first month
+
+22
+00:00:43.420 --> 00:00:45.100
+of us creating that MVP,
+
+23
+00:00:45.100 --> 00:00:48.230
+we kept getting so excited, so hopeful.
+
+24
+00:00:48.760 --> 00:00:50.580
+And then my brother would look back
+
+25
+00:00:50.580 --> 00:00:51.180
+and he'd be like,
+
+26
+00:00:51.180 --> 00:00:53.370
+no, there's so much more work to be done.
+
+27
+00:00:53.840 --> 00:00:54.940
+It's like a kid sitting
+
+28
+00:00:54.940 --> 00:00:55.860
+in the back of the car,
+
+29
+00:00:55.860 --> 00:00:56.890
+like, are we there yet?
+
+30
+00:00:56.900 --> 00:00:57.810
+Are we there yet?
+
+31
+00:01:00.240 --> 00:01:01.630
+Eventually, we got fed up,
+
+32
+00:01:01.800 --> 00:01:03.430
+as any young creator does.
+
+33
+00:01:03.520 --> 00:01:05.780
+And we go, no, we're building a system
+
+34
+00:01:05.780 --> 00:01:07.830
+where this just will not happen.
+
+35
+00:01:07.840 --> 00:01:09.030
+It's not a possibility.
+
+36
+00:01:09.740 --> 00:01:12.210
+So through all of those checks and balances,
+
+37
+00:01:12.260 --> 00:01:13.100
+and man, I got to say,
+
+38
+00:01:13.100 --> 00:01:14.750
+there's probably 20 of them by now.
+
+39
+00:01:15.920 --> 00:01:17.370
+They've been stacking up to the roof,
+
+40
+00:01:17.480 --> 00:01:19.680
+but thank God they have because without them,
+
+41
+00:01:19.680 --> 00:01:22.040
+we wouldn't be able to push a product
+
+42
+00:01:22.040 --> 00:01:24.390
+that we could verify, right?
+
+43
+00:01:24.440 --> 00:01:25.820
+We wouldn't be able to bring
+
+44
+00:01:25.820 --> 00:01:27.650
+anything to market with confidence.
+
+45
+00:01:28.300 --> 00:01:29.280
+So through that system
+
+46
+00:01:29.280 --> 00:01:31.050
+and that series of checks and balances,
+
+47
+00:01:31.140 --> 00:01:33.690
+and through learning and a lot of mistakes,
+
+48
+00:01:34.540 --> 00:01:37.110
+and especially, man, like you asked a story.
+
+49
+00:01:37.320 --> 00:01:39.840
+My buddy, he looked at my original MVP
+
+50
+00:01:39.840 --> 00:01:42.150
+and he can't even use Google.
+
+51
+00:01:42.300 --> 00:01:45.150
+I made it to look like a trading terminal,
+
+52
+00:01:45.180 --> 00:01:46.310
+a deal desk almost.
+
+53
+00:01:46.940 --> 00:01:48.920
+It was like he was looking at hieroglyphs.
+
+54
+00:01:48.920 --> 00:01:50.330
+It's like me trying to read code.
+
+55
+00:01:50.840 --> 00:01:51.960
+And he was looking at me
+
+56
+00:01:51.960 --> 00:01:52.690
+and he was like, dude,
+
+57
+00:01:52.920 --> 00:01:55.740
+I understand that this is the tool
+
+58
+00:01:55.740 --> 00:01:57.240
+that's going to help us make money,
+
+59
+00:01:57.240 --> 00:01:59.090
+but if I can't even look at the thing,
+
+60
+00:01:59.800 --> 00:02:01.140
+like you got to help me out.
+
+61
+00:02:01.140 --> 00:02:02.790
+He was basically asking for a lifeline.
+
+62
+00:02:03.400 --> 00:02:06.260
+And that was another huge cornerstone
+
+63
+00:02:06.260 --> 00:02:08.210
+of our design point,
+
+64
+00:02:08.300 --> 00:02:09.500
+especially where we're coming at,
+
+65
+00:02:09.500 --> 00:02:10.900
+because a lot of competitors,
+
+66
+00:02:10.900 --> 00:02:12.680
+we started to notice
+
+67
+00:02:12.680 --> 00:02:16.320
+that you just can't sift through anything.
+
+68
+00:02:16.320 --> 00:02:17.260
+It's a headache.
+
+69
+00:02:17.260 --> 00:02:18.400
+I need a Tylenol
+
+70
+00:02:18.400 --> 00:02:20.110
+after using some of their platforms.
+
+71
+00:02:20.220 --> 00:02:22.060
+And unfortunately, I have had to use
+
+72
+00:02:22.060 --> 00:02:24.170
+some of their platforms in the past selling.
+
+73
+00:02:24.860 --> 00:02:26.400
+So that was a huge turning point
+
+74
+00:02:26.400 --> 00:02:27.350
+for the MVP.
+
+75
+00:02:27.820 --> 00:02:29.660
+Checks and balances were a huge turning point
+
+76
+00:02:29.660 --> 00:02:30.590
+for the MVP.
+
+77
+00:02:31.340 --> 00:02:34.900
+And honestly, the constraints is the reason
+
+78
+00:02:34.900 --> 00:02:37.930
+the company even is able to work.
+
+79
+00:02:38.700 --> 00:02:40.550
+So funny enough with that,
+
+80
+00:02:40.660 --> 00:02:43.600
+again, it was just Christian directing his AI agents
+
+81
+00:02:43.600 --> 00:02:45.120
+and a lot of trial and error
+
+82
+00:02:45.120 --> 00:02:47.270
+to build the proper checks and balances.

@@ -1,0 +1,365 @@
+WEBVTT
+
+1
+00:00:00.300 --> 00:00:05.970
+We started the company Jan 17, 2023, right post-Chat GPT,
+
+2
+00:00:06.220 --> 00:00:06.920
+but really we were thinking
+
+3
+00:00:06.920 --> 00:00:08.870
+about all of this stuff before it came out.
+
+4
+00:00:09.360 --> 00:00:10.420
+I was working back
+
+5
+00:00:10.420 --> 00:00:11.600
+before I started the company
+
+6
+00:00:11.600 --> 00:00:13.030
+on this side project.
+
+7
+00:00:13.420 --> 00:00:14.730
+Do you know the website Wirecutter?
+
+8
+00:00:15.140 --> 00:00:17.510
+Top 10 best non-stick pans, things like that.
+
+9
+00:00:18.080 --> 00:00:20.320
+My family loves these products, right?
+
+10
+00:00:20.320 --> 00:00:23.200
+My uncle will spend 20 hours reading reviews
+
+11
+00:00:23.200 --> 00:00:24.480
+to buy a $30 pan
+
+12
+00:00:24.480 --> 00:00:26.200
+just because it's like a hobby,
+
+13
+00:00:26.200 --> 00:00:26.960
+it's like a thing to do.
+
+14
+00:00:26.960 --> 00:00:28.500
+So I was working on a side project
+
+15
+00:00:28.500 --> 00:00:30.170
+back in 2022
+
+16
+00:00:30.560 --> 00:00:34.600
+of hyper-personalized AI-written Wirecutter articles
+
+17
+00:00:34.600 --> 00:00:35.980
+that would aggregate up
+
+18
+00:00:35.980 --> 00:00:37.430
+all of the reviews on the internet.
+
+19
+00:00:37.720 --> 00:00:38.510
+You can't tell on a podcast,
+
+20
+00:00:38.560 --> 00:00:40.290
+but I'm very tall, I'm six foot five.
+
+21
+00:00:40.600 --> 00:00:42.310
+It's hard to find sleeves that are long enough.
+
+22
+00:00:42.640 --> 00:00:44.040
+But that information is actually captured
+
+23
+00:00:44.040 --> 00:00:45.670
+in people who write reviews who say,
+
+24
+00:00:45.720 --> 00:00:46.060
+oh my god,
+
+25
+00:00:46.060 --> 00:00:47.310
+I bought this shirt for my husband,
+
+26
+00:00:47.360 --> 00:00:49.160
+he's so tall, shirts never fit him,
+
+27
+00:00:49.160 --> 00:00:50.170
+but this one happened to fit.
+
+28
+00:00:50.780 --> 00:00:53.080
+And that information is locked up semantically there,
+
+29
+00:00:53.080 --> 00:00:53.780
+even though it doesn't say
+
+30
+00:00:53.780 --> 00:00:55.450
+that the sleeves are especially long.
+
+31
+00:00:56.020 --> 00:00:58.320
+And so I had built this product, again,
+
+32
+00:00:58.320 --> 00:00:59.410
+as a side project,
+
+33
+00:01:00.140 --> 00:01:01.390
+really pre Chat GPT.
+
+34
+00:01:01.580 --> 00:01:04.850
+It's like GPT-3 Codex, an 8,000 token context window.
+
+35
+00:01:05.160 --> 00:01:06.880
+And it took 15 minutes to run
+
+36
+00:01:06.880 --> 00:01:07.620
+and create a thing.
+
+37
+00:01:07.620 --> 00:01:08.600
+It cost $50
+
+38
+00:01:08.600 --> 00:01:10.610
+to do one of these little listicles.
+
+39
+00:01:11.620 --> 00:01:13.190
+And honestly, it was really bad.
+
+40
+00:01:13.440 --> 00:01:14.380
+But there was a glimmer there
+
+41
+00:01:14.380 --> 00:01:15.820
+of just this amazing ability
+
+42
+00:01:15.820 --> 00:01:17.900
+to take huge amounts of unstructured
+
+43
+00:01:17.900 --> 00:01:19.060
+semantically rich data
+
+44
+00:01:19.060 --> 00:01:21.220
+and pull some sort of interesting insight
+
+45
+00:01:21.220 --> 00:01:21.890
+out of it.
+
+46
+00:01:22.640 --> 00:01:23.920
+And I just fell in love
+
+47
+00:01:23.920 --> 00:01:24.780
+with that problem space
+
+48
+00:01:24.780 --> 00:01:25.760
+that I was looking around,
+
+49
+00:01:25.760 --> 00:01:26.770
+wanted to start a company.
+
+50
+00:01:27.100 --> 00:01:29.190
+Got connected to my now co-founder Austin,
+
+51
+00:01:29.500 --> 00:01:33.130
+and he was working at Ramp, doing some growth automation stuff.
+
+52
+00:01:33.320 --> 00:01:34.360
+And I was chatting with him,
+
+53
+00:01:34.360 --> 00:01:35.360
+and a lot of the stuff
+
+54
+00:01:35.360 --> 00:01:36.040
+he was thinking about
+
+55
+00:01:36.040 --> 00:01:37.000
+was a B2B version
+
+56
+00:01:37.000 --> 00:01:38.020
+of what I was thinking about,
+
+57
+00:01:38.020 --> 00:01:41.110
+except instead of for buyers, it was for sellers.
+
+58
+00:01:42.440 --> 00:01:43.650
+And I paused and reflected.
+
+59
+00:01:43.720 --> 00:01:44.870
+I was a classic engineer.
+
+60
+00:01:44.940 --> 00:01:46.290
+I was like, yuck, sales.
+
+61
+00:01:46.900 --> 00:01:47.760
+Before I started the company,
+
+62
+00:01:47.760 --> 00:01:49.550
+before I had done a bunch of work in sales,
+
+63
+00:01:49.900 --> 00:01:50.860
+I thought the job to be done
+
+64
+00:01:50.860 --> 00:01:52.200
+on a salesperson was rhetoric.
+
+65
+00:01:52.200 --> 00:01:53.430
+I thought it was,
+
+66
+00:01:53.940 --> 00:01:56.010
+how do I convince you to buy my product?
+
+67
+00:01:56.540 --> 00:01:58.390
+And that's totally not the case at all.
+
+68
+00:01:58.520 --> 00:02:01.340
+Actually, what a great salesperson says is they say,
+
+69
+00:02:01.340 --> 00:02:02.100
+the job to be done in sales
+
+70
+00:02:02.100 --> 00:02:04.740
+is to find people in companies
+
+71
+00:02:04.740 --> 00:02:07.530
+that have a problem that my product uniquely solves.
+
+72
+00:02:08.140 --> 00:02:08.900
+And then it doesn't really matter
+
+73
+00:02:08.900 --> 00:02:09.620
+what you say to them.
+
+74
+00:02:09.620 --> 00:02:11.170
+Yes, you have to communicate credibly,
+
+75
+00:02:11.180 --> 00:02:12.710
+and communicate effectively, and be believable.
+
+76
+00:02:12.900 --> 00:02:14.350
+But at the end of the day,
+
+77
+00:02:14.520 --> 00:02:15.480
+in kind of a funny way,
+
+78
+00:02:15.480 --> 00:02:17.300
+the economy is just us solving
+
+79
+00:02:17.300 --> 00:02:18.730
+each other's problems for money.
+
+80
+00:02:19.600 --> 00:02:21.320
+And when you reframe it as a search problem,
+
+81
+00:02:21.320 --> 00:02:22.900
+just a bunch of really interesting stuff
+
+82
+00:02:22.900 --> 00:02:23.730
+falls out of it.
+
+83
+00:02:23.840 --> 00:02:24.680
+It's this search problem
+
+84
+00:02:24.680 --> 00:02:26.440
+that historically was run by people
+
+85
+00:02:26.440 --> 00:02:28.250
+in this sort of organization.
+
+86
+00:02:28.340 --> 00:02:29.990
+The system was a system of people.
+
+87
+00:02:30.780 --> 00:02:32.210
+But with LLMs, and AI,
+
+88
+00:02:32.420 --> 00:02:36.390
+and really high-scale data and software engineering,
+
+89
+00:02:36.940 --> 00:02:38.940
+you can make a much, much better system
+
+90
+00:02:38.940 --> 00:02:40.000
+that gives you repeatability,
+
+91
+00:02:40.000 --> 00:02:41.370
+observability, scalability.
