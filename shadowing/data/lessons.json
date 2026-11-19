@@ -51019,6 +51019,2298 @@
     }
    ],
    "thumb": "thumbs/H9-3.jpg"
+  },
+  {
+   "id": "H10-1",
+   "cat": "health",
+   "level": null,
+   "speaker": "Karyn Esser",
+   "role": "Professor of Physiology and Aging, University of Florida",
+   "title": "Stronger in the Afternoon",
+   "title_ja": "人は午後のほうが強い",
+   "episode": "#495: Circadian Clocks in Muscle & Exercise as a Time Cue – Prof. Karyn Esser",
+   "source": "sigmanutrition",
+   "source_url": "https://sigmanutrition.com/episode495/",
+   "video": "media/H10-1.mp4",
+   "audio_only": null,
+   "subs_en": "subs/H10-1.en.vtt",
+   "subs_ja": null,
+   "clip_start": 1511.76,
+   "clip_end": 1583.4,
+   "cover_height": 0,
+   "vertical": false,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "time of day",
+     "ja": "時間帯"
+    },
+    {
+     "en": "muscle strength",
+     "ja": "筋力"
+    },
+    {
+     "en": "convincing",
+     "ja": "説得力がある"
+    },
+    {
+     "en": "mitochondria",
+     "ja": "ミトコンドリア（細胞の中でエネルギーを作る所）"
+    },
+    {
+     "en": "oxygen consumption",
+     "ja": "酸素の消費量"
+    },
+    {
+     "en": "endurance",
+     "ja": "持久力"
+    },
+    {
+     "en": "consistent with",
+     "ja": "〜と一致する、〜に合う"
+    },
+    {
+     "en": "postdoc",
+     "ja": "博士研究員（博士号を取った後の研究者）"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "When are humans stronger, according to her?",
+     "choices": [
+      "In the early morning",
+      "In the afternoon",
+      "Late at night",
+      "It is the same all day"
+     ],
+     "answer": 1,
+     "explain": "\"Humans are stronger in the afternoon than they are in the morning.\""
+    },
+    {
+     "q": "How many studies are there on this, roughly?",
+     "choices": [
+      "About 5",
+      "About 25",
+      "About 100",
+      "None yet"
+     ],
+     "answer": 1,
+     "explain": "\"There's about 25 studies on this, it's pretty convincing.\""
+    },
+    {
+     "q": "When is the oxygen consumption rate of mitochondria in muscle higher?",
+     "choices": [
+      "In the afternoon and early evening",
+      "In the morning",
+      "At midnight",
+      "Right after waking up"
+     ],
+     "answer": 0,
+     "explain": "\"The oxygen consumption rate of mitochondria in your muscles is higher in the afternoon, early evening than it is in the morning.\""
+    },
+    {
+     "q": "What did the mice show in endurance running tests?",
+     "choices": [
+      "More endurance in the morning",
+      "A lot more endurance in the afternoon",
+      "No difference at all",
+      "They refused to run"
+     ],
+     "answer": 1,
+     "explain": "\"They have a lot more endurance in the afternoon than they do in the morning.\""
+    },
+    {
+     "q": "What happened when the mice were trained in the morning?",
+     "choices": [
+      "The difference got bigger",
+      "The difference went away at once",
+      "The difference went away, but it took weeks",
+      "The mice stopped running"
+     ],
+     "answer": 2,
+     "explain": "\"The simple answer is it goes away. But it takes weeks, right?\""
+    }
+   ],
+   "lang": "en",
+   "ja_reviewed": true,
+   "ja_unsure": [],
+   "credit": "Clip: Sigma Nutrition Radio with Danny Lennon (sigmanutrition.com) — used with permission",
+   "active": true,
+   "start_at": null,
+   "clip_spans": [
+    [
+     1511.76,
+     1583.4
+    ]
+   ],
+   "screen": "black",
+   "sub_color": "#F107A3",
+   "lines": [
+    {
+     "start": 0.3,
+     "end": 2.16,
+     "en": "So one of the things too",
+     "ja": ""
+    },
+    {
+     "start": 2.16,
+     "end": 4.48,
+     "en": "that maybe not everybody knows about",
+     "ja": ""
+    },
+    {
+     "start": 4.48,
+     "end": 5.92,
+     "en": "is there are time of day differences",
+     "ja": ""
+    },
+    {
+     "start": 5.92,
+     "end": 7.18,
+     "en": "in muscle strength.",
+     "ja": ""
+    },
+    {
+     "start": 7.18,
+     "end": 9.7,
+     "en": "So humans are stronger in the afternoon",
+     "ja": ""
+    },
+    {
+     "start": 9.7,
+     "end": 10.85,
+     "en": "than they are in the morning.",
+     "ja": ""
+    },
+    {
+     "start": 11.76,
+     "end": 13.26,
+     "en": "There's about 25 studies on this,",
+     "ja": ""
+    },
+    {
+     "start": 13.26,
+     "end": 14.56,
+     "en": "it's pretty convincing.",
+     "ja": ""
+    },
+    {
+     "start": 14.56,
+     "end": 17.42,
+     "en": "The other thing that has been demonstrated out there",
+     "ja": ""
+    },
+    {
+     "start": 17.42,
+     "end": 18.15,
+     "en": "is that the mitochondria,",
+     "ja": ""
+    },
+    {
+     "start": 18.72,
+     "end": 21.24,
+     "en": "the oxygen consumption rate of mitochondria",
+     "ja": ""
+    },
+    {
+     "start": 21.24,
+     "end": 23.4,
+     "en": "in your muscles is higher",
+     "ja": ""
+    },
+    {
+     "start": 23.4,
+     "end": 25.32,
+     "en": "in the afternoon, early evening",
+     "ja": ""
+    },
+    {
+     "start": 25.32,
+     "end": 27.3,
+     "en": "than it is in the morning.",
+     "ja": ""
+    },
+    {
+     "start": 27.3,
+     "end": 30.72,
+     "en": "And so that has significant associations",
+     "ja": ""
+    },
+    {
+     "start": 30.72,
+     "end": 31.6,
+     "en": "with performance.",
+     "ja": ""
+    },
+    {
+     "start": 31.6,
+     "end": 33.22,
+     "en": "And in fact,",
+     "ja": ""
+    },
+    {
+     "start": 33.22,
+     "end": 34.72,
+     "en": "there are other groups that have done,",
+     "ja": ""
+    },
+    {
+     "start": 34.72,
+     "end": 37.32,
+     "en": "if you take a regular mouse strain,",
+     "ja": ""
+    },
+    {
+     "start": 37.32,
+     "end": 40.98,
+     "en": "and you have them do an endurance running test",
+     "ja": ""
+    },
+    {
+     "start": 40.98,
+     "end": 41.66,
+     "en": "in the morning,",
+     "ja": ""
+    },
+    {
+     "start": 41.66,
+     "end": 43.4,
+     "en": "and then you test the same ones",
+     "ja": ""
+    },
+    {
+     "start": 43.4,
+     "end": 45.54,
+     "en": "different day, whatever, in the afternoon,",
+     "ja": ""
+    },
+    {
+     "start": 45.54,
+     "end": 48.04,
+     "en": "they have a lot more endurance in the afternoon",
+     "ja": ""
+    },
+    {
+     "start": 48.04,
+     "end": 49.22,
+     "en": "than they do in the morning,",
+     "ja": ""
+    },
+    {
+     "start": 49.22,
+     "end": 50.48,
+     "en": "consistent with the idea",
+     "ja": ""
+    },
+    {
+     "start": 50.48,
+     "end": 52.42,
+     "en": "that your mitochondria are working better",
+     "ja": ""
+    },
+    {
+     "start": 52.42,
+     "end": 52.98,
+     "en": "at that time.",
+     "ja": ""
+    },
+    {
+     "start": 52.98,
+     "end": 54.96,
+     "en": "So what a postdoc did is he said,",
+     "ja": ""
+    },
+    {
+     "start": 54.96,
+     "end": 56.62,
+     "en": "okay, well, what happens if I train them?",
+     "ja": ""
+    },
+    {
+     "start": 56.62,
+     "end": 58.12,
+     "en": "Let's just train them in the morning.",
+     "ja": ""
+    },
+    {
+     "start": 58.12,
+     "end": 60.64,
+     "en": "And let's see if that difference",
+     "ja": ""
+    },
+    {
+     "start": 60.64,
+     "end": 63.2,
+     "en": "between morning performance and afternoon performance",
+     "ja": ""
+    },
+    {
+     "start": 63.2,
+     "end": 65.32,
+     "en": "stays or does it go away?",
+     "ja": ""
+    },
+    {
+     "start": 65.32,
+     "end": 66.0,
+     "en": "What happens?",
+     "ja": ""
+    },
+    {
+     "start": 66.0,
+     "end": 68.67,
+     "en": "And the simple answer is it goes away.",
+     "ja": ""
+    },
+    {
+     "start": 69.58,
+     "end": 71.29,
+     "en": "But it takes weeks, right?",
+     "ja": ""
+    }
+   ],
+   "thumb": "thumbs/H10-1.jpg"
+  },
+  {
+   "id": "H10-2",
+   "cat": "health",
+   "level": null,
+   "speaker": "Karyn Esser",
+   "role": "Professor of Physiology and Aging, University of Florida",
+   "title": "Training Moves Your Muscle Clock",
+   "title_ja": "朝トレで、筋肉の時計が動く",
+   "episode": "#495: Circadian Clocks in Muscle & Exercise as a Time Cue – Prof. Karyn Esser",
+   "source": "sigmanutrition",
+   "source_url": "https://sigmanutrition.com/episode495/",
+   "video": "media/H10-2.mp4",
+   "audio_only": null,
+   "subs_en": "subs/H10-2.en.vtt",
+   "subs_ja": null,
+   "clip_start": 1582.88,
+   "clip_end": 1692.84,
+   "cover_height": 0,
+   "vertical": false,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "cohort",
+     "ja": "（研究で比べる）グループ"
+    },
+    {
+     "en": "adapt",
+     "ja": "適応する、慣れる"
+    },
+    {
+     "en": "significantly",
+     "ja": "はっきりと、大きく"
+    },
+    {
+     "en": "timeframe",
+     "ja": "期間"
+    },
+    {
+     "en": "workload",
+     "ja": "運動の量、負荷"
+    },
+    {
+     "en": "absolute",
+     "ja": "絶対的な（そのままの量の）"
+    },
+    {
+     "en": "shift in phase",
+     "ja": "（体内時計の）時刻がずれる"
+    },
+    {
+     "en": "underlie",
+     "ja": "〜の土台にある、〜の理由になる"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "When did the two groups of mice train?",
+     "choices": [
+      "Both in the morning",
+      "One in the morning (about 8 or 9 for us) and one at about 5 in the afternoon",
+      "Both at night",
+      "Only on weekends"
+     ],
+     "answer": 1,
+     "explain": "\"One cohort of mice training first, like, you know, about eight, nine in the morning for us, and another cohort training at like five o'clock in the afternoon.\""
+    },
+    {
+     "q": "What happened at three weeks?",
+     "choices": [
+      "The difference was gone",
+      "Both groups were improving, but there was still a large difference",
+      "The morning group was stronger",
+      "Neither group improved"
+     ],
+     "answer": 1,
+     "explain": "\"At three weeks, they're both adapting ... There's still quite a large difference.\""
+    },
+    {
+     "q": "When was the difference gone?",
+     "choices": [
+      "After one week",
+      "After three weeks",
+      "By six weeks",
+      "After one year"
+     ],
+     "answer": 2,
+     "explain": "\"But by six weeks, the difference is gone.\""
+    },
+    {
+     "q": "Why were the researchers surprised?",
+     "choices": [
+      "The morning mice ran longer distances",
+      "The morning mice did less absolute work but still adapted more",
+      "The afternoon mice stopped training",
+      "The mice did not adapt at all"
+     ],
+     "answer": 1,
+     "explain": "\"Our morning exercisers were actually doing less absolute work than the afternoon. So it was really surprising to us.\""
+    },
+    {
+     "q": "How much did the muscle clocks of the morning runners shift?",
+     "choices": [
+      "About 30 minutes",
+      "About one hour",
+      "Almost four or five hours",
+      "Twelve hours"
+     ],
+     "answer": 2,
+     "explain": "\"The muscle clocks in those morning runners shifted in phase by almost four or five hours.\""
+    }
+   ],
+   "lang": "en",
+   "ja_reviewed": true,
+   "ja_unsure": [],
+   "credit": "Clip: Sigma Nutrition Radio with Danny Lennon (sigmanutrition.com) — used with permission",
+   "active": true,
+   "start_at": null,
+   "clip_spans": [
+    [
+     1582.88,
+     1692.84
+    ]
+   ],
+   "screen": "black",
+   "sub_color": "#F2B134",
+   "lines": [
+    {
+     "start": 0.3,
+     "end": 2.44,
+     "en": "So he did a six-week training study",
+     "ja": ""
+    },
+    {
+     "start": 2.44,
+     "end": 5.32,
+     "en": "where he had one cohort of mice training first,",
+     "ja": ""
+    },
+    {
+     "start": 5.32,
+     "end": 7.66,
+     "en": "like, you know, about eight, nine",
+     "ja": ""
+    },
+    {
+     "start": 7.66,
+     "end": 8.68,
+     "en": "in the morning for us,",
+     "ja": ""
+    },
+    {
+     "start": 8.68,
+     "end": 10.56,
+     "en": "and another cohort training",
+     "ja": ""
+    },
+    {
+     "start": 10.56,
+     "end": 12.46,
+     "en": "at like five o'clock in the afternoon.",
+     "ja": ""
+    },
+    {
+     "start": 12.46,
+     "end": 13.86,
+     "en": "And so at the start,",
+     "ja": ""
+    },
+    {
+     "start": 13.86,
+     "end": 16.22,
+     "en": "the difference between morning and afternoon runners",
+     "ja": ""
+    },
+    {
+     "start": 16.22,
+     "end": 18.36,
+     "en": "is quite large in these mice.",
+     "ja": ""
+    },
+    {
+     "start": 18.36,
+     "end": 20.76,
+     "en": "At three weeks, they're both adapting,",
+     "ja": ""
+    },
+    {
+     "start": 20.76,
+     "end": 22.86,
+     "en": "they're both getting more increasing endurance.",
+     "ja": ""
+    },
+    {
+     "start": 22.86,
+     "end": 24.44,
+     "en": "But the difference between the morning",
+     "ja": ""
+    },
+    {
+     "start": 24.44,
+     "end": 26.98,
+     "en": "and the afternoon is still significantly different.",
+     "ja": ""
+    },
+    {
+     "start": 26.98,
+     "end": 29.06,
+     "en": "There's still quite a large difference.",
+     "ja": ""
+    },
+    {
+     "start": 29.06,
+     "end": 31.5,
+     "en": "But by six weeks, the difference is gone.",
+     "ja": ""
+    },
+    {
+     "start": 31.5,
+     "end": 33.2,
+     "en": "So there is something that happens,",
+     "ja": ""
+    },
+    {
+     "start": 33.2,
+     "end": 34.5,
+     "en": "it's not an immediate response,",
+     "ja": ""
+    },
+    {
+     "start": 34.5,
+     "end": 35.6,
+     "en": "there's something that happens",
+     "ja": ""
+    },
+    {
+     "start": 35.6,
+     "end": 37.8,
+     "en": "between the three-week and the six-week timeframe.",
+     "ja": ""
+    },
+    {
+     "start": 37.8,
+     "end": 39.68,
+     "en": "So now our morning runners",
+     "ja": ""
+    },
+    {
+     "start": 39.68,
+     "end": 42.08,
+     "en": "are performing this at the same level",
+     "ja": ""
+    },
+    {
+     "start": 42.08,
+     "end": 43.72,
+     "en": "as the afternoon ones.",
+     "ja": ""
+    },
+    {
+     "start": 43.72,
+     "end": 45.78,
+     "en": "For anybody that studies exercise,",
+     "ja": ""
+    },
+    {
+     "start": 45.78,
+     "end": 47.56,
+     "en": "we used a workload",
+     "ja": ""
+    },
+    {
+     "start": 47.56,
+     "end": 49.62,
+     "en": "that is the same relative workload,",
+     "ja": ""
+    },
+    {
+     "start": 49.62,
+     "end": 52.32,
+     "en": "which means that our morning exercisers",
+     "ja": ""
+    },
+    {
+     "start": 52.32,
+     "end": 54.8,
+     "en": "were actually doing less absolute work",
+     "ja": ""
+    },
+    {
+     "start": 54.8,
+     "end": 55.79,
+     "en": "than the afternoon.",
+     "ja": ""
+    },
+    {
+     "start": 56.06,
+     "end": 58.24,
+     "en": "So it was really surprising to us",
+     "ja": ""
+    },
+    {
+     "start": 58.24,
+     "end": 60.8,
+     "en": "that we actually saw this enhanced adaptation.",
+     "ja": ""
+    },
+    {
+     "start": 60.8,
+     "end": 62.22,
+     "en": "Bottom line,",
+     "ja": ""
+    },
+    {
+     "start": 62.22,
+     "end": 64.26,
+     "en": "we looked at a variety of different parameters.",
+     "ja": ""
+    },
+    {
+     "start": 64.26,
+     "end": 66.48,
+     "en": "But going back to the muscle clock,",
+     "ja": ""
+    },
+    {
+     "start": 66.48,
+     "end": 69.5,
+     "en": "the muscle clocks in those morning runners",
+     "ja": ""
+    },
+    {
+     "start": 69.5,
+     "end": 72.66,
+     "en": "shifted in phase by almost four or five hours.",
+     "ja": ""
+    },
+    {
+     "start": 72.66,
+     "end": 73.46,
+     "en": "All right.",
+     "ja": ""
+    },
+    {
+     "start": 73.46,
+     "end": 76.62,
+     "en": "And what that means is then if you again,",
+     "ja": ""
+    },
+    {
+     "start": 76.62,
+     "end": 79.38,
+     "en": "if you think about that mitochondrial function,",
+     "ja": ""
+    },
+    {
+     "start": 79.38,
+     "end": 82.56,
+     "en": "what will happen is that should move with it.",
+     "ja": ""
+    },
+    {
+     "start": 82.56,
+     "end": 85.54,
+     "en": "So the fact that you have better mitochondrial function",
+     "ja": ""
+    },
+    {
+     "start": 85.54,
+     "end": 86.22,
+     "en": "in the afternoon",
+     "ja": ""
+    },
+    {
+     "start": 86.22,
+     "end": 87.78,
+     "en": "is a direct result",
+     "ja": ""
+    },
+    {
+     "start": 87.78,
+     "end": 89.32,
+     "en": "of the clock in the muscle.",
+     "ja": ""
+    },
+    {
+     "start": 89.32,
+     "end": 89.82,
+     "en": "All right.",
+     "ja": ""
+    },
+    {
+     "start": 89.82,
+     "end": 92.69,
+     "en": "So now all we've done with morning training",
+     "ja": ""
+    },
+    {
+     "start": 94.78,
+     "end": 96.3,
+     "en": "is we've moved the clock earlier.",
+     "ja": ""
+    },
+    {
+     "start": 96.3,
+     "end": 98.94,
+     "en": "So now that mitochondrial performance",
+     "ja": ""
+    },
+    {
+     "start": 98.94,
+     "end": 100.04,
+     "en": "is going to be moved",
+     "ja": ""
+    },
+    {
+     "start": 100.04,
+     "end": 101.62,
+     "en": "to an earlier part of the day.",
+     "ja": ""
+    },
+    {
+     "start": 101.62,
+     "end": 104.58,
+     "en": "And we propose that this is what underlies",
+     "ja": ""
+    },
+    {
+     "start": 104.58,
+     "end": 108.38,
+     "en": "that accelerated or enhanced training adaptation",
+     "ja": ""
+    },
+    {
+     "start": 108.38,
+     "end": 109.61,
+     "en": "in the morning runners.",
+     "ja": ""
+    }
+   ],
+   "thumb": "thumbs/H10-2.jpg"
+  },
+  {
+   "id": "H10-3",
+   "cat": "health",
+   "level": null,
+   "speaker": "Karyn Esser",
+   "role": "Professor of Physiology and Aging, University of Florida",
+   "title": "Beat Jet Lag by Moving",
+   "title_ja": "時差ぼけは、体を動かして直す",
+   "episode": "#495: Circadian Clocks in Muscle & Exercise as a Time Cue – Prof. Karyn Esser",
+   "source": "sigmanutrition",
+   "source_url": "https://sigmanutrition.com/episode495/",
+   "video": "media/H10-3.mp4",
+   "audio_only": null,
+   "subs_en": "subs/H10-3.en.vtt",
+   "subs_ja": null,
+   "clip_start": 1423.42,
+   "clip_end": 1483.7,
+   "cover_height": 0,
+   "vertical": false,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "figure out",
+     "ja": "分かる、答えを見つける"
+    },
+    {
+     "en": "schedule",
+     "ja": "（時間を）決めて組む"
+    },
+    {
+     "en": "accelerate",
+     "ja": "早める、加速する"
+    },
+    {
+     "en": "misaligned",
+     "ja": "ずれている"
+    },
+    {
+     "en": "time zone",
+     "ja": "時間帯（時差のある地域）"
+    },
+    {
+     "en": "be stuck in",
+     "ja": "〜から抜け出せない"
+    },
+    {
+     "en": "feel crummy",
+     "ja": "気分がさえない、だるい"
+    },
+    {
+     "en": "out of whack",
+     "ja": "調子がくるって、ずれて"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What did people who traveled a lot usually do when they arrived?",
+     "choices": [
+      "Go straight to bed",
+      "Go outside, go for a walk, do something physical and eat",
+      "Stay in the hotel room",
+      "Drink a lot of coffee"
+     ],
+     "answer": 1,
+     "explain": "\"You get to where you're going, you get outside, you go for a walk, you do something physical, and you eat.\""
+    },
+    {
+     "q": "What does science tell us about those travelers?",
+     "choices": [
+      "They were wrong",
+      "They figured it out without knowing why",
+      "They were just lucky",
+      "They should not travel"
+     ],
+     "answer": 1,
+     "explain": "\"What science is telling us now is, you know, they figured it out without knowing why.\""
+    },
+    {
+     "q": "Besides exercising, what else helps you get over jet lag faster?",
+     "choices": [
+      "Watching movies",
+      "Scheduling your feeding",
+      "Sleeping all day",
+      "Skipping water"
+     ],
+     "answer": 1,
+     "explain": "\"By exercising, again, and by sort of scheduling your feeding and thinking about that ... you'll feel better, faster.\""
+    },
+    {
+     "q": "What is jet lag, according to her?",
+     "choices": [
+      "A kind of tiredness from sitting",
+      "Circadian misalignment: your clocks are out of whack",
+      "A problem with your eyes",
+      "Hunger"
+     ],
+     "answer": 1,
+     "explain": "\"Literally that is circadian misalignment. That's why you feel crummy. It's just your clocks are out of whack.\""
+    },
+    {
+     "q": "What can behavior in a new time zone do?",
+     "choices": [
+      "Nothing",
+      "Speed up how long we're stuck in jet lag",
+      "Make jet lag longer",
+      "Change the time zone"
+     ],
+     "answer": 1,
+     "explain": "\"There are things we can do behaviorally when we get into a new time zone, that will improve or speed up how long we're stuck in that jet lag.\""
+    }
+   ],
+   "lang": "en",
+   "ja_reviewed": true,
+   "ja_unsure": [],
+   "credit": "Clip: Sigma Nutrition Radio with Danny Lennon (sigmanutrition.com) — used with permission",
+   "active": true,
+   "start_at": null,
+   "clip_spans": [
+    [
+     1423.42,
+     1483.7
+    ]
+   ],
+   "screen": "black",
+   "sub_color": "#FFD200",
+   "lines": [
+    {
+     "start": 0.3,
+     "end": 1.4,
+     "en": "Absolutely.",
+     "ja": ""
+    },
+    {
+     "start": 1.4,
+     "end": 2.84,
+     "en": "I mean, if you talked 10 years ago",
+     "ja": ""
+    },
+    {
+     "start": 2.84,
+     "end": 4.04,
+     "en": "to people that traveled a lot,",
+     "ja": ""
+    },
+    {
+     "start": 4.04,
+     "end": 5.36,
+     "en": "usually their behavior was,",
+     "ja": ""
+    },
+    {
+     "start": 5.36,
+     "end": 6.84,
+     "en": "you get to where you're going,",
+     "ja": ""
+    },
+    {
+     "start": 6.84,
+     "end": 8.34,
+     "en": "you get outside, you go for a walk,",
+     "ja": ""
+    },
+    {
+     "start": 8.34,
+     "end": 10.66,
+     "en": "you do something physical, and you eat, right.",
+     "ja": ""
+    },
+    {
+     "start": 10.66,
+     "end": 13.62,
+     "en": "And so what science is telling us now is,",
+     "ja": ""
+    },
+    {
+     "start": 13.62,
+     "end": 15.7,
+     "en": "you know, they figured it out",
+     "ja": ""
+    },
+    {
+     "start": 15.7,
+     "end": 16.74,
+     "en": "without knowing why.",
+     "ja": ""
+    },
+    {
+     "start": 16.74,
+     "end": 19.4,
+     "en": "And so what we do,",
+     "ja": ""
+    },
+    {
+     "start": 19.4,
+     "end": 21.28,
+     "en": "there are studies in which if, you know,",
+     "ja": ""
+    },
+    {
+     "start": 21.28,
+     "end": 24.88,
+     "en": "so you by exercising, again,",
+     "ja": ""
+    },
+    {
+     "start": 24.88,
+     "end": 26.58,
+     "en": "and by sort of scheduling your feeding",
+     "ja": ""
+    },
+    {
+     "start": 26.58,
+     "end": 27.62,
+     "en": "and thinking about that,",
+     "ja": ""
+    },
+    {
+     "start": 27.62,
+     "end": 31.28,
+     "en": "you will accelerate the jet lag of the transition",
+     "ja": ""
+    },
+    {
+     "start": 31.28,
+     "end": 33.84,
+     "en": "in which your clocks are misaligned.",
+     "ja": ""
+    },
+    {
+     "start": 33.84,
+     "end": 36.8,
+     "en": "So you'll get on to a more aligned status,",
+     "ja": ""
+    },
+    {
+     "start": 36.8,
+     "end": 38.5,
+     "en": "you'll feel better, faster.",
+     "ja": ""
+    },
+    {
+     "start": 38.5,
+     "end": 41.36,
+     "en": "So there are data sets out there",
+     "ja": ""
+    },
+    {
+     "start": 41.36,
+     "end": 42.48,
+     "en": "that support the idea",
+     "ja": ""
+    },
+    {
+     "start": 42.48,
+     "end": 44.76,
+     "en": "that there are things we can do behaviorally",
+     "ja": ""
+    },
+    {
+     "start": 44.76,
+     "end": 46.38,
+     "en": "when we get into a new time zone,",
+     "ja": ""
+    },
+    {
+     "start": 46.38,
+     "end": 49.04,
+     "en": "that will improve or speed up",
+     "ja": ""
+    },
+    {
+     "start": 49.04,
+     "end": 51.6,
+     "en": "how long we're stuck in that jet lag,",
+     "ja": ""
+    },
+    {
+     "start": 51.6,
+     "end": 53.05,
+     "en": "because jet lag is large.",
+     "ja": ""
+    },
+    {
+     "start": 53.34,
+     "end": 53.94,
+     "en": "I mean, literally",
+     "ja": ""
+    },
+    {
+     "start": 53.94,
+     "end": 55.9,
+     "en": "that is circadian misalignment.",
+     "ja": ""
+    },
+    {
+     "start": 55.9,
+     "end": 57.48,
+     "en": "That's why you feel crummy.",
+     "ja": ""
+    },
+    {
+     "start": 57.48,
+     "end": 59.93,
+     "en": "It's just your clocks are out of whack.",
+     "ja": ""
+    }
+   ],
+   "thumb": "thumbs/H10-3.jpg"
+  },
+  {
+   "id": "H11-1",
+   "cat": "health",
+   "level": null,
+   "speaker": "Brad Schoenfeld",
+   "role": "Exercise Scientist, Lehman College, CUNY",
+   "title": "Averages Don't Tell Your Story",
+   "title_ja": "研究の「平均」は、あなたの結果ではない",
+   "episode": "#104: The Evidence-based Approach to Muscle Growth – Brad Schoenfeld, PhD",
+   "source": "sigmanutrition",
+   "source_url": "https://sigmanutrition.com/episode104/",
+   "video": "media/H11-1.mp4",
+   "audio_only": null,
+   "subs_en": "subs/H11-1.en.vtt",
+   "subs_ja": null,
+   "clip_start": 580.82,
+   "clip_end": 690.0,
+   "cover_height": 0,
+   "vertical": false,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "applied science",
+     "ja": "応用科学（実際に役立てるための科学）"
+    },
+    {
+     "en": "extrapolate",
+     "ja": "（分かっていることから）当てはめる、推しはかる"
+    },
+    {
+     "en": "mean value",
+     "ja": "平均値"
+    },
+    {
+     "en": "repetition",
+     "ja": "（筋トレの）回数、レップ"
+    },
+    {
+     "en": "individual",
+     "ja": "個人、一人ひとり"
+    },
+    {
+     "en": "take into account",
+     "ja": "考えに入れる"
+    },
+    {
+     "en": "flexible",
+     "ja": "柔軟な"
+    },
+    {
+     "en": "astute",
+     "ja": "鋭い、頭の切れる"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does research usually report?",
+     "choices": [
+      "Every person's result",
+      "A mean value, meaning an average",
+      "Only the best result",
+      "Only the worst result"
+     ],
+     "answer": 1,
+     "explain": "\"One of the things that the research reports is a mean value, meaning an average.\""
+    },
+    {
+     "q": "What does a scatter plot of individual responses show?",
+     "choices": [
+      "Everyone responds the same way",
+      "The responses are all over the place",
+      "Nobody responds to training",
+      "Only young people respond"
+     ],
+     "answer": 1,
+     "explain": "\"If you look at a scatter plot of the responses between individuals, they're all over the place.\""
+    },
+    {
+     "q": "Which is NOT one of the questions he says you need to ask about a study?",
+     "choices": [
+      "How long was the study?",
+      "How old were the people?",
+      "How trained or untrained were they?",
+      "How much did the study cost?"
+     ],
+     "answer": 3,
+     "explain": "\"You need to know how long was the study, what was the population studied, how old were they, how trained or untrained were they.\""
+    },
+    {
+     "q": "What should you do if a person doesn't respond like most people?",
+     "choices": [
+      "Stop training them",
+      "Be flexible and manipulate the variables to get a better effect",
+      "Tell them to read more research",
+      "Follow the average exactly"
+     ],
+     "answer": 1,
+     "explain": "\"You have to be astute enough to be able to manipulate the variables that you're looking at to bring about a better effect.\""
+    },
+    {
+     "q": "What is a true evidence-based approach, according to him?",
+     "choices": [
+      "Using only research",
+      "Using only your own experience",
+      "Combining research, your own understanding and the individual",
+      "Copying what other people do"
+     ],
+     "answer": 2,
+     "explain": "\"It's taking research into account, having a good understanding yourself, and then applying it to whoever it is you're looking to apply it to.\""
+    }
+   ],
+   "lang": "en",
+   "ja_reviewed": true,
+   "ja_unsure": [],
+   "credit": "Clip: Sigma Nutrition Radio with Danny Lennon (sigmanutrition.com) — used with permission",
+   "active": true,
+   "start_at": null,
+   "clip_spans": [
+    [
+     580.82,
+     690.0
+    ]
+   ],
+   "screen": "black",
+   "sub_color": "#B6E62E",
+   "lines": [
+    {
+     "start": 0.3,
+     "end": 2.42,
+     "en": "The problem with an applied science like exercise",
+     "ja": ""
+    },
+    {
+     "start": 2.42,
+     "end": 4.48,
+     "en": "is that there are huge gaps.",
+     "ja": ""
+    },
+    {
+     "start": 4.48,
+     "end": 5.7,
+     "en": "When you're trying to extrapolate",
+     "ja": ""
+    },
+    {
+     "start": 5.7,
+     "end": 7.41,
+     "en": "the literature into practice,",
+     "ja": ""
+    },
+    {
+     "start": 7.58,
+     "end": 8.45,
+     "en": "there are huge gaps.",
+     "ja": ""
+    },
+    {
+     "start": 8.48,
+     "end": 10.36,
+     "en": "And one of the things that the research reports",
+     "ja": ""
+    },
+    {
+     "start": 10.36,
+     "end": 12.75,
+     "en": "is a mean value, meaning an average.",
+     "ja": ""
+    },
+    {
+     "start": 13.02,
+     "end": 14.22,
+     "en": "So when I carry out a study,",
+     "ja": ""
+    },
+    {
+     "start": 14.22,
+     "end": 16.56,
+     "en": "let's say on high repetitions",
+     "ja": ""
+    },
+    {
+     "start": 16.56,
+     "end": 17.89,
+     "en": "versus low repetitions,",
+     "ja": ""
+    },
+    {
+     "start": 18.58,
+     "end": 19.93,
+     "en": "I'm gonna report the averages.",
+     "ja": ""
+    },
+    {
+     "start": 19.96,
+     "end": 21.04,
+     "en": "One group might gain 10%,",
+     "ja": ""
+    },
+    {
+     "start": 21.04,
+     "end": 22.96,
+     "en": "another group might gain 6%.",
+     "ja": ""
+    },
+    {
+     "start": 22.96,
+     "end": 25.06,
+     "en": "Within that, that does not explain",
+     "ja": ""
+    },
+    {
+     "start": 25.06,
+     "end": 26.63,
+     "en": "the inter-individual differences.",
+     "ja": ""
+    },
+    {
+     "start": 26.72,
+     "end": 27.55,
+     "en": "I'll see a,",
+     "ja": ""
+    },
+    {
+     "start": 27.78,
+     "end": 29.24,
+     "en": "if you look at a scatter plot",
+     "ja": ""
+    },
+    {
+     "start": 29.24,
+     "end": 32.26,
+     "en": "of the responses between individuals,",
+     "ja": ""
+    },
+    {
+     "start": 32.26,
+     "end": 33.29,
+     "en": "they're all over the place.",
+     "ja": ""
+    },
+    {
+     "start": 33.36,
+     "end": 36.11,
+     "en": "So people respond very differently to training.",
+     "ja": ""
+    },
+    {
+     "start": 36.18,
+     "end": 37.18,
+     "en": "We can give general,",
+     "ja": ""
+    },
+    {
+     "start": 37.18,
+     "end": 40.34,
+     "en": "research can give us general guidelines to follow,",
+     "ja": ""
+    },
+    {
+     "start": 40.34,
+     "end": 42.44,
+     "en": "but then you need to take into account",
+     "ja": ""
+    },
+    {
+     "start": 42.44,
+     "end": 45.06,
+     "en": "your own experience",
+     "ja": ""
+    },
+    {
+     "start": 45.06,
+     "end": 46.66,
+     "en": "and your understanding of the research",
+     "ja": ""
+    },
+    {
+     "start": 46.66,
+     "end": 47.81,
+     "en": "because there are gaps.",
+     "ja": ""
+    },
+    {
+     "start": 48.04,
+     "end": 49.92,
+     "en": "You need to know how long was the study,",
+     "ja": ""
+    },
+    {
+     "start": 49.92,
+     "end": 52.22,
+     "en": "what was the population studied,",
+     "ja": ""
+    },
+    {
+     "start": 52.22,
+     "end": 53.19,
+     "en": "how old were they,",
+     "ja": ""
+    },
+    {
+     "start": 53.22,
+     "end": 55.43,
+     "en": "how trained or untrained were they.",
+     "ja": ""
+    },
+    {
+     "start": 55.52,
+     "end": 57.34,
+     "en": "There's so many factors that go into",
+     "ja": ""
+    },
+    {
+     "start": 57.34,
+     "end": 60.95,
+     "en": "trying to extrapolate research into practice",
+     "ja": ""
+    },
+    {
+     "start": 61.04,
+     "end": 62.28,
+     "en": "and that really is where",
+     "ja": ""
+    },
+    {
+     "start": 62.28,
+     "end": 65.02,
+     "en": "your own personal experience and understanding,",
+     "ja": ""
+    },
+    {
+     "start": 65.02,
+     "end": 68.18,
+     "en": "knowledge of the field comes into play.",
+     "ja": ""
+    },
+    {
+     "start": 68.18,
+     "end": 69.52,
+     "en": "And then you have to take into account",
+     "ja": ""
+    },
+    {
+     "start": 69.52,
+     "end": 70.57,
+     "en": "the individual.",
+     "ja": ""
+    },
+    {
+     "start": 70.7,
+     "end": 73.13,
+     "en": "So you can use these as guidelines",
+     "ja": ""
+    },
+    {
+     "start": 73.61,
+     "end": 74.88,
+     "en": "based on your understanding",
+     "ja": ""
+    },
+    {
+     "start": 74.88,
+     "end": 76.11,
+     "en": "and what the research shows.",
+     "ja": ""
+    },
+    {
+     "start": 76.42,
+     "end": 77.6,
+     "en": "But then once you have someone",
+     "ja": ""
+    },
+    {
+     "start": 77.6,
+     "end": 78.75,
+     "en": "who you're working with,",
+     "ja": ""
+    },
+    {
+     "start": 78.98,
+     "end": 80.2,
+     "en": "you need to be flexible enough",
+     "ja": ""
+    },
+    {
+     "start": 80.2,
+     "end": 81.4,
+     "en": "and understanding enough",
+     "ja": ""
+    },
+    {
+     "start": 81.4,
+     "end": 83.46,
+     "en": "that he might not respond optimally",
+     "ja": ""
+    },
+    {
+     "start": 83.46,
+     "end": 85.11,
+     "en": "to what other people are.",
+     "ja": ""
+    },
+    {
+     "start": 85.18,
+     "end": 87.31,
+     "en": "The majority of people, the mean are,",
+     "ja": ""
+    },
+    {
+     "start": 87.56,
+     "end": 90.56,
+     "en": "and then you have to be astute enough",
+     "ja": ""
+    },
+    {
+     "start": 90.56,
+     "end": 95.14,
+     "en": "to be able to manipulate the variables",
+     "ja": ""
+    },
+    {
+     "start": 95.14,
+     "end": 96.22,
+     "en": "that you're looking at",
+     "ja": ""
+    },
+    {
+     "start": 96.22,
+     "end": 98.87,
+     "en": "to bring about a better effect at that point.",
+     "ja": ""
+    },
+    {
+     "start": 98.9,
+     "end": 100.75,
+     "en": "And that is a true evidence-based approach.",
+     "ja": ""
+    },
+    {
+     "start": 100.98,
+     "end": 102.63,
+     "en": "So it's taking research into account,",
+     "ja": ""
+    },
+    {
+     "start": 102.78,
+     "end": 104.38,
+     "en": "having a good understanding yourself,",
+     "ja": ""
+    },
+    {
+     "start": 104.38,
+     "end": 107.36,
+     "en": "and then applying it to whoever it is",
+     "ja": ""
+    },
+    {
+     "start": 107.36,
+     "end": 108.83,
+     "en": "you're looking to apply it to.",
+     "ja": ""
+    }
+   ],
+   "thumb": "thumbs/H11-1.jpg"
+  },
+  {
+   "id": "H11-2",
+   "cat": "health",
+   "level": null,
+   "speaker": "Brad Schoenfeld",
+   "role": "Exercise Scientist, Lehman College, CUNY",
+   "title": "One Less Donut Beats Fasted Cardio",
+   "title_ja": "空腹で走るより、ドーナツを1個へらす",
+   "episode": "#104: The Evidence-based Approach to Muscle Growth – Brad Schoenfeld, PhD",
+   "source": "sigmanutrition",
+   "source_url": "https://sigmanutrition.com/episode104/",
+   "video": "media/H11-2.mp4",
+   "audio_only": null,
+   "subs_en": "subs/H11-2.en.vtt",
+   "subs_ja": null,
+   "clip_start": 2043.42,
+   "clip_end": 2106.42,
+   "cover_height": 0,
+   "vertical": false,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "the vast majority of",
+     "ja": "大部分の、ほとんどの"
+    },
+    {
+     "en": "body fat",
+     "ja": "体脂肪"
+    },
+    {
+     "en": "hypothesize",
+     "ja": "仮説を立てる"
+    },
+    {
+     "en": "fat loss",
+     "ja": "脂肪が減ること"
+    },
+    {
+     "en": "refute",
+     "ja": "（正しくないと）否定する"
+    },
+    {
+     "en": "minute",
+     "ja": "ごく小さい（発音は「マイニュート」）"
+    },
+    {
+     "en": "cardio",
+     "ja": "有酸素運動"
+    },
+    {
+     "en": "miss the forest for the trees",
+     "ja": "木を見て森を見ず"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "For the vast majority of people, does fasted cardio make a difference?",
+     "choices": [
+      "Yes, a big difference",
+      "No, it makes no difference",
+      "Only in the morning",
+      "Only for beginners"
+     ],
+     "answer": 1,
+     "explain": "\"For the vast majority of people, this is going to make no difference.\""
+    },
+    {
+     "q": "Who might get a small benefit, according to Lyle McDonald's idea?",
+     "choices": [
+      "Beginners",
+      "People who are already very low in body fat",
+      "People who don't exercise",
+      "Children"
+     ],
+     "answer": 1,
+     "explain": "\"It might be a good strategy to use when you're very low body fat to get ... a pound or so of extra fat loss.\""
+    },
+    {
+     "q": "What body fat levels do most people doing cardio have?",
+     "choices": [
+      "6% to 7%",
+      "12%, 14%, 18%",
+      "Over 40%",
+      "Under 5%"
+     ],
+     "answer": 1,
+     "explain": "\"They're people at 12, 14, 18% body fat.\""
+    },
+    {
+     "q": "What does \"missing the forest from the trees\" mean here?",
+     "choices": [
+      "Running outside instead of in a gym",
+      "Focusing on a small detail and missing the big picture",
+      "Eating too many vegetables",
+      "Doing too much cardio"
+     ],
+     "answer": 1,
+     "explain": "He says people worry about not eating before cardio when bigger things matter more."
+    },
+    {
+     "q": "What would have a much bigger impact, according to him?",
+     "choices": [
+      "Doing cardio twice a day",
+      "Never eating breakfast",
+      "Having one less donut",
+      "Buying a new watch"
+     ],
+     "answer": 2,
+     "explain": "\"When have one less donut, and it's going to have a much bigger impact on your body comp.\""
+    }
+   ],
+   "lang": "en",
+   "ja_reviewed": true,
+   "ja_unsure": [],
+   "credit": "Clip: Sigma Nutrition Radio with Danny Lennon (sigmanutrition.com) — used with permission",
+   "active": true,
+   "start_at": null,
+   "clip_spans": [
+    [
+     2043.42,
+     2106.42
+    ]
+   ],
+   "screen": "black",
+   "sub_color": "#C33764",
+   "lines": [
+    {
+     "start": 0.3,
+     "end": 0.9,
+     "en": "No differences,",
+     "ja": ""
+    },
+    {
+     "start": 0.9,
+     "end": 2.16,
+     "en": "what I would say here again",
+     "ja": ""
+    },
+    {
+     "start": 2.16,
+     "end": 4.08,
+     "en": "is that for the vast majority of people,",
+     "ja": ""
+    },
+    {
+     "start": 4.08,
+     "end": 6.37,
+     "en": "this is going to make no difference.",
+     "ja": ""
+    },
+    {
+     "start": 6.58,
+     "end": 7.44,
+     "en": "Can I say for sure",
+     "ja": ""
+    },
+    {
+     "start": 7.44,
+     "end": 9.96,
+     "en": "that with a bodybuilder",
+     "ja": ""
+    },
+    {
+     "start": 9.96,
+     "end": 12.11,
+     "en": "who's at very little body fat levels,",
+     "ja": ""
+    },
+    {
+     "start": 12.4,
+     "end": 13.77,
+     "en": "that it might not make a difference?",
+     "ja": ""
+    },
+    {
+     "start": 13.8,
+     "end": 14.09,
+     "en": "No.",
+     "ja": ""
+    },
+    {
+     "start": 14.46,
+     "end": 16.65,
+     "en": "I know a colleague of mine, Lyle McDonald,",
+     "ja": ""
+    },
+    {
+     "start": 16.72,
+     "end": 18.89,
+     "en": "who's a really astute fitness pro,",
+     "ja": ""
+    },
+    {
+     "start": 18.94,
+     "end": 23.62,
+     "en": "has hypothesized that it might be a good strategy",
+     "ja": ""
+    },
+    {
+     "start": 23.62,
+     "end": 25.74,
+     "en": "to use when you're very low body fat",
+     "ja": ""
+    },
+    {
+     "start": 25.74,
+     "end": 28.54,
+     "en": "to get a couple extra, a pound or so",
+     "ja": ""
+    },
+    {
+     "start": 28.54,
+     "end": 29.83,
+     "en": "of extra fat loss.",
+     "ja": ""
+    },
+    {
+     "start": 30.28,
+     "end": 34.05,
+     "en": "I cannot, from what we've done, refute that.",
+     "ja": ""
+    },
+    {
+     "start": 35.22,
+     "end": 36.7,
+     "en": "But for the vast majority, again,",
+     "ja": ""
+    },
+    {
+     "start": 36.7,
+     "end": 38.54,
+     "en": "you're talking such a minute amount of people,",
+     "ja": ""
+    },
+    {
+     "start": 38.54,
+     "end": 40.62,
+     "en": "and the vast majority of people doing cardio",
+     "ja": ""
+    },
+    {
+     "start": 40.62,
+     "end": 43.85,
+     "en": "are not people that are at 6% body fat,",
+     "ja": ""
+    },
+    {
+     "start": 44.18,
+     "end": 45.08,
+     "en": "7% body fat,",
+     "ja": ""
+    },
+    {
+     "start": 45.08,
+     "end": 48.53,
+     "en": "they're people at 12, 14, 18% body fat,",
+     "ja": ""
+    },
+    {
+     "start": 48.72,
+     "end": 51.03,
+     "en": "and it's missing the forest from the trees.",
+     "ja": ""
+    },
+    {
+     "start": 51.9,
+     "end": 54.16,
+     "en": "You're doing all that, you're going nuts",
+     "ja": ""
+    },
+    {
+     "start": 54.16,
+     "end": 57.26,
+     "en": "trying to not eat before you do your cardio",
+     "ja": ""
+    },
+    {
+     "start": 57.26,
+     "end": 60.37,
+     "en": "when have one less donut,",
+     "ja": ""
+    },
+    {
+     "start": 60.54,
+     "end": 61.8,
+     "en": "and it's going to have a much bigger impact",
+     "ja": ""
+    },
+    {
+     "start": 61.8,
+     "end": 62.65,
+     "en": "on your body comp.",
+     "ja": ""
+    }
+   ],
+   "thumb": "thumbs/H11-2.jpg"
+  },
+  {
+   "id": "H11-3",
+   "cat": "health",
+   "level": null,
+   "speaker": "Brad Schoenfeld",
+   "role": "Exercise Scientist, Lehman College, CUNY",
+   "title": "Twenty Minutes or More?",
+   "title_ja": "20分でいいか、もっとやるか",
+   "episode": "#104: The Evidence-based Approach to Muscle Growth – Brad Schoenfeld, PhD",
+   "source": "sigmanutrition",
+   "source_url": "https://sigmanutrition.com/episode104/",
+   "video": "media/H11-3.mp4",
+   "audio_only": null,
+   "subs_en": "subs/H11-3.en.vtt",
+   "subs_ja": null,
+   "clip_start": 2409.06,
+   "clip_end": 2505.3,
+   "cover_height": 0,
+   "vertical": false,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "precisely",
+     "ja": "まさにそのとおり"
+    },
+    {
+     "en": "volume",
+     "ja": "（筋トレの）量（セット数×回数×重さ）"
+    },
+    {
+     "en": "hypertrophy",
+     "ja": "筋肥大（筋肉が大きくなること）"
+    },
+    {
+     "en": "routine",
+     "ja": "（決まった）メニュー"
+    },
+    {
+     "en": "sufficient",
+     "ja": "十分な"
+    },
+    {
+     "en": "commit",
+     "ja": "（時間などを）かける、注ぐ"
+    },
+    {
+     "en": "cost benefit",
+     "ja": "損と得（費用と効果）"
+    },
+    {
+     "en": "time-pressed",
+     "ja": "時間に追われている"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What drives hypertrophy (muscle growth), according to him?",
+     "choices": [
+      "Sleep only",
+      "Volume",
+      "Supplements",
+      "Stretching"
+     ],
+     "answer": 1,
+     "explain": "\"We know that volume is a driver of hypertrophy.\""
+    },
+    {
+     "q": "How long does he say a really good HIT workout can take?",
+     "choices": [
+      "5 minutes",
+      "About 20 minutes",
+      "2 hours",
+      "All day"
+     ],
+     "answer": 1,
+     "explain": "\"Let's say in 20 minutes, you can get a really good workout.\""
+    },
+    {
+     "q": "How much of your muscular gains might you get from a HIT routine?",
+     "choices": [
+      "10%",
+      "40%",
+      "70%",
+      "100%"
+     ],
+     "answer": 2,
+     "explain": "\"Let's say you get 70% of your muscular gains from a HIT routine.\""
+    },
+    {
+     "q": "What is the key question if you want more gains?",
+     "choices": [
+      "Which gym is the best?",
+      "How much more time are you willing to commit?",
+      "What shoes should I buy?",
+      "How many supplements do I need?"
+     ],
+     "answer": 1,
+     "explain": "\"If you want to then get more, well, how much more time are you willing to commit?\""
+    },
+    {
+     "q": "Who might make different choices?",
+     "choices": [
+      "Someone who is very time-pressed",
+      "Someone who never trains",
+      "A professional runner",
+      "A child"
+     ],
+     "answer": 0,
+     "explain": "\"If you're someone who's very time-pressed, then your choices might be different than if you're someone who's looking to maximize their muscle growth.\""
+    }
+   ],
+   "lang": "en",
+   "ja_reviewed": true,
+   "ja_unsure": [],
+   "credit": "Clip: Sigma Nutrition Radio with Danny Lennon (sigmanutrition.com) — used with permission",
+   "active": true,
+   "start_at": null,
+   "clip_spans": [
+    [
+     2409.06,
+     2505.3
+    ]
+   ],
+   "screen": "black",
+   "sub_color": "#34E89E",
+   "lines": [
+    {
+     "start": 0.3,
+     "end": 1.06,
+     "en": "Yeah, precisely.",
+     "ja": ""
+    },
+    {
+     "start": 1.06,
+     "end": 3.74,
+     "en": "That you focus on what's most important.",
+     "ja": ""
+    },
+    {
+     "start": 3.74,
+     "end": 5.21,
+     "en": "Now, for a bodybuilder,",
+     "ja": ""
+    },
+    {
+     "start": 5.72,
+     "end": 8.18,
+     "en": "even things that might be relatively unimportant,",
+     "ja": ""
+    },
+    {
+     "start": 8.18,
+     "end": 11.03,
+     "en": "so the bottom of the pyramid,",
+     "ja": ""
+    },
+    {
+     "start": 11.26,
+     "end": 12.54,
+     "en": "the least important thing,",
+     "ja": ""
+    },
+    {
+     "start": 12.54,
+     "end": 14.06,
+     "en": "can be still the difference",
+     "ja": ""
+    },
+    {
+     "start": 14.06,
+     "end": 15.83,
+     "en": "between winning and losing a competition.",
+     "ja": ""
+    },
+    {
+     "start": 16.22,
+     "end": 18.84,
+     "en": "But correct, then you want to focus,",
+     "ja": ""
+    },
+    {
+     "start": 18.84,
+     "end": 21.72,
+     "en": "based on what your goals are",
+     "ja": ""
+    },
+    {
+     "start": 21.72,
+     "end": 23.66,
+     "en": "and your current abilities,",
+     "ja": ""
+    },
+    {
+     "start": 23.66,
+     "end": 26.4,
+     "en": "that's where you want to use that pyramid",
+     "ja": ""
+    },
+    {
+     "start": 26.4,
+     "end": 29.37,
+     "en": "to magnify and to optimize your results.",
+     "ja": ""
+    },
+    {
+     "start": 29.44,
+     "end": 31.18,
+     "en": "So here's what I'd say,",
+     "ja": ""
+    },
+    {
+     "start": 31.18,
+     "end": 32.88,
+     "en": "and you then have to consider it",
+     "ja": ""
+    },
+    {
+     "start": 32.88,
+     "end": 34.46,
+     "en": "in the context of what you're looking to do.",
+     "ja": ""
+    },
+    {
+     "start": 34.46,
+     "end": 35.24,
+     "en": "So we know",
+     "ja": ""
+    },
+    {
+     "start": 35.24,
+     "end": 37.26,
+     "en": "that volume is a driver of hypertrophy.",
+     "ja": ""
+    },
+    {
+     "start": 37.26,
+     "end": 39.74,
+     "en": "You can get very good results",
+     "ja": ""
+    },
+    {
+     "start": 39.74,
+     "end": 42.26,
+     "en": "from a HIT, one-set routine.",
+     "ja": ""
+    },
+    {
+     "start": 42.26,
+     "end": 44.04,
+     "en": "The question is, do you want to spend,",
+     "ja": ""
+    },
+    {
+     "start": 44.04,
+     "end": 45.58,
+     "en": "so, you know, let's say in 20 minutes,",
+     "ja": ""
+    },
+    {
+     "start": 45.58,
+     "end": 46.66,
+     "en": "you can get a really good workout.",
+     "ja": ""
+    },
+    {
+     "start": 46.66,
+     "end": 47.96,
+     "en": "You can make, let's say",
+     "ja": ""
+    },
+    {
+     "start": 47.96,
+     "end": 49.93,
+     "en": "you get 70% of your muscular gains",
+     "ja": ""
+    },
+    {
+     "start": 50.58,
+     "end": 51.64,
+     "en": "from a HIT routine.",
+     "ja": ""
+    },
+    {
+     "start": 51.64,
+     "end": 52.82,
+     "en": "Is that sufficient for you?",
+     "ja": ""
+    },
+    {
+     "start": 52.82,
+     "end": 53.86,
+     "en": "For a lot of people,",
+     "ja": ""
+    },
+    {
+     "start": 53.86,
+     "end": 55.3,
+     "en": "it very well might be.",
+     "ja": ""
+    },
+    {
+     "start": 55.3,
+     "end": 57.08,
+     "en": "If you want to then get more,",
+     "ja": ""
+    },
+    {
+     "start": 57.08,
+     "end": 58.28,
+     "en": "well, how much more time",
+     "ja": ""
+    },
+    {
+     "start": 58.28,
+     "end": 59.16,
+     "en": "are you willing to commit?",
+     "ja": ""
+    },
+    {
+     "start": 59.16,
+     "end": 60.76,
+     "en": "So everything is a cost benefit in life.",
+     "ja": ""
+    },
+    {
+     "start": 60.76,
+     "end": 62.26,
+     "en": "And one of the things",
+     "ja": ""
+    },
+    {
+     "start": 62.26,
+     "end": 63.12,
+     "en": "that I look to do",
+     "ja": ""
+    },
+    {
+     "start": 63.12,
+     "end": 65.32,
+     "en": "is to try to delve",
+     "ja": ""
+    },
+    {
+     "start": 65.32,
+     "end": 68.76,
+     "en": "not only into the insights of the research,",
+     "ja": ""
+    },
+    {
+     "start": 68.76,
+     "end": 69.62,
+     "en": "but the realities",
+     "ja": ""
+    },
+    {
+     "start": 69.62,
+     "end": 71.7,
+     "en": "as to how this can be practically applied.",
+     "ja": ""
+    },
+    {
+     "start": 71.7,
+     "end": 75.04,
+     "en": "If efficiency is something that's very important,",
+     "ja": ""
+    },
+    {
+     "start": 75.04,
+     "end": 75.99,
+     "en": "if you're someone who's very time-pressed,",
+     "ja": ""
+    },
+    {
+     "start": 76.3,
+     "end": 79.32,
+     "en": "then your choices might be different",
+     "ja": ""
+    },
+    {
+     "start": 79.32,
+     "end": 80.06,
+     "en": "than if you're someone",
+     "ja": ""
+    },
+    {
+     "start": 80.06,
+     "end": 82.66,
+     "en": "who's looking to maximize their muscle growth.",
+     "ja": ""
+    },
+    {
+     "start": 82.66,
+     "end": 85.54,
+     "en": "So yeah, it's always, to me,",
+     "ja": ""
+    },
+    {
+     "start": 85.54,
+     "end": 87.32,
+     "en": "the hierarchy is extremely important.",
+     "ja": ""
+    },
+    {
+     "start": 87.32,
+     "end": 88.78,
+     "en": "I think even within the hierarchy,",
+     "ja": ""
+    },
+    {
+     "start": 88.78,
+     "end": 92.04,
+     "en": "it's important to understand the limitations",
+     "ja": ""
+    },
+    {
+     "start": 92.04,
+     "end": 95.89,
+     "en": "of each of the variables that you're looking at.",
+     "ja": ""
+    }
+   ],
+   "thumb": "thumbs/H11-3.jpg"
   }
  ]
 }
