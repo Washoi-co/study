@@ -44,7 +44,18 @@
 <main class="screen">
   <div class="nav"><span class="navl"><svg class="aplogo" viewBox="0 0 228.41 58.35" fill="currentColor" role="img" aria-label="A-PUSH"><use href="#aplogo"/></svg><span class="mini">計画</span></span></div>
 
-  <section class="q" data-on id="q1">
+  <section class="q" data-on id="q0">
+    <h1 class="qh">あなたは？</h1>
+    <p class="sub">いちばん近い物を1つ。</p>
+    <div class="choices" id="role">
+      <button class="ch" data-v="worker">社会人</button>
+      <button class="ch" data-v="student">学生</button>
+      <button class="ch" data-v="founder">起業家・投資家</button>
+    </div>
+    <button class="primary" id="n0" disabled>次へ</button>
+  </section>
+
+  <section class="q" id="q1">
     <h1 class="qh">なぜ、英語を学びますか？</h1>
     <p class="sub">いちばん近い物を1つ。</p>
     <div class="choices" id="purpose">
@@ -70,7 +81,7 @@ const $=id=>document.getElementById(id);
 const get=(k,d)=>{try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v);}catch(e){return d;}};
 const put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}};
 const G=Object.assign({},get("ap_goals",{}));
-const A={purpose:G.purpose||"",exam:G.target||""};
+const A={purpose:G.purpose||"",exam:G.target||"",role:G.role||""};
 /* 専門（土木など）の生徒だけ、4つ目の選択肢 */
 (function(){const tr=get("ap_track",null);if(tr&&tr.words){$("p-special").hidden=false;$("p-track").textContent=tr.label||tr.words;}})();
 function pick(id,key,after){
@@ -78,6 +89,9 @@ function pick(id,key,after){
     [...$(id).children].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));A[key]=b.dataset.v;if(after)after();});
 }
 const ok1=()=>{$("n1").disabled=!(A.purpose&&(A.purpose!=="exam"||A.exam)&&$("why").value.trim());};
+/* あなたは？（2026-11-20 kimi）：社会人・学生・起業家/投資家。使い方のスライドがこれで変わる（ap_goals.role。この端末だけ） */
+pick("role","role",()=>{$("n0").disabled=!A.role;});
+$("n0").onclick=()=>{$("q0").removeAttribute("data-on");$("q1").setAttribute("data-on","");scrollTo(0,0);};
 pick("purpose","purpose",()=>{$("exam").hidden=A.purpose!=="exam";ok1();});
 pick("exam","exam",ok1);
 $("why").addEventListener("input",ok1);
@@ -86,7 +100,7 @@ const half=t=>{const [h,m]=String(t||"21:00").split(":").map(Number);const mm=m<
 $("n1").onclick=()=>{
   const TODAY=new Date().toLocaleDateString("sv");
   const why=$("why").value.trim().slice(0,200);
-  Object.assign(G,{purpose:A.purpose,target:A.purpose==="exam"?A.exam:"",why,words:+G.words||20,hours:+G.hours||.5,at:half(G.at||"21:00")});   /* 語数・時間・いつは聞かない（前の値か 20語・30分・21:00。計画のページで変えられる） */   /* exam は計画のページの「1日のテスト回数」なので、試験名は target */
+  Object.assign(G,{role:A.role,purpose:A.purpose,target:A.purpose==="exam"?A.exam:"",why,words:+G.words||20,hours:+G.hours||.5,at:half(G.at||"21:00")});   /* 語数・時間・いつは聞かない（前の値か 20語・30分・21:00。計画のページで変えられる） */   /* exam は計画のページの「1日のテスト回数」なので、試験名は target */
   if(!G.m3Text)G.m3Text=why;   /* 3か月のゴールが空なら、この一言を入れる（進捗の LINE・先生の画面が読む） */
   if(!G.m3Start)G.m3Start=TODAY;
   const h=(G.hist||[]).filter(x=>x.from!==TODAY);h.push({from:TODAY,words:G.words,shadow:G.shadow||1,exam:+G.exam||0});G.hist=h;
