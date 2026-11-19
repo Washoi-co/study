@@ -330,6 +330,12 @@ $("trial-go").addEventListener("click",async()=>{
   $("sid").value=u||(store.get("tcode",null)?"":store.get("sid",""));
   const p=store.get("pass",null),sid=store.get("sid","");
   if(p&&sid&&(!u||u===sid)){try{DATA=await unlock(sid,p);start();return;}catch(e){}}
+  /* 公式LINE の Gift のボタン（?code=GIFT-XXXXXX）：開くだけで始まる。会員番号・パスワードは聞かない（2026-11-19 kimi「生徒番号とパスワード求められるね」）。
+     URL からはすぐ消す（画面を人に見せてもコードが残らない） */
+  const qc=(new URLSearchParams(location.search).get("code")||"").trim().slice(0,40);
+  if(qc){history.replaceState(null,"",location.pathname);
+    try{DATA=await trialOpen(qc);store.set("tcode",qc);start();return;}
+    catch(e){if(expired(e)){toFree();return;}$("tcode").value=qc;$("lock-err").textContent=trialMsg(e);$("tcode").scrollIntoView({block:"center"});return;}}
   const tc=store.get("tcode",null);
   if(tc&&!u){
     try{DATA=await trialOpen(tc);start();return;}
