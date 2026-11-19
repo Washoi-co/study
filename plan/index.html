@@ -49,6 +49,10 @@ a.row{text-decoration:none;color:var(--ink)}
 .tst.done .stn{background:var(--ok)}
 .tst.done i{color:var(--ok)}
 .tmore{color:var(--mute);font-size:14px;font-weight:600}
+/* 期限のある人（体験・Gift）：あと何日＋本コース（2026-11-19 kimi「毎日あと何日って表示」「その横の本コースから無料コーチングの予約」）。期限は ap_until（体験は trial、Gift は名簿の contractEnd を sync.js が入れる） */
+.left{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:4px 0 20px;padding:14px 16px;border-radius:12px;background:var(--card)}
+.left b{font-family:var(--en);font-weight:900;font-size:24px;letter-spacing:-.01em}
+.left a{font-weight:800;text-decoration:none;color:var(--ink);white-space:nowrap}
 </style>
 </head>
 <body data-tab="home">
@@ -58,6 +62,10 @@ a.row{text-decoration:none;color:var(--ink)}
   <div class="nav"><span class="navl"><svg class="aplogo" viewBox="0 0 228.41 58.35" fill="currentColor" role="img" aria-label="A-PUSH"><use href="#aplogo"/></svg><span class="mini">今日</span></span></div>
   <p class="eyebrow" id="today-date"></p>
   <h1 class="large">今日</h1>
+  <div class="left" id="left" hidden><span id="left-n"></span><a href="/course/">本コース ›</a></div>
+  <script>(function(){try{var u=JSON.parse(localStorage.getItem("ap_until")||"null");if(!u||!(window.SITE||{}).login||(window.SITE||{}).org)return;   /* 本コース（study）だけ。団体（doboku）には本コースのページが無い */
+    var t=new Date(Date.now()+9*36e5).toISOString().slice(0,10),n=Math.round((Date.parse(u)-Date.parse(t))/864e5);if(n<0)return;
+    document.getElementById("left-n").innerHTML=n?"あと <b>"+n+"</b> 日":"<b>今日</b>まで";document.getElementById("left").hidden=false;}catch(e){}})();</script>
   <p class="sub" id="who" hidden></p>
   <p class="label">今日の分</p>
   <div id="tday"></div>

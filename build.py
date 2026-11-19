@@ -9,6 +9,7 @@
                      生徒ごとの鍵（管理アプリ tok）を作って、その生徒の keys[会員番号] にだけ入れる。
                      録音はどこにも送らない（2026-11-05 kimi。前は "url" に旧 Reviewing system の送り先があった。あっても読まない）
   students.json      生徒ごとのログイン [{"id": "STU005", "name": "T.Y", "pass": "パスワード", "track": "biz"}, ...]
+                     until：この日まで（Gift など）。過ぎてから build すると箱を作らない＝開けない。alias：前の番号（同じパスワードで開ける）
                      track：その生徒の専門（下の TRACKS のキー）。ONにすると話すも単語もその専門になる。無い生徒は普通の教材だけ
                      shadowing："business" ならシャドーイングは Business の動画だけ（無ければ General と Business の2つのタブ）
                      only：true なら全部その専門の仕様（話すは専門の章だけ・単語は General・Native＋専門だけ）。無ければ専門が1つ増えるだけ
@@ -127,6 +128,8 @@ def main():
     pk = open(pk_file).read().strip()
     keys = {}
     for st in students:
+        if st.get("until") and st["until"] < datetime.date.today().isoformat():   # 期限の過ぎた生徒（Gift は1か月。2026-11-19）は箱を作らない＝その次の build から開けない
+            continue
         salt, siv = os.urandom(16), os.urandom(12)
         kek = hashlib.pbkdf2_hmac("sha256", st["pass"].encode(), salt, 200_000, 32)
         sid = st["id"].upper()
@@ -146,6 +149,8 @@ def main():
             me["shadow"] = "business"
         inner = json.dumps(me, ensure_ascii=False).encode()
         keys[sid] = {"s": b64(salt), "i": b64(siv), "c": b64(AESGCM(kek).encrypt(siv, inner, None))}
+        for a in st.get("alias", []):   # 前の番号でも同じパスワードで開ける（番号を変えた生徒。kanri の sids/{前の番号}.to が今の番号へ回す。2026-11-19）
+            keys[a.upper()] = keys[sid]
     # 体験コード（2026-11-09 の名刺）：kanri の trial が 11/30 まで受け付け、入れた日から2週間だけ、この箱の pass を返す（functions/index.js と同じ式）。
     # 12/14 を過ぎて作り直すと箱が無くなる＝体験の端末は開けなくなる
     # DOBOKU（2026-11-18 kimi「ドボプロの子達全員に2週間、study と同じ範囲。単語は doboku 系統＋general＋各種試験」）：kanri の TRIALS の box。

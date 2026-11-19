@@ -154,6 +154,7 @@
     }).then(function (r) {
       var v = r.data;
       S.sid = v.sid; S.name = v.name; S.org = v.org; S.linked = uid; save();
+      if (v.until) try { localStorage.setItem("ap_until", JSON.stringify(v.until)); } catch (e) {}   /* 期限のある人（体験・Gift・団体）：計画の「あと何日」が読む（2026-11-19） */
       return v;
     });
   }
