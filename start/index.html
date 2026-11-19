@@ -50,7 +50,7 @@
     <div class="choices" id="role">
       <button class="ch" data-v="worker">社会人</button>
       <button class="ch" data-v="student">学生</button>
-      <button class="ch" data-v="founder">起業家・投資家</button>
+      <button class="ch" data-v="founder">会社役員・投資家</button>
     </div>
     <button class="primary" id="n0" disabled>次へ</button>
   </section>
@@ -89,7 +89,7 @@ function pick(id,key,after){
     [...$(id).children].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));A[key]=b.dataset.v;if(after)after();});
 }
 const ok1=()=>{$("n1").disabled=!(A.purpose&&(A.purpose!=="exam"||A.exam)&&$("why").value.trim());};
-/* あなたは？（2026-11-20 kimi）：社会人・学生・起業家/投資家。使い方のスライドがこれで変わる（ap_goals.role。この端末だけ） */
+/* あなたは？（2026-11-20 kimi）：社会人・学生・会社役員/投資家（11/20 起業家→会社役員）。使い方のスライドがこれで変わる（ap_goals.role。この端末だけ） */
 pick("role","role",()=>{$("n0").disabled=!A.role;});
 $("n0").onclick=()=>{$("q0").removeAttribute("data-on");$("q1").setAttribute("data-on","");scrollTo(0,0);};
 pick("purpose","purpose",()=>{$("exam").hidden=A.purpose!=="exam";ok1();});
