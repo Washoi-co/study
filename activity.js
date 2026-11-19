@@ -40,6 +40,11 @@ window.apWords = function (id) {
    生徒が同意した時だけ送る。kanri の config.js が未設定の間は何もしない。 */
 (function () {
   var S0 = window.SITE || {}, honka = !!S0.login;   /* ログインのあるサイト（本コース・団体の本コース版）：生徒IDは決まっている・/start/ へ・rec */
+  /* 無料版（training）：2週間が過ぎて study・doboku から来た人だけ（?from=study で印 ap_free）。はじめての人は study の2週間フルアクセスへ（2026-11-19 kimi）。
+     ponytail: 印は端末だけ＝URL に ?from=study を付ければ入れる。困ったら kanri に聞く形に */
+  if (S0.free) {
+    try { if (/[?&]from=study\b/.test(location.search)) localStorage.setItem("ap_free", "1"); if (!localStorage.getItem("ap_free")) { location.replace("https://study.apush.jp/"); return; } } catch (e) {}
+  }
   var o = { org: S0.org || (honka ? "honka" : "free"), site: S0.domain || location.hostname, to: "A-PUSHの講師" };   /* org：団体の本コース版は団体の名簿（doboku）。2026-11-18 */
   if (honka) {
     try {
