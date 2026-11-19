@@ -258,9 +258,9 @@ def still(title, path):
 
 
 def enc(i):
-    """縮める大きさと圧縮の設定。大きすぎる本は LESSONS に height=540 / crf=30〜32 を入れる（GitHub Pages 用に1本45MB未満）"""
+    """（2026-11-19：-level 4.0 を必ず付ける。無いと間詰めの concat で High@6.2 になり、iPhone で再生されなかった）縮める大きさと圧縮の設定。大きすぎる本は LESSONS に height=540 / crf=30〜32 を入れる（GitHub Pages 用に1本45MB未満）"""
     L = LESSONS.get(i, {})
-    return f"scale=-2:{L.get('height', 720)}", ["-c:v", "libx264", "-crf", str(L.get("crf", 28)), "-preset", "slow", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart"]
+    return f"scale=-2:{L.get('height', 720)}", ["-c:v", "libx264", "-crf", str(L.get("crf", 28)), "-preset", "slow", "-profile:v", "high", "-level:v", "4.0", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart"]
 
 
 # 話していない間（音楽だけ・無音）を詰める（2026-11-17 kimi）。GAP_MAX 秒より長い間は、前の声の後 GAP_AFTER＋次の声の前 GAP_BEFORE＝0.6 秒だけ残す

@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import make  # noqa: E402
 
 SRC, MEDIA = make.SRC, make.MEDIA
-PICK = [p for f in ("business_pick.json", "tech_pick.json", "health_pick.json") if (SRC / f).exists() for p in json.load(open(SRC / f))]
+PICK = [p for f in ["business_pick.json", "tech_pick.json"] + sorted(x.name for x in SRC.glob("health_pick*.json")) if (SRC / f).exists() for p in json.load(open(SRC / f))]  # Health は health_pick_a.json など、分けて書いてよい
 BY = {p["id"]: p for p in PICK}
 CREDIT = {"B": "Clip: Startup Dad podcast with Adam Fishman (youtube.com/@StartupDadPod) — used with permission",
           "T": "Clip: Code Story podcast with Noah Labhart (codestory.co) — used with permission",
@@ -89,7 +89,7 @@ def build(i):
     a = max(times[0][0] - 0.3, 0); b = times[-1][1] + 0.5   # 最初の行の直前から（イントロ・前置きは切る）
     assert b - a <= 330, f"{i}: {b - a:.0f}秒（5分を超えた。plan の行を減らす）"
     c = i[0]
-    lesson = dict(id=i, cat=CAT[c], level=None, speaker=p.get("speaker"), role=p.get("role"), title=p["title"],
+    lesson = dict(id=i, cat=CAT[c], level=None, speaker=p.get("speaker"), role=p.get("role"), title=P.get("title") or p["title"],
                   title_ja=P.get("title_ja"), episode=p.get("episode"),
                   source=SOURCE[c], source_url=p.get("page") or p["url"], video=f"media/{i}.mp4", audio_only=None,
                   subs_en=f"subs/{i}.en.vtt", subs_ja=None, clip_start=round(a, 2), clip_end=round(b, 2),
