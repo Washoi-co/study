@@ -38,6 +38,7 @@
 .lock input#sid{font-family:var(--en);font-weight:700;letter-spacing:.06em}
 .err{color:var(--ng);font-size:13px;min-height:1.2em;margin:0}
 .lock .primary{flex:none}
+.lock p.sec{margin:20px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:15px;font-weight:800;color:var(--ink)}   /* 本コースの生徒の方（コードの下。2026-11-19） */
 
 /* 章を選ぶ */
 .chrow{display:flex;gap:8px;align-items:center}
@@ -98,14 +99,17 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
 
   <form class="lock" id="lock">
     <h2 class="g-h">A-PUSH Study</h2>   <!-- study は Study（2026-11-19 kimi「Studyの入りなのに training」）。団体（doboku）は今まで通り -->
-    <a class="ghost" id="free-go" href="https://line.me/R/oaMessage/@431enzow/?%E7%84%A1%E6%96%99%E3%83%84%E3%83%BC%E3%83%AB" target="_blank" rel="noopener" style="display:block;text-align:center;text-decoration:none">2週間フルアクセスを公式LINEで受け取る</a>   <!-- 2026-11-19 kimi「LINEへ回す」：公式LINE に「無料ツール」と送る画面を開く → その人だけの TRY- のコードとボタンが届く（前は押すだけで始まった） -->
-    <p>生徒用の練習ページです。先生から届いた会員番号とパスワードを入れてください。STEP 1 の録音はどこにも送りません。STEP 2・3 は添削のため声を送ります（文字にするためだけに使い、保存しません）。名前は送りません（ログインの印は元に戻せない形にして、今月の利用分を数えるだけに使います）。</p>
+    <!-- 並び（2026-11-19 kimi「ログイン画面は pr code、その下に本生徒向けのログイン」）：Gift・2週間はコードだけで入る -->
+    <label>プロモーションコード<input id="tcode" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="コード" enterkeyhint="go"></label>
+    <p class="err" id="code-err" role="alert"></p>
+    <button class="primary" type="button" id="trial-go">コードではじめる</button>
+    <a class="ghost" id="free-go" href="https://line.me/R/oaMessage/@431enzow/?%E7%84%A1%E6%96%99%E3%83%84%E3%83%BC%E3%83%AB" target="_blank" rel="noopener" style="display:block;text-align:center;text-decoration:none">コードを公式LINEで受け取る</a>   <!-- 公式LINE に「無料ツール」と送る画面 → その人だけの TRY- のコードとボタン -->
+    <p class="sec">本コースの生徒の方</p>
+    <p>先生から届いた会員番号とパスワードを入れてください。STEP 1 の録音はどこにも送りません。STEP 2・3 は添削のため声を送ります（文字にするためだけに使い、保存しません）。名前は送りません（ログインの印は元に戻せない形にして、今月の利用分を数えるだけに使います）。</p>
     <label>会員番号（例: STU005）<input id="sid" autocomplete="username" autocapitalize="characters" spellcheck="false" required></label>
     <label>パスワード<input id="pass" type="password" autocomplete="current-password" required></label>
     <p class="err" id="lock-err" role="alert"></p>
-    <button class="primary" type="submit" id="lock-go">はじめる</button>
-    <label>プロモーションコードをお持ちの方<input id="tcode" autocomplete="off" spellcheck="false" placeholder="コード"></label>
-    <button class="ghost" type="button" id="trial-go">コードではじめる</button>
+    <button class="ghost" type="submit" id="lock-go">ログイン</button>
   </form>
 
 
@@ -296,7 +300,7 @@ const toFree=()=>{store.set("tcode",null);store.set("pk",null);store.set("until"
 const devId=()=>{let d=store.get("dev",null);if(!d){d=crypto.randomUUID();store.set("dev",d);}return d;};
 async function trialOpen(code){
   const r=(await apCall("trial",{code,dev:devId()})).data;
-  store.set("sid",r.sid);store.set("until",r.until||null);   /* until：期限。activity.js が他のページでも見る（過ぎたらトップへ＝ここで kanri に聞き直す。2026-11-19） 体験の生徒番号。activity.js が初回の計画→レベルチェックへ流すのに使う（2026-11-17） */
+  store.set("sid",r.sid);store.set("until",r.until||null);store.set("pass",null);   /* pass：コードで入ったら、前に本生徒で入った時のパスワードは忘れる（2026-11-19） */   /* until：期限。activity.js が他のページでも見る（過ぎたらトップへ＝ここで kanri に聞き直す。2026-11-19） 体験の生徒番号。activity.js が初回の計画→レベルチェックへ流すのに使う（2026-11-17） */
   return unlock(r.box||"TRIAL",r.pass,{sid:r.sid,tok:r.tok});   /* 箱は kanri が決める（ドボプロ＝DOBOKU：土木の単語帳・章つき。2026-11-18） */
 }
 /* サイト内のプロモーションコード：同じ trial に聞く。体験の人は期間が延びる（kanri が長い方を取る）。本生徒は「会員番号とパスワードで」と返る */
@@ -308,11 +312,12 @@ $("promo-go").addEventListener("click",async()=>{
   $("promo-go").disabled=false;
 });
 /* 2週間フルアクセスは公式LINE で受け取る（2026-11-19 kimi「LINEへ回す」）。前の「押すだけで始まる」は消した（kanri の「2週間」は、もう始めた人の続きだけ受け付ける） */
+$("tcode").addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.isComposing){e.preventDefault();$("trial-go").click();}});   /* コード欄の Enter はコードで（下の本生徒のログインを動かさない） */
 $("trial-go").addEventListener("click",async()=>{
   const code=$("tcode").value.trim();if(!code){$("tcode").focus();return;}
-  $("trial-go").disabled=true;$("lock-err").textContent="";
+  $("trial-go").disabled=true;$("code-err").textContent="";
   try{DATA=await trialOpen(code);store.set("tcode",code);start();}
-  catch(err){$("lock-err").textContent=trialMsg(err);}
+  catch(err){if(expired(err)){toFree();return;}$("code-err").textContent=trialMsg(err);}
   $("trial-go").disabled=false;
 });
 (async()=>{
@@ -325,13 +330,13 @@ $("trial-go").addEventListener("click",async()=>{
   const qc=(new URLSearchParams(location.search).get("code")||"").trim().slice(0,40);
   if(qc){history.replaceState(null,"",location.pathname);
     try{DATA=await trialOpen(qc);store.set("tcode",qc);start();return;}
-    catch(e){if(expired(e)){toFree();return;}$("tcode").value=qc;$("lock-err").textContent=trialMsg(e);$("tcode").scrollIntoView({block:"center"});return;}}
+    catch(e){if(expired(e)){toFree();return;}$("tcode").value=qc;$("code-err").textContent=trialMsg(e);$("tcode").scrollIntoView({block:"center"});return;}}
   const tc=store.get("tcode",null);
   if(tc&&!u){
     try{DATA=await trialOpen(tc);start();return;}
-    catch(e){if(expired(e)){toFree();return;}$("lock-err").textContent=trialMsg(e);if(/permission-denied|failed-precondition/.test(e&&e.code||"")){store.set("tcode",null);store.set("pk",null);}}   /* 期限切れ：無料版へ。それ以外の拒否：模擬テストの鍵も消す */
+    catch(e){if(expired(e)){toFree();return;}$("code-err").textContent=trialMsg(e);if(/permission-denied|failed-precondition/.test(e&&e.code||"")){store.set("tcode",null);store.set("pk",null);}}   /* 期限切れ：無料版へ。それ以外の拒否：模擬テストの鍵も消す */
   }
-  ($("sid").value?$("pass"):$("sid")).focus();
+  ($("sid").value?$("pass"):$("tcode")).focus();   /* はじめはコード（本生徒は会員番号が残っていればパスワードへ） */
 })();
 
 
