@@ -98,7 +98,7 @@ img.pic{display:block;max-width:100%;max-height:18vh;margin:0 auto;padding:0;bor
 
   <form class="lock" id="lock">
     <h2 class="g-h">A-PUSH Study</h2>   <!-- study は Study（2026-11-19 kimi「Studyの入りなのに training」）。団体（doboku）は今まで通り -->
-    <button class="ghost" type="button" id="free-go">2週間フルアクセスではじめる</button>   <!-- 2026-11-18 kimi：誰でも開いて押すだけ。最初の2週間は有料版・過ぎたら無料版へ・端末で1回 -->
+    <a class="ghost" id="free-go" href="https://line.me/R/oaMessage/@431enzow/?%E7%84%A1%E6%96%99%E3%83%84%E3%83%BC%E3%83%AB" target="_blank" rel="noopener" style="display:block;text-align:center;text-decoration:none">2週間フルアクセスを公式LINEで受け取る</a>   <!-- 2026-11-19 kimi「LINEへ回す」：公式LINE に「無料ツール」と送る画面を開く → その人だけの TRY- のコードとボタンが届く（前は押すだけで始まった） -->
     <p>生徒用の練習ページです。先生から届いた会員番号とパスワードを入れてください。STEP 1 の録音はどこにも送りません。STEP 2・3 は添削のため声を送ります（文字にするためだけに使い、保存しません）。名前は送りません（ログインの印は元に戻せない形にして、今月の利用分を数えるだけに使います）。</p>
     <label>会員番号（例: STU005）<input id="sid" autocomplete="username" autocapitalize="characters" spellcheck="false" required></label>
     <label>パスワード<input id="pass" type="password" autocomplete="current-password" required></label>
@@ -307,17 +307,7 @@ $("promo-go").addEventListener("click",async()=>{
   catch(err){$("promo-msg").textContent=trialMsg(err);}
   $("promo-go").disabled=false;
 });
-/* 2週間フルアクセス（2026-11-17 kimi「無料アプリをやめて、2週間限定でログインできるフルアクセスのアカウントに」）：コード「2週間」を kanri に送る。同じ端末は1回だけ（期限が来たらここで「終わりました」） */
-$("free-go").addEventListener("click",async()=>{
-  $("free-go").disabled=true;$("lock-err").textContent="";
-  let code="2週間";
-  try{
-    try{DATA=await trialOpen(code);}
-    catch(e){if(!/not-found/.test(e&&e.code||""))throw e;code="apush英語は気合と根性";DATA=await trialOpen(code);}   /* ponytail: kanri に「2週間」がまだ無い間は 11/9 のコード（11/30 まで）。deploy 後に消す */
-    store.set("tcode",code);start();
-  }catch(err){if(expired(err)){toFree();return;}$("lock-err").textContent=trialMsg(err);}
-  $("free-go").disabled=false;
-});
+/* 2週間フルアクセスは公式LINE で受け取る（2026-11-19 kimi「LINEへ回す」）。前の「押すだけで始まる」は消した（kanri の「2週間」は、もう始めた人の続きだけ受け付ける） */
 $("trial-go").addEventListener("click",async()=>{
   const code=$("tcode").value.trim();if(!code){$("tcode").focus();return;}
   $("trial-go").disabled=true;$("lock-err").textContent="";
