@@ -289,13 +289,14 @@ $("lock").addEventListener("submit",async e=>{
 /* 体験コード（2026-11-09 の名刺・ドボプロ 12/2 まで）：kanri の trial に聞いて、期間のあいだだけ体験の箱（TRIAL か DOBOKU）で開ける。開くたびに聞く＝期限はサーバーが守る */
 const trialMsg=e=>/^functions\/(not-found|permission-denied|failed-precondition|resource-exhausted)$/.test(e&&e.code||"")?e.message:"つながりませんでした。もう一度押してください。";
 /* 端末の印（2026-11-17 kimi「同じ端末では1回だけ」）：最初に作った乱数を localStorage に置き、trial に毎回送る。uid を作り直しても同じ体験の生徒に戻る（kanri が見る） */
-/* 2週間が過ぎたら無料版へ（2026-11-18 kimi「2週間過ぎたタイミングで無料版に切り替わる」）：kanri の「終わりました」を受けたら training へ */
+/* 2週間が過ぎたら（2026-11-19 kimi「2週間切れるとほとんど全てにアクセス制限」。11/18 の「無料版に切り替わる」はやめた＝無料版はもう無い）：kanri の「終わりました」を受けたら、終わりの画面と LINE だけ */
 const expired=e=>/permission-denied/.test(e&&e.code||"")&&/終わりました/.test(e&&e.message||"");
-const toFree=()=>{store.set("tcode",null);store.set("pk",null);location.replace("https://training.apush.jp/?from=study");};
+const toFree=()=>{store.set("tcode",null);store.set("pk",null);store.set("until",null);$("app").hidden=true;$("lock").hidden=false;
+  $("lock").innerHTML='<h2 class="g-h">A-PUSH Training</h2><p>2週間の体験は終わりました。続ける時は LINE でご相談ください。</p><a class="primary" href="https://line.me/R/oaMessage/@431enzow/?%E4%BA%88%E7%B4%84" target="_blank" rel="noopener">LINE で相談する</a>';};
 const devId=()=>{let d=store.get("dev",null);if(!d){d=crypto.randomUUID();store.set("dev",d);}return d;};
 async function trialOpen(code){
   const r=(await apCall("trial",{code,dev:devId()})).data;
-  store.set("sid",r.sid);   /* 体験の生徒番号。activity.js が初回の計画→レベルチェックへ流すのに使う（2026-11-17） */
+  store.set("sid",r.sid);store.set("until",r.until||null);   /* until：期限。activity.js が他のページでも見る（過ぎたらトップへ＝ここで kanri に聞き直す。2026-11-19） 体験の生徒番号。activity.js が初回の計画→レベルチェックへ流すのに使う（2026-11-17） */
   return unlock(r.box||"TRIAL",r.pass,{sid:r.sid,tok:r.tok});   /* 箱は kanri が決める（ドボプロ＝DOBOKU：土木の単語帳・章つき。2026-11-18） */
 }
 /* サイト内のプロモーションコード：同じ trial に聞く。体験の人は期間が延びる（kanri が長い方を取る）。本生徒は「会員番号とパスワードで」と返る */

@@ -48,6 +48,9 @@ window.apWords = function (id) {
       /* 自分の計画（2026-11-17 kimi）：入っていて、まだ「なぜ」を答えていない人は、どのページを開いても /start/ へ（半強制。生徒に考えさせない） */
       var g0 = JSON.parse(localStorage.getItem("ap_goals") || "{}");
       var inok = !!JSON.parse(localStorage.getItem("ap_pass") || "null") || !!JSON.parse(localStorage.getItem("ap_tcode") || "null");   /* ログアウト中は飛ばさない（/start/ のログインの守りと往復しないように）。体験コード（training の full access）の人も初回は通す（2026-11-17 kimi） */
+      /* 体験・団体の期限（2026-11-19 kimi「2週間切れるとほとんど全てにアクセス制限」）：過ぎていたらトップへ＝トップが kanri に聞き直し、終わりの画面を出す */
+      var un = JSON.parse(localStorage.getItem("ap_until") || "null"), d0 = new Date(), p0 = function (x) { return (x < 10 ? "0" : "") + x; };
+      if (un && JSON.parse(localStorage.getItem("ap_tcode") || "null") && un < d0.getFullYear() + "-" + p0(d0.getMonth() + 1) + "-" + p0(d0.getDate()) && location.pathname !== "/") { location.replace("/"); return; }
       if (sid && nm && inok && !g0.why && !/^\/(start\/|words\/check)/.test(location.pathname)) location.replace("/start/");
     } catch (e) {}
   }
