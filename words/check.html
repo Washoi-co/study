@@ -32,6 +32,7 @@
 .lv .y{color:var(--ok);font-weight:700}.lv .n{color:var(--ng);font-weight:700}.lv .s{color:var(--mute)}
 .acts a{text-align:center;text-decoration:none}
 .foot{font-size:12px;color:var(--mute);line-height:1.7;margin:4px 2px 0}
+.notabs .tabbar{display:none!important}   /* はじめのレベルテスト（?full=1）の間は下のタブを出さない（2026-11-19） */
 </style>
 <script src="/say.js"></script><script src="/lock.js"></script>
 </head>
@@ -173,12 +174,15 @@ $("r-again").onclick=()=>{$("v-res").hidden=true;$("v-pick").hidden=false;};
    帳を易しい順に1冊ずつ（中学2年→…→高校発展→目的の帳→ビジネス→試験→専門）。1冊 20問（中学・高校）／8問（それ以外）。
    「もう8割に届かない」と分かった瞬間にそこで終了。その帳が毎日の単語の開始（こちらが決めて出す・選ばせない）。
    できる人はどこまでも進む（ビジネスの先の試験・専門の帳も出す）。正答率×帳の語数で「推定の語数」。
-   帳ごと・10問ごとに端末に保存＝途中で閉じても続きから。STU005・STU009 だけ、終わりに Versant の質問。結果は端末（ap_levelcheck・ap_path・ap_vocab）と名簿（vocab）へ。 */
+   帳ごと・10問ごとに端末に保存＝途中で閉じても続きから。
+   2026-11-19 kimi「各レベル3問間違えたら、そのレベルで決定＆5問正解ごとに次のレベルに進む」「より簡略化」：1冊は 5問正解で次へ・3問まちがえ（「わからない」も）でそこが開始。
+   説明と帳ごとの表は出さない。テストの間は下のタブも出さない。STU005・STU009 だけ、終わりに Versant の質問。結果は端末（ap_levelcheck・ap_path・ap_vocab）と名簿（vocab）へ。 */
 (function(){
 if(new URLSearchParams(location.search).get("full")!=="1")return;
 const get=(k,d)=>{try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v);}catch(e){return d;}},put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}};
 const G=get("ap_goals",{}),TR=get("ap_track",null),SID=String(get("ap_sid","")||"").toUpperCase();
-const purpose=G.purpose||"general",PASS=.8,PER=20,PER_X=8;
+const purpose=G.purpose||"general",UP=5,DOWN=3;   // 5問正解で次の帳・3問まちがえでこの帳に決まる（2026-11-19）
+document.documentElement.classList.add("notabs");
 const GEN=["gen2","gen3","gen4","high1","high2"];   // 高校難関（high3）は出さない（2026-11-17 kimi「難しすぎる」）
 const EXAMS={toeic:["toeic700","toeic800","toeic900","toeic950"],ielts:["ielts55","ielts60","ielts65","ielts70","ielts75","ielts80","ielts85"],toefl:["toefl60","toefl70","toefl80","toefl90","toefl100","toefl110"],eiken:["eikenp2","eiken2","eikenp1","eiken1"]};
 const ids=g=>APW_COURSES.filter(c=>c.g===g).map(c=>c.id);
@@ -187,17 +191,17 @@ const uniq=a=>a.filter((id,i)=>a.indexOf(id)===i&&APW_COURSES.some(c=>c.id===id)
 const PATH=uniq(GEN.concat(tail));   // 目的の順番（毎日の単語はこの順）
 const REST=uniq(ids("Business").concat(EXAMS.toefl,EXAMS.ielts,EXAMS.toeic,EXAMS.eiken,APW_COURSES.filter(c=>["General","Native","Business","TOEIC","IELTS","TOEFL iBT","英検®"].indexOf(c.g)<0).map(c=>c.id))).filter(id=>PATH.indexOf(id)<0);   // できる人はこの先も（スラングは出さない）
 const SEQ=PATH.concat(REST);
-const per=id=>GEN.indexOf(id)>=0?PER:PER_X;
 const title=id=>{const c=APW_COURSES.filter(x=>x.id===id)[0];return c?(c.g==="General"?"":c.g+" ")+c.t:id;};
 document.querySelector("h1.large").textContent="単語のレベルテスト";
-document.querySelector("p.sub").textContent="易しい帳から順に。できなくなった所で終わります。知らない単語は「わからない」。途中で閉じても、続きからできます。";
+document.querySelector("p.sub").textContent="知らない単語は「わからない」。";
+document.querySelector(".foot").hidden=true;
 $("v-pick").hidden=true;$("to-words").hidden=true;$("r-again").hidden=true;
-let V=get("ap_vtest",null);if(V&&!V.seq)V=null;   // 古い形（全部まとめて出す版）は作り直す
+let V=get("ap_vtest",null);if(V&&V.seq!==2)V=null;   // 前の形（1冊20問・8割の版など）は作り直す
 async function deck(){   // 今の帳（SEQ[V.di]）の問題を作る。読めない帳は飛ばす。もう無ければ false
   while(V.di<SEQ.length){
     const id=SEQ[V.di];let C=null;try{C=await load(id);}catch(e){}
     if(C&&C.words&&C.words.length>=5){
-      const W=C.words,n=Math.min(per(id),W.length);V.size[id]=W.length;
+      const W=C.words,n=Math.min(UP+DOWN-1,W.length);V.size[id]=W.length;   // 1冊は多くて7問（5問正解か3問まちがえで終わる）
       V.qs=shuffle(W.map((_,i)=>i)).slice(0,n).map(wi=>{const right=W[wi][1][0][0],others=shuffle(W.filter((_,i)=>i!==wi).map(w=>w[1][0][0]).filter(m=>m!==right)).slice(0,3);return {en:W[wi][0],right,opts:shuffle([right,...others])};});
       V.i=0;put("ap_vtest",V);return true;
     }
@@ -207,7 +211,7 @@ async function deck(){   // 今の帳（SEQ[V.di]）の問題を作る。読め�
 }
 function ask(){
   const q=V.qs[V.i];
-  $("q-level").textContent=title(SEQ[V.di]);$("q-count").textContent=(V.i+1)+" / "+V.qs.length;
+  $("q-level").textContent=title(SEQ[V.di]);$("q-count").textContent="";
   $("q-word").textContent=q.en;speak(q.en);
   $("q-choices").innerHTML=q.opts.map((o,n)=>'<button class="ch"><span class="k">'+(n+1)+'</span><span>'+o.replace(/[&<>]/g,"")+'</span></button>').join("")+'<button class="ch idk" data-idk="1">わからない</button>';
   window.scrollTo(0,0);
@@ -224,9 +228,10 @@ $("q-choices").onclick=e=>{
   if(!b.dataset.idk&&b.lastElementChild.textContent===q.right.replace(/[&<>]/g,""))V.right[id]=(V.right[id]||0)+1;
   V.i++;
   if(V.i%10===0)put("ap_vtest",V);   // 10問ごとに保存（続きから）
-  if(V.asked[id]-(V.right[id]||0)>V.qs.length*(1-PASS)+1e-9){finish();return;}   // もう8割に届かない：ここで終わり（この帳が開始）
-  if(V.i<V.qs.length){ask();return;}
-  V.di++;next();   // 8割を超えた：次の帳へ
+  const ok=V.right[id]||0,ng=V.asked[id]-ok;
+  if(ng>=DOWN){V.stop=id;finish();return;}   // 3問まちがえ：この帳に決まり（ここが開始）
+  if(ok>=UP||V.i>=V.qs.length){V.di++;next();return;}   // 5問正解：次の帳へ（語数が少なく7問に届かない帳も次へ）
+  ask();
 };
 $("v-vs").onclick=e=>{const b=e.target.closest("[data-vs]");if(!b)return;$("v-vs").hidden=true;result(b.dataset.vs==="1");};
 function result(versant){
@@ -236,12 +241,12 @@ function result(versant){
   tested.forEach(id=>{est+=Math.round(sc[id]*(V.size[id]||0));});est=Math.round(est/100)*100;
   const last=Math.max(PATH.length,tested.length?SEQ.indexOf(tested[tested.length-1])+1:0);
   const path=SEQ.slice(0,last).filter(id=>V.skip.indexOf(id)<0);   // 目的の順番＋進めた分
-  const start=tested.filter(id=>sc[id]<PASS)[0]||path[path.length-1];
+  const start=V.stop||path[path.length-1];   // 3問まちがえた帳。最後まで進んだ人は一番先の帳
   const per=+G.words||20;
   document.querySelector("#v-res .say").textContent="あなたの単語力";
   $("r-course").textContent="推定 約"+est.toLocaleString()+"語";
   $("r-msg").textContent="毎日の単語は「"+title(start)+"」の最初から、1日 "+per+"語ずつ進めます。順番はこちらで決めてあります。";
-  $("r-levels").innerHTML=tested.map(id=>'<div><span>'+title(id)+'</span><span class="'+(sc[id]>=PASS?"y":"s")+'">'+Math.round(sc[id]*100)+'%</span></div>').join("");   // 赤は使わない（80%未満は灰色）
+  $("r-levels").innerHTML="";   // 帳ごとの表は出さない（2026-11-19「より簡略化」）
   $("r-start").href="./?c="+start;$("r-start").textContent="単語を始める";
   const v={scores:sc,est,start,path,at:V.date};if(versant!==null)v.versant=versant;
   put("ap_levelcheck",{g:"General",id:start,scores:[],date:V.date});put("ap_path",path);put("ap_vocab",v);
@@ -251,7 +256,7 @@ function result(versant){
 }
 (async function(){
   if(V&&V.done){finish();return;}   // 全部答えた後（Versant の画面で閉じた等）：作り直さず結果へ
-  if(!V){V={seq:1,di:0,qs:[],i:0,right:{},asked:{},size:{},skip:[],date:new Date().toLocaleDateString("sv")};}
+  if(!V){V={seq:2,di:0,qs:[],i:0,right:{},asked:{},size:{},skip:[],date:new Date().toLocaleDateString("sv")};}
   if(V.qs&&V.qs.length&&V.i<V.qs.length){$("v-q").hidden=false;ask();return;}   // 途中から
   if(V.qs&&V.qs.length)V.di++;   // 帳の最後まで答えてから閉じた：次の帳から
   if(!(await deck())){if(Object.keys(V.asked).length){finish();}else location.replace("./");return;}   // 帳が1つも読めない：単語のページへ（止まらない）

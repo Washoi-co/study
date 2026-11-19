@@ -20,10 +20,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
 <link rel="stylesheet" href="/ui.css">
 <style>
-/* 自分の計画（2026-11-17 kimi）。本コースの生徒が、次に開いた時に必ず通る3つの質問（なぜ・1日何語・1日どのくらい いつ）。
-   1画面に1つ（空白の美学）。答えは ap_goals に入り、計画のページと同じ流れで名簿の plan に届く。終わったら単語のレベルテスト（100問）へ。 */
+/* 自分の計画（2026-11-17 kimi）。はじめて開いた時に必ず通る。
+   2026-11-19 kimi「質問の内容も、なぜ英語をやるのか、テストだけ」：質問は「なぜ」の1つだけ（1日の語数・時間・いつは、前の値か 20語・30分・21:00）。
+   答えは ap_goals に入り、計画のページと同じ流れで名簿の plan に届く。終わったら単語のレベルテストへ。
+   最初の質問とテストの間は、下のタブを出さない（2026-11-19 kimi。押しても /start/ に戻されて「動かない」に見えた） */
+.tabbar{display:none!important}
 .q{display:none}.q[data-on]{display:block}
-.pips{display:flex;gap:6px;margin:0 0 18px}.pips i{width:22px;height:4px;border-radius:2px;background:var(--line2)}.pips i.on{background:var(--ink)}
 .qh{margin:0 0 6px;font-size:clamp(26px,7vw,34px);font-weight:900;letter-spacing:-.02em;line-height:1.25;color:var(--ink)}
 .choices{margin-top:14px}
 .ch{font-family:inherit;font-weight:700;justify-content:space-between}
@@ -41,7 +43,6 @@
 
 <main class="screen">
   <div class="nav"><span class="navl"><svg class="aplogo" viewBox="0 0 228.41 58.35" fill="currentColor" role="img" aria-label="A-PUSH"><use href="#aplogo"/></svg><span class="mini">計画</span></span></div>
-  <div class="pips" id="pips"><i class="on"></i><i></i><i></i></div>
 
   <section class="q" data-on id="q1">
     <h1 class="qh">なぜ、英語を学びますか？</h1>
@@ -59,33 +60,9 @@
       <button class="ch" data-v="eiken">英検®</button>
     </div>
     <textarea class="goaltext" id="why" maxlength="200" placeholder="一言で。例：海外の取引先と自分の言葉で話したい"></textarea>
-    <button class="primary" id="n1" disabled>次へ</button>
+    <button class="primary" id="n1" disabled>テストへ進む</button>
   </section>
 
-  <section class="q" id="q2">
-    <h1 class="qh">1日に何語、覚えられますか？</h1>
-    <p class="sub">少なくていいので、毎日できる数を。</p>
-    <div class="choices" id="words">
-      <button class="ch" data-v="10">10語</button>
-      <button class="ch" data-v="20">20語</button>
-      <button class="ch" data-v="30">30語</button>
-      <button class="ch" data-v="50">50語</button>
-    </div>
-    <button class="primary" id="n2" disabled>次へ</button>
-  </section>
-
-  <section class="q" id="q3">
-    <h1 class="qh">1日どのくらい、いつできますか？</h1>
-    <p class="sub">その時間に、公式LINEで今日のPUSHを送ります。</p>
-    <div class="choices" id="hours">
-      <button class="ch" data-v="0.25">15分</button>
-      <button class="ch" data-v="0.5">30分</button>
-      <button class="ch" data-v="1">1時間</button>
-      <button class="ch" data-v="2">2時間</button>
-    </div>
-    <label class="fld" for="at">いつ<input type="time" id="at" value="21:00" step="1800"></label>
-    <button class="primary" id="n3" disabled>この計画で進む</button>
-  </section>
 </main>
 <script src="/activity.js"></script>
 <script>
@@ -93,7 +70,7 @@ const $=id=>document.getElementById(id);
 const get=(k,d)=>{try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v);}catch(e){return d;}};
 const put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}};
 const G=Object.assign({},get("ap_goals",{}));
-const A={purpose:G.purpose||"",exam:G.target||"",words:0,hours:0};
+const A={purpose:G.purpose||"",exam:G.target||""};
 /* 専門（土木など）の生徒だけ、4つ目の選択肢 */
 (function(){const tr=get("ap_track",null);if(tr&&tr.words){$("p-special").hidden=false;$("p-track").textContent=tr.label||tr.words;}})();
 function pick(id,key,after){
@@ -104,18 +81,12 @@ const ok1=()=>{$("n1").disabled=!(A.purpose&&(A.purpose!=="exam"||A.exam)&&$("wh
 pick("purpose","purpose",()=>{$("exam").hidden=A.purpose!=="exam";ok1();});
 pick("exam","exam",ok1);
 $("why").addEventListener("input",ok1);
-pick("words","words",()=>{$("n2").disabled=false;});
-pick("hours","hours",()=>{$("n3").disabled=false;});
-let step=1;
-const show=n=>{step=n;[1,2,3].forEach(i=>{const q=$("q"+i);if(n===i)q.setAttribute("data-on","");else q.removeAttribute("data-on");});[...$("pips").children].forEach((p,i)=>p.classList.toggle("on",i<n));window.scrollTo(0,0);};
-$("n1").onclick=()=>show(2);
-$("n2").onclick=()=>show(3);
 /* 「いつ」は30分きざみ（LINE の今日のPUSHが 0分・30分に走る） */
 const half=t=>{const [h,m]=String(t||"21:00").split(":").map(Number);const mm=m<15?0:m<45?30:0,hh=m<45?h:(h+1)%24;return (hh<10?"0":"")+hh+":"+(mm?"30":"00");};
-$("n3").onclick=()=>{
+$("n1").onclick=()=>{
   const TODAY=new Date().toLocaleDateString("sv");
   const why=$("why").value.trim().slice(0,200);
-  Object.assign(G,{purpose:A.purpose,target:A.purpose==="exam"?A.exam:"",why,words:+A.words,hours:+A.hours,at:half($("at").value)});   /* exam は計画のページの「1日のテスト回数」なので、試験名は target */
+  Object.assign(G,{purpose:A.purpose,target:A.purpose==="exam"?A.exam:"",why,words:+G.words||20,hours:+G.hours||.5,at:half(G.at||"21:00")});   /* 語数・時間・いつは聞かない（前の値か 20語・30分・21:00。計画のページで変えられる） */   /* exam は計画のページの「1日のテスト回数」なので、試験名は target */
   if(!G.m3Text)G.m3Text=why;   /* 3か月のゴールが空なら、この一言を入れる（進捗の LINE・先生の画面が読む） */
   if(!G.m3Start)G.m3Start=TODAY;
   const h=(G.hist||[]).filter(x=>x.from!==TODAY);h.push({from:TODAY,words:G.words,shadow:G.shadow||1,exam:+G.exam||0});G.hist=h;
