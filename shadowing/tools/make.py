@@ -362,11 +362,11 @@ def collect(_=None):
     """sources/*_lesson.json から data/lessons.json をまとめ直す（サムネイルを足した時も、python3 tools/make.py collect）"""
     f = DATA / "lessons.json"  # 並列で走らせても、最後に終わったものが全部をまとめる
     db = json.load(open(f)) if f.exists() else {"links": LINKS, "lessons": []}
-    ls = [json.load(open(x)) for k in "LBT" for x in SRC.glob(f"{k}*_lesson.json")]  # B＝Business・T＝Tech（biz.py・2026-11-18）は General の後
+    ls = [json.load(open(x)) for k in "LBTH" for x in SRC.glob(f"{k}*_lesson.json")]  # B＝Business・T＝Tech（biz.py・2026-11-18）は General の後
     for l in ls:  # サムネイル（tools/thumb.py が thumbs/{id}.jpg を作る）
         if (ROOT / "thumbs" / f"{l['id']}.jpg").exists():
             l["thumb"] = f"thumbs/{l['id']}.jpg"
-    db["lessons"] = sorted(ls, key=lambda l: ("LBT".index(l["id"][0]), *map(int, re.findall(r"\d+", l["id"]))))  # L1-2 の後に L1-10
+    db["lessons"] = sorted(ls, key=lambda l: ("LBTH".index(l["id"][0]), *map(int, re.findall(r"\d+", l["id"]))))  # L1-2 の後に L1-10
     f.write_text(json.dumps(db, ensure_ascii=False, indent=1))
 
 

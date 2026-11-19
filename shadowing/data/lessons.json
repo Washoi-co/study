@@ -39959,6 +39959,1460 @@
     }
    ],
    "thumb": "thumbs/T10-2.jpg"
+  },
+  {
+   "id": "H1-1",
+   "cat": "health",
+   "level": null,
+   "speaker": "Marie-Pierre St-Onge",
+   "role": "Associate Professor of Nutritional Medicine, Columbia University",
+   "title": "Can Food Change Your Sleep?",
+   "title_ja": "食べた物で眠りは変わる？",
+   "episode": "#552: Diet & Sleep Interactions – Marie-Pierre St. Onge, PhD",
+   "source": "sigmanutrition",
+   "source_url": "https://sigmanutrition.com/episode552/",
+   "video": "media/H1-1.mp4",
+   "audio_only": null,
+   "subs_en": "subs/H1-1.en.vtt",
+   "subs_ja": null,
+   "clip_start": 1035.89,
+   "clip_end": 1253.77,
+   "cover_height": 0,
+   "vertical": false,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "reach out to",
+     "ja": "（相手に）連絡してくる"
+    },
+    {
+     "en": "be well equipped to",
+     "ja": "〜する知識・準備が十分にある"
+    },
+    {
+     "en": "refined carbohydrates",
+     "ja": "精製された炭水化物（白いパン・砂糖など）"
+    },
+    {
+     "en": "the reverse question",
+     "ja": "逆向きの問い"
+    },
+    {
+     "en": "self-select",
+     "ja": "自分で選ぶ"
+    },
+    {
+     "en": "adequate sleep",
+     "ja": "十分な睡眠"
+    },
+    {
+     "en": "fall asleep",
+     "ja": "眠りにつく"
+    },
+    {
+     "en": "deep sleep",
+     "ja": "深い眠り"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Who asked her if diet could help sleep?",
+     "choices": [
+      "Her students",
+      "The Dietary Guidelines Advisory Committee",
+      "A sleep doctor",
+      "A food company"
+     ],
+     "answer": 1,
+     "explain": "The committee for the 2015 US Dietary Guidelines asked: \"Can we make dietary recommendations to improve sleep?\""
+    },
+    {
+     "q": "Why was she surprised by the question?",
+     "choices": [
+      "She had never studied sleep",
+      "She has a PhD in nutrition but never thought of the reverse question",
+      "She thought diet and sleep were not connected",
+      "She did not have any data"
+     ],
+     "answer": 1,
+     "explain": "\"I have a PhD in nutrition, I hadn't even thought of addressing this question.\""
+    },
+    {
+     "q": "When people chose their own food, what did they eat?",
+     "choices": [
+      "Less fat and more fiber",
+      "The same food as before",
+      "More fat, more sodium, less fiber and more calories",
+      "Only snacks"
+     ],
+     "answer": 2,
+     "explain": "Participants ate more fat, more saturated fat, less fiber, more sodium and more calories."
+    },
+    {
+     "q": "How was their sleep on the days they chose their own food?",
+     "choices": [
+      "They fell asleep faster",
+      "They slept two more hours",
+      "They took longer to fall asleep and had a little less deep sleep",
+      "Nothing changed"
+     ],
+     "answer": 2,
+     "explain": "They took longer to fall asleep and spent a little less time in deep sleep."
+    },
+    {
+     "q": "Which was linked to more deep sleep?",
+     "choices": [
+      "More fiber",
+      "More saturated fat",
+      "More sugar",
+      "More refined carbohydrates"
+     ],
+     "answer": 0,
+     "explain": "Participants who had more fiber had more deep sleep."
+    }
+   ],
+   "lang": "en",
+   "ja_reviewed": true,
+   "ja_unsure": [],
+   "credit": "Clip: Sigma Nutrition Radio with Danny Lennon (sigmanutrition.com) — used with permission",
+   "active": true,
+   "start_at": null,
+   "clip_spans": [
+    [
+     1035.89,
+     1253.77
+    ]
+   ],
+   "screen": "black",
+   "sub_color": "#B6E62E",
+   "lines": [
+    {
+     "start": 0.3,
+     "end": 2.43,
+     "en": "But it was in 2014,",
+     "ja": ""
+    },
+    {
+     "start": 3.16,
+     "end": 6.1,
+     "en": "the Dietary Guidelines Advisory Committee",
+     "ja": ""
+    },
+    {
+     "start": 6.1,
+     "end": 9.57,
+     "en": "for the 2015 Dietary Guidelines in the US",
+     "ja": ""
+    },
+    {
+     "start": 10.22,
+     "end": 10.78,
+     "en": "reached out to me",
+     "ja": ""
+    },
+    {
+     "start": 10.78,
+     "end": 12.79,
+     "en": "to talk about diet and sleep.",
+     "ja": ""
+    },
+    {
+     "start": 12.92,
+     "end": 13.84,
+     "en": "I was very well equipped",
+     "ja": ""
+    },
+    {
+     "start": 13.84,
+     "end": 15.91,
+     "en": "to talk to them about sleep,",
+     "ja": ""
+    },
+    {
+     "start": 15.98,
+     "end": 17.95,
+     "en": "how it influences your food choices.",
+     "ja": ""
+    },
+    {
+     "start": 18.2,
+     "end": 19.91,
+     "en": "You tend to increase your fat intake,",
+     "ja": ""
+    },
+    {
+     "start": 20.5,
+     "end": 22.58,
+     "en": "tend to have a higher intake",
+     "ja": ""
+    },
+    {
+     "start": 22.58,
+     "end": 25.85,
+     "en": "of refined carbohydrates, more snack foods.",
+     "ja": ""
+    },
+    {
+     "start": 26.0,
+     "end": 27.01,
+     "en": "And they said, yeah, OK,",
+     "ja": ""
+    },
+    {
+     "start": 28.3,
+     "end": 30.47,
+     "en": "we're making dietary recommendations.",
+     "ja": ""
+    },
+    {
+     "start": 31.2,
+     "end": 35.01,
+     "en": "Can we make dietary recommendations to improve sleep?",
+     "ja": ""
+    },
+    {
+     "start": 36.08,
+     "end": 37.75,
+     "en": "Huh, I hadn't even thought of that.",
+     "ja": ""
+    },
+    {
+     "start": 37.9,
+     "end": 39.47,
+     "en": "You're thinking one way,",
+     "ja": ""
+    },
+    {
+     "start": 39.58,
+     "end": 41.18,
+     "en": "but from population-based studies,",
+     "ja": ""
+    },
+    {
+     "start": 41.18,
+     "end": 42.99,
+     "en": "things could go either way.",
+     "ja": ""
+    },
+    {
+     "start": 43.06,
+     "end": 45.21,
+     "en": "And I thought this was very interesting.",
+     "ja": ""
+    },
+    {
+     "start": 45.42,
+     "end": 46.25,
+     "en": "And I couldn't believe,",
+     "ja": ""
+    },
+    {
+     "start": 46.6,
+     "end": 47.56,
+     "en": "I have a PhD in nutrition,",
+     "ja": ""
+    },
+    {
+     "start": 47.56,
+     "end": 50.7,
+     "en": "I hadn't even thought of addressing this question,",
+     "ja": ""
+    },
+    {
+     "start": 50.7,
+     "end": 53.66,
+     "en": "or at least looking into this reverse question",
+     "ja": ""
+    },
+    {
+     "start": 53.66,
+     "end": 57.81,
+     "en": "of can we, or can diet impact sleep?",
+     "ja": ""
+    },
+    {
+     "start": 58.04,
+     "end": 59.6,
+     "en": "So I decided to look",
+     "ja": ""
+    },
+    {
+     "start": 59.6,
+     "end": 60.24,
+     "en": "at some of the data",
+     "ja": ""
+    },
+    {
+     "start": 60.24,
+     "end": 63.75,
+     "en": "that we had from our sleep restriction study.",
+     "ja": ""
+    },
+    {
+     "start": 63.92,
+     "end": 65.65,
+     "en": "And it was an inpatient study,",
+     "ja": ""
+    },
+    {
+     "start": 66.12,
+     "end": 66.84,
+     "en": "where in one phase",
+     "ja": ""
+    },
+    {
+     "start": 66.84,
+     "end": 69.73,
+     "en": "participants spent four hours in bed,",
+     "ja": ""
+    },
+    {
+     "start": 70.1,
+     "end": 71.04,
+     "en": "in another phase",
+     "ja": ""
+    },
+    {
+     "start": 71.04,
+     "end": 73.01,
+     "en": "participants spent nine hours in bed.",
+     "ja": ""
+    },
+    {
+     "start": 73.46,
+     "end": 74.47,
+     "en": "So I was like, OK, well,",
+     "ja": ""
+    },
+    {
+     "start": 74.6,
+     "end": 77.21,
+     "en": "during the nine-hour in-bed period,",
+     "ja": ""
+    },
+    {
+     "start": 77.8,
+     "end": 81.11,
+     "en": "people have variable sleep from one another.",
+     "ja": ""
+    },
+    {
+     "start": 81.4,
+     "end": 82.99,
+     "en": "In the sleep restriction condition,",
+     "ja": ""
+    },
+    {
+     "start": 83.28,
+     "end": 85.07,
+     "en": "everybody slept very well.",
+     "ja": ""
+    },
+    {
+     "start": 86.08,
+     "end": 88.25,
+     "en": "They were very efficient with their sleep,",
+     "ja": ""
+    },
+    {
+     "start": 89.0,
+     "end": 91.06,
+     "en": "they spent most of the time in bed asleep,",
+     "ja": ""
+    },
+    {
+     "start": 91.06,
+     "end": 93.25,
+     "en": "but not when they spent nine hours in bed.",
+     "ja": ""
+    },
+    {
+     "start": 93.5,
+     "end": 95.06,
+     "en": "So in that study,",
+     "ja": ""
+    },
+    {
+     "start": 95.06,
+     "end": 98.93,
+     "en": "we had four days of a controlled diet.",
+     "ja": ""
+    },
+    {
+     "start": 99.22,
+     "end": 100.38,
+     "en": "So we gave our participants",
+     "ja": ""
+    },
+    {
+     "start": 100.38,
+     "end": 102.83,
+     "en": "all of the food that they needed,",
+     "ja": ""
+    },
+    {
+     "start": 102.88,
+     "end": 106.56,
+     "en": "as estimated by their energy requirements,",
+     "ja": ""
+    },
+    {
+     "start": 106.56,
+     "end": 111.11,
+     "en": "based on a healthy general diet.",
+     "ja": ""
+    },
+    {
+     "start": 111.34,
+     "end": 112.44,
+     "en": "And then that's when we measured",
+     "ja": ""
+    },
+    {
+     "start": 112.44,
+     "end": 113.84,
+     "en": "all of the metabolic outcomes",
+     "ja": ""
+    },
+    {
+     "start": 113.84,
+     "end": 115.07,
+     "en": "that we were interested in.",
+     "ja": ""
+    },
+    {
+     "start": 115.36,
+     "end": 116.27,
+     "en": "But then we wanted to know,",
+     "ja": ""
+    },
+    {
+     "start": 116.28,
+     "end": 117.82,
+     "en": "are they going to eat more or less",
+     "ja": ""
+    },
+    {
+     "start": 117.82,
+     "end": 118.74,
+     "en": "or differently",
+     "ja": ""
+    },
+    {
+     "start": 118.74,
+     "end": 121.14,
+     "en": "after a period of short sleep",
+     "ja": ""
+    },
+    {
+     "start": 121.14,
+     "end": 123.87,
+     "en": "versus adequate sleep in the lab?",
+     "ja": ""
+    },
+    {
+     "start": 123.98,
+     "end": 126.37,
+     "en": "And we measured their food intake that day.",
+     "ja": ""
+    },
+    {
+     "start": 126.56,
+     "end": 128.26,
+     "en": "So we took a very systematic approach",
+     "ja": ""
+    },
+    {
+     "start": 128.26,
+     "end": 130.3,
+     "en": "then to determine if there was",
+     "ja": ""
+    },
+    {
+     "start": 130.3,
+     "end": 132.05,
+     "en": "an impact of diet on sleep.",
+     "ja": ""
+    },
+    {
+     "start": 132.32,
+     "end": 134.56,
+     "en": "First, was there a difference in their food intake",
+     "ja": ""
+    },
+    {
+     "start": 134.56,
+     "end": 136.22,
+     "en": "when they self-selected their diet",
+     "ja": ""
+    },
+    {
+     "start": 136.22,
+     "end": 139.09,
+     "en": "compared to when we gave them their meals?",
+     "ja": ""
+    },
+    {
+     "start": 139.78,
+     "end": 141.21,
+     "en": "And yes, there were differences.",
+     "ja": ""
+    },
+    {
+     "start": 141.94,
+     "end": 145.13,
+     "en": "Participants ate more fat, more saturated fat,",
+     "ja": ""
+    },
+    {
+     "start": 145.22,
+     "end": 147.17,
+     "en": "less fiber, more sodium,",
+     "ja": ""
+    },
+    {
+     "start": 147.66,
+     "end": 149.15,
+     "en": "more calories in general,",
+     "ja": ""
+    },
+    {
+     "start": 149.52,
+     "end": 150.86,
+     "en": "when they self-selected their diet",
+     "ja": ""
+    },
+    {
+     "start": 150.86,
+     "end": 152.56,
+     "en": "compared to the diet that we had given them.",
+     "ja": ""
+    },
+    {
+     "start": 152.56,
+     "end": 153.06,
+     "en": "So I'm like, OK, well,",
+     "ja": ""
+    },
+    {
+     "start": 153.06,
+     "end": 154.11,
+     "en": "there's differences there.",
+     "ja": ""
+    },
+    {
+     "start": 155.28,
+     "end": 156.4,
+     "en": "Every night in the lab,",
+     "ja": ""
+    },
+    {
+     "start": 156.4,
+     "end": 157.99,
+     "en": "we measured their sleep using polysomnography,",
+     "ja": ""
+    },
+    {
+     "start": 159.14,
+     "end": 159.68,
+     "en": "so electrodes,",
+     "ja": ""
+    },
+    {
+     "start": 159.68,
+     "end": 162.71,
+     "en": "and we could assess sleep staging, all of that.",
+     "ja": ""
+    },
+    {
+     "start": 162.72,
+     "end": 164.81,
+     "en": "So OK, so their diets were different.",
+     "ja": ""
+    },
+    {
+     "start": 165.14,
+     "end": 166.77,
+     "en": "Was their sleep different?",
+     "ja": ""
+    },
+    {
+     "start": 166.82,
+     "end": 168.33,
+     "en": "Because if their sleep wasn't different,",
+     "ja": ""
+    },
+    {
+     "start": 168.38,
+     "end": 171.55,
+     "en": "then that ends the inquiry, right?",
+     "ja": ""
+    },
+    {
+     "start": 171.56,
+     "end": 172.91,
+     "en": "But their sleep was different.",
+     "ja": ""
+    },
+    {
+     "start": 173.1,
+     "end": 174.98,
+     "en": "They took longer to fall asleep",
+     "ja": ""
+    },
+    {
+     "start": 174.98,
+     "end": 176.73,
+     "en": "when they self-selected their diet.",
+     "ja": ""
+    },
+    {
+     "start": 176.96,
+     "end": 179.36,
+     "en": "They spent a little less time in deep sleep",
+     "ja": ""
+    },
+    {
+     "start": 179.36,
+     "end": 181.27,
+     "en": "when they self-selected their diet.",
+     "ja": ""
+    },
+    {
+     "start": 181.4,
+     "end": 182.1,
+     "en": "So I'm like, OK, well,",
+     "ja": ""
+    },
+    {
+     "start": 182.1,
+     "end": 184.51,
+     "en": "there's some differences in their sleep.",
+     "ja": ""
+    },
+    {
+     "start": 184.64,
+     "end": 186.38,
+     "en": "Maybe it has to do",
+     "ja": ""
+    },
+    {
+     "start": 186.38,
+     "end": 188.11,
+     "en": "with what they ate that day.",
+     "ja": ""
+    },
+    {
+     "start": 188.18,
+     "end": 189.64,
+     "en": "So then we only looked at the day",
+     "ja": ""
+    },
+    {
+     "start": 189.64,
+     "end": 191.06,
+     "en": "where they self-selected their diet,",
+     "ja": ""
+    },
+    {
+     "start": 191.06,
+     "end": 193.1,
+     "en": "because on the control diet,",
+     "ja": ""
+    },
+    {
+     "start": 193.1,
+     "end": 194.39,
+     "en": "everybody ate the same thing.",
+     "ja": ""
+    },
+    {
+     "start": 194.4,
+     "end": 196.09,
+     "en": "So there's no variability there.",
+     "ja": ""
+    },
+    {
+     "start": 196.58,
+     "end": 197.68,
+     "en": "And that's where we found",
+     "ja": ""
+    },
+    {
+     "start": 197.68,
+     "end": 200.83,
+     "en": "that participants who had more fiber",
+     "ja": ""
+    },
+    {
+     "start": 201.06,
+     "end": 202.41,
+     "en": "had more deep sleep,",
+     "ja": ""
+    },
+    {
+     "start": 203.02,
+     "end": 205.68,
+     "en": "the participants who had more saturated fat",
+     "ja": ""
+    },
+    {
+     "start": 205.68,
+     "end": 206.78,
+     "en": "in their diet that day",
+     "ja": ""
+    },
+    {
+     "start": 206.78,
+     "end": 208.29,
+     "en": "had less deep sleep.",
+     "ja": ""
+    },
+    {
+     "start": 209.02,
+     "end": 211.46,
+     "en": "And participants who had more refined carbohydrates",
+     "ja": ""
+    },
+    {
+     "start": 211.46,
+     "end": 213.24,
+     "en": "and more sugar during the day",
+     "ja": ""
+    },
+    {
+     "start": 213.24,
+     "end": 214.88,
+     "en": "had more arousal that night",
+     "ja": ""
+    },
+    {
+     "start": 214.88,
+     "end": 217.53,
+     "en": "and more light, disturbed sleep.",
+     "ja": ""
+    }
+   ],
+   "thumb": "thumbs/H1-1.jpg"
+  },
+  {
+   "id": "H1-2",
+   "cat": "health",
+   "level": null,
+   "speaker": "Marlou Lasschuijt",
+   "role": "Assistant Professor, Sensory Science and Eating Behaviour, Wageningen University",
+   "title": "Texture Beats Counting Chews",
+   "title_ja": "かむ回数より、食べ物のかたさ",
+   "episode": "#526: Eating Rate, Food Texture & Satiation – Marlou Lasschuijt, PhD",
+   "source": "sigmanutrition",
+   "source_url": "https://sigmanutrition.com/episode526/",
+   "video": "media/H1-2.mp4",
+   "audio_only": null,
+   "subs_en": "subs/H1-2.en.vtt",
+   "subs_ja": null,
+   "clip_start": 807.44,
+   "clip_end": 881.0,
+   "cover_height": 0,
+   "vertical": false,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "chew",
+     "ja": "かむ"
+    },
+    {
+     "en": "swallow",
+     "ja": "飲み込む"
+    },
+    {
+     "en": "disgusting",
+     "ja": "気持ち悪い、うんざりする"
+    },
+    {
+     "en": "palatability",
+     "ja": "おいしさ、食べやすさ"
+    },
+    {
+     "en": "texture",
+     "ja": "食感（かたさ・やわらかさ）"
+    },
+    {
+     "en": "eating rate",
+     "ja": "食べる速さ"
+    },
+    {
+     "en": "external factor",
+     "ja": "外からの働きかけ"
+    },
+    {
+     "en": "vibrate",
+     "ja": "ぶるぶる震える、振動する"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What did Fletcherism tell people to do?",
+     "choices": [
+      "Eat only soft food",
+      "Chew a bite 10 or 20 times before swallowing",
+      "Skip breakfast",
+      "Eat with a special spoon"
+     ],
+     "answer": 1,
+     "explain": "It was a diet method where people chewed a bite 10 or 20 times before swallowing."
+    },
+    {
+     "q": "What is the problem with chewing one bite that many times?",
+     "choices": [
+      "It takes no time",
+      "It hurts your teeth",
+      "It becomes quite disgusting",
+      "It makes you hungry"
+     ],
+     "answer": 2,
+     "explain": "\"If you chew one bite of food for that many times, it becomes quite disgusting.\""
+    },
+    {
+     "q": "What happens when the texture of food changes?",
+     "choices": [
+      "People eat faster",
+      "People stop eating that food",
+      "People eat more slowly and eat less, without thinking about it",
+      "People need instructions"
+     ],
+     "answer": 2,
+     "explain": "People alter their way of eating naturally, without thinking about it, and eat less."
+    },
+    {
+     "q": "Which is an example of an external way to slow eating?",
+     "choices": [
+      "Harder bread",
+      "A spoon that vibrates if you eat too fast",
+      "Eating with friends",
+      "Drinking water"
+     ],
+     "answer": 1,
+     "explain": "A screen that shows when to take a bite, or spoons that vibrate if you eat too fast."
+    },
+    {
+     "q": "Why does she like changing the texture of food?",
+     "choices": [
+      "It is cheaper",
+      "It tastes better",
+      "It needs no instructions or special device",
+      "It makes food softer"
+     ],
+     "answer": 2,
+     "explain": "\"You don't have to give people instructions or a special device.\""
+    }
+   ],
+   "lang": "en",
+   "ja_reviewed": true,
+   "ja_unsure": [],
+   "credit": "Clip: Sigma Nutrition Radio with Danny Lennon (sigmanutrition.com) — used with permission",
+   "active": true,
+   "start_at": null,
+   "clip_spans": [
+    [
+     807.44,
+     881.0
+    ]
+   ],
+   "screen": "black",
+   "sub_color": "#C33764",
+   "lines": [
+    {
+     "start": 0.3,
+     "end": 1.63,
+     "en": "I think this was in the 80s,",
+     "ja": ""
+    },
+    {
+     "start": 2.08,
+     "end": 3.12,
+     "en": "if I remember correctly.",
+     "ja": ""
+    },
+    {
+     "start": 3.12,
+     "end": 3.75,
+     "en": "You had Fletcherism,",
+     "ja": ""
+    },
+    {
+     "start": 4.42,
+     "end": 6.64,
+     "en": "which was a diet method",
+     "ja": ""
+    },
+    {
+     "start": 6.64,
+     "end": 9.35,
+     "en": "where people were instructed to chew a bite",
+     "ja": ""
+    },
+    {
+     "start": 9.6,
+     "end": 12.38,
+     "en": "10 or 20 times before swallowing.",
+     "ja": ""
+    },
+    {
+     "start": 12.38,
+     "end": 13.6,
+     "en": "And that worked,",
+     "ja": ""
+    },
+    {
+     "start": 13.6,
+     "end": 15.76,
+     "en": "but I don't know if you've ever tried,",
+     "ja": ""
+    },
+    {
+     "start": 15.76,
+     "end": 17.58,
+     "en": "but if you chew one bite of food",
+     "ja": ""
+    },
+    {
+     "start": 17.58,
+     "end": 18.74,
+     "en": "for that many times,",
+     "ja": ""
+    },
+    {
+     "start": 18.74,
+     "end": 20.1,
+     "en": "it becomes quite disgusting.",
+     "ja": ""
+    },
+    {
+     "start": 20.1,
+     "end": 21.88,
+     "en": "So I think it was also",
+     "ja": ""
+    },
+    {
+     "start": 21.88,
+     "end": 23.66,
+     "en": "largely driven by palatability.",
+     "ja": ""
+    },
+    {
+     "start": 23.66,
+     "end": 25.44,
+     "en": "And I think what's nice",
+     "ja": ""
+    },
+    {
+     "start": 25.44,
+     "end": 27.62,
+     "en": "about changing the texture of food",
+     "ja": ""
+    },
+    {
+     "start": 27.62,
+     "end": 29.1,
+     "en": "is that people will alter",
+     "ja": ""
+    },
+    {
+     "start": 29.1,
+     "end": 30.8,
+     "en": "their way of eating that food",
+     "ja": ""
+    },
+    {
+     "start": 30.8,
+     "end": 33.06,
+     "en": "naturally, without thinking about it,",
+     "ja": ""
+    },
+    {
+     "start": 33.06,
+     "end": 35.36,
+     "en": "and then naturally eat less of the food",
+     "ja": ""
+    },
+    {
+     "start": 35.36,
+     "end": 37.06,
+     "en": "compared to when they would eat it",
+     "ja": ""
+    },
+    {
+     "start": 37.06,
+     "end": 38.98,
+     "en": "with little chews and very fast.",
+     "ja": ""
+    },
+    {
+     "start": 38.98,
+     "end": 41.02,
+     "en": "Because there have been many efforts",
+     "ja": ""
+    },
+    {
+     "start": 41.02,
+     "end": 43.34,
+     "en": "trying to reduce people's eating rate",
+     "ja": ""
+    },
+    {
+     "start": 43.34,
+     "end": 45.03,
+     "en": "by more external factors.",
+     "ja": ""
+    },
+    {
+     "start": 45.24,
+     "end": 46.52,
+     "en": "So in a research setting,",
+     "ja": ""
+    },
+    {
+     "start": 46.52,
+     "end": 48.24,
+     "en": "we could have a screen",
+     "ja": ""
+    },
+    {
+     "start": 48.24,
+     "end": 50.34,
+     "en": "that indicated when to take a bite,",
+     "ja": ""
+    },
+    {
+     "start": 50.34,
+     "end": 52.57,
+     "en": "so there were longer breaks between bites.",
+     "ja": ""
+    },
+    {
+     "start": 53.24,
+     "end": 56.42,
+     "en": "There are spoons that start to vibrate",
+     "ja": ""
+    },
+    {
+     "start": 56.42,
+     "end": 57.95,
+     "en": "if you eat too fast.",
+     "ja": ""
+    },
+    {
+     "start": 59.0,
+     "end": 60.02,
+     "en": "There are all types of ways",
+     "ja": ""
+    },
+    {
+     "start": 60.02,
+     "end": 62.52,
+     "en": "that people try to reduce people's eating rate.",
+     "ja": ""
+    },
+    {
+     "start": 62.52,
+     "end": 64.48,
+     "en": "But I think the nice part",
+     "ja": ""
+    },
+    {
+     "start": 64.48,
+     "end": 65.78,
+     "en": "about altering the texture",
+     "ja": ""
+    },
+    {
+     "start": 65.78,
+     "end": 67.94,
+     "en": "is that it goes without thinking",
+     "ja": ""
+    },
+    {
+     "start": 67.94,
+     "end": 69.46,
+     "en": "in a natural way.",
+     "ja": ""
+    },
+    {
+     "start": 69.46,
+     "end": 71.5,
+     "en": "So you don't have to give people instructions",
+     "ja": ""
+    },
+    {
+     "start": 71.5,
+     "end": 73.21,
+     "en": "or a special device.",
+     "ja": ""
+    }
+   ],
+   "thumb": "thumbs/H1-2.jpg"
+  },
+  {
+   "id": "H1-3",
+   "cat": "health",
+   "level": null,
+   "speaker": "Danny Lennon",
+   "role": "Host of Sigma Nutrition Radio",
+   "title": "Your Second Coffee Adds Up",
+   "title_ja": "2杯目のコーヒーは上乗せされる",
+   "episode": "Caffeine Metabolism and Individual Variability",
+   "source": "sigmanutrition",
+   "source_url": "https://sigmanutrition.com/snp33/",
+   "video": "media/H1-3.mp4",
+   "audio_only": null,
+   "subs_en": "subs/H1-3.en.vtt",
+   "subs_ja": null,
+   "clip_start": 800.16,
+   "clip_end": 885.22,
+   "cover_height": 0,
+   "vertical": false,
+   "repeat": "line",
+   "synopsis": null,
+   "vocab": [
+    {
+     "en": "bear in mind",
+     "ja": "覚えておく、心に留める"
+    },
+    {
+     "en": "half-life",
+     "ja": "半減期（量が半分になるまでの時間）"
+    },
+    {
+     "en": "bloodstream",
+     "ja": "血液の流れ、血中"
+    },
+    {
+     "en": "cumulative",
+     "ja": "積み重なっていく"
+    },
+    {
+     "en": "on top of",
+     "ja": "〜の上に、〜に加えて"
+    },
+    {
+     "en": "moderate amount",
+     "ja": "ほどほどの量"
+    },
+    {
+     "en": "concentration",
+     "ja": "濃度"
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Besides timing and the amount in one drink, what should we think about?",
+     "choices": [
+      "The color of the coffee",
+      "The caffeine that builds up across the day",
+      "The price of coffee",
+      "Where we drink it"
+     ],
+     "answer": 1,
+     "explain": "Caffeine stays in circulation for hours, so we need to bear in mind the accumulative amount across the day."
+    },
+    {
+     "q": "What is the half-life of caffeine in most people, according to Danny?",
+     "choices": [
+      "About 30 minutes",
+      "About 1 hour",
+      "About 3 to 5 hours",
+      "About 24 hours"
+     ],
+     "answer": 2,
+     "explain": "\"Caffeine has a half-life of about 3 to 5 hours in most individuals.\""
+    },
+    {
+     "q": "What does \"half-life\" mean here?",
+     "choices": [
+      "All the caffeine is gone",
+      "Half the caffeine is still in the bloodstream",
+      "The caffeine doubles",
+      "You need half a cup"
+     ],
+     "answer": 1,
+     "explain": "After that time, only half the ingested caffeine remains; half has been metabolized and cleared."
+    },
+    {
+     "q": "What happens when you drink a second cup of coffee hours later?",
+     "choices": [
+      "It replaces the first cup",
+      "It has no effect",
+      "It goes on top of the caffeine still in your system",
+      "It cancels the first cup"
+     ],
+     "answer": 2,
+     "explain": "The second cup's caffeine \"is going on top of whatever caffeine is still in your system.\""
+    },
+    {
+     "q": "Why can even moderate drinks cause problems?",
+     "choices": [
+      "They are too hot",
+      "Having them many times a day adds up to a high level",
+      "They contain sugar",
+      "They are drunk too slowly"
+     ],
+     "answer": 1,
+     "explain": "Having them multiple times across the day creates a cumulative impact that can get high enough to cause negative effects."
+    }
+   ],
+   "lang": "en",
+   "ja_reviewed": true,
+   "ja_unsure": [],
+   "credit": "Clip: Sigma Nutrition Radio with Danny Lennon (sigmanutrition.com) — used with permission",
+   "active": true,
+   "start_at": null,
+   "clip_spans": [
+    [
+     800.16,
+     885.22
+    ]
+   ],
+   "screen": "black",
+   "sub_color": "#34E89E",
+   "lines": [
+    {
+     "start": 0.3,
+     "end": 3.5,
+     "en": "However, it's not just the timing,",
+     "ja": ""
+    },
+    {
+     "start": 3.5,
+     "end": 5.36,
+     "en": "or it's not just the amount of caffeine",
+     "ja": ""
+    },
+    {
+     "start": 5.36,
+     "end": 7.24,
+     "en": "in a beverage at one time point.",
+     "ja": ""
+    },
+    {
+     "start": 7.24,
+     "end": 9.6,
+     "en": "Because caffeine stays in the circulation",
+     "ja": ""
+    },
+    {
+     "start": 9.6,
+     "end": 11.48,
+     "en": "for multiple hours across the day,",
+     "ja": ""
+    },
+    {
+     "start": 11.48,
+     "end": 12.62,
+     "en": "we need to bear in mind",
+     "ja": ""
+    },
+    {
+     "start": 12.62,
+     "end": 15.24,
+     "en": "that accumulative caffeine amount",
+     "ja": ""
+    },
+    {
+     "start": 15.24,
+     "end": 18.21,
+     "en": "that's in circulation across that day.",
+     "ja": ""
+    },
+    {
+     "start": 18.78,
+     "end": 21.26,
+     "en": "So, for example, if we consider",
+     "ja": ""
+    },
+    {
+     "start": 21.26,
+     "end": 22.31,
+     "en": "that caffeine has a half-life",
+     "ja": ""
+    },
+    {
+     "start": 22.58,
+     "end": 25.76,
+     "en": "of about 3 to 5 hours in most individuals,",
+     "ja": ""
+    },
+    {
+     "start": 25.76,
+     "end": 28.1,
+     "en": "it means that after that period of time,",
+     "ja": ""
+    },
+    {
+     "start": 28.1,
+     "end": 30.9,
+     "en": "only half the amount of that ingested caffeine",
+     "ja": ""
+    },
+    {
+     "start": 30.9,
+     "end": 32.58,
+     "en": "is going to remain in the bloodstream.",
+     "ja": ""
+    },
+    {
+     "start": 32.58,
+     "end": 35.2,
+     "en": "So half of it has been metabolized and cleared,",
+     "ja": ""
+    },
+    {
+     "start": 35.2,
+     "end": 36.56,
+     "en": "but the other half is still there.",
+     "ja": ""
+    },
+    {
+     "start": 36.56,
+     "end": 38.8,
+     "en": "And so multiple hours afterwards,",
+     "ja": ""
+    },
+    {
+     "start": 38.8,
+     "end": 40.4,
+     "en": "we still have that amount there.",
+     "ja": ""
+    },
+    {
+     "start": 40.4,
+     "end": 41.44,
+     "en": "So then if you go and have",
+     "ja": ""
+    },
+    {
+     "start": 41.44,
+     "end": 43.18,
+     "en": "another intake of caffeine",
+     "ja": ""
+    },
+    {
+     "start": 43.18,
+     "end": 45.56,
+     "en": "from another caffeine source,",
+     "ja": ""
+    },
+    {
+     "start": 45.56,
+     "end": 47.56,
+     "en": "there's going to have this additive value.",
+     "ja": ""
+    },
+    {
+     "start": 47.56,
+     "end": 48.82,
+     "en": "Not only is it the amount",
+     "ja": ""
+    },
+    {
+     "start": 48.82,
+     "end": 51.32,
+     "en": "in this second cup of coffee you're having,",
+     "ja": ""
+    },
+    {
+     "start": 51.32,
+     "end": 53.5,
+     "en": "the caffeine amount that you then have,",
+     "ja": ""
+    },
+    {
+     "start": 53.5,
+     "end": 54.9,
+     "en": "but that is going on top",
+     "ja": ""
+    },
+    {
+     "start": 54.9,
+     "end": 57.36,
+     "en": "of whatever caffeine is still in your system.",
+     "ja": ""
+    },
+    {
+     "start": 57.36,
+     "end": 60.14,
+     "en": "And multiple hours after your previous coffee,",
+     "ja": ""
+    },
+    {
+     "start": 60.14,
+     "end": 62.3,
+     "en": "you could still have half of that there.",
+     "ja": ""
+    },
+    {
+     "start": 62.3,
+     "end": 64.98,
+     "en": "And so it's this cumulative thing that not only,",
+     "ja": ""
+    },
+    {
+     "start": 64.98,
+     "end": 66.92,
+     "en": "even if you're consuming beverages",
+     "ja": ""
+    },
+    {
+     "start": 66.92,
+     "end": 67.96,
+     "en": "that contain, let's say,",
+     "ja": ""
+    },
+    {
+     "start": 67.96,
+     "end": 69.28,
+     "en": "a moderate amount of caffeine,",
+     "ja": ""
+    },
+    {
+     "start": 69.28,
+     "end": 71.76,
+     "en": "if you're having them multiple times across the day",
+     "ja": ""
+    },
+    {
+     "start": 71.76,
+     "end": 73.76,
+     "en": "and you have this cumulative impact,",
+     "ja": ""
+    },
+    {
+     "start": 73.76,
+     "end": 77.06,
+     "en": "At some point then you might reach this level",
+     "ja": ""
+    },
+    {
+     "start": 77.06,
+     "end": 80.36,
+     "en": "where the accumulative concentration in circulation",
+     "ja": ""
+    },
+    {
+     "start": 80.36,
+     "end": 82.5,
+     "en": "is high enough for you to experience",
+     "ja": ""
+    },
+    {
+     "start": 82.5,
+     "end": 84.71,
+     "en": "some of the negative impacts that you have.",
+     "ja": ""
+    }
+   ],
+   "thumb": "thumbs/H1-3.jpg"
   }
  ]
 }

@@ -203,7 +203,7 @@ const v = $("#v");
 let DB, L, step = 0, subs = "en", stopAt = null, loopSeg = null, lv = 0, cat = "general";   // lv＝一覧で見ているレベル・cat＝General／Business
 /* Business（2026-11-18 kimi）：本コースだけ。students.json の shadowing:"business" の生徒（ログインで ap_shadow）は Business だけ、ほかは General と Business の2つのタブ */
 const BIZ_ONLY = (() => { try { return JSON.parse(localStorage.getItem("ap_shadow")) === "business"; } catch (e) { return false; } })();
-const CATS = {general: "General", business: "Business", tech: "Tech"};   // 上のタブの順番
+const CATS = {general: "General", business: "Business", tech: "Tech", health: "Health"};   // 上のタブの順番
 const catOf = x => CATS[x.cat] ? x.cat : "general";
 const pool = () => DB.lessons.filter(x => catOf(x) === cat);
 
@@ -224,7 +224,7 @@ const prog = id => store.get()[id] || {};
 const setProg = (id, k, val) => store.set(s => { s[id] = Object.assign(s[id] || {}, {[k]: val}); });
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const icon = n => `<svg aria-hidden="true"><use href="#i-${n}"/></svg>`;
-const srcName = x => ({nasa: "NASA", apush: "A-PUSH講師", startupdad: "Startup Dad", codestory: "Code Story"})[x.source] || "VOA";
+const srcName = x => ({nasa: "NASA", apush: "A-PUSH講師", startupdad: "Startup Dad", codestory: "Code Story", sigmanutrition: "Sigma Nutrition"})[x.source] || "VOA";
 /* 続きの1本：途中の動画 → 最後に終えた動画の次 → まだの最初（今日＆計画の「今日のシャドーイング」と一覧の赤い行） */
 function nextLesson() {
   const all = pool(), p = x => prog(x.id);

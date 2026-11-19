@@ -24,12 +24,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import make  # noqa: E402
 
 SRC, MEDIA = make.SRC, make.MEDIA
-PICK = [p for f in ("business_pick.json", "tech_pick.json") if (SRC / f).exists() for p in json.load(open(SRC / f))]
+PICK = [p for f in ("business_pick.json", "tech_pick.json", "health_pick.json") if (SRC / f).exists() for p in json.load(open(SRC / f))]
 BY = {p["id"]: p for p in PICK}
 CREDIT = {"B": "Clip: Startup Dad podcast with Adam Fishman (youtube.com/@StartupDadPod) — used with permission",
-          "T": "Clip: Code Story podcast with Noah Labhart (codestory.co) — used with permission"}
-CAT = {"B": "business", "T": "tech"}
-SOURCE = {"B": "startupdad", "T": "codestory"}
+          "T": "Clip: Code Story podcast with Noah Labhart (codestory.co) — used with permission",
+          "H": "Clip: Sigma Nutrition Radio with Danny Lennon (sigmanutrition.com) — used with permission"}
+CAT = {"B": "business", "T": "tech", "H": "health"}
+SOURCE = {"B": "startupdad", "T": "codestory", "H": "sigmanutrition"}
 
 
 def key(i):
