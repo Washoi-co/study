@@ -152,12 +152,12 @@ def main():
         for a in st.get("alias", []):   # 前の番号でも同じパスワードで開ける（番号を変えた生徒。kanri の sids/{前の番号}.to が今の番号へ回す。2026-11-19）
             keys[a.upper()] = keys[sid]
     # 体験コード（2026-11-09 の名刺）：kanri の trial が 11/30 まで受け付け、入れた日から2週間だけ、この箱の pass を返す（functions/index.js と同じ式）。
-    # 12/14 を過ぎて作り直すと箱が無くなる＝体験の端末は開けなくなる
+    # 12/31 を過ぎて作り直すと箱が無くなる＝体験の端末は開けなくなる
     # DOBOKU（2026-11-18 kimi「ドボプロの子達全員に2週間、study と同じ範囲。単語は doboku 系統＋general＋各種試験」）：kanri の TRIALS の box。
     # 土木の専門（track civ）を足した体験の箱＝単語は全部＋土木、章も土木が開く。only ではない（Business・試験もそのまま）
     civ = {"id": "civ", "label": TRACKS["civ"]["label"], "words": TRACKS["civ"]["words"]}
     boxes = {"TRIAL": {}, "DOBOKU": {"track": civ, **({"kb": b64(tkeys["civ"])} if "civ" in tkeys else {})}}
-    if sk and datetime.date.today().isoformat() <= "2026-12-14":
+    if sk and datetime.date.today().isoformat() <= "2026-12-31":   # 12/31（2026-11-26）：LINE の番号の Gift（anamana・12/31 まで）もこの TRIAL の箱で入る。期限そのものは kanri が守る
         for box, extra in boxes.items():
             salt, siv = os.urandom(16), os.urandom(12)
             kek = hashlib.pbkdf2_hmac("sha256", derive(sk, "trial", box).encode(), salt, 200_000, 32)
